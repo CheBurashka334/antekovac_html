@@ -1,0 +1,31 @@
+.i-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    &--small {
+        width: 16px;
+        height: 16px;
+    }
+    &--yt {
+        /*background-image: url("/icons/yt.png");*/
+    }
+}
+
+.icon-link {
+    text-decoration: none;
+    .i-icon {
+        vertical-align: middle;
+    }
+    span {
+        text-decoration: underline;
+        vertical-align: middle;
+    }
+    &:hover {
+        span {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../media.css";
+@import "../colors.css";
+
+.breadcrumbs {
+    margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+
+    &__item {
+        display: inline-block;
+        font-size: 14px;
+        color: var(--main-brown);
+        transition: .3s; 
+        &:hover {
+            color: var(--main-dark);
+        }
+		&:first-child ~ &:before {
+			content: '';
+			display: inline-block;
+			width: 17px;
+			height: 1px;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+		&:not(&--unactive):before {
+			background: var(--main-brown);
+		}
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        > a {
+            text-decoration: none;
+            color: inherit;
+        }
+        &--opened {
+            .breadcrumbs-item-dropdown {
+                display: block;
+            }
+        }
+        &--unactive {
+			color: var(--main-gray);
+			&:before {
+				background: var(--main-gray);
+			}
+            a {
+                cursor: default;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            &:hover {
+                color: var(--main-gray);
+            }
+        }
+        &--dropdown {
+            background: #f6f6f6;
+            color: var(--main-dark);
+            .i-icon {
+                margin-left: 20px;
+                width: 11px;
+                height: 11px;
+                fill: var(--main-brown);
+            }
+            &:hover {
+                color: var(--main-dark);
+                .i-icon {
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+}
+
+@media (--mobile) {
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+.breadcrumbs-item-dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgb(227, 227, 227);
+    margin-top: 7px;
+    width: 108%;
+    min-width: 225px;
+    z-index: 10;
+    &__item {
+        a {
+            display: block;
+            padding: 8px 25px;
+            text-decoration: none;
+            color: var(--main-dark);
+            transition: .2s;
+            &:hover {
+                background: #cccccc;
+            }
+        }
+    }
+}

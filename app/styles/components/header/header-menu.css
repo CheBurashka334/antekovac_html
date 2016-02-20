@@ -1,0 +1,14 @@
+.header-menu {
+    &__burger {
+        cursor: pointer;
+        span {
+            width: 25px;
+            height: 2px;
+            background: #000;
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

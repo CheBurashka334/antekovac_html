@@ -1,0 +1,59 @@
+@import "../colors.css";
+
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    background: white;
+    color: var(--main-brown);
+    border: 1px solid currentColor;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "MyriadPro";
+    span {
+        vertical-align: middle;
+    }
+    .i-icon {
+        margin-right: 3px;
+    }
+    &--transparent {
+        background: transparent;
+		&:hover {
+			background-color: var(--main-brown);
+			border-color:  var(--main-brown);
+			color: white;
+		}
+		&--white {
+			color: white;
+			&:hover {
+				background-color: white;
+				color: var(--main-brown);
+			}
+		}
+    }
+    &--arrow {
+        text-align: left;
+        background-image:  svg('arrow-right', '[fill]: var(--main-brown)');
+        background-repeat: no-repeat;
+        background-position: right 10% center;
+        padding-right: 86px;
+		&.btn--transparent:hover {
+			background-image:  svg('arrow-right', '[fill]: white');
+		}
+    }
+	&--mail {
+		text-align: left;
+        background-image:  svg('mail', '[fill]: var(--main-brown)');
+        background-repeat: no-repeat;
+        background-position: right 10% center;
+        padding-right: 50px;
+		&.btn--transparent:hover {
+			background-image:  svg('mail', '[fill]: white');
+		}
+		.btn--white & {
+			background-image:  svg('mail', '[fill]: white');
+			&:hover {
+				background-image:  svg('mail', '[fill]: var(--main-brown)');
+			}
+		}
+	}
+}

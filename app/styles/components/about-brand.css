@@ -1,0 +1,17 @@
+.about-brand {
+    > *[class*=col] {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tile-block {
+        &--video {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .tile-block__text {
+                flex: 1;
+            }
+        }
+    }
+}

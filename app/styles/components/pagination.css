@@ -1,0 +1,79 @@
+@import "../media.css";
+@import "../colors.css";
+
+.pagination {
+    text-align: right;
+	margin-top: 1em;
+	margin-bottom: 34px;
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+        a {
+            display: block;
+            height: 100%;
+            background: white;
+            color: #333;
+            width: 46px;
+            height: 46px;
+			font-size: 18px;
+            line-height: 24px;
+			font-weight: lighter;
+			padding: 10px;
+            text-align: center;
+            transition: .2s;
+            text-decoration: none;
+			border: 1px solid transparent;
+            &:hover {
+                color: var(--main-brown);
+				border-color: var(--main-brown);
+            }
+        }
+        &--current {
+            a, a:hover {
+				color: white;
+                background: var(--main-brown);
+                cursor: default;
+            }
+        }
+        &--prev {
+            .i-icon {
+                transform: rotate(-180deg);
+            }
+        }
+        /*&--next {
+            .i-icon {
+                transform: rotate(-90deg);
+            }
+        }*/
+        &--prev,
+        &--next {
+            a {
+                /*background: #ebebeb;*/
+            }
+            .i-icon {
+                fill: #333;
+				stroke: #333;
+				stroke-width: 1px;
+                width: 16px;
+                height: 16px;
+            }
+            &:hover {
+                .i-icon {
+                    fill: var(--main-brown);
+					stroke:  var(--main-brown);
+                }
+            }
+        }
+    }
+}
+
+@media (--mobile) {
+    .pagination {
+        text-align: center;
+        margin: 20px 0; 
+    }
+}

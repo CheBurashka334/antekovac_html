@@ -1,0 +1,26 @@
+@import "media.css";
+@import "helpers.css";
+@import "styles.css";
+@import "colors.css";
+
+
+@import "components/icons.css";
+@import "components/sliders.css";
+@import "components/buttons.css";
+
+/*Header*/
+
+@import "components/header/header.css";
+@import "components/header/header-menu.css"; 
+
+/* Utility components */
+
+@import "components/breadcrumbs.css";
+@import "components/pagination.css";
+@import "components/dropdown.css";
+
+/*Products*/
+
+@import "components/products/product-tile.css";
+@import "components/products/products-list.css";
+@import "components/products/product-block.css";

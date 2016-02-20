@@ -1,0 +1,64 @@
+'use strict';
+
+// Load plugins
+
+import 'jquery';
+import 'normalize.css';
+import 'vendor/gridlex/dist/gridlex.css';
+
+// Load styles
+
+require('./styles/imports');
+// require('./styles/fonts.css');
+
+// Lazy components
+
+var lazyComponents = [
+    { name: 'sameHeight', data: '[data-same-height]' },
+    { name: 'anchors', data: '[data-anchor]' }
+];
+
+// Run lazy components
+
+$(function () {
+    lazyComponents.forEach(function(item) {
+        if ($(item.data).length) {
+            require('bundle!./js/lazy-components/' + item.name + '.js')(function(component) {
+                component.run();
+            })
+        }
+    });
+});
+
+// Load carousel 
+
+$(function () {
+    if ($('.owl-carousel').length) {
+        require.ensure([], function (require) {
+            require('owl.carousel');
+            let Sliders = require('./js/sliders');
+            Sliders.run();
+        })
+    }
+});
+
+let LazyImages = require('./js/lazyImages');
+let Dropdowns = require('./js/dropdown');
+
+// Run components
+
+$(function () {
+    LazyImages.run();
+});
+
+$(function(){
+	Dropdowns.run();
+});
+
+// Export components
+
+exports.lazyimages = LazyImages;
+//exports.sameheight = SameHeight;
+//exports.anchors = Anchors;
+//exports.sliders = Sliders;
+exports.dropdowns = Dropdowns;

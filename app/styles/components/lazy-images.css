@@ -1,0 +1,8 @@
+.lazy-image-container {
+    height: 100%;
+    display: none;
+}
+
+.lazy-background {
+    height: 100%;
+}

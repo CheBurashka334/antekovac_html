@@ -1,0 +1,49 @@
+.sided-holder {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 25px 0;
+    &__left,
+    &__right {
+        display: table-cell;
+        vertical-align: top;
+    }
+    &__left {
+        width: 275px;
+    }
+    &__right {
+        padding-left: 20px;
+    }
+    &--half {
+        .sided-holder__left {
+            width: calc(50% - 20px);
+            padding-right: 20px;
+        }
+        .sided-holder__right {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (--mobile) {
+    .sided-holder {
+        display: block;
+        &__left,
+        &__right {
+            margin: 25px 0;
+            display: block;
+            vertical-align: top;
+            width: 100%;
+            padding: 0;
+        }
+        &--half {
+            .sided-holder__left {
+                width: 100%;
+                padding-right: 0;
+            }
+            .sided-holder__right {
+                padding-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ante-kovac",
+  "version": "0.0.1",
+  "authors": [
+    "Egor Rudkovskiy"
+  ],
+  "description": "bower components",
+  "main": "app/app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "owl.carousel": "~2.0.0-beta.3",
+    "normalize.css": "~3.0.3",
+    "gridlex": "~2.0.8"
+  }
+}
