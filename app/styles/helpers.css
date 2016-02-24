@@ -165,8 +165,13 @@
 .overflow-x-hidden {
     overflow-x: hidden;
 }
-@media (--small-viewport) {
+@media (--small) {
     .hidden-small {
+        display: none !important;
+    }
+}
+@media (--mobile) {
+    .hidden-mobile {
         display: none !important;
     }
 }

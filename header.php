@@ -13,6 +13,7 @@
 <body>
 <div class="hidden"><?php require("svg/symbol/svg/sprite.symbol.svg"); ?></div>
 
+
 <main>
 
     <header>
@@ -20,7 +21,7 @@
             <div class="container">
                 <div class="header__wrap">
                     <div class="header-menu">
-                        <div class="header-menu__burger">
+                        <div class="header-menu__burger js-anim--hover js-anim--click js-toggle-box" data-box=".page-aside">
                             <span></span>
                             <span></span>
                             <span></span>

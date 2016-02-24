@@ -42,6 +42,7 @@ module.exports = {
   watchOptions: {
     aggregateTimeout: 50
   },
+  devtool: params.env == 'development' ? "source-map" : null,
 
   // Resolve params
   resolve: {

@@ -23,7 +23,7 @@ webpackJsonpApp([1],{
 	 * @todo stagePadding calculate wrong active classes
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates a carousel.
 		 * @class The Owl Carousel.
@@ -32,110 +32,110 @@ webpackJsonpApp([1],{
 		 * @param {Object} [options] - The options
 		 */
 		function Owl(element, options) {
-
+	
 			/**
 			 * Current settings for the carousel.
 			 * @public
 			 */
 			this.settings = null;
-
+	
 			/**
 			 * Current options set by the caller including defaults.
 			 * @public
 			 */
 			this.options = $.extend({}, Owl.Defaults, options);
-
+	
 			/**
 			 * Plugin element.
 			 * @public
 			 */
 			this.$element = $(element);
-
+	
 			/**
 			 * Proxied event handlers.
 			 * @protected
 			 */
 			this._handlers = {};
-
+	
 			/**
 			 * References to the running plugins of this carousel.
 			 * @protected
 			 */
 			this._plugins = {};
-
+	
 			/**
 			 * Currently suppressed events to prevent them from beeing retriggered.
 			 * @protected
 			 */
 			this._supress = {};
-
+	
 			/**
 			 * Absolute current position.
 			 * @protected
 			 */
 			this._current = null;
-
+	
 			/**
 			 * Animation speed in milliseconds.
 			 * @protected
 			 */
 			this._speed = null;
-
+	
 			/**
 			 * Coordinates of all items in pixel.
 			 * @todo The name of this member is missleading.
 			 * @protected
 			 */
 			this._coordinates = [];
-
+	
 			/**
 			 * Current breakpoint.
 			 * @todo Real media queries would be nice.
 			 * @protected
 			 */
 			this._breakpoint = null;
-
+	
 			/**
 			 * Current width of the plugin element.
 			 */
 			this._width = null;
-
+	
 			/**
 			 * All real items.
 			 * @protected
 			 */
 			this._items = [];
-
+	
 			/**
 			 * All cloned items.
 			 * @protected
 			 */
 			this._clones = [];
-
+	
 			/**
 			 * Merge values of all items.
 			 * @todo Maybe this could be part of a plugin.
 			 * @protected
 			 */
 			this._mergers = [];
-
+	
 			/**
 			 * Widths of all items.
 			 */
 			this._widths = [];
-
+	
 			/**
 			 * Invalidated parts within the update process.
 			 * @protected
 			 */
 			this._invalidated = {};
-
+	
 			/**
 			 * Ordered list of workers for the update process.
 			 * @protected
 			 */
 			this._pipe = [];
-
+	
 			/**
 			 * Current state information for the drag operation.
 			 * @todo #261
@@ -151,7 +151,7 @@ webpackJsonpApp([1],{
 				},
 				direction: null
 			};
-
+	
 			/**
 			 * Current state information and their tags.
 			 * @type {Object}
@@ -165,27 +165,27 @@ webpackJsonpApp([1],{
 					'dragging': [ 'interacting' ]
 				}
 			};
-
+	
 			$.each([ 'onResize', 'onThrottledResize' ], $.proxy(function(i, handler) {
 				this._handlers[handler] = $.proxy(this[handler], this);
 			}, this));
-
+	
 			$.each(Owl.Plugins, $.proxy(function(key, plugin) {
 				this._plugins[key.charAt(0).toLowerCase() + key.slice(1)]
 					= new plugin(this);
 			}, this));
-
+	
 			$.each(Owl.Workers, $.proxy(function(priority, worker) {
 				this._pipe.push({
 					'filter': worker.filter,
 					'run': $.proxy(worker.run, this)
 				});
 			}, this));
-
+	
 			this.setup();
 			this.initialize();
 		}
-
+	
 		/**
 		 * Default options for the carousel.
 		 * @public
@@ -195,38 +195,38 @@ webpackJsonpApp([1],{
 			loop: false,
 			center: false,
 			rewind: false,
-
+	
 			mouseDrag: true,
 			touchDrag: true,
 			pullDrag: true,
 			freeDrag: false,
-
+	
 			margin: 0,
 			stagePadding: 0,
-
+	
 			merge: false,
 			mergeFit: true,
 			autoWidth: false,
-
+	
 			startPosition: 0,
 			rtl: false,
-
+	
 			smartSpeed: 250,
 			fluidSpeed: false,
 			dragEndSpeed: false,
-
+	
 			responsive: {},
 			responsiveRefreshRate: 200,
 			responsiveBaseElement: window,
-
+	
 			fallbackEasing: 'swing',
-
+	
 			info: false,
-
+	
 			nestedItemSelector: false,
 			itemElement: 'div',
 			stageElement: 'div',
-
+	
 			refreshClass: 'owl-refresh',
 			loadedClass: 'owl-loaded',
 			loadingClass: 'owl-loading',
@@ -238,7 +238,7 @@ webpackJsonpApp([1],{
 			stageOuterClass: 'owl-stage-outer',
 			grabClass: 'owl-grab'
 		};
-
+	
 		/**
 		 * Enumeration for width.
 		 * @public
@@ -250,7 +250,7 @@ webpackJsonpApp([1],{
 			Inner: 'inner',
 			Outer: 'outer'
 		};
-
+	
 		/**
 		 * Enumeration for types.
 		 * @public
@@ -261,13 +261,13 @@ webpackJsonpApp([1],{
 			Event: 'event',
 			State: 'state'
 		};
-
+	
 		/**
 		 * Contains all registered plugins.
 		 * @public
 		 */
 		Owl.Plugins = {};
-
+	
 		/**
 		 * List of workers involved in the update process.
 		 */
@@ -297,9 +297,9 @@ webpackJsonpApp([1],{
 						'margin-left': rtl ? margin : '',
 						'margin-right': rtl ? '' : margin
 					};
-
+	
 				!grid && this.$stage.children().css(css);
-
+	
 				cache.css = css;
 			}
 		}, {
@@ -310,21 +310,21 @@ webpackJsonpApp([1],{
 					iterator = this._items.length,
 					grid = !this.settings.autoWidth,
 					widths = [];
-
+	
 				cache.items = {
 					merge: false,
 					width: width
 				};
-
+	
 				while (iterator--) {
 					merge = this._mergers[iterator];
 					merge = this.settings.mergeFit && Math.min(merge, this.settings.items) || merge;
-
+	
 					cache.items.merge = merge > 1 || cache.items.merge;
-
+	
 					widths[iterator] = !grid ? this._items[iterator].width() : width * merge;
 				}
-
+	
 				this._widths = widths;
 			}
 		}, {
@@ -338,18 +338,18 @@ webpackJsonpApp([1],{
 					repeat = settings.loop && items.length ? settings.rewind ? view : Math.max(view, size) : 0,
 					append = '',
 					prepend = '';
-
+	
 				repeat /= 2;
-
+	
 				while (repeat--) {
 					clones.push(this.normalize(clones.length / 2, true));
 					append = append + items[clones[clones.length - 1]][0].outerHTML;
 					clones.push(this.normalize(items.length - 1 - (clones.length - 1) / 2, true));
 					prepend = items[clones[clones.length - 1]][0].outerHTML + prepend;
 				}
-
+	
 				this._clones = clones;
-
+	
 				$(append).addClass('cloned').appendTo(this.$stage);
 				$(prepend).addClass('cloned').prependTo(this.$stage);
 			}
@@ -362,13 +362,13 @@ webpackJsonpApp([1],{
 					previous = 0,
 					current = 0,
 					coordinates = [];
-
+	
 				while (++iterator < size) {
 					previous = coordinates[iterator - 1] || 0;
 					current = this._widths[this.relative(iterator)] + this.settings.margin;
 					coordinates.push(previous + current * rtl);
 				}
-
+	
 				this._coordinates = coordinates;
 			}
 		}, {
@@ -381,7 +381,7 @@ webpackJsonpApp([1],{
 						'padding-left': padding || '',
 						'padding-right': padding || ''
 					};
-
+	
 				this.$stage.css(css);
 			}
 		}, {
@@ -390,7 +390,7 @@ webpackJsonpApp([1],{
 				var iterator = this._coordinates.length,
 					grid = !this.settings.autoWidth,
 					items = this.$stage.children();
-
+	
 				if (grid && cache.items.merge) {
 					while (iterator--) {
 						cache.css.width = this._widths[this.relative(iterator)];
@@ -426,27 +426,27 @@ webpackJsonpApp([1],{
 					begin = this.coordinates(this.current()) + padding,
 					end = begin + this.width() * rtl,
 					inner, outer, matches = [], i, n;
-
+	
 				for (i = 0, n = this._coordinates.length; i < n; i++) {
 					inner = this._coordinates[i - 1] || 0;
 					outer = Math.abs(this._coordinates[i]) + padding * rtl;
-
+	
 					if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end)))
 						|| (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
 						matches.push(i);
 					}
 				}
-
+	
 				this.$stage.children('.active').removeClass('active');
 				this.$stage.children(':eq(' + matches.join('), :eq(') + ')').addClass('active');
-
+	
 				if (this.settings.center) {
 					this.$stage.children('.center').removeClass('center');
 					this.$stage.children().eq(this.current()).addClass('center');
 				}
 			}
 		} ];
-
+	
 		/**
 		 * Initializes the carousel.
 		 * @protected
@@ -454,32 +454,32 @@ webpackJsonpApp([1],{
 		Owl.prototype.initialize = function() {
 			this.enter('initializing');
 			this.trigger('initialize');
-
+	
 			this.$element.toggleClass(this.settings.rtlClass, this.settings.rtl);
-
+	
 			if (this.settings.autoWidth && !this.is('pre-loading')) {
 				var imgs, nestedSelector, width;
 				imgs = this.$element.find('img');
 				nestedSelector = this.settings.nestedItemSelector ? '.' + this.settings.nestedItemSelector : undefined;
 				width = this.$element.children(nestedSelector).width();
-
+	
 				if (imgs.length && width <= 0) {
 					this.preloadAutoWidthImages(imgs);
 				}
 			}
-
+	
 			this.$element.addClass(this.options.loadingClass);
-
+	
 			// create stage
 			this.$stage = $('<' + this.settings.stageElement + ' class="' + this.settings.stageClass + '"/>')
 				.wrap('<div class="' + this.settings.stageOuterClass + '"/>');
-
+	
 			// append stage
 			this.$element.append(this.$stage.parent());
-
+	
 			// append content
 			this.replace(this.$element.children().not(this.$stage.parent()));
-
+	
 			// check visibility
 			if (this.$element.is(':visible')) {
 				// update view
@@ -488,18 +488,18 @@ webpackJsonpApp([1],{
 				// invalidate width
 				this.invalidate('width');
 			}
-
+	
 			this.$element
 				.removeClass(this.options.loadingClass)
 				.addClass(this.options.loadedClass);
-
+	
 			// register event handlers
 			this.registerEventHandlers();
-
+	
 			this.leave('initializing');
 			this.trigger('initialized');
 		};
-
+	
 		/**
 		 * Setups the current settings.
 		 * @todo Remove responsive classes. Why should adaptive designs be brought into IE8?
@@ -511,7 +511,7 @@ webpackJsonpApp([1],{
 				overwrites = this.options.responsive,
 				match = -1,
 				settings = null;
-
+	
 			if (!overwrites) {
 				settings = $.extend({}, this.options);
 			} else {
@@ -520,10 +520,10 @@ webpackJsonpApp([1],{
 						match = Number(breakpoint);
 					}
 				});
-
+	
 				settings = $.extend({}, this.options, overwrites[match]);
 				delete settings.responsive;
-
+	
 				// responsive class
 				if (settings.responsiveClass) {
 					this.$element.attr('class',
@@ -531,7 +531,7 @@ webpackJsonpApp([1],{
 					);
 				}
 			}
-
+	
 			if (this.settings === null || this._breakpoint !== match) {
 				this.trigger('change', { property: { name: 'settings', value: settings } });
 				this._breakpoint = match;
@@ -540,7 +540,7 @@ webpackJsonpApp([1],{
 				this.trigger('changed', { property: { name: 'settings', value: this.settings } });
 			}
 		};
-
+	
 		/**
 		 * Updates option logic if necessery.
 		 * @protected
@@ -551,7 +551,7 @@ webpackJsonpApp([1],{
 				this.settings.merge = false;
 			}
 		};
-
+	
 		/**
 		 * Prepares an item before add.
 		 * @todo Rename event parameter `content` to `item`.
@@ -560,17 +560,17 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.prepare = function(item) {
 			var event = this.trigger('prepare', { content: item });
-
+	
 			if (!event.data) {
 				event.data = $('<' + this.settings.itemElement + '/>')
 					.addClass(this.options.itemClass).append(item)
 			}
-
+	
 			this.trigger('prepared', { content: event.data });
-
+	
 			return event.data;
 		};
-
+	
 		/**
 		 * Updates the view.
 		 * @public
@@ -580,19 +580,19 @@ webpackJsonpApp([1],{
 				n = this._pipe.length,
 				filter = $.proxy(function(p) { return this[p] }, this._invalidated),
 				cache = {};
-
+	
 			while (i < n) {
 				if (this._invalidated.all || $.grep(this._pipe[i].filter, filter).length > 0) {
 					this._pipe[i].run(cache);
 				}
 				i++;
 			}
-
+	
 			this._invalidated = {};
-
+	
 			!this.is('valid') && this.enter('valid');
 		};
-
+	
 		/**
 		 * Gets the width of the view.
 		 * @public
@@ -609,7 +609,7 @@ webpackJsonpApp([1],{
 					return this._width - this.settings.stagePadding * 2 + this.settings.margin;
 			}
 		};
-
+	
 		/**
 		 * Refreshes the carousel primarily for adaptive purposes.
 		 * @public
@@ -617,21 +617,21 @@ webpackJsonpApp([1],{
 		Owl.prototype.refresh = function() {
 			this.enter('refreshing');
 			this.trigger('refresh');
-
+	
 			this.setup();
-
+	
 			this.optionsLogic();
-
+	
 			this.$element.addClass(this.options.refreshClass);
-
+	
 			this.update();
-
+	
 			this.$element.removeClass(this.options.refreshClass);
-
+	
 			this.leave('refreshing');
 			this.trigger('refreshed');
 		};
-
+	
 		/**
 		 * Checks window `resize` event.
 		 * @protected
@@ -640,7 +640,7 @@ webpackJsonpApp([1],{
 			window.clearTimeout(this.resizeTimer);
 			this.resizeTimer = window.setTimeout(this._handlers.onResize, this.settings.responsiveRefreshRate);
 		};
-
+	
 		/**
 		 * Checks window `resize` event.
 		 * @protected
@@ -649,30 +649,30 @@ webpackJsonpApp([1],{
 			if (!this._items.length) {
 				return false;
 			}
-
+	
 			if (this._width === this.$element.width()) {
 				return false;
 			}
-
+	
 			if (!this.$element.is(':visible')) {
 				return false;
 			}
-
+	
 			this.enter('resizing');
-
+	
 			if (this.trigger('resize').isDefaultPrevented()) {
 				this.leave('resizing');
 				return false;
 			}
-
+	
 			this.invalidate('width');
-
+	
 			this.refresh();
-
+	
 			this.leave('resizing');
 			this.trigger('resized');
 		};
-
+	
 		/**
 		 * Registers event handlers.
 		 * @todo Check `msPointerEnabled`
@@ -683,23 +683,23 @@ webpackJsonpApp([1],{
 			if ($.support.transition) {
 				this.$stage.on($.support.transition.end + '.owl.core', $.proxy(this.onTransitionEnd, this));
 			}
-
+	
 			if (this.settings.responsive !== false) {
 				this.on(window, 'resize', this._handlers.onThrottledResize);
 			}
-
+	
 			if (this.settings.mouseDrag) {
 				this.$element.addClass(this.options.dragClass);
 				this.$stage.on('mousedown.owl.core', $.proxy(this.onDragStart, this));
 				this.$stage.on('dragstart.owl.core selectstart.owl.core', function() { return false });
 			}
-
+	
 			if (this.settings.touchDrag){
 				this.$stage.on('touchstart.owl.core', $.proxy(this.onDragStart, this));
 				this.$stage.on('touchcancel.owl.core', $.proxy(this.onDragEnd, this));
 			}
 		};
-
+	
 		/**
 		 * Handles `touchstart` and `mousedown` events.
 		 * @todo Horizontal swipe threshold as option
@@ -709,11 +709,11 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.onDragStart = function(event) {
 			var stage = null;
-
+	
 			if (event.which === 3) {
 				return;
 			}
-
+	
 			if ($.support.transform) {
 				stage = this.$stage.css('transform').replace(/.*\(|\)| /g, '').split(',');
 				stage = {
@@ -729,40 +729,40 @@ webpackJsonpApp([1],{
 					y: stage.top
 				};
 			}
-
+	
 			if (this.is('animating')) {
 				$.support.transform ? this.animate(stage.x) : this.$stage.stop()
 				this.invalidate('position');
 			}
-
+	
 			this.$element.toggleClass(this.options.grabClass, event.type === 'mousedown');
-
+	
 			this.speed(0);
-
+	
 			this._drag.time = new Date().getTime();
 			this._drag.target = $(event.target);
 			this._drag.stage.start = stage;
 			this._drag.stage.current = stage;
 			this._drag.pointer = this.pointer(event);
-
+	
 			$(document).on('mouseup.owl.core touchend.owl.core', $.proxy(this.onDragEnd, this));
-
+	
 			$(document).one('mousemove.owl.core touchmove.owl.core', $.proxy(function(event) {
 				var delta = this.difference(this._drag.pointer, this.pointer(event));
-
+	
 				$(document).on('mousemove.owl.core touchmove.owl.core', $.proxy(this.onDragMove, this));
-
+	
 				if (Math.abs(delta.x) < Math.abs(delta.y) && this.is('valid')) {
 					return;
 				}
-
+	
 				event.preventDefault();
-
+	
 				this.enter('dragging');
 				this.trigger('drag');
 			}, this));
 		};
-
+	
 		/**
 		 * Handles the `touchmove` and `mousemove` events.
 		 * @todo #261
@@ -775,13 +775,13 @@ webpackJsonpApp([1],{
 				pull = null,
 				delta = this.difference(this._drag.pointer, this.pointer(event)),
 				stage = this.difference(this._drag.stage.start, delta);
-
+	
 			if (!this.is('dragging')) {
 				return;
 			}
-
+	
 			event.preventDefault();
-
+	
 			if (this.settings.loop) {
 				minimum = this.coordinates(this.minimum());
 				maximum = this.coordinates(this.maximum() + 1) - minimum;
@@ -792,12 +792,12 @@ webpackJsonpApp([1],{
 				pull = this.settings.pullDrag ? -1 * delta.x / 5 : 0;
 				stage.x = Math.max(Math.min(stage.x, minimum + pull), maximum + pull);
 			}
-
+	
 			this._drag.stage.current = stage;
-
+	
 			this.animate(stage.x);
 		};
-
+	
 		/**
 		 * Handles the `touchend` and `mouseup` events.
 		 * @todo #261
@@ -809,32 +809,32 @@ webpackJsonpApp([1],{
 			var delta = this.difference(this._drag.pointer, this.pointer(event)),
 				stage = this._drag.stage.current,
 				direction = delta.x > 0 ^ this.settings.rtl ? 'left' : 'right';
-
+	
 			$(document).off('.owl.core');
-
+	
 			this.$element.removeClass(this.options.grabClass);
-
+	
 			if (delta.x !== 0 && this.is('dragging') || !this.is('valid')) {
 				this.speed(this.settings.dragEndSpeed || this.settings.smartSpeed);
 				this.current(this.closest(stage.x, delta.x !== 0 ? direction : this._drag.direction));
 				this.invalidate('position');
 				this.update();
-
+	
 				this._drag.direction = direction;
-
+	
 				if (Math.abs(delta.x) > 3 || new Date().getTime() - this._drag.time > 300) {
 					this._drag.target.one('click.owl.core', function() { return false; });
 				}
 			}
-
+	
 			if (!this.is('dragging')) {
 				return;
 			}
-
+	
 			this.leave('dragging');
 			this.trigger('dragged');
 		};
-
+	
 		/**
 		 * Gets absolute position of the closest item for a coordinate.
 		 * @todo Setting `freeDrag` makes `closest` not reusable. See #165.
@@ -848,7 +848,7 @@ webpackJsonpApp([1],{
 				pull = 30,
 				width = this.width(),
 				coordinates = this.coordinates();
-
+	
 			if (!this.settings.freeDrag) {
 				// check closest item
 				$.each(coordinates, $.proxy(function(index, value) {
@@ -861,7 +861,7 @@ webpackJsonpApp([1],{
 					return position === -1;
 				}, this));
 			}
-
+	
 			if (!this.settings.loop) {
 				// non loop boundries
 				if (this.op(coordinate, '>', coordinates[this.minimum()])) {
@@ -870,10 +870,10 @@ webpackJsonpApp([1],{
 					position = coordinate = this.maximum();
 				}
 			}
-
+	
 			return position;
 		};
-
+	
 		/**
 		 * Animates the stage.
 		 * @todo #270
@@ -882,14 +882,14 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.animate = function(coordinate) {
 			var animate = this.speed() > 0;
-
+	
 			this.is('animating') && this.onTransitionEnd();
-
+	
 			if (animate) {
 				this.enter('animating');
 				this.trigger('translate');
 			}
-
+	
 			if ($.support.transform3d && $.support.transition) {
 				this.$stage.css({
 					transform: 'translate3d(' + coordinate + 'px,0px,0px)',
@@ -905,7 +905,7 @@ webpackJsonpApp([1],{
 				});
 			}
 		};
-
+	
 		/**
 		 * Checks whether the carousel is in a specific state or not.
 		 * @param {String} state - The state to check.
@@ -914,7 +914,7 @@ webpackJsonpApp([1],{
 		Owl.prototype.is = function(state) {
 			return this._states.current[state] && this._states.current[state] > 0;
 		};
-
+	
 		/**
 		 * Sets the absolute position of the current item.
 		 * @public
@@ -925,30 +925,30 @@ webpackJsonpApp([1],{
 			if (position === undefined) {
 				return this._current;
 			}
-
+	
 			if (this._items.length === 0) {
 				return undefined;
 			}
-
+	
 			position = this.normalize(position);
-
+	
 			if (this._current !== position) {
 				var event = this.trigger('change', { property: { name: 'position', value: position } });
-
+	
 				if (event.data !== undefined) {
 					position = this.normalize(event.data);
 				}
-
+	
 				this._current = position;
-
+	
 				this.invalidate('position');
-
+	
 				this.trigger('changed', { property: { name: 'position', value: this._current } });
 			}
-
+	
 			return this._current;
 		};
-
+	
 		/**
 		 * Invalidates the given part of the update routine.
 		 * @param {String} [part] - The part to invalidate.
@@ -961,7 +961,7 @@ webpackJsonpApp([1],{
 			}
 			return $.map(this._invalidated, function(v, i) { return i });
 		};
-
+	
 		/**
 		 * Resets the absolute position of the current item.
 		 * @public
@@ -969,21 +969,21 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.reset = function(position) {
 			position = this.normalize(position);
-
+	
 			if (position === undefined) {
 				return;
 			}
-
+	
 			this._speed = 0;
 			this._current = position;
-
+	
 			this.suppress([ 'translate', 'translated' ]);
-
+	
 			this.animate(this.coordinates(position));
-
+	
 			this.release([ 'translate', 'translated' ]);
 		};
-
+	
 		/**
 		 * Normalizes an absolute or a relative position of an item.
 		 * @public
@@ -994,16 +994,16 @@ webpackJsonpApp([1],{
 		Owl.prototype.normalize = function(position, relative) {
 			var n = this._items.length,
 				m = relative ? 0 : this._clones.length;
-
+	
 			if (!$.isNumeric(position) || n < 1) {
 				position = undefined;
 			} else if (position < 0 || position >= n + m) {
 				position = ((position - m / 2) % n + n) % n + m / 2;
 			}
-
+	
 			return position;
 		};
-
+	
 		/**
 		 * Converts an absolute position of an item into a relative one.
 		 * @public
@@ -1014,7 +1014,7 @@ webpackJsonpApp([1],{
 			position -= this._clones.length / 2;
 			return this.normalize(position, true);
 		};
-
+	
 		/**
 		 * Gets the maximum position for the current item.
 		 * @public
@@ -1026,7 +1026,7 @@ webpackJsonpApp([1],{
 				maximum = this._coordinates.length,
 				boundary = Math.abs(this._coordinates[maximum - 1]) - this._width,
 				i = -1, j;
-
+	
 			if (settings.loop) {
 				maximum = this._clones.length / 2 + this._items.length - 1;
 			} else if (settings.autoWidth || settings.merge) {
@@ -1040,14 +1040,14 @@ webpackJsonpApp([1],{
 			} else {
 				maximum = this._items.length - settings.items;
 			}
-
+	
 			if (relative) {
 				maximum -= this._clones.length / 2;
 			}
-
+	
 			return Math.max(maximum, 0);
 		};
-
+	
 		/**
 		 * Gets the minimum position for the current item.
 		 * @public
@@ -1057,7 +1057,7 @@ webpackJsonpApp([1],{
 		Owl.prototype.minimum = function(relative) {
 			return relative ? 0 : this._clones.length / 2;
 		};
-
+	
 		/**
 		 * Gets an item at the specified relative position.
 		 * @public
@@ -1068,11 +1068,11 @@ webpackJsonpApp([1],{
 			if (position === undefined) {
 				return this._items.slice();
 			}
-
+	
 			position = this.normalize(position, true);
 			return this._items[position];
 		};
-
+	
 		/**
 		 * Gets an item at the specified relative position.
 		 * @public
@@ -1083,11 +1083,11 @@ webpackJsonpApp([1],{
 			if (position === undefined) {
 				return this._mergers.slice();
 			}
-
+	
 			position = this.normalize(position, true);
 			return this._mergers[position];
 		};
-
+	
 		/**
 		 * Gets the absolute positions of clones for an item.
 		 * @public
@@ -1098,14 +1098,14 @@ webpackJsonpApp([1],{
 			var odd = this._clones.length / 2,
 				even = odd + this._items.length,
 				map = function(index) { return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2 };
-
+	
 			if (position === undefined) {
 				return $.map(this._clones, function(v, i) { return map(i) });
 			}
-
+	
 			return $.map(this._clones, function(v, i) { return v === position ? map(i) : null });
 		};
-
+	
 		/**
 		 * Sets the current animation speed.
 		 * @public
@@ -1116,10 +1116,10 @@ webpackJsonpApp([1],{
 			if (speed !== undefined) {
 				this._speed = speed;
 			}
-
+	
 			return this._speed;
 		};
-
+	
 		/**
 		 * Gets the coordinate of an item.
 		 * @todo The name of this method is missleanding.
@@ -1129,23 +1129,23 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.coordinates = function(position) {
 			var coordinate = null;
-
+	
 			if (position === undefined) {
 				return $.map(this._coordinates, $.proxy(function(coordinate, index) {
 					return this.coordinates(index);
 				}, this));
 			}
-
+	
 			if (this.settings.center) {
 				coordinate = this._coordinates[position];
 				coordinate += (this.width() - coordinate + (this._coordinates[position - 1] || 0)) / 2 * (this.settings.rtl ? -1 : 1);
 			} else {
 				coordinate = this._coordinates[position - 1] || 0;
 			}
-
+	
 			return coordinate;
 		};
-
+	
 		/**
 		 * Calculates the speed for a translation.
 		 * @protected
@@ -1157,7 +1157,7 @@ webpackJsonpApp([1],{
 		Owl.prototype.duration = function(from, to, factor) {
 			return Math.min(Math.max(Math.abs(to - from), 1), 6) * Math.abs((factor || this.settings.smartSpeed));
 		};
-
+	
 		/**
 		 * Slides to the specified item.
 		 * @public
@@ -1172,15 +1172,15 @@ webpackJsonpApp([1],{
 				items = this._items.length,
 				minimum = this.minimum(),
 				maximum = this.maximum();
-
+	
 			if (this.settings.loop) {
 				if (!this.settings.rewind && Math.abs(distance) > items / 2) {
 					distance += direction * -1 * items;
 				}
-
+	
 				position = current + distance;
 				revert = ((position - minimum) % items + items) % items + minimum;
-
+	
 				if (revert !== position && revert - distance <= maximum && revert - distance > 0) {
 					current = revert - distance;
 					position = revert;
@@ -1192,15 +1192,15 @@ webpackJsonpApp([1],{
 			} else {
 				position = Math.max(minimum, Math.min(maximum, position));
 			}
-
+	
 			this.speed(this.duration(current, position, speed));
 			this.current(position);
-
+	
 			if (this.$element.is(':visible')) {
 				this.update();
 			}
 		};
-
+	
 		/**
 		 * Slides to the next item.
 		 * @public
@@ -1210,7 +1210,7 @@ webpackJsonpApp([1],{
 			speed = speed || false;
 			this.to(this.relative(this.current()) + 1, speed);
 		};
-
+	
 		/**
 		 * Slides to the previous item.
 		 * @public
@@ -1220,28 +1220,28 @@ webpackJsonpApp([1],{
 			speed = speed || false;
 			this.to(this.relative(this.current()) - 1, speed);
 		};
-
+	
 		/**
 		 * Handles the end of an animation.
 		 * @protected
 		 * @param {Event} event - The event arguments.
 		 */
 		Owl.prototype.onTransitionEnd = function(event) {
-
+	
 			// if css2 animation then event object is undefined
 			if (event !== undefined) {
 				event.stopPropagation();
-
+	
 				// Catch only owl-stage transitionEnd event
 				if ((event.target || event.srcElement || event.originalTarget) !== this.$stage.get(0)) {
 					return false;
 				}
 			}
-
+	
 			this.leave('animating');
 			this.trigger('translated');
 		};
-
+	
 		/**
 		 * Gets viewport width.
 		 * @protected
@@ -1260,7 +1260,7 @@ webpackJsonpApp([1],{
 			}
 			return width;
 		};
-
+	
 		/**
 		 * Replaces the current content.
 		 * @public
@@ -1269,15 +1269,15 @@ webpackJsonpApp([1],{
 		Owl.prototype.replace = function(content) {
 			this.$stage.empty();
 			this._items = [];
-
+	
 			if (content) {
 				content = (content instanceof jQuery) ? content : $(content);
 			}
-
+	
 			if (this.settings.nestedItemSelector) {
 				content = content.find('.' + this.settings.nestedItemSelector);
 			}
-
+	
 			content.filter(function() {
 				return this.nodeType === 1;
 			}).each($.proxy(function(index, item) {
@@ -1286,12 +1286,12 @@ webpackJsonpApp([1],{
 				this._items.push(item);
 				this._mergers.push(item.find('[data-merge]').andSelf('[data-merge]').attr('data-merge') * 1 || 1);
 			}, this));
-
+	
 			this.reset($.isNumeric(this.settings.startPosition) ? this.settings.startPosition : 0);
-
+	
 			this.invalidate('items');
 		};
-
+	
 		/**
 		 * Adds an item.
 		 * @todo Use `item` instead of `content` for the event arguments.
@@ -1301,14 +1301,14 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.add = function(content, position) {
 			var current = this.relative(this._current);
-
+	
 			position = position === undefined ? this._items.length : this.normalize(position, true);
 			content = content instanceof jQuery ? content : $(content);
-
+	
 			this.trigger('add', { content: content, position: position });
-
+	
 			content = this.prepare(content);
-
+	
 			if (this._items.length === 0 || position === this._items.length) {
 				this._items.length === 0 && this.$stage.append(content);
 				this._items.length !== 0 && this._items[position - 1].after(content);
@@ -1319,14 +1319,14 @@ webpackJsonpApp([1],{
 				this._items.splice(position, 0, content);
 				this._mergers.splice(position, 0, content.find('[data-merge]').andSelf('[data-merge]').attr('data-merge') * 1 || 1);
 			}
-
+	
 			this._items[current] && this.reset(this._items[current].index());
-
+	
 			this.invalidate('items');
-
+	
 			this.trigger('added', { content: content, position: position });
 		};
-
+	
 		/**
 		 * Removes an item by its position.
 		 * @todo Use `item` instead of `content` for the event arguments.
@@ -1335,22 +1335,22 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.remove = function(position) {
 			position = this.normalize(position, true);
-
+	
 			if (position === undefined) {
 				return;
 			}
-
+	
 			this.trigger('remove', { content: this._items[position], position: position });
-
+	
 			this._items[position].remove();
 			this._items.splice(position, 1);
 			this._mergers.splice(position, 1);
-
+	
 			this.invalidate('items');
-
+	
 			this.trigger('removed', { content: null, position: position });
 		};
-
+	
 		/**
 		 * Preloads images with auto width.
 		 * @todo Replace by a more generic approach
@@ -1368,32 +1368,32 @@ webpackJsonpApp([1],{
 				}, this)).attr('src', element.attr('src') || element.attr('data-src') || element.attr('data-src-retina'));
 			}, this));
 		};
-
+	
 		/**
 		 * Destroys the carousel.
 		 * @public
 		 */
 		Owl.prototype.destroy = function() {
-
+	
 			this.$element.off('.owl.core');
 			this.$stage.off('.owl.core');
 			$(document).off('.owl.core');
-
+	
 			if (this.settings.responsive !== false) {
 				window.clearTimeout(this.resizeTimer);
 				this.off(window, 'resize', this._handlers.onThrottledResize);
 			}
-
+	
 			for (var i in this._plugins) {
 				this._plugins[i].destroy();
 			}
-
+	
 			this.$stage.children('.cloned').remove();
-
+	
 			this.$stage.unwrap();
 			this.$stage.children().contents().unwrap();
 			this.$stage.children().unwrap();
-
+	
 			this.$element
 				.removeClass(this.options.refreshClass)
 				.removeClass(this.options.loadingClass)
@@ -1404,7 +1404,7 @@ webpackJsonpApp([1],{
 				.attr('class', this.$element.attr('class').replace(new RegExp(this.options.responsiveClass + '-\\S+\\s', 'g'), ''))
 				.removeData('owl.carousel');
 		};
-
+	
 		/**
 		 * Operators to calculate right-to-left and left-to-right.
 		 * @protected
@@ -1427,7 +1427,7 @@ webpackJsonpApp([1],{
 					break;
 			}
 		};
-
+	
 		/**
 		 * Attaches to an internal event.
 		 * @protected
@@ -1443,7 +1443,7 @@ webpackJsonpApp([1],{
 				element.attachEvent('on' + event, listener);
 			}
 		};
-
+	
 		/**
 		 * Detaches from an internal event.
 		 * @protected
@@ -1459,7 +1459,7 @@ webpackJsonpApp([1],{
 				element.detachEvent('on' + event, listener);
 			}
 		};
-
+	
 		/**
 		 * Triggers a public event.
 		 * @todo Remove `status`, `relatedTarget` should be used instead.
@@ -1481,25 +1481,25 @@ webpackJsonpApp([1],{
 				[ name, 'owl', namespace || 'carousel' ].join('.').toLowerCase(),
 				$.extend({ relatedTarget: this }, status, data)
 			);
-
+	
 			if (!this._supress[name]) {
 				$.each(this._plugins, function(name, plugin) {
 					if (plugin.onTrigger) {
 						plugin.onTrigger(event);
 					}
 				});
-
+	
 				this.register({ type: Owl.Type.Event, name: name });
 				this.$element.trigger(event);
-
+	
 				if (this.settings && typeof this.settings[handler] === 'function') {
 					this.settings[handler].call(this, event);
 				}
 			}
-
+	
 			return event;
 		};
-
+	
 		/**
 		 * Enters a state.
 		 * @param name - The state name.
@@ -1509,11 +1509,11 @@ webpackJsonpApp([1],{
 				if (this._states.current[name] === undefined) {
 					this._states.current[name] = 0;
 				}
-
+	
 				this._states.current[name]++;
 			}, this));
 		};
-
+	
 		/**
 		 * Leaves a state.
 		 * @param name - The state name.
@@ -1523,7 +1523,7 @@ webpackJsonpApp([1],{
 				this._states.current[name]--;
 			}, this));
 		};
-
+	
 		/**
 		 * Registers an event or state.
 		 * @public
@@ -1534,7 +1534,7 @@ webpackJsonpApp([1],{
 				if (!$.event.special[object.name]) {
 					$.event.special[object.name] = {};
 				}
-
+	
 				if (!$.event.special[object.name].owl) {
 					var _default = $.event.special[object.name]._default;
 					$.event.special[object.name]._default = function(e) {
@@ -1551,13 +1551,13 @@ webpackJsonpApp([1],{
 				} else {
 					this._states.tags[object.name] = this._states.tags[object.name].concat(object.tags);
 				}
-
+	
 				this._states.tags[object.name] = $.grep(this._states.tags[object.name], $.proxy(function(tag, i) {
 					return $.inArray(tag, this._states.tags[object.name]) === i;
 				}, this));
 			}
 		};
-
+	
 		/**
 		 * Suppresses events.
 		 * @protected
@@ -1568,7 +1568,7 @@ webpackJsonpApp([1],{
 				this._supress[event] = true;
 			}, this));
 		};
-
+	
 		/**
 		 * Releases suppressed events.
 		 * @protected
@@ -1579,7 +1579,7 @@ webpackJsonpApp([1],{
 				delete this._supress[event];
 			}, this));
 		};
-
+	
 		/**
 		 * Gets unified pointer coordinates from event.
 		 * @todo #261
@@ -1589,13 +1589,13 @@ webpackJsonpApp([1],{
 		 */
 		Owl.prototype.pointer = function(event) {
 			var result = { x: null, y: null };
-
+	
 			event = event.originalEvent || event || window.event;
-
+	
 			event = event.touches && event.touches.length ?
 				event.touches[0] : event.changedTouches && event.changedTouches.length ?
 					event.changedTouches[0] : event;
-
+	
 			if (event.pageX) {
 				result.x = event.pageX;
 				result.y = event.pageY;
@@ -1603,10 +1603,10 @@ webpackJsonpApp([1],{
 				result.x = event.clientX;
 				result.y = event.clientY;
 			}
-
+	
 			return result;
 		};
-
+	
 		/**
 		 * Gets the difference of two vectors.
 		 * @todo #261
@@ -1621,7 +1621,7 @@ webpackJsonpApp([1],{
 				y: first.y - second.y
 			};
 		};
-
+	
 		/**
 		 * The jQuery Plugin for the Owl Carousel
 		 * @todo Navigation plugin `next` and `prev`
@@ -1629,15 +1629,15 @@ webpackJsonpApp([1],{
 		 */
 		$.fn.owlCarousel = function(option) {
 			var args = Array.prototype.slice.call(arguments, 1);
-
+	
 			return this.each(function() {
 				var $this = $(this),
 					data = $this.data('owl.carousel');
-
+	
 				if (!data) {
 					data = new Owl(this, typeof option == 'object' && option);
 					$this.data('owl.carousel', data);
-
+	
 					$.each([
 						'next', 'prev', 'to', 'destroy', 'refresh', 'replace', 'add', 'remove'
 					], function(i, event) {
@@ -1651,21 +1651,21 @@ webpackJsonpApp([1],{
 						}, data));
 					});
 				}
-
+	
 				if (typeof option == 'string' && option.charAt(0) !== '_') {
 					data[option].apply(data, args);
 				}
 			});
 		};
-
+	
 		/**
 		 * The constructor for the jQuery Plugin
 		 * @public
 		 */
 		$.fn.owlCarousel.Constructor = Owl;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * AutoRefresh Plugin
 	 * @version 2.0.0
@@ -1673,7 +1673,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the auto refresh plugin.
 		 * @class The Auto Refresh Plugin
@@ -1686,21 +1686,21 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * Refresh interval.
 			 * @protected
 			 * @type {number}
 			 */
 			this._interval = null;
-
+	
 			/**
 			 * Whether the element is currently visible or not.
 			 * @protected
 			 * @type {Boolean}
 			 */
 			this._visible = null;
-
+	
 			/**
 			 * All event handlers.
 			 * @protected
@@ -1713,14 +1713,14 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			// set default options
 			this._core.options = $.extend({}, AutoRefresh.Defaults, this._core.options);
-
+	
 			// register event handlers
 			this._core.$element.on(this._handlers);
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -1729,7 +1729,7 @@ webpackJsonpApp([1],{
 			autoRefresh: true,
 			autoRefreshInterval: 500
 		};
-
+	
 		/**
 		 * Watches the element.
 		 */
@@ -1737,11 +1737,11 @@ webpackJsonpApp([1],{
 			if (this._interval) {
 				return;
 			}
-
+	
 			this._visible = this._core.$element.is(':visible');
 			this._interval = window.setInterval($.proxy(this.refresh, this), this._core.settings.autoRefreshInterval);
 		};
-
+	
 		/**
 		 * Refreshes the element.
 		 */
@@ -1749,22 +1749,22 @@ webpackJsonpApp([1],{
 			if (this._core.$element.is(':visible') === this._visible) {
 				return;
 			}
-
+	
 			this._visible = !this._visible;
-
+	
 			this._core.$element.toggleClass('owl-hidden', !this._visible);
-
+	
 			this._visible && (this._core.invalidate('width') && this._core.refresh());
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 */
 		AutoRefresh.prototype.destroy = function() {
 			var handler, property;
-
+	
 			window.clearInterval(this._interval);
-
+	
 			for (handler in this._handlers) {
 				this._core.$element.off(handler, this._handlers[handler]);
 			}
@@ -1772,11 +1772,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.AutoRefresh = AutoRefresh;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Lazy Plugin
 	 * @version 2.0.0
@@ -1784,28 +1784,28 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the lazy plugin.
 		 * @class The Lazy Plugin
 		 * @param {Owl} carousel - The Owl Carousel
 		 */
 		var Lazy = function(carousel) {
-
+	
 			/**
 			 * Reference to the core.
 			 * @protected
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * Already loaded items.
 			 * @protected
 			 * @type {Array.<jQuery>}
 			 */
 			this._loaded = [];
-
+	
 			/**
 			 * Event handlers.
 			 * @protected
@@ -1816,11 +1816,11 @@ webpackJsonpApp([1],{
 					if (!e.namespace) {
 						return;
 					}
-
+	
 					if (!this._core.settings || !this._core.settings.lazyLoad) {
 						return;
 					}
-
+	
 					if ((e.property && e.property.name == 'position') || e.type == 'initialized') {
 						var settings = this._core.settings,
 							n = (settings.center && Math.ceil(settings.items / 2) || settings.items),
@@ -1828,7 +1828,7 @@ webpackJsonpApp([1],{
 							position = ((e.property && e.property.value) || this._core.current()) + i,
 							clones = this._core.clones().length,
 							load = $.proxy(function(i, v) { this.load(v) }, this);
-
+	
 						while (i++ < n) {
 							this.load(clones / 2 + this._core.relative(position));
 							clones && $.each(this._core.clones(this._core.relative(position)), load);
@@ -1837,14 +1837,14 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			// set the default options
 			this._core.options = $.extend({}, Lazy.Defaults, this._core.options);
-
+	
 			// register event handler
 			this._core.$element.on(this._handlers);
 		}
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -1852,7 +1852,7 @@ webpackJsonpApp([1],{
 		Lazy.Defaults = {
 			lazyLoad: false
 		}
-
+	
 		/**
 		 * Loads all resources of an item at the specified position.
 		 * @param {Number} position - The absolute position of the item.
@@ -1861,17 +1861,17 @@ webpackJsonpApp([1],{
 		Lazy.prototype.load = function(position) {
 			var $item = this._core.$stage.children().eq(position),
 				$elements = $item && $item.find('.owl-lazy');
-
+	
 			if (!$elements || $.inArray($item.get(0), this._loaded) > -1) {
 				return;
 			}
-
+	
 			$elements.each($.proxy(function(index, element) {
 				var $element = $(element), image,
 					url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src');
-
+	
 				this._core.trigger('load', { element: $element, url: url }, 'lazy');
-
+	
 				if ($element.is('img')) {
 					$element.one('load.owl.lazy', $.proxy(function() {
 						$element.css('opacity', 1);
@@ -1889,17 +1889,17 @@ webpackJsonpApp([1],{
 					image.src = url;
 				}
 			}, this));
-
+	
 			this._loaded.push($item.get(0));
 		}
-
+	
 		/**
 		 * Destroys the plugin.
 		 * @public
 		 */
 		Lazy.prototype.destroy = function() {
 			var handler, property;
-
+	
 			for (handler in this.handlers) {
 				this._core.$element.off(handler, this.handlers[handler]);
 			}
@@ -1907,11 +1907,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.Lazy = Lazy;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * AutoHeight Plugin
 	 * @version 2.0.0
@@ -1919,7 +1919,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the auto height plugin.
 		 * @class The Auto Height Plugin
@@ -1932,7 +1932,7 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * All event handlers.
 			 * @protected
@@ -1956,14 +1956,14 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			// set default options
 			this._core.options = $.extend({}, AutoHeight.Defaults, this._core.options);
-
+	
 			// register event handlers
 			this._core.$element.on(this._handlers);
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -1972,7 +1972,7 @@ webpackJsonpApp([1],{
 			autoHeight: false,
 			autoHeightClass: 'owl-height'
 		};
-
+	
 		/**
 		 * Updates the view.
 		 */
@@ -1982,21 +1982,21 @@ webpackJsonpApp([1],{
 				visible = this._core.$stage.children().toArray().slice(start, end);
 				heights = [],
 				maxheight = 0;
-
+	
 			$.each(visible, function(index, item) {
 				heights.push($(item).height());
 			});
-
+	
 			maxheight = Math.max.apply(null, heights);
-
+	
 			this._core.$stage.parent()
 				.height(maxheight)
 				.addClass(this._core.settings.autoHeightClass);
 		};
-
+	
 		AutoHeight.prototype.destroy = function() {
 			var handler, property;
-
+	
 			for (handler in this._handlers) {
 				this._core.$element.off(handler, this._handlers[handler]);
 			}
@@ -2004,11 +2004,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.AutoHeight = AutoHeight;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Video Plugin
 	 * @version 2.0.0
@@ -2016,7 +2016,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the video plugin.
 		 * @class The Video Plugin
@@ -2029,21 +2029,21 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * Cache all video URLs.
 			 * @protected
 			 * @type {Object}
 			 */
 			this._videos = {};
-
+	
 			/**
 			 * Current playing item.
 			 * @protected
 			 * @type {jQuery}
 			 */
 			this._playing = null;
-
+	
 			/**
 			 * All event handlers.
 			 * @todo The cloned content removale is too late
@@ -2075,27 +2075,27 @@ webpackJsonpApp([1],{
 					if (!e.namespace) {
 						return;
 					}
-
+	
 					var $element = $(e.content).find('.owl-video');
-
+	
 					if ($element.length) {
 						$element.css('display', 'none');
 						this.fetch($element, $(e.content));
 					}
 				}, this)
 			};
-
+	
 			// set default options
 			this._core.options = $.extend({}, Video.Defaults, this._core.options);
-
+	
 			// register event handlers
 			this._core.$element.on(this._handlers);
-
+	
 			this._core.$element.on('click.owl.video', '.owl-video-play-icon', $.proxy(function(e) {
 				this.play(e);
 			}, this));
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -2105,7 +2105,7 @@ webpackJsonpApp([1],{
 			videoHeight: false,
 			videoWidth: false
 		};
-
+	
 		/**
 		 * Gets the video ID and the type (YouTube/Vimeo only).
 		 * @protected
@@ -2118,10 +2118,10 @@ webpackJsonpApp([1],{
 				width = target.attr('data-width') || this._core.settings.videoWidth,
 				height = target.attr('data-height') || this._core.settings.videoHeight,
 				url = target.attr('href');
-
+	
 			if (url) {
 				id = url.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
-
+	
 				if (id[3].indexOf('youtu') > -1) {
 					type = 'youtube';
 				} else if (id[3].indexOf('vimeo') > -1) {
@@ -2133,19 +2133,19 @@ webpackJsonpApp([1],{
 			} else {
 				throw new Error('Missing video URL.');
 			}
-
+	
 			this._videos[url] = {
 				type: type,
 				id: id,
 				width: width,
 				height: height
 			};
-
+	
 			item.attr('data-video', url);
-
+	
 			this.thumbnail(target, this._videos[url]);
 		};
-
+	
 		/**
 		 * Creates video thumbnail.
 		 * @protected
@@ -2164,7 +2164,7 @@ webpackJsonpApp([1],{
 				settings = this._core.settings,
 				create = function(path) {
 					icon = '<div class="owl-video-play-icon"></div>';
-
+	
 					if (settings.lazyLoad) {
 						tnLink = '<div class="owl-video-tn ' + lazyClass + '" ' + srcType + '="' + path + '"></div>';
 					} else {
@@ -2173,22 +2173,22 @@ webpackJsonpApp([1],{
 					target.after(tnLink);
 					target.after(icon);
 				};
-
+	
 			// wrap video content into owl-video-wrapper div
 			target.wrap('<div class="owl-video-wrapper"' + dimensions + '></div>');
-
+	
 			if (this._core.settings.lazyLoad) {
 				srcType = 'data-src';
 				lazyClass = 'owl-lazy';
 			}
-
+	
 			// custom thumbnail
 			if (customTn.length) {
 				create(customTn.attr(srcType));
 				customTn.remove();
 				return false;
 			}
-
+	
 			if (video.type === 'youtube') {
 				path = "http://img.youtube.com/vi/" + video.id + "/hqdefault.jpg";
 				create(path);
@@ -2205,7 +2205,7 @@ webpackJsonpApp([1],{
 				});
 			}
 		};
-
+	
 		/**
 		 * Stops the current video.
 		 * @public
@@ -2218,7 +2218,7 @@ webpackJsonpApp([1],{
 			this._core.leave('playing');
 			this._core.trigger('stopped', null, 'video');
 		};
-
+	
 		/**
 		 * Starts the current video.
 		 * @public
@@ -2231,18 +2231,18 @@ webpackJsonpApp([1],{
 				width = video.width || '100%',
 				height = video.height || this._core.$stage.height(),
 				html;
-
+	
 			if (this._playing) {
 				return;
 			}
-
+	
 			this._core.enter('playing');
 			this._core.trigger('play', null, 'video');
-
+	
 			item = this._core.items(this._core.relative(item.index()));
-
+	
 			this._core.reset(item.index());
-
+	
 			if (video.type === 'youtube') {
 				html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/' +
 					video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
@@ -2251,12 +2251,12 @@ webpackJsonpApp([1],{
 					'?autoplay=1" width="' + width + '" height="' + height +
 					'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 			}
-
+	
 			$('<div class="owl-video-frame">' + html + '</div>').insertAfter(item.find('.owl-video'));
-
+	
 			this._playing = item.addClass('owl-video-playing');
 		};
-
+	
 		/**
 		 * Checks whether an video is currently in full screen mode or not.
 		 * @todo Bad style because looks like a readonly method but changes members.
@@ -2266,18 +2266,18 @@ webpackJsonpApp([1],{
 		Video.prototype.isInFullScreen = function() {
 			var element = document.fullscreenElement || document.mozFullScreenElement ||
 					document.webkitFullscreenElement;
-
+	
 			return element && $(element).parent().hasClass('owl-video-frame');
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 */
 		Video.prototype.destroy = function() {
 			var handler, property;
-
+	
 			this._core.$element.off('click.owl.video');
-
+	
 			for (handler in this._handlers) {
 				this._core.$element.off(handler, this._handlers[handler]);
 			}
@@ -2285,11 +2285,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.Video = Video;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Animate Plugin
 	 * @version 2.0.0
@@ -2297,7 +2297,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the animate plugin.
 		 * @class The Navigation Plugin
@@ -2309,7 +2309,7 @@ webpackJsonpApp([1],{
 			this.swapping = true;
 			this.previous = undefined;
 			this.next = undefined;
-
+	
 			this.handlers = {
 				'change.owl.carousel': $.proxy(function(e) {
 					if (e.namespace && e.property.name == 'position') {
@@ -2328,10 +2328,10 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			this.core.$element.on(this.handlers);
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -2340,35 +2340,35 @@ webpackJsonpApp([1],{
 			animateOut: false,
 			animateIn: false
 		};
-
+	
 		/**
 		 * Toggles the animation classes whenever an translations starts.
 		 * @protected
 		 * @returns {Boolean|undefined}
 		 */
 		Animate.prototype.swap = function() {
-
+	
 			if (this.core.settings.items !== 1) {
 				return;
 			}
-
+	
 			if (!$.support.animation || !$.support.transition) {
 				return;
 			}
-
+	
 			this.core.speed(0);
-
+	
 			var left,
 				clear = $.proxy(this.clear, this),
 				previous = this.core.$stage.children().eq(this.previous),
 				next = this.core.$stage.children().eq(this.next),
 				incoming = this.core.settings.animateIn,
 				outgoing = this.core.settings.animateOut;
-
+	
 			if (this.core.current() === this.previous) {
 				return;
 			}
-
+	
 			if (outgoing) {
 				left = this.core.coordinates(this.previous) - this.core.coordinates(this.next);
 				previous.one($.support.animation.end, clear)
@@ -2376,14 +2376,14 @@ webpackJsonpApp([1],{
 					.addClass('animated owl-animated-out')
 					.addClass(outgoing);
 			}
-
+	
 			if (incoming) {
 				next.one($.support.animation.end, clear)
 					.addClass('animated owl-animated-in')
 					.addClass(incoming);
 			}
 		};
-
+	
 		Animate.prototype.clear = function(e) {
 			$(e.target).css( { 'left': '' } )
 				.removeClass('animated owl-animated-out owl-animated-in')
@@ -2391,14 +2391,14 @@ webpackJsonpApp([1],{
 				.removeClass(this.core.settings.animateOut);
 			this.core.onTransitionEnd();
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 * @public
 		 */
 		Animate.prototype.destroy = function() {
 			var handler, property;
-
+	
 			for (handler in this.handlers) {
 				this.core.$element.off(handler, this.handlers[handler]);
 			}
@@ -2406,11 +2406,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.Animate = Animate;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Autoplay Plugin
 	 * @version 2.0.0
@@ -2419,7 +2419,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		/**
 		 * Creates the autoplay plugin.
 		 * @class The Autoplay Plugin
@@ -2432,19 +2432,19 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * The autoplay interval.
 			 * @type {Number}
 			 */
 			this._interval = null;
-
+	
 			/**
 			 * Indicates whenever the autoplay is paused.
 			 * @type {Boolean}
 			 */
 			this._paused = false;
-
+	
 			/**
 			 * All event handlers.
 			 * @protected
@@ -2486,14 +2486,14 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			// register event handlers
 			this._core.$element.on(this._handlers);
-
+	
 			// set default options
 			this._core.options = $.extend({}, Autoplay.Defaults, this._core.options);
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -2504,7 +2504,7 @@ webpackJsonpApp([1],{
 			autoplayHoverPause: false,
 			autoplaySpeed: false
 		};
-
+	
 		/**
 		 * Starts the autoplay.
 		 * @public
@@ -2513,13 +2513,13 @@ webpackJsonpApp([1],{
 		 */
 		Autoplay.prototype.play = function(timeout, speed) {
 			this._paused = false;
-
+	
 			if (this._core.is('rotating')) {
 				return;
 			}
-
+	
 			this._core.enter('rotating');
-
+	
 			this._interval = window.setInterval($.proxy(function() {
 				if (this._paused || this._core.is('busy') || this._core.is('interacting') || document.hidden) {
 					return;
@@ -2527,7 +2527,7 @@ webpackJsonpApp([1],{
 				this._core.next(speed || this._core.settings.autoplaySpeed);
 			}, this), timeout || this._core.settings.autoplayTimeout);
 		};
-
+	
 		/**
 		 * Stops the autoplay.
 		 * @public
@@ -2536,11 +2536,11 @@ webpackJsonpApp([1],{
 			if (!this._core.is('rotating')) {
 				return;
 			}
-
+	
 			window.clearInterval(this._interval);
 			this._core.leave('rotating');
 		};
-
+	
 		/**
 		 * Stops the autoplay.
 		 * @public
@@ -2549,18 +2549,18 @@ webpackJsonpApp([1],{
 			if (!this._core.is('rotating')) {
 				return;
 			}
-
+	
 			this._paused = true;
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 */
 		Autoplay.prototype.destroy = function() {
 			var handler, property;
-
+	
 			this.stop();
-
+	
 			for (handler in this._handlers) {
 				this._core.$element.off(handler, this._handlers[handler]);
 			}
@@ -2568,11 +2568,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.autoplay = Autoplay;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Navigation Plugin
 	 * @version 2.0.0
@@ -2581,7 +2581,7 @@ webpackJsonpApp([1],{
 	 */
 	;(function($, window, document, undefined) {
 		'use strict';
-
+	
 		/**
 		 * Creates the navigation plugin.
 		 * @class The Navigation Plugin
@@ -2594,41 +2594,41 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * Indicates whether the plugin is initialized or not.
 			 * @protected
 			 * @type {Boolean}
 			 */
 			this._initialized = false;
-
+	
 			/**
 			 * The current paging indexes.
 			 * @protected
 			 * @type {Array}
 			 */
 			this._pages = [];
-
+	
 			/**
 			 * All DOM elements of the user interface.
 			 * @protected
 			 * @type {Object}
 			 */
 			this._controls = {};
-
+	
 			/**
 			 * Markup for an indicator.
 			 * @protected
 			 * @type {Array.<String>}
 			 */
 			this._templates = [];
-
+	
 			/**
 			 * The carousel element.
 			 * @type {jQuery}
 			 */
 			this.$element = this._core.$element;
-
+	
 			/**
 			 * Overridden methods of the carousel.
 			 * @protected
@@ -2639,7 +2639,7 @@ webpackJsonpApp([1],{
 				prev: this._core.prev,
 				to: this._core.to
 			};
-
+	
 			/**
 			 * All event handlers.
 			 * @protected
@@ -2686,14 +2686,14 @@ webpackJsonpApp([1],{
 					}
 				}, this)
 			};
-
+	
 			// set default options
 			this._core.options = $.extend({}, Navigation.Defaults, this._core.options);
-
+	
 			// register event handlers
 			this.$element.on(this._handlers);
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -2716,7 +2716,7 @@ webpackJsonpApp([1],{
 			dotsSpeed: false,
 			dotsContainer: false
 		};
-
+	
 		/**
 		 * Initializes the layout of the plugin and extends the carousel.
 		 * @protected
@@ -2724,11 +2724,11 @@ webpackJsonpApp([1],{
 		Navigation.prototype.initialize = function() {
 			var override,
 				settings = this._core.settings;
-
+	
 			// create DOM structure for relative navigation
 			this._controls.$relative = (settings.navContainer ? $(settings.navContainer)
 				: $('<div>').addClass(settings.navContainerClass).appendTo(this.$element)).addClass('disabled');
-
+	
 			this._controls.$previous = $('<' + settings.navElement + '>')
 				.addClass(settings.navClass[0])
 				.html(settings.navText[0])
@@ -2743,7 +2743,7 @@ webpackJsonpApp([1],{
 				.on('click', $.proxy(function(e) {
 					this.next(settings.navSpeed);
 				}, this));
-
+	
 			// create DOM structure for absolute navigation
 			if (!settings.dotsData) {
 				this._templates = [ $('<div>')
@@ -2751,32 +2751,32 @@ webpackJsonpApp([1],{
 					.append($('<span>'))
 					.prop('outerHTML') ];
 			}
-
+	
 			this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer)
 				: $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');
-
+	
 			this._controls.$absolute.on('click', 'div', $.proxy(function(e) {
 				var index = $(e.target).parent().is(this._controls.$absolute)
 					? $(e.target).index() : $(e.target).parent().index();
-
+	
 				e.preventDefault();
-
+	
 				this.to(index, settings.dotsSpeed);
 			}, this));
-
+	
 			// override public methods of the carousel
 			for (override in this._overrides) {
 				this._core[override] = $.proxy(this[override], this);
 			}
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 * @protected
 		 */
 		Navigation.prototype.destroy = function() {
 			var handler, control, property, override;
-
+	
 			for (handler in this._handlers) {
 				this.$element.off(handler, this._handlers[handler]);
 			}
@@ -2790,7 +2790,7 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		/**
 		 * Updates the internal state.
 		 * @protected
@@ -2803,14 +2803,14 @@ webpackJsonpApp([1],{
 				settings = this._core.settings,
 				size = settings.center || settings.autoWidth || settings.dotsData
 					? 1 : settings.dotsEach || settings.items;
-
+	
 			if (settings.slideBy !== 'page') {
 				settings.slideBy = Math.min(settings.slideBy, settings.items);
 			}
-
+	
 			if (settings.dots || settings.slideBy == 'page') {
 				this._pages = [];
-
+	
 				for (i = lower, j = 0, k = 0; i < upper; i++) {
 					if (j >= size || j === 0) {
 						this._pages.push({
@@ -2826,7 +2826,7 @@ webpackJsonpApp([1],{
 				}
 			}
 		};
-
+	
 		/**
 		 * Draws the user interface.
 		 * @todo The option `dotsData` wont work.
@@ -2838,19 +2838,19 @@ webpackJsonpApp([1],{
 				disabled = this._core.items().length <= settings.items,
 				index = this._core.relative(this._core.current()),
 				loop = settings.loop || settings.rewind;
-
+	
 			this._controls.$relative.toggleClass('disabled', !settings.nav || disabled);
-
+	
 			if (settings.nav) {
 				this._controls.$previous.toggleClass('disabled', !loop && index <= this._core.minimum(true));
 				this._controls.$next.toggleClass('disabled', !loop && index >= this._core.maximum(true));
 			}
-
+	
 			this._controls.$absolute.toggleClass('disabled', !settings.dots || disabled);
-
+	
 			if (settings.dots) {
 				difference = this._pages.length - this._controls.$absolute.children().length;
-
+	
 				if (settings.dotsData && difference !== 0) {
 					this._controls.$absolute.html(this._templates.join(''));
 				} else if (difference > 0) {
@@ -2858,12 +2858,12 @@ webpackJsonpApp([1],{
 				} else if (difference < 0) {
 					this._controls.$absolute.children().slice(difference).remove();
 				}
-
+	
 				this._controls.$absolute.find('.active').removeClass('active');
 				this._controls.$absolute.children().eq($.inArray(this.current(), this._pages)).addClass('active');
 			}
 		};
-
+	
 		/**
 		 * Extends event data.
 		 * @protected
@@ -2871,7 +2871,7 @@ webpackJsonpApp([1],{
 		 */
 		Navigation.prototype.onTrigger = function(event) {
 			var settings = this._core.settings;
-
+	
 			event.page = {
 				index: $.inArray(this.current(), this._pages),
 				count: this._pages.length,
@@ -2879,7 +2879,7 @@ webpackJsonpApp([1],{
 					? 1 : settings.dotsEach || settings.items)
 			};
 		};
-
+	
 		/**
 		 * Gets the current page position of the carousel.
 		 * @protected
@@ -2891,7 +2891,7 @@ webpackJsonpApp([1],{
 				return page.start <= current && page.end >= current;
 			}, this)).pop();
 		};
-
+	
 		/**
 		 * Gets the current succesor/predecessor position.
 		 * @protected
@@ -2900,7 +2900,7 @@ webpackJsonpApp([1],{
 		Navigation.prototype.getPosition = function(successor) {
 			var position, length,
 				settings = this._core.settings;
-
+	
 			if (settings.slideBy == 'page') {
 				position = $.inArray(this.current(), this._pages);
 				length = this._pages.length;
@@ -2911,10 +2911,10 @@ webpackJsonpApp([1],{
 				length = this._core.items().length;
 				successor ? position += settings.slideBy : position -= settings.slideBy;
 			}
-
+	
 			return position;
 		};
-
+	
 		/**
 		 * Slides to the next item or page.
 		 * @public
@@ -2923,7 +2923,7 @@ webpackJsonpApp([1],{
 		Navigation.prototype.next = function(speed) {
 			$.proxy(this._overrides.to, this._core)(this.getPosition(true), speed);
 		};
-
+	
 		/**
 		 * Slides to the previous item or page.
 		 * @public
@@ -2932,7 +2932,7 @@ webpackJsonpApp([1],{
 		Navigation.prototype.prev = function(speed) {
 			$.proxy(this._overrides.to, this._core)(this.getPosition(false), speed);
 		};
-
+	
 		/**
 		 * Slides to the specified item or page.
 		 * @public
@@ -2942,7 +2942,7 @@ webpackJsonpApp([1],{
 		 */
 		Navigation.prototype.to = function(position, speed, standard) {
 			var length;
-
+	
 			if (!standard) {
 				length = this._pages.length;
 				$.proxy(this._overrides.to, this._core)(this._pages[((position % length) + length) % length].start, speed);
@@ -2950,11 +2950,11 @@ webpackJsonpApp([1],{
 				$.proxy(this._overrides.to, this._core)(position, speed);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.Navigation = Navigation;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Hash Plugin
 	 * @version 2.0.0
@@ -2963,7 +2963,7 @@ webpackJsonpApp([1],{
 	 */
 	;(function($, window, document, undefined) {
 		'use strict';
-
+	
 		/**
 		 * Creates the hash plugin.
 		 * @class The Hash Plugin
@@ -2976,20 +2976,20 @@ webpackJsonpApp([1],{
 			 * @type {Owl}
 			 */
 			this._core = carousel;
-
+	
 			/**
 			 * Hash index for the items.
 			 * @protected
 			 * @type {Object}
 			 */
 			this._hashes = {};
-
+	
 			/**
 			 * The carousel element.
 			 * @type {jQuery}
 			 */
 			this.$element = this._core.$element;
-
+	
 			/**
 			 * All event handlers.
 			 * @protected
@@ -3004,11 +3004,11 @@ webpackJsonpApp([1],{
 				'prepared.owl.carousel': $.proxy(function(e) {
 					if (e.namespace) {
 						var hash = $(e.content).find('[data-hash]').andSelf('[data-hash]').attr('data-hash');
-
+	
 						if (!hash) {
 							return;
 						}
-
+	
 						this._hashes[hash] = e.content;
 					}
 				}, this),
@@ -3018,36 +3018,36 @@ webpackJsonpApp([1],{
 							hash = $.map(this._hashes, function(item, hash) {
 								return item === current ? hash : null;
 							}).join();
-
+	
 						if (!hash || window.location.hash.slice(1) === hash) {
 							return;
 						}
-
+	
 						window.location.hash = hash;
 					}
 				}, this)
 			};
-
+	
 			// set default options
 			this._core.options = $.extend({}, Hash.Defaults, this._core.options);
-
+	
 			// register the event handlers
 			this.$element.on(this._handlers);
-
+	
 			// register event listener for hash navigation
 			$(window).on('hashchange.owl.navigation', $.proxy(function(e) {
 				var hash = window.location.hash.substring(1),
 					items = this._core.$stage.children(),
 					position = this._hashes[hash] && items.index(this._hashes[hash]);
-
+	
 				if (position === undefined || position === this._core.current()) {
 					return;
 				}
-
+	
 				this._core.to(this._core.relative(position), false, true);
 			}, this));
 		};
-
+	
 		/**
 		 * Default options.
 		 * @public
@@ -3055,16 +3055,16 @@ webpackJsonpApp([1],{
 		Hash.Defaults = {
 			URLhashListener: false
 		};
-
+	
 		/**
 		 * Destroys the plugin.
 		 * @public
 		 */
 		Hash.prototype.destroy = function() {
 			var handler, property;
-
+	
 			$(window).off('hashchange.owl.navigation');
-
+	
 			for (handler in this._handlers) {
 				this._core.$element.off(handler, this._handlers[handler]);
 			}
@@ -3072,11 +3072,11 @@ webpackJsonpApp([1],{
 				typeof this[property] != 'function' && (this[property] = null);
 			}
 		};
-
+	
 		$.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
-
+	
 	})(window.Zepto || window.jQuery, window, document);
-
+	
 	/**
 	 * Support Plugin
 	 *
@@ -3086,7 +3086,7 @@ webpackJsonpApp([1],{
 	 * @license The MIT License (MIT)
 	 */
 	;(function($, window, document, undefined) {
-
+	
 		var style = $('<support>').get(0).style,
 			prefixes = 'Webkit Moz O ms'.split(' '),
 			events = {
@@ -3121,43 +3121,43 @@ webpackJsonpApp([1],{
 					return !!test('animation');
 				}
 			};
-
+	
 		function test(property, prefixed) {
 			var result = false,
 				upper = property.charAt(0).toUpperCase() + property.slice(1);
-
+	
 			$.each((property + ' ' + prefixes.join(upper + ' ') + upper).split(' '), function(i, property) {
 				if (style[property] !== undefined) {
 					result = prefixed ? property : true;
 					return false;
 				}
 			});
-
+	
 			return result;
 		}
-
+	
 		function prefixed(property) {
 			return test(property, true);
 		}
-
+	
 		if (tests.csstransitions()) {
 			/* jshint -W053 */
 			$.support.transition = new String(prefixed('transition'))
 			$.support.transition.end = events.transition.end[ $.support.transition ];
 		}
-
+	
 		if (tests.cssanimations()) {
 			/* jshint -W053 */
 			$.support.animation = new String(prefixed('animation'))
 			$.support.animation.end = events.animation.end[ $.support.animation ];
 		}
-
+	
 		if (tests.csstransforms()) {
 			/* jshint -W053 */
 			$.support.transform = new String(prefixed('transform'));
 			$.support.transform3d = tests.csstransforms3d();
 		}
-
+	
 	})(window.Zepto || window.jQuery, window, document);
 
 
@@ -3174,7 +3174,7 @@ webpackJsonpApp([1],{
 /***/ function(module, exports) {
 
 	'use strict';
-
+	
 	var Sliders = {
 	    run: function run() {
 	        var sliders = [{
@@ -3187,7 +3187,7 @@ webpackJsonpApp([1],{
 	                navText: ['', '']
 	            }
 	        }];
-
+	
 	        // {
 	        //     'selector' : '.index-new-products',
 	        //     'options' : {
@@ -3203,9 +3203,10 @@ webpackJsonpApp([1],{
 	        });
 	    }
 	};
-
+	
 	module.exports = Sliders;
 
 /***/ }
 
 });
+//# sourceMappingURL=1.1.js.map

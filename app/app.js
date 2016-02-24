@@ -44,6 +44,7 @@ $(function () {
 
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');
+let Noodles = require('./js/noodles');
 
 // Run components
 
@@ -55,6 +56,9 @@ $(function(){
 	Dropdowns.run();
 });
 
+$(function(){
+	Noodles.run();
+});
 // Export components
 
 exports.lazyimages = LazyImages;
@@ -62,3 +66,4 @@ exports.lazyimages = LazyImages;
 //exports.anchors = Anchors;
 //exports.sliders = Sliders;
 exports.dropdowns = Dropdowns;
+exports.Noodles;
