@@ -470,9 +470,9 @@
 </div>
 <div class="container">
 	<ul class="pagination">
+		<li class="pagination__item pagination__item--prev"><a href="#"><svg class="i-icon" role="img"><use xlink:href="#arrow"/></svg></a></li>
 		<li class="pagination__item pagination__item--current"><a href="#">1</a></li>
 		<li class="pagination__item"><a href="#">2</a></li>
-		<li class="pagination__item"><a href="#">3</a></li>
 		<li class="pagination__item"><a href="#">...</a></li>
 		<li class="pagination__item"><a href="#">17</a></li>
 		<li class="pagination__item pagination__item--next"><a href="#"><svg class="i-icon" role="img"><use xlink:href="#arrow"/></svg></a></li>

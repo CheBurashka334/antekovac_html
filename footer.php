@@ -99,15 +99,12 @@
             </div>
             <div class="footer-copyrights">
                 <div class="footer-copyrights__logo">
-                    <img src="images/logo-footer.png" alt="" />
+                    <span class="logo-box">
+						<svg class="logo" role="img"><use xlink:href="#logo"/></svg>
+					</span>
                     <span class="footer-copyrights__rights">
                         Все права защищены.<br>2007 - 2016
                     </span>
-                </div>
-                <div class="footer-copyrights__fact">
-                    <a href="#">
-                        <span><span class="razr">Разработка сайта</span> —  Веб-студия «Факт»</span>
-                    </a>
                 </div>
             </div>
         </div>

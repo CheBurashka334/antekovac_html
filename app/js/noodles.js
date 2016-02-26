@@ -32,6 +32,14 @@ var Noodles = {
 				console.error('Box? Which box?');
 			}
 		});
+		
+		$(window).on('scroll', function(){
+			if($(window).scrollTop() > 100){
+				$('.header').removeClass('header--transparent');
+			} else {
+				$('.header').addClass('header--transparent');
+			}
+		});
     }
 };
 

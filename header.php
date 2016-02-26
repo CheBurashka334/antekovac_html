@@ -14,55 +14,52 @@
 <body>
 <div class="hidden"><?php require("svg/symbol/svg/sprite.symbol.svg"); ?></div>
 
-
-<main>
-
-    <header>
-        <div class="header">
-            <div class="container">
-                <div class="header__wrap">
-                    <div class="header-menu">
-                        <div class="header-menu__burger js-anim--hover js-anim--click js-toggle-box" data-box=".page-aside">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="menu-dropdown">
-
-                        </div>
-                    </div>
-                    <div class="header__logo header__logo--short">
-                        <a href="#">
-                            <!--<img src="images/logo.png" alt="" />-->
-							<svg class="logo" role="img"><use xlink:href="#logo"/></svg>
-                        </a>
-                    </div>
-                    <div class="header__right">
-                        <div class="header__link">
-                            <a href="#">
-                                <svg class="i-icon i-icon--stroke"role="img">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="header__link">
-                            <a href="#">
-                                <svg class="i-icon i-icon--stroke"role="img">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                                </svg>
-                                <span>17</span>
-                            </a>
-                        </div>
-                        <div class="header__link">
-                            <a href="#">
-                                <svg class="i-icon"role="img">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
-                                </svg>
-                                <span>8</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<aside class="page-aside page-aside--left main-menu">
+	<?php require ('page-aside_left.php') ?>
+</aside>
+<main class="page">
+	<!-- .header--transparent только на главной-->
+    <header class="header header--transparent">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header-menu">
+					<div class="header-menu__burger js-anim--hover js-anim--click js-toggle-box" data-box=".page-aside.main-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="header__logo">
+					<a href="#">
+						<!--<img src="images/logo.png" alt="" />-->
+						<svg class="logo" role="img"><use xlink:href="#logo"/></svg>
+					</a>
+				</div>
+				<div class="header__right">
+					<div class="header__link">
+						<a href="#">
+							<svg class="i-icon i-icon--stroke"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header__link">
+						<a href="#">
+							<svg class="i-icon i-icon--stroke"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+							</svg>
+							<span>17</span>
+						</a>
+					</div>
+					<div class="header__link">
+						<a href="#">
+							<svg class="i-icon"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
+							</svg>
+							<span>8</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
     </header>

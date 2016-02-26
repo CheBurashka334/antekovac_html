@@ -116,8 +116,20 @@
         height: auto;
         min-height: 0;
         padding: 0;
+		margin: 0;
+		border: 1px solid var(--light-gray);
+		border-top: 0;
         &__wrap {
             position: static;
         }
+		&__like {
+			top: 25px;
+			right: 25px;
+			bottom: auto;
+			left: auto;
+		}
+		&__overlay {
+			display: none;
+		}
     }
 }

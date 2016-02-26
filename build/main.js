@@ -132,8 +132,8 @@ var App =
 	$(function () {
 	    if ($('.owl-carousel').length) {
 	        __webpack_require__.e/* nsure */(1, function (require) {
-	            __webpack_require__(34);
-	            var Sliders = __webpack_require__(37);
+	            __webpack_require__(35);
+	            var Sliders = __webpack_require__(38);
 	            Sliders.run();
 	        });
 	    }
@@ -141,7 +141,7 @@ var App =
 	
 	var LazyImages = __webpack_require__(32);
 	var Dropdowns = __webpack_require__(33);
-	var Noodles = __webpack_require__(38);
+	var Noodles = __webpack_require__(34);
 	
 	// Run components
 	
@@ -10058,6 +10058,8 @@ var App =
 	__webpack_require__(17);
 	__webpack_require__(18);
 	__webpack_require__(19);
+	__webpack_require__(39);
+	__webpack_require__(40);
 	
 	/*Header*/
 	
@@ -10359,11 +10361,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */
+/* 34 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10396,10 +10394,34 @@ var App =
 					console.error('Box? Which box?');
 				}
 			});
+	
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 100) {
+					$('.header').removeClass('header--transparent');
+				} else {
+					$('.header').addClass('header--transparent');
+				}
+			});
 		}
 	};
 	
 	module.exports = Noodles;
+
+/***/ },
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 40 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

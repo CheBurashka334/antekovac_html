@@ -1,3 +1,11 @@
+@import "../../media.css";
+
 .products-list {
     margin-left: -20px;
+}
+@media (--mobile){
+	.products-list {
+		width: 100vw;
+		margin-left: calc((100vw - 100%)/ -2);
+	}
 }

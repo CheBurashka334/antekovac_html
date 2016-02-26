@@ -1,4 +1,5 @@
 @import "../colors.css";
+@import "../media.css";
 
 .owl-item {
     z-index: 1;
@@ -7,7 +8,8 @@
 .main-slider {
     &__slide {
         width: 100vw;
-        height: calc(100vh - 80px);
+        //height: calc(100vh - 80px);
+		height: 100vh;
         background-position: top center;
         background-size: cover;
         position: relative;
@@ -20,6 +22,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: 240px;
+		max-width: 66%;
         height: 80%;
         max-height: 335px;
         text-align: center;
@@ -122,4 +125,49 @@
     .nav-prev {
         transform: rotate(180deg);
     }
+}
+
+@media (--mobile){
+	.main-slider {
+		&__slide {
+			background-position: top left 20%;
+		}
+		&__info {
+			height: 63%;
+			top: 55%;
+			&::before {
+				width: calc(100% + 22px);
+				height: calc(100% + 22px);
+				top: -16px;
+				left: -16px;
+			}
+		}
+		.owl-dots {
+			bottom: 20px;
+			left: 50%;
+			right: auto;
+			transform: translateX(-50%);
+		}
+		.owl-dot {
+			width: 16px;
+			height: 16px;
+			margin: 0;
+			border-color: transparent;
+			&::after {
+				background: #d0d0d0;
+			}
+			&.active {
+				color: #2e3034;
+				border-color: transparent;
+				&::after {
+					width: 4px;
+					height: 4px;
+					background: currentColor;
+				}
+			}
+		}
+	}
+	.main-slider-navs {
+		display: none;
+	}
 }

@@ -1,8 +1,18 @@
+@import "../../colors.css";
+@import "../../media.css";
+
 .header-menu {
+	position: fixed;
+	top: 20px;
+	left: 35px;
+	will-change: left;
+	transition: left .3s;
+	.page-aside--left.open ~ .page .header & {
+		left: 40px;
+	}
     &__burger {
         cursor: pointer;
 		transition: none;
-		
 		transform-origin: center;
 		width: 50px;
 		height: 40px;
@@ -25,9 +35,32 @@
 			&:last-child {
 				transform: translateY(9px);
 			}
+			.header--transparent & {
+				background: #fff;
+			}
+			.page-aside--left.open ~ .page .header & { 
+				background: var(--main-brown);
+				transition:  transform .5s, background .3s;
+				transform-origin: center;
+				&:first-child {
+					transform: rotate(45deg);
+				}
+				&:first-child + span {
+					transform: scale(0)!important; /* хз, баг какой-то */
+				}
+				&:last-child {
+					transform: rotate(-45deg);
+				}
+			}
+			.page-aside--left.open:hover ~ .page .header & {
+				background: #fff;
+				&:first-child + span {
+					transform: scale(0);
+				}
+			}
         }
 		&.anim-hover--start {
-		  transition: transform .5s;
+			transition: transform .5s;
 			transform: rotate(180deg);
 			span:first-child {
 				transform: rotate(45deg) scaleX(0.5) translateY(50%);
@@ -37,6 +70,19 @@
 			}
 			span:last-child {
 				transform: rotate(-45deg) scaleX(0.5) translateY(-50%);
+			}
+			.page-aside--left.open ~ .page .header & {
+				transform: rotate(0);
+				span:first-child {
+					transform: translateY(0) rotate(45deg) scaleX(1);
+				}
+				span:first-child + span {
+					transition: transform .2s;
+					transform: translateX(0) scale(0);
+				}
+				span:last-child {
+					transform: translateY(0) rotate(-45deg) scaleX(1);
+				}
 			}
 		}
 		&.anim-hover--end {
@@ -51,10 +97,39 @@
 					transform: translateY(9px);
 				}
 			}
+			.page-aside--left.open ~ .page .header & {
+				transform: rotate(0);
+				span {
+					transform-origin: center;
+					&:first-child {
+						transform: rotate(45deg) scaleX(1) translateY(0);
+					}
+					&:first-child + span {
+						transform: scale(0) translateX(0);
+					}
+					&:last-child {
+						transform: rotate(-45deg) scaleX(1) translateY(0);
+					}
+				}
+			}
 		}
 		&.anim-click--play {
 			transform: rotate(180deg) translateY(-2px);
 			transition: transform .1s;
+			.page-aside--left.open ~ .page .header & {
+				transform: translateY(2px);
+			}
 		}
+	}
+}
+@media (--big) {
+	.header-menu {
+		left: calc((100% - 1300px)/2 + 60px);
+	}
+}
+@media (--mobile) {
+	.header-menu {
+		top: 15px;
+		left: 15px;
 	}
 }

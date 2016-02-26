@@ -45,9 +45,21 @@
         background-image:  svg('mail', '[fill]: var(--main-brown)');
         background-repeat: no-repeat;
         background-position: right 10% center;
+		background-size: auto 15px;
         padding-right: 50px;
-		&.btn--transparent:hover {
-			background-image:  svg('mail', '[fill]: white');
+		&.btn--transparent {
+			background-image:  svg('mail', '[fill]: var(--main-brown)');
+			&--white {
+				background-image:  svg('mail', '[fill]: white');
+			}
+		}
+		&.btn--transparent {
+			&:hover {
+				background-image:  svg('mail', '[fill]: white');
+			}
+			&--white:hover {
+				 background-image:  svg('mail', '[fill]: var(--main-brown)');
+			}
 		}
 		.btn--white & {
 			background-image:  svg('mail', '[fill]: white');

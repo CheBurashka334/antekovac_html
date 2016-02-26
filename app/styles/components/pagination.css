@@ -8,7 +8,7 @@
     &__item {
         display: inline-block;
         vertical-align: middle;
-        margin-right: 5px;
+        margin-right: 4px;
 		&:last-of-type {
 			margin-right: 0;
 		}
@@ -73,7 +73,20 @@
 
 @media (--mobile) {
     .pagination {
+		width: 100vw;
+		margin: -1px 0;
+		padding: 0;
+		margin-left: calc((100vw - 100%)/ -2);
         text-align: center;
-        margin: 20px 0; 
+		border: 1px solid var(--light-gray);
+		background: white;
+		&__item {
+			a {
+				background: var(--main-white);
+			}
+			&--current  a {
+				color: var(--main-brown);
+			}
+		}
     }
 }
