@@ -17,7 +17,7 @@
 <aside class="page-aside page-aside--left main-menu">
 	<?php require ('page-aside_left.php') ?>
 </aside>
-<main class="page">
+<main class="page"><!-- .home-page добавить на главной-->
 	<!-- .header--transparent только на главной-->
     <header class="header header--transparent">
 		<div class="container">
