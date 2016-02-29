@@ -129,7 +129,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product1.jpg" alt="" />
+                        <img src="images/product1.png" alt="" />
                     </a>
                 </div>
                 <div class="product-tile__info">
@@ -187,68 +187,70 @@
 				</div>
             </div>
         </div>
-        <div class="product-tile product-tile--half">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/product2.jpg" alt="" />
-                    </a>
-                </div>
-				<div class="product-tile__info">
-					<div class="product-tile__name">
-						Ключница
+		<div class="product-tile product-tile--half-wrapper">
+			<div class="product-tile product-tile--half">
+				<div class="product-tile__wrap">
+					<div class="product-tile__image">
+						<a href="#">
+							<img src="images/product2.png" alt="" />
+						</a>
 					</div>
-					<div class="product-tile__price">
-						<div class="price">
-							24 680 ₽
+					<div class="product-tile__info">
+						<div class="product-tile__name">
+							Ключница
+						</div>
+						<div class="product-tile__price">
+							<div class="price">
+								24 680 ₽
+							</div>
 						</div>
 					</div>
-				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+					<div class="product-tile__like">
+						<svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
 						</svg>
-                    </a>
-				</div>
-            </div>
-        </div>
-        <div class="product-tile product-tile--half">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/product6.png" alt="" />
-                    </a>
-                </div>
-				<div class="product-tile__info">
-					<div class="product-tile__name">
-					   Обложка
 					</div>
-					<div class="product-tile__price">
-						<div class="price">
-							24 680 ₽
+					<div class="product-tile__overlay">
+						<a href="#">
+						   <svg class="i-icon"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="product-tile product-tile--half">
+				<div class="product-tile__wrap">
+					<div class="product-tile__image">
+						<a href="#">
+							<img src="images/product6.png" alt="" />
+						</a>
+					</div>
+					<div class="product-tile__info">
+						<div class="product-tile__name">
+						   Обложка
+						</div>
+						<div class="product-tile__price">
+							<div class="price">
+								24 680 ₽
+							</div>
 						</div>
 					</div>
-				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+					<div class="product-tile__like">
+						<svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
 						</svg>
-                    </a>
+					</div>
+					<div class="product-tile__overlay">
+						<a href="#">
+						   <svg class="i-icon"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
 				</div>
-            </div>
-        </div>
+			</div>
+		</div>
 		<div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
@@ -373,7 +375,7 @@
 				</div>
             </div>
         </div>
-		 <div class="product-tile">
+		<div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
@@ -404,68 +406,70 @@
 				</div>
             </div>
         </div>
-        <div class="product-tile product-tile--half">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/product10.png" alt="" />
-                    </a>
-                </div>
-				<div class="product-tile__info">
+        <div class="product-tile product-tile--half-wrapper">
+			<div class="product-tile product-tile--half">
+				<div class="product-tile__wrap">
+					<div class="product-tile__image">
+						<a href="#">
+							<img src="images/product10.png" alt="" />
+						</a>
+					</div>
+					<div class="product-tile__info">
+						<div class="product-tile__name">
+							Рюкзак
+						</div>
+						<div class="product-tile__price">
+							<div class="price">
+								24 680 ₽
+							</div>
+						</div>
+					</div>
+					<div class="product-tile__like">
+						<svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+						</svg>
+					</div>
+					<div class="product-tile__overlay">
+						<a href="#">
+						   <svg class="i-icon"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="product-tile product-tile--half">
+				<div class="product-tile__wrap">
+					<div class="product-tile__image">
+						<a href="#">
+							<img src="images/product7.png" alt="" />
+						</a>
+					</div>
+					<div class="product-tile__info">
 					<div class="product-tile__name">
-						Рюкзак
+						Планшет
 					</div>
 					<div class="product-tile__price">
 						<div class="price">
 							24 680 ₽
 						</div>
 					</div>
-				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+					</div>
+					<div class="product-tile__like">
+						<svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
 						</svg>
-                    </a>
+					</div>
+					<div class="product-tile__overlay">
+						<a href="#">
+						   <svg class="i-icon"role="img">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
 				</div>
-            </div>
-        </div>
-        <div class="product-tile product-tile--half">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/product7.png" alt="" />
-                    </a>
-                </div>
-				<div class="product-tile__info">
-                <div class="product-tile__name">
-                    Планшет
-                </div>
-                <div class="product-tile__price">
-                    <div class="price">
-                        24 680 ₽
-                    </div>
-                </div>
-				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-						</svg>
-                    </a>
-				</div>
-            </div>
-        </div>
+			</div>
+		</div>
     </div>
 </div>
 <div class="container">
