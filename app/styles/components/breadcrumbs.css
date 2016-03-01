@@ -12,7 +12,7 @@
         color: var(--main-brown);
         transition: .3s; 
         &:hover {
-            color: var(--main-dark);
+            text-decoration: underline;
         }
 		&:first-child ~ &:before {
 			content: '';
@@ -50,6 +50,7 @@
             }
             &:hover {
                 color: var(--main-gray);
+				text-decoration: none;
             }
         }
         &--dropdown {

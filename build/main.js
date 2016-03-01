@@ -10407,6 +10407,26 @@ var App =
 				}
 			});
 	
+			$('.menu--multilevel--aside > .menu-item--parent > .menu-item__link').on('click', function (e) {
+				e.preventDefault();
+				if ($(this).parents('.menu--multilevel--aside').length > 1) {
+					$(this).parents('.submenu--sided').first().addClass('next-level');
+				} else {
+					$(this).parents('.menu--multilevel--aside').addClass('next-level');
+				}
+				$(this).next('.submenu--sided').addClass('open');
+				$('.header-menu__burger').hide();
+			});
+			$('.submenu__back').on('click', function () {
+				$(this).parent('.submenu--sided').removeClass('open');
+				if ($(this).parents('.menu--multilevel--aside').length > 1) {
+					$(this).parents('.submenu--sided').eq(1).removeClass('next-level');
+				} else {
+					$(this).parents('.menu--multilevel--aside').removeClass('next-level');
+					$('.header-menu__burger').show();
+				}
+			});
+	
 			$(window).on('scroll', function () {
 				if ($(window).scrollTop() > 100) {
 					$('.home-page .header').removeClass('header--transparent');

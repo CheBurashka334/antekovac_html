@@ -1,6 +1,6 @@
 <div class="page-aside__wrap">
 	<div class="page-aside__menu">
-		<ul class="menu menu--multilevel--sided menu--with-icons">
+		<ul class="menu menu--multilevel--aside menu--with-icons">
 			<li class="menu-item menu-item--parent">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon menu-item__icon--top"><svg class="i-icon"><use xlink:href="#shop"/></svg></span>
@@ -8,21 +8,21 @@
 					<!-- for parent -->
 					<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
 				</a>
-				<div class="submenu">
-					<button class="back">
-						<span class="back__arrow"></span>
+				<div class="submenu--sided">
+					<button class="submenu__back">
+						<span class="back__arrow"><span></span><span></span><span></span></span>
 						<span class="back__text">Назад</span>
 					</button>
-					<ul class="menu menu--multilevel--sided menu--with-icons">
+					<ul class="menu menu--multilevel--aside menu--with-icons">
 						<li class="menu-item menu-item--parent">
 							<a href="#" class="menu-item__link js-anim--click">
 								<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#for-him"/></svg></span>
 								<span class="menu-item__text">Для него</span>
 								<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
 							</a>
-							<div class="submenu">
-								<button class="back">
-									<span class="back__arrow"></span>
+							<div class="submenu--sided">
+								<button class="submenu__back">
+									<span class="back__arrow"><span></span><span></span><span></span></span>
 									<span class="back__text">Назад</span>
 								</button>
 								<ul class="menu menu--multilevel">
@@ -65,7 +65,7 @@
 									</li>
 									<li class="menu-item menu-item--parent">
 										<a href="#" class="menu-item__link js-anim--click">
-											<span class="menu-item__text">Одежда:</span>
+											<span class="menu-item__text">Одежда</span>
 										</a>
 										<ul class="menu">
 											<li class="menu-item">
@@ -84,9 +84,9 @@
 								<span class="menu-item__text">Для нее</span>
 								<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
 							</a>
-							<div class="submenu">
-								<button class="back">
-									<span class="back__arrow"></span>
+							<div class="submenu--sided">
+								<button class="submenu__back">
+									<span class="back__arrow"><span></span><span></span><span></span></span>
 									<span class="back__text">Назад</span>
 								</button>
 								<ul class="menu menu--multilevel">
@@ -181,5 +181,178 @@
 				</a>
 			</li>
 		</ul>
+	</div>
+	<div class="page-aside__block--mobile">
+		<ul class="menu menu--multilevel--aside">
+			<li class="menu-item menu-item--parent">
+				<a href="#" class="menu-item__link js-anim--click">
+					<span class="menu-item__text">Обратная связь</span>
+					<!-- for parent -->
+					<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
+				</a>
+				<div class="submenu--sided">
+					<button class="submenu__back">
+						<span class="back__arrow"><span></span><span></span><span></span></span>
+						<span class="back__text">Назад</span>
+					</button>
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Связаться с нами</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Отзывы</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Вопрос-ответ</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Контакты</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-item menu-item--parent">
+				<a href="#" class="menu-item__link js-anim--click">
+					<span class="menu-item__text">гарантии</span>
+					<!-- for parent -->
+					<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
+				</a>
+				<div class="submenu--sided">
+					<button class="submenu__back">
+						<span class="back__arrow"><span></span><span></span><span></span></span>
+						<span class="back__text">Назад</span>
+					</button>
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Гарантии</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Устойчиваость рисунка</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Ремонт изделий</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Качество</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Производство</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-item menu-item--parent">
+				<a href="#" class="menu-item__link js-anim--click">
+					<span class="menu-item__text">Сотрудничество</span>
+					<!-- for parent -->
+					<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
+				</a>
+				<div class="submenu--sided">
+					<button class="submenu__back">
+						<span class="back__arrow"><span></span><span></span><span></span></span>
+						<span class="back__text">Назад</span>
+					</button>
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Стать партнером</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Оптовым заказчикам</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Пиар и реклама</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Вакансии</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Творческие проекты</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Благотворительность</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-item menu-item--parent">
+				<a href="#" class="menu-item__link js-anim--click">
+					<span class="menu-item__text">заказ</span>
+					<!-- for parent -->
+					<svg class="i-icon i-icon--stroke parent-arrow"><use xlink:href="#arrow"/></svg>
+				</a>
+				<div class="submenu--sided">
+					<button class="submenu__back">
+						<span class="back__arrow"><span></span><span></span><span></span></span>
+						<span class="back__text">Назад</span>
+					</button>
+					<ul class="menu">
+						<li class="menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Оплата</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Доставка</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Индивидуальный заказ</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item">
+							<a href="#" class="menu-item__link js-anim--click">
+								<span class="menu-item__text">Возврат</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="page-aside__socials--mobile">
+			<a href="" class="i-icon">
+				<i class="fa fa-youtube-play"></i>
+			</a>
+			<a href="" class="i-icon">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="" class="i-icon">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a href="" class="i-icon">
+				<i class="fa fa-vk"></i>
+			</a>
+		</div>
 	</div>
 </div>

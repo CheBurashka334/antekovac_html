@@ -9,7 +9,7 @@
 	background: var(--dark-gray);
 	color: white;
 	z-index: 2;
-	padding-top: 70px;
+	overflow: hidden;
 	&--left {
 		left: -300px;
 		transition: left .3s;
@@ -36,6 +36,36 @@
 			& ~ .page {
 				will-change: right;
 				right: 300px;
+				left: auto;
+			}
+		}
+	}
+}
+
+.page-aside__block--mobile {
+	padding: 15px 0;
+	margin-top: 15px;
+	background: #414346;
+	@media (--small), (--medium-up) {
+		display: none;
+	}
+}
+
+@media (--mobile){
+	.page-aside {
+		width: 50%;
+		&--left {
+			left: -100%;
+			&.open ~ .page,
+			&.main-menu.open ~ .page .header {
+				left: 100%;
+			}
+		}
+		&--right {
+			right: -100%;
+			&.open ~ .page,
+			&.open ~ .page .header {
+				right: 100%;
 				left: auto;
 			}
 		}

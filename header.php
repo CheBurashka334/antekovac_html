@@ -19,7 +19,7 @@
 </aside>
 <main class="page"><!-- .home-page добавить на главной-->
 	<!-- .header--transparent только на главной-->
-    <header class="header header--transparent">
+    <header class="header">
 		<div class="container">
 			<div class="header__wrap">
 				<div class="header-menu">

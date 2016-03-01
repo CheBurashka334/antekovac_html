@@ -30,7 +30,6 @@
 		}
 	}
 	&-item {
-		
 		&__link {
 			display: block;
 			padding: 13px 35px 14px;
@@ -61,13 +60,126 @@
 				transition: transform .1s;
 			}
 		}
-		&--parent .parent-arrow {
+	}
+	&--multilevel {
+		&--aside {
+			transition: all .3s;
+			transform-origin: left center;
+			padding-top: 70px;
+			.submenu--sided & {
+				padding-top: 0;
+			}
+			&.next-level {
+				transform: translateX(-100%);
+			}
+			.menu-item--parent {
+				color: #fff;
+				.parent-arrow {
+					position: absolute;
+					top: 50%;
+					right: 30px;
+					width: 16px;
+					height: 14px;
+					margin-top: -7px;
+					fill: currentColor;
+					&.i-icon--stroke {
+						fill: none;
+						stroke: currentColor;
+					}
+				}
+				.menu-item__icon--top ~ .parent-arrow {
+					margin-top: -5px;
+				}
+			}
+		}
+		.menu-item--parent {
+			color: var(--main-brown);
+			> .menu-item__link:hover {
+				background: none;
+			}
+			.menu-item {
+				color: white;
+				.menu-item__link:hover {
+					background: #25272b;
+				}				
+				.notification {
+					color: #8b8b8b;
+				}
+			}
+		}
+	}
+	.submenu {
+		&--sided {
 			position: absolute;
-			top: 50%;
-			right: 30px;
-			width: 16px;
-			height: 14px;
-			margin-top: -5px;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: all .3s ease;
+			transform: translateX(300%);
+			transform-origin: right center;
+			&.open {
+				transform: translateX(100%);
+			}
+			&.next-level.open {
+				transform: translateX(-100%);
+				transform-origin: left center;
+				.open {
+					transform: translateX(200%);
+				}
+			}
+		}
+		&__back {
+			display: block;
+			width: 100%;
+			padding: 15px 35px;
+			color: #848484;
+			text-decoration: none;
+			font-family: "Bebas Neue Book";
+			font-size: 22px;
+			line-height: 40px;
+			vertical-align: middle;
+			text-transform: uppercase;
+			position: relative;
+			text-align: left;
+			border: 0;
+			background: transparent;
+			.back__arrow {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				margin-right: 15px;
+				position: relative;
+				vertical-align: middle;
+				span {
+					display: block;
+					position: absolute;
+					width: 74%;
+					left: 3px;
+					height: 1px;
+					top: 50%;
+					background: currentColor;
+					transform-origin: left center;
+					&:first-child {
+						transform: rotate(45deg) scaleX(0.5);
+					}
+					&:last-child {
+						transform: rotate(-45deg) scaleX(0.5);
+					}
+				}
+			}
+			.back__text {
+				vertical-align: middle;
+			}
+		}
+	}
+	.page-aside__block--mobile & {
+		padding-top: 0;
+		background: #414346;
+		.menu-item {
+			color: #898a8b;
 		}
 	}
 }
