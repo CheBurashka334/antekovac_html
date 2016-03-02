@@ -4,7 +4,6 @@
 
 import 'jquery';
 import 'normalize.css';
-import 'vendor/gridlex/dist/gridlex.css';
 
 // Load styles
 

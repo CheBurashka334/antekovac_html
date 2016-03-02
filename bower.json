@@ -12,12 +12,14 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "vendor"
   ],
   "dependencies": {
     "jquery": "~2.2.0",
     "owl.carousel": "~2.0.0-beta.3",
-    "normalize.css": "~3.0.3",
-    "gridlex": "~2.0.8"
-  }
+    "normalize.css": "~3.0.3"
+  },
+  "moduleType": [],
+  "homepage": ""
 }

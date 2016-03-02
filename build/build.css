@@ -422,10 +422,19 @@ td,
 th {
   padding: 0;
 }
-/*! ==========================================================================
+/* ==========================================================================
     GRIDLEX
     Just a Flexbox Grid System
 ========================================================================== */
+/*
+// defaults
+$gl-gutter:    1rem; // Total
+$gl-xs:        "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm:        "screen and (max-width: 48em)"; // max 768px
+$gl-md:        "screen and (max-width: 64em)"; // max 1024px
+$gl-lg:        "screen and (max-width: 80em)"; // max 1280px
+*/
+/* line 8, scss/gridlex.scss */
 [class*="grid"] {
   box-sizing: border-box;
   display: -webkit-box;
@@ -435,8 +444,9 @@ th {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin: 0 -0.5rem;
+  margin: 0 -10px;
 }
+/* line 14, scss/gridlex.scss */
 .col,
 [class*="col-"] {
   box-sizing: border-box;
@@ -444,14 +454,16 @@ th {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  padding: 0 0.5rem 1rem;
+  padding: 0 10px 20px;
 }
+/* line 20, scss/gridlex.scss */
 .col {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0%;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
 }
+/* line 23, scss/gridlex.scss */
 .grid.col,
 .grid[class*="col-"] {
   margin: 0;
@@ -460,18 +472,22 @@ th {
 /************************
     HELPERS SUFFIXES
 *************************/
+/* line 35, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] {
   margin: 0;
 }
+/* line 37, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] > [class*="col"] {
   padding: 0;
 }
+/* line 43, scss/gridlex.scss */
 [class*="grid-"][class*="-center"] {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+/* line 46, scss/gridlex.scss */
 [class*="grid-"][class*="-right"] {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -482,27 +498,31 @@ th {
           align-self: flex-end;
   margin-left: auto;
 }
+/* line 52, scss/gridlex.scss */
 [class*="grid-"][class*="-top"] {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
-          align-items: flex-start;
+          -ms-grid-row-align: flex-start;
+      align-items: flex-start;
 }
+/* line 55, scss/gridlex.scss */
 [class*="grid-"][class*="-middle"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
+          -ms-grid-row-align: center;
+      align-items: center;
 }
+/* line 58, scss/gridlex.scss */
 [class*="grid-"][class*="-bottom"] {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
-          align-items: flex-end;
+          -ms-grid-row-align: flex-end;
+      align-items: flex-end;
 }
+/* line 63, scss/gridlex.scss */
 [class*="grid-"][class*="-reverse"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -510,6 +530,7 @@ th {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+/* line 66, scss/gridlex.scss */
 [class*="grid-"][class*="-column"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -517,11 +538,13 @@ th {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+/* line 68, scss/gridlex.scss */
 [class*="grid-"][class*="-column"] > [class*="col-"] {
   -webkit-flex-basis: auto;
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
 }
+/* line 72, scss/gridlex.scss */
 [class*="grid-"][class*="-column-reverse"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -529,44 +552,52 @@ th {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+/* line 77, scss/gridlex.scss */
 [class*="grid-"][class*="-spaceBetween"] {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+/* line 80, scss/gridlex.scss */
 [class*="grid-"][class*="-spaceAround"] {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
+/* line 85, scss/gridlex.scss */
 [class*="grid-"][class*="-equalHeight"] > [class*="col"] {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
+/* line 92, scss/gridlex.scss */
 [class*="col-"][class*="-top"] {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
+/* line 95, scss/gridlex.scss */
 [class*="col-"][class*="-middle"] {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
 }
+/* line 98, scss/gridlex.scss */
 [class*="col-"][class*="-bottom"] {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end;
 }
+/* line 101, scss/gridlex.scss */
 [class*="col-"][class*="-first"] {
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
 }
+/* line 104, scss/gridlex.scss */
 [class*="col-"][class*="-last"] {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
@@ -576,1193 +607,1431 @@ th {
 /************************
     GRID BY NUMBER
 *************************/
-[class*="grid-1"] > .col,
-[class*="grid-1"] > [class*='col-'] {
+/* line 43, scss/_gridlex-vars.scss */
+[class*="grid-1"] > .col, [class*="grid-1"] > [class*='col-'] {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   max-width: 100%;
 }
-[class*="grid-2"] > .col,
-[class*="grid-2"] > [class*='col-'] {
+/* line 44, scss/_gridlex-vars.scss */
+[class*="grid-2"] > .col, [class*="grid-2"] > [class*='col-'] {
   -webkit-flex-basis: 50%;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
   max-width: 50%;
 }
-[class*="grid-3"] > .col,
-[class*="grid-3"] > [class*='col-'] {
-  -webkit-flex-basis: 33.33333333%;
-      -ms-flex-preferred-size: 33.33333333%;
-          flex-basis: 33.33333333%;
-  max-width: 33.33333333%;
+/* line 45, scss/_gridlex-vars.scss */
+[class*="grid-3"] > .col, [class*="grid-3"] > [class*='col-'] {
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%;
+  max-width: 33.33333%;
 }
-[class*="grid-4"] > .col,
-[class*="grid-4"] > [class*='col-'] {
+/* line 46, scss/_gridlex-vars.scss */
+[class*="grid-4"] > .col, [class*="grid-4"] > [class*='col-'] {
   -webkit-flex-basis: 25%;
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
   max-width: 25%;
 }
-[class*="grid-5"] > .col,
-[class*="grid-5"] > [class*='col-'] {
+/* line 47, scss/_gridlex-vars.scss */
+[class*="grid-5"] > .col, [class*="grid-5"] > [class*='col-'] {
   -webkit-flex-basis: 20%;
       -ms-flex-preferred-size: 20%;
           flex-basis: 20%;
   max-width: 20%;
 }
-[class*="grid-6"] > .col,
-[class*="grid-6"] > [class*='col-'] {
-  -webkit-flex-basis: 16.66666667%;
-      -ms-flex-preferred-size: 16.66666667%;
-          flex-basis: 16.66666667%;
-  max-width: 16.66666667%;
+/* line 48, scss/_gridlex-vars.scss */
+[class*="grid-6"] > .col, [class*="grid-6"] > [class*='col-'] {
+  -webkit-flex-basis: 16.66667%;
+      -ms-flex-preferred-size: 16.66667%;
+          flex-basis: 16.66667%;
+  max-width: 16.66667%;
 }
-[class*="grid-7"] > .col,
-[class*="grid-7"] > [class*='col-'] {
-  -webkit-flex-basis: 14.28571429%;
-      -ms-flex-preferred-size: 14.28571429%;
-          flex-basis: 14.28571429%;
-  max-width: 14.28571429%;
+/* line 49, scss/_gridlex-vars.scss */
+[class*="grid-7"] > .col, [class*="grid-7"] > [class*='col-'] {
+  -webkit-flex-basis: 14.28571%;
+      -ms-flex-preferred-size: 14.28571%;
+          flex-basis: 14.28571%;
+  max-width: 14.28571%;
 }
-[class*="grid-8"] > .col,
-[class*="grid-8"] > [class*='col-'] {
+/* line 50, scss/_gridlex-vars.scss */
+[class*="grid-8"] > .col, [class*="grid-8"] > [class*='col-'] {
   -webkit-flex-basis: 12.5%;
       -ms-flex-preferred-size: 12.5%;
           flex-basis: 12.5%;
   max-width: 12.5%;
 }
-[class*="grid-9"] > .col,
-[class*="grid-9"] > [class*='col-'] {
-  -webkit-flex-basis: 11.11111111%;
-      -ms-flex-preferred-size: 11.11111111%;
-          flex-basis: 11.11111111%;
-  max-width: 11.11111111%;
+/* line 51, scss/_gridlex-vars.scss */
+[class*="grid-9"] > .col, [class*="grid-9"] > [class*='col-'] {
+  -webkit-flex-basis: 11.11111%;
+      -ms-flex-preferred-size: 11.11111%;
+          flex-basis: 11.11111%;
+  max-width: 11.11111%;
 }
-[class*="grid-10"] > .col,
-[class*="grid-10"] > [class*='col-'] {
+/* line 52, scss/_gridlex-vars.scss */
+[class*="grid-10"] > .col, [class*="grid-10"] > [class*='col-'] {
   -webkit-flex-basis: 10%;
       -ms-flex-preferred-size: 10%;
           flex-basis: 10%;
   max-width: 10%;
 }
-[class*="grid-11"] > .col,
-[class*="grid-10"] > [class*='col-'] {
-  -webkit-flex-basis: 9.09090909%;
-      -ms-flex-preferred-size: 9.09090909%;
-          flex-basis: 9.09090909%;
-  max-width: 9.09090909%;
+/* line 53, scss/_gridlex-vars.scss */
+[class*="grid-11"] > .col, [class*="grid-11"] > [class*='col-'] {
+  -webkit-flex-basis: 9.09091%;
+      -ms-flex-preferred-size: 9.09091%;
+          flex-basis: 9.09091%;
+  max-width: 9.09091%;
 }
-[class*="grid-12"] > .col,
-[class*="grid-11"] > [class*='col-'] {
-  -webkit-flex-basis: 8.33333333%;
-      -ms-flex-preferred-size: 8.33333333%;
-          flex-basis: 8.33333333%;
-  max-width: 8.33333333%;
+/* line 54, scss/_gridlex-vars.scss */
+[class*="grid-12"] > .col, [class*="grid-12"] > [class*='col-'] {
+  -webkit-flex-basis: 8.33333%;
+      -ms-flex-preferred-size: 8.33333%;
+          flex-basis: 8.33333%;
+  max-width: 8.33333%;
 }
-@media screen and (max-width: 80em) {
-  [class*="_lg-1"] > .col,
-  [class*="_lg-1"] > [class*='col-'] {
+@media screen and (min-width: 1300px) {
+  /* line 43, scss/_gridlex-vars.scss */
+  [class*="_lg-1"] > .col, [class*="_lg-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
-  [class*="_lg-2"] > .col,
-  [class*="_lg-2"] > [class*='col-'] {
+
+  /* line 44, scss/_gridlex-vars.scss */
+  [class*="_lg-2"] > .col, [class*="_lg-2"] > [class*='col-'] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
-  [class*="_lg-3"] > .col,
-  [class*="_lg-3"] > [class*='col-'] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+
+  /* line 45, scss/_gridlex-vars.scss */
+  [class*="_lg-3"] > .col, [class*="_lg-3"] > [class*='col-'] {
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
-  [class*="_lg-4"] > .col,
-  [class*="_lg-4"] > [class*='col-'] {
+
+  /* line 46, scss/_gridlex-vars.scss */
+  [class*="_lg-4"] > .col, [class*="_lg-4"] > [class*='col-'] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
-  [class*="_lg-5"] > .col,
-  [class*="_lg-5"] > [class*='col-'] {
+
+  /* line 47, scss/_gridlex-vars.scss */
+  [class*="_lg-5"] > .col, [class*="_lg-5"] > [class*='col-'] {
     -webkit-flex-basis: 20%;
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%;
   }
-  [class*="_lg-6"] > .col,
-  [class*="_lg-6"] > [class*='col-'] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+
+  /* line 48, scss/_gridlex-vars.scss */
+  [class*="_lg-6"] > .col, [class*="_lg-6"] > [class*='col-'] {
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
-  [class*="_lg-7"] > .col,
-  [class*="_lg-7"] > [class*='col-'] {
-    -webkit-flex-basis: 14.28571429%;
-        -ms-flex-preferred-size: 14.28571429%;
-            flex-basis: 14.28571429%;
-    max-width: 14.28571429%;
+
+  /* line 49, scss/_gridlex-vars.scss */
+  [class*="_lg-7"] > .col, [class*="_lg-7"] > [class*='col-'] {
+    -webkit-flex-basis: 14.28571%;
+        -ms-flex-preferred-size: 14.28571%;
+            flex-basis: 14.28571%;
+    max-width: 14.28571%;
   }
-  [class*="_lg-8"] > .col,
-  [class*="_lg-8"] > [class*='col-'] {
+
+  /* line 50, scss/_gridlex-vars.scss */
+  [class*="_lg-8"] > .col, [class*="_lg-8"] > [class*='col-'] {
     -webkit-flex-basis: 12.5%;
         -ms-flex-preferred-size: 12.5%;
             flex-basis: 12.5%;
     max-width: 12.5%;
   }
-  [class*="_lg-9"] > .col,
-  [class*="_lg-9"] > [class*='col-'] {
-    -webkit-flex-basis: 11.11111111%;
-        -ms-flex-preferred-size: 11.11111111%;
-            flex-basis: 11.11111111%;
-    max-width: 11.11111111%;
+
+  /* line 51, scss/_gridlex-vars.scss */
+  [class*="_lg-9"] > .col, [class*="_lg-9"] > [class*='col-'] {
+    -webkit-flex-basis: 11.11111%;
+        -ms-flex-preferred-size: 11.11111%;
+            flex-basis: 11.11111%;
+    max-width: 11.11111%;
   }
-  [class*="_lg-10"] > .col,
-  [class*="_lg-10"] > [class*='col-'] {
+
+  /* line 52, scss/_gridlex-vars.scss */
+  [class*="_lg-10"] > .col, [class*="_lg-10"] > [class*='col-'] {
     -webkit-flex-basis: 10%;
         -ms-flex-preferred-size: 10%;
             flex-basis: 10%;
     max-width: 10%;
   }
-  [class*="_lg-11"] > .col,
-  [class*="_lg-10"] > [class*='col-'] {
-    -webkit-flex-basis: 9.09090909%;
-        -ms-flex-preferred-size: 9.09090909%;
-            flex-basis: 9.09090909%;
-    max-width: 9.09090909%;
+
+  /* line 53, scss/_gridlex-vars.scss */
+  [class*="_lg-11"] > .col, [class*="_lg-11"] > [class*='col-'] {
+    -webkit-flex-basis: 9.09091%;
+        -ms-flex-preferred-size: 9.09091%;
+            flex-basis: 9.09091%;
+    max-width: 9.09091%;
   }
-  [class*="_lg-12"] > .col,
-  [class*="_lg-11"] > [class*='col-'] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+
+  /* line 54, scss/_gridlex-vars.scss */
+  [class*="_lg-12"] > .col, [class*="_lg-12"] > [class*='col-'] {
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  /* line 43, scss/_gridlex-vars.scss */
+  [class*="_md-1"] > .col, [class*="_md-1"] > [class*='col-'] {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  /* line 44, scss/_gridlex-vars.scss */
+  [class*="_md-2"] > .col, [class*="_md-2"] > [class*='col-'] {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  /* line 45, scss/_gridlex-vars.scss */
+  [class*="_md-3"] > .col, [class*="_md-3"] > [class*='col-'] {
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  /* line 46, scss/_gridlex-vars.scss */
+  [class*="_md-4"] > .col, [class*="_md-4"] > [class*='col-'] {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  /* line 47, scss/_gridlex-vars.scss */
+  [class*="_md-5"] > .col, [class*="_md-5"] > [class*='col-'] {
+    -webkit-flex-basis: 20%;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+    max-width: 20%;
+  }
+
+  /* line 48, scss/_gridlex-vars.scss */
+  [class*="_md-6"] > .col, [class*="_md-6"] > [class*='col-'] {
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  /* line 49, scss/_gridlex-vars.scss */
+  [class*="_md-7"] > .col, [class*="_md-7"] > [class*='col-'] {
+    -webkit-flex-basis: 14.28571%;
+        -ms-flex-preferred-size: 14.28571%;
+            flex-basis: 14.28571%;
+    max-width: 14.28571%;
+  }
+
+  /* line 50, scss/_gridlex-vars.scss */
+  [class*="_md-8"] > .col, [class*="_md-8"] > [class*='col-'] {
+    -webkit-flex-basis: 12.5%;
+        -ms-flex-preferred-size: 12.5%;
+            flex-basis: 12.5%;
+    max-width: 12.5%;
+  }
+
+  /* line 51, scss/_gridlex-vars.scss */
+  [class*="_md-9"] > .col, [class*="_md-9"] > [class*='col-'] {
+    -webkit-flex-basis: 11.11111%;
+        -ms-flex-preferred-size: 11.11111%;
+            flex-basis: 11.11111%;
+    max-width: 11.11111%;
+  }
+
+  /* line 52, scss/_gridlex-vars.scss */
+  [class*="_md-10"] > .col, [class*="_md-10"] > [class*='col-'] {
+    -webkit-flex-basis: 10%;
+        -ms-flex-preferred-size: 10%;
+            flex-basis: 10%;
+    max-width: 10%;
+  }
+
+  /* line 53, scss/_gridlex-vars.scss */
+  [class*="_md-11"] > .col, [class*="_md-11"] > [class*='col-'] {
+    -webkit-flex-basis: 9.09091%;
+        -ms-flex-preferred-size: 9.09091%;
+            flex-basis: 9.09091%;
+    max-width: 9.09091%;
+  }
+
+  /* line 54, scss/_gridlex-vars.scss */
+  [class*="_md-12"] > .col, [class*="_md-12"] > [class*='col-'] {
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
 }
 @media screen and (max-width: 64em) {
-  [class*="_md-1"] > .col,
-  [class*="_md-1"] > [class*='col-'] {
+  /* line 43, scss/_gridlex-vars.scss */
+  [class*="_sm-1"] > .col, [class*="_sm-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
-  [class*="_md-2"] > .col,
-  [class*="_md-2"] > [class*='col-'] {
+
+  /* line 44, scss/_gridlex-vars.scss */
+  [class*="_sm-2"] > .col, [class*="_sm-2"] > [class*='col-'] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
-  [class*="_md-3"] > .col,
-  [class*="_md-3"] > [class*='col-'] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+
+  /* line 45, scss/_gridlex-vars.scss */
+  [class*="_sm-3"] > .col, [class*="_sm-3"] > [class*='col-'] {
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
-  [class*="_md-4"] > .col,
-  [class*="_md-4"] > [class*='col-'] {
+
+  /* line 46, scss/_gridlex-vars.scss */
+  [class*="_sm-4"] > .col, [class*="_sm-4"] > [class*='col-'] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
-  [class*="_md-5"] > .col,
-  [class*="_md-5"] > [class*='col-'] {
+
+  /* line 47, scss/_gridlex-vars.scss */
+  [class*="_sm-5"] > .col, [class*="_sm-5"] > [class*='col-'] {
     -webkit-flex-basis: 20%;
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%;
   }
-  [class*="_md-6"] > .col,
-  [class*="_md-6"] > [class*='col-'] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+
+  /* line 48, scss/_gridlex-vars.scss */
+  [class*="_sm-6"] > .col, [class*="_sm-6"] > [class*='col-'] {
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
-  [class*="_md-7"] > .col,
-  [class*="_md-7"] > [class*='col-'] {
-    -webkit-flex-basis: 14.28571429%;
-        -ms-flex-preferred-size: 14.28571429%;
-            flex-basis: 14.28571429%;
-    max-width: 14.28571429%;
+
+  /* line 49, scss/_gridlex-vars.scss */
+  [class*="_sm-7"] > .col, [class*="_sm-7"] > [class*='col-'] {
+    -webkit-flex-basis: 14.28571%;
+        -ms-flex-preferred-size: 14.28571%;
+            flex-basis: 14.28571%;
+    max-width: 14.28571%;
   }
-  [class*="_md-8"] > .col,
-  [class*="_md-8"] > [class*='col-'] {
+
+  /* line 50, scss/_gridlex-vars.scss */
+  [class*="_sm-8"] > .col, [class*="_sm-8"] > [class*='col-'] {
     -webkit-flex-basis: 12.5%;
         -ms-flex-preferred-size: 12.5%;
             flex-basis: 12.5%;
     max-width: 12.5%;
   }
-  [class*="_md-9"] > .col,
-  [class*="_md-9"] > [class*='col-'] {
-    -webkit-flex-basis: 11.11111111%;
-        -ms-flex-preferred-size: 11.11111111%;
-            flex-basis: 11.11111111%;
-    max-width: 11.11111111%;
+
+  /* line 51, scss/_gridlex-vars.scss */
+  [class*="_sm-9"] > .col, [class*="_sm-9"] > [class*='col-'] {
+    -webkit-flex-basis: 11.11111%;
+        -ms-flex-preferred-size: 11.11111%;
+            flex-basis: 11.11111%;
+    max-width: 11.11111%;
   }
-  [class*="_md-10"] > .col,
-  [class*="_md-10"] > [class*='col-'] {
+
+  /* line 52, scss/_gridlex-vars.scss */
+  [class*="_sm-10"] > .col, [class*="_sm-10"] > [class*='col-'] {
     -webkit-flex-basis: 10%;
         -ms-flex-preferred-size: 10%;
             flex-basis: 10%;
     max-width: 10%;
   }
-  [class*="_md-11"] > .col,
-  [class*="_md-10"] > [class*='col-'] {
-    -webkit-flex-basis: 9.09090909%;
-        -ms-flex-preferred-size: 9.09090909%;
-            flex-basis: 9.09090909%;
-    max-width: 9.09090909%;
+
+  /* line 53, scss/_gridlex-vars.scss */
+  [class*="_sm-11"] > .col, [class*="_sm-11"] > [class*='col-'] {
+    -webkit-flex-basis: 9.09091%;
+        -ms-flex-preferred-size: 9.09091%;
+            flex-basis: 9.09091%;
+    max-width: 9.09091%;
   }
-  [class*="_md-12"] > .col,
-  [class*="_md-11"] > [class*='col-'] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+
+  /* line 54, scss/_gridlex-vars.scss */
+  [class*="_sm-12"] > .col, [class*="_sm-12"] > [class*='col-'] {
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
 }
 @media screen and (max-width: 48em) {
-  [class*="_sm-1"] > .col,
-  [class*="_sm-1"] > [class*='col-'] {
+  /* line 43, scss/_gridlex-vars.scss */
+  [class*="_xs-1"] > .col, [class*="_xs-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
-  [class*="_sm-2"] > .col,
-  [class*="_sm-2"] > [class*='col-'] {
+
+  /* line 44, scss/_gridlex-vars.scss */
+  [class*="_xs-2"] > .col, [class*="_xs-2"] > [class*='col-'] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
-  [class*="_sm-3"] > .col,
-  [class*="_sm-3"] > [class*='col-'] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+
+  /* line 45, scss/_gridlex-vars.scss */
+  [class*="_xs-3"] > .col, [class*="_xs-3"] > [class*='col-'] {
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
-  [class*="_sm-4"] > .col,
-  [class*="_sm-4"] > [class*='col-'] {
+
+  /* line 46, scss/_gridlex-vars.scss */
+  [class*="_xs-4"] > .col, [class*="_xs-4"] > [class*='col-'] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
-  [class*="_sm-5"] > .col,
-  [class*="_sm-5"] > [class*='col-'] {
+
+  /* line 47, scss/_gridlex-vars.scss */
+  [class*="_xs-5"] > .col, [class*="_xs-5"] > [class*='col-'] {
     -webkit-flex-basis: 20%;
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
     max-width: 20%;
   }
-  [class*="_sm-6"] > .col,
-  [class*="_sm-6"] > [class*='col-'] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+
+  /* line 48, scss/_gridlex-vars.scss */
+  [class*="_xs-6"] > .col, [class*="_xs-6"] > [class*='col-'] {
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
-  [class*="_sm-7"] > .col,
-  [class*="_sm-7"] > [class*='col-'] {
-    -webkit-flex-basis: 14.28571429%;
-        -ms-flex-preferred-size: 14.28571429%;
-            flex-basis: 14.28571429%;
-    max-width: 14.28571429%;
+
+  /* line 49, scss/_gridlex-vars.scss */
+  [class*="_xs-7"] > .col, [class*="_xs-7"] > [class*='col-'] {
+    -webkit-flex-basis: 14.28571%;
+        -ms-flex-preferred-size: 14.28571%;
+            flex-basis: 14.28571%;
+    max-width: 14.28571%;
   }
-  [class*="_sm-8"] > .col,
-  [class*="_sm-8"] > [class*='col-'] {
+
+  /* line 50, scss/_gridlex-vars.scss */
+  [class*="_xs-8"] > .col, [class*="_xs-8"] > [class*='col-'] {
     -webkit-flex-basis: 12.5%;
         -ms-flex-preferred-size: 12.5%;
             flex-basis: 12.5%;
     max-width: 12.5%;
   }
-  [class*="_sm-9"] > .col,
-  [class*="_sm-9"] > [class*='col-'] {
-    -webkit-flex-basis: 11.11111111%;
-        -ms-flex-preferred-size: 11.11111111%;
-            flex-basis: 11.11111111%;
-    max-width: 11.11111111%;
+
+  /* line 51, scss/_gridlex-vars.scss */
+  [class*="_xs-9"] > .col, [class*="_xs-9"] > [class*='col-'] {
+    -webkit-flex-basis: 11.11111%;
+        -ms-flex-preferred-size: 11.11111%;
+            flex-basis: 11.11111%;
+    max-width: 11.11111%;
   }
-  [class*="_sm-10"] > .col,
-  [class*="_sm-10"] > [class*='col-'] {
+
+  /* line 52, scss/_gridlex-vars.scss */
+  [class*="_xs-10"] > .col, [class*="_xs-10"] > [class*='col-'] {
     -webkit-flex-basis: 10%;
         -ms-flex-preferred-size: 10%;
             flex-basis: 10%;
     max-width: 10%;
   }
-  [class*="_sm-11"] > .col,
-  [class*="_sm-10"] > [class*='col-'] {
-    -webkit-flex-basis: 9.09090909%;
-        -ms-flex-preferred-size: 9.09090909%;
-            flex-basis: 9.09090909%;
-    max-width: 9.09090909%;
+
+  /* line 53, scss/_gridlex-vars.scss */
+  [class*="_xs-11"] > .col, [class*="_xs-11"] > [class*='col-'] {
+    -webkit-flex-basis: 9.09091%;
+        -ms-flex-preferred-size: 9.09091%;
+            flex-basis: 9.09091%;
+    max-width: 9.09091%;
   }
-  [class*="_sm-12"] > .col,
-  [class*="_sm-11"] > [class*='col-'] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-}
-@media screen and (max-width: 35.5em) {
-  [class*="_xs-1"] > .col,
-  [class*="_xs-1"] > [class*='col-'] {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-    max-width: 100%;
-  }
-  [class*="_xs-2"] > .col,
-  [class*="_xs-2"] > [class*='col-'] {
-    -webkit-flex-basis: 50%;
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-    max-width: 50%;
-  }
-  [class*="_xs-3"] > .col,
-  [class*="_xs-3"] > [class*='col-'] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-  [class*="_xs-4"] > .col,
-  [class*="_xs-4"] > [class*='col-'] {
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%;
-    max-width: 25%;
-  }
-  [class*="_xs-5"] > .col,
-  [class*="_xs-5"] > [class*='col-'] {
-    -webkit-flex-basis: 20%;
-        -ms-flex-preferred-size: 20%;
-            flex-basis: 20%;
-    max-width: 20%;
-  }
-  [class*="_xs-6"] > .col,
-  [class*="_xs-6"] > [class*='col-'] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-  [class*="_xs-7"] > .col,
-  [class*="_xs-7"] > [class*='col-'] {
-    -webkit-flex-basis: 14.28571429%;
-        -ms-flex-preferred-size: 14.28571429%;
-            flex-basis: 14.28571429%;
-    max-width: 14.28571429%;
-  }
-  [class*="_xs-8"] > .col,
-  [class*="_xs-8"] > [class*='col-'] {
-    -webkit-flex-basis: 12.5%;
-        -ms-flex-preferred-size: 12.5%;
-            flex-basis: 12.5%;
-    max-width: 12.5%;
-  }
-  [class*="_xs-9"] > .col,
-  [class*="_xs-9"] > [class*='col-'] {
-    -webkit-flex-basis: 11.11111111%;
-        -ms-flex-preferred-size: 11.11111111%;
-            flex-basis: 11.11111111%;
-    max-width: 11.11111111%;
-  }
-  [class*="_xs-10"] > .col,
-  [class*="_xs-10"] > [class*='col-'] {
-    -webkit-flex-basis: 10%;
-        -ms-flex-preferred-size: 10%;
-            flex-basis: 10%;
-    max-width: 10%;
-  }
-  [class*="_xs-11"] > .col,
-  [class*="_xs-10"] > [class*='col-'] {
-    -webkit-flex-basis: 9.09090909%;
-        -ms-flex-preferred-size: 9.09090909%;
-            flex-basis: 9.09090909%;
-    max-width: 9.09090909%;
-  }
-  [class*="_xs-12"] > .col,
-  [class*="_xs-11"] > [class*='col-'] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+
+  /* line 54, scss/_gridlex-vars.scss */
+  [class*="_xs-12"] > .col, [class*="_xs-12"] > [class*='col-'] {
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
 }
 /************************
     COLS SIZES
 *************************/
+/* line 61, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-1"] {
-  -webkit-flex-basis: 8.33333333%;
-      -ms-flex-preferred-size: 8.33333333%;
-          flex-basis: 8.33333333%;
-  max-width: 8.33333333%;
+  -webkit-flex-basis: 8.33333%;
+      -ms-flex-preferred-size: 8.33333%;
+          flex-basis: 8.33333%;
+  max-width: 8.33333%;
 }
+/* line 62, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-2"] {
-  -webkit-flex-basis: 16.66666667%;
-      -ms-flex-preferred-size: 16.66666667%;
-          flex-basis: 16.66666667%;
-  max-width: 16.66666667%;
+  -webkit-flex-basis: 16.66667%;
+      -ms-flex-preferred-size: 16.66667%;
+          flex-basis: 16.66667%;
+  max-width: 16.66667%;
 }
+/* line 63, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-3"] {
   -webkit-flex-basis: 25%;
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%;
   max-width: 25%;
 }
+/* line 64, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-4"] {
-  -webkit-flex-basis: 33.33333333%;
-      -ms-flex-preferred-size: 33.33333333%;
-          flex-basis: 33.33333333%;
-  max-width: 33.33333333%;
+  -webkit-flex-basis: 33.33333%;
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%;
+  max-width: 33.33333%;
 }
+/* line 65, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-5"] {
-  -webkit-flex-basis: 41.66666667%;
-      -ms-flex-preferred-size: 41.66666667%;
-          flex-basis: 41.66666667%;
-  max-width: 41.66666667%;
+  -webkit-flex-basis: 41.66667%;
+      -ms-flex-preferred-size: 41.66667%;
+          flex-basis: 41.66667%;
+  max-width: 41.66667%;
 }
+/* line 66, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-6"] {
   -webkit-flex-basis: 50%;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
   max-width: 50%;
 }
+/* line 67, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-7"] {
-  -webkit-flex-basis: 58.33333333%;
-      -ms-flex-preferred-size: 58.33333333%;
-          flex-basis: 58.33333333%;
-  max-width: 58.33333333%;
+  -webkit-flex-basis: 58.33333%;
+      -ms-flex-preferred-size: 58.33333%;
+          flex-basis: 58.33333%;
+  max-width: 58.33333%;
 }
+/* line 68, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-8"] {
-  -webkit-flex-basis: 66.66666667%;
-      -ms-flex-preferred-size: 66.66666667%;
-          flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
+  -webkit-flex-basis: 66.66667%;
+      -ms-flex-preferred-size: 66.66667%;
+          flex-basis: 66.66667%;
+  max-width: 66.66667%;
 }
+/* line 69, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-9"] {
   -webkit-flex-basis: 75%;
       -ms-flex-preferred-size: 75%;
           flex-basis: 75%;
   max-width: 75%;
 }
+/* line 70, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-10"] {
-  -webkit-flex-basis: 83.33333333%;
-      -ms-flex-preferred-size: 83.33333333%;
-          flex-basis: 83.33333333%;
-  max-width: 83.33333333%;
+  -webkit-flex-basis: 83.33333%;
+      -ms-flex-preferred-size: 83.33333%;
+          flex-basis: 83.33333%;
+  max-width: 83.33333%;
 }
+/* line 71, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-11"] {
-  -webkit-flex-basis: 91.66666667%;
-      -ms-flex-preferred-size: 91.66666667%;
-          flex-basis: 91.66666667%;
-  max-width: 91.66666667%;
+  -webkit-flex-basis: 91.66667%;
+      -ms-flex-preferred-size: 91.66667%;
+          flex-basis: 91.66667%;
+  max-width: 91.66667%;
 }
+/* line 72, scss/_gridlex-vars.scss */
 [class*='grid'] > [class*="col-12"] {
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   max-width: 100%;
 }
+/* line 80, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-0"] {
   margin-left: 0;
 }
+/* line 81, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-1"] {
-  margin-left: 8.33333333%;
+  margin-left: 8.33333%;
 }
+/* line 82, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-2"] {
-  margin-left: 16.66666667%;
+  margin-left: 16.66667%;
 }
+/* line 83, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-3"] {
   margin-left: 25%;
 }
+/* line 84, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-4"] {
-  margin-left: 33.33333333%;
+  margin-left: 33.33333%;
 }
+/* line 85, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-5"] {
-  margin-left: 41.66666667%;
+  margin-left: 41.66667%;
 }
+/* line 86, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-6"] {
   margin-left: 50%;
 }
+/* line 87, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-6"] {
   margin-left: 50%;
 }
+/* line 88, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-7"] {
-  margin-left: 58.33333333%;
+  margin-left: 58.33333%;
 }
+/* line 89, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-8"] {
-  margin-left: 66.66666667%;
+  margin-left: 66.66667%;
 }
+/* line 90, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-9"] {
   margin-left: 75%;
 }
+/* line 91, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-10"] {
-  margin-left: 83.33333333%;
+  margin-left: 83.33333%;
 }
+/* line 92, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-left*="off-11"] {
-  margin-left: 91.66666667%;
+  margin-left: 91.66667%;
 }
+/* line 94, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-0"] {
   margin-right: 0;
 }
+/* line 95, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-1"] {
-  margin-right: 8.33333333%;
+  margin-right: 8.33333%;
 }
+/* line 96, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-2"] {
-  margin-right: 16.66666667%;
+  margin-right: 16.66667%;
 }
+/* line 97, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-3"] {
   margin-right: 25%;
 }
+/* line 98, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-4"] {
-  margin-right: 33.33333333%;
+  margin-right: 33.33333%;
 }
+/* line 99, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-5"] {
-  margin-right: 41.66666667%;
+  margin-right: 41.66667%;
 }
+/* line 100, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-6"] {
   margin-right: 50%;
 }
+/* line 101, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-6"] {
   margin-right: 50%;
 }
+/* line 102, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-7"] {
-  margin-right: 58.33333333%;
+  margin-right: 58.33333%;
 }
+/* line 103, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-8"] {
-  margin-right: 66.66666667%;
+  margin-right: 66.66667%;
 }
+/* line 104, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-9"] {
   margin-right: 75%;
 }
+/* line 105, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-10"] {
-  margin-right: 83.33333333%;
+  margin-right: 83.33333%;
 }
+/* line 106, scss/_gridlex-vars.scss */
 [class*="grid"] > [push-right*="off-11"] {
-  margin-right: 91.66666667%;
+  margin-right: 91.66667%;
 }
-@media screen and (max-width: 80em) {
+@media screen and (min-width: 1300px) {
+  /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-1"] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
+  /* line 62, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-2"] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
+  /* line 63, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-3"] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
+  /* line 64, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-4"] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
+  /* line 65, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-5"] {
-    -webkit-flex-basis: 41.66666667%;
-        -ms-flex-preferred-size: 41.66666667%;
-            flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
+    -webkit-flex-basis: 41.66667%;
+        -ms-flex-preferred-size: 41.66667%;
+            flex-basis: 41.66667%;
+    max-width: 41.66667%;
   }
+  /* line 66, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-6"] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
+  /* line 67, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-7"] {
-    -webkit-flex-basis: 58.33333333%;
-        -ms-flex-preferred-size: 58.33333333%;
-            flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
+    -webkit-flex-basis: 58.33333%;
+        -ms-flex-preferred-size: 58.33333%;
+            flex-basis: 58.33333%;
+    max-width: 58.33333%;
   }
+  /* line 68, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-8"] {
-    -webkit-flex-basis: 66.66666667%;
-        -ms-flex-preferred-size: 66.66666667%;
-            flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    -webkit-flex-basis: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+            flex-basis: 66.66667%;
+    max-width: 66.66667%;
   }
+  /* line 69, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-9"] {
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%;
   }
+  /* line 70, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-10"] {
-    -webkit-flex-basis: 83.33333333%;
-        -ms-flex-preferred-size: 83.33333333%;
-            flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
+    -webkit-flex-basis: 83.33333%;
+        -ms-flex-preferred-size: 83.33333%;
+            flex-basis: 83.33333%;
+    max-width: 83.33333%;
   }
+  /* line 71, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-11"] {
-    -webkit-flex-basis: 91.66666667%;
-        -ms-flex-preferred-size: 91.66666667%;
-            flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
+    -webkit-flex-basis: 91.66667%;
+        -ms-flex-preferred-size: 91.66667%;
+            flex-basis: 91.66667%;
+    max-width: 91.66667%;
   }
+  /* line 72, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-12"] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
+
+  /* line 80, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-0"] {
     margin-left: 0;
   }
+  /* line 81, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-1"] {
-    margin-left: 8.33333333%;
+    margin-left: 8.33333%;
   }
+  /* line 82, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-2"] {
-    margin-left: 16.66666667%;
+    margin-left: 16.66667%;
   }
+  /* line 83, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-3"] {
     margin-left: 25%;
   }
+  /* line 84, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-4"] {
-    margin-left: 33.33333333%;
+    margin-left: 33.33333%;
   }
+  /* line 85, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-5"] {
-    margin-left: 41.66666667%;
+    margin-left: 41.66667%;
   }
+  /* line 86, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-6"] {
     margin-left: 50%;
   }
+  /* line 87, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-6"] {
     margin-left: 50%;
   }
+  /* line 88, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-7"] {
-    margin-left: 58.33333333%;
+    margin-left: 58.33333%;
   }
+  /* line 89, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-8"] {
-    margin-left: 66.66666667%;
+    margin-left: 66.66667%;
   }
+  /* line 90, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-9"] {
     margin-left: 75%;
   }
+  /* line 91, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-10"] {
-    margin-left: 83.33333333%;
+    margin-left: 83.33333%;
   }
+  /* line 92, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_lg-11"] {
-    margin-left: 91.66666667%;
+    margin-left: 91.66667%;
   }
+  /* line 94, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-0"] {
     margin-right: 0;
   }
+  /* line 95, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-1"] {
-    margin-right: 8.33333333%;
+    margin-right: 8.33333%;
   }
+  /* line 96, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-2"] {
-    margin-right: 16.66666667%;
+    margin-right: 16.66667%;
   }
+  /* line 97, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-3"] {
     margin-right: 25%;
   }
+  /* line 98, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-4"] {
-    margin-right: 33.33333333%;
+    margin-right: 33.33333%;
   }
+  /* line 99, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-5"] {
-    margin-right: 41.66666667%;
+    margin-right: 41.66667%;
   }
+  /* line 100, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-6"] {
     margin-right: 50%;
   }
+  /* line 101, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-6"] {
     margin-right: 50%;
   }
+  /* line 102, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-7"] {
-    margin-right: 58.33333333%;
+    margin-right: 58.33333%;
   }
+  /* line 103, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-8"] {
-    margin-right: 66.66666667%;
+    margin-right: 66.66667%;
   }
+  /* line 104, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-9"] {
     margin-right: 75%;
   }
+  /* line 105, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-10"] {
-    margin-right: 83.33333333%;
+    margin-right: 83.33333%;
   }
+  /* line 106, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_lg-11"] {
-    margin-right: 91.66666667%;
+    margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 1300px) {
+  /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-1"] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
+  /* line 62, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-2"] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
+  /* line 63, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-3"] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
+  /* line 64, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-4"] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
+  /* line 65, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-5"] {
-    -webkit-flex-basis: 41.66666667%;
-        -ms-flex-preferred-size: 41.66666667%;
-            flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
+    -webkit-flex-basis: 41.66667%;
+        -ms-flex-preferred-size: 41.66667%;
+            flex-basis: 41.66667%;
+    max-width: 41.66667%;
   }
+  /* line 66, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-6"] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
+  /* line 67, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-7"] {
-    -webkit-flex-basis: 58.33333333%;
-        -ms-flex-preferred-size: 58.33333333%;
-            flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
+    -webkit-flex-basis: 58.33333%;
+        -ms-flex-preferred-size: 58.33333%;
+            flex-basis: 58.33333%;
+    max-width: 58.33333%;
   }
+  /* line 68, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-8"] {
-    -webkit-flex-basis: 66.66666667%;
-        -ms-flex-preferred-size: 66.66666667%;
-            flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    -webkit-flex-basis: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+            flex-basis: 66.66667%;
+    max-width: 66.66667%;
   }
+  /* line 69, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-9"] {
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%;
   }
+  /* line 70, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-10"] {
-    -webkit-flex-basis: 83.33333333%;
-        -ms-flex-preferred-size: 83.33333333%;
-            flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
+    -webkit-flex-basis: 83.33333%;
+        -ms-flex-preferred-size: 83.33333%;
+            flex-basis: 83.33333%;
+    max-width: 83.33333%;
   }
+  /* line 71, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-11"] {
-    -webkit-flex-basis: 91.66666667%;
-        -ms-flex-preferred-size: 91.66666667%;
-            flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
+    -webkit-flex-basis: 91.66667%;
+        -ms-flex-preferred-size: 91.66667%;
+            flex-basis: 91.66667%;
+    max-width: 91.66667%;
   }
+  /* line 72, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-12"] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
+
+  /* line 80, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-0"] {
     margin-left: 0;
   }
+  /* line 81, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-1"] {
-    margin-left: 8.33333333%;
+    margin-left: 8.33333%;
   }
+  /* line 82, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-2"] {
-    margin-left: 16.66666667%;
+    margin-left: 16.66667%;
   }
+  /* line 83, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-3"] {
     margin-left: 25%;
   }
+  /* line 84, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-4"] {
-    margin-left: 33.33333333%;
+    margin-left: 33.33333%;
   }
+  /* line 85, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-5"] {
-    margin-left: 41.66666667%;
+    margin-left: 41.66667%;
   }
+  /* line 86, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-6"] {
     margin-left: 50%;
   }
+  /* line 87, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-6"] {
     margin-left: 50%;
   }
+  /* line 88, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-7"] {
-    margin-left: 58.33333333%;
+    margin-left: 58.33333%;
   }
+  /* line 89, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-8"] {
-    margin-left: 66.66666667%;
+    margin-left: 66.66667%;
   }
+  /* line 90, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-9"] {
     margin-left: 75%;
   }
+  /* line 91, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-10"] {
-    margin-left: 83.33333333%;
+    margin-left: 83.33333%;
   }
+  /* line 92, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_md-11"] {
-    margin-left: 91.66666667%;
+    margin-left: 91.66667%;
   }
+  /* line 94, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-0"] {
     margin-right: 0;
   }
+  /* line 95, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-1"] {
-    margin-right: 8.33333333%;
+    margin-right: 8.33333%;
   }
+  /* line 96, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-2"] {
-    margin-right: 16.66666667%;
+    margin-right: 16.66667%;
   }
+  /* line 97, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-3"] {
     margin-right: 25%;
   }
+  /* line 98, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-4"] {
-    margin-right: 33.33333333%;
+    margin-right: 33.33333%;
   }
+  /* line 99, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-5"] {
-    margin-right: 41.66666667%;
+    margin-right: 41.66667%;
   }
+  /* line 100, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-6"] {
     margin-right: 50%;
   }
+  /* line 101, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-6"] {
     margin-right: 50%;
   }
+  /* line 102, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-7"] {
-    margin-right: 58.33333333%;
+    margin-right: 58.33333%;
   }
+  /* line 103, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-8"] {
-    margin-right: 66.66666667%;
+    margin-right: 66.66667%;
   }
+  /* line 104, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-9"] {
     margin-right: 75%;
   }
+  /* line 105, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-10"] {
-    margin-right: 83.33333333%;
+    margin-right: 83.33333%;
   }
+  /* line 106, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_md-11"] {
-    margin-right: 91.66666667%;
+    margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 64em) {
+  /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-1"] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
+  /* line 62, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-2"] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
+  /* line 63, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-3"] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
+  /* line 64, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-4"] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
+  /* line 65, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-5"] {
-    -webkit-flex-basis: 41.66666667%;
-        -ms-flex-preferred-size: 41.66666667%;
-            flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
+    -webkit-flex-basis: 41.66667%;
+        -ms-flex-preferred-size: 41.66667%;
+            flex-basis: 41.66667%;
+    max-width: 41.66667%;
   }
+  /* line 66, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-6"] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
+  /* line 67, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-7"] {
-    -webkit-flex-basis: 58.33333333%;
-        -ms-flex-preferred-size: 58.33333333%;
-            flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
+    -webkit-flex-basis: 58.33333%;
+        -ms-flex-preferred-size: 58.33333%;
+            flex-basis: 58.33333%;
+    max-width: 58.33333%;
   }
+  /* line 68, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-8"] {
-    -webkit-flex-basis: 66.66666667%;
-        -ms-flex-preferred-size: 66.66666667%;
-            flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    -webkit-flex-basis: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+            flex-basis: 66.66667%;
+    max-width: 66.66667%;
   }
+  /* line 69, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-9"] {
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%;
   }
+  /* line 70, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-10"] {
-    -webkit-flex-basis: 83.33333333%;
-        -ms-flex-preferred-size: 83.33333333%;
-            flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
+    -webkit-flex-basis: 83.33333%;
+        -ms-flex-preferred-size: 83.33333%;
+            flex-basis: 83.33333%;
+    max-width: 83.33333%;
   }
+  /* line 71, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-11"] {
-    -webkit-flex-basis: 91.66666667%;
-        -ms-flex-preferred-size: 91.66666667%;
-            flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
+    -webkit-flex-basis: 91.66667%;
+        -ms-flex-preferred-size: 91.66667%;
+            flex-basis: 91.66667%;
+    max-width: 91.66667%;
   }
+  /* line 72, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-12"] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
+
+  /* line 80, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-0"] {
     margin-left: 0;
   }
+  /* line 81, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-1"] {
-    margin-left: 8.33333333%;
+    margin-left: 8.33333%;
   }
+  /* line 82, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-2"] {
-    margin-left: 16.66666667%;
+    margin-left: 16.66667%;
   }
+  /* line 83, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-3"] {
     margin-left: 25%;
   }
+  /* line 84, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-4"] {
-    margin-left: 33.33333333%;
+    margin-left: 33.33333%;
   }
+  /* line 85, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-5"] {
-    margin-left: 41.66666667%;
+    margin-left: 41.66667%;
   }
+  /* line 86, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-6"] {
     margin-left: 50%;
   }
+  /* line 87, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-6"] {
     margin-left: 50%;
   }
+  /* line 88, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-7"] {
-    margin-left: 58.33333333%;
+    margin-left: 58.33333%;
   }
+  /* line 89, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-8"] {
-    margin-left: 66.66666667%;
+    margin-left: 66.66667%;
   }
+  /* line 90, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-9"] {
     margin-left: 75%;
   }
+  /* line 91, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-10"] {
-    margin-left: 83.33333333%;
+    margin-left: 83.33333%;
   }
+  /* line 92, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_sm-11"] {
-    margin-left: 91.66666667%;
+    margin-left: 91.66667%;
   }
+  /* line 94, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-0"] {
     margin-right: 0;
   }
+  /* line 95, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-1"] {
-    margin-right: 8.33333333%;
+    margin-right: 8.33333%;
   }
+  /* line 96, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-2"] {
-    margin-right: 16.66666667%;
+    margin-right: 16.66667%;
   }
+  /* line 97, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-3"] {
     margin-right: 25%;
   }
+  /* line 98, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-4"] {
-    margin-right: 33.33333333%;
+    margin-right: 33.33333%;
   }
+  /* line 99, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-5"] {
-    margin-right: 41.66666667%;
+    margin-right: 41.66667%;
   }
+  /* line 100, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-6"] {
     margin-right: 50%;
   }
+  /* line 101, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-6"] {
     margin-right: 50%;
   }
+  /* line 102, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-7"] {
-    margin-right: 58.33333333%;
+    margin-right: 58.33333%;
   }
+  /* line 103, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-8"] {
-    margin-right: 66.66666667%;
+    margin-right: 66.66667%;
   }
+  /* line 104, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-9"] {
     margin-right: 75%;
   }
+  /* line 105, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-10"] {
-    margin-right: 83.33333333%;
+    margin-right: 83.33333%;
   }
+  /* line 106, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_sm-11"] {
-    margin-right: 91.66666667%;
+    margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 35.5em) {
+@media screen and (max-width: 48em) {
+  /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-1"] {
-    -webkit-flex-basis: 8.33333333%;
-        -ms-flex-preferred-size: 8.33333333%;
-            flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
+    -webkit-flex-basis: 8.33333%;
+        -ms-flex-preferred-size: 8.33333%;
+            flex-basis: 8.33333%;
+    max-width: 8.33333%;
   }
+  /* line 62, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-2"] {
-    -webkit-flex-basis: 16.66666667%;
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
+    -webkit-flex-basis: 16.66667%;
+        -ms-flex-preferred-size: 16.66667%;
+            flex-basis: 16.66667%;
+    max-width: 16.66667%;
   }
+  /* line 63, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-3"] {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%;
     max-width: 25%;
   }
+  /* line 64, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-4"] {
-    -webkit-flex-basis: 33.33333333%;
-        -ms-flex-preferred-size: 33.33333333%;
-            flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    -webkit-flex-basis: 33.33333%;
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%;
+    max-width: 33.33333%;
   }
+  /* line 65, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-5"] {
-    -webkit-flex-basis: 41.66666667%;
-        -ms-flex-preferred-size: 41.66666667%;
-            flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
+    -webkit-flex-basis: 41.66667%;
+        -ms-flex-preferred-size: 41.66667%;
+            flex-basis: 41.66667%;
+    max-width: 41.66667%;
   }
+  /* line 66, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-6"] {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
     max-width: 50%;
   }
+  /* line 67, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-7"] {
-    -webkit-flex-basis: 58.33333333%;
-        -ms-flex-preferred-size: 58.33333333%;
-            flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
+    -webkit-flex-basis: 58.33333%;
+        -ms-flex-preferred-size: 58.33333%;
+            flex-basis: 58.33333%;
+    max-width: 58.33333%;
   }
+  /* line 68, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-8"] {
-    -webkit-flex-basis: 66.66666667%;
-        -ms-flex-preferred-size: 66.66666667%;
-            flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
+    -webkit-flex-basis: 66.66667%;
+        -ms-flex-preferred-size: 66.66667%;
+            flex-basis: 66.66667%;
+    max-width: 66.66667%;
   }
+  /* line 69, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-9"] {
     -webkit-flex-basis: 75%;
         -ms-flex-preferred-size: 75%;
             flex-basis: 75%;
     max-width: 75%;
   }
+  /* line 70, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-10"] {
-    -webkit-flex-basis: 83.33333333%;
-        -ms-flex-preferred-size: 83.33333333%;
-            flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
+    -webkit-flex-basis: 83.33333%;
+        -ms-flex-preferred-size: 83.33333%;
+            flex-basis: 83.33333%;
+    max-width: 83.33333%;
   }
+  /* line 71, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-11"] {
-    -webkit-flex-basis: 91.66666667%;
-        -ms-flex-preferred-size: 91.66666667%;
-            flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
+    -webkit-flex-basis: 91.66667%;
+        -ms-flex-preferred-size: 91.66667%;
+            flex-basis: 91.66667%;
+    max-width: 91.66667%;
   }
+  /* line 72, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-12"] {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
     max-width: 100%;
   }
+
+  /* line 80, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-0"] {
     margin-left: 0;
   }
+  /* line 81, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-1"] {
-    margin-left: 8.33333333%;
+    margin-left: 8.33333%;
   }
+  /* line 82, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-2"] {
-    margin-left: 16.66666667%;
+    margin-left: 16.66667%;
   }
+  /* line 83, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-3"] {
     margin-left: 25%;
   }
+  /* line 84, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-4"] {
-    margin-left: 33.33333333%;
+    margin-left: 33.33333%;
   }
+  /* line 85, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-5"] {
-    margin-left: 41.66666667%;
+    margin-left: 41.66667%;
   }
+  /* line 86, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-6"] {
     margin-left: 50%;
   }
+  /* line 87, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-6"] {
     margin-left: 50%;
   }
+  /* line 88, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-7"] {
-    margin-left: 58.33333333%;
+    margin-left: 58.33333%;
   }
+  /* line 89, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-8"] {
-    margin-left: 66.66666667%;
+    margin-left: 66.66667%;
   }
+  /* line 90, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-9"] {
     margin-left: 75%;
   }
+  /* line 91, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-10"] {
-    margin-left: 83.33333333%;
+    margin-left: 83.33333%;
   }
+  /* line 92, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-left*="_xs-11"] {
-    margin-left: 91.66666667%;
+    margin-left: 91.66667%;
   }
+  /* line 94, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-0"] {
     margin-right: 0;
   }
+  /* line 95, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-1"] {
-    margin-right: 8.33333333%;
+    margin-right: 8.33333%;
   }
+  /* line 96, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-2"] {
-    margin-right: 16.66666667%;
+    margin-right: 16.66667%;
   }
+  /* line 97, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-3"] {
     margin-right: 25%;
   }
+  /* line 98, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-4"] {
-    margin-right: 33.33333333%;
+    margin-right: 33.33333%;
   }
+  /* line 99, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-5"] {
-    margin-right: 41.66666667%;
+    margin-right: 41.66667%;
   }
+  /* line 100, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-6"] {
     margin-right: 50%;
   }
+  /* line 101, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-6"] {
     margin-right: 50%;
   }
+  /* line 102, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-7"] {
-    margin-right: 58.33333333%;
+    margin-right: 58.33333%;
   }
+  /* line 103, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-8"] {
-    margin-right: 66.66666667%;
+    margin-right: 66.66667%;
   }
+  /* line 104, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-9"] {
     margin-right: 75%;
   }
+  /* line 105, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-10"] {
-    margin-right: 83.33333333%;
+    margin-right: 83.33333%;
   }
+  /* line 106, scss/_gridlex-vars.scss */
   [class*="grid"] > [push-right*="_xs-11"] {
-    margin-right: 91.66666667%;
+    margin-right: 91.66667%;
   }
 }
 
@@ -1910,6 +2179,26 @@ th {
 .overflow-x-hidden {
     overflow-x: hidden;
 }
+@media (min-width: 1300px){
+	.hidden-large {
+		display: none !important;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1300px){
+	.hidden-medium {
+		display: none !important;
+	}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hidden-small {
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none !important;
+    }
+}
 .hidden {
     display: none;
 }
@@ -1918,6 +2207,16 @@ th {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.wrap {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.nowrap {
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
 }
 .margin-auto {
     margin: auto;
@@ -2121,7 +2420,7 @@ tbody.collapse.in {
     display: block;
 }
 
-.i-icon {
+ .i-icon {
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -2192,6 +2491,10 @@ tbody.collapse.in {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .main-slider__info::before {
     content: '';
@@ -2330,6 +2633,69 @@ tbody.collapse.in {
 	.main-slider-navs {
 		display: none;
 	}
+}
+.set-products {
+	width: calc(100% + 20px);
+	margin: 0 -10px 50px;
+}
+.set-products__slide {
+    padding: 0 10px;
+}
+.set-products-navs [class*=nav] {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2212%22%20height%3D%2225%22%20viewBox%3D%220%200%2012%2025%22%20style%3D%22fill%3A%23000000%3Bstroke%3A%23b59063%3B%22%3E%20%3Cdefs%3E%20%3Cstyle%3E%20.cls-2%20%7B%20stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-width%3A%202px%3B%20fill%3A%20none%3B%20%7D%20%3C%2Fstyle%3E%20%3C%2Fdefs%3E%20%3Cpath%20d%3D%22M1.993%2C1.974%20C1.993%2C1.974%2011.070%2C13.632%2011.070%2C13.632%20C11.070%2C13.632%201.993%2C24.457%201.993%2C24.457%20%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #b59063;
+}
+.set-products-navs [class*=nav]:hover {
+    background-color: #b59063;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2212%22%20height%3D%2225%22%20viewBox%3D%220%200%2012%2025%22%20style%3D%22fill%3A%23000000%3Bstroke%3Awhite%3B%22%3E%20%3Cdefs%3E%20%3Cstyle%3E%20.cls-2%20%7B%20stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-width%3A%202px%3B%20fill%3A%20none%3B%20%7D%20%3C%2Fstyle%3E%20%3C%2Fdefs%3E%20%3Cpath%20d%3D%22M1.993%2C1.974%20C1.993%2C1.974%2011.070%2C13.632%2011.070%2C13.632%20C11.070%2C13.632%201.993%2C24.457%201.993%2C24.457%20%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+.set-products-navs .nav-next {
+    right: -40px;
+}
+.set-products-navs .nav-prev {
+    left: -40px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+@media (min-width: 1025px) and (max-width: 1300px){
+	.set-products-navs .nav-next {
+        right: -20px;
+    }
+	.set-products-navs .nav-prev {
+        left: -20px;
+    }
+}
+.compact-navs [class*=nav] {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2212%22%20height%3D%2225%22%20viewBox%3D%220%200%2012%2025%22%20style%3D%22fill%3A%23000000%3Bstroke%3A%23686c76%3B%22%3E%20%3Cdefs%3E%20%3Cstyle%3E%20.cls-2%20%7B%20stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-width%3A%202px%3B%20fill%3A%20none%3B%20%7D%20%3C%2Fstyle%3E%20%3C%2Fdefs%3E%20%3Cpath%20d%3D%22M1.993%2C1.974%20C1.993%2C1.974%2011.070%2C13.632%2011.070%2C13.632%20C11.070%2C13.632%201.993%2C24.457%201.993%2C24.457%20%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.compact-navs [class*=nav]:hover {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2212%22%20height%3D%2225%22%20viewBox%3D%220%200%2012%2025%22%20style%3D%22fill%3A%23000000%3Bstroke%3A%23b59063%3B%22%3E%20%3Cdefs%3E%20%3Cstyle%3E%20.cls-2%20%7B%20stroke-linecap%3A%20round%3B%20stroke-linejoin%3A%20round%3B%20stroke-width%3A%202px%3B%20fill%3A%20none%3B%20%7D%20%3C%2Fstyle%3E%20%3C%2Fdefs%3E%20%3Cpath%20d%3D%22M1.993%2C1.974%20C1.993%2C1.974%2011.070%2C13.632%2011.070%2C13.632%20C11.070%2C13.632%201.993%2C24.457%201.993%2C24.457%20%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+}
+.compact-navs .nav-prev {
+    left: -10px;
+    -webkit-transform: rotate(180deg) translateY(-2px);
+            transform: rotate(180deg) translateY(-2px);
+}
+.compact-navs .nav-next {
+    left: 60px;
 }.btn {
     display: inline-block;
     padding: 9px 20px;
@@ -2339,12 +2705,104 @@ tbody.collapse.in {
     font-size: 18px;
     text-decoration: none;
     font-family: "MyriadPro";
+	box-sizing: border-box;
+}
+.btn[class*="--big"] {
+    padding: 13px 20px;
+    width: 100%;
+}
+.btn[class*="--square"] {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+.btn[class*="--square"] .i-icon {
+    width: 100%;
+}
+.btn[class*="--primary"] {
+    background: #b59063;
+    color: white;
+    border-color: #b59063;
+}
+.btn[class*="--dark"] {
+    background: #2e3034;
+    border-color: #2e3034;
+    color: white;
+}
+.btn[class*="--with-icon"] .i-icon {
+    fill: currentColor;
+    width: 30px;
+    height: 22px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.btn[class*="--with-icon"] .i-icon--stroke {
+    fill: none;
+    stroke: currentColor;
+}
+.btn[class*="--only-icon"] .i-icon {
+    fill: currentColor;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn[class*="--only-icon"] .i-icon--stroke {
+    fill: none;
+    stroke: currentColor;
+}
+.btn[class*="--main-anim"]{
+    position: relative;
+}
+.btn[class*="--main-anim"] >.btn-text {
+    display: inline-block;
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+            transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.btn[class*="--main-anim"] >.i-icon {
+    position: absolute;
+    left: auto;
+    margin-left: -40px;
+    -webkit-transform: translate3d(-40px, 2.5em, 0);
+            transform: translate3d(-40px, 2.5em, 0);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+            transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.btn[class*="--main-anim"]:hover >.btn-text,
+			.btn[class*="--main-anim"]:hover >.i-icon {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.btn[class*="--main-anim"].anim-click--play >.btn-text,
+			.btn[class*="--main-anim"].anim-click--play >.i-icon {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.btn.anim-click--play >.btn-text,
+		.btn.anim-click--play >.i-icon {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 .btn span {
     vertical-align: middle;
+    will-change: transform;
 }
 .btn .i-icon {
     margin-right: 3px;
+    will-change: transform;
 }
 .btn--transparent {
     background: transparent;
@@ -2402,15 +2860,32 @@ tbody.collapse.in {
 }
  
 .tile-block {
-    padding: 35px 40px;
-    padding-bottom: 25px;
+    padding: 30px 40px;
     background: white;
     margin-bottom: 20px;
     position: relative;
+	width: 100%;
+}
+.tile-block__icon {
+    position: absolute;
+    width: 28px;
+    height: 32px;
+    top: 0;
+    right: 28px;
+}
+.tile-block__icon .i-icon {
+    fill: #b59063;
+    width: 100%;
+    height: 100%;
+}
+.tile-block--dark {
+    background: #2e3034;
+    color: white;
 }
 .tile-block h2 {
     font-family: "Bebas Neue Book";
     color: #b59063;
+    margin: 0 0 15px;
 }
 .tile-block__text {
     font-weight: 300;
@@ -2447,8 +2922,68 @@ tbody.collapse.in {
 .tile-block--video {
     padding-top: 60%;
 }
+.tile-block--video .tile-block__icon {
+    top: auto;
+    margin-top: -28px;
+}
+.tile-block__socials .i-icon {
+    width: 40px;
+    height: 40px;
+    color: #b59063;
+    border: 1px solid currentColor;
+    font-size: 23px;
+    line-height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.tile-block__socials .i-icon:hover {
+    color: white;
+}
+.tile-block--collection {
+    padding: 0;
+    color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 330px;
+}
+.tile-block--collection .tile-block__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
 .tile-block .btn {
-    margin: 10px 0;
+    margin: 15px 0;
+}
+.tile-block >*:last-child,
+	.tile-block >*:last-child > *:last-child {
+    margin-bottom: 0;
+}
+.tile-block--bordered {
+    padding: 40px 30px;
+}
+.tile-block--bordered:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid #b59063;
+    top: 7px;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+}
+.tile-block__wrapper {
+    position: relative;
+}
+.tile-block.no-margin {
+    margin: 0;
 }
 @media (max-width: 768px) {
     .tile-block {
@@ -3574,6 +4109,10 @@ tbody.collapse.in {
     background: white;
     position: relative;
 }
+.set-products__slide .product-tile {
+    width: 100%;
+    margin: 0;
+}
 .product-tile__wrap {
     top: 0;
     left: 0;
@@ -3610,14 +4149,19 @@ tbody.collapse.in {
     padding-top: 43%;
 }
 .product-tile--half  .product-tile__wrap img {
-    width: 100%;
-    height: auto;
-    max-height: 200%;
+    /*width: 100%;
+			height: auto;
+			max-height: 200%;
+			left: 0;
+			bottom: -5%;*/
     margin: auto;
     display: block;
     position: absolute;
-    left: 0;
-    bottom: -5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: auto;
+    height: 100%;
 }
 .product-tile__info {
     display: -webkit-box;
@@ -3764,34 +4308,178 @@ tbody.collapse.in {
 		width: 100vw;
 		margin-left: calc((100vw - 100%)/ -2);
 	}
+}.product-detail {
+	margin-bottom: 10px;
+}
+.product-detail .tile-block {
+	padding-top: 30px;
+}
+.product-detail__title h1,
+		.product-detail__title h2,
+		.product-detail__title h3,
+		.product-detail__title h4,
+		.product-detail__title h5,
+		.product-detail__title h6 {
+	margin: 0 0 15px;
+	font-size: 30px;
+	color: #b59063;
+}
+.product-detail__price {
+	margin: 10px 0;
+}
+.product-detail__price .price {
+	font-size: 18px;
+}
+.product-detail__price .availability {
+	font-size: 12px;
+	font-weight: lighter;
+	margin-left: 15px;
+}
+.product-detail__price .availability--in-stock {
+	color: #85b86c;
+}
+.product-detail__price .availability--out-of-stock {
+	color: #df5c5c;
+}
+.product-detail__desc,
+	.product-detail__params {
+	font-weight: lighter;
+}
+/*margin: */
+.product-detail__params .params-table {
+	width: 100%;
+}
+.product-detail__params .params-table td {
+	padding: 0.5em 0;
+}
+.product-detail__params .params-table .param-name {
+	width: 35%;
+}
+.product-detail__buttons--outside {
+	position: absolute;
+	top: 32px;
+	left: 0;
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
+.product-detail__buttons--outside .btn {
+	display: block;
+	margin: 0;
+}
+.product-detail .slider-wrapper {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.product-detail__slider {
+	width: 100%;
+	height: 100%;
+}
+.product-detail__slider .owl-carousel {
+	padding: 40px 30px;
+	padding-left: 0;
 }.collection-block {
+	padding-top: 35px;
     padding-bottom: 0;
 }
 .collection-block .tile-block__text {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0%;
-        -ms-flex: 1 1 0%;
-            flex: 1 1 0%;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 0%;
+	    -ms-flex: 1 1 0%;
+	        flex: 1 1 0%;
 }
 .collection-block__top {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 35px;
-    border-bottom: 1px solid #f2f2f2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #f2f2f2;
 }
 .collection-block__image {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 230px;
-        -ms-flex: 0 0 230px;
-            flex: 0 0 230px;
-    margin-right: 20px;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 230px;
+	    -ms-flex: 0 0 230px;
+	        flex: 0 0 230px;
+	margin-right: 20px;
 }
 .collection-block__image img {
-    height: 230px;
+	height: 230px;
 }
 .collection-block__info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.collection-block__bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 -40px;
+	margin-bottom: 10px;
+	padding-top: 22px;
+}
+.collection-block__bottom h2 {
+	margin-left: 40px;
+}
+.collection-block__bottom > * {
+	width: 50%;
+}
+.collection-block__left {
+	border-right: 1px solid #f2f2f2;
+}
+.collection-block-list {
+    margin-top: 20px;
+}
+.collection-block-list__item a {
+	font-family: 'MyriadPro';
+	font-size: 18px;
+	color: #5a5e66;
+	text-decoration: none;
+	padding: 7px 0;
+	padding-left: 40px;
+	display: block;
+}
+.collection-block-list__item a:hover {
+	background: #ededed;
+	color: #b59063;
+	text-decoration: underline;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2219%22%20height%3D%2214%22%20viewBox%3D%220%200%2019%2014%22%20style%3D%22fill%3A%23b59063%3B%22%3E%20%3Cpath%20d%3D%22M18.036%2C6.703%20C18.036%2C6.703%2011.672%2C13.067%2011.672%2C13.067%20C11.672%2C13.067%2010.964%2C12.360%2010.964%2C12.360%20C10.964%2C12.360%2016.293%2C7.031%2016.293%2C7.031%20C16.293%2C7.031%20-0.000%2C7.031%20-0.000%2C7.031%20C-0.000%2C7.031%20-0.000%2C6.031%20-0.000%2C6.031%20C-0.000%2C6.031%2016.293%2C6.031%2016.293%2C6.031%20C16.293%2C6.031%2010.964%2C0.703%2010.964%2C0.703%20C10.964%2C0.703%2011.672%2C-0.004%2011.672%2C-0.004%20C11.672%2C-0.004%2018.036%2C6.360%2018.036%2C6.360%20C18.036%2C6.360%2017.864%2C6.531%2017.864%2C6.531%20C17.864%2C6.531%2018.036%2C6.703%2018.036%2C6.703%20Z%22%2F%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+}
+.collection-block-list__btn {
+	margin: 10px 0;
+	margin-left: 40px;
+}
+.collection-block-list__btn:last-child {
+	margin-bottom: 25px;
+}
+.collection__info {
+    background: rgba(46, 48, 52, 0.8);
+    padding: 25px 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 75%;
+    height: 70%;
+    max-height: 335px;
+    text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3801,54 +4489,80 @@ tbody.collapse.in {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
-.collection-block__bottom {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 -40px;
-    margin-bottom: 10px;
-    padding-top: 22px;
+@media (min-width: 769px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1300px){
+    .collection__info {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 }
-.collection-block__bottom h2 {
-    margin-left: 40px;
+@media (min-width: 1300px){
+    .collection__info {
+        max-width: 240px;
+    }
 }
-.collection-block__bottom > * {
-    width: 50%;
+.collection__info::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border: 4px solid rgba(46, 48, 52, 0.8);
+    top: -20px;
+    left: -20px;
+    z-index: -1;
 }
-.collection-block__left {
-    border-right: 1px solid #f2f2f2;
+.collection__heading {
+    text-transform: uppercase;
+    font-family: "Bebas Neue Bold";
+    font-size: 30px;
+    color: #fff;
 }
-.collection-block-list {
-    margin-top: 20px;
+.collection__date {
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: white;
 }
-.collection-block-list__item a {
-    font-family: 'MyriadPro';
+.collection__note {
+    font-family: "Roboto";
+    font-weight: 400;
+    color: white;
     font-size: 18px;
-    color: #5a5e66;
-    text-decoration: none;
-    padding: 7px 0;
-    padding-left: 40px;
-    display: block;
 }
-.collection-block-list__item a:hover {
-    background: #ededed;
-    color: #b59063;
-    text-decoration: underline;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2219%22%20height%3D%2214%22%20viewBox%3D%220%200%2019%2014%22%20style%3D%22fill%3A%23b59063%3B%22%3E%20%3Cpath%20d%3D%22M18.036%2C6.703%20C18.036%2C6.703%2011.672%2C13.067%2011.672%2C13.067%20C11.672%2C13.067%2010.964%2C12.360%2010.964%2C12.360%20C10.964%2C12.360%2016.293%2C7.031%2016.293%2C7.031%20C16.293%2C7.031%20-0.000%2C7.031%20-0.000%2C7.031%20C-0.000%2C7.031%20-0.000%2C6.031%20-0.000%2C6.031%20C-0.000%2C6.031%2016.293%2C6.031%2016.293%2C6.031%20C16.293%2C6.031%2010.964%2C0.703%2010.964%2C0.703%20C10.964%2C0.703%2011.672%2C-0.004%2011.672%2C-0.004%20C11.672%2C-0.004%2018.036%2C6.360%2018.036%2C6.360%20C18.036%2C6.360%2017.864%2C6.531%2017.864%2C6.531%20C17.864%2C6.531%2018.036%2C6.703%2018.036%2C6.703%20Z%22%2F%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
+.collection__icon {
+    margin: 20px 0;
 }
-.collection-block-list__btn {
-    margin: 10px 0;
-    margin-left: 40px;
+@media (min-width: 769px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1300px){
+    .collection__icon {
+        margin: 0;
+    }
 }
-/* 
+.collection__icon .i-icon {
+    width: 50px;
+    height: 35px;
+}
+.collection__button {
+    margin: 40px auto 0;
+}
+@media (min-width: 769px) and (max-width: 1024px), (min-width: 1025px) and (max-width: 1300px){
+    .collection__button {
+        margin-top: 0;
+        max-width: 175px;
+    }
+}
+.collection__button .btn {
+    width: 100%;
+}
+.collection__button .btn:hover {
+    background-color: transparent;
+    border-color: currentColor;
+}/* 
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {

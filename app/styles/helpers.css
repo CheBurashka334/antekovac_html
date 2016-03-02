@@ -1,3 +1,6 @@
+@import "./colors.css";
+@import "./media.css";
+
 .table-emulate {
     display: table;
     table-layout: fixed;
@@ -165,6 +168,17 @@
 .overflow-x-hidden {
     overflow-x: hidden;
 }
+
+@media (--big){
+	.hidden-large {
+		display: none !important;
+	}
+}
+@media (--medium){
+	.hidden-medium {
+		display: none !important;
+	}
+}
 @media (--small) {
     .hidden-small {
         display: none !important;
@@ -181,6 +195,12 @@
 
 .space-between {
     justify-content: space-between;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.nowrap {
+	flex-wrap: nowrap;
 }
 
 .margin-auto {

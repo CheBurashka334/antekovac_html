@@ -8,6 +8,10 @@
     margin-bottom: 20px;
     background: white;
     position: relative;
+	.set-products__slide & {
+		width: 100%;
+		margin: 0;
+	}
     &__wrap {
         top: 0;
         left: 0;
@@ -40,14 +44,18 @@
 			padding-top: 43%;
 		}
 		img {
-			width: 100%;
+			/*width: 100%;
 			height: auto;
 			max-height: 200%;
+			left: 0;
+			bottom: -5%;*/
 			margin: auto;
 			display: block;
 			position: absolute;
-			left: 0;
-			bottom: -5%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: auto;
+			height: 100%;
 		}
 	}
 	&__info {

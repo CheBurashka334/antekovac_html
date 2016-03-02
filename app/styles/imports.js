@@ -1,9 +1,11 @@
 'use strict';
 
+require("./gridlex_custom.css");
 require("./media.css");
 require("./helpers.css");
 require("./styles.css");
 require("./colors.css");
+require("./selectors.css");
 
 
 require("./components/icons.css");
@@ -32,7 +34,9 @@ require("./components/dropdown.css");
 require("./components/products/product-tile.css");
 require("./components/products/products-list.css");
 require("./components/products/product-block.css");
+require("./components/products/product-detail.css");
 
 /*Collections*/
 
 require("./components/collections/collection-block.css");
+require("./components/collections/collection-info.css");

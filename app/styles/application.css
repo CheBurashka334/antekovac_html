@@ -1,7 +1,9 @@
+@import "gridlex_custom.css";
 @import "media.css";
 @import "helpers.css";
 @import "styles.css";
 @import "colors.css";
+@import "selectors.css";
 
 
 @import "components/icons.css";
@@ -26,3 +28,8 @@
 @import "components/products/product-tile.css";
 @import "components/products/products-list.css";
 @import "components/products/product-block.css";
+@import "components/products/product-detail.css";
+
+/* Collections */
+
+@import "components/collections/collection-info.css";

@@ -1,0 +1,78 @@
+@import "../../colors.css";
+@import "../../media.css";
+
+.collection {
+	&__info {
+		background: rgba(46, 48, 52, 0.8);
+		padding: 25px 20px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 75%;
+		height: 70%;
+		max-height: 335px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		@media (--small), (--medium){
+			justify-content: space-between;
+		}
+		@media (--big){
+			max-width: 240px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: calc(100% + 30px);
+			height: calc(100% + 30px);
+			border: 4px solid rgba(46, 48, 52, 0.8);
+			top: -20px;
+			left: -20px;
+			z-index: -1;
+		}
+	}
+	&__heading {
+		text-transform: uppercase;
+		font-family: "Bebas Neue Bold";
+		font-size: 30px;
+		color: #fff;
+	}
+	&__date {
+		text-transform: uppercase;
+		font-family: "Roboto";
+		font-weight: 400;
+		color: white;
+	}
+	&__note {
+		font-family: "Roboto";
+		font-weight: 400;
+		color: white;
+		font-size: 18px;
+	}
+	&__icon {
+		margin: 20px 0;
+		@media (--small), (--medium){
+			margin: 0;
+		}
+		.i-icon {
+			width: 50px;
+			height: 35px;
+		}
+	}
+	&__button {
+		margin: 40px auto 0;
+		@media (--small), (--medium){
+			margin-top: 0;
+			max-width: 175px;
+		}
+		.btn {
+			width: 100%;
+			&:hover {
+				background-color: transparent;
+				border-color: currentColor;
+			}
+		}
+	}
+}

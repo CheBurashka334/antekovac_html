@@ -2,6 +2,7 @@
 @import "../../media.css";
 
 .collection-block {
+	padding-top: 35px;
     padding-bottom: 0;
     .tile-block {
         &__text {
@@ -65,5 +66,8 @@
     &__btn {
         margin: 10px 0;
         margin-left: 40px;
+		&:last-child {
+			margin-bottom: 25px;
+		}
     }
 }

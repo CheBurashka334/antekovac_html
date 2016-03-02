@@ -1,0 +1,73 @@
+@import "../../media.css";
+@import "../../colors.css";
+@import "../../selectors.css";
+
+.product-detail {
+	margin-bottom: 10px;
+	.tile-block {
+		padding-top: 30px;
+	}
+	&__title {
+		:--heading {
+			margin: 0 0 15px;
+			font-size: 30px;
+			color: var(--main-brown);
+		}
+	}
+	&__price {
+		margin: 10px 0;
+		.price {
+			font-size: 18px;
+		}
+		.availability {
+			font-size: 12px;
+			font-weight: lighter;
+			margin-left: 15px;
+			&--in-stock {
+				color: #85b86c;
+			}
+			&--out-of-stock {
+				color: #df5c5c;
+			}
+		}
+	}
+	&__desc,
+	&__params {
+		font-weight: lighter;
+	}
+	&__params {
+		/*margin: */
+		.params-table {
+			width: 100%;
+			td {
+				padding: 0.5em 0;
+			}
+			.param-name {
+				width: 35%;
+			}
+		}
+	}
+	&__buttons {
+		&--outside {
+			position: absolute;
+			top: 32px;
+			left: 0;
+			transform: translateX(-100%);
+			.btn {
+				display: block;
+				margin: 0;
+			}
+		}
+	}
+	.slider-wrapper {
+		flex-direction: column;
+	}
+	&__slider {
+		width: 100%;
+		height: 100%;
+		.owl-carousel {
+			padding: 40px 30px;
+			padding-left: 0;
+		}
+	}
+}

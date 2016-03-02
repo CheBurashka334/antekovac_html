@@ -9,11 +9,99 @@
     font-size: 18px;
     text-decoration: none;
     font-family: "MyriadPro";
+	box-sizing: border-box;
+	&[class*="--big"] {
+		padding: 13px 20px;
+		width: 100%;
+	}
+	&[class*="--square"] {
+		width: 40px;
+		height: 40px;
+		padding: 3px;
+		.i-icon {
+			width: 100%;
+		}
+	}
+	&[class*="--primary"] {
+		background: var(--main-brown);
+		color: white;
+		border-color: var(--main-brown);
+	}
+	&[class*="--dark"] {
+		background: var(--dark-gray);
+		border-color: var(--dark-gray);
+		color: white;
+		
+	}
+	&[class*="--with-icon"] {
+		.i-icon {
+			fill: currentColor;
+			width: 30px;
+			height: 22px;
+			margin-right: 20px;
+			vertical-align: middle;
+			&--stroke {
+				fill: none;
+				stroke: currentColor;
+			}
+		}
+	}
+	&[class*="--only-icon"] {
+		.i-icon {
+			fill: currentColor;
+			margin: 0;
+			vertical-align: middle;
+			text-align: center;
+			&--stroke {
+				fill: none;
+				stroke: currentColor;
+			}
+		}
+	}
+	&[class*="--main-anim"]{
+		position: relative;
+		>.btn-text {
+			display: inline-block;
+			transform: translate3d(-10px, 0, 0);
+			transition: transform .3s;
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
+		>.i-icon {
+			position: absolute;
+			left: auto;
+			margin-left: -40px;
+			transform: translate3d(-40px, 2.5em, 0);
+			transition: transform .3s;
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
+		&:hover {
+			>.btn-text,
+			>.i-icon {
+				transform: translate3d(0, 0, 0);
+			}
+		}
+		&.anim-click--play {
+			>.btn-text,
+			>.i-icon {
+				transform: translateY(2px);
+				transition: .3s;
+			}
+		}
+	}
+	&.anim-click--play {
+		>.btn-text,
+		>.i-icon {
+			transform: translateY(2px);
+			transition: .3s;
+		}
+	}
     span {
         vertical-align: middle;
+		will-change: transform;
     }
     .i-icon {
         margin-right: 3px;
+		will-change: transform;
     }
     &--transparent {
         background: transparent;

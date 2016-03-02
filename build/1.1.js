@@ -1,14 +1,14 @@
 webpackJsonpApp([1],{
 
-/***/ 37:
+/***/ 40:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(38);
-	__webpack_require__(39);
+	module.exports = __webpack_require__(41);
+	__webpack_require__(42);
 
 /***/ },
 
-/***/ 38:
+/***/ 41:
 /***/ function(module, exports) {
 
 	/**
@@ -3163,14 +3163,14 @@ webpackJsonpApp([1],{
 
 /***/ },
 
-/***/ 39:
+/***/ 42:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 40:
+/***/ 43:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3186,8 +3186,7 @@ webpackJsonpApp([1],{
 	                navClass: ['nav-prev', 'nav-next'],
 	                navText: ['', '']
 	            }
-	        }];
-	
+	        },
 	        // {
 	        //     'selector' : '.index-new-products',
 	        //     'options' : {
@@ -3198,6 +3197,30 @@ webpackJsonpApp([1],{
 	        //         navText: ['', '']
 	        //     }
 	        // }
+	        {
+	            'selector': '.set-products',
+	            'options': {
+	                items: 3,
+	                itemsDesktop: [1300, 3],
+	                itemsDesktopSmall: [1024, 2],
+	                itemsTablet: [768, 1],
+	                itemsMobile: false,
+	                nav: true,
+	                navContainerClass: 'set-products-navs',
+	                navClass: ['nav-prev', 'nav-next'],
+	                navText: ['', '']
+	            }
+	        }, {
+	            'selector': '.product-detail__slider',
+	            'options': {
+	                items: 1,
+	                nav: true,
+	                navContainerClass: 'compact-navs',
+	                navClass: ['nav-prev', 'nav-next'],
+	                navText: ['', '']
+	            }
+	        }];
+	
 	        sliders.forEach(function (item) {
 	            $(item.selector).find('.owl-carousel').owlCarousel(item.options);
 	        });

@@ -8,9 +8,7 @@
                     Architekt
                 </div>
                 <div class="main-slider__icon">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#architekt"></use>
-                    </svg>
+					<img src="images/architekt.png"/>
                 </div>
                 <div class="main-slider__date">
                     апрель 2016
@@ -28,9 +26,7 @@
                     fdbfdb
                 </div>
                 <div class="main-slider__icon">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#architekt"></use>
-                    </svg>
+					<img src="images/architekt.png"/>
                 </div>
                 <div class="main-slider__date">
                     апрель 2016
@@ -54,7 +50,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product1.png" alt="" />
+                        <img src="images/catalog/afm-white-8264.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -85,7 +81,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product11.png" alt="" />
+                        <img src="images/catalog/afm-white-8297.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -117,7 +113,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product2.png" alt="" />
+							<img src="images/catalog/afm-white-8230.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">
@@ -148,7 +144,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product2.png" alt="" />
+							<img src="images/catalog/afm-white-8045.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">
@@ -181,11 +177,12 @@
 
 <div class="container">
     <div class="grid">
-        <div class="col-6_lg-12">
+        <div class="col-6_lg-6_md-12">
             <div class="block-heading block-heading--mobile">
                 <h2>Для нее</h2>
             </div>
             <div class="collection-block tile-block">
+				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-her-col"/></svg></div>
                 <div class="collection-block__top">
                     <div class="collection-block__image">
                         <img src="images/collection1.jpg" alt="" />
@@ -275,11 +272,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-6_lg-12">
+        <div class="col-6_lg-6_md-12">
             <div class="block-heading block-heading--mobile">
                 <h2>Для него</h2>
             </div>
             <div class="collection-block tile-block">
+				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-him-col"/></svg></div>
                 <div class="collection-block__top">
                     <div class="collection-block__image">
                         <img src="images/collection2.jpg" alt="" />
@@ -388,6 +386,7 @@
     <div class="about-brand grid-equalHeight">
         <div class="col-6">
             <div class="tile-block">
+				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#about-brand"/></svg></div>
                 <div class="tile-block__image">
                     <img src="images/about-brand.jpg" alt="" />
                 </div>
@@ -406,6 +405,7 @@
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
             <div class="tile-block">
+				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
                 <h2>индивидуальный заказ</h2>
                 <div class="tile-block__text">
                     <p>
@@ -420,6 +420,7 @@
                 <div class="tile-block__video" style="background-image: url(images/masterskie.jpg)">
                     <a href="#"></a>
                 </div>
+				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>
                 <h2>Мастерские</h2>
                 <div class="tile-block__text">
                     <p>

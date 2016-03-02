@@ -129,7 +129,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product1.png" alt="" />
+                        <img src="images/catalog/afm-white-7133.png" alt="" />
                     </a>
                 </div>
                 <div class="product-tile__info">
@@ -160,7 +160,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product3.png" alt="" />
+                        <img src="images/catalog/afm-white-7166.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -192,7 +192,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product2.png" alt="" />
+							<img src="images/catalog/afm-white-8122.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">
@@ -223,7 +223,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product6.png" alt="" />
+							<img src="images/catalog/afm-white-8134.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">
@@ -255,7 +255,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product4.png" alt="" />
+                        <img src="images/catalog/afm-white-7351.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -282,11 +282,11 @@
 				</div>
             </div>
         </div>
-        <div class="product-tile">
+		<div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product5.png" alt="" />
+                        <img src="images/catalog/afm-white-7940.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -312,12 +312,12 @@
                     </a>
 				</div>
             </div>
-        </div>
+		</div>
 		<div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product8.png" alt="" />
+                        <img src="images/catalog/afm-white-7992.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -343,12 +343,12 @@
                     </a>
 				</div>
             </div>
-        </div>
+		</div>
         <div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product9.png" alt="" />
+                        <img src="images/catalog/afm-white-8010.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -379,7 +379,7 @@
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
                     <a href="#">
-                        <img src="images/product11.png" alt="" />
+                        <img src="images/catalog/afm-white-8045.png" alt="" />
                     </a>
                 </div>
 				<div class="product-tile__info">
@@ -411,7 +411,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product10.png" alt="" />
+							<img src="images/catalog/afm-white-8147.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">
@@ -442,7 +442,7 @@
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
 						<a href="#">
-							<img src="images/product7.png" alt="" />
+							<img src="images/catalog/afm-white-8165.png" alt="" />
 						</a>
 					</div>
 					<div class="product-tile__info">

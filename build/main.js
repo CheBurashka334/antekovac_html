@@ -104,11 +104,9 @@ var App =
 	
 	__webpack_require__(5);
 	
-	__webpack_require__(7);
-	
 	// Load styles
 	
-	__webpack_require__(8);
+	__webpack_require__(7);
 	// require('./styles/fonts.css');
 	
 	// Lazy components
@@ -120,7 +118,7 @@ var App =
 	$(function () {
 	    lazyComponents.forEach(function (item) {
 	        if ($(item.data).length) {
-	            __webpack_require__(31)("./" + item.name + '.js')(function (component) {
+	            __webpack_require__(34)("./" + item.name + '.js')(function (component) {
 	                component.run();
 	            });
 	        }
@@ -132,16 +130,16 @@ var App =
 	$(function () {
 	    if ($('.owl-carousel').length) {
 	        __webpack_require__.e/* nsure */(1, function (require) {
-	            __webpack_require__(37);
-	            var Sliders = __webpack_require__(40);
+	            __webpack_require__(40);
+	            var Sliders = __webpack_require__(43);
 	            Sliders.run();
 	        });
 	    }
 	});
 	
-	var LazyImages = __webpack_require__(34);
-	var Dropdowns = __webpack_require__(35);
-	var Noodles = __webpack_require__(36);
+	var LazyImages = __webpack_require__(37);
+	var Dropdowns = __webpack_require__(38);
+	var Noodles = __webpack_require__(39);
 	
 	// Run components
 	
@@ -10036,22 +10034,17 @@ var App =
 
 /***/ },
 /* 7 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
+	__webpack_require__(8);
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(11);
 	__webpack_require__(12);
-	
 	__webpack_require__(13);
+	
 	__webpack_require__(14);
 	__webpack_require__(15);
 	__webpack_require__(16);
@@ -10060,27 +10053,36 @@ var App =
 	__webpack_require__(19);
 	__webpack_require__(20);
 	__webpack_require__(21);
+	__webpack_require__(22);
 	
 	/*Header*/
 	
-	__webpack_require__(22);
 	__webpack_require__(23);
+	__webpack_require__(24);
 	
 	/* Utility components */
 	
-	__webpack_require__(24);
 	__webpack_require__(25);
 	__webpack_require__(26);
+	__webpack_require__(27);
 	
 	/*Products*/
 	
-	__webpack_require__(27);
 	__webpack_require__(28);
 	__webpack_require__(29);
+	__webpack_require__(30);
+	__webpack_require__(31);
 	
 	/*Collections*/
 	
-	__webpack_require__(30);
+	__webpack_require__(32);
+	__webpack_require__(33);
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 9 */
@@ -10216,11 +10218,29 @@ var App =
 
 /***/ },
 /* 31 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./anchors.js": 32,
-		"./sameHeight.js": 33
+		"./anchors.js": 35,
+		"./sameHeight.js": 36
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -10233,11 +10253,11 @@ var App =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 31;
+	webpackContext.id = 34;
 
 
 /***/ },
-/* 32 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10256,7 +10276,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 33 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10275,7 +10295,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 34 */
+/* 37 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10309,7 +10329,7 @@ var App =
 	module.exports = LazyImages;
 
 /***/ },
-/* 35 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10373,7 +10393,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
