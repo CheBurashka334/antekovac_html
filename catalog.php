@@ -142,7 +142,7 @@
 						</div>
 					</div>
 				</div>
-                <div class="product-tile__like">
+                <div class="product-tile__like active">
                     <svg class="i-icon"role="img">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
                     </svg>
