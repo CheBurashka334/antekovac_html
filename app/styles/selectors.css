@@ -1,1 +1,2 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6; 
+@custom-selector :--inputs input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea; 

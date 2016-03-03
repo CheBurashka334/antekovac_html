@@ -1,43 +1,56 @@
-input {
-    border-radius: 3px;
-    border: 1px solid rgb(219, 219, 219);
-    padding: 15px 10px;
-    background: #fff;
-    height: 28px;
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+:--inputs {
+    font-size: 17px;
+	line-height: 1.3;
+	font-family: "MyriadPro";
+	vertical-align: middle;
+	color: var(--dark-gray);
+	padding: 0.5em 15px;
+	background: var(--main-white);
+	border: 1px solid #ebebeb;
+	margin: 10px 0;
     -webkit-appearance: none;
+	&:focus {
+		outline: none;
+	}
     &.valid {
-        background-image: url(icons/galka-green.svg);
-        background-position: right 20px center;
+        background-image: svg('tick', '[fill]: var(--success-green)');
+        background-position: right 28px center;
         background-repeat: no-repeat;
-        background-size: 23px;
+        background-size: 10px 12px;
         padding-right: 50px;
     }
     &.invalid {
-        border-color: var(--main-red);
-        background-image: url(icons/invalid.png);
+       /* border-color: var(--main-red);
+        background-image: url(icons/invalid.png);*/
         background-position: right 20px center;
         background-repeat: no-repeat;
         padding-right: 50px;
     }
-    &[type=text] {
-        padding-top: 0;
-        padding-bottom: 0;
-        line-height: 28px;
-    }
 }
 
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill  {
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill  {
     background: transparent !important;
 }
-
 textarea {
-    border-radius: 3px;
-    border: 1px solid rgb(219, 219, 219);
-    padding: 15px 10px;
-    background: #fff;
-    -webkit-appearance: none;
-    resize: vertical;
+	width: 100%;
+    max-width: 100%;
+	height: 4em;
 }
+
+.field__inputtext {
+	&--full {
+		border: none;
+		background: transparent;
+		margin: 0;
+	}
+}
+
 
 .big-radio {
     position: relative;
@@ -49,7 +62,7 @@ textarea {
             + label {
                 .big-radio__circle {
                     &::before {
-                        background: var(--main-red);
+                       /* background: var(--main-red);*/
                     }
                 }
             }
@@ -95,100 +108,118 @@ textarea {
     }
 }
 
-.custom-checkbox {
-    margin: 65px 0;
-    user-select: none;
-    input {
-        display: none;
-        &:checked {
-            + label {
-                .custom-checkbox__slider {
-                    &::before {
-                        left: calc(100% - 30px);
-                    }
-                }
-                .custom-checkbox__left {
-                    font-weight: normal;
-                    color: black;
-                }
-                .custom-checkbox__right {
-                    font-weight: bold;
-                    color: var(--main-blue);
-                }
-            }
-        }
-    }
-    &__left,
-    &__right {
-        font-size: 16px;
-        min-width: 160px;
-    }
-    &__left {
-        font-weight: bold;
-        color: var(--main-blue);
-    }
-    label {
-        > * {
-            display: inline-block;
-            vertical-align: middle;
-        }
-    }
-    &__slider {
-        width: 115px;
-        height: 29px;
-        margin: 0 40px;
-        position: relative;
-        border: 1px solid rgb(231, 231, 231);
-        background-color: rgb(242, 242, 242);
-        position: relative;
-        border-radius: 10px;
-        &::before {
-            content: '';
-            position: absolute;
-            left: -2px;
-            top: -2px;
-            width: 32px;
-            height: 32px;
-            border-radius: 100%;
-            background: var(--main-red);
-            border-radius: 50%;
-            transition: .2s;
-            cursor: pointer;
-        }
-    }
+.switch {
+	text-align: center;
+	input {
+		display: none;
+	}
+	&__text {
+		font-family:  "MyriadPro";
+		color: var(--dark-gray);
+		font-size: 19px;
+	}
+	&__field {
+		display: inline-block;
+		width: 55px;
+		margin: 0 50px;
+		vertical-align: middle;
+	}
+	.switcher {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 23px;
+		border-radius: 15px;
+		background: #eaeaea;
+		cursor: pointer;
+		&:after {
+			content: '';
+			display: block;
+			width: 25px;
+			height: 25px;
+			background: var(--main-brown);
+			border: 1px solid #b1b1b1;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,.07);
+			border-radius: 50%;
+			position: absolute;
+			top: -2px;
+			left: 50%;
+			margin-left: -13px;
+			transform: translateX(50%);
+			transition: transform .3s;
+		}
+	}
+	input:checked + .switcher:after {
+		transform: translateX(-50%);
+	}
 }
 
-@media (--not-mobile) {
-    .custom-checkbox {
-        margin: 60px 0;
-        padding: 0 20px;
-    }
+.custom-radio {
+	position: relative;
+	font-size: 17px;
+	margin: 2em 0;
+	input {
+		display: none;
+	}
+	.radio-label {
+		cursor: pointer;
+	}
+	&__circle {
+		position: absolute;
+		top: 2px;
+		left: 5px;
+		width: 1em;
+		height: 1em;
+		border: 1px solid #e0e0e0;
+		background: var(--main-white);
+		padding: 0.25em;
+		border-radius: 50%;
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: var(--main-brown);
+			border-radius: 50%;
+			opacity: 0;
+		}
+	}
+	input:checked + &__circle::after {
+		opacity: 1;
+	}
+	&__heading {
+		font-family:  "MyriadPro";
+		color: var(--dark-gray);
+		padding-left: 2.6em;
+	}
+	.field__text {
+		padding-left: 2.6em;
+		font-size: inherit;
+		p {
+			font-size: 12px;
+		}
+	}
 }
 
-@media (--mobile) {
-    .custom-checkbox {
-        label {
-            > * {
-                display: block;
-            }
-        }
-        &__slider {
-            margin: 10px 0;
-        }
-    }
-}
-
-.input-block {
-    margin: 10px 0;
+.field {
+    margin: 20px 0;
+	display: block;
+	width: 100%;
     &--half {
         display: inline-block;
         vertical-align: top;
         width: 49%;
     }
-    input,
-    textarea {
+    :--inputs  {
+		display: block;
         width: 100%;
     }
+	&__label,
+	&__text {
+		font-size: 12px;
+		font-weight: lighter;
+		color: #a4a4a4;
+	}
     &--double {
         input {
             display: inline-block;
@@ -221,15 +252,15 @@ textarea {
         span {
             vertical-align: middle;
             font-size: 13px;
-            color: var(--main-black);
+            /*color: var(--main-black);*/
         }
     }
     input[type=checkbox] {
         &:checked {
             + label {
                 &::before {
-                    background: var(--main-red);
-                    background-image: url(icons/galka-white.svg);
+                    /*background: var(--main-red);*/
+                    /*background-image: url(icons/galka-white.svg);*/
                     background-position: center;
                     background-size: 14px;
                     background-repeat: no-repeat;
@@ -281,15 +312,76 @@ textarea {
         opacity: 0.7;
     }
     &.required {
-        > label:first-child {
+        .field__label {
             > * {
                 vertical-align: middle;
             }
             &::after {
                 content: '*';
                 margin-left: 2px;
-                color: var(--main-orange);
+                color: var(--dark-gray);
             }
         }
     }
+	&.no-margin {
+		margin: 0;
+	}
+}
+
+/* bitrix monstrous location-field's styles override */
+.bx-sls {
+	.dropdown-block {
+		position: relative;
+		font-size: 17px;
+		line-height: 1.3;
+		font-family: "MyriadPro";
+		vertical-align: middle;
+		color: var(--dark-gray);
+		padding: 0.5em 40px;
+		background: var(--main-white);
+		border: 1px solid #ebebeb;
+		margin: 10px 0;
+		input {
+			padding: 0;
+			margin: 0;
+			background: transparent;
+			border: none;
+		}
+		.bx-ui-sls-route {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #aba8ac;
+			background-color: transparent;
+			border-color: transparent;
+			opacity: 1;
+			box-shadow: none;
+			padding-right: 22px;
+			background-position: right 1px;
+			background-repeat: no-repeat
+		}
+	}
+	.dropdown-icon {
+		background: url(var(--icons-path)/lens.png) center no-repeat;
+		height: 14px;
+		left: 13px;
+		position: absolute;
+		top: 50%;
+		margin-top: -7px;
+		width: 14px
+	}
+	.dropdown-fade2white {
+		display: none;
+	}
+	.bx-ui-sls-clear {
+		background: url(var(--icons-path)/clear.png) center no-repeat;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		margin-top: -15px;
+		position: absolute;
+		top: 50%;
+		right: 13px;
+		display: block
+	}
 }

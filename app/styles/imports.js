@@ -28,6 +28,8 @@ require("./components/header/header-menu.css");
 require("./components/breadcrumbs.css");
 require("./components/pagination.css");
 require("./components/dropdown.css");
+require("./components/forms.css");
+require("./components/checkout.css");
 
 /*Products*/
 

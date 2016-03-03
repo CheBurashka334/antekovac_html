@@ -1,0 +1,25 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.page--checkout {
+	.tile-page__body {
+		background: url(var(--img-path)/checkout-bg.png) bottom right no-repeat;
+		background-size: auto 600px;
+		padding-bottom: 170px;
+	}
+	.basket {
+		.heading {
+			margin: -64px 0 0;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #ebebeb;
+		}
+	}
+}
+.checkout-block__personal {
+	
+}
+.checkout-block .heading {
+	margin-top: 10px;
+	margin-bottom: 60px;
+}

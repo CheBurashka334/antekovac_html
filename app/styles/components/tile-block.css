@@ -132,3 +132,28 @@
         display: none !important;
     }
 }
+
+.tile-page {
+	background: white;
+	margin-bottom: 40px;
+	&__head {
+		padding: 20px 35px;
+		border-bottom: 1px solid #ebebeb;
+	}
+	&__body {
+		padding: 40px 35px;
+	}
+	&__foot {
+		background: #f6f6f6;
+		border: 1px solid #dcdcdc;
+	}
+	.basket {
+		&__body {
+			padding: 0 35px;
+		}
+		&__foot {
+			padding: 30px 35px;
+			background: #dcdcdc;
+		}
+	}
+}

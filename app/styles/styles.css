@@ -1,5 +1,6 @@
 @import "./colors.css";
 @import "./media.css";
+@import "./selectors.css";
 
 :focus {
     outline: none;
@@ -80,7 +81,7 @@ img {
     clear: both;
 }
 
-h1, h2, h3, h4, h5 {
+:--heading {
     font-family: "Bebas Neue Book";
     margin: 5px 0;
     font-weight: 400;
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     margin-top: 45px;
     margin-bottom: 30px;
-    > * {
+    > :--heading {
         font-family: "Bebas Neue Book";
         color: var(--main-brown);
         &::before,
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5 {
 	text-align: left;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
-	> * {
+	> :--heading {
         font-family: "Bebas Neue Book";
         color: var(--main-brown);
 	}
@@ -147,7 +148,7 @@ h5 {
 }
 
 @media (--mobile) {
-    h1, h2, h3, h4, h5 {
+    :--heading {
         font-size: 14px;
         font-weight: bold;
     }
@@ -188,6 +189,10 @@ dd {
     .hidden-medium {
         display: none;
     }
+}
+
+.primary-color {
+	color: var(--main-brown);
 }
 
 /*Bootstrap collapse*/

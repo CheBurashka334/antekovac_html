@@ -20,10 +20,11 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin: 0 -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-/* line 14, scss/gridlex.scss */
+/* line 15, scss/gridlex.scss */
 .col,
 [class*="col-"] {
   box-sizing: border-box;
@@ -34,7 +35,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
   padding: 0 10px 20px;
 }
 
-/* line 20, scss/gridlex.scss */
+/* line 21, scss/gridlex.scss */
 .col {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0%;
@@ -42,7 +43,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
           flex: 1 1 0%;
 }
 
-/* line 23, scss/gridlex.scss */
+/* line 24, scss/gridlex.scss */
 .grid.col,
 .grid[class*="col-"] {
   margin: 0;
@@ -52,22 +53,31 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
 /************************
     HELPERS SUFFIXES
 *************************/
-/* line 35, scss/gridlex.scss */
+/* line 36, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] {
   margin: 0;
 }
-/* line 37, scss/gridlex.scss */
+/* line 38, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] > [class*="col"] {
   padding: 0;
 }
-/* line 43, scss/gridlex.scss */
+/* line 42, scss/gridlex.scss */
+[class*="grid-"][class*="-bigGutter"] {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+/* line 45, scss/gridlex.scss */
+[class*="grid-"][class*="-bigGutter"] > [class*="col"] {
+  padding: 0 20px 20px;
+}
+/* line 51, scss/gridlex.scss */
 [class*="grid-"][class*="-center"] {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 46, scss/gridlex.scss */
+/* line 54, scss/gridlex.scss */
 [class*="grid-"][class*="-right"] {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -78,28 +88,28 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
           align-self: flex-end;
   margin-left: auto;
 }
-/* line 52, scss/gridlex.scss */
+/* line 60, scss/gridlex.scss */
 [class*="grid-"][class*="-top"] {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 55, scss/gridlex.scss */
+/* line 63, scss/gridlex.scss */
 [class*="grid-"][class*="-middle"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 58, scss/gridlex.scss */
+/* line 66, scss/gridlex.scss */
 [class*="grid-"][class*="-bottom"] {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-/* line 63, scss/gridlex.scss */
+/* line 71, scss/gridlex.scss */
 [class*="grid-"][class*="-reverse"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -107,7 +117,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-/* line 66, scss/gridlex.scss */
+/* line 74, scss/gridlex.scss */
 [class*="grid-"][class*="-column"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -115,13 +125,13 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 68, scss/gridlex.scss */
+/* line 76, scss/gridlex.scss */
 [class*="grid-"][class*="-column"] > [class*="col-"] {
   -webkit-flex-basis: auto;
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
 }
-/* line 72, scss/gridlex.scss */
+/* line 80, scss/gridlex.scss */
 [class*="grid-"][class*="-column-reverse"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
@@ -129,20 +139,20 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-/* line 77, scss/gridlex.scss */
+/* line 85, scss/gridlex.scss */
 [class*="grid-"][class*="-spaceBetween"] {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/* line 80, scss/gridlex.scss */
+/* line 88, scss/gridlex.scss */
 [class*="grid-"][class*="-spaceAround"] {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
-/* line 85, scss/gridlex.scss */
+/* line 93, scss/gridlex.scss */
 [class*="grid-"][class*="-equalHeight"] > [class*="col"] {
   display: -webkit-box;
   display: -webkit-flex;
@@ -150,32 +160,32 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
   display: flex;
 }
 
-/* line 92, scss/gridlex.scss */
+/* line 100, scss/gridlex.scss */
 [class*="col-"][class*="-top"] {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
-/* line 95, scss/gridlex.scss */
+/* line 103, scss/gridlex.scss */
 [class*="col-"][class*="-middle"] {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
 }
-/* line 98, scss/gridlex.scss */
+/* line 106, scss/gridlex.scss */
 [class*="col-"][class*="-bottom"] {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end;
 }
-/* line 101, scss/gridlex.scss */
+/* line 109, scss/gridlex.scss */
 [class*="col-"][class*="-first"] {
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
 }
-/* line 104, scss/gridlex.scss */
+/* line 112, scss/gridlex.scss */
 [class*="col-"][class*="-last"] {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;

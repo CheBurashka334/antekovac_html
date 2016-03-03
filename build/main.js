@@ -10065,6 +10065,8 @@ var App =
 	__webpack_require__(25);
 	__webpack_require__(26);
 	__webpack_require__(27);
+	__webpack_require__(44);
+	__webpack_require__(45);
 	
 	/*Products*/
 	
@@ -10458,6 +10460,22 @@ var App =
 	};
 	
 	module.exports = Noodles;
+
+/***/ },
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 45 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
