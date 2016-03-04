@@ -2462,7 +2462,9 @@ tbody.collapse.in {
 .tab-pane.active {
     display: block;
 }
-
+:root {
+	/* пути к картинкам */
+}
  .i-icon {
     background-repeat: no-repeat;
     background-position: center;
@@ -4506,7 +4508,8 @@ input:checked + .custom-radio__circle::after {
     background: transparent;
     border: none;
 }
-.bx-sls .dropdown-block .bx-ui-sls-route {
+.bx-sls .dropdown-block .bx-ui-sls-route,
+		.bx-sls .dropdown-block .bx-ui-sls-fake {
     position: absolute;
     top: 0;
     left: 0;
@@ -4516,6 +4519,7 @@ input:checked + .custom-radio__circle::after {
     opacity: 1;
     box-shadow: none;
     padding-right: 22px;
+    height: auto;
     background-position: right 1px;
     background-repeat: no-repeat
 }

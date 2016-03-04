@@ -6,6 +6,7 @@
 	--light-gray: #dbdcde;
 	--dark-gray: #2e3034;
 	--success-green: #87bb23;
+	/* пути к картинкам */
 	--img-path: /antekovac/images;
 	--icons-path: /antekovac/app/icons;
 }

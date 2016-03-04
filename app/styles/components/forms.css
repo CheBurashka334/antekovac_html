@@ -359,7 +359,8 @@ textarea {
 			background: transparent;
 			border: none;
 		}
-		.bx-ui-sls-route {
+		.bx-ui-sls-route,
+		.bx-ui-sls-fake {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -369,6 +370,7 @@ textarea {
 			opacity: 1;
 			box-shadow: none;
 			padding-right: 22px;
+			height: auto;
 			background-position: right 1px;
 			background-repeat: no-repeat
 		}
