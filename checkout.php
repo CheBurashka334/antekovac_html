@@ -17,12 +17,13 @@
 				</div>
 				<div class="col-6_lg-6_md-6_sm-12">
 					<div class="switch">
-						<span class="switch__text switch__text--left">Физическое лицо</span>
-						<label class="switch__field">
-							<input type="checkbox" checked="checked"/>
+						<label for="PERSON_TYPE_1" class="switch__text switch__text--left">Физическое лицо</label>
+						<span class="switch__field">
+							<input type="radio" class="radio--left" id="PERSON_TYPE_1" name="PERSON_TYPE" value="1" checked="checked"/>
+							<input type="radio" class="radio--right" id="PERSON_TYPE_2" name="PERSON_TYPE" value="2"/>
 							<span class="switcher"></span>
-						</label>
-						<span class="switch__text switch__text--right">Юридическое лицо</span>
+						</span>
+						<label for="PERSON_TYPE_2" class="switch__text switch__text--right">Юридическое лицо</label>
 					</div>
 				</div>
 			</div>

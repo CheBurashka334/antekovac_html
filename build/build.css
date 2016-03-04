@@ -4274,11 +4274,22 @@ textarea {
     font-family:  "MyriadPro";
     color: #2e3034;
     font-size: 19px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.switch__text--left {
+    padding-right: 75px;
+    margin-right: -25px;
+}
+.switch__text--right {
+    padding-left: 75px;
+    margin-left: -25px;
 }
 .switch__field {
     display: inline-block;
     width: 55px;
-    margin: 0 50px;
+    margin: 0;
     vertical-align: middle;
 }
 .switch .switcher {
@@ -4288,7 +4299,6 @@ textarea {
     height: 23px;
     border-radius: 15px;
     background: #eaeaea;
-    cursor: pointer;
 }
 .switch .switcher:after {
     content: '';
@@ -4303,16 +4313,18 @@ textarea {
     top: -2px;
     left: 50%;
     margin-left: -13px;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
     -webkit-transition: -webkit-transform .3s;
     transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s;
 }
-.switch input:checked + .switcher:after {
+.switch .radio--left:checked ~ .switcher:after {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+}
+.switch .radio--right:checked ~ .switcher:after {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
 }
 .custom-radio {
 	position: relative;

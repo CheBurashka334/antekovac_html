@@ -118,7 +118,7 @@ var App =
 	$(function () {
 	    lazyComponents.forEach(function (item) {
 	        if ($(item.data).length) {
-	            __webpack_require__(34)("./" + item.name + '.js')(function (component) {
+	            __webpack_require__(36)("./" + item.name + '.js')(function (component) {
 	                component.run();
 	            });
 	        }
@@ -130,16 +130,16 @@ var App =
 	$(function () {
 	    if ($('.owl-carousel').length) {
 	        __webpack_require__.e/* nsure */(1, function (require) {
-	            __webpack_require__(40);
-	            var Sliders = __webpack_require__(43);
+	            __webpack_require__(42);
+	            var Sliders = __webpack_require__(45);
 	            Sliders.run();
 	        });
 	    }
 	});
 	
-	var LazyImages = __webpack_require__(37);
-	var Dropdowns = __webpack_require__(38);
-	var Noodles = __webpack_require__(39);
+	var LazyImages = __webpack_require__(39);
+	var Dropdowns = __webpack_require__(40);
+	var Noodles = __webpack_require__(41);
 	
 	// Run components
 	
@@ -10065,20 +10065,20 @@ var App =
 	__webpack_require__(25);
 	__webpack_require__(26);
 	__webpack_require__(27);
-	__webpack_require__(44);
-	__webpack_require__(45);
+	__webpack_require__(28);
+	__webpack_require__(29);
 	
 	/*Products*/
 	
-	__webpack_require__(28);
-	__webpack_require__(29);
 	__webpack_require__(30);
 	__webpack_require__(31);
+	__webpack_require__(32);
+	__webpack_require__(33);
 	
 	/*Collections*/
 	
-	__webpack_require__(32);
-	__webpack_require__(33);
+	__webpack_require__(34);
+	__webpack_require__(35);
 
 /***/ },
 /* 8 */
@@ -10238,11 +10238,23 @@ var App =
 
 /***/ },
 /* 34 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./anchors.js": 35,
-		"./sameHeight.js": 36
+		"./anchors.js": 37,
+		"./sameHeight.js": 38
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -10255,11 +10267,11 @@ var App =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 34;
+	webpackContext.id = 36;
 
 
 /***/ },
-/* 35 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10278,7 +10290,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 36 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10297,7 +10309,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 37 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10331,7 +10343,7 @@ var App =
 	module.exports = LazyImages;
 
 /***/ },
-/* 38 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10395,7 +10407,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 39 */
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10460,22 +10472,6 @@ var App =
 	};
 	
 	module.exports = Noodles;
-
-/***/ },
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 45 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
