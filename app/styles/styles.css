@@ -190,10 +190,21 @@ dd {
     }
 }
 
+@media (--small) {
+    .hidden-small {
+        display: none;
+    }
+}
+
 @media (--medium) {
     .hidden-medium {
         display: none;
     }
+}
+@media (--medium-up){
+	.hidden-desktop {
+		display: none;
+	}
 }
 
 .primary-color {

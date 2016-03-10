@@ -139,6 +139,7 @@
 	&__head {
 		padding: 20px 35px;
 		border-bottom: 1px solid #ebebeb;
+		position: relative;
 	}
 	&__body {
 		padding: 40px 35px;

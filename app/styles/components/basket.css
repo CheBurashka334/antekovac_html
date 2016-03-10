@@ -340,3 +340,49 @@
 		}
 	}
 }
+
+.basket-toolbar {
+	text-align: center;
+	&__btn {
+		display: inline-block;
+		font: 24px/32px "Bebas Neue Book";
+		color: #9d9d9d;
+		vertical-align: middle;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin: 0 45px;
+		.count {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			font-size: 19px;
+			line-height: 32px;
+			vertical-align: middle;
+			text-align: center;
+			margin-left: 20px;
+			background: #dcdcdc;
+			color: #959697;
+			border-radius: 50%;
+		}
+		&.current {
+			color: var(--main-brown);
+			.count {
+				background: var(--main-brown);
+				color: white;
+			}
+		}
+	}
+}
+
+@media (--small), (--medium-up){
+	.page--basket .tile-page__head::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		bottom: -11px;
+		background: linear-gradient(to bottom, rgba(0,0,0,.1) 0%, transparent 100%);
+	}
+}

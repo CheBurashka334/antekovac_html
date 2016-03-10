@@ -2429,10 +2429,20 @@ dd {
         display: none;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hidden-small {
+        display: none;
+    }
+}
 @media (min-width: 1025px) and (max-width: 1300px) {
     .hidden-medium {
         display: none;
     }
+}
+@media (min-width: 1025px){
+	.hidden-desktop {
+		display: none;
+	}
 }
 .primary-color {
 	color: #b59063;
@@ -3095,6 +3105,7 @@ tbody.collapse.in {
 .tile-page__head {
 	padding: 20px 35px;
 	border-bottom: 1px solid #ebebeb;
+	position: relative;
 }
 .tile-page__body {
 	padding: 40px 35px;
@@ -5099,6 +5110,51 @@ input:checked + .custom-radio__circle::after {
 	.basket-totals--total .basket-totals__result {
 		font-size: 24px;
 		width: 100%;
+	}
+}
+.basket-toolbar {
+	text-align: center;
+}
+.basket-toolbar__btn {
+	display: inline-block;
+	font: 24px/32px "Bebas Neue Book";
+	color: #9d9d9d;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 45px;
+}
+.basket-toolbar__btn .count {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	font-size: 19px;
+	line-height: 32px;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: 20px;
+	background: #dcdcdc;
+	color: #959697;
+	border-radius: 50%;
+}
+.basket-toolbar__btn.current {
+	color: #b59063;
+}
+.basket-toolbar__btn.current .count {
+	background: #b59063;
+	color: white;
+}
+@media (min-width: 769px) and (max-width: 1024px), (min-width: 1025px){
+	.page--basket .tile-page__head::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		bottom: -11px;
+		background: -webkit-linear-gradient(top, rgba(0,0,0,.1) 0%, transparent 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,.1) 0%, transparent 100%);
 	}
 }:root {
 	/* пути к картинкам */

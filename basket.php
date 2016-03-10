@@ -8,12 +8,18 @@
 <div class="container">
 	<div class="tile-page page--basket">
 		<div class="tile-page__head">
-			<div class="grid-noGutter-middle">
-				<div class="col-6_lg-6_md-6_sm-12">
-					<div class="heading block-heading--mobile">
-						<h2>ваша корзина</h2>
-					</div>
-				</div>
+			<div class="heading block-heading--mobile hidden-desktop hidden-medium hidden-small">
+				<h2>ваша корзина</h2>
+			</div>
+			<div class="basket-toolbar hidden-mobile">
+				<a href="javascript:void(0)" class="basket-toolbar__btn current" onclick="showBasketItemsList()">
+					ваша корзина
+					<div class="count">5</div>
+				</a>
+				<a href="javascript:void(0)" onclick="showBasketItemsList(2)" class="basket-toolbar__btn">
+					отложенные товары
+					<div class="count">1</div>
+				</a>
 			</div>
 		</div>
 		<div class="tile-page__body">
