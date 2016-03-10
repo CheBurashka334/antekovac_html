@@ -43,6 +43,7 @@ $(function () {
 
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');
+let DropdownSynh = require('./js/dropdownSynh');
 let Radios = require('./js/customRadio');
 let Noodles = require('./js/noodles');
 
@@ -54,6 +55,9 @@ $(function () {
 
 $(function(){
 	Dropdowns.run();
+});
+$(function(){
+	DropdownSynh.run();
 });
 $(function(){
 	Radios.run();
@@ -69,5 +73,6 @@ exports.lazyimages = LazyImages;
 //exports.anchors = Anchors;
 //exports.sliders = Sliders;
 exports.dropdowns = Dropdowns;
+exports.dropdownSynh = DropdownSynh;
 exports.radios = Radios;
 exports.Noodles;

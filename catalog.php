@@ -128,7 +128,7 @@
 		<span class="sort-mobile__text">Сортировать:</span>
 		<!-- id = name у соответстсвующего dropdown -->
 		<select class="sort-mobile__sel js-dropdown-synh" name="filter-sort-sel" id="filter-sort">
-			<option value="v1">Сначала дороже</option>
+			<option value="v1" selected>Сначала дороже</option>
 			<option value="v2">Сначала дешевле</option>
 			<option value="v3">По популярности</option>
 			<option value="v4">По алфавиту</option>

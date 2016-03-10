@@ -4364,7 +4364,6 @@ tbody.collapse.in {
 	font-size: 18px;
 	background: none;
 	border: 0;
-	/*appearance: none;*/
 	color: #767778;
 }
 @media (min-width: 769px) and (max-width: 1024px), (min-width: 1025px){
