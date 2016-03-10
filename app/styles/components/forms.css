@@ -30,6 +30,11 @@
         background-repeat: no-repeat;
         padding-right: 50px;
     }
+	&.base {
+		background: white;
+		border-color: #dcdcdc;
+		font: 14px/1.5 "Roboto";
+	}
 }
 
 input:-webkit-autofill, 
@@ -203,12 +208,33 @@ textarea {
 		font-family:  "MyriadPro";
 		color: var(--dark-gray);
 		padding-left: 2.6em;
+		display: block;
 	}
 	.field__text {
 		padding-left: 2.6em;
 		font-size: inherit;
 		p {
 			font-size: 12px;
+		}
+	}
+}
+@media (--mobile){
+	.custom-radio {
+		&__heading span {
+			display: block;
+		}
+		.checkout-block__delivery & {
+			.field__text {
+				padding: 0;
+				/*height: 0;
+				transform: scaleY(0);
+				transform-origin: top;
+				transition: all .3s;*/
+			}
+			&.checked .field__text {
+				/*transform: scaleY(1);
+				height: 100%;*/
+			}
 		}
 	}
 }
@@ -339,6 +365,16 @@ textarea {
 		margin: 0;
 	}
 }
+@media (--mobile){
+	.field {
+		margin: 18px 0 10px;
+		&:last-child,
+		&:last-child :--inputs,
+		&:last-child .custom-radio {
+			margin-bottom: 0;
+		}
+	}
+}
 
 /* bitrix monstrous location-field's styles override */
 .bx-sls {
@@ -353,6 +389,7 @@ textarea {
 		background: var(--main-white);
 		border: 1px solid #ebebeb;
 		margin: 10px 0;
+		border-radius: 0;
 		input {
 			padding: 0;
 			margin: 0;
@@ -374,6 +411,9 @@ textarea {
 			background-position: right 1px;
 			background-repeat: no-repeat
 		}
+	}
+	.bx-ui-sls-container {
+		height: 22px;
 	}
 	.dropdown-icon {
 		background: url(var(--icons-path)/lens.png) center no-repeat;

@@ -15,7 +15,7 @@
 						<h2>оформление заказа</h2>
 					</div>
 				</div>
-				<div class="col-6_lg-6_md-6_sm-12">
+				<div class="col-6_lg-6_md-6 hidden-mobile">
 					<div class="switch">
 						<label for="PERSON_TYPE_1" class="switch__text switch__text--left">Физическое лицо</label>
 						<span class="switch__field">
@@ -207,21 +207,71 @@
 				<div class="heading block-heading--mobile">
 					<h2>Состав заказа</h2>
 				</div>
-				Products here
+				<div class="basket-table">
+					<div class="basket-table__row product">
+						<div class="basket-table__col basket-table__col--image">
+							<div class="product__image">
+								<a href="product_detail.php"><img src="images/catalog/afm-white-7992.png"/></a>
+							</div>
+						</div>
+						<div class="basket-table__col basket-table__col--name">
+							<div class="product__name">Сумка №23 «Монте карло»</div>
+							<div class="product__collection">коллекция: <a href="#">Альфонс Муха</a></div>
+						</div>
+						<div class="basket-table__col basket-table__col--res">
+							<span class="product__quantity">1</span>
+							<span class="cross-divider">x</span>
+							<span class="product__price">20 900 ₽</span>
+						</div>
+						<div class="basket-table__col basket-table__col--sum">
+							<span class="product__sum">20 900 ₽</span>
+						</div>
+					</div>
+					<div class="basket-table__row product">
+						<div class="basket-table__col basket-table__col--image">
+							<div class="product__image">
+								<a href="product_detail.php"><img src="images/catalog/afm-white-8010.png"/></a>
+							</div>
+						</div>
+						<div class="basket-table__col basket-table__col--name">
+							<div class="product__name">Сумка №23 «княгиня»</div>
+							<div class="product__collection">коллекция: <a href="#">Альфонс Муха</a></div>
+						</div>
+						<div class="basket-table__col basket-table__col--res">
+							<span class="product__quantity">1</span>
+							<span class="cross-divider">x</span>
+							<span class="product__price">37 900 ₽</span>
+						</div>
+						<div class="basket-table__col basket-table__col--sum">
+							<span class="product__sum">37 900 ₽</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="basket__foot">
-				Total
+			<div class="basket-totals basket__foot grid-noGutter">
+				<div class="basket-totals--sum col">
+					<div class="basket-totals__label">сумма:</div>
+					<div class="basket-totals__result">66 900 ₽</div>
+				</div>
+				<div class="basket-totals--sale col">
+					<div class="basket-totals__label">скидка:</div>
+					<div class="basket-totals__result">3 000 ₽</div>
+				</div>
+				<div class="basket-totals--total col-3">
+					<div class="basket-totals__label">Итог <span class="small-note-text">(без учета доставки):</span></div>
+					<div class="basket-totals__result primary-color">63 900 ₽</div>
+				</div>
 			</div>
 		</div>
 		<div class="tile-page__foot">
 			<div class="grid-equalHeight-noGutter">
-				<div class="col-9">
+				<div class="col-9 hidden-mobile">
 					<div class="field no-margin">
 						<textarea class="field__inputtext field__inputtext--full" placeholder="КОММЕНТАРИЙ К ЗАКАЗУ:"></textarea>
 					</div>
 				</div>
-				<div class="col-3">
-					<button class="btn btn--dark--big">Оформить заказ</button>
+				<div class="col-3_lg-3_md-3_sm-12">
+					<button class="btn btn--dark--big js-anim--click"><span class="btn-text">Оформить заказ</span></button>
 				</div>
 			</div>
 		</div>

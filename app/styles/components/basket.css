@@ -1,0 +1,342 @@
+@import "../colors.css";
+@import "../media.css";
+
+.basket-table {
+	display: table;
+	width: 100%;
+	a {
+		color: var(--main-brown);
+	}
+	&__head,
+	&__row {
+		display: table-row;
+	}
+	&__col {
+		display: table-cell;
+		border-bottom: 1px solid #ebebeb;
+		&--image {
+			width: 10.4%;
+		}
+		&--name {
+			width: 27%;
+			.page--checkout & {
+				width: 21%;
+			}
+		}
+		&--quantity {
+			width: 22.5%;
+		}
+		&--price {
+			width: 18%;
+		}
+		&--sum {
+			width: 14.5%;
+			.page--checkout & {
+				width: 25%;
+			}
+		}
+		&--actions {
+			width: 7.6%;
+		}
+		&--res {
+			text-align: center;
+			font-size: 12px;
+			color: #b4b5b5;
+			.cross-divider {
+				margin: 0 1.5em;
+			}
+		}
+	}
+	&__head &__col {
+		color: #b4b5b5;
+		font-size: 10px;
+		padding: 1em 0;
+		text-transform: uppercase;
+	}
+	&__row &__col {
+		padding: 40px 0;
+		vertical-align: middle;
+		&--image {
+			padding: 30px 0 40px;
+		}
+	}
+	.product {
+		&__image {
+			max-width: 70px;
+		}
+		&__name {
+			font: 20px "MyriadPro";
+			color: #47484b;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		&__collection {
+			font-size: 11px;
+			color: #b4b5b5;
+			text-transform: uppercase;
+			a {
+				text-transform: none;
+				margin-left: 3px;
+				font-size: 12px;
+			}
+		}
+		&__price,
+		&__sum {
+			font-size: 18px;
+		}
+		&__price {
+			color: #959697;
+			.page--checkout & {
+				font-size: inherit;
+			}
+		}
+		&__sum {
+			.page--checkout & {
+				padding-left: 30px;
+			}
+		}
+		&__actions {
+			font-size: 12px;
+			a {
+				display: block;
+			}
+			.delete {
+				margin-top: 5px;
+			}
+		}
+	}
+	.basket-quantity {
+		input,
+		.plus,
+		.minus {
+			display: inline-block;
+			border: 1px solid #dcdcdc;
+			vertical-align: middle;
+		}
+		input {
+			text-align: center;
+		}
+		.plus,
+		.minus {
+			width: 37px;
+			height: 37px;
+			padding: 0.5em;
+			background: var(--main-white);
+			text-align: center;
+			.i-icon {
+				stroke: #acadae;
+				vertical-align: bottom;
+			}
+		}
+		.plus .i-icon {
+			transform: rotate(-90deg);
+		}
+		.plus.anim-click--play .i-icon {
+			transform: translateY(2px) rotate(-90deg);
+		}
+		.minus .i-icon {
+			transform: rotate(90deg);
+		}
+		.minus.anim-click--play .i-icon {
+			transform: translateY(2px) rotate(90deg);
+		}
+	}
+}
+@media (--mobile){
+	.basket-table {
+		&__head {
+			display: none;
+		}
+		&__row {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: flex-start;
+			padding: 15px 15px 20px;
+			border-bottom: 1px solid #ebebeb;
+			height: 115px;
+		}
+		&__row &__col {
+			padding: 0;
+			border: 0;
+		}
+		&__col {
+			&--image,
+			.page--checkout &--image{
+				width: 22%;
+				height: 80px;
+			}
+			&--name,
+			&--sum,
+			.page--checkout &--name,
+			.page--checkout &--sum {
+				width: 78%;
+			}
+			&--name {
+				margin-bottom: 1em;
+			}
+			&--quantity,
+			&--price,
+			&--res {
+				display: none;
+			}
+			&--actions {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 27px;
+				a:not(.delete){
+					display: none;
+				}
+				.delete {
+					display: block;
+					width: 27px;
+					height: 27px;
+					padding-left: 27px;
+					overflow: hidden;
+					background: #eeeeee;
+					position: relative;
+					&::before,
+					&::after {
+						content: '';
+						display: block;
+						width: 16px;
+						height: 1px;
+						background: #b9b9b9;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin-left: -8px;
+						transform-origin: center;
+					}
+					&::before {
+						transform: rotate(45deg);
+					}
+					&::after {
+						transform: rotate(-45deg);
+					}
+				}
+			}
+		}
+		.product {
+			&__image {
+				height: 100%;
+				width: auto;
+				max-width: 90%;
+			}
+			&__sum {
+				font-size: 15px;
+				.page--checkout & {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.basket-coupon {
+	&__title {
+		font: 17px "MyriadPro";
+		color: #47484b;
+		margin: 40px 0 20px;
+		text-transform: uppercase;
+	}
+	&__field {
+		display: flex;
+		padding-bottom: 0;
+		input {
+			margin: 0;
+			flex-basis: 345px;
+		}
+		.btn {
+			flex-basis: 150px;
+			text-align: center;
+		}
+	}
+	&__note {
+		font-size: 14px;
+		color: #c2c2c2;
+		padding-bottom: 0;
+		margin-left: 6%;
+	}
+}
+@media (--mobile){
+	.basket-coupon {
+		display: none;
+	}
+}
+
+.basket-totals {
+	&__label {
+		font-size: 11px;
+		color: #47484b;
+		text-transform: uppercase;
+	}
+	&__result {
+		font-size: 25px;
+		color: #959697;
+		margin-top: 8px;
+	}
+	.primary-color {
+		color: var(--main-brown);
+	}
+	.page--checkout & {
+		&--total,
+		&--total[class*="col"] {
+			padding-left: 30px;
+		}
+	}
+}
+@media (--mobile){
+	.basket-totals {
+		flex-direction: column;
+		height: 120px;
+		&--sum,
+		&--sale {
+			width: 45%;
+			height: 25%;
+			.basket-totals__label,
+			.basket-totals__result {
+				display: inline-block;
+				font-size: 11px;
+				color: #47484b;
+				margin-top: 0;
+			}
+		}
+		&--sale {
+			margin-top: -39px;
+			.page--checkout & {
+				margin-top: -30px;
+			}
+		}
+		&--total,
+		&--total[class*="col"] {
+			width: 55%;
+			height: 100%;
+			flex-basis: 55%;
+			max-width: 55%;
+			.page--checkout & {
+				padding: 0;
+			}
+		}
+		&--total &__label {
+			font-size: 15px;
+			display: block;
+			.small-note-text {
+				display: block;
+				font-size: inherit;
+				margin-top: 3px;
+				.page--checkout & {
+					margin-top: 7px;
+				}
+			}
+		}
+		&--total &__result {
+			font-size: 24px;
+			width: 100%;
+		}
+	}
+}

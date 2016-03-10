@@ -54,6 +54,7 @@ var Noodles = {
 		});
 		
 		
+		
 		$(window).on('scroll', function(){
 			if($(window).scrollTop() > 100){
 				$('.home-page .header').removeClass('header--transparent');

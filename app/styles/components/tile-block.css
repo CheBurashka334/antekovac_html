@@ -152,8 +152,36 @@
 			padding: 0 35px;
 		}
 		&__foot {
-			padding: 30px 35px;
+			padding: 20px 35px;
 			background: #dcdcdc;
+			width: 100%;
+		}
+	}
+}
+@media (--mobile) {
+	.tile-page {
+		width: 100vw;
+		margin-left: calc((100vw - 100%) / -2);
+		margin-bottom: 0;
+		border-left: 1px solid #dcdcdc;
+		border-right: 1px solid #dcdcdc;
+		&__head {
+			padding: 20px 25px;
+		}
+		&__body,
+		&__foot {
+			padding: 0;
+		}
+		&__foot > [class*="grid"] {
+			flex-direction: column;
+		}
+		.basket {
+			&__body {
+				padding: 0;
+			}
+			&__foot {
+				padding: 20px;
+			}
 		}
 	}
 }

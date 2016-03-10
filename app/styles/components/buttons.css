@@ -58,6 +58,11 @@
 			}
 		}
 	}
+	&[class*="--flat-gray"] {
+		background: #dcdcdc;
+		border-color: #dcdcdc;
+		color: #9b9b9c;
+	}
 	&[class*="--main-anim"]{
 		position: relative;
 		>.btn-text {
@@ -98,6 +103,7 @@
     span {
         vertical-align: middle;
 		will-change: transform;
+		display: inline-block;
     }
     .i-icon {
         margin-right: 3px;

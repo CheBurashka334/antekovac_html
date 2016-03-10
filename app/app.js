@@ -43,6 +43,7 @@ $(function () {
 
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');
+let Radios = require('./js/customRadio');
 let Noodles = require('./js/noodles');
 
 // Run components
@@ -53,6 +54,9 @@ $(function () {
 
 $(function(){
 	Dropdowns.run();
+});
+$(function(){
+	Radios.run();
 });
 
 $(function(){
@@ -65,4 +69,5 @@ exports.lazyimages = LazyImages;
 //exports.anchors = Anchors;
 //exports.sliders = Sliders;
 exports.dropdowns = Dropdowns;
+exports.radios = Radios;
 exports.Noodles;

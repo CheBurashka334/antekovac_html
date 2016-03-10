@@ -118,7 +118,7 @@ var App =
 	$(function () {
 	    lazyComponents.forEach(function (item) {
 	        if ($(item.data).length) {
-	            __webpack_require__(36)("./" + item.name + '.js')(function (component) {
+	            __webpack_require__(37)("./" + item.name + '.js')(function (component) {
 	                component.run();
 	            });
 	        }
@@ -130,16 +130,17 @@ var App =
 	$(function () {
 	    if ($('.owl-carousel').length) {
 	        __webpack_require__.e/* nsure */(1, function (require) {
-	            __webpack_require__(42);
-	            var Sliders = __webpack_require__(45);
+	            __webpack_require__(43);
+	            var Sliders = __webpack_require__(46);
 	            Sliders.run();
 	        });
 	    }
 	});
 	
-	var LazyImages = __webpack_require__(39);
-	var Dropdowns = __webpack_require__(40);
-	var Noodles = __webpack_require__(41);
+	var LazyImages = __webpack_require__(40);
+	var Dropdowns = __webpack_require__(41);
+	var Radios = __webpack_require__(47);
+	var Noodles = __webpack_require__(42);
 	
 	// Run components
 	
@@ -149,6 +150,9 @@ var App =
 	
 	$(function () {
 	    Dropdowns.run();
+	});
+	$(function () {
+	    Radios.run();
 	});
 	
 	$(function () {
@@ -161,6 +165,7 @@ var App =
 	//exports.anchors = Anchors;
 	//exports.sliders = Sliders;
 	exports.dropdowns = Dropdowns;
+	exports.radios = Radios;
 	exports.Noodles;
 
 /***/ },
@@ -10067,18 +10072,19 @@ var App =
 	__webpack_require__(27);
 	__webpack_require__(28);
 	__webpack_require__(29);
+	__webpack_require__(30);
 	
 	/*Products*/
 	
-	__webpack_require__(30);
 	__webpack_require__(31);
 	__webpack_require__(32);
 	__webpack_require__(33);
+	__webpack_require__(34);
 	
 	/*Collections*/
 	
-	__webpack_require__(34);
 	__webpack_require__(35);
+	__webpack_require__(36);
 
 /***/ },
 /* 8 */
@@ -10250,11 +10256,17 @@ var App =
 
 /***/ },
 /* 36 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./anchors.js": 37,
-		"./sameHeight.js": 38
+		"./anchors.js": 38,
+		"./sameHeight.js": 39
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -10267,11 +10279,11 @@ var App =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 36;
+	webpackContext.id = 37;
 
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10290,7 +10302,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var cbs = [], 
@@ -10309,7 +10321,7 @@ var App =
 	}(__webpack_require__));
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10343,7 +10355,7 @@ var App =
 	module.exports = LazyImages;
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10407,7 +10419,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10472,6 +10484,52 @@ var App =
 	};
 	
 	module.exports = Noodles;
+
+/***/ },
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var Radios = {
+		run: function run() {
+			var self = this;
+	
+			$('.custom-radio input').each(function () {
+				self.init($(this));
+			});
+	
+			$('.custom-radio input').on('change', function () {
+				self.change($(this));
+			});
+		},
+	
+		init: function init(item) {
+	
+			if (item.prop('checked')) {
+				item.parents('.custom-radio').addClass('checked');
+			}
+		},
+	
+		change: function change(item) {
+	
+			var radios = item.attr('name');
+			$('[name="' + radios + '"]').each(function () {
+	
+				if ($(this).prop('checked')) {
+					$(this).parents('.custom-radio').addClass('checked');
+				} else {
+					$(this).parents('.custom-radio').removeClass('checked');
+				}
+			});
+		}
+	};
+	
+	module.exports = Radios;
 
 /***/ }
 /******/ ]);

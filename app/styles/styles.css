@@ -147,11 +147,16 @@ h5 {
     font-size: 14px;
 }
 
-@media (--mobile) {
+/*@media (--mobile) {
     :--heading {
         font-size: 14px;
         font-weight: bold;
     }
+}*/
+.small-note-text {
+	font-size: 11px;
+	text-transform: none;
+	color: #9f9f9f;
 }
 
 dl {

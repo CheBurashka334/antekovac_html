@@ -30,6 +30,7 @@ require("./components/pagination.css");
 require("./components/dropdown.css");
 require("./components/forms.css");
 require("./components/checkout.css");
+require("./components/basket.css");
 
 /*Products*/
 
