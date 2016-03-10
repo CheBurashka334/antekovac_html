@@ -10,7 +10,7 @@
     <div class="heading block-heading--mobile">
         <h2>Саквояжи</h2>
     </div>
-	<div class="filter-list grid-noGutter">
+	<div class="filter-list grid-noGutter hidden-mobile">
 		<div class="filter-item col-3">
 			<div class="dropdown">
 				<div class="dropdown__caret"><svg class="i-icon"><use xlink:href="#arrow"/></svg></div>
@@ -123,6 +123,16 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+	<div class="sort-mobile mobile-fullwidth">
+		<span class="sort-mobile__text">Сортировать:</span>
+		<!-- id = name у соответстсвующего dropdown -->
+		<select class="sort-mobile__sel js-dropdown-synh" name="filter-sort-sel" id="filter-sort">
+			<option value="v1">Сначала дороже</option>
+			<option value="v2">Сначала дешевле</option>
+			<option value="v3">По популярности</option>
+			<option value="v4">По алфавиту</option>
+		</select>
 	</div>
     <div class="products-list clearfix">
         <div class="product-tile">

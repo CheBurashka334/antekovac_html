@@ -16,6 +16,7 @@ require("./components/tile-block.css");
 require("./components/about-brand.css");
 require("./components/footer.css");
 require("./components/page-aside.css");
+require("./components/page.css");
 require("./components/menu.css");
 
 /*Header*/

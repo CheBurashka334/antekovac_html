@@ -89,3 +89,33 @@
 		}
 	}
 }
+
+.sort-mobile {
+	background: var(--main-white);
+	border: 1px solid var(--light-gray);
+	padding: 11px 20px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__text {
+		font-size: 14px;
+		color: #b0b2b5;
+		flex-basis: 100px;
+		margin-right: 10px;
+	}
+	&__sel {
+		padding: 0 10px;
+		font-size: 18px;
+		background: none;
+		border: 0;
+		/*appearance: none;*/
+		color: #767778;
+	}
+}
+
+@media (--small), (--medium-up){
+	.sort-mobile {
+		display: none;
+	}
+}
