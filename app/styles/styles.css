@@ -110,6 +110,14 @@ img {
         &__mobile {
             display: block;
         }
+		&--mobile {
+			text-align: left;
+			margin: 1.5em 0;
+			:--heading::before,
+			:--heading::after {
+				display: none;
+			}
+		}
     }
 }
 
@@ -195,7 +203,7 @@ dd {
 }
 @media (--medium-up){
 	.hidden-desktop {
-		display: none;
+		display: none!important;
 	}
 }
 

@@ -18,6 +18,7 @@ require("./components/footer.css");
 require("./components/page-aside.css");
 require("./components/page.css");
 require("./components/menu.css");
+require("./components/viewer.css");
 
 /*Header*/
 

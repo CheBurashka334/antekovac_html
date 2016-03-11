@@ -105,7 +105,8 @@
 	>*:last-child > *:last-child {
 		margin-bottom: 0;
 	}
-	&--bordered {
+	&--bordered,
+	&--bordered-no--mobile{
 		padding: 40px 30px;
 		&:before {
 			content: '';
@@ -125,12 +126,28 @@
 		margin: 0;
 	}
 }
-
-
-@media (--mobile) {
-    .tile-block {
-        display: none !important;
-    }
+@media (--mobile){
+	.tile-block {
+		&--bordered--mobile{
+			padding: 9px 8px;
+			position: relative;
+			margin: 10px 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				border: 1px solid var(--main-brown);
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+			}
+		}
+	}
 }
 
 .tile-page {

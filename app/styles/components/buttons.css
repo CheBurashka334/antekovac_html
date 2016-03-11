@@ -65,6 +65,7 @@
 	}
 	&[class*="--main-anim"]{
 		position: relative;
+		overflow: hidden;
 		>.btn-text {
 			display: inline-block;
 			transform: translate3d(-10px, 0, 0);
@@ -159,6 +160,41 @@
 			background-image:  svg('mail', '[fill]: white');
 			&:hover {
 				background-image:  svg('mail', '[fill]: var(--main-brown)');
+			}
+		}
+	}
+	&--like ,
+	&--like[class*="--with-icon"] {
+		color: var(--main-brown);
+		border-color: #e8e8e8;
+		position: relative;
+		.i-icon {
+			stroke: currentColor;
+			height: 20px;
+			margin-top: -5px;
+			fill: none;
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			right: -9px;
+			top: 50%;
+			margin-top: -5px;
+			border-left: 9px solid white;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+		}
+		&:hover {
+			background: var(--main-brown);
+			color: white;
+			.i-icon {
+				fill: currentColor;
+			}
+			&::after {
+				border-left-color: var(--main-brown);
 			}
 		}
 	}

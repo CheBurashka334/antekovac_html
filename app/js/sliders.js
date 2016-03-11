@@ -42,7 +42,8 @@ var Sliders = {
                     nav: true,
                     navContainerClass: 'compact-navs',
                     navClass: ['nav-prev', 'nav-next'],
-                    navText: ['', '']
+                    navText: ['', ''],
+					mouseDrag: false,
                 }
             },
         ];

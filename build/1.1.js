@@ -1,14 +1,14 @@
 webpackJsonpApp([1],{
 
-/***/ 46:
+/***/ 47:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(47);
-	__webpack_require__(48);
+	module.exports = __webpack_require__(48);
+	__webpack_require__(49);
 
 /***/ },
 
-/***/ 47:
+/***/ 48:
 /***/ function(module, exports) {
 
 	/**
@@ -3163,14 +3163,14 @@ webpackJsonpApp([1],{
 
 /***/ },
 
-/***/ 48:
+/***/ 49:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 49:
+/***/ 50:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3217,7 +3217,8 @@ webpackJsonpApp([1],{
 	                nav: true,
 	                navContainerClass: 'compact-navs',
 	                navClass: ['nav-prev', 'nav-next'],
-	                navText: ['', '']
+	                navText: ['', ''],
+	                mouseDrag: false
 	            }
 	        }];
 	

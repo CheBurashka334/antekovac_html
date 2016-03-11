@@ -4,11 +4,11 @@
 ========================================================================== */
 /*
 // defaults
-$gl-gutter:    1rem; // Total
-$gl-xs:        "screen and (max-width: 35.5em)"; // up to 568px
-$gl-sm:        "screen and (max-width: 48em)"; // max 768px
-$gl-md:        "screen and (max-width: 64em)"; // max 1024px
-$gl-lg:        "screen and (max-width: 80em)"; // max 1280px
+$gl-gutter:    20px; // Total
+$gl-xs:        "screen and (max-width: 768px)";
+$gl-sm:        "screen and (max-width: 1024px)";
+$gl-md:        "screen and (max-width: 1300px)";
+$gl-lg:        "screen and (min-width: 1300px)";
 */
 /* line 8, scss/gridlex.scss */
 [class*="grid"] {
@@ -486,7 +486,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
     max-width: 8.33333%;
   }
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 1024px) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_sm-1"] > .col, [class*="_sm-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -583,7 +583,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
     max-width: 8.33333%;
   }
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 768px) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_xs-1"] > .col, [class*="_xs-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -1255,7 +1255,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
     margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 64em) {
+@media screen and (max-width: 1024px) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-1"] {
     -webkit-flex-basis: 8.33333%;
@@ -1446,7 +1446,7 @@ $gl-lg:        "screen and (max-width: 80em)"; // max 1280px
     margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 768px) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-1"] {
     -webkit-flex-basis: 8.33333%;

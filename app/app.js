@@ -41,6 +41,16 @@ $(function () {
     }
 });
 
+$(function(){
+	if($('.js-viewer,.js-viewer-wrapper').length){
+		require.ensure([],function(require){
+			require('imageviewer');
+			let Viewers = require('./js/viewers');
+			Viewers.run();
+		});
+	}
+});
+
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');
 let DropdownSynh = require('./js/dropdownSynh');

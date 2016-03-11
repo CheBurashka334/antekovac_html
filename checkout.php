@@ -10,12 +10,12 @@
 	<div class="tile-page page--checkout">
 		<div class="tile-page__head">
 			<div class="grid-noGutter-middle">
-				<div class="col-6_lg-6_md-6_sm-12">
+				<div class="col-6_lg-6_md-6_sm-4_xs-12">
 					<div class="heading block-heading--mobile">
 						<h2>оформление заказа</h2>
 					</div>
 				</div>
-				<div class="col-6_lg-6_md-6 hidden-mobile">
+				<div class="col-6_lg-6_md-6_sm-8 hidden-mobile">
 					<div class="switch">
 						<label for="PERSON_TYPE_1" class="switch__text switch__text--left">Физическое лицо</label>
 						<span class="switch__field">
@@ -30,7 +30,7 @@
 		</div>
 		<div class="tile-page__body">
 			<div class="grid-bigGutter checkout-block checkout-block__personal">
-				<div class="col-6_lg-6_md-6_sm-12">
+				<div class="col-6_lg-6_md-6_sm-6_xs-12">
 					<div class="field required">
 						<label class="field__label">Ф.И.О</label>
 						<input type="text" class="field__inputtext" />
@@ -44,7 +44,7 @@
 						<input type="tel" class="field__inputtext field__inputtext--tel" />
 					</div>
 				</div>
-				<div class="col-6_lg-6_md-6_sm-12">
+				<div class="col-6_lg-6_md-6_sm-6_xs-12">
 					<div class="field">
 						<label class="field__label">Индекс</label>
 						<input type="text" class="field__inputtext" />
@@ -265,12 +265,12 @@
 		</div>
 		<div class="tile-page__foot">
 			<div class="grid-equalHeight-noGutter">
-				<div class="col-9 hidden-mobile">
+				<div class="col-9_lg-9_md-9_sm-8 hidden-mobile">
 					<div class="field no-margin">
 						<textarea class="field__inputtext field__inputtext--full" placeholder="КОММЕНТАРИЙ К ЗАКАЗУ:"></textarea>
 					</div>
 				</div>
-				<div class="col-3_lg-3_md-3_sm-12">
+				<div class="col-3_lg-3_md-3_sm-4_xs-12">
 					<button class="btn btn--dark--big js-anim--click"><span class="btn-text">Оформить заказ</span></button>
 				</div>
 			</div>
