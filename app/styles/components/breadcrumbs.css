@@ -5,6 +5,7 @@
     margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 0;
+	list-style: none;
 
     &__item {
         display: inline-block;
@@ -14,6 +15,9 @@
         &:hover {
             text-decoration: underline;
         }
+		&:first-child:before {
+			display: none;
+		}
 		&:first-child ~ &:before {
 			content: '';
 			display: inline-block;
@@ -21,6 +25,9 @@
 			height: 1px;
 			margin-right: 5px;
 			vertical-align: middle;
+			position: relative;
+			top: auto;
+			left: auto;
 		}
 		&:not(&--unactive):before {
 			background: var(--main-brown);

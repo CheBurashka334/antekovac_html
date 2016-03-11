@@ -10,6 +10,9 @@
     text-decoration: none;
     font-family: "MyriadPro";
 	box-sizing: border-box;
+	&[class*="medium"]{
+		padding: 1em 90px;
+	}
 	&[class*="--big"] {
 		padding: 13px 20px;
 		width: 100%;

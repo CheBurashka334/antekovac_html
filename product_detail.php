@@ -18,7 +18,7 @@
 				<div class="owl-carousel">
 					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8264.png" style="background-image: url('images/product-detail/big/afm-white-8264.png');">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="'images/product-detail/full/afm-white-8265.png" style="background-image: url('images/product-detail/big/afm-white-8265.png');">
+					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8265.png" style="background-image: url('images/product-detail/big/afm-white-8265.png');">
 					</div>
 					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8268.png" style="background-image: url('images/product-detail/big/afm-white-8268.png');">
 					</div>

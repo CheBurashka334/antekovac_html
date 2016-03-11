@@ -6,7 +6,7 @@ var Viewers = {
 			'tooltip': false,
 			'rotatable': false,
 			'scalable': false,
-			//'url': 'data-fullimg',
+			'fullscreen': false
 		});
 		$('.js-viewer').viewer();
 		$('.js-viewer-wrapper').on('click', function(){

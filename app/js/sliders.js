@@ -24,12 +24,28 @@ var Sliders = {
 			{
                 'selector' : '.set-products',
                 'options' : {
-                    items: 3,
-					itemsDesktop: [1300,3],
-					itemsDesktopSmall: [1024,2],
-					itemsTablet: [768,1],
-					itemsMobile: false,
-                    nav: true,
+					responsive:{
+						0: {
+							items: 1,
+							nav: false,
+							dots: true
+						},
+						768: {
+							items: 2,
+							nav: false,
+							dots: false
+						},
+						1024: {
+							items: 3,
+							nav: false,
+							dots: false
+						},
+						1300: {
+							items: 3,
+							nav: true,
+							dots: false
+						}
+					},
                     navContainerClass: 'set-products-navs',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', '']
@@ -44,6 +60,28 @@ var Sliders = {
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', ''],
 					mouseDrag: false,
+                }
+            },
+			{
+                'selector' : '.carousel--dark-navs',
+                'options' : {
+                    items: 1,
+                    nav: true,
+                    navContainerClass: 'dark-navs',
+                    navClass: ['nav-prev', 'nav-next'],
+                    navText: ['', ''],
+					dots: false
+                }
+            },
+			{
+                'selector' : '.carousel--dark-navs--outside',
+                'options' : {
+                    items: 1,
+                    nav: true,
+                    navContainerClass: 'dark-navs dark-navs--outside',
+                    navClass: ['nav-prev', 'nav-next'],
+                    navText: ['', ''],
+					dots: false
                 }
             },
         ];

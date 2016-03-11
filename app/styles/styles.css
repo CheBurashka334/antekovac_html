@@ -15,6 +15,7 @@ html {
     background: var(--main-white);
     font-family: 'Roboto', san-serif;
 	overflow-x: hidden;
+	color: #3d3b33;
 }
 
 a {
@@ -103,6 +104,15 @@ img {
         font-family: "Bebas Neue Book";
         color: var(--main-brown);
 	}
+	&--dark-block {
+		font-family: "Bebas Neue Book";
+		font-size: 24px;
+		padding: 20px 100px;
+		margin: 0 auto;
+		display: inline-block;
+		color: white;
+		background: var(--dark-gray);
+	}
 }
 
 @media (--mobile) {
@@ -127,10 +137,13 @@ h1 {
 
 h2 {
     font-size: 24px;
+	color: var(--main-brown);
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 21px;
+	text-align: left;
+	margin: 2em 0;
 }
 
 h4 {
@@ -145,6 +158,7 @@ p {
 	font-size: 14px;
 	line-height: 1.3;
 	font-weight: 100;
+	max-width: 76em;
 }
 
 /*@media (--mobile) {
@@ -157,6 +171,9 @@ p {
 	font-size: 11px;
 	text-transform: none;
 	color: #9f9f9f;
+}
+.light-text {
+	color: #bbbbbb;
 }
 
 dl {
@@ -177,6 +194,42 @@ dd {
     display: inline-block;
     vertical-align: top;
     margin: 0;
+}
+
+ul,
+ol {
+	padding-left: 35px;
+	margin: 3em 0;
+	list-style: none;
+	&.light-text {
+		color: #bbbbbb;
+	}
+	li {
+		position: relative;
+		margin: 0.5em 0;
+	}
+}
+ul li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0.35em;
+	left: -1.2em;
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	background: var(--main-brown);
+}
+ol {
+	counter-reset: item;
+	li:before {
+		content: counter(item)".";
+		counter-increment: item;
+		position: absolute;
+		top: 0;
+		left: -1.5em;
+		color: var(--main-brown);
+	}
 }
 
 .disappear {
@@ -240,6 +293,31 @@ tbody.collapse.in {
     transition-timing-function: ease;
 }
 
+/* default table */
+table {
+	margin: 70px auto 3em;
+	width: 100%;
+	caption :--heading {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+	th {
+		padding: 1em;
+		color: #bbbbbb;
+	}
+	td {
+		padding: 1.3em; 
+		color: #231f20;
+	}
+	th, td {
+		text-align: left;
+		font-weight: normal;
+		border-bottom: 1px solid #b2b1b1;
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
 
 /*Bootstrap collapse*/
 

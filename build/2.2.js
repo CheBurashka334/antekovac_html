@@ -1949,9 +1949,9 @@ webpackJsonpApp([2],{
 				'title': false,
 				'tooltip': false,
 				'rotatable': false,
-				'scalable': false
+				'scalable': false,
+				'fullscreen': false
 			});
-			//'url': 'data-fullimg',
 			$('.js-viewer').viewer();
 			$('.js-viewer-wrapper').on('click', function () {
 				var img = '<img class="js-viewer-fullimg hidden" src="' + $(this).attr('data-fullimg') + '"/>';
