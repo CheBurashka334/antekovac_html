@@ -19,6 +19,7 @@ html {
 }
 
 a {
+	color: var(--main-brown);
     &:hover {
         text-decoration: none;
     }
@@ -259,6 +260,11 @@ ol {
 		display: none!important;
 	}
 }
+@media (--small), (--medium-up){
+	.mobile-only {
+		display: none;
+	}
+}
 
 .primary-color {
 	color: var(--main-brown);
@@ -315,6 +321,12 @@ table {
 		border-bottom: 1px solid #b2b1b1;
 		&:first-child {
 			padding-left: 0;
+		}
+	}
+	&.nostyle {
+		margin: 0;
+		th, td {
+			border: 0;
 		}
 	}
 }

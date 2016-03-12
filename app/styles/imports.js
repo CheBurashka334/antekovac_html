@@ -8,6 +8,7 @@ require("./colors.css");
 require("./selectors.css");
 
 
+
 require("./components/icons.css");
 require("./components/sliders.css");
 require("./components/buttons.css");
@@ -33,6 +34,7 @@ require("./components/dropdown.css");
 require("./components/forms.css");
 require("./components/checkout.css");
 require("./components/basket.css");
+require("./components/order.css");
 
 /*Products*/
 

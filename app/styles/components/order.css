@@ -1,0 +1,201 @@
+@import "../colors.css";
+@import "../media.css";
+
+.order-list {
+	margin-bottom: 60px;
+}
+.order {
+	display: flex;
+	flex-direction: column;
+}
+.order-table {
+	display: table;
+	width: 100%;
+	&__head,
+	&__row {
+		display: table-row;
+	}
+	&__col {
+		display: table-cell;
+		border-bottom: 1px solid #ebebeb;
+		&--image {
+			width: 9.6%;
+			min-width: 80px;
+		}
+		&--name {
+			/*width: 53%;*/
+		}
+		&--price {
+			width: 17.8%;
+		}
+		&--quantity {
+			width: 9.6%;
+		}
+		&--sum {
+			width: 10%;
+			min-width: 90px;
+			text-align: center;
+		}
+		&--info {
+			width: 27%;
+		}
+	}
+	&__head &__col {
+		color: #b4b5b5;
+		font-size: 10px;
+		padding: 1em 0;
+		text-transform: uppercase;
+	}
+	&__row &__col {
+		padding: 40px 0;
+		vertical-align: middle;
+		&--image {
+			padding: 30px 0 40px;
+		}
+	}
+	.product {
+		&__image {
+			max-width: 70px;
+		}
+		&__name {
+			font: 20px "MyriadPro";
+			color: #47484b;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		&__collection {
+			font-size: 11px;
+			color: #b4b5b5;
+			text-transform: uppercase;
+			a {
+				text-transform: none;
+				margin-left: 3px;
+				font-size: 12px;
+			}
+		}
+		&__price,
+		&__sum {
+			font-size: 18px;
+		}
+		&__price {
+			color: #959697;
+			.page--checkout & {
+				font-size: inherit;
+			}
+		}
+		&__sum,
+		&__quantity {
+			color: var(--dark-gray);
+		}
+	}
+}
+@media (--mobile){
+	.order-list {
+		margin-bottom: 0;
+	}
+	.order {
+		flex-direction: column-reverse;
+		padding: 0;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -20px;
+			width: 100vw;
+			height: 20px;
+			margin-left: calc((100vw - 100%) / -2);
+			background: var(--main-white);
+		}
+	}
+	.order-table {
+		padding: 0 5px;
+		&__head {
+			display: none;
+		}
+		&__row {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: flex-start;
+			padding: 25px 0;
+			border-top: 1px solid #ebebeb;
+			height: 150px;
+		}
+		&__row &__col {
+			padding: 0;
+			border: 0;
+		}
+		&__col {
+			&--image{
+				width: 22%;
+				height: 100px;
+			}
+			&--name,
+			&--sum,
+			&--price {
+				width: 78%;
+				height: 25%;
+				text-align: left;
+			}
+			&--name {
+				margin-bottom: 1em;
+				height: 35%;
+			}
+		}
+		.product {
+			&__image {
+				height: 100%;
+				width: auto;
+				max-width: 90%;
+			}
+			&__name {
+				margin-bottom: 2px;
+			}
+		}
+	}
+}
+
+.order-totals {
+	padding-top: 15px;
+	[class*="col-"]{
+		padding-bottom: 0;
+	}
+	.order-info {
+		font-family: "MyriadPro";
+		font-size: 20px;
+		margin: 15px 0 5px;
+		&__param {
+			color: var(--dark-gray);
+			text-transform: uppercase;
+		}
+		&__value {
+			text-transform: uppercase;
+			margin-left: 0.2em;
+			&--noupper {
+				text-transform: none;
+			}
+			.order--processing & {
+				color: #82a147;
+			}
+			.order--complete & {
+				color: #a5a5a5;
+			}
+		}
+	}
+}
+@media (--mobile){
+	.order-totals {
+		padding: 5px 5px 15px;
+		/*border-bottom: 1px solid #ebebeb;*/
+		margin: 0;
+		[class*="col-"]{
+			padding: 0;
+		}
+		.order-info {
+			margin: 0.5em 0 0;
+		}
+	}
+}

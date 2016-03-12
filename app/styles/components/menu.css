@@ -5,6 +5,12 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	li {
+		position: static;
+		&::before {
+			display: none;
+		}
+	}
 	&--with-icons {
 		.menu-item__icon {
 			display: inline-block;
