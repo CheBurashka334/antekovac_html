@@ -1,9 +1,7 @@
 @import "../colors.css";
 @import "../media.css";
 
-.order-list {
-	margin-bottom: 60px;
-}
+
 .order {
 	display: flex;
 	flex-direction: column;
@@ -90,9 +88,6 @@
 	}
 }
 @media (--mobile){
-	.order-list {
-		margin-bottom: 0;
-	}
 	.order {
 		flex-direction: column-reverse;
 		padding: 0;

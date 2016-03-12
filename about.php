@@ -8,7 +8,11 @@
 	</ul>
 </div>
 <div class="container">
-	<div class="video-container">
+	<div class="heading hidden-mobile">
+        <h2>Бренд</h2>
+    </div>
+	<?php require ('brend_menu.php') ?>
+	<div class="video-container mobile-fullwidth">
 		<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 	</div>
 	<div class="tile-page">
@@ -24,9 +28,9 @@
 			<p>Ante Kovac предлагает пошив кожаных сумок на заказ, тем самым восхищая и искушая ценителей единственных в своем роде произведений искусства. На нашем сайте Вы можете заказать пошив сумок на заказ!</p>
 			<h3>LOOK BOOK</h3>
 			<div class="grid-center">
-				<div class="col-10">
-					<div class="carousel carousel--dark-navs--outside">
-						<div class="owl-carousel ">
+				<div class="col-10_xs-12">
+					<div class="carousel carousel--dark-navs--outside mobile-fullwidth--noGutter">
+						<div class="owl-carousel">
 							<div class="carousel__item">
 								<img src="images/look-book.jpg"/>
 							</div>

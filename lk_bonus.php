@@ -9,7 +9,8 @@
 	<div class="heading block-heading--mobile">
         <h2>Личный кабинет</h2>
     </div>
-	<div class="tile-block tile-block--bonus">
+	<?php require ('lk_menu.php') ?>
+	<div class="tile-block tile-block--bonus page--marg">
 		<div class="grid bonus">
 			<div class="col-4_xs-12">
 				<div class="bonus__image">

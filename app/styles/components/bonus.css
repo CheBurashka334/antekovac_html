@@ -22,11 +22,13 @@
 	}
 }
 .tile-block--bonus {
+	margin-top: 20px;
 	margin-bottom: 60px;
 }
 @media (--mobile){
 	.tile-block--bonus {
 		padding: 0 5px;
+		margin-top: 0;
 		margin-bottom: 0;
 	}
 }

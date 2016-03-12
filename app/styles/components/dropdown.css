@@ -63,6 +63,10 @@
 	}
 	.dropdown__item {
 		border-bottom: 1px solid #44464b;
+		margin: 0;
+		&:before {
+			display: none;
+		}
 		.dropdown__title {
 			display: block;
 			padding: 10px 20px;

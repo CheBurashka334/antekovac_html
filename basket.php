@@ -6,7 +6,7 @@
 	</ul>
 </div>
 <div class="container">
-	<div class="tile-page page--basket">
+	<div class="tile-page page--basket mobile-fullwidth--noGutter">
 		<div class="tile-page__head">
 			<div class="heading block-heading--mobile hidden-desktop hidden-medium hidden-small">
 				<h2>ваша корзина</h2>

@@ -1,9 +1,6 @@
 @import "../colors.css";
 @import "../media.css";
 
-.favorite-list {
-	margin-bottom: 60px;
-}
 .tile-block.favorite {
 	padding: 10px 35px 60px;
 }
@@ -74,9 +71,6 @@
 	}
 }
 @media (--mobile){
-	.favorite-list {
-		margin-bottom: 0;
-	}
 	.tile-block.favorite {
 		padding: 10px 5px;
 	}

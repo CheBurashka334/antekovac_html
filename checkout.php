@@ -7,7 +7,7 @@
 	</ul>
 </div>
 <div class="container">
-	<div class="tile-page page--checkout">
+	<div class="tile-page page--checkout mobile-fullwidth--noGutter">
 		<div class="tile-page__head">
 			<div class="grid-noGutter-middle">
 				<div class="col-6_lg-6_md-6_sm-4_xs-12">

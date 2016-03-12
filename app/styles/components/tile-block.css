@@ -178,11 +178,11 @@
 }
 @media (--mobile) {
 	.tile-page {
-		width: 100vw;
-		margin-left: calc((100vw - 100%) / -2);
+		/*width: 100vw;
+		margin-left: calc((100vw - 100%) / -2);*/
 		margin-bottom: 0;
-		border-left: 1px solid #dcdcdc;
-		border-right: 1px solid #dcdcdc;
+		/*border-left: 1px solid #dcdcdc;
+		border-right: 1px solid #dcdcdc;*/
 		&__head {
 			padding: 20px 25px;
 		}

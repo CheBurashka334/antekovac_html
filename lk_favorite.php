@@ -9,7 +9,8 @@
 	<div class="heading block-heading--mobile">
         <h2>Личный кабинет</h2>
     </div>
-	<div class="favorite-list">
+	<?php require ('lk_menu.php') ?>
+	<div class="favorite-list page--marg">
 		<div class="tile-block favorite">
 			<div class="favorite-table">
 				<div class="favorite-table__row product">

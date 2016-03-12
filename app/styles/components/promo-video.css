@@ -18,3 +18,9 @@
 		cursor: pointer;
 	}
 }
+@media (--mobile){
+	.video-container.mobile-fullwidth {
+		width: 100vw;
+		padding: 0 0 56.25%;
+	}
+}

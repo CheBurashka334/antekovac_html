@@ -58,6 +58,10 @@
 			padding: 1em 2em;
 		}
 	}
+	&--marg {
+		margin-top: 20px;
+		margin-bottom: 60px;
+	}
 }
 @media (--mobile){
 	.page {
@@ -70,6 +74,10 @@
 		}
 		&--thanks &__picture {
 			text-align: center;
+		}
+		&--marg {
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 	}
 }

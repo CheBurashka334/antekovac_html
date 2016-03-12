@@ -9,7 +9,8 @@
 	<div class="heading block-heading--mobile">
         <h2>Личный кабинет</h2>
     </div>
-	<div class="tile-page page--profile">
+	<?php require ('lk_menu.php') ?>
+	<div class="tile-page page--profile page--marg">
 		<div class="tile-page__body">
 			<div class="grid-spaceBetween">
 				<div class="col-6_lg-6_md-6_sm-6_xs-12 form-block">

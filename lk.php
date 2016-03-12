@@ -9,7 +9,8 @@
 	<div class="heading block-heading--mobile">
         <h2>Личный кабинет</h2>
     </div>
-	<div class="order-list">
+	<?php require ('lk_menu.php') ?>
+	<div class="order-list page--marg">
 		<div class="tile-block order order--processing">
 			<div class="order-table">
 				<div class="order-table__head">
