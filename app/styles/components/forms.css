@@ -2,7 +2,7 @@
 @import "../media.css";
 @import "../selectors.css";
 
-:--inputs {
+:--inputs, select {
     font-size: 17px;
 	line-height: 1.3;
 	font-family: "MyriadPro";
@@ -46,6 +46,15 @@ textarea {
 	width: 100%;
     max-width: 100%;
 	height: 4em;
+	&[rows]{
+		height: auto;
+	}
+}
+
+select {
+	display: block;
+	width: 100%;
+	appearance: menulist;
 }
 
 .field__inputtext {
@@ -363,6 +372,14 @@ textarea {
     }
 	&.no-margin {
 		margin: 0;
+	}
+	.col,
+	[class*="col-"] {
+		padding-bottom: 0;
+		:--inputs,
+		select {
+			margin-bottom: 0;
+		}
 	}
 }
 @media (--mobile){

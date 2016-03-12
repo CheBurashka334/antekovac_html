@@ -46,7 +46,18 @@
 	&--thanks &__picture {
 		margin: 60px auto 45px;
 	}
-	
+	&--profile {
+		margin-bottom: 55px;
+		.tile-page__body {
+			padding: 30px 45px 70px;
+		}
+		.form-block {
+			max-width: 490px;
+		}
+		.btn[class*="--medium"]{
+			padding: 1em 2em;
+		}
+	}
 }
 @media (--mobile){
 	.page {

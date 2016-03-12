@@ -20,6 +20,8 @@ require("./components/page-aside.css");
 require("./components/page.css");
 require("./components/menu.css");
 require("./components/viewer.css");
+require("./components/bonus.css");
+require("./components/favorite.css");
 
 /*Header*/
 

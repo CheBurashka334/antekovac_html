@@ -1,0 +1,143 @@
+@import "../colors.css";
+@import "../media.css";
+
+.favorite-list {
+	margin-bottom: 60px;
+}
+.tile-block.favorite {
+	padding: 10px 35px 60px;
+}
+.favorite-table {
+	display: table;
+	width: 100%;
+	&__row {
+		display: table-row;
+		border-bottom: 1px solid #ebebeb;
+	}
+	&__col {
+		display: table-cell;
+		padding: 40px 0;
+		vertical-align: middle;
+		&--image {
+			width: 11.4%;
+			min-width: 80px;
+			padding: 30px 0 40px;
+		}
+		&--name {
+			/*width: 53%;*/
+		}
+		&--price {
+			width: 29%;
+		}
+		&--actions {
+			width: 250px;
+			.btn {
+				vertical-align: middle;
+			}
+			.btn-delete {
+				font-size: 12px;
+				color: #d6d6d6;
+				margin-left: 20px;
+			}
+			.btn-add-to-cart {
+				padding: 1em 4em;
+				width: auto;
+				max-width: 185px;
+				margin: 0;
+			}
+		}
+	}
+	.product {
+		&__image {
+			max-width: 70px;
+		}
+		&__name {
+			font: 20px "MyriadPro";
+			color: #47484b;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		&__collection {
+			font-size: 11px;
+			color: #b4b5b5;
+			text-transform: uppercase;
+			a {
+				text-transform: none;
+				margin-left: 3px;
+				font-size: 12px;
+			}
+		}
+		&__price {
+			color: var(--dark-gray);
+			font-size: 18px;
+		}
+	}
+}
+@media (--mobile){
+	.favorite-list {
+		margin-bottom: 0;
+	}
+	.tile-block.favorite {
+		padding: 10px 5px;
+	}
+	.favorite-table {
+		&__head {
+			display: none;
+		}
+		&__row {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			align-content: flex-start;
+			padding: 15px 0;
+			height: 160px;
+			border-bottom: 0;
+			border-top: 1px solid #ebebeb;
+		}
+		&__col {
+			padding: 0;
+			&--image{
+				width: 22%;
+				height: 100%;
+			}
+			&--name,
+			&--price,
+			&--actions {
+				width: 78%;
+				height: 25%;
+				text-align: left;
+			}
+			&--name {
+				margin-bottom: 0.5em;
+				height: 35%;
+			}
+			&--actions {
+				.btn-delete {
+					margin: 0;
+					margin-left: 10px;
+					background: #eeeeee;
+					color: #b9b9b9;
+				}
+				.btn-add-to-cart {
+					padding: 7px 1em;
+					.i-icon {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.product {
+			&__image {
+				height: 100%;
+				width: auto;
+				max-width: 90%;
+			}
+			&__name {
+				margin-bottom: 2px;
+			}
+		}
+	}
+}

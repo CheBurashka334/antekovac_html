@@ -13,6 +13,7 @@
 @import "components/page.css";
 @import "components/menu.css";
 @import "components/viewer.css";
+@import "components/bonus.css";
 
 /*Header*/
 
@@ -28,6 +29,7 @@
 @import "components/checkout.css";
 @import "components/basket.css";
 @import "components/order.css";
+@import "components/favorite.css";
 
 /*Products*/
 

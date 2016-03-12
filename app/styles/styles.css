@@ -23,6 +23,11 @@ a {
     &:hover {
         text-decoration: none;
     }
+	&.link--question {
+		display: inline-block;
+		padding-right: 20px;
+		background: url(var(--img-path)/question.png) right bottom no-repeat;
+	}
 	p & {
 		color: #a7865e;
 		text-decoration: underline;
@@ -162,12 +167,6 @@ p {
 	max-width: 76em;
 }
 
-/*@media (--mobile) {
-    :--heading {
-        font-size: 14px;
-        font-weight: bold;
-    }
-}*/
 .small-note-text {
 	font-size: 11px;
 	text-transform: none;
@@ -175,6 +174,12 @@ p {
 }
 .light-text {
 	color: #bbbbbb;
+}
+.success-green-text {
+	color: #82a147;
+}
+.primary-color {
+	color: var(--main-brown);
 }
 
 dl {
@@ -266,9 +271,6 @@ ol {
 	}
 }
 
-.primary-color {
-	color: var(--main-brown);
-}
 
 /*Bootstrap collapse*/
 
