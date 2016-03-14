@@ -132,6 +132,7 @@
 	.main-slider {
 		&__slide {
 			background-position: top left 20%;
+			height: 100vh;
 		}
 		&__info {
 			height: 63%;
@@ -314,6 +315,16 @@
 			left: 50%;
 			transform: translateX(-50%);
 		}
+		&--mobile-only {
+			width: 100%;
+			position: relative;
+			.owl-stage-outer {
+				overflow: hidden;
+			}
+			.owl-item {
+				float: left;
+			}
+		}
 	}
 }
 
@@ -369,6 +380,7 @@
 }
 
 [class*="navs"].disabled,
-[class*="dots"].disabled {
+[class*="dots"].disabled,
+.owl-nav.disabled {
 	display: none;
 }

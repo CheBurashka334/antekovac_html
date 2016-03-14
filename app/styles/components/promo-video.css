@@ -23,4 +23,19 @@
 		width: 100vw;
 		padding: 0 0 56.25%;
 	}
+	.promo-video {
+		display: flex;
+		justify-content: space-between;
+		.video-container {
+			width: 30%;
+			padding-bottom: 17.5%;
+		}
+		.block-heading--mobile {
+			padding: 0.5em 20px;
+			font-size: 18px;
+			margin: 0;
+			display: flex;
+			align-items: center;
+		}
+	}
 }

@@ -45,14 +45,14 @@
     <div class="block-heading block-heading--mobile">
         <h2>Новинки сезона</h2>
     </div>
-    <div class="products-list clearfix">
-        <div class="product-tile">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/catalog/afm-white-8264.png" alt="" />
-                    </a>
-                </div>
+    <div class="products-list carousel--mobile-only">
+		<div class="product-tile">
+			<div class="product-tile__wrap">
+				<div class="product-tile__image">
+					<a href="#">
+						<img src="images/catalog/afm-white-8264.png" alt="" />
+					</a>
+				</div>
 				<div class="product-tile__info">
 					<div class="product-tile__name">
 						Сумка №40 «Небесно-голубое»
@@ -63,27 +63,27 @@
 						</div>
 					</div>
 				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
+				<div class="product-tile__like">
+					<svg class="i-icon"role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+					</svg>
+				</div>
 				<div class="product-tile__overlay">
 					<a href="#">
-                       <svg class="i-icon"role="img">
+					   <svg class="i-icon"role="img">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
 						</svg>
-                    </a>
+					</a>
 				</div>
-            </div>
-        </div>
-        <div class="product-tile">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/catalog/afm-white-8297.png" alt="" />
-                    </a>
-                </div>
+			</div>
+		</div>
+		<div class="product-tile">
+			<div class="product-tile__wrap">
+				<div class="product-tile__image">
+					<a href="#">
+						<img src="images/catalog/afm-white-8297.png" alt="" />
+					</a>
+				</div>
 				<div class="product-tile__info">
 					<div class="product-tile__name">
 						Сумка №40 «Небесно-голубое»
@@ -94,21 +94,21 @@
 						</div>
 					</div>
 				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
+				<div class="product-tile__like">
+					<svg class="i-icon"role="img">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+					</svg>
+				</div>
 				<div class="product-tile__overlay">
 					<a href="#">
-                       <svg class="i-icon"role="img">
+					   <svg class="i-icon"role="img">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
 						</svg>
-                    </a>
+					</a>
 				</div>
-            </div>
-        </div>
-        <div class="product-tile product-tile--half-wrapper">
+			</div>
+		</div>
+		<div class="product-tile product-tile--half-wrapper" data-marge="2">
 			<div class="product-tile product-tile--half">
 				<div class="product-tile__wrap">
 					<div class="product-tile__image">
@@ -175,14 +175,26 @@
     </div>
 </div>
 
-<div class="container">
+<div class="tile-block tile-block--dark mobile-fullwidth mobile-only">
+	<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
+	<h2>Тренды сезона</h2>
+	<div class="tile-block__text">
+		<p>
+			Компания получила известность благодаря своим эксклюзивным сумкам premium-класса,которые расписаны авторскими работами известных живописцев.
+		</p>
+	</div>
+	<a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
+</div>
+
+<div class="container mobile-fullwidth--noGutter">
     <div class="grid">
         <div class="col-6_lg-6_md-12">
-            <div class="block-heading block-heading--mobile">
+            <div class="block-heading hidden-mobile">
                 <h2>Для нее</h2>
             </div>
-            <div class="collection-block tile-block">
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-her-col"/></svg></div>
+                <a href="#" class="tile-block__heading-link"><h2>коллекции для нее</h2></a>
                 <div class="collection-block__top">
                     <div class="collection-block__image">
                         <img src="images/collection1.jpg" alt="" />
@@ -273,11 +285,12 @@
             </div>
         </div>
         <div class="col-6_lg-6_md-12">
-            <div class="block-heading block-heading--mobile">
+            <div class="block-heading hidden-mobile">
                 <h2>Для него</h2>
             </div>
-            <div class="collection-block tile-block">
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-him-col"/></svg></div>
+                <a href="#" class="tile-block__heading-link"><h2>коллекции для него</h2></a>
                 <div class="collection-block__top">
                     <div class="collection-block__image">
                         <img src="images/collection2.jpg" alt="" />
@@ -370,27 +383,27 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container promo-video mobile-last mobile-fullwidth--noGutter">
     <div class="block-heading block-heading--mobile">
         <h2>promo видео</h2>
     </div>
-    <div class="promo-video">
+    <div class="video-container">
         <iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
-<div class="container">
-    <div class="block-heading block-heading--mobile">
+<div class="container mobile-fullwidth--noGutter">
+    <div class="block-heading hidden-mobile">
         <h2>О бренде</h2>
     </div>
     <div class="about-brand grid-equalHeight">
-        <div class="col-6">
-            <div class="tile-block">
+        <div class="col-6_sm-12">
+            <div class="tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#about-brand"/></svg></div>
                 <div class="tile-block__image">
                     <img src="images/about-brand.jpg" alt="" />
                 </div>
-                <h2>О БРЕНДЕ</h2>
+                <a href="#" class="tile-block__heading-link"><h2>О БРЕНДЕ</h2></a>
                 <div class="tile-block__text">
                     <p>
                         ANTE KOVAC – известная российская компания, которая изготавливает дизайнерские сумки из натуральной кожи ручной работы. Бренд был создан в 2007 году художницей Анной Серёгиной.
@@ -404,9 +417,9 @@
                 </div>
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
-            <div class="tile-block">
+            <div class="tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
-                <h2>индивидуальный заказ</h2>
+                <a href="#" class="tile-block__heading-link"><h2>индивидуальный заказ</h2></a>
                 <div class="tile-block__text">
                     <p>
                         Интернет магазин эксклюзивных сумок Анте Ковач дает возможность изменить модель сумки, нанести рисунок своей тематики, модифицировать внутреннее пространство , изменить длину, ширину, длину ручек и прочее.
@@ -415,13 +428,13 @@
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
         </div>
-        <div class="col-6">
-            <div class="tile-block tile-block--video">
+        <div class="col-6_sm-12">
+            <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
                 <div class="tile-block__video" style="background-image: url(images/masterskie.jpg)">
                     <a href="#"></a>
                 </div>
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>
-                <h2>Мастерские</h2>
+                <a href="#" class="tile-block__heading-link"><h2>Мастерские</h2></a>
                 <div class="tile-block__text">
                     <p>
                         Компания ANTE KOVAC акцентирует Ваше внимание на том, что все сумки шьются исключительно из натуральной кожи, а рисунки выполняются живописцами вручную, индивидуально для каждого изделия.

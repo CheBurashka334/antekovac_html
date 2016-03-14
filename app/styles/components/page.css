@@ -6,6 +6,8 @@
 	left: 0;
 	right: 0;
 	transition: left .3s, right .3s;
+	display: flex;
+	flex-direction: column;
 	&::before {
 		content: '';
 		display: block;

@@ -71,3 +71,12 @@
 		}
     }
 }
+
+@media (--mobile){
+	.collection-block {
+		&.mobile-minify &__top,
+		&.mobile-minify &__bottom {
+			display: none;
+		}
+	}
+}

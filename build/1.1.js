@@ -1,14 +1,14 @@
 webpackJsonpApp([1],{
 
-/***/ 48:
+/***/ 50:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(49);
-	__webpack_require__(50);
+	module.exports = __webpack_require__(51);
+	__webpack_require__(52);
 
 /***/ },
 
-/***/ 49:
+/***/ 51:
 /***/ function(module, exports) {
 
 	/**
@@ -3163,14 +3163,14 @@ webpackJsonpApp([1],{
 
 /***/ },
 
-/***/ 50:
+/***/ 52:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 51:
+/***/ 53:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3197,6 +3197,15 @@ webpackJsonpApp([1],{
 	        //         navText: ['', '']
 	        //     }
 	        // }
+	        /*{
+	                     'selector' : '.carousel--mobile-only',
+	                     'options' : {
+	        		items: 1,
+	        		dots: true,
+	        		mergeFit: true,
+	        		nav: false,
+	                     }
+	                 },*/
 	        {
 	            'selector': '.set-products',
 	            'options': {
@@ -3261,6 +3270,15 @@ webpackJsonpApp([1],{
 	        sliders.forEach(function (item) {
 	            $(item.selector).find('.owl-carousel').owlCarousel(item.options);
 	        });
+	
+	        if ($(window).width() < 768) {
+	            $('.carousel--mobile-only').owlCarousel({
+	                items: 1,
+	                dots: true,
+	                mergeFit: true,
+	                nav: false
+	            });
+	        }
 	    }
 	};
 	

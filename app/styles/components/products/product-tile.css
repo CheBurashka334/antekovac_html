@@ -136,7 +136,7 @@
     }
 }
 
-@media (--max-1300) {
+@media (--small-down) {
     .product-tile {
         width: calc(50% - 20px);
 		&--half {
@@ -173,6 +173,9 @@
 		}
 		&__overlay {
 			display: none;
+		}
+		.owl-item & {
+			border: 0;
 		}
     }
 }

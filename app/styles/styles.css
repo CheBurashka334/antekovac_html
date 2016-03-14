@@ -254,6 +254,12 @@ ol {
     .hidden-mobile {
         display: none;
     }
+	.mobile-first {
+		order: -1;
+	}
+	.mobile-last {
+		order: 10;
+	}
 }
 
 @media (--small) {

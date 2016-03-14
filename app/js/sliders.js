@@ -21,6 +21,15 @@ var Sliders = {
             //         navText: ['', '']
             //     }
             // }
+			/*{
+                'selector' : '.carousel--mobile-only',
+                'options' : {
+					items: 1,
+					dots: true,
+					mergeFit: true,
+					nav: false,
+                }
+            },*/
 			{
                 'selector' : '.set-products',
                 'options' : {
@@ -89,6 +98,15 @@ var Sliders = {
         sliders.forEach(function(item) {
           $(item.selector).find('.owl-carousel').owlCarousel(item.options);
         });
+		
+		if($(window).width() < 768){
+			$('.carousel--mobile-only').owlCarousel({
+				items: 1,
+				dots: true,
+				mergeFit: true,
+				nav: false,
+			});
+		}
     }
 };
 

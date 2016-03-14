@@ -1,11 +1,14 @@
 @import "../media.css";
 @import "../colors.css";
 
-
+footer {
+	order: 100;
+}
 .footer {
     background: #2e3034;
     padding-top: 40px;
     padding-bottom: 25px;
+	order: 100;
 }
 
 .footer-links {
@@ -145,7 +148,7 @@
 		}
 	}
 }
-@media (min-width: 769px) and (max-width: 860px){
+@media (--small-up) and (max-width: 860px){
 	.footer-bottom {
 		&__wrapper {
 			justify-content: flex-start;

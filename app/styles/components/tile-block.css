@@ -23,6 +23,10 @@
 		background: var(--dark-gray);
 		color: white;
 	}
+	&__heading-link {
+		text-decoration: none;
+		color: inherit;
+	}
     h2 {
         font-family: "Bebas Neue Book";
         color: var(--main-brown);
@@ -146,6 +150,36 @@
 				left: 0px;
 				right: 0px;
 			}
+		}
+		&.mobile-minify {
+			border-bottom: 1px solid #e1e1e1;
+			padding: 0;
+			margin-bottom: 0;
+		}
+		&.mobile-minify &__icon,
+		&.mobile-minify &__image,
+		&.mobile-minify &__video,
+		&.mobile-minify &__text,
+		&.mobile-minify .btn--arrow{
+			display: none;
+		}
+		&.mobile-minify &__heading-link {
+			padding: 1em 20px;
+			font-size: 24px;
+			display: block;
+			width: 100%;
+			 background-image:  svg('arrow-right', '[fill]: var(--main-brown)');
+			background-repeat: no-repeat;
+			background-position: right 9% center;
+			padding-right: 18%;
+			h2 {
+				margin: 0;
+				font-size: inherit;
+				color: var(--dark-gray);
+			}
+		}
+		&.mobile-fullwidth {
+			width: 100vw;
 		}
 	}
 }

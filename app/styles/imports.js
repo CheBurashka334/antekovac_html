@@ -1,7 +1,7 @@
 'use strict';
 
-require("./gridlex_custom.css");
 require("./media.css");
+require("./gridlex_custom.css");
 require("./helpers.css");
 require("./styles.css");
 require("./colors.css");

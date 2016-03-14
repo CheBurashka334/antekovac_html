@@ -1,3 +1,5 @@
+@import "./media.css";
+
 /* ==========================================================================
     GRIDLEX
     Just a Flexbox Grid System
@@ -11,6 +13,7 @@ $gl-md:        "screen and (max-width: 1300px)";
 $gl-lg:        "screen and (min-width: 1300px)";
 */
 /* line 8, scss/gridlex.scss */
+
 [class*="grid"] {
   box-sizing: border-box;
   display: -webkit-box;
@@ -33,6 +36,12 @@ $gl-lg:        "screen and (min-width: 1300px)";
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   padding: 0 10px 20px;
+}
+@media (--mobile){
+	.col,
+	[class*="col-"] {
+		padding-bottom: 0;
+	}
 }
 
 /* line 21, scss/gridlex.scss */
@@ -292,7 +301,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
   max-width: 8.33333%;
 }
 
-@media screen and (min-width: 1300px) {
+@media (--big) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_lg-1"] > .col, [class*="_lg-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -389,7 +398,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     max-width: 8.33333%;
   }
 }
-@media screen and (max-width: 1300px) {
+@media (--max-1300) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_md-1"] > .col, [class*="_md-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -486,7 +495,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     max-width: 8.33333%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media (--small-down) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_sm-1"] > .col, [class*="_sm-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -583,7 +592,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     max-width: 8.33333%;
   }
 }
-@media screen and (max-width: 768px) {
+@media (--mobile) {
   /* line 43, scss/_gridlex-vars.scss */
   [class*="_xs-1"] > .col, [class*="_xs-1"] > [class*='col-'] {
     -webkit-flex-basis: 100%;
@@ -873,7 +882,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
   margin-right: 91.66667%;
 }
 
-@media screen and (min-width: 1300px) {
+@media (--big) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_lg-1"] {
     -webkit-flex-basis: 8.33333%;
@@ -1064,7 +1073,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 1300px) {
+@media (--max-1300) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_md-1"] {
     -webkit-flex-basis: 8.33333%;
@@ -1255,7 +1264,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media (--small-down) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_sm-1"] {
     -webkit-flex-basis: 8.33333%;
@@ -1446,7 +1455,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
     margin-right: 91.66667%;
   }
 }
-@media screen and (max-width: 768px) {
+@media (--mobile) {
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-1"] {
     -webkit-flex-basis: 8.33333%;
