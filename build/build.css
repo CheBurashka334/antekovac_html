@@ -5751,7 +5751,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, in
 	outline: none;
 }
 input[type="text"].valid, input[type="email"].valid, input[type="tel"].valid, input[type="url"].valid, input[type="password"].valid, textarea.valid, select.valid {
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22tick%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%2387bb23%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%229.694px%22%20height%3D%2211.673px%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%2387bb23%3B%22%3E%3Cpath%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0%20c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
 	background-position: right 28px center;
 	background-repeat: no-repeat;
 	background-size: 10px 12px;
@@ -5981,13 +5981,14 @@ input[type="checkbox"].tick + .checkbox-lbl {
 	color: #2e3034;
 	font-weight: 100;
 	vertical-align: middle;
-	padding-left: 2em;
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22tick%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%23dfdfdf%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
+	padding-left: 1.5em;
+	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%229.694px%22%20height%3D%2211.673px%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%23dfdfdf%3B%22%3E%3Cpath%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0%20c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
 	background-repeat: no-repeat;
 	background-position: left center;
+	background-size: 0.8em;
 }
 input[type="checkbox"].tick:checked + .checkbox-lbl {
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22tick%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%2387bb23%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%229.694px%22%20height%3D%2211.673px%22%20viewBox%3D%220%200%209.694%2011.673%22%20style%3D%22fill%3A%2387bb23%3B%22%3E%3Cpath%20d%3D%22M2.642%2C4.335C3.427%2C5.82%2C3.644%2C6.57%2C3.802%2C7.376L5.476%2C4.8L9.694%2C0%20c-8.612%2C17.57-5.76%2C11.637-9.502%2C5.76c-0.394-0.676-0.164-1.543%2C0.512-1.937C1.381%2C3.429%2C2.248%2C3.659%2C2.642%2C4.335z%22%2F%3E%3C%2Fsvg%3E");
 }
 input[type="checkbox"].color {
 	display: none;
@@ -6006,6 +6007,9 @@ input[type="checkbox"].color + .checkbox-lbl {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
@@ -6028,6 +6032,82 @@ input[type="checkbox"].color + .checkbox-lbl {
 	top: 50%;
 	margin-top: -0.5em;
 	right: 1.4em;
+}
+.field-price .bx-ui-slider-track-container {
+	width: 100%;
+	padding: 11px 0 30px;
+	margin: 0;
+	position: relative;
+}
+.field-price .bx-ui-slider-track {
+	height: 3px;
+	background: #dfdfdf;
+}
+.field-price .bx-ui-slider-part {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	background: none;
+	width: 50%;
+}
+.field-price .bx-ui-slider-part span {
+	font-size: 9px;
+	color: #b2b2b2;
+	top: auto;
+	bottom: 0;
+	margin-left: 0;
+	width: auto;
+}
+.field-price .bx-ui-slider-part.p1 {
+	left: 0;
+	text-align: left;
+}
+.field-price .bx-ui-slider-part.p1 span {
+	left: 0;
+}
+.field-price .bx-ui-slider-part.p2 {
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+.field-price .bx-ui-slider-part.p2 span {
+	left: auto;
+	right: 0;
+}
+.field-price .bx-ui-slider-pricebar-vd,
+		.field-price .bx-ui-slider-pricebar-vn{
+	background: #dfdfdf;
+	position: absolute;
+	height: 3px;
+}
+.field-price .bx-ui-slider-pricebar-v {
+	background: #2e3034;
+	position: absolute;
+	height: 3px;
+}
+.field-price .bx-ui-slider-range {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.field-price .bx-ui-slider-handle {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: white;
+	border: 1px solid #dfdfdf;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,.08);
+}
+.field-price .bx-ui-slider-handle.left {
+	margin-left: -12px;
+}
+.field-price .bx-ui-slider-handle.right {
+	margin-right: -12px;
 }
 .field {
     margin: 20px 0;

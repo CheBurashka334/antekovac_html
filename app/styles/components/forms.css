@@ -261,10 +261,11 @@ input[type="checkbox"] {
 			color: var(--dark-gray);
 			font-weight: 100;
 			vertical-align: middle;
-			padding-left: 2em;
+			padding-left: 1.5em;
 			background-image: svg('tick', '[fill]: #dfdfdf');
 			background-repeat: no-repeat;
 			background-position: left center;
+			background-size: 0.8em;
 		}
 		&:checked + .checkbox-lbl {
 			background-image: svg('tick', '[fill]: var(--success-green)');
@@ -286,6 +287,7 @@ input[type="checkbox"] {
 
 .field-price {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	color: #b2b2b2;
@@ -300,6 +302,84 @@ input[type="checkbox"] {
 			top: 50%;
 			margin-top: -0.5em;
 			right: 1.4em;
+		}
+	}
+	.bx-ui-slider {
+		&-track-container {
+			width: 100%;
+			padding: 11px 0 30px;
+			margin: 0;
+			position: relative;
+		}
+		&-track {
+			height: 3px;
+			background: #dfdfdf;
+		}
+		&-part {
+			position: absolute;
+			top: auto;
+			bottom: 0;
+			background: none;
+			width: 50%;
+			span {
+				font-size: 9px;
+				color: #b2b2b2;
+				top: auto;
+				bottom: 0;
+				margin-left: 0;
+				width: auto;
+			}
+			&.p1 {
+				left: 0;
+				text-align: left;
+				span {
+					left: 0;
+				}
+			}
+			&.p2 {
+				left: auto;
+				right: 0;
+				text-align: right;
+				span {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+		&-pricebar-vd,
+		&-pricebar-vn{
+			background: #dfdfdf;
+			position: absolute;
+			height: 3px;
+		}
+		&-pricebar-v {
+			background: var(--dark-gray);
+			position: absolute;
+			height: 3px;
+		}
+		&-range {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		&-handle {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			background: white;
+			border: 1px solid #dfdfdf;
+			box-shadow: 0 5px 8px 0 rgba(0,0,0,.08);
+			&.left {
+				margin-left: -12px;
+			}
+			&.right {
+				margin-right: -12px;
+			}
 		}
 	}
 }

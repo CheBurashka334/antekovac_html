@@ -9,6 +9,20 @@
 				<div class="field-price__input field-price__input--max">
 					<input class="max-value small base" type="text" name="arrFilter_P1_MAX" id="arrFilter_P1_MAX"/>
 				</div>
+				<div class="bx-ui-slider-track-container">
+					<div class="bx-ui-slider-track">
+						<div class="bx-ui-slider-part p1"><span>10 000 ₽</span></div>
+						<div class="bx-ui-slider-part p2"><span>100 000 ₽</span></div>
+
+						<div class="bx-ui-slider-pricebar-vd" style="left: 15%; right: 17%;"></div>
+						<div class="bx-ui-slider-pricebar-vn" style="left: 0%; right: 0%;"></div>
+						<div class="bx-ui-slider-pricebar-v" style="left: 15%; right: 17%;"></div>
+						<div class="bx-ui-slider-range" style="left: 0%; right: 0%;">
+							<a class="bx-ui-slider-handle left" style="left:15%;" href="javascript:void(0)"></a>
+							<a class="bx-ui-slider-handle right" style="right:17%;" href="javascript:void(0)"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
