@@ -1,0 +1,12 @@
+<svg version="1.1" id="filter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="21px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,11v-1h23v1H0z"/>
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,3.001V2h23v1.001H0z"/>
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6.5,0C7.881,0,9,1.12,9,2.5c0,1.381-1.119,2.501-2.5,2.501S4,3.881,4,2.5
+	C4,1.12,5.119,0,6.5,0z"/>
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,19v-1h23v1H0z"/>
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M13.5,16c1.381,0,2.5,1.12,2.5,2.5c0,1.382-1.119,2.5-2.5,2.5
+	S11,19.882,11,18.5C11,17.12,12.119,16,13.5,16z"/>
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M21.5,8.001c1.381,0,2.5,1.118,2.5,2.5c0,1.38-1.119,2.5-2.5,2.5
+	s-2.5-1.12-2.5-2.5C19,9.119,20.119,8.001,21.5,8.001z"/>
+</svg>

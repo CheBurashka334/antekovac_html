@@ -1,0 +1,20 @@
+@import "../media.css";
+@import "../colors.css";
+
+.feed-back {
+	background-image: url(var(--img-path)/feed-back-bg.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	padding: 70px 40px;
+	.btn-close {
+		position: absolute;
+		top: 25px;
+		right: 10px;
+	}
+	&:hover .btn-close {
+		color: white;
+	}
+	.field {
+		margin: 35px 0 32px;
+	}
+}

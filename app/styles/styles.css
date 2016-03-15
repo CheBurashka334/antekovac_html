@@ -188,6 +188,9 @@ p {
 .primary-color {
 	color: var(--main-brown);
 }
+.base-color {
+	color: #3d3b33;
+}
 
 dl {
     margin: 15px 0;
@@ -365,7 +368,44 @@ table {
 	}
 }
 
-/*Bootstrap collapse*/
+/* collapse */
+.collapsible {
+	display: none;
+	&__link {
+		text-decoration: none;
+		display: inline-block;
+		border-bottom: 1px dashed var(--main-brown);
+		padding: 0 1em 3px 0;
+		position: relative;
+		margin-top: 1em;
+		&::after {
+			content: '^';
+			display: block;
+			position: absolute;
+			width: 0.5em;
+			height: 0.8em;
+			right: 0;
+			top: 0.5em;
+			font-size: 0.8em;
+			transform: scaleX(2) translateY(2px) rotate(180deg);
+			transform-origin: center;
+		}
+		.text-close {
+			display: none;
+		}
+	}
+	&__link.opened {
+		&::after {
+			transform: scaleX(2) translateY(-2px);
+		}
+		.text-open {
+			display: none;
+		}
+		.text-close {
+			display: inline;
+		}
+	}
+}
 
 
 .tab-pane {

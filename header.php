@@ -17,6 +17,9 @@
 <aside class="page-aside page-aside--left main-menu">
 	<?php require ('page-aside_left.php') ?>
 </aside>
+<aside class="page-aside page-aside--right feed-back">
+	<?php require ('page-aside_right.php') ?>
+</aside>
 <main class="page"><!-- .home-page добавить на главной-->
 	<!-- .header--transparent только на главной-->
     <header class="header">
@@ -31,7 +34,6 @@
 				</div>
 				<div class="header__logo">
 					<a href="#">
-						<!--<img src="images/logo.png" alt="" />-->
 						<svg class="logo" role="img"><use xlink:href="#logo"/></svg>
 					</a>
 				</div>

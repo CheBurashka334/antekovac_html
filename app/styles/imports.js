@@ -19,6 +19,7 @@ require("./components/footer.css");
 require("./components/page-aside.css");
 require("./components/page.css");
 require("./components/menu.css");
+require("./components/feed-back.css");
 require("./components/viewer.css");
 require("./components/bonus.css");
 require("./components/favorite.css");
@@ -34,9 +35,11 @@ require("./components/breadcrumbs.css");
 require("./components/pagination.css");
 require("./components/dropdown.css");
 require("./components/forms.css");
+require("./components/filter.css");
 require("./components/checkout.css");
 require("./components/basket.css");
 require("./components/order.css");
+require("./components/modal.css");
 
 /*Products*/
 

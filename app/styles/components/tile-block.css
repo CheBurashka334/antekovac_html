@@ -70,7 +70,7 @@
         padding-top: 60%;
 		.tile-block__icon {
 			top: auto;
-			margin-top: -28px;
+			margin-top: -5%;
 		}
     }
 	&__socials {
@@ -128,6 +128,16 @@
 	}
 	&.no-margin {
 		margin: 0;
+	}
+}
+@media (--small){
+	.tile-block {
+		&--video {
+			padding-top: 61.4%;
+		}
+		&--video &__icon {
+			margin-top: -6.4%;
+		}
 	}
 }
 @media (--mobile){

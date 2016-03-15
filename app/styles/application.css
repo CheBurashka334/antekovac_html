@@ -12,6 +12,7 @@
 @import "components/page-aside.css";
 @import "components/page.css";
 @import "components/menu.css";
+@import "components/feed-back.css";
 @import "components/viewer.css";
 @import "components/bonus.css";
 
@@ -26,10 +27,12 @@
 @import "components/pagination.css";
 @import "components/dropdown.css";
 @import "components/forms.css";
+@import "components/filter.css";
 @import "components/checkout.css";
 @import "components/basket.css";
 @import "components/order.css";
 @import "components/favorite.css";
+@import "components/modal.css";
 
 /*Products*/
 

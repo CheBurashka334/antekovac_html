@@ -5,9 +5,10 @@
 	position: relative;
 	left: 0;
 	right: 0;
-	transition: left .3s, right .3s;
+	transition: left .3s;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	&::before {
 		content: '';
 		display: block;
@@ -22,10 +23,10 @@
 		will-change: opacity;
 		transition: opacity .3s;
 		transform: scale(0);
-		.page-aside--left.open ~ & {
+		.page-aside.open ~ & {
 			transform: scale(1);
 		}
-		.page-aside--left.open:hover ~ & {
+		.page-aside.open:hover ~ & {
 			opacity: 1;
 		}
 	}

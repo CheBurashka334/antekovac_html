@@ -40,7 +40,8 @@
 		<div class="col-7_lg-5_md-6_sm-6_xs-12">
 			<div class="product-detail__info tile-block tile-block--bordered--no-mobile no-margin">
 				<div class="product-detail__buttons--outside hidden-mobile">
-					<button class="btn btn--square--only-icon--primary btn-favorite js-anim--click">
+					<!-- .added если товар отложен -->
+					<button class="btn btn--square--only-icon--primary btn-favorite js-anim--click js-toggle-box" data-box=".modal.message">
 						<svg class="i-icon i-icon--stroke"><use xlink:href="#heart"/></svg>
 					</button>
 					<button class="btn btn--square--only-icon--dark btn-print js-anim--click">
@@ -72,7 +73,7 @@
 						</div>
 						<div class="product-detail__buttons grid-noGutter">
 							<div class="col">
-								<button class="btn btn--dark--with-icon--big--main-anim btn-one-click js-anim--click">
+								<button class="btn btn--dark--with-icon--big--main-anim btn-one-click js-anim--click js-toggle-box" data-box=".one-click-form">
 									<svg class="i-icon"><use xlink:href="#arr-diagonal"/></svg>
 									<span class="btn-text">Купить в 1 клик</span>
 								</button>
@@ -424,4 +425,56 @@
 	</div>
 </div>
 <div class="viewer-placeholder"></div>
+<div class="modal one-click-form">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.one-click-form"></button>
+		<div class="modal__inner">
+			<div class="grid-equalHeight-bigGutter">
+				<div class="col-5">
+					<div class="modal__image" style="background-image: url('images/product-detail/thumb/afm-white-8264.png');"></div>
+				</div>
+				<div class="col-7">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>Купить в 1 клик</h2></div>
+						<div class="modal__form">
+							<div class="field required">
+								<label class="field__label">Ваше имя</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Номер телефона / e-mail</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<button class="btn">Отправить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal message">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message"></button>
+		<div class="modal__inner">
+			<div class="grid-bigGutter-middle">
+				<div class="col-5">
+					<div class="modal__image" style="background-image: url('images/product-detail/thumb/afm-white-8264.png');"></div>
+				</div>
+				<div class="col-7">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>товар добавлен в отложенное</h2></div>
+						<div class="modal__text">
+							<p class="light-text">Можете продолжить покупки или пеерйти в список отложенных товаров.</p>
+						</div>
+						<a href="#" class="btn btn--with-icon js-anim--click">
+							<svg class="i-icon i-icon--small"><use xlink:href="#heart"/></svg>
+							<span class="btn-text">Перейти в отложенные товары</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php require ('footer.php') ?>

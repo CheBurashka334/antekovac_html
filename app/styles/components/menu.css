@@ -7,6 +7,7 @@
 	list-style: none;
 	li {
 		position: static;
+		margin: 0;
 		&::before {
 			display: none;
 		}
@@ -186,6 +187,15 @@
 		background: #414346;
 		.menu-item {
 			color: #898a8b;
+		}
+	}
+}
+@media (--mobile){
+	.menu {
+		&-item {
+			&__link {
+				padding-left: 20px;
+			}
 		}
 	}
 }

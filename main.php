@@ -40,7 +40,9 @@
         </div>
     </div>
 </div>
-
+<button class="btn btn--square--dark--only-icon js-anim--click btn-feed-back js-toggle-box" data-box=".page-aside.feed-back">
+	<svg class="i-icon"><use xlink:href="#mail"/></svg>
+</button>
 <div class="index-new-products container">
     <div class="block-heading block-heading--mobile">
         <h2>Новинки сезона</h2>
