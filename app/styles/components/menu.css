@@ -301,30 +301,11 @@
 		.submenu__item .submenu__link {
 			text-align: left;
 			justify-content: flex-start;
-			border-width: 1px 0 0;
+			border: 0;
 			background: var(--dark-gray);
 			color: white;
 			font-size: 20px;
 			padding: 13px 1em;
-			&::after {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 0;
-				height: 0;
-				top: 20px;
-				left: auto;
-				right: 30px;
-				background: none;
-				border-style: solid;
-				border-color: transparent;
-				border-width: 5px 3px 0;
-			}
-		}
-		&__item:first-child &__link::after,
-		&__item:last-child &__link::after {
-			left: auto;
-			right: 30px;
 		}
 		&__item--active {
 			order: -1;
@@ -332,11 +313,9 @@
 		&__item--active &__link {
 			background: var(--dark-gray);
 			color: white;
-		}
-		&__item--active &__link::after,
-		&__item--active .submenu__link::after {
-			background: none;
-			border-top-color: white;
+			&::after {
+				display: none;
+			}
 		}
 		&--multilevel &__item {
 			display: none;

@@ -88,8 +88,12 @@
 }
 
 
-.viewer-reset {
+li.viewer-reset {
 	background-image: svg('reset', '[fill]: var(--main-brown)');
+	background-size: 25px;
+	&:hover {
+		background-image: svg('reset', '[fill]: white');
+	}
 }
 
 .viewer-fullscreen {

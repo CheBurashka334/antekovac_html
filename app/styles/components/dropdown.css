@@ -22,7 +22,7 @@
 	.dropdown__value {
 		padding: 10px 20px;
 		padding-right: 45px;
-		background: #2e3034;
+		background: var(--dark-gray);
 		color: white;
 		min-height: 43px;
 		white-space: nowrap;
@@ -90,6 +90,95 @@
 		.dropdown__list {
 			transform: scaleY(1) translateY(0);
 			opacity: 1;
+		}
+	}
+}
+@media (--small-up){
+	.dropdown {
+		&--mobile &__value,
+		&--mobile &__caret {
+			display: none;
+		}
+	}
+}
+@media (--mobile){
+	.dropdown {
+		&--mobile {
+			position: relative;
+			font-family: "Bebas Neue Book";
+			text-transform: uppercase;
+			font-size: 20px;
+			line-height: 23px;
+		}
+		&--mobile &__value {
+			padding: 10px 20px;
+			padding-right: 45px;
+			background: var(--dark-gray);
+			color: white;
+			min-height: 43px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			cursor: pointer;
+			transition: transform .3s ease;
+			position: relative;
+			z-index: 2;
+		}
+		&--mobile &__caret {
+			position: absolute;
+			top: 11px;
+			right: 25px;
+			z-index: 3;
+			width: 0;
+			height: 0;
+			top: 20px;
+			left: auto;
+			right: 30px;
+			background: none;
+			border-style: solid;
+			border-width: 5px 3px 0;
+			border-color: transparent;
+			border-top-color: white;
+		}
+		&--mobile &__list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			background: #3c3e43;
+			color: white;
+			transition: all .3s ease;
+			transform: scaleY(0) translateY(-100%);
+			transform-origin: top;
+			opacity: 0;
+		}
+		&--mobile &__item {
+			border-bottom: 1px solid #44464b;
+			margin: 0;
+			&:before {
+				display: none;
+			}
+			.dropdown__title {
+				display: block;
+				padding: 10px 20px;
+			}
+		}
+		
+		&--mobile.open {
+			.dropdown__caret {
+				transform: rotate(-180deg);
+			}
+			.dropdown__value {
+				transform: translateY(10px);
+			}
+			.dropdown__list {
+				transform: scaleY(1) translateY(0);
+				opacity: 1;
+			}
 		}
 	}
 }

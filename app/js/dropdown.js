@@ -4,14 +4,14 @@ var Dropdowns = {
 	run: function(){
 		var self = this;
 		
-		$('.dropdown').each(function() {
+		$('.dropdown, .dropdown--mobile').each(function() {
 			self.init($(this));
 		});
 		
 		$('.dropdown__value').on('click', function(e){
 			e.stopPropagation();
 			self.dClose();
-			self.dOpen($(this).parent('.dropdown'));
+			self.dOpen($(this).parents('.dropdown,.dropdown--mobile'));
 		});
 		
 		$(window).on('click', function(){
@@ -46,11 +46,11 @@ var Dropdowns = {
     },
 	
 	dClose: function(){
-		$('.dropdown').removeClass('open');
+		$('.dropdown,.dropdown--mobile').removeClass('open');
 	},
 	
 	change: function(item){
-		var dropdown = item.parents('.dropdown');
+		var dropdown = item.parents('.dropdown,.dropdown--mobile');
 		var value = item.text();
 		item.parent('.dropdown__item')
 			.addClass('.dropdown__item--active')

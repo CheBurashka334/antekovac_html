@@ -8,7 +8,7 @@
 	</ul>
 </div>
 <div class="container">
-	<div class="heading hidden-mobile">
+	<div class="heading">
         <h2>Бренд</h2>
     </div>
 	<?php require ('brend_menu.php') ?>
