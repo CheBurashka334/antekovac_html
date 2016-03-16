@@ -44,3 +44,7 @@
 /* Collections */
 
 @import "components/collections/collection-info.css";
+
+/* Print */
+
+@import "components/print.css";

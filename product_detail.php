@@ -105,7 +105,7 @@
 		</div>
 	</div>
 </div>
-<div class="container hidden-mobile">
+<div class="container hidden-mobile show-print">
     <div class="grid-equalHeight">
         <div class="col-5_lg-5_md-6 wrap">
             <div class="tile-block">
@@ -127,7 +127,7 @@
                     </p>
                 </div>
             </div>
-			<div class="tile-block tile-block--dark hidden-large">
+			<div class="tile-block tile-block--dark hidden-large hidden-print">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#share"/></svg></div>
                 <h2>поделиться в сети</h2>
                 <div class="tile-block__socials">
@@ -181,7 +181,7 @@
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
         </div>
-		<div class="col-4 hidden-small hidden-medium wrap">
+		<div class="col-4 hidden-small hidden-medium wrap hidden-print">
 			<div class="tile-block tile-block--dark">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#share"/></svg></div>
                 <h2>поделиться в сети</h2>
@@ -213,7 +213,7 @@
 		</div>
     </div>
 </div>
-<div class="container hidden-mobile">
+<div class="container hidden-mobile hidden-print">
 	<div class="block-heading block-heading--mobile">
 		<h2>медиатека</h2>
 	</div>

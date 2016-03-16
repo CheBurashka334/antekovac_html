@@ -52,3 +52,7 @@ require("./components/products/product-detail.css");
 
 require("./components/collections/collection-block.css");
 require("./components/collections/collection-info.css");
+
+/* Print */
+
+require("./components/print.css");
