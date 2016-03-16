@@ -115,6 +115,7 @@
 		}
 		input {
 			text-align: center;
+			height: calc(2.5em + 2px);
 		}
 		.plus,
 		.minus {

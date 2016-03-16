@@ -6,8 +6,6 @@
 	left: 0;
 	right: 0;
 	transition: left .3s;
-	display: flex;
-	flex-direction: column;
 	width: 100%;
 	&::before {
 		content: '';
@@ -34,6 +32,8 @@
 
 @media (--mobile){
 	.page {
+		display: flex;
+		flex-direction: column;
 		background: white;
 	}
 }

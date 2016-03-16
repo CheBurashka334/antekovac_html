@@ -1,11 +1,6 @@
 @import "../colors.css";
 @import "../media.css";
 
-
-.order {
-	display: flex;
-	flex-direction: column;
-}
 .order-table {
 	display: table;
 	width: 100%;
@@ -89,6 +84,7 @@
 }
 @media (--mobile){
 	.order {
+		display: flex;
 		flex-direction: column-reverse;
 		padding: 0;
 		&::after {

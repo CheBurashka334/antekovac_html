@@ -91,10 +91,14 @@
 		>.i-icon {
 			position: absolute;
 			left: auto;
-			margin-left: -40px;
+			display: block;
+			margin-left: -10px;
 			transform: translate3d(-40px, 2.5em, 0);
 			transition: transform .3s;
 			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
+		&[class*="--medium"] .i-icon {
+			margin-left: -40px;
 		}
 		&:hover {
 			>.btn-text,
