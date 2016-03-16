@@ -116,7 +116,7 @@
                     8 800 700-75-99
                 </div>
                 <div class="footer-bottom__mail-us">
-                    <a href="#" class="btn btn--transparent btn--transparent--white btn--mail">Напишите нам</a>
+                    <a href="javascript:void(0)" class="btn btn--transparent btn--transparent--white btn--mail js-toggle-box" data-box=".page-aside.feed-back">Напишите нам</a>
                 </div>
                 <div class="footer-bottom__email">
                     order@antekovac.ru

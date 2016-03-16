@@ -1,7 +1,7 @@
 <div class="page-aside__wrap">
 	<div class="page-aside__menu">
-		<ul class="menu menu--multilevel--aside menu--with-icons">
-			<li class="menu-item menu-item--parent">
+		<ul class="menu menu--multilevel--aside">
+			<li class="menu-item menu-item--parent menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon menu-item__icon--top"><svg class="i-icon"><use xlink:href="#shop"/></svg></span>
 					<span class="menu-item__text">магазин</span>
@@ -13,8 +13,8 @@
 						<span class="back__arrow"><span></span><span></span><span></span></span>
 						<span class="back__text">Назад</span>
 					</button>
-					<ul class="menu menu--multilevel--aside menu--with-icons">
-						<li class="menu-item menu-item--parent">
+					<ul class="menu menu--multilevel--aside">
+						<li class="menu-item menu-item--parent menu-item--with-icon">
 							<a href="#" class="menu-item__link js-anim--click">
 								<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#for-him"/></svg></span>
 								<span class="menu-item__text">Для него</span>
@@ -78,7 +78,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="menu-item menu-item--parent">
+						<li class="menu-item menu-item--parent menu-item--with-icon">
 							<a href="#" class="menu-item__link js-anim--click">
 								<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#for-her"/></svg></span>
 								<span class="menu-item__text">Для нее</span>
@@ -150,41 +150,37 @@
 					</ul>
 				</div>
 			</li>
-			<li class="menu-item">
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon i-icon--stroke i-icon--smaller"><use xlink:href="#heart"/></svg></span>
 					<span class="menu-item__text">избранное <span class="notification">(12)</span></span>
 				</a>
 			</li>
-			<li class="menu-item">
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#basket"/></svg></span>
 					<span class="menu-item__text">моя корзина <span class="notification">(2)</span></span>
 				</a>
 			</li>
-			<li class="menu-item">
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#art-lab"/></svg></span>
 					<span class="menu-item__text">Арт-лаборатория</span>
 				</a>
 			</li>
-			<li class="menu-item">
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon i-icon--smaller"><use xlink:href="#profile"/></svg></span>
 					<span class="menu-item__text">мой кабинет</span>
 				</a>
 			</li>
-			<li class="menu-item">
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon i-icon--stroke i-icon--smaller"><use xlink:href="#zoom"/></svg></span>
 					<span class="menu-item__text">поиск по сайту</span>
 				</a>
 			</li>
-		</ul>
-	</div>
-	<div class="page-aside__block--mobile">
-		<ul class="menu menu--multilevel--aside">
-			<li class="menu-item menu-item--parent">
+			<li class="menu-item menu-item--parent menu-item--mobile">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__text">Обратная связь</span>
 					<!-- for parent -->
@@ -219,7 +215,7 @@
 					</ul>
 				</div>
 			</li>
-			<li class="menu-item menu-item--parent">
+			<li class="menu-item menu-item--parent menu-item--mobile">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__text">гарантии</span>
 					<!-- for parent -->
@@ -259,7 +255,7 @@
 					</ul>
 				</div>
 			</li>
-			<li class="menu-item menu-item--parent">
+			<li class="menu-item menu-item--parent menu-item--mobile">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__text">Сотрудничество</span>
 					<!-- for parent -->
@@ -304,7 +300,7 @@
 					</ul>
 				</div>
 			</li>
-			<li class="menu-item menu-item--parent">
+			<li class="menu-item menu-item--parent menu-item--mobile">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__text">заказ</span>
 					<!-- for parent -->
@@ -340,6 +336,8 @@
 				</div>
 			</li>
 		</ul>
+	</div>
+	<div class="page-aside__block--mobile">
 		<div class="page-aside__socials--mobile">
 			<a href="" class="i-icon">
 				<i class="fa fa-youtube-play"></i>

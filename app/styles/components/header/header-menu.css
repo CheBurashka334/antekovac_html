@@ -18,6 +18,7 @@
 		height: 40px;
 		margin-left: -25%;
 		position: relative;
+		transition: transform .3s;
         span {
             width: 50%;
             height: 2px;
@@ -113,12 +114,24 @@
 				}
 			}
 		}
+		&.anim-hover--after {
+			transform: rotate(0);
+			transition: none;
+		}
 		&.anim-click--play {
 			transform: rotate(180deg) translateY(-2px);
 			transition: transform .1s;
 			.page-aside--left.open ~ .page .header & {
 				transform: translateY(2px);
 			}
+		}
+		&.scrolled--top {
+			transform: translateY(-200%);
+			transition: transform .3s;
+		}
+		&.scrolled--left {
+			transform: translateX(-200%);
+			transition: transform .3s;
 		}
 	}
 }
@@ -131,5 +144,8 @@
 	.header-menu {
 		top: 15px;
 		left: 15px;
+		.page-aside--left.open ~ .page .header & {
+			left: 23px;
+		}
 	}
 }

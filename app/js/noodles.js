@@ -9,8 +9,11 @@ var Noodles = {
 			.on('mouseleave',function(){
 				$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
 				setTimeout(function(){
-					$('.anim-hover--end').removeClass('anim-hover--end');
-				},500);
+					$('.anim-hover--end').removeClass('anim-hover--end').addClass('anim-hover--after');
+				},1000);
+				setTimeout(function(){
+					$('.anim-hover--after').removeClass('anim-hover--after');
+				},1500);
 			});
 		$('.js-anim--click')
 			.on('mousedown',function(){
@@ -55,7 +58,9 @@ var Noodles = {
 				$(this).parents('.menu--multilevel--aside').addClass('next-level');
 			}
 			$(this).next('.submenu--sided').addClass('open');
-			$('.header-menu__burger').hide();
+			$(this).parents('.page-aside__menu').height($(this).next('.submenu--sided').children('.menu').height() + $(this).next('.submenu--sided').children('.submenu__back').outerHeight());
+			$(this).parents('.page-aside__wrap').delay(300).animate({scrollTop: 0},250);
+			$('.header-menu__burger').addClass('scrolled--left');
 		});
 		$('.submenu__back').on('click', function(){
 			$(this).parent('.submenu--sided').removeClass('open');
@@ -63,10 +68,17 @@ var Noodles = {
 				$(this).parents('.submenu--sided').eq(1).removeClass('next-level');
 			} else {
 				$(this).parents('.menu--multilevel--aside').removeClass('next-level');
-				$('.header-menu__burger').show();
+				$(this).parents('.page-aside__menu').height('auto');
+				$('.header-menu__burger').removeClass('scrolled--left');
 			}
 		});
-		
+		$('.page-aside.main-menu > .page-aside__wrap').on('scroll', function(){
+			if($(this).scrollTop() > 0){
+				$('.header-menu__burger').addClass('scrolled--top');
+			} else {
+				$('.header-menu__burger').removeClass('scrolled--top');
+			}
+		});
 		
 		
 		$(window).on('scroll', function(){

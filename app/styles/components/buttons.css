@@ -327,5 +327,8 @@
 				transform: translate3d(0, 0, 0);
 			}
 		}
+		.product-detail > &.btn-favorite.added .i-icon {
+			fill: currentColor;
+		}
 	}
 }
