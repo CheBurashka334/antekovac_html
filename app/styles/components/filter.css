@@ -11,6 +11,8 @@
 		z-index: 16;
 		transition: right .3s;
 		will-change: right;
+		overflow-x: visible;
+		
 		&.open {
 			right: 0;
 		}

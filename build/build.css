@@ -6456,6 +6456,7 @@ input[type="checkbox"].color + .checkbox-lbl {
 	-webkit-transition: right .3s;
 	transition: right .3s;
 	will-change: right;
+	overflow-x: visible;
 }
 .filter--aside.open {
 	right: 0;
