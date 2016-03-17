@@ -6154,6 +6154,9 @@ input[type="checkbox"].color + .checkbox-lbl {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+input[type="checkbox"].color:checked + .checkbox-lbl {
+	outline: 0.3em solid #dcdcdc;
+}
 .field-price {
 	display: -webkit-box;
 	display: -webkit-flex;

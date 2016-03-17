@@ -282,6 +282,9 @@ input[type="checkbox"] {
 			background-position: center;
 			background-repeat: no-repeat;
 		}
+		&:checked + .checkbox-lbl {
+			outline: 0.3em solid #dcdcdc;
+		}
 	}
 }
 
