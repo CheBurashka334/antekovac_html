@@ -177,7 +177,7 @@
     </div>
 </div>
 
-<div class="tile-block tile-block--dark mobile-fullwidth mobile-only">
+<!--<div class="tile-block tile-block--dark mobile-fullwidth mobile-only">
 	<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
 	<h2>Тренды сезона</h2>
 	<div class="tile-block__text">
@@ -186,7 +186,7 @@
 		</p>
 	</div>
 	<a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
-</div>
+</div>-->
 
 <div class="container mobile-fullwidth--noGutter">
     <div class="grid">
@@ -194,7 +194,7 @@
             <div class="block-heading hidden-mobile">
                 <h2>Для нее</h2>
             </div>
-            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth" data-same-height>
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-her-col"/></svg></div>
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для нее</h2></a>
                 <div class="collection-block__top">
@@ -202,7 +202,7 @@
                         <img src="images/collection1.jpg" alt="" />
                     </div>
                     <div class="collection-block__info">
-                        <h2>Альфонс Муха. Модерн</h2>
+                        <h2><a href="#">Альфонс Муха. Модерн</a></h2>
                         <div class="tile-block__text">
                             <p>
                                 В. Кандинский был выбран художником коллекции "Цирк" не только благодаря известному мастерству владения цветом и необычности его абстрактных сюжетов. Наша миссия - создавать применимые к жизни арт-объекты со смыслом.
@@ -290,7 +290,7 @@
             <div class="block-heading hidden-mobile">
                 <h2>Для него</h2>
             </div>
-            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth" data-same-height>
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-him-col"/></svg></div>
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для него</h2></a>
                 <div class="collection-block__top">
@@ -298,7 +298,7 @@
                         <img src="images/collection2.jpg" alt="" />
                     </div>
                     <div class="collection-block__info">
-                        <h2>первооткрыватели</h2>
+                        <h2><a href="#">первооткрыватели</a></h2>
                         <div class="tile-block__text">
                             <p>
                                 Наша миссия - создавать применимые к жизни арт-объекты со смыслом. В. Кандинский был выбран художником коллекции "Цирк" не только благодаря известному мастерству владения цветом и необычности его абстрактных сюжетов.
@@ -433,7 +433,7 @@
         <div class="col-6_sm-12">
             <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
                 <div class="tile-block__video" style="background-image: url(images/masterskie.jpg)">
-                    <a href="#"></a>
+                   <iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
 				<div class="tile-block__content">
 					<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>
@@ -446,8 +446,8 @@
 							Художественные изображения наносятся по специальной технологии, устойчивы к повреждениям,влаге и являются уникальными. Любую из наших моделей можно изготовить с учетом Ваших пожеланий, в любом цвете и размере, а также с индивидуальной художественной росписью.
 						</p>
 					</div>
-					<a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
 				</div>
+				<a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
         </div>
     </div>

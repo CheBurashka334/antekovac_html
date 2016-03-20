@@ -103,7 +103,7 @@ footer {
         }
     }
 }
-@media (--medium-up){
+@media (min-width: 1035px){
 	.footer-bottom {
 		&__email {
 			display: block;

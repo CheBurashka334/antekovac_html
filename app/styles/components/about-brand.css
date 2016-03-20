@@ -7,7 +7,7 @@
         &--video {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-sart;
             align-items: flex-start;
             .tile-block__text {
                 flex: 1;

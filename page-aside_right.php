@@ -5,7 +5,7 @@
 	</div>
 	<div class="feed-back__form">
 		<div class="field">
-			<label class="field__label">Ф.И.О</label>
+			<label class="field__label">Ваше имя</label>
 			<input type="text" class="field__inputtext--base" />
 		</div>
 		<div class="field">

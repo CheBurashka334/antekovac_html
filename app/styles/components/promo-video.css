@@ -2,9 +2,12 @@
 @import "../colors.css";
 
 .promo-video {
-
+	.block-heading {
+		margin-top: 36px;
+	}
 }
-.video-container {
+.video-container,
+.tile-block__video {
 	position: relative;
 	display: table;
 	width: 100%;
@@ -27,6 +30,7 @@
 	.promo-video {
 		display: flex;
 		justify-content: space-between;
+		border-top: 1px solid #e1e1e1;
 		.video-container {
 			width: 30%;
 			padding-bottom: 17.5%;
@@ -38,5 +42,11 @@
 			display: flex;
 			align-items: center;
 		}
+	}
+}
+
+.media-lib {
+	&__item {
+		margin-bottom: 20px;
 	}
 }

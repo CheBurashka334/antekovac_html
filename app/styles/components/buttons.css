@@ -203,7 +203,7 @@
 			right: -9px;
 			top: 50%;
 			margin-top: -5px;
-			border-left: 9px solid white;
+			border-left: 10px solid white;
 			border-top: 5px solid transparent;
 			border-bottom: 5px solid transparent;
 		}
@@ -242,17 +242,18 @@
 		}
 	}
 	&.btn-feed-back {
-		position: absolute;
+		position: fixed;
 		right: 0;
-		top: auto;
+		top: 105px;
 		padding: 7px;
 		vertical-align: sub;
-		margin-top: 25px;
+		z-index: 1;
 		transition: transform .3s;
 		.page-aside.feed-back.open ~ .page & {
 			transform: translateX(100%);
 		}
 	}
+	
 	&.btn-filter {
 		position: absolute;
 		left: -40px;
@@ -314,7 +315,7 @@
 		}
 	}
 }
-@media (--mobile){
+@media (--small-down){
 	.btn {
 		&[class*="--main-anim"]{
 			position: relative;
@@ -331,6 +332,10 @@
 				transform: translate3d(0, 0, 0);
 			}
 		}
+	}
+}
+@media (--mobile){
+	.btn {
 		.product-detail > &.btn-favorite.added .i-icon {
 			fill: currentColor;
 		}

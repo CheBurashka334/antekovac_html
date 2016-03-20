@@ -37,6 +37,7 @@
 		top: 11px;
 		right: 25px;
 		z-index: 3;
+		cursor: pointer;
 		.i-icon {
 			width: 10px;
 			height: 10px;

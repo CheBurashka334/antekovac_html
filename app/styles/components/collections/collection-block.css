@@ -1,9 +1,11 @@
 @import "../../colors.css";
 @import "../../media.css";
 
+
 .collection-block {
 	padding-top: 35px;
     padding-bottom: 0;
+	margin-bottom: 0;
     .tile-block {
         &__text {
             flex: 1;
@@ -12,7 +14,6 @@
     &__top {
         display: flex;
         padding-bottom: 35px;
-        border-bottom: 1px solid var(--main-white);
     }
     &__image {
         flex: 0 0 230px;
@@ -36,14 +37,15 @@
 	}
     &__bottom {
         display: flex;
+        border-top: 1px solid var(--main-white);
         margin: 0 -40px;
         margin-bottom: 10px;
-        padding-top: 22px;
         h2 {
             margin-left: 40px;
         }
         > * {
             width: 50%;
+			padding: 22px 0;
         }
     }
     &__left {
@@ -72,14 +74,20 @@
         }
     }
     &__btn {
-        margin: 10px 0;
+        margin: 10px 0 0;
         margin-left: 40px;
-		&:last-child {
-			margin-bottom: 25px;
+		.btn {
+			margin: 0;
 		}
     }
 }
-
+@media (--small-up){
+	.collection-block {
+		.tile-block__heading-link {
+			display: none;
+		}
+	}
+}
 @media (--mobile){
 	.collection-block {
 		&.mobile-minify &__top,

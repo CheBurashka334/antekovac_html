@@ -14,6 +14,13 @@ var Dropdowns = {
 			self.dOpen($(this).parents('.dropdown,.dropdown--mobile'));
 		});
 		
+		$('.dropdown__caret').on('click', function(){
+			if($(this).parents('.dropdown,.dropdown--mobile').hasClass('open')){
+				self.dClose();
+			} else {
+				self.dOpen($(this).parents('.dropdown'));
+			}
+		});
 		$(window).on('click', function(){
 			self.dClose();
 		});

@@ -9,12 +9,12 @@
 	width: 100%;
 	&__row {
 		display: table-row;
-		border-bottom: 1px solid #ebebeb;
 	}
 	&__col {
 		display: table-cell;
 		padding: 40px 0;
 		vertical-align: middle;
+		border-bottom: 1px solid #ebebeb;
 		&--image {
 			width: 11.4%;
 			min-width: 80px;
@@ -70,6 +70,15 @@
 		}
 	}
 }
+@media (--small-down){
+	.favorite-table {
+		&__col--actions {
+			.btn-add-to-cart {
+				padding: 1em 3em;
+			}
+		}
+	}
+}
 @media (--mobile){
 	.tile-block.favorite {
 		padding: 10px 5px;
@@ -88,11 +97,14 @@
 			align-content: flex-start;
 			padding: 15px 0;
 			height: 160px;
-			border-bottom: 0;
 			border-top: 1px solid #ebebeb;
+			&:first-of-type {
+				border-top: 0;
+			}
 		}
 		&__col {
 			padding: 0;
+			border-bottom: 0;
 			&--image{
 				width: 22%;
 				height: 100%;
@@ -116,8 +128,9 @@
 					color: #b9b9b9;
 				}
 				.btn-add-to-cart {
-					padding: 7px 1em;
+					padding: 7px 2.6em;
 					.i-icon {
+						margin-left: -35px;
 						margin-right: 10px;
 					}
 				}

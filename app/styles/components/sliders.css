@@ -1,11 +1,38 @@
 @import "../colors.css";
 @import "../media.css";
 
+.owl-stage {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
 .owl-item {
     z-index: 1;
+	display: flex;
 }
 
+.owl-dots {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	.owl-dot {
+		width: 4px;
+		height: 4px;
+		margin: 0 6px;
+		background: #d0d0d0;
+		&.active {
+			background: var(--dark-gray);
+		}
+	}
+}
 .main-slider {
+	margin-bottom: 40px;
+	position: relative;
+	z-index: 2;
     &__slide {
         width: 100vw;
         //height: calc(100vh - 80px);
@@ -70,15 +97,18 @@
         position: absolute;
         bottom: 22px;
         right: 60px;
+		width: auto;
+		display: block;
+		left: auto;
     }
     .owl-dot {
         width: 20px;
         height: 20px;
         display: inline-block;
-        margin-left: 14px;
         color: var(--main-dark);
         border: 1px solid currentColor;
         position: relative;
+		background: transparent;
         &::after {
             content: '';
             width: 4px;
@@ -93,6 +123,7 @@
         &.active {
             color: var(--main-brown);
             border: 2px solid currentColor;
+			background: transparent;
             &::after {
                 width: 10px;
                 height: 10px;
@@ -179,6 +210,8 @@
 	margin: 0 -10px 50px;
 	&__slide {
 		padding: 0 10px;
+		width: 100%;
+		display: flex;
 	}
 	.owl-dots {
 		display: none;
@@ -244,23 +277,6 @@
 	}
 	.nav-next {
 		left: 60px;
-	}
-}
-.owl-dots {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	.owl-dot {
-		width: 4px;
-		height: 4px;
-		margin: 0 6px;
-		background: #d0d0d0;
-		&.active {
-			background: var(--dark-gray);
-		}
 	}
 }
 

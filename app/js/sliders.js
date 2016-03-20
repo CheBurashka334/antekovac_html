@@ -44,7 +44,7 @@ var Sliders = {
 							nav: false,
 							dots: false
 						},
-						1024: {
+						1025: {
 							items: 3,
 							nav: false,
 							dots: false

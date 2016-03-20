@@ -160,7 +160,7 @@
 							Коллекция
 						</div>
 						<div class="collection__heading">
-							цирк
+							Одиннадцатиклассница в цирке
 						</div>
 						<div class="collection__button">
 							<a href="#" class="btn btn--transparent btn--arrow">
@@ -213,37 +213,37 @@
 		</div>
     </div>
 </div>
-<div class="container hidden-mobile hidden-print">
+<div class="container media-lib hidden-mobile hidden-print">
 	<div class="block-heading block-heading--mobile">
 		<h2>медиатека</h2>
 	</div>
 	<div class="grid-equalHeight">
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>
 		</div>
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>
 		</div>
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>
 		</div>
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>
 		</div>
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>
 		</div>
-		<div class="col-3_lg-3_md-4">
+		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
 				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 			</div>

@@ -1,14 +1,14 @@
 webpackJsonpApp([1],{
 
-/***/ 54:
+/***/ 51:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(55);
-	__webpack_require__(56);
+	module.exports = __webpack_require__(52);
+	__webpack_require__(53);
 
 /***/ },
 
-/***/ 55:
+/***/ 52:
 /***/ function(module, exports) {
 
 	/**
@@ -3163,14 +3163,14 @@ webpackJsonpApp([1],{
 
 /***/ },
 
-/***/ 56:
+/***/ 53:
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 57:
+/***/ 54:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3220,7 +3220,7 @@ webpackJsonpApp([1],{
 	                        nav: false,
 	                        dots: false
 	                    },
-	                    1024: {
+	                    1025: {
 	                        items: 3,
 	                        nav: false,
 	                        dots: false

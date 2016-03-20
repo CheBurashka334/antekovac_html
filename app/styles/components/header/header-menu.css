@@ -6,9 +6,17 @@
 	top: 20px;
 	left: 35px;
 	will-change: left;
-	transition: left .3s;
+	transition: .3s;
 	.page-aside--left.open ~ .page .header & {
 		left: 40px;
+	}
+	&.scrolled--top {
+		transform: translateY(-200%);
+		transition: transform .3s;
+	}
+	&.scrolled--left {
+		transform: translateX(-200%);
+		transition: transform .3s;
 	}
     &__burger {
         cursor: pointer;
@@ -18,7 +26,7 @@
 		height: 40px;
 		margin-left: -25%;
 		position: relative;
-		transition: transform .3s;
+		transition: none;
         span {
             width: 50%;
             height: 2px;
@@ -114,24 +122,12 @@
 				}
 			}
 		}
-		&.anim-hover--after {
-			transform: rotate(0);
-			transition: none;
-		}
 		&.anim-click--play {
 			transform: rotate(180deg) translateY(-2px);
 			transition: transform .1s;
 			.page-aside--left.open ~ .page .header & {
 				transform: translateY(2px);
 			}
-		}
-		&.scrolled--top {
-			transform: translateY(-200%);
-			transition: transform .3s;
-		}
-		&.scrolled--left {
-			transform: translateX(-200%);
-			transition: transform .3s;
 		}
 	}
 }

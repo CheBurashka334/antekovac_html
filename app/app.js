@@ -12,14 +12,14 @@ require('./styles/imports');
 
 // Lazy components
 
-var lazyComponents = [
+/*var lazyComponents = [
     { name: 'sameHeight', data: '[data-same-height]' },
     { name: 'anchors', data: '[data-anchor]' }
-];
+];*/
 
 // Run lazy components
 
-$(function () {
+/*$(function () {
     lazyComponents.forEach(function(item) {
         if ($(item.data).length) {
             require('bundle!./js/lazy-components/' + item.name + '.js')(function(component) {
@@ -27,7 +27,7 @@ $(function () {
             })
         }
     });
-});
+});*/
 
 // Load carousel 
 

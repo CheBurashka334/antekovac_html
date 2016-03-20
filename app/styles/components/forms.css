@@ -405,6 +405,11 @@ input[type="checkbox"] {
 		font-size: 12px;
 		font-weight: lighter;
 		color: #a4a4a4;
+		.feed-back__form & {
+			font-size: 14px;
+			font-weight: normal;
+			color: white;
+		}
 	}
     &--double {
         input {
@@ -546,8 +551,10 @@ input[type="checkbox"] {
 	.dropdown-fade2white {
 		display: none;
 	}
-	.bx-ui-sls-clear {
+	.bx-ui-sls-clear,
+	.bx-ui-sls-clear:hover{
 		background: url(var(--icons-path)/clear.png) center no-repeat;
+		background-position: center;
 		width: 30px;
 		height: 30px;
 		cursor: pointer;

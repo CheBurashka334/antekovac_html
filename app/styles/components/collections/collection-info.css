@@ -10,12 +10,11 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 		width: 75%;
-		height: 70%;
-		max-height: 335px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		align-items: center;
 		@media (--small), (--medium){
 			justify-content: space-between;
 		}
@@ -38,6 +37,7 @@
 		font-family: "Bebas Neue Bold";
 		font-size: 30px;
 		color: #fff;
+		margin: 10px 0;
 	}
 	&__date {
 		text-transform: uppercase;
@@ -46,7 +46,7 @@
 		color: white;
 	}
 	&__note {
-		font-family: "Roboto";
+		font-family: "MyriadPro";
 		font-weight: 400;
 		color: white;
 		font-size: 18px;
@@ -62,13 +62,14 @@
 		}
 	}
 	&__button {
-		margin: 40px auto 0;
+		margin: 20px auto 0;
 		@media (--small), (--medium){
 			margin-top: 0;
 			max-width: 175px;
 		}
 		.btn {
 			width: 100%;
+			margin: 0;
 			&:hover {
 				background-color: transparent;
 				border-color: currentColor;

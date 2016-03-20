@@ -1,3 +1,4 @@
+</div><!-- /.workarea -->
 <footer>
     <div class="footer">
         <div class="container">
