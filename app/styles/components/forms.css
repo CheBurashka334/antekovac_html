@@ -25,8 +25,6 @@
         padding-right: 50px;
     }
     &.invalid {
-       /* border-color: var(--main-red);
-        background-image: url(icons/invalid.png);*/
         background-position: right 20px center;
         background-repeat: no-repeat;
         padding-right: 50px;

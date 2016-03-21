@@ -6033,8 +6033,6 @@ input[type="text"].valid, input[type="email"].valid, input[type="tel"].valid, in
 	padding-right: 50px;
 }
 input[type="text"].invalid, input[type="email"].invalid, input[type="tel"].invalid, input[type="url"].invalid, input[type="password"].invalid, textarea.invalid, select.invalid {
-	/* border-color: var(--main-red);
-        background-image: url(icons/invalid.png);*/
 	background-position: right 20px center;
 	background-repeat: no-repeat;
 	padding-right: 50px;
