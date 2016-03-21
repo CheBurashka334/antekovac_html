@@ -60,6 +60,7 @@ select {
 	display: block;
 	width: 100%;
 	appearance: menulist;
+	cursor: pointer;
 }
 
 .field__inputtext {
@@ -130,7 +131,16 @@ select {
 .switch {
 	text-align: center;
 	input {
-		display: none;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 23px;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		&:checked {
+			z-index: -1;
+		}
 	}
 	&__text {
 		font-family:  "MyriadPro";
@@ -140,15 +150,14 @@ select {
 		z-index: 2;
 		cursor: pointer;
 		&--left {
-			padding-right: 75px;
-			margin-right: -25px;
+			padding-right: 50px;
 		}
 		&--right {
-			padding-left: 75px;
-			margin-left: -25px;
+			padding-left: 50px;
 		}
 	}
 	&__field {
+		position: relative;
 		display: inline-block;
 		width: 55px;
 		margin: 0;
@@ -161,6 +170,7 @@ select {
 		height: 23px;
 		border-radius: 15px;
 		background: #eaeaea;
+		cursor: pointer;
 		&:after {
 			content: '';
 			display: block;
