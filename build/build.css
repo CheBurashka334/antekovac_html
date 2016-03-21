@@ -3431,7 +3431,7 @@ table.nostyle th, table.nostyle td {
 	transition: transform .3s;
 	transition: transform .3s, -webkit-transform .3s;
 }
-.page-aside.feed-back.open ~ .page .btn.btn-feed-back {
+.page-aside.open ~ .page .btn.btn-feed-back {
 	-webkit-transform: translateX(100%);
 	        transform: translateX(100%);
 }

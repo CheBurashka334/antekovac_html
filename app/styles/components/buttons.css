@@ -249,7 +249,7 @@
 		vertical-align: sub;
 		z-index: 1;
 		transition: transform .3s;
-		.page-aside.feed-back.open ~ .page & {
+		.page-aside.open ~ .page & {
 			transform: translateX(100%);
 		}
 	}
