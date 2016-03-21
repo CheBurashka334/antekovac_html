@@ -63,7 +63,7 @@ var Noodles = {
 			$(this).parent('.submenu--sided').removeClass('open');
 			if($(this).parents('.menu--multilevel--aside').length > 1){
 				$(this).parents('.submenu--sided').eq(1).removeClass('next-level');
-				$(this).parents('.page-aside__menu').height($(this).next('.submenu--sided').children('.menu').height() + $(this).next('.submenu--sided').children('.submenu__back').outerHeight());
+				$(this).parents('.page-aside__menu').height($(this).parent('.submenu--sided').children('.menu').height() + $(this).next('.submenu--sided').children('.submenu__back').outerHeight());
 			} else {
 				$(this).parents('.menu--multilevel--aside').removeClass('next-level');
 				$(this).parents('.page-aside__menu').height('auto');
