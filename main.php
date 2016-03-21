@@ -246,8 +246,8 @@
                             <div class="collection-block-list__item">
                                 <a href="#">Обложки для документов</a>
                             </div>
-                            <div class="collection-block-list__item">
-                                <a href="#">Аксессуары</a>
+                            <div class="collection-block-list__btn">
+                                <a href="#" class="btn btn--arrow btn--transparent">Ещё изделия</a>
                             </div>
                         </div>
                     </div>
@@ -342,8 +342,8 @@
                             <div class="collection-block-list__item">
                                 <a href="#">Обложки для документов</a>
                             </div>
-                            <div class="collection-block-list__item">
-                                <a href="#">Аксессуары</a>
+                            <div class="collection-block-list__btn">
+                                <a href="#" class="btn btn--arrow btn--transparent">Ещё изделия</a>
                             </div>
                         </div>
                     </div>

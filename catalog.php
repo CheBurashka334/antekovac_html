@@ -1,6 +1,7 @@
 <?php require ('header.php') ?>
 <div class="container">
 	<ul class="breadcrumbs">
+		<li class="breadcrumbs__item"><a href="#">Главная</a></li>
 		<li class="breadcrumbs__item"><a href="#">Магазин</a></li>
 		<li class="breadcrumbs__item"><a href="#">Для нее</a></li>
 		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Саквояжи</a></li>
