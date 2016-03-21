@@ -5355,7 +5355,7 @@ li.viewer-play,
 	.header--transparent {
 		border-bottom-color: transparent;
 	}
-	.header--transparent + div {
+	.header--transparent + div > div:first-of-type {
 		padding-top: 0;
 	}
 	.header__wrap {

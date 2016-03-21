@@ -120,7 +120,7 @@
 		}
 		&--transparent {
 			border-bottom-color: transparent;
-			& + div {
+			& + div > div:first-of-type {
 				padding-top: 0;
 			}
 		}
