@@ -10613,13 +10613,16 @@ var App =
 				if ($(window).scrollTop() > 100) {
 					$('.home-page .header').removeClass('header--transparent');
 				} else {
-					$('.home-page .header').addClass('header--transparent');
+					if (!$('.home-page').hasClass('fixed')) {
+						$('.home-page .header').addClass('header--transparent');
+					}
 				}
 			});
 	
 			function position(fix) {
 				if (fix == 'fix') {
 					var pos = $(window).scrollTop();
+					console.log(pos);
 					$('.page').css({ 'position': 'fixed', 'top': -pos + 'px' });
 				} else {
 					var pos = parseInt($('.page').css('top'), 10);
