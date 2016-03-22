@@ -4,6 +4,7 @@
 
 import 'jquery';
 import 'normalize.css';
+//import 'jquery.inputmask';
 
 // Load styles
 
@@ -50,6 +51,25 @@ $(function(){
 		});
 	}
 });
+
+require('scrollissimo');
+$(function(){
+	if(($('.js-anim-scroll').length) && ($(window).width() > 1024)){
+		require.ensure([],function(require){
+			require('gsap');
+			let gsapAnims = require('./js/gsapAnims');
+			gsapAnims.run();
+		});
+	}
+});
+
+/*$(function(){
+	if($('input[type="tel"]').length){
+		require.ensure([],function(require){
+			require('jquery.inputmask');
+		});
+	}
+});*/
 
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');

@@ -90,10 +90,10 @@
 								<input type="radio" name="delivery" value="v1" checked="checked" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Самовывоз <span class="primary-color">(Бесплатно)</span></span>
+								<div class="field__text">
+									<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -102,10 +102,10 @@
 								<input type="radio" name="delivery" value="v2" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Курьерская доставка по Москве в пределах МКАД <span class="primary-color">(400 рублей)</span></span>
+								<div class="field__text">
+									<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм.</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -114,10 +114,10 @@
 								<input type="radio" name="delivery" value="v3" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Курьерская доставка по Москве вне МКАД <span class="primary-color">(700 рублей)</span></span>
+								<div class="field__text">
+									<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -126,10 +126,10 @@
 								<input type="radio" name="delivery" value="v4" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Доставка в регионы России <span class="primary-color">(Индивидуально)</span></span>
+								<div class="field__text">
+									<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -138,10 +138,10 @@
 								<input type="radio" name="delivery" value="v5" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Доставка в другие страны <span class="primary-color">(Индивидуально)</span></span>
+								<div class="field__text">
+									<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке систем массового участия.</p>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -157,10 +157,10 @@
 								<input type="radio" name="payment" value="v1" checked="checked" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Оплата наличными в мастерской</span>
+								<div class="field__text">
+									<p>Оплата в момент доставки товара</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Оплата в момент доставки товара</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -169,10 +169,10 @@
 								<input type="radio" name="payment" value="v2" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Оплата картой в мастерской</span>
+								<div class="field__text">
+									<p>Вы будете перемещены на страницу оплаты</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Вы будете перемещены на страницу оплаты</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -181,10 +181,10 @@
 								<input type="radio" name="payment" value="v3" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Uniteller (оплата банковской картой онлайн)</span>
+								<div class="field__text">
+									<p>Яндекс.деньги, PayPal и др.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Яндекс.деньги, PayPal и др.</p>
-							</div>
 						</div>
 					</div>
 					<div class="field">
@@ -193,10 +193,10 @@
 								<input type="radio" name="payment" value="v4" class="field__radio"/>
 								<div class="custom-radio__circle"></div>
 								<span class="custom-radio__heading">Оплата по счету</span>
+								<div class="field__text">
+									<p>Яндекс.деньги, PayPal и др.</p>
+								</div>
 							</label>
-							<div class="field__text">
-								<p>Яндекс.деньги, PayPal и др.</p>
-							</div>
 						</div>
 					</div>
 				</div>

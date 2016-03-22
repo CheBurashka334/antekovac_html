@@ -8,13 +8,13 @@
 		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Сумка №40 «Небесно-голубое»</a></li>
 	</ul>
 </div>
-<div class="container product-detail">
+<div class="container product-detail js-anim-scroll js-anim-scroll--init">
 	<button class="btn btn--square--only-icon btn-favorite hidden-desktop hidden-small hidden-medium">
 		<svg class="i-icon i-icon--stroke"><use xlink:href="#heart"/></svg>
 	</button>
 	<div class="grid-equalHeight">
 		<div class="col-7_lg-7_md-6_sm-6_xs-12 slider-wrapper">
-			<div class="product-detail__slider">
+			<div class="product-detail__slider js-anim-scroll js-anim-scroll--scrollable" data-speed="3">
 				<div class="owl-carousel">
 					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8264.png" style="background-image: url('images/product-detail/big/afm-white-8264.png');">
 					</div>
@@ -38,7 +38,7 @@
 			</div>
 		</div>
 		<div class="col-7_lg-5_md-6_sm-6_xs-12">
-			<div class="product-detail__info tile-block tile-block--bordered--no-mobile no-margin">
+			<div class="product-detail__info tile-block tile-block--bordered--no-mobile no-margin js-anim-scroll js-anim-scroll--scrollable">
 				<div class="product-detail__buttons--outside hidden-mobile">
 					<!-- .added если товар отложен -->
 					<button class="btn btn--square--only-icon--primary btn-favorite js-anim--click js-toggle-box" data-box=".modal.message">
@@ -108,7 +108,7 @@
 <div class="container hidden-mobile show-print">
     <div class="grid-equalHeight">
         <div class="col-5_lg-5_md-6 wrap">
-            <div class="tile-block">
+            <div class="tile-block js-anim-scroll js-anim-scroll--scrollable">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
                 <h2>индивидуальный заказ</h2>
                 <div class="tile-block__text">
@@ -118,7 +118,7 @@
                 </div>
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
-			<div class="tile-block tile-block--dark">
+			<div class="tile-block tile-block--dark js-anim-scroll js-anim-scroll--scrollable" data-start-position="-2">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#garantee"/></svg></div>
                 <h2>гарантии возврата</h2>
                 <div class="tile-block__text">
@@ -147,7 +147,7 @@
             </div>
         </div>
         <div class="col-3_lg-3_md-6 wrap">
-            <div class="tile-block tile-block--collection">
+            <div class="tile-block tile-block--collection js-anim-scroll js-anim-scroll--scrollable" data-start-position="-3">
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
@@ -182,7 +182,7 @@
             </div>
         </div>
 		<div class="col-4 hidden-small hidden-medium wrap hidden-print">
-			<div class="tile-block tile-block--dark">
+			<div class="tile-block tile-block--dark js-anim-scroll js-anim-scroll--scrollable"data-start-position="-2">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#share"/></svg></div>
                 <h2>поделиться в сети</h2>
                 <div class="tile-block__socials">
@@ -200,7 +200,7 @@
                     </a>
                 </div>
             </div>
-			<div class="tile-block">
+			<div class="tile-block js-anim-scroll js-anim-scroll--scrollable">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#kcard"/></svg></div>
                 <h2>Доставка и оплата</h2>
                 <div class="tile-block__text">

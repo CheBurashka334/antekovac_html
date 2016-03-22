@@ -127,7 +127,7 @@ module.exports = {
       allChunks: true
     }),
     new plugins.bower({
-      modulesDirectories: [__dirname + '/vendor'],
+      modulesDirectories: [__dirname + '/vendor',__dirname, 'node_modules'],
       manifestFiles: ".bower.json",
       includes: /.*/,
       excludes: [],

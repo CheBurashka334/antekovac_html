@@ -153,6 +153,9 @@ select {
 		&--right {
 			padding-left: 50px;
 		}
+		&:hover {
+			color: var(--main-brown);
+		}
 	}
 	&__field {
 		position: relative;
@@ -197,6 +200,13 @@ select {
 	position: relative;
 	font-size: 17px;
 	margin: 2em 0;
+	opacity: 0.6;
+	transition: opacity .2s;
+	cursor: pointer;
+	&.checked,
+	&:hover {
+		opacity: 1;
+	}
 	input {
 		display: none;
 	}

@@ -395,10 +395,14 @@ table {
 	&__link {
 		text-decoration: none;
 		display: inline-block;
-		border-bottom: 1px dashed var(--main-brown);
+		border-bottom: 1px dashed currentColor;
 		padding: 0 1em 3px 0;
 		position: relative;
 		margin-top: 1em;
+		color: var(--main-gray);
+		&:hover {
+			color:  var(--main-brown);
+		}
 		&::after {
 			content: '^';
 			display: block;

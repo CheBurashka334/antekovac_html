@@ -8,22 +8,26 @@ var Dropdowns = {
 			self.init($(this));
 		});
 		
-		$('.dropdown__value').on('click', function(e){
-			e.stopPropagation();
-			self.dClose();
-			self.dOpen($(this).parents('.dropdown,.dropdown--mobile'));
-		});
-		
-		$('.dropdown__caret').on('click', function(){
-			if($(this).parents('.dropdown,.dropdown--mobile').hasClass('open')){
+		if($('html').hasClass('bx-touch')){
+			$('.dropdown__value').on('click', function(e){
+				e.stopPropagation();
 				self.dClose();
-			} else {
-				self.dOpen($(this).parents('.dropdown'));
-			}
-		});
-		$(window).on('click', function(){
-			self.dClose();
-		});
+				self.dOpen($(this).parents('.dropdown,.dropdown--mobile'));
+			});
+			$(window).on('click', function(){
+				self.dClose();
+			});
+		} else {
+			$('.dropdown').on('mouseenter', function(e){
+				e.stopPropagation();
+				self.dClose();
+				self.dOpen($(this));
+			});
+			$('.dropdown').on('mouseleave',function(){
+				self.dClose();
+			});
+		}
+		
 		
 		$('.dropdown .dropdown__title').on('click', function(e){
 			e.stopPropagation();

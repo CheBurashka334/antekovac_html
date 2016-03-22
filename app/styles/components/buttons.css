@@ -38,7 +38,15 @@
 		background: var(--dark-gray);
 		border-color: var(--dark-gray);
 		color: white;
-		
+		transition: .2s;
+		&:hover {
+			background: var(--main-brown);
+			border-color: var(--main-brown);
+		}
+		&[class*="--main-anim"]:hover {
+			background: var(--dark-gray);
+			border-color: var(--dark-gray);
+		}
 	}
 	&[class*="--with-icon"] {
 		.i-icon {
@@ -78,6 +86,12 @@
 		background: #dcdcdc;
 		border-color: #dcdcdc;
 		color: #9b9b9c;
+		transition: .2s;
+		&:hover {
+			background: var(--main-brown);
+			border-color: var(--main-brown);
+			color: white;
+		}
 	}
 	&[class*="--main-anim"]{
 		position: relative;
