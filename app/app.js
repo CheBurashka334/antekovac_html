@@ -52,13 +52,19 @@ $(function(){
 	}
 });
 
-require('scrollissimo');
+let Scrollissimo = require('scrollissimo');
 $(function(){
-	if(($('.js-anim-scroll').length) && ($(window).width() > 1024)){
+	if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
 		require.ensure([],function(require){
 			require('gsap');
 			let gsapAnims = require('./js/gsapAnims');
-			gsapAnims.run();
+			$('.js-anim-scroll').each(function(){
+				var tween = gsapAnims.getTL($(this));
+				Scrollissimo.add(tween, 0, 60);
+			});
+			$(window).scroll(function(){
+				Scrollissimo.knock();
+			});
 		});
 	}
 });

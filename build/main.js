@@ -134,7 +134,7 @@ var App =
 	
 	$(function () {
 		if ($('.owl-carousel').length) {
-			__webpack_require__.e/* nsure */(3, function (require) {
+			__webpack_require__.e/* nsure */(1, function (require) {
 				__webpack_require__(51);
 				var Sliders = __webpack_require__(54);
 				Sliders.run();
@@ -144,7 +144,7 @@ var App =
 	
 	$(function () {
 		if ($('.js-viewer,.js-viewer-wrapper').length) {
-			__webpack_require__.e/* nsure */(4, function (require) {
+			__webpack_require__.e/* nsure */(2, function (require) {
 				__webpack_require__(55);
 				var Viewers = __webpack_require__(58);
 				Viewers.run();
@@ -152,13 +152,19 @@ var App =
 		}
 	});
 	
-	__webpack_require__(63);
+	var Scrollissimo = __webpack_require__(62);
 	$(function () {
-		if ($('.js-anim-scroll').length && $(window).width() > 1024) {
-			__webpack_require__.e/* nsure */(5, function (require) {
-				__webpack_require__(60);
-				var gsapAnims = __webpack_require__(65);
-				gsapAnims.run();
+		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
+			__webpack_require__.e/* nsure */(3, function (require) {
+				__webpack_require__(59);
+				var gsapAnims = __webpack_require__(64);
+				$('.js-anim-scroll').each(function () {
+					var tween = gsapAnims.getTL($(this));
+					Scrollissimo.add(tween, 0, 60);
+				});
+				$(window).scroll(function () {
+					Scrollissimo.knock();
+				});
 			});
 		}
 	});
@@ -10677,14 +10683,13 @@ var App =
 /* 59 */,
 /* 60 */,
 /* 61 */,
-/* 62 */,
-/* 63 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(64);
+	module.exports = __webpack_require__(63);
 
 /***/ },
-/* 64 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**

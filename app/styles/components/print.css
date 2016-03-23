@@ -112,6 +112,10 @@
 	.owl-carousel [class*="dots"] {
 		display: none;
 	}
+	.js-anim-scroll {
+		opacity: 1;
+		transform: none!important;
+	}
 }
 @media print and (orientation: portrait)  {
 	.tile-block--bordered--no-mobile {

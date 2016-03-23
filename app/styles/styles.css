@@ -446,3 +446,6 @@ table {
 		margin-bottom: 0;
 	}
 }
+.js-anim-scroll {
+	opacity: 0;
+}

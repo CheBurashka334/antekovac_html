@@ -2710,6 +2710,9 @@ table.nostyle th, table.nostyle td {
 	.about-brand {
 		margin-bottom: 0;
 	}
+}
+.js-anim-scroll {
+	opacity: 0;
 }:root {
 	/* пути к картинкам */
 }
@@ -8281,6 +8284,11 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.owl-carousel [class*="navs"],
 	.owl-carousel [class*="dots"] {
 		display: none;
+	}
+	.js-anim-scroll {
+		opacity: 1;
+		-webkit-transform: none!important;
+		        transform: none!important;
 	}
 }
 @media print and (orientation: portrait)  {
