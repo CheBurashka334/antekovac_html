@@ -14,7 +14,7 @@
 	</button>
 	<div class="grid-equalHeight">
 		<div class="col-7_lg-7_md-6_sm-6_xs-12 slider-wrapper">
-			<div class="product-detail__slider js-anim-scroll" data-end-position="-0.5" data-speed="7">
+			<div class="product-detail__slider js-anim-scroll" data-end-position="-0.5" data-speed="10">
 				<div class="owl-carousel">
 					<div class="product-detail__slide js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8264.png" style="background-image: url('images/product-detail/big/afm-white-8264.png');">
 					</div>

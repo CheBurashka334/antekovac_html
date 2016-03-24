@@ -1,5 +1,6 @@
 @import "../colors.css";
 @import "../media.css";
+@import "../selectors.css";
 
 .tile-block {
     padding: 30px 40px;
@@ -39,6 +40,9 @@
         font-weight: 300;
         line-height: 18px;
 		align-self: stretch;
+		:--heading {
+			color: #3d3b33;
+		}
         p {
             &:first-child {
                 margin-top: 0;
@@ -75,6 +79,10 @@
 			position: absolute;
 			left: 40px;
 			bottom: 30px;
+		}
+		.page--individual & {
+			padding: 20px 0 0;
+			margin-bottom: 50px;
 		}
     }
 	&--video &__content {
@@ -137,6 +145,15 @@
 	&.no-margin {
 		margin: 0;
 	}
+	&--individual {
+		padding: 35px;
+		.btn--arrow {
+			padding-right: 70px;
+		}
+	}
+	&--individual &__image {
+		margin: 50px auto 35px;
+	}
 }
 @media (--small-up){
 	.tile-block {
@@ -152,6 +169,60 @@
 				left: 7px;
 				right: 7px;
 			}
+		}
+	}
+}
+@media (min-width: 690px) and (--small-down){
+	.tile-block {
+		&--individual {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			max-height: 310px;
+		}
+		&--individual &__image {
+			width: 40%;
+			height: 100%;
+			margin: 0;
+			order: -1;
+		}
+		&--individual &__heading-link,
+		&--individual &__text {
+			width: 60%;
+		}
+		&--individual .btn {
+			margin-top: 25px;
+			max-width: 300px;
+		}
+	}
+}
+@media (max-width: 689px) { /* custom mobile */
+	.tile-block {
+		&--individual {
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			padding: 35px 20px;
+		}
+		&--individual &__heading-link {
+			display: none;
+		}
+		&--individual &__image {
+			margin: 25px auto 0;
+		}
+		&--individual .btn {
+			order: -1;
+			padding-right: 50px;
+			margin: 0 auto 15px;
+		}
+	}
+}
+@media (min-width: 899px) and (--small-down){
+	.tile-block {
+		&--individual {
+			max-height: 320px;
 		}
 	}
 }
@@ -208,6 +279,9 @@
 		}
 		&.mobile-fullwidth {
 			width: 100vw;
+		}
+		&.mobile--smallGutter {
+			padding: 5px;
 		}
 	}
 }

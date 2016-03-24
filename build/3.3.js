@@ -1,13 +1,13 @@
 webpackJsonpApp([3],{
 
-/***/ 59:
+/***/ 61:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(60);
+	module.exports = __webpack_require__(62);
 
 /***/ },
 
-/***/ 60:
+/***/ 62:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -5809,7 +5809,7 @@ webpackJsonpApp([3],{
 							if (global) {
 								_globals[n] = cl; //provides a way to avoid global namespace pollution. By default, the main classes like TweenLite, Power1, Strong, etc. are added to window unless a GreenSockGlobals is defined. So if you want to have things added to a custom object instead, just do something like window.GreenSockGlobals = {} before loading any GreenSock files. You can even set up an alias like window.GreenSockGlobals = windows.gs = {} so that you can access everything like gs.TweenLite. Also remember that ALL classes are added to the window.com.greensock object (in their respective packages, like com.greensock.easing.Power1, com.greensock.TweenLite, etc.)
 								hasModule = (typeof(module) !== "undefined" && module.exports);
-								if (!hasModule && "function" === "function" && __webpack_require__(61)){ //AMD
+								if (!hasModule && "function" === "function" && __webpack_require__(63)){ //AMD
 									!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() { return cl; }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 								} else if (ns === moduleName && hasModule){ //node
 									module.exports = cl;
@@ -7595,7 +7595,7 @@ webpackJsonpApp([3],{
 
 /***/ },
 
-/***/ 61:
+/***/ 63:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -7627,16 +7627,6 @@ webpackJsonpApp([3],{
 			}
 			var duration = durationInPixels * speedIndex;
 	
-			/*tl.fromTo(elem,duration,
-	  	  {yPercent: 100*startPosition, ease: Power0.easeNone},
-	  	  {yPercent: 100*endPosition, ease: Power1.easeInOut})
-	  	  .set(elem, {className: '+=ready'});
-	  */
-	
-			/*tl.from(elem, 0, {yPercent: 100*startPosition, ease: Power0.easeNone})
-	    .set(elem, {className: '+=ready'})
-	    .to(elem, duration, {yPercent: 100*endPosition, ease: Power1.easeInOut});
-	  */
 			tl.fromTo(elem, 0, { opacity: 0 }, { yPercent: 100 * startPosition, opacity: 1, ease: Power0.easeNone }).to(elem, duration, { yPercent: 100 * endPosition, ease: Power1.easeInOut });
 	
 			return tl;

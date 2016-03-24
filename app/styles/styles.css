@@ -78,11 +78,13 @@ img {
 		width: 100vw;
 		max-width: 100vw;
 		margin-left: calc((100vw - 100%) / -2);
+		margin-right: calc((100vw - 100%) / -2);
 		padding: 0 15px;
 		&--noGutter {
 			width: 100vw;
 			max-width: 100vw;
 			margin-left: calc((100vw - 100%) / -2);
+			margin-right: calc((100vw - 100%) / -2);
 			padding: 0;
 			overflow-x: hidden;
 		}
@@ -195,6 +197,10 @@ p {
 	max-width: 76em;
 }
 
+.medium {
+	font-weight: 600;
+}
+
 .small-note-text {
 	font-size: 11px;
 	text-transform: none;
@@ -202,6 +208,9 @@ p {
 }
 .light-text {
 	color: #bbbbbb;
+}
+.light-color {
+	color: #9a9a9a;
 }
 .success-green-text {
 	color: #82a147;
@@ -238,6 +247,9 @@ ol {
 	padding-left: 35px;
 	margin: 3em 0;
 	list-style: none;
+	&.compact {
+		margin: 1em 0;
+	}
 	&.light-text {
 		color: #bbbbbb;
 	}
@@ -246,16 +258,25 @@ ol {
 		margin: 0.5em 0;
 	}
 }
-ul li:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0.35em;
-	left: -1.2em;
-	width: 0.5em;
-	height: 0.5em;
-	border-radius: 50%;
-	background: var(--main-brown);
+ul {
+	li:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0.35em;
+		left: -1.2em;
+		width: 0.5em;
+		height: 0.5em;
+		border-radius: 50%;
+		background: var(--main-brown);
+	}
+	&.line-marker li:before {
+		width: 1.5em;
+		height: 1px;
+		top: 0.5em;
+		left: -2.5em;
+		border-radius: 0;
+	}
 }
 ol {
 	counter-reset: item;
@@ -446,6 +467,8 @@ table {
 		margin-bottom: 0;
 	}
 }
-.js-anim-scroll {
-	opacity: 0;
+@media screen and (--medium-up){
+	.js-anim-scroll {
+		opacity: 0;
+	}
 }

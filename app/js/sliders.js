@@ -35,24 +35,24 @@ var Sliders = {
                 'options' : {
 					responsive:{
 						0: {
-							items: 1,
-							nav: false,
-							dots: true
+							items: $('.set-products').attr('data-items-xs') ? +$('.set-products').attr('data-items-xs') : 1,
+							nav:  $('.set-products').attr('data-navs-xs') ? !!+$('.set-products').attr('data-navs-xs') : false,
+							dots:  $('.set-products').attr('data-dots-xs') ? !!+$('.set-products').attr('data-dots-xs') : true
 						},
 						768: {
-							items: 2,
-							nav: false,
-							dots: false
+							items: $('.set-products').attr('data-items-sm') ? +$('.set-products').attr('data-items-sm') : 2,
+							nav:  $('.set-products').attr('data-navs-sm') ? !!+$('.set-products').attr('data-navs-sm') : false,
+							dots:  $('.set-products').attr('data-dots-sm') ? !!+$('.set-products').attr('data-dots-sm') : false
 						},
 						1025: {
-							items: 3,
-							nav: false,
-							dots: false
+							items: $('.set-products').attr('data-items-md') ? +$('.set-products').attr('data-items-md') : 3,
+							nav:  $('.set-products').attr('data-navs-md') ? !!+$('.set-products').attr('data-navs-md') : false,
+							dots:  $('.set-products').attr('data-dots-md') ? !!+$('.set-products').attr('data-dots-md') : false
 						},
 						1300: {
-							items: 3,
-							nav: true,
-							dots: false
+							items: $('.set-products').attr('data-items-lg') ? +$('.set-products').attr('data-items-lg') : 3,
+							nav:  $('.set-products').attr('data-items-lg') ? !!+$('.set-products').attr('data-items-lg') : true,
+							dots:  $('.set-products').attr('data-dots-lg') ? !!+$('.set-products').attr('data-dots-lg') : false
 						}
 					},
                     navContainerClass: 'set-products-navs',
