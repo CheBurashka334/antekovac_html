@@ -1,0 +1,108 @@
+@import "../../media.css";
+@import "../../colors.css";
+@import "../../selectors.css";
+
+.individual-product {
+	margin-bottom: 105px;
+	&__slider.set-products {
+		margin: 30px 0;
+	}
+	&__slide {
+		width: 100%;
+		text-align: center;
+		padding: 0 8.5%;
+	}
+	&__info {
+		padding-left: 12%;
+	}
+	&__heading {
+		color: var(--main-brown);
+		margin-bottom: 1.5em;
+	}
+	&__subheading {
+		font: 18px "MyriadPro";
+		margin: 1em 0;
+	}
+	&__task,
+	&__solution {
+		line-height: 16px;
+		margin-bottom: 40px;
+	}
+	&__buttons {
+		margin-top: 50px;
+		.btn {
+			padding: 13px 1em;
+			padding-right: 2em;
+			line-height: 2;
+			margin-right: 1em;
+			.i-icon {
+				height: 2em;
+			}
+		}
+	}
+}
+@media (--small){
+	.individual-product {
+		&__buttons {
+			width: 100vw;
+			margin: 50px calc((100vw - 100%) / -2) 0;
+			.btn {
+				margin: 0.5em;
+			}
+		}
+	}
+}
+@media (--mobile) {
+	.individual-product {
+		margin-bottom: 0;
+		&__slide {
+			padding-bottom: 20px;
+		}
+		&__info {
+			padding-left: 0;
+			display: flex;
+			flex-direction: column;
+			> div {
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-bottom: 0;
+			}
+		}
+		&__heading {
+			text-align: center;
+			margin: 0 auto 10px;
+			:--heading {
+				font: 14px "Roboto";
+				color: #333;
+			}
+		}
+		&__price {
+			text-align: center;
+		}
+		&__task {
+			padding: 1em 20px;
+			margin-top: 35px;
+			background: var(--main-white);
+		}
+		&__buttons {
+			margin-top: 0;
+			padding: 10px 20px 20px;
+			background: var(--main-white);
+			.btn {
+				margin: 0 0 0.5em;
+				width: 100%;
+			}
+		}
+		&__solution {
+			order: 2;
+		}
+		&__solution &__subheading {
+			font: 24px "Bebas Neue Book";
+			text-transform: uppercase;
+			margin: 1.5em 0;
+		}
+	}
+	.page--individual .btn--arrow-back {
+		margin-left: -15px;
+	}
+}

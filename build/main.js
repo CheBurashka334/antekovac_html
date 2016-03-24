@@ -135,8 +135,8 @@ var App =
 	$(function () {
 		if ($('.owl-carousel').length) {
 			__webpack_require__.e/* nsure */(1, function (require) {
-				__webpack_require__(53);
-				var Sliders = __webpack_require__(56);
+				__webpack_require__(54);
+				var Sliders = __webpack_require__(57);
 				Sliders.run();
 			});
 		}
@@ -145,19 +145,19 @@ var App =
 	$(function () {
 		if ($('.js-viewer,.js-viewer-wrapper').length) {
 			__webpack_require__.e/* nsure */(2, function (require) {
-				__webpack_require__(57);
-				var Viewers = __webpack_require__(60);
+				__webpack_require__(58);
+				var Viewers = __webpack_require__(61);
 				Viewers.run();
 			});
 		}
 	});
 	
-	var Scrollissimo = __webpack_require__(46);
+	var Scrollissimo = __webpack_require__(47);
 	$(function () {
 		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
 			__webpack_require__.e/* nsure */(3, function (require) {
-				__webpack_require__(61);
-				var gsapAnims = __webpack_require__(64);
+				__webpack_require__(62);
+				var gsapAnims = __webpack_require__(65);
 				$('.js-anim-scroll').each(function () {
 					var tween = gsapAnims.getTL($(this));
 					Scrollissimo.add(tween, 0, 60);
@@ -177,11 +177,11 @@ var App =
 		}
 	});*/
 	
-	var LazyImages = __webpack_require__(48);
-	var Dropdowns = __webpack_require__(49);
-	var DropdownSynh = __webpack_require__(50);
-	var Radios = __webpack_require__(51);
-	var Noodles = __webpack_require__(52);
+	var LazyImages = __webpack_require__(49);
+	var Dropdowns = __webpack_require__(50);
+	var DropdownSynh = __webpack_require__(51);
+	var Radios = __webpack_require__(52);
+	var Noodles = __webpack_require__(53);
 	
 	// Run components
 	
@@ -10133,15 +10133,16 @@ var App =
 	__webpack_require__(40);
 	__webpack_require__(41);
 	__webpack_require__(42);
+	__webpack_require__(43);
 	
 	/*Collections*/
 	
-	__webpack_require__(43);
 	__webpack_require__(44);
+	__webpack_require__(45);
 	
 	/* Print */
 	
-	__webpack_require__(45);
+	__webpack_require__(46);
 
 /***/ },
 /* 8 */
@@ -10373,12 +10374,18 @@ var App =
 
 /***/ },
 /* 46 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(47);
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(48);
+
+/***/ },
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10773,7 +10780,7 @@ var App =
 
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10807,7 +10814,7 @@ var App =
 	module.exports = LazyImages;
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10881,7 +10888,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10919,7 +10926,7 @@ var App =
 	module.exports = DropdownSynh;
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10961,7 +10968,7 @@ var App =
 	module.exports = Radios;
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	'use strict';

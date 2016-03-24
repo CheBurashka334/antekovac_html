@@ -328,6 +328,14 @@
 			fill: white;
 		}
 	}
+	&.btn--arrow-back {
+		padding-right: 40px;
+		margin-top: 27px;
+		.i-icon {
+			transform: rotate(180deg);
+			height: 14px;
+		}
+	}
 }
 @media (--small-down){
 	.btn {
@@ -352,6 +360,11 @@
 	.btn {
 		.product-detail > &.btn-favorite.added .i-icon {
 			fill: currentColor;
+		}
+		&.btn--arrow-back {
+			margin-top: 0;
+			background: var(--main-white);
+			border-color: var(--main-white);
 		}
 	}
 }

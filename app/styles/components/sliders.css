@@ -272,6 +272,14 @@
 			left: 0;
 		}
 	}
+	.simply-navs--outside & {
+		.nav-next {
+			right: -20px;
+		}
+		.nav-prev {
+			left: -20px;
+		}
+	}
 }
 @media (--mobile){
 	.set-products .product-tile {

@@ -2440,7 +2440,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	}
 }
 h1 {
-    font-size: 27px;
+    font-size: 24px;
 }
 h2 {
     font-size: 24px;
@@ -3077,6 +3077,12 @@ table.nostyle th, table.nostyle td {
 .simply-navs .set-products-navs .nav-prev {
 	left: 0;
 }
+.simply-navs--outside .set-products-navs .nav-next {
+	right: -20px;
+}
+.simply-navs--outside .set-products-navs .nav-prev {
+	left: -20px;
+}
 @media (max-width: 767px){
 	.set-products .product-tile {
 		border: 0;
@@ -3572,6 +3578,15 @@ table.nostyle th, table.nostyle td {
 .btn.btn-print:hover .i-icon {
 	fill: white;
 }
+.btn.btn--arrow-back {
+	padding-right: 40px;
+	margin-top: 27px;
+}
+.btn.btn--arrow-back .i-icon {
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
+	height: 14px;
+}
 @media (max-width: 1023px){
 	.btn[class*="--main-anim"]{
 		position: relative;
@@ -3594,6 +3609,11 @@ table.nostyle th, table.nostyle td {
 @media (max-width: 767px){
 	.product-detail > .btn.btn-favorite.added .i-icon {
 		fill: currentColor;
+	}
+	.btn.btn--arrow-back {
+		margin-top: 0;
+		background: #f2f2f2;
+		border-color: #f2f2f2;
 	}
 }:root {
 	/* пути к картинкам */
@@ -4483,6 +4503,9 @@ footer {
 }
 .page--404 .page__picture {
 	margin: 30px auto 0;
+}
+.page--individual {
+	margin-bottom: 50px;
 }
 @media (max-width: 767px){
 	.page--thanks {
@@ -8054,6 +8077,125 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	}
 	.product-detail__like__text {
 		padding: 10px 20px;
+	}
+}:root {
+	/* пути к картинкам */
+}
+.individual-product {
+	margin-bottom: 105px;
+}
+.individual-product__slider.set-products {
+	margin: 30px 0;
+}
+.individual-product__slide {
+	width: 100%;
+	text-align: center;
+	padding: 0 8.5%;
+}
+.individual-product__info {
+	padding-left: 12%;
+}
+.individual-product__heading {
+	color: #b59063;
+	margin-bottom: 1.5em;
+}
+.individual-product__subheading {
+	font: 18px "MyriadPro";
+	margin: 1em 0;
+}
+.individual-product__task,
+	.individual-product__solution {
+	line-height: 16px;
+	margin-bottom: 40px;
+}
+.individual-product__buttons {
+	margin-top: 50px;
+}
+.individual-product__buttons .btn {
+	padding: 13px 1em;
+	padding-right: 2em;
+	line-height: 2;
+	margin-right: 1em;
+}
+.individual-product__buttons .btn .i-icon {
+	height: 2em;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+	.individual-product__buttons {
+		width: 100vw;
+		margin: 50px calc((100vw - 100%) / -2) 0;
+	}
+	.individual-product__buttons .btn {
+		margin: 0.5em;
+	}
+}
+@media (max-width: 767px) {
+	.individual-product {
+		margin-bottom: 0;
+	}
+	.individual-product__slide {
+		padding-bottom: 20px;
+	}
+	.individual-product__info {
+		padding-left: 0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.individual-product__info > div {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 0;
+	}
+	.individual-product__heading {
+		text-align: center;
+		margin: 0 auto 10px;
+	}
+	.individual-product__heading h1,
+			.individual-product__heading h2,
+			.individual-product__heading h3,
+			.individual-product__heading h4,
+			.individual-product__heading h5,
+			.individual-product__heading h6 {
+		font: 14px "Roboto";
+		color: #333;
+	}
+	.individual-product__price {
+		text-align: center;
+	}
+	.individual-product__task {
+		padding: 1em 20px;
+		margin-top: 35px;
+		background: #f2f2f2;
+	}
+	.individual-product__buttons {
+		margin-top: 0;
+		padding: 10px 20px 20px;
+		background: #f2f2f2;
+	}
+	.individual-product__buttons .btn {
+		margin: 0 0 0.5em;
+		width: 100%;
+	}
+	.individual-product__solution {
+		-webkit-box-ordinal-group: 3;
+		-webkit-order: 2;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+	.individual-product__solution .individual-product__subheading {
+		font: 24px "Bebas Neue Book";
+		text-transform: uppercase;
+		margin: 1.5em 0;
+	}
+	.page--individual .btn--arrow-back {
+		margin-left: -15px;
 	}
 }:root {
 	/* пути к картинкам */

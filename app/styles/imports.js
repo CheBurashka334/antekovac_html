@@ -47,6 +47,7 @@ require("./components/products/product-tile.css");
 require("./components/products/products-list.css");
 require("./components/products/product-block.css");
 require("./components/products/product-detail.css");
+require("./components/products/individual.css");
 
 /*Collections*/
 

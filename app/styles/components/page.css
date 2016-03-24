@@ -81,6 +81,9 @@
 	&--404 &__picture {
 		margin: 30px auto 0;
 	}
+	&--individual {
+		margin-bottom: 50px;
+	}
 }
 @media (--mobile){
 	.page {
