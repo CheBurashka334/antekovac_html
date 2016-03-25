@@ -7601,21 +7601,11 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .modal.message .modal__image {
 	height: 220px;
 }
-.modal.message .modal__image--vertical {
-	height: 0;
-	padding-bottom: 135%;
-}
 .modal.message .modal__heading {
-	margin: 18% 0 2em;
+	margin: 0 0 2em;
 }
 .modal.message .modal__text {
-	margin: 1em 0 6em;
-}
-.modal.message [class*="grid"][class*="-middle"] .modal__heading {
-	margin-top: 0;
-}
-.modal.message [class*="grid"][class*="-middle"] .modal__text {
-	margin-bottom: 3em;
+	margin: 1em 0 3em;
 }
 .modal.message .btn {
 	text-transform: lowercase;
@@ -7624,6 +7614,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		.modal.message .btn .btn-text:first-letter,
 		.modal.message .btn:first-letter {
 	text-transform: uppercase;
+}
+.message .modal__image--vertical {
+	height: 0;
+	padding-bottom: 135%;
+}
+.message .modal__heading {
+	margin: 18% 0 2em;
+}
+.message .modal__text {
+	margin: 1em 0 6em;
 }
 @media (max-width: 767px){
 	.modal__wrap {
@@ -7651,10 +7651,10 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		width: 100%;
 		margin-top: 10px;
 	}
-	.modal.message .modal__heading {
+	.message .modal__heading {
 		margin-top: 0;
 	}
-	.modal.message .modal__text {
+	.message .modal__text {
 		margin-bottom: 3em;
 	}
 	.modal.message .btn {

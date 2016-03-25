@@ -43,7 +43,7 @@
 					<p>Решение ANTE KOVAC: В основу дизайна легла модель №55, которая по габаритам соответствует требованиям авиакомпаний к ручной клади. Цветовое решегте эскизов было предложено в мягких тонах с применением техники выжигания по коже. Внутри нанесена памятная надпись.</p>
 				</div>
 				<div class="individual-product__buttons">
-					<button class="btn btn--with-icon--dark js-anim--click btn-question js-toggle-box" data-box=".modal.message">
+					<button class="btn btn--with-icon--dark js-anim--click btn-question js-toggle-box" data-box=".modal.message-call">
 						<svg class="i-icon"><use xlink:href="#question"/></svg>
 						<span class="btn-text">Задать вопрос</span>
 					</button>
@@ -106,10 +106,10 @@
 		</div>
 	</div>
 </div>
-<div class="modal message">
+<div class="modal message-call">
 	<div class="modal__wrap">
-		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message"></button>
-		<div class="modal__inner">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message-call"></button>
+		<div class="modal__inner message">
 			<div class="grid">
 				<div class="col-5 hidden-mobile">
 					<div class="modal__image modal__image--vertical" style="background-image: url('images/lady-with-bags.png');"></div>
@@ -120,7 +120,7 @@
 						<div class="modal__text">
 							<p class="light-text">В течение 10 минут с Вами свяжется наш менеджер для уточнения деталей и ответит на все Ваши вопросы.</p>
 						</div>
-						<a href="#" class="btn js-anim--click js-toggle-box" data-box=".modal.message">
+						<a href="#" class="btn js-anim--click js-toggle-box" data-box=".modal.message-call">
 							<span class="btn-text">Вернуться назад</span>
 						</a>
 					</div>

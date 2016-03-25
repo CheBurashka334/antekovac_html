@@ -77,22 +77,12 @@
 	}
 	&.message &__image {
 		height: 220px;
-		&--vertical {
-			height: 0;
-			padding-bottom: 135%;
-		}
 	}
 	&.message &__heading {
-		margin: 18% 0 2em;
+		margin: 0 0 2em;
 	}
 	&.message &__text {
-		margin: 1em 0 6em;
-	}
-	&.message [class*="grid"][class*="-middle"] &__heading {
-		margin-top: 0;
-	}
-	&.message [class*="grid"][class*="-middle"] &__text {
-		margin-bottom: 3em;
+		margin: 1em 0 3em;
 	}
 	&.message .btn {
 		text-transform: lowercase;
@@ -101,6 +91,16 @@
 		&:first-letter {
 			text-transform: uppercase;
 		}
+	}
+	.message &__image--vertical {
+		height: 0;
+		padding-bottom: 135%;
+	}
+	.message &__heading {
+		margin: 18% 0 2em;
+	}
+	.message &__text {
+		margin: 1em 0 6em;
 	}
 }
 @media (--mobile){
@@ -128,10 +128,10 @@
 				margin-top: 10px;
 			}
 		}
-		&.message &__heading {
+		.message &__heading {
 			margin-top: 0;
 		}
-		&.message &__text {
+		.message &__text {
 			margin-bottom: 3em;
 		}
 		&.message .btn {
