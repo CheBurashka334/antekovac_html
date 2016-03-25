@@ -10989,7 +10989,8 @@ var App =
 				$(this).removeClass('anim-click--play');
 			});
 	
-			$('.js-toggle-box').on('click', function () {
+			$('.js-toggle-box').on('click', function (e) {
+				e.stopPropagation();
 				var box = $(this).attr('data-box');
 				if (box != '' && box != 'undefined') {
 					if ($(box).length > 0) {
@@ -11057,6 +11058,17 @@ var App =
 				}
 			});
 	
+			$('.page,.modal').on('click', function () {
+				if ($('.page').hasClass('fixed')) {
+					position();
+					$('.page').removeClass('fixed');
+					$('.page-aside.open,.modal.open').removeClass('open');
+				}
+			});
+			$('.modal__wrap').on('click', function (e) {
+				e.stopPropagation();
+			});
+	
 			/*$('input[type="tel"]').each(function(){
 	  	//var im = new Inputmask("+7(999)999-99-99");
 	  	//im.mask($(this));
@@ -11066,7 +11078,6 @@ var App =
 			function position(fix) {
 				if (fix == 'fix') {
 					var pos = $(window).scrollTop();
-					console.log(pos);
 					$('.page').css({ 'position': 'fixed', 'top': -pos + 'px' });
 				} else {
 					var pos = parseInt($('.page').css('top'), 10);

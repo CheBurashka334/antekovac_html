@@ -77,7 +77,8 @@ $gl-lg:        "screen and (min-width: 1300px)";
 }
 /* line 45, scss/gridlex.scss */
 [class*="grid-"][class*="-bigGutter"] > [class*="col"] {
-  padding: 0 20px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* line 51, scss/gridlex.scss */
 [class*="grid-"][class*="-center"] {

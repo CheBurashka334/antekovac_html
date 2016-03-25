@@ -28,7 +28,7 @@ footer {
             color: #cccccc;
             font-family: 'MyriadPro';
             &:hover {
-                text-decoration: underline;
+                color: var(--main-brown);
             }
         }
     }

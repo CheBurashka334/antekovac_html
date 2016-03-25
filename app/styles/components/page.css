@@ -25,6 +25,7 @@
 		will-change: opacity;
 		transition: opacity .3s;
 		transform: scale(0);
+		cursor: pointer;
 		.page-aside.open ~ & {
 			transform: scale(1);
 		}

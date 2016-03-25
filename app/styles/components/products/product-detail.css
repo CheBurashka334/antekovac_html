@@ -68,6 +68,9 @@
 			}
 			.btn-print {
 				border-right-color: #25262a;
+				&:hover {
+					border-right-color: #25262a;
+				}
 			}
 		}
 	}

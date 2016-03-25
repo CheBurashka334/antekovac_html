@@ -177,7 +177,7 @@
 				<div class="tile-block__image">
 					<img src="images/individual.png" alt=""/>
 				</div>
-                <button class="btn btn--arrow btn--transparent--fullwidth">Заказать индивидуальное изделие</button>
+                <button class="btn btn--arrow btn--transparent btn--fullwidth js-toggle-box" data-box=".modal.order-form">Заказать индивидуальное изделие</button>
 			</div>
 		</div>
 		<div class="col-8_lg-8_md-7_sm-12_xs-12">
@@ -232,6 +232,62 @@
 		</div>
 		<div class="tile-block__video">
 			<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+	</div>
+</div>
+<div class="modal order-form">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.order-form"></button>
+		<div class="modal__inner">
+			<div class="grid-equalHeight-bigGutter">
+				<div class="col-5 hidden-mobile">
+					<div class="modal__image" style="background-image: url('images/lady-with-bags.png');"></div>
+				</div>
+				<div class="col-7_xs-12">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>индивидуальный заказ</h2></div>
+						<div class="modal__form">
+							<div class="field required">
+								<label class="field__label">Ваше имя</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Номер телефона / e-mail</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Сообщение</label>
+								<textarea class="field__inputtext" rows="6"></textarea>
+							</div>
+							<button class="btn">Отправить сообщение</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal message">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message"></button>
+		<div class="modal__inner">
+			<div class="grid">
+				<div class="col-5 hidden-mobile">
+					<div class="modal__image modal__image--vertical" style="background-image: url('images/lady-with-bags.png');"></div>
+				</div>
+				<div class="col-7_xs-12">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>спасибо за ваше обращение!</h2></div>
+						<div class="modal__text">
+							<p class="light-text">В течение 10 минут с Вами свяжется наш менеджер для уточнения деталей и ответит на все Ваши вопросы.</p>
+							</br></br></br></br>
+						</div>
+						<a href="#" class="btn js-anim--click js-toggle-box" data-box=".modal.message">
+							<span class="btn-text">Вернуться назад</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

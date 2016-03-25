@@ -11,6 +11,11 @@
     text-decoration: none;
     font-family: "MyriadPro";
 	box-sizing: border-box;
+	&:hover {
+		background-color: var(--main-brown);
+		border-color: var(--main-brown);
+		color: white;
+	}
 	&[class*="medium"]{
 		padding: 1em 90px;
 	}
@@ -139,6 +144,9 @@
         vertical-align: middle;
 		will-change: transform;
 		display: inline-block;
+		span {
+			vertical-align: baseline;
+		}
     }
     .i-icon {
         margin-right: 3px;
@@ -321,6 +329,10 @@
 		}
 	}
 	&.btn-print {
+		&:hover {
+			background-color: var(--dark-gray);
+			border-color: var(--dark-gray);
+		}
 		.i-icon {
 			fill: var(--main-brown);
 		}

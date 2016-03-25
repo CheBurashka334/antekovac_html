@@ -430,10 +430,10 @@
 		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.one-click-form"></button>
 		<div class="modal__inner">
 			<div class="grid-equalHeight-bigGutter">
-				<div class="col-5">
+				<div class="col-5 hidden-mobile">
 					<div class="modal__image" style="background-image: url('images/product-detail/thumb/afm-white-8264.png');"></div>
 				</div>
-				<div class="col-7">
+				<div class="col-7_xs-12">
 					<div class="modal__content">
 						<div class="modal__heading"><h2>Купить в 1 клик</h2></div>
 						<div class="modal__form">
@@ -458,10 +458,10 @@
 		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message"></button>
 		<div class="modal__inner">
 			<div class="grid-bigGutter-middle">
-				<div class="col-5">
+				<div class="col-5 hidden-mobile">
 					<div class="modal__image" style="background-image: url('images/product-detail/thumb/afm-white-8264.png');"></div>
 				</div>
-				<div class="col-7">
+				<div class="col-7_xs-12">
 					<div class="modal__content">
 						<div class="modal__heading"><h2>товар добавлен в отложенное</h2></div>
 						<div class="modal__text">
@@ -469,7 +469,7 @@
 						</div>
 						<a href="#" class="btn btn--with-icon js-anim--click">
 							<svg class="i-icon i-icon--small"><use xlink:href="#heart"/></svg>
-							<span class="btn-text">Перейти в отложенные товары</span>
+							<span class="btn-text"><span class="hidden-mobile">Перейти в </span> Отложенные товары</span>
 						</a>
 					</div>
 				</div>

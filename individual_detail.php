@@ -43,11 +43,11 @@
 					<p>Решение ANTE KOVAC: В основу дизайна легла модель №55, которая по габаритам соответствует требованиям авиакомпаний к ручной клади. Цветовое решегте эскизов было предложено в мягких тонах с применением техники выжигания по коже. Внутри нанесена памятная надпись.</p>
 				</div>
 				<div class="individual-product__buttons">
-					<button class="btn btn--with-icon--dark btn-question">
+					<button class="btn btn--with-icon--dark js-anim--click btn-question js-toggle-box" data-box=".modal.message">
 						<svg class="i-icon"><use xlink:href="#question"/></svg>
 						<span class="btn-text">Задать вопрос</span>
 					</button>
-					<button class="btn btn--with-icon--primary btn-order">
+					<button class="btn btn--with-icon--primary js-anim--click btn-order js-toggle-box" data-box=".modal.order-form">
 						<svg class="i-icon"><use xlink:href="#shop"/></svg>
 						<span class="btn-text">Сделать заказ</span>
 					</button>
@@ -71,6 +71,61 @@
 				<span class="text-open">Читать полностью</span>
 				<span class="text-close">Свернуть</span>
 			</a>
+		</div>
+	</div>
+</div>
+<div class="modal order-form">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.order-form"></button>
+		<div class="modal__inner">
+			<div class="grid-equalHeight-bigGutter">
+				<div class="col-5 hidden-mobile">
+					<div class="modal__image" style="background-image: url('images/lady-with-bags.png');"></div>
+				</div>
+				<div class="col-7_xs-12">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>индивидуальный заказ</h2></div>
+						<div class="modal__form">
+							<div class="field required">
+								<label class="field__label">Ваше имя</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Номер телефона / e-mail</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Сообщение</label>
+								<textarea class="field__inputtext" rows="6"></textarea>
+							</div>
+							<button class="btn">Отправить сообщение</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal message">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.message"></button>
+		<div class="modal__inner">
+			<div class="grid">
+				<div class="col-5 hidden-mobile">
+					<div class="modal__image modal__image--vertical" style="background-image: url('images/lady-with-bags.png');"></div>
+				</div>
+				<div class="col-7_xs-12">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>спасибо за ваше обращение!</h2></div>
+						<div class="modal__text">
+							<p class="light-text">В течение 10 минут с Вами свяжется наш менеджер для уточнения деталей и ответит на все Ваши вопросы.</p>
+						</div>
+						<a href="#" class="btn js-anim--click js-toggle-box" data-box=".modal.message">
+							<span class="btn-text">Вернуться назад</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
