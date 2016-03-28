@@ -470,5 +470,8 @@ table {
 @media screen and (--medium-up){
 	.js-anim-scroll {
 		opacity: 0;
+		.page.fixed & {
+			transform: none!important;
+		}
 	}
 }

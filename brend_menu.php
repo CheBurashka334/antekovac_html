@@ -21,13 +21,13 @@
 				<a href="about.php" class="submenu__link dropdown__title">Мы</a>
 			</div>
 			<div class="submenu__item col dropdown__item">
-				<a href="#" class="submenu__link dropdown__title">кто</a>
+				<a href="who.php" class="submenu__link dropdown__title">кто</a>
 			</div>
 			<div class="submenu__item col dropdown__item">
-				<a href="#" class="submenu__link dropdown__title">для кого</a>
+				<a href="for-whom.php" class="submenu__link dropdown__title">для кого</a>
 			</div>
 			<div class="submenu__item col dropdown__item">
-				<a href="#" class="submenu__link dropdown__title">что говорят</a>
+				<a href="what-they-say.php" class="submenu__link dropdown__title">что говорят</a>
 			</div>
 		</div>
 	</div>

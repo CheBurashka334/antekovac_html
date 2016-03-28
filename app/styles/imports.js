@@ -40,6 +40,7 @@ require("./components/checkout.css");
 require("./components/basket.css");
 require("./components/order.css");
 require("./components/modal.css");
+require("./components/reviews.css");
 
 /*Products*/
 

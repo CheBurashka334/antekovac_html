@@ -5,6 +5,10 @@
     text-align: right;
 	margin-top: 1em;
 	margin-bottom: 34px;
+	padding: 0;
+	&--left {
+		text-align: left;
+	}
     &__item {
         display: inline-block;
         vertical-align: middle;
@@ -35,8 +39,17 @@
                 color: var(--main-brown);
 				border-color: var(--main-brown);
             }
+			.tile-block &,
+			.tile-page & {
+				background: var(--main-white);
+				&:hover {
+					border-color: transparent;
+				}
+			}
         }
-        &--current {
+        &--current,
+		.tile-block &--current,
+		.tile-page &--current {
             a, a:hover {
 				color: white;
                 background: var(--main-brown);
