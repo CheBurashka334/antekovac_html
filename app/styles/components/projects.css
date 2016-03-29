@@ -1,0 +1,27 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.projects {
+	margin: 70px 0 30px;
+	&__list {
+		margin-top: 35px;
+	}
+	&__item {
+		text-align: center;
+	}
+}
+@media (--mobile){
+	.projects {
+		margin: 30px 0;
+		&__list {
+			justify-content: center;
+		}
+		&__item {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

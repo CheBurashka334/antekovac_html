@@ -10128,6 +10128,8 @@ var App =
 	__webpack_require__(38);
 	__webpack_require__(39);
 	__webpack_require__(67);
+	__webpack_require__(68);
+	__webpack_require__(69);
 	
 	/*Products*/
 	
@@ -11025,6 +11027,18 @@ var App =
 				$(this).toggleClass('opened');
 			});
 	
+			if ($(window).width() < 768) {
+				$('.read-more--mobile').each(function () {
+					$(this).wrapInner('<div class="read-more collapsible"><div class="collapsible__body"></div></div>');
+					$(this).append('<a href="javascript:void(0);" class="collapsible__link js-toggle-box" data-box=".read-more"><span class="text-open">Читать полностью</span><span class="text-close">Свернуть</span></a>');
+				});
+				/*$('.read-more--mobile').on('click', '.js-toggle-box', function(e){
+	   	e.stopPropagation();
+	   	//$(this).trigger('click');
+	   	$(this).on('click');
+	   });*/
+			}
+	
 			$('.menu--multilevel--aside > .menu-item--parent > .menu-item__link').on('click', function (e) {
 				e.preventDefault();
 				if ($(this).parents('.menu--multilevel--aside').length > 1) {
@@ -11112,6 +11126,18 @@ var App =
 /* 65 */,
 /* 66 */,
 /* 67 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 68 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 69 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

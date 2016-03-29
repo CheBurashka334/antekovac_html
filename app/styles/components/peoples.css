@@ -1,0 +1,84 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.peoples {
+	&__name {
+		font: 20px "Bebas Neue Book";
+		color: var(--main-brown);
+		text-align: center;
+		margin: 20px 0 10px;
+	}
+	&__role {
+		text-align: center;
+		color: var(--dark-gray);
+		.tile-block--dark & {
+			color: #aaacaf;
+		}
+	}
+	&__list {
+		margin-top: 40px;
+	}
+	&__item {
+		margin-bottom: 50px;
+	}
+	&__item &__photo img {
+		border: 1px solid #e5e5e5;
+	}
+	&--main.tile-block {
+		padding: 40px 30px 50px;
+	}
+	&--main &__name {
+		font-size: 24px;
+		margin: 40px 0 20px;
+	}
+	&--main &__role {
+		margin-bottom: 30px;
+	}
+}
+.block--peoples {
+	margin-top: 35px;
+	margin-bottom: 40px;
+	& + & {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media (--mobile){
+	.peoples {
+		&__item,
+		[class*="bigGutter"] &__item.col {
+			padding: 0;
+			margin-bottom: 1.5em;
+		}
+		&__item &__photo img {
+			border: 0;
+		}
+		&__item &__name {
+			font-size: 16px;
+			margin: 1em 0.5em 0.5em;
+		}
+		&__item &__role {
+			font-size: 11px;
+		}
+		&__list {
+			margin-top: 30px;
+		}
+		&--main {
+			margin-bottom: 0;
+		}
+	}
+	.block--peoples {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 1px;
+		& + & {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 10px;
+		}
+		&.mobile-fullwidth {
+			background: var(--main-white);
+		}
+	}
+}

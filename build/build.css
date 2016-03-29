@@ -2452,6 +2452,11 @@ h3 {
 	text-align: left;
 	margin: 2em 0;
 }
+@media (max-width: 767px){
+	h3 {
+		margin: 1em 0;
+	}
+}
 h4 {
     font-size: 15px;
 }
@@ -3872,6 +3877,12 @@ table.nostyle th, table.nostyle td {
 	float: left;
 	margin-right: 20px;
 }
+.tile-block__image--center {
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
 .tile-block__video {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -4052,6 +4063,17 @@ table.nostyle th, table.nostyle td {
 }
 .tile-block--small.tile-block--image .tile-block__content {
 	padding: 16px 25px 50px;
+}
+.tile-block--big {
+	padding: 40px 50px 70px;
+}
+.tile-block--big h1:first-child,
+		.tile-block--big h2:first-child,
+		.tile-block--big h3:first-child,
+		.tile-block--big h4:first-child,
+		.tile-block--big h5:first-child,
+		.tile-block--big h6:first-child {
+	margin-top: 0;
 }
 @media (min-width: 768px){
 	.tile-block--bordered--no-mobile{
@@ -4285,6 +4307,9 @@ table.nostyle th, table.nostyle td {
 		padding: 20px 25px 0;
 		margin-bottom: 0;
 	}
+	.tile-block--big {
+		padding: 30px 20px;
+	}
 	.tile-block--small.tile-block--image .tile-block__content {
 		padding-bottom: 30px;
 	}
@@ -4315,12 +4340,8 @@ table.nostyle th, table.nostyle td {
 }
 @media (max-width: 767px) {
 	.tile-page {
-		/*width: 100vw;
-		margin-left: calc((100vw - 100%) / -2);*/
 		margin-bottom: 0;
 	}
-	/*border-left: 1px solid #dcdcdc;
-		border-right: 1px solid #dcdcdc;*/
 	.tile-page__head {
 		padding: 20px 25px;
 	}
@@ -4794,6 +4815,17 @@ footer {
 .page--individual {
 	margin-bottom: 50px;
 }
+.page--text.tile-page {
+	margin-top: 20px;
+}
+.page--text.tile-page .tile-page__body > *:first-child {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+}
+.page--about {
+	padding-bottom: 105px;
+	margin-bottom: 0;
+}
 @media (max-width: 767px){
 	.page--thanks {
 		text-align: left;
@@ -4812,6 +4844,12 @@ footer {
 	.page--404 .heading {
 		margin-top: -75px;
 		margin-bottom: 90px;
+	}
+	.page--about {
+		padding-bottom: 0;
+	}
+	.page--about .block--look-book {
+		margin-top: 40px;
 	}
 }:root {
 	/* пути к картинкам */
@@ -8010,6 +8048,112 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	}
 	.block--archive .heading {
 		margin: 20px 0;
+	}
+}:root {
+	/* пути к картинкам */
+}
+.peoples__name {
+	font: 20px "Bebas Neue Book";
+	color: #b59063;
+	text-align: center;
+	margin: 20px 0 10px;
+}
+.peoples__role {
+	text-align: center;
+	color: #2e3034;
+}
+.tile-block--dark .peoples__role {
+	color: #aaacaf;
+}
+.peoples__list {
+	margin-top: 40px;
+}
+.peoples__item {
+	margin-bottom: 50px;
+}
+.peoples__item .peoples__photo img {
+	border: 1px solid #e5e5e5;
+}
+.peoples--main.tile-block {
+	padding: 40px 30px 50px;
+}
+.peoples--main .peoples__name {
+	font-size: 24px;
+	margin: 40px 0 20px;
+}
+.peoples--main .peoples__role {
+	margin-bottom: 30px;
+}
+.block--peoples {
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+.block--peoples + .block--peoples {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+@media (max-width: 767px){
+	.peoples__item,
+		[class*="bigGutter"] .peoples__item.col {
+		padding: 0;
+		margin-bottom: 1.5em;
+	}
+	.peoples__item .peoples__photo img {
+		border: 0;
+	}
+	.peoples__item .peoples__name {
+		font-size: 16px;
+		margin: 1em 0.5em 0.5em;
+	}
+	.peoples__item .peoples__role {
+		font-size: 11px;
+	}
+	.peoples__list {
+		margin-top: 30px;
+	}
+	.peoples--main {
+		margin-bottom: 0;
+	}
+	.block--peoples {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 1px;
+	}
+	.block--peoples + .block--peoples {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 10px;
+	}
+	.block--peoples.mobile-fullwidth {
+		background: #f2f2f2;
+	}
+}:root {
+	/* пути к картинкам */
+}
+.projects {
+	margin: 70px 0 30px;
+}
+.projects__list {
+	margin-top: 35px;
+}
+.projects__item {
+	text-align: center;
+}
+@media (max-width: 767px){
+	.projects {
+		margin: 30px 0;
+	}
+	.projects__list {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.projects__item {
+		margin-bottom: 30px;
+	}
+	.projects__item:last-child {
+		margin-bottom: 0;
 	}
 }:root {
 	/* пути к картинкам */
