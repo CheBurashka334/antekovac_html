@@ -1,0 +1,50 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.news {
+	&__title {
+		font-size: 16px;
+		a {
+			color: inherit;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			&:hover {
+				border-color: #939393;
+			}
+		}
+	}
+}
+.block--archive {
+	margin-top: 70px;
+	margin-bottom: 40px;
+	& + & {
+		margin-top: 50px;
+	}
+	.heading {
+		margin: 40px 0;
+		& :--heading {
+			color: #3d3b33;
+		}
+	}
+	.video-container {
+		margin-bottom: 20px;
+	}
+	.btn {
+		margin-top: 10px;
+	}
+}
+@media (--mobile){
+	.news {
+		&__item {
+			position: relative;
+			margin-bottom: 0;
+		}
+	}
+	.block--archive {
+		margin-top: 20px;
+		.heading {
+			margin: 20px 0;
+		}
+	}
+}

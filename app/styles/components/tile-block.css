@@ -214,6 +214,25 @@
 		padding-top: 50px;
 		padding-bottom: 70px;
 	}
+	&--small {
+		padding: 20px 25px 50px;
+	}
+	&--image {
+		padding: 0;
+	}
+	&--image &__image {
+		float: none;
+		margin: 0;
+		img {
+			width: 100%;
+		}
+	}
+	&--image &__content {
+		padding: 30px 40px;
+	}
+	&--small.tile-block--image &__content {
+		padding: 16px 25px 50px;
+	}
 }
 @media (--small-up){
 	.tile-block {
@@ -401,6 +420,9 @@
 		&--reviews {
 			padding: 20px 25px 0;
 			margin-bottom: 0;
+		}
+		&--small.tile-block--image &__content {
+			padding-bottom: 30px;
 		}
 	}
 }

@@ -434,8 +434,7 @@
 }
 
 .news-slider {
-	&,
-	&.tile-block {
+	&, &.tile-block {
 		padding: 40px 0;
 		margin-top: 20px;
 	}
@@ -456,7 +455,8 @@
 		font-size: 16px;
 		margin-bottom: 10px;
 	}
-	&__buttons {
+	&__buttons,
+	&.tile-block &__buttons {
 		position: absolute;
 		left: 10px;
 		bottom: 0;
@@ -495,7 +495,8 @@
 		.owl-item &__slide &__content {
 			padding: 0 35px;
 		}
-		&__buttons {
+		&__buttons,
+		&.tile-block &__buttons {
 			position: relative;
 			left: auto;
 			bottom: auto;
@@ -519,6 +520,11 @@
 			left: 0;
 			bottom: 0;
 			background: var(--main-white);
+		}
+		&__buttons .btn {
+			width: 100%;
+			max-width: 270px;
+			text-align: center;
 		}
 	}
 }
