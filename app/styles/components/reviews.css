@@ -3,97 +3,19 @@
 @import "../selectors.css";
 
 .reviews {
-	&__slider {
-		padding: 40px 0;
-		margin-top: 20px;
-	}
-	.owl-item &__slide &__img img {
-		width: auto;
-		margin: 0 auto;
-	}
-	.owl-item &__slide &__content {
-		flex-wrap: wrap;
-		align-content: flex-start;
-		padding-bottom: 80px;
-		position: relative;
-		> * {
-			width: 100%;
-		}
+	&__item {
+		margin: 70px 0;
 	}
 	&__title {
 		font-size: 16px;
-		margin-bottom: 10px;
-	}
-	&__buttons {
-		position: absolute;
-		left: 10px;
-		bottom: 0;
-		.btn {
-			margin: 0;
-			&[class*="--medium"]{
-				padding-left: 73px;
-				padding-right: 73px;
-			}
-		}
-	}
-	&__item {
-		margin: 70px 0;
 	}
 	&__item &__title {
 		margin-bottom: 1.5em;
 	}
 }
-@media (--small-down){
-	.reviews {
-		&__slider .dark-navs--outside{
-			[class*="nav-"] {
-				top: 25vw;
-			}
-			.nav-prev {
-				left: 0;
-			}
-			.nav-next {
-				right: 0;
-			}
-		}
-		&__slide {
-			align-items: flex-start;
-		}
-		&__slide &__img {
-			max-height: 50vw;
-			margin-bottom: 40px;
-			img {
-				object-fit: contain;
-			}
-		}
-		.owl-item &__slide &__content {
-			padding: 0 35px;
-		}
-		&__buttons {
-			position: relative;
-			left: auto;
-			bottom: auto;
-			margin-top: 20px;
-		}
-	}
-}
+
 @media (--mobile){
 	.reviews {
-		&__slider {
-			padding: 30px 0;
-			margin-top: 0;
-			margin-bottom: 0;
-			&:after {
-				content: '';
-				display: block;
-				width: 100%;
-				height: 5px;
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				background: var(--main-white);
-			}
-		}
 		&__item {
 			margin: 30px 0 50px;
 		}

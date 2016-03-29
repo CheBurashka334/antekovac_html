@@ -12,53 +12,53 @@
         <h2>Бренд</h2>
     </div>
 	<?php require ('brend_menu.php') ?>
-	<div class="tile-block reviews__slider mobile-fullwidth">
+	<div class="tile-block news-slider mobile-fullwidth">
 		<div class="grid-noGutter-center">
 			<div class="col-10_sm-12">
 				<div class="carousel--dark-navs--outside">
 					<div class="owl-carousel">
-						<div class="reviews__slide grid-equalHeight">
-							<div class="col-5_sm-12 reviews__img">
+						<div class="news-slider__slide grid-equalHeight">
+							<div class="col-5_sm-12 news-slider__img">
 								<img src="images/review-img.jpg"/>
 							</div>
-							<div class="col-6_sm-12 reviews__content">
-								<div class="reviews__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
-								<div class="reviews__text">
+							<div class="col-6_sm-12 news-slider__content">
+								<div class="news-slider__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
+								<div class="news-slider__text">
 									<p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что консультация с широким активом требуют от нас анализа направлений прогрессивного развития. С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
 								</div>
-								<div class="reviews__buttons">
+								<div class="news-slider__buttons">
 									<button class="btn btn--dark--medium">
 										<span class="btn-text">Оставить свой отзыв</span>
 									</button>
 								</div>
 							</div>
 						</div>
-						<div class="reviews__slide grid-equalHeight">
-							<div class="col-5_sm-12 reviews__img">
+						<div class="news-slider__slide grid-equalHeight">
+							<div class="col-5_sm-12 news-slider__img">
 								<img src="images/review-img.jpg"/>
 							</div>
-							<div class="col-6_sm-12 reviews__content">
-								<div class="reviews__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
-								<div class="reviews__text">
+							<div class="col-6_sm-12 news-slider__content">
+								<div class="news-slider__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
+								<div class="news-slider__text">
 									<p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что консультация с широким активом требуют от нас анализа направлений прогрессивного развития. С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
 								</div>
-								<div class="reviews__buttons">
+								<div class="news-slider__buttons">
 									<button class="btn btn--dark--medium">
 										<span class="btn-text">Оставить свой отзыв</span>
 									</button>
 								</div>
 							</div>
 						</div>
-						<div class="reviews__slide grid-equalHeight">
-							<div class="col-5_sm-12 reviews__img">
+						<div class="news-slider__slide grid-equalHeight">
+							<div class="col-5_sm-12 news-slider__img">
 								<img src="images/review-img.jpg"/>
 							</div>
-							<div class="col-6_sm-12 reviews__content">
-								<div class="reviews__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
-								<div class="reviews__text">
+							<div class="col-6_sm-12 news-slider__content">
+								<div class="news-slider__title">Анастасия Мотвиенко, <span class="light-color">Новосибирск</span></div>
+								<div class="news-slider__text">
 									<p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Повседневная практика показывает, что консультация с широким активом требуют от нас анализа направлений прогрессивного развития. С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Повседневная практика показывает, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
 								</div>
-								<div class="reviews__buttons">
+								<div class="news-slider__buttons">
 									<button class="btn btn--dark--medium">
 										<span class="btn-text">Оставить свой отзыв</span>
 									</button>
@@ -131,7 +131,7 @@
 						Одиннадцатиклассница в цирке
 					</div>
 					<a href="#" class="btn btn--transparent btn--arrow">
-						Посмотреть <span class="hidden-mobile">коллекции Ante Kovac</span>
+						<span class="btn-text">Посмотреть <span class="hidden-mobile">коллекции Ante Kovac</span></span>
 					</a>
 				</div>
 			</div>

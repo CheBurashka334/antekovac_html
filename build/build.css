@@ -3230,6 +3230,97 @@ table.nostyle th, table.nostyle td {
 		right: 0;
 	}
 }
+.news-slider,
+	.news-slider.tile-block {
+	padding: 40px 0;
+	margin-top: 20px;
+}
+.owl-item .news-slider__slide .news-slider__img img {
+	width: auto;
+	margin: 0 auto;
+}
+.owl-item .news-slider__slide .news-slider__content {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-align-content: flex-start;
+	    -ms-flex-line-pack: start;
+	        align-content: flex-start;
+	padding-bottom: 80px;
+	position: relative;
+}
+.owl-item .news-slider__slide .news-slider__content > * {
+	width: 100%;
+}
+.news-slider__title {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.news-slider__buttons {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+}
+.news-slider__buttons .btn {
+	margin: 0;
+}
+.news-slider__buttons .btn[class*="--medium"]{
+	padding-left: 73px;
+	padding-right: 73px;
+}
+@media (max-width: 1023px){
+	.news-slider .dark-navs--outside [class*="nav-"] {
+		top: 25vw;
+	}
+	.news-slider .dark-navs--outside .nav-prev {
+		left: 0;
+	}
+	.news-slider .dark-navs--outside .nav-next {
+		right: 0;
+	}
+	.news-slider__slide {
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
+		        align-items: flex-start;
+	}
+	.news-slider__slide .news-slider__img {
+		max-height: 50vw;
+		margin-bottom: 40px;
+	}
+	.news-slider__slide .news-slider__img img {
+		-o-object-fit: contain;
+		   object-fit: contain;
+	}
+	.owl-item .news-slider__slide .news-slider__content {
+		padding: 0 35px;
+	}
+	.news-slider__buttons {
+		position: relative;
+		left: auto;
+		bottom: auto;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 767px){
+	.news-slider,
+	.tile-block.news-slider {
+		padding: 30px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.news-slider:after, .tile-block.news-slider:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: #f2f2f2;
+	}
+}
 [class*="navs"].disabled,
 [class*="dots"].disabled,
 .owl-nav.disabled {
@@ -7811,100 +7902,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 :root {
 	/* пути к картинкам */
 }
-.reviews__slider {
-	padding: 40px 0;
-	margin-top: 20px;
-}
-.owl-item .reviews__slide .reviews__img img {
-	width: auto;
-	margin: 0 auto;
-}
-.owl-item .reviews__slide .reviews__content {
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-align-content: flex-start;
-	    -ms-flex-line-pack: start;
-	        align-content: flex-start;
-	padding-bottom: 80px;
-	position: relative;
-}
-.owl-item .reviews__slide .reviews__content > * {
-	width: 100%;
+.reviews__item {
+	margin: 70px 0;
 }
 .reviews__title {
 	font-size: 16px;
-	margin-bottom: 10px;
-}
-.reviews__buttons {
-	position: absolute;
-	left: 10px;
-	bottom: 0;
-}
-.reviews__buttons .btn {
-	margin: 0;
-}
-.reviews__buttons .btn[class*="--medium"]{
-	padding-left: 73px;
-	padding-right: 73px;
-}
-.reviews__item {
-	margin: 70px 0;
 }
 .reviews__item .reviews__title {
 	margin-bottom: 1.5em;
 }
-@media (max-width: 1023px){
-	.reviews__slider .dark-navs--outside [class*="nav-"] {
-		top: 25vw;
-	}
-	.reviews__slider .dark-navs--outside .nav-prev {
-		left: 0;
-	}
-	.reviews__slider .dark-navs--outside .nav-next {
-		right: 0;
-	}
-	.reviews__slide {
-		-webkit-box-align: start;
-		-webkit-align-items: flex-start;
-		    -ms-flex-align: start;
-		            -ms-grid-row-align: flex-start;
-		        align-items: flex-start;
-	}
-	.reviews__slide .reviews__img {
-		max-height: 50vw;
-		margin-bottom: 40px;
-	}
-	.reviews__slide .reviews__img img {
-		-o-object-fit: contain;
-		   object-fit: contain;
-	}
-	.owl-item .reviews__slide .reviews__content {
-		padding: 0 35px;
-	}
-	.reviews__buttons {
-		position: relative;
-		left: auto;
-		bottom: auto;
-		margin-top: 20px;
-	}
-}
 @media (max-width: 767px){
-	.reviews__slider {
-		padding: 30px 0;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.reviews__slider:after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 5px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		background: #f2f2f2;
-	}
 	.reviews__item {
 		margin: 30px 0 50px;
 	}
