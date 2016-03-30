@@ -3978,6 +3978,11 @@ table.nostyle th, table.nostyle td {
 	margin-left: auto;
 	margin-right: auto;
 }
+.page--collections .tile-block--collection-image .tile-block__content .btn {
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
 .tile-block--collection-image .collection__note {
 	color: #b7b7b7;
 	text-align: center;
@@ -3987,6 +3992,9 @@ table.nostyle th, table.nostyle td {
 	color: #2e3034;
 	text-align: center;
 	margin-bottom: 40px;
+}
+.page--collections .tile-block--collection-image .collection__heading {
+	font: 24px "Bebas Neue Book";
 }
 .tile-block .btn {
 	margin: 15px 0;
@@ -4348,6 +4356,7 @@ table.nostyle th, table.nostyle td {
 		padding: 20px;
 		padding-left: 15px;
 		text-align: left;
+		min-width: 58%;
 	}
 	.tile-block--collection-image .collection__note {
 		text-align: left;
@@ -4899,7 +4908,14 @@ footer {
 .page--brend {
 	margin-bottom: 35px;
 }
+.page--collections {
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
 @media (max-width: 767px){
+	.page {
+		overflow-y: initial;
+	}
 	.page--thanks {
 		text-align: left;
 	}
@@ -5345,7 +5361,9 @@ footer {
 	background-image: url(/antekovac/images/feed-back-bg.png);
 	background-position: top right;
 	background-repeat: no-repeat;
-	padding: 70px 40px;
+}
+.feed-back .page-aside__wrap {
+	padding: 70px 40px 20px;
 }
 .feed-back .btn-close {
 	position: absolute;
@@ -5357,6 +5375,17 @@ footer {
 }
 .feed-back .field {
 	margin: 35px 0 32px;
+}
+@media (max-width: 767px){
+	.feed-back .page-aside__wrap {
+		padding: 30px;
+	}
+	.feed-back__heading {
+		margin-bottom: 30px;
+	}
+	.feed-back .field {
+		margin: 1em 0 1.5em;
+	}
 }/*!
  * Viewer v0.5.0
  * https://github.com/fengyuanchen/viewer

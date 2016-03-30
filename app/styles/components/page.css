@@ -98,9 +98,14 @@
 	&--brend {
 		margin-bottom: 35px;
 	}
+	&--collections {
+		margin-top: 30px;
+		margin-bottom: 45px;
+	}
 }
 @media (--mobile){
 	.page {
+		overflow-y: initial;
 		&--thanks {
 			text-align: left;
 			.heading {

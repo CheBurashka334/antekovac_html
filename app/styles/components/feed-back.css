@@ -5,7 +5,9 @@
 	background-image: url(var(--img-path)/feed-back-bg.png);
 	background-position: top right;
 	background-repeat: no-repeat;
-	padding: 70px 40px;
+	.page-aside__wrap {
+		padding: 70px 40px 20px;
+	}
 	.btn-close {
 		position: absolute;
 		top: 25px;
@@ -16,5 +18,18 @@
 	}
 	.field {
 		margin: 35px 0 32px;
+	}
+}
+@media (--mobile){
+	.feed-back {
+		.page-aside__wrap {
+			padding: 30px;
+		}
+		&__heading {
+			margin-bottom: 30px;
+		}
+		.field {
+			margin: 1em 0 1.5em;
+		}
 	}
 }

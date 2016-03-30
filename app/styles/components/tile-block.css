@@ -146,6 +146,11 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			.page--collections & {
+				text-align: center;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
 		}
 	}
 	&--collection-image .collection {
@@ -158,6 +163,9 @@
 			color: var(--dark-gray);
 			text-align: center;
 			margin-bottom: 40px;
+			.page--collections & {
+				font: 24px "Bebas Neue Book";
+			}
 		}
 	}
     .btn {
@@ -456,6 +464,7 @@
 			padding: 20px;
 			padding-left: 15px;
 			text-align: left;
+			min-width: 58%;
 		}
 		&--collection-image .collection {
 			&__note {
