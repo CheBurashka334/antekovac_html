@@ -493,7 +493,7 @@
 			}
 		}
 		.owl-item &__slide &__content {
-			padding: 0 35px;
+			padding: 0 30px;
 		}
 		&__buttons,
 		&.tile-block &__buttons {

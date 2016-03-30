@@ -12,7 +12,7 @@
 	height: 100%;
 	display: table;
 	table-layout: fixed;
-	overflow: hidden;
+	overflow-y: hidden;
 	&::before {
 		content: '';
 		display: block;
@@ -58,9 +58,6 @@
 	}
 	&--profile {
 		margin-bottom: 55px;
-		.tile-page__body {
-			padding: 30px 45px 70px;
-		}
 		.form-block {
 			max-width: 490px;
 		}
@@ -98,6 +95,9 @@
 		padding-bottom: 105px;
 		margin-bottom: 0;
 	}
+	&--brend {
+		margin-bottom: 35px;
+	}
 }
 @media (--mobile){
 	.page {
@@ -123,6 +123,20 @@
 			padding-bottom: 0;
 			.block--look-book {
 				margin-top: 40px;
+			}
+		}
+		&--brend {
+			margin-bottom: 0;
+		}
+		&--profile {
+			.note-text {
+				margin-top: 10px;
+			}
+			.btn[class*="--medium"]{
+				width: 100%;
+				max-width: 300px;
+				margin: 0 auto 20px;
+				display: block;
 			}
 		}
 	}
