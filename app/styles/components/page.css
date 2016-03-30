@@ -102,6 +102,9 @@
 		margin-top: 30px;
 		margin-bottom: 45px;
 	}
+	&--collection {
+		margin-bottom: 45px;
+	}
 }
 @media (--mobile){
 	.page {

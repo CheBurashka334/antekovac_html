@@ -21,6 +21,14 @@
 		@media (--big){
 			max-width: 240px;
 		}
+		@media (--medium), (--big){
+			.tile-block--collection--big  & {
+				max-width: 100%;
+				width: calc(100% - 80px);
+				height: calc(100% - 80px);
+				justify-content: space-around;
+			}
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -50,6 +58,11 @@
 		font-weight: 400;
 		color: white;
 		font-size: 18px;
+		.tile-block--collection--big  & {
+			color: #a4a4a4;
+			margin: 25px 10px 40px;
+			font: 14px "Roboto";
+		}
 	}
 	&__icon {
 		margin: 20px 0;
@@ -70,6 +83,7 @@
 		.btn {
 			width: 100%;
 			margin: 0;
+			padding-right: 50px;
 			&:hover {
 				background-color: transparent;
 				border-color: currentColor;

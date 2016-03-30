@@ -127,6 +127,11 @@
 			background-repeat: no-repeat;
 			background-position: top center;
 		}
+		&--big {
+			@media (--big){
+				min-height: 540px;
+			}
+		}
 	}
 	&--collection-image {
 		padding: 0;
@@ -270,6 +275,17 @@
 	}
 	&--horizontal &__content {
 		width: calc(50% + 10px);
+	}
+	&--scrollable {
+		padding: 40px 40px 55px;
+	}
+	&--scrollable &__content {
+		padding-right: 40px;
+		max-height: 28em;
+		overflow: auto;
+	}
+	&--scrollable &__heading {
+		margin-bottom: 1.5em;
 	}
 }
 @media (--small-up){

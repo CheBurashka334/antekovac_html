@@ -3,11 +3,10 @@
 	<ul class="breadcrumbs">
 		<li class="breadcrumbs__item"><a href="#">Главная</a></li>
 		<li class="breadcrumbs__item"><a href="#">Бренд</a></li>
-		<li class="breadcrumbs__item"><a href="#">История</a></li>
-		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Для кого</a></li>
+		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Коллекции</a></li>
 	</ul>
 </div>
-<div class="container reviews">
+<div class="container">
 	<div class="heading">
         <h2>Бренд</h2>
     </div>
