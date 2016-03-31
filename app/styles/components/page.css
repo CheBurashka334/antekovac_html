@@ -105,6 +105,19 @@
 	&--collection {
 		margin-bottom: 45px;
 	}
+	&--collection-process {
+		margin-top: 20px;
+		margin-bottom: 85px;
+		.heading {
+			position: relative;
+			margin-bottom: 27px;
+		}
+		.btn-back-right {
+			position: absolute;
+			top: -4px;
+			right: 0;
+		}
+	}
 }
 @media (--mobile){
 	.page {

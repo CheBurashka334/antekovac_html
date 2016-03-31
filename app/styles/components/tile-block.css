@@ -279,10 +279,6 @@
 	&--scrollable {
 		padding: 40px 33px 55px 40px;
 	}
-	&--scrollable &__content {
-		max-height: 28em;
-		/*overflow: auto;*/
-	}
 	&--scrollable &__heading {
 		margin-bottom: 1.5em;
 	}

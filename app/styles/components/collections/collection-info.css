@@ -79,15 +79,49 @@
 		@media (--small), (--medium){
 			margin-top: 0;
 			max-width: 175px;
+			.tile-block--collection--big  & {
+				max-width: 100%;
+			}
 		}
 		.btn {
 			width: 100%;
 			margin: 0;
-			padding-right: 50px;
+			&--arrow {
+				padding-right: 50px;
+			}
 			&:hover {
 				background-color: transparent;
 				border-color: currentColor;
 			}
 		}
+	}
+}
+.collection-process {
+	margin-top: 30px;
+	margin-bottom: 90px;
+	&:last-of-type {
+		margin-bottom: 110px;
+	}
+	&__image,
+	&__video {
+		max-width: 640px;
+	}
+	&__text {
+		font: 24px "Bebas Neue Book";
+		color: var(--dark-gray);
+	}
+	&__image,
+	&__video,
+	&__text {
+		&--push-big {
+			padding-left: 35%;
+		}
+		&--push-small {
+			padding-left: 5%;
+		}
+	}
+	& + .btn--center {
+		max-width: 250px;
+		padding-right: 50px;
 	}
 }

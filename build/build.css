@@ -2411,6 +2411,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	font-family: "Bebas Neue Book";
 	color: #b59063;
 }
+.heading > h1.base-color, .heading > h2.base-color, .heading > h3.base-color, .heading > h4.base-color, .heading > h5.base-color, .heading > h6.base-color {
+	color: #3d3b33;
+}
 .heading--dark-block {
 	font-family: "Bebas Neue Book";
 	font-size: 24px;
@@ -4123,10 +4126,6 @@ table.nostyle th, table.nostyle td {
 .tile-block--scrollable {
 	padding: 40px 33px 55px 40px;
 }
-.tile-block--scrollable .tile-block__content {
-	max-height: 28em;
-	/*overflow: auto;*/
-}
 .tile-block--scrollable .tile-block__heading {
 	margin-bottom: 1.5em;
 }
@@ -4929,6 +4928,19 @@ footer {
 }
 .page--collection {
 	margin-bottom: 45px;
+}
+.page--collection-process {
+	margin-top: 20px;
+	margin-bottom: 85px;
+}
+.page--collection-process .heading {
+	position: relative;
+	margin-bottom: 27px;
+}
+.page--collection-process .btn-back-right {
+	position: absolute;
+	top: -4px;
+	right: 0;
 }
 @media (max-width: 767px){
 	.page {
@@ -9177,15 +9189,45 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		margin-top: 0;
 		max-width: 175px;
 	}
+	.tile-block--collection--big  .collection__button {
+		max-width: 100%;
+	}
 }
 .collection__button .btn {
 	width: 100%;
 	margin: 0;
+}
+.collection__button .btn--arrow {
 	padding-right: 50px;
 }
 .collection__button .btn:hover {
 	background-color: transparent;
 	border-color: currentColor;
+}
+.collection-process {
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+.collection-process:last-of-type {
+	margin-bottom: 110px;
+}
+.collection-process__image,
+	.collection-process__video {
+	max-width: 640px;
+}
+.collection-process__text {
+	font: 24px "Bebas Neue Book";
+	color: #2e3034;
+}
+.collection-process__image--push-big, .collection-process__video--push-big, .collection-process__text--push-big {
+	padding-left: 35%;
+}
+.collection-process__image--push-small, .collection-process__video--push-small, .collection-process__text--push-small {
+	padding-left: 5%;
+}
+.collection-process + .btn--center {
+	max-width: 250px;
+	padding-right: 50px;
 }:root {
 	/* пути к картинкам */
 }

@@ -7,64 +7,38 @@
 		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Кандинский цирк</a></li>
 	</ul>
 </div>
-<div class="collection-slider__wrapper">
-	<div class="collection-slider carousel--dark-navs">
-		<div class="collection-slider__info open">
-			<button class="btn btn-info btn--square js-toggle-box" data-box=".collection-slider__info">
-				<span></span><span></span>
-			</button>
-			<div class="collection-info__wrapper">
-				<div class="collection-info">
-					<div class="collection__note">Коллекция</div>
-					<div class="collection__heading"><h1>кандинский цирк</h1></div>
-					<div class="collection__text">
-						<p>Слоган коллекции. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="owl-carousel">
-			<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
-			<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
-		</div>
+<div class="container page--collection-process">
+	<div class="heading">
+		<h2 class="base-color">Процесс создания коллекции кандинский</h2>
+		<a href="collections.php" class="btn btn--flat-light-gray btn-back-right">Назад к коллекциям</a>
 	</div>
-	<div class="container">
-		<div class="collection-slider__tabs">
-		
-		</div>
-		<div class="collection-slider__buttons">
-			<a href="collections.php" class="btn btn--flat-light-gray">Назад к коллекциям</a>
-		</div>
-	</div>
-</div>
-<div class="container page--collection">
 	<div class="grid-equalHeight">
-		<div class="col-4">
-			<div class="tile-block tile-block--collection tile-block--collection--big">
+		<div class="col-3">
+			<div class="tile-block tile-block--collection">
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
 							<img src="images/collection-circus_icon.png"/>
 						</div>
-						<div class="collection__heading">
-							процесс создания
-						</div>
 						<div class="collection__note">
-							История о том, как создавалась коллекция
+							Коллекция
+						</div>
+						<div class="collection__heading">
+							Кандинский
 						</div>
 						<div class="collection__button">
-							<a href="collection_process.php" class="btn btn--transparent btn--arrow">
-								Смотреть процесс создания
+							<a href="collection_detail.php" class="btn btn--transparent">
+								Назад к коллекции
 							</a>
 						</div>
 					</div>
                 </div>
             </div>
 		</div>
-		<div class="col-8">
+		<div class="col-9">
 			<div class="tile-block tile-block--scrollable">
-				<div class="tile-block__heading"><h2 class="base-color">Концепция</h2></div>
-				<div class="tile-block__content js-scrollable-content" data-height="28em">
+				<div class="tile-block__heading"><h2 class="base-color">Процесс</h2></div>
+				<div class="tile-block__content js-scrollable-content">
 					<p>Бренд Ante Kovac – это новое решение в мире моды, стиля и утонченности. Нашими клиентами становятся успешные люди, которые стремятся поразить окружающих своим изысканным и тонким вкусом. Среди приоритетных задач AnteKovac – нахождение новых способов самовыражения и создание сумок и аксессуаров в обход шаблонных стереотипов. Абсолютно все дизайнерские сумки Анте Ковач – изделия ручной работы с тщательно продуманными деталями, рисунки также наносятся вручную. Художник вкладывает свою душу, а вещь сохраняет теплоту мастерских рук.</p>
 					<p>АнтеКовач занимается производством концептуальных, эксклюзивных вещей для тех, кто не приемлет оставаться незамеченным, а предпочитает выделяться из общей массы и выглядеть так, как никто другой. Идеология стиля Ante Kovac основывается на сочетании незаурядных современных форм с изыском художественных уникальных и оригинальных дизайнерских разработок, свой стиль мы называем «ANTEкварный casual”.</p>
 					<p>Наша продукция пользуется спросом у неординарных личностей, которые мыслят смело и не боятся показать свои чувства. Эти люди хотят быть неповторимыми и получать от жизни максимум удовольствия, выражая независимость своего мышления и вкуса.</p>
@@ -77,135 +51,71 @@
 			</div>
 		</div>
 	</div>
-	<div class="heading"><h2>Товары коллекции</h2></div>
-	<div class="products-list clearfix">
-        <div class="product-tile">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/catalog/afm-white-7133.png" alt="" />
-                    </a>
-                </div>
-                <div class="product-tile__info">
-					<div class="product-tile__name">
-						Сумка №40 «Небесно-голубое»
-					</div>
-					<div class="product-tile__price">
-						<div class="price">
-							24 680 ₽
-						</div>
-					</div>
-				</div>
-                <div class="product-tile__like active">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-						</svg>
-                    </a>
-				</div>
-            </div>
-        </div>
-        <div class="product-tile">
-            <div class="product-tile__wrap">
-                <div class="product-tile__image">
-                    <a href="#">
-                        <img src="images/catalog/afm-white-7166.png" alt="" />
-                    </a>
-                </div>
-				<div class="product-tile__info">
-					<div class="product-tile__name">
-						Дорожная сумка
-					</div>
-					<div class="product-tile__price">
-						<div class="price">
-							24 680 ₽
-						</div>
-					</div>
-				</div>
-                <div class="product-tile__like">
-                    <svg class="i-icon"role="img">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-                    </svg>
-                </div>
-				<div class="product-tile__overlay">
-					<a href="#">
-                       <svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-						</svg>
-                    </a>
-				</div>
-            </div>
-        </div>
-		<div class="product-tile product-tile--half-wrapper">
-			<div class="product-tile product-tile--half">
-				<div class="product-tile__wrap">
-					<div class="product-tile__image">
-						<a href="#">
-							<img src="images/catalog/afm-white-8122.png" alt="" />
-						</a>
-					</div>
-					<div class="product-tile__info">
-						<div class="product-tile__name">
-							Ключница
-						</div>
-						<div class="product-tile__price">
-							<div class="price">
-								24 680 ₽
-							</div>
-						</div>
-					</div>
-					<div class="product-tile__like">
-						<svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-						</svg>
-					</div>
-					<div class="product-tile__overlay">
-						<a href="#">
-						   <svg class="i-icon"role="img">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
+	<div class="grid collection-process">
+		<div class="col-7">
+			<div class="collection-process__image">
+				<img src="images/collection/process-1.jpg"/>
 			</div>
-			<div class="product-tile product-tile--half">
-				<div class="product-tile__wrap">
-					<div class="product-tile__image">
-						<a href="#">
-							<img src="images/catalog/afm-white-8134.png" alt="" />
-						</a>
-					</div>
-					<div class="product-tile__info">
-						<div class="product-tile__name">
-						   Обложка
-						</div>
-						<div class="product-tile__price">
-							<div class="price">
-								24 680 ₽
-							</div>
-						</div>
-					</div>
-					<div class="product-tile__like">
-						<svg class="i-icon"role="img">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
-						</svg>
-					</div>
-					<div class="product-tile__overlay">
-						<a href="#">
-						   <svg class="i-icon"role="img">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
+		</div>
+		<div class="col-5-bottom">
+			<div class="collection-process__text">
+				описание кандинский </br>
+				Задача организации, </br>
+				в особенности же сложившаяся </br>
+				структура организации </br>
+				в значительной степени </br>
+				обуславливает создание </br>
+				направлений прогрессивного </br>
+				развития.
 			</div>
 		</div>
 	</div>
-	</br><a href="#" class="btn btn--flat-light-gray--big--center">Смотреть все товары коллекции</a>
+	<div class="grid collection-process">
+		<div class="col-5-bottom">
+			<div class="collection-process__text collection-process__text--push-big">
+				описание обуславливает создание </br>
+				направлений прогрессивного </br>
+				развития.
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="collection-process__image collection-process__image--push-small">
+				<img src="images/collection/process-2.jpg"/>
+			</div>
+		</div>
+	</div>
+	<div class="grid collection-process">
+		<div class="col-7">
+			<div class="collection-process__video">
+				<div class="video-container">
+					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="col-5-bottom">
+			<div class="collection-process__text collection-process__text--push-small">
+				в особенности же сложившаяся </br>
+				структура организации </br>
+				в значительной степени </br>
+				обуславливает создание </br>
+				направлений прогрессивного </br>
+				развития.
+			</div>
+		</div>
+	</div>
+	<div class="grid collection-process">
+		<div class="col-5-bottom">
+			<div class="collection-process__text collection-process__text--push-big">
+				направлений прогрессивного </br>
+				развития.
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="collection-process__image collection-process__image--push-small">
+				<img src="images/collection/process-3.jpg"/>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn btn--arrow btn--transparent btn--center">Смотреть товары коллекции</a>
 </div>
 <?php require ('footer.php') ?>

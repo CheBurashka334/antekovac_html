@@ -176,7 +176,8 @@ var App =
 				__webpack_require__(72)($);
 				$(".js-scrollable-content").mCustomScrollbar({
 					autoDraggerLength: false,
-					theme: 'ant'
+					theme: 'ant',
+					setHeight: $(".js-scrollable-content").attr('data-height') ? $(".js-scrollable-content").attr('data-height') : '20em'
 				});
 			});
 		}

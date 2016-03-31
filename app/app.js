@@ -77,6 +77,7 @@ $(function(){
 			$(".js-scrollable-content").mCustomScrollbar({
 				autoDraggerLength: false,
 				theme: 'ant',
+				setHeight: $(".js-scrollable-content").attr('data-height') ? $(".js-scrollable-content").attr('data-height') : '20em',
 			});
 		});
 	}

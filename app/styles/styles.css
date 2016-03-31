@@ -139,6 +139,9 @@ img {
 	> :--heading {
         font-family: "Bebas Neue Book";
         color: var(--main-brown);
+		&.base-color {
+			color: #3d3b33;
+		}
 	}
 	&--dark-block {
 		font-family: "Bebas Neue Book";

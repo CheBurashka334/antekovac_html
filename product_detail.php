@@ -151,9 +151,6 @@
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
-							<!--svg class="i-icon"role="img">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#architekt"></use>
-							</svg-->
 							<img src="images/collection-circus_icon.png"/>
 						</div>
 						<div class="collection__note">
