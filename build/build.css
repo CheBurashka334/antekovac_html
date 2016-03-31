@@ -9249,11 +9249,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	z-index: 3;
 }
 .collection-slider .owl-carousel .dark-navs {
-	width: 100%;
+	width: calc(100% - 340px);
 	position: absolute;
 	top: 50%;
-	-webkit-transition: width .3s;
-	transition: width .3s;
 }
 .collection-slider__info {
 	position: absolute;
@@ -9262,72 +9260,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	width: 340px;
 	height: 100%;
 	z-index: 3;
-	background: rgba(46,48,52,0.8);
-	-webkit-transition: -webkit-transform .3s;
-	transition: -webkit-transform .3s;
-	transition: transform .3s;
-	transition: transform .3s, -webkit-transform .3s;
-	-webkit-transform: translateX(100%);
-	        transform: translateX(100%);
-}
-.collection-slider__info .btn-info {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: white;
-	background: transparent;
-	border-color: currentColor;
-	border-radius: 50%;
-	-webkit-transform: translateX(-340px);
-	        transform: translateX(-340px);
-	-webkit-transition: .3s;
-	transition: .3s;
-}
-.collection-slider__info .btn-info:hover {
-	color: #b59063;
-}
-.collection-slider__info .btn-info span {
-	position: absolute;
-	width: 2px;
-	height: 50%;
-	background: currentColor;
-	top: 25%;
-	left: 50%;
-	margin-left: -1px;
-	-webkit-transform-origin: center;
-	        transform-origin: center;
-	-webkit-transition: -webkit-transform .3s;
-	transition: -webkit-transform .3s;
-	transition: transform .3s;
-	transition: transform .3s, -webkit-transform .3s;
-}
-.collection-slider__info .btn-info span:first-child {
-	-webkit-transform: scaleY(0.15) translateY(-70px);
-	        transform: scaleY(0.15) translateY(-70px);
-}
-.collection-slider__info .btn-info span:last-child {
-	-webkit-transform: scaleY(0.7) translateY(4px);
-	        transform: scaleY(0.7) translateY(4px);
-}
-.collection-slider__info.open {
-	-webkit-transform: translateX(0);
-	        transform: translateX(0);
-}
-.collection-slider__info.open .btn-info {
-	-webkit-transform: translateX(0);
-	        transform: translateX(0);
-	border-color: transparent;
-}
-.collection-slider__info.open .btn-info span:first-child {
-	-webkit-transform: scaleY(1) translateY(0) rotate(45deg);
-	        transform: scaleY(1) translateY(0) rotate(45deg);
-}
-.collection-slider__info.open .btn-info span:last-child {
-	-webkit-transform: scaleY(1) translateY(0) rotate(-45deg);
-	        transform: scaleY(1) translateY(0) rotate(-45deg);
-}
-.collection-slider__info.open ~ .owl-carousel .dark-navs {
-	width: calc(100% - 340px);
+	background: #2e3034;
 }
 .collection-slider .collection-info__wrapper {
 	padding: 100px 50px 50px;

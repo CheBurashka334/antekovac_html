@@ -21,10 +21,9 @@
 		z-index: 3;
 	}
 	.owl-carousel .dark-navs {
-		width: 100%;
+		width: calc(100% - 340px);
 		position: absolute;
 		top: 50%;
-		transition: width .3s;
 	}
 	&__info {
 		position: absolute;
@@ -33,58 +32,7 @@
 		width: 340px;
 		height: 100%;
 		z-index: 3;
-		background: rgba(46,48,52,0.8);
-		transition: transform .3s;
-		transform: translateX(100%);
-		.btn-info {
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			color: white;
-			background: transparent;
-			border-color: currentColor;
-			border-radius: 50%;
-			transform: translateX(-340px);
-			transition: .3s;
-			&:hover {
-				color: var(--main-brown);
-			}
-			span {
-				position: absolute;
-				width: 2px;
-				height: 50%;
-				background: currentColor;
-				top: 25%;
-				left: 50%;
-				margin-left: -1px;
-				transform-origin: center;
-				transition: transform .3s;
-				&:first-child {
-					transform: scaleY(0.15) translateY(-70px);
-				}
-				&:last-child {
-					transform: scaleY(0.7) translateY(4px);
-				}
-			}
-		}		
-		&.open {
-			transform: translateX(0);
-			.btn-info {
-				transform: translateX(0);
-				border-color: transparent;
-				span {
-					&:first-child {
-						transform: scaleY(1) translateY(0) rotate(45deg);
-					}
-					&:last-child {
-						transform: scaleY(1) translateY(0) rotate(-45deg);
-					}
-				}
-			}
-			~ .owl-carousel .dark-navs {
-				width: calc(100% - 340px);
-			}
-		}
+		background: var(--dark-gray);
 	}
 	.collection-info {
 		&__wrapper {

@@ -9,10 +9,11 @@
 </div>
 <div class="collection-slider__wrapper">
 	<div class="collection-slider carousel--dark-navs">
-		<div class="collection-slider__info open">
-			<button class="btn btn-info btn--square js-toggle-box" data-box=".collection-slider__info">
-				<span></span><span></span>
-			</button>
+		<div class="owl-carousel">
+			<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
+			<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
+		</div>
+		<div class="collection-slider__info">
 			<div class="collection-info__wrapper">
 				<div class="collection-info">
 					<div class="collection__note">Коллекция</div>
@@ -22,10 +23,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="owl-carousel">
-			<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
-			<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
 		</div>
 	</div>
 	<div class="container">
