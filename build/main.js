@@ -135,8 +135,8 @@ var App =
 	$(function () {
 		if ($('.owl-carousel').length) {
 			__webpack_require__.e/* nsure */(1, function (require) {
-				__webpack_require__(58);
-				var Sliders = __webpack_require__(61);
+				__webpack_require__(60);
+				var Sliders = __webpack_require__(63);
 				Sliders.run();
 			});
 		}
@@ -145,25 +145,38 @@ var App =
 	$(function () {
 		if ($('.js-viewer,.js-viewer-wrapper').length) {
 			__webpack_require__.e/* nsure */(2, function (require) {
-				__webpack_require__(62);
-				var Viewers = __webpack_require__(65);
+				__webpack_require__(64);
+				var Viewers = __webpack_require__(67);
 				Viewers.run();
 			});
 		}
 	});
 	
-	var Scrollissimo = __webpack_require__(51);
+	var Scrollissimo = __webpack_require__(53);
 	$(function () {
 		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
 			__webpack_require__.e/* nsure */(3, function (require) {
-				__webpack_require__(66);
-				var gsapAnims = __webpack_require__(69);
+				__webpack_require__(68);
+				var gsapAnims = __webpack_require__(71);
 				$('.js-anim-scroll').each(function () {
 					var tween = gsapAnims.getTL($(this));
 					Scrollissimo.add(tween, 0, 60);
 				});
 				$(window).scroll(function () {
 					Scrollissimo.knock();
+				});
+			});
+		}
+	});
+	
+	$(function () {
+		if ($(".js-scrollable-content").length) {
+			__webpack_require__.e/* nsure */(4, function (require) {
+				__webpack_require__(74);
+				__webpack_require__(72)($);
+				$(".js-scrollable-content").mCustomScrollbar({
+					autoDraggerLength: false,
+					theme: 'ant'
 				});
 			});
 		}
@@ -177,11 +190,11 @@ var App =
 		}
 	});*/
 	
-	var LazyImages = __webpack_require__(53);
-	var Dropdowns = __webpack_require__(54);
-	var DropdownSynh = __webpack_require__(55);
-	var Radios = __webpack_require__(56);
-	var Noodles = __webpack_require__(57);
+	var LazyImages = __webpack_require__(55);
+	var Dropdowns = __webpack_require__(56);
+	var DropdownSynh = __webpack_require__(57);
+	var Radios = __webpack_require__(58);
+	var Noodles = __webpack_require__(59);
 	
 	// Run components
 	
@@ -10130,23 +10143,25 @@ var App =
 	__webpack_require__(40);
 	__webpack_require__(41);
 	__webpack_require__(42);
+	__webpack_require__(43);
 	
 	/*Products*/
 	
-	__webpack_require__(43);
 	__webpack_require__(44);
 	__webpack_require__(45);
 	__webpack_require__(46);
 	__webpack_require__(47);
+	__webpack_require__(48);
 	
 	/*Collections*/
 	
-	__webpack_require__(48);
 	__webpack_require__(49);
+	__webpack_require__(50);
+	__webpack_require__(51);
 	
 	/* Print */
 	
-	__webpack_require__(50);
+	__webpack_require__(52);
 
 /***/ },
 /* 8 */
@@ -10408,12 +10423,24 @@ var App =
 
 /***/ },
 /* 51 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(52);
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 52 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(54);
+
+/***/ },
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10808,7 +10835,7 @@ var App =
 
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10842,7 +10869,7 @@ var App =
 	module.exports = LazyImages;
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10916,7 +10943,7 @@ var App =
 	module.exports = Dropdowns;
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10954,7 +10981,7 @@ var App =
 	module.exports = DropdownSynh;
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10996,7 +11023,7 @@ var App =
 	module.exports = Radios;
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports) {
 
 	'use strict';

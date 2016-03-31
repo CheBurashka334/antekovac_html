@@ -1,0 +1,106 @@
+@import "../../colors.css";
+@import "../../media.css";
+@import "../../selectors.css";
+
+.collection-slider {
+	&__wrapper {
+		margin-top: -71px;
+		margin-bottom: 50px;
+		position: relative;
+	}
+	&__slide {
+		width: 100%;
+		height: 680px;
+		background-position: center;
+		background-size: cover;
+	}
+	&__buttons {
+		position: absolute;
+		left: auto;
+		bottom: 30px;
+		z-index: 3;
+	}
+	.owl-carousel .dark-navs {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transition: width .3s;
+	}
+	&__info {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 340px;
+		height: 100%;
+		z-index: 3;
+		background: rgba(46,48,52,0.8);
+		transition: transform .3s;
+		transform: translateX(100%);
+		.btn-info {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: white;
+			background: transparent;
+			border-color: currentColor;
+			border-radius: 50%;
+			transform: translateX(-340px);
+			transition: .3s;
+			&:hover {
+				color: var(--main-brown);
+			}
+			span {
+				position: absolute;
+				width: 2px;
+				height: 50%;
+				background: currentColor;
+				top: 25%;
+				left: 50%;
+				margin-left: -1px;
+				transform-origin: center;
+				transition: transform .3s;
+				&:first-child {
+					transform: scaleY(0.15) translateY(-70px);
+				}
+				&:last-child {
+					transform: scaleY(0.7) translateY(4px);
+				}
+			}
+		}		
+		&.open {
+			transform: translateX(0);
+			.btn-info {
+				transform: translateX(0);
+				border-color: transparent;
+				span {
+					&:first-child {
+						transform: scaleY(1) translateY(0) rotate(45deg);
+					}
+					&:last-child {
+						transform: scaleY(1) translateY(0) rotate(-45deg);
+					}
+				}
+			}
+			~ .owl-carousel .dark-navs {
+				width: calc(100% - 340px);
+			}
+		}
+	}
+	.collection-info {
+		&__wrapper {
+			padding: 100px 50px 50px;
+			text-align: center;
+		}
+		.collection {
+			&__heading {
+				margin: 10px auto 2em;
+				:--heading {
+					font: 30px "Bebas Neue Bold";
+				}
+			}
+			&__text {
+				color: #a4a4a4;
+			}
+		}
+	}
+}

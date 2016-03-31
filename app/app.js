@@ -69,6 +69,19 @@ $(function(){
 	}
 });
 
+$(function(){
+	if($(".js-scrollable-content").length){
+		require.ensure([],function(require){
+			require('jquery-mousewheel');
+			require('malihu-custom-scrollbar-plugin')($);
+			$(".js-scrollable-content").mCustomScrollbar({
+				autoDraggerLength: false,
+				theme: 'ant',
+			});
+		});
+	}
+});
+
 /*$(function(){
 	if($('input[type="tel"]').length){
 		require.ensure([],function(require){

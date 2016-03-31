@@ -26,6 +26,7 @@
 @import "components/breadcrumbs.css";
 @import "components/pagination.css";
 @import "components/dropdown.css";
+@import "components/scrollbar-ant.css";
 @import "components/forms.css";
 @import "components/filter.css";
 @import "components/checkout.css";
@@ -49,6 +50,7 @@
 /* Collections */
 
 @import "components/collections/collection-info.css";
+@import "components/collections/collection-slider.css";
 
 /* Print */
 

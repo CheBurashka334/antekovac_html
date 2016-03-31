@@ -34,6 +34,7 @@ require("./components/header/header-menu.css");
 require("./components/breadcrumbs.css");
 require("./components/pagination.css");
 require("./components/dropdown.css");
+require("./components/scrollbar-ant.css");
 require("./components/forms.css");
 require("./components/filter.css");
 require("./components/checkout.css");
@@ -57,6 +58,7 @@ require("./components/products/individual.css");
 
 require("./components/collections/collection-block.css");
 require("./components/collections/collection-info.css");
+require("./components/collections/collection-slider.css");
 
 /* Print */
 
