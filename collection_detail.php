@@ -8,12 +8,19 @@
 	</ul>
 </div>
 <div class="collection-slider__wrapper">
-	<div class="collection-slider carousel--dark-navs">
-		<div class="owl-carousel">
-			<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
-			<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
+	<div class="grid-noGutter">
+		<div class="collection-slider__video col-9_md-8_sm-12">
+			<video poster="images/slide-circus.jpg" preload="none" id="collection-video" controls="controls">
+				<source src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4"/>
+			</video>
 		</div>
-		<div class="collection-slider__info">
+		<div class="collection-slider carousel--dark-navs col-9_md-8_sm-12 open" data-navs-xs="0" data-dots-xs="1">
+			<div class="owl-carousel">
+				<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
+				<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
+			</div>
+		</div>
+		<div class="collection-slider__info col-3_md-4_sm-12">
 			<div class="collection-info__wrapper">
 				<div class="collection-info">
 					<div class="collection__note">Коллекция</div>
@@ -24,20 +31,28 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="collection-slider__tabs">
-		
-		</div>
-		<div class="collection-slider__buttons">
-			<a href="collections.php" class="btn btn--flat-light-gray">Назад к коллекциям</a>
+		<div class="container actions__wrapper">
+			<div class="collection-slider__actions">
+				<div class="collection-slider__tabs">
+					<div class="collection-slider__tab collection-slider__tab--video js-toggle-box js-play-video" data-box=".collection-slider__video,.collection-slider" data-video="#collection-video">
+						<span class="collection-slider__tab__text">видео</span>
+					</div>
+					<div class="collection-slider__tab collection-slider__tab--photo opened js-toggle-box" data-box=".collection-slider__video,.collection-slider">
+						<span class="collection-slider__tab__text">Фото</span>
+					</div>
+				</div>
+				<div class="collection-slider__buttons hidden-small hidden-mobile">
+					<a href="collections.php" class="btn btn--flat-light-gray">Назад к коллекциям</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 <div class="container page--collection">
+	<div class="heading mobile-only"><h2 class="base-color center-align">Концепция</h2></div>
 	<div class="grid-equalHeight">
-		<div class="col-4">
-			<div class="tile-block tile-block--collection tile-block--collection--big">
+		<div class="col-4_sm-12">
+			<div class="tile-block tile-block--collection tile-block--collection--big mobile-fullwidth">
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
@@ -58,9 +73,9 @@
                 </div>
             </div>
 		</div>
-		<div class="col-8">
-			<div class="tile-block tile-block--scrollable">
-				<div class="tile-block__heading"><h2 class="base-color">Концепция</h2></div>
+		<div class="col-8_sm-12">
+			<div class="tile-block tile-block--scrollable mobile-fullwidth">
+				<div class="tile-block__heading hidden-mobile"><h2 class="base-color">Концепция</h2></div>
 				<div class="tile-block__content js-scrollable-content" data-height="28em">
 					<p>Бренд Ante Kovac – это новое решение в мире моды, стиля и утонченности. Нашими клиентами становятся успешные люди, которые стремятся поразить окружающих своим изысканным и тонким вкусом. Среди приоритетных задач AnteKovac – нахождение новых способов самовыражения и создание сумок и аксессуаров в обход шаблонных стереотипов. Абсолютно все дизайнерские сумки Анте Ковач – изделия ручной работы с тщательно продуманными деталями, рисунки также наносятся вручную. Художник вкладывает свою душу, а вещь сохраняет теплоту мастерских рук.</p>
 					<p>АнтеКовач занимается производством концептуальных, эксклюзивных вещей для тех, кто не приемлет оставаться незамеченным, а предпочитает выделяться из общей массы и выглядеть так, как никто другой. Идеология стиля Ante Kovac основывается на сочетании незаурядных современных форм с изыском художественных уникальных и оригинальных дизайнерских разработок, свой стиль мы называем «ANTEкварный casual”.</p>
@@ -201,6 +216,99 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="product-tile">
+            <div class="product-tile__wrap">
+                <div class="product-tile__image">
+                    <a href="#">
+                        <img src="images/catalog/afm-white-7351.png" alt="" />
+                    </a>
+                </div>
+				<div class="product-tile__info">
+					<div class="product-tile__name">
+						Клатч
+					</div>
+					<div class="product-tile__price">
+						<div class="price">
+							24 680 ₽
+						</div>
+					</div>
+				</div>
+                <div class="product-tile__like">
+                    <svg class="i-icon"role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+                    </svg>
+                </div>
+				<div class="product-tile__overlay">
+					<a href="#">
+                       <svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+						</svg>
+                    </a>
+				</div>
+            </div>
+        </div>
+		<div class="product-tile">
+            <div class="product-tile__wrap">
+                <div class="product-tile__image">
+                    <a href="#">
+                        <img src="images/catalog/afm-white-7940.png" alt="" />
+                    </a>
+                </div>
+				<div class="product-tile__info">
+					<div class="product-tile__name">
+						Несессер
+					</div>
+					<div class="product-tile__price">
+						<div class="price">
+							24 680 ₽
+						</div>
+					</div>
+				</div>
+                <div class="product-tile__like">
+                    <svg class="i-icon"role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+                    </svg>
+                </div>
+				<div class="product-tile__overlay">
+					<a href="#">
+                       <svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+						</svg>
+                    </a>
+				</div>
+            </div>
+		</div>
+		<div class="product-tile">
+            <div class="product-tile__wrap">
+                <div class="product-tile__image">
+                    <a href="#">
+                        <img src="images/catalog/afm-white-7992.png" alt="" />
+                    </a>
+                </div>
+				<div class="product-tile__info">
+					<div class="product-tile__name">
+						Портфель мж
+					</div>
+					<div class="product-tile__price">
+						<div class="price">
+							24 680 ₽
+						</div>
+					</div>
+				</div>
+                <div class="product-tile__like">
+                    <svg class="i-icon"role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
+                    </svg>
+                </div>
+				<div class="product-tile__overlay">
+					<a href="#">
+                       <svg class="i-icon"role="img">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+						</svg>
+                    </a>
+				</div>
+            </div>
 		</div>
 	</div>
 	</br><a href="#" class="btn btn--flat-light-gray--big--center">Смотреть все товары коллекции</a>

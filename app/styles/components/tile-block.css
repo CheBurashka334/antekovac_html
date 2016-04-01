@@ -300,6 +300,26 @@
 		}
 	}
 }
+@media (--mobile),(--small){
+	.tile-block {
+		.page--collection &--collection--big &__wrapper {
+			padding: 40px;
+		}
+		.page--collection &--collection--big {
+			&.mobile-fullwidth {
+				padding: 0;
+				margin-bottom: 0;
+			}
+			.collection__info {
+				position: relative;
+				top: 0;
+				left: 0;
+				transform: translate(0,0);
+				width: 100%;
+			}
+		}
+	}
+}
 @media (min-width: 690px) and (--small-down){
 	.tile-block {
 		&--individual {
@@ -509,6 +529,9 @@
 		}
 		&--horizontal &__content {
 			width: 100%;
+		}
+		&--scrollable &__content {
+			height: auto!important;
 		}
 	}
 }

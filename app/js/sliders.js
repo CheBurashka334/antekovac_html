@@ -74,12 +74,31 @@ var Sliders = {
 			{
                 'selector' : '.carousel--dark-navs',
                 'options' : {
-                    items: 1,
-                    nav: true,
+					responsive:{
+						0: {
+							items: $('.carousel--dark-navs').attr('data-items-xs') ? +$('.carousel--dark-navs').attr('data-items-xs') : 1,
+							nav:  $('.carousel--dark-navs').attr('data-navs-xs') ? !!+$('.carousel--dark-navs').attr('data-navs-xs') :true,
+							dots:  $('.carousel--dark-navs').attr('data-dots-xs') ? !!+$('.carousel--dark-navs').attr('data-dots-xs') : false
+						},
+						768: {
+							items: $('.carousel--dark-navs').attr('data-items-sm') ? +$('.carousel--dark-navs').attr('data-items-sm') : 1,
+							nav:  $('.carousel--dark-navs').attr('data-navs-sm') ? !!+$('.carousel--dark-navs').attr('data-navs-sm') : true,
+							dots:  $('.carousel--dark-navs').attr('data-dots-sm') ? !!+$('.carousel--dark-navs').attr('data-dots-sm') : false
+						},
+						1025: {
+							items: $('.carousel--dark-navs').attr('data-items-md') ? +$('.carousel--dark-navs').attr('data-items-md') : 1,
+							nav:  $('.carousel--dark-navs').attr('data-navs-md') ? !!+$('.carousel--dark-navs').attr('data-navs-md') : true,
+							dots:  $('.carousel--dark-navs').attr('data-dots-md') ? !!+$('.carousel--dark-navs').attr('data-dots-md') : false
+						},
+						1300: {
+							items: $('.carousel--dark-navs').attr('data-items-lg') ? +$('.carousel--dark-navs').attr('data-items-lg') : 1,
+							nav:  $('.carousel--dark-navs').attr('data-items-lg') ? !!+$('.carousel--dark-navs').attr('data-items-lg') : true,
+							dots:  $('.carousel--dark-navs').attr('data-dots-lg') ? !!+$('.carousel--dark-navs').attr('data-dots-lg') : false
+						}
+					},
                     navContainerClass: 'dark-navs',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', ''],
-					dots: false
                 }
             },
 			{

@@ -227,6 +227,9 @@ p {
 .base-color {
 	color: #3d3b33;
 }
+.center-align {
+	text-align: center;
+}
 
 dl {
     margin: 15px 0;

@@ -172,8 +172,8 @@ var App =
 	$(function () {
 		if ($(".js-scrollable-content").length) {
 			__webpack_require__.e/* nsure */(4, function (require) {
-				__webpack_require__(74);
-				__webpack_require__(72)($);
+				__webpack_require__(72);
+				__webpack_require__(74)($);
 				$(".js-scrollable-content").mCustomScrollbar({
 					autoDraggerLength: false,
 					theme: 'ant',
@@ -11070,6 +11070,7 @@ var App =
 				} else {
 					console.error('Box? Which box?');
 				}
+				$(this).siblings('.js-toggle-box').removeClass('opened');
 				$(this).toggleClass('opened');
 			});
 	
@@ -11142,6 +11143,20 @@ var App =
 	  	//im.mask($(this));
 	  	$(this).inputmask("+7(999)999-99-99");
 	  });*/
+	
+			$('.js-play-video').on('click', function () {
+				if ($(this).attr('data-video')) {
+					var video = $($(this).attr('data-video'))[0];
+				} else {
+					console.error('Video? Which video?');
+				}
+				video.play();
+				$(this).siblings('.js-toggle-box').each(function () {
+					$(this).bind('click', function () {
+						video.pause();
+					});
+				});
+			});
 	
 			function position(fix) {
 				if (fix == 'fix') {

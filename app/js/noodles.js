@@ -45,6 +45,7 @@ var Noodles = {
 			} else {
 				console.error('Box? Which box?');
 			}
+			$(this).siblings('.js-toggle-box').removeClass('opened');
 			$(this).toggleClass('opened');
 		});
 		
@@ -119,6 +120,17 @@ var Noodles = {
 			$(this).inputmask("+7(999)999-99-99");
 		});*/
 		
+		$('.js-play-video').on('click', function(){
+			if($(this).attr('data-video')){
+				var video = $($(this).attr('data-video'))[0];
+			} else {
+				console.error('Video? Which video?');
+			}
+			video.play();
+			$(this).siblings('.js-toggle-box').each(function(){
+				$(this).bind('click', function(){video.pause()});
+			});
+		});
 		
 		function position(fix) {
 			if(fix == 'fix'){
