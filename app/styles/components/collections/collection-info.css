@@ -125,3 +125,24 @@
 		padding-right: 50px;
 	}
 }
+@media (--mobile){
+	.collection-process {
+		margin-top: 0;
+		margin-bottom: 40px;
+		&:last-of-type {
+			margin-bottom: 50px;
+		}
+		.col-7_xs-12 {
+			order: -1;
+			margin-bottom: 10px;
+		}
+		&__image,
+		&__video,
+		&__text {
+			&--push-big,
+			&--push-small{
+				padding-left: 0;
+			}
+		}
+	}
+}

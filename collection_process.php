@@ -10,11 +10,11 @@
 <div class="container page--collection-process">
 	<div class="heading">
 		<h2 class="base-color">Процесс создания коллекции кандинский</h2>
-		<a href="collections.php" class="btn btn--flat-light-gray btn-back-right">Назад к коллекциям</a>
+		<a href="collections.php" class="btn btn--flat-light-gray btn-back-right hidden-mobile">Назад к коллекциям</a>
 	</div>
 	<div class="grid-equalHeight">
-		<div class="col-3">
-			<div class="tile-block tile-block--collection">
+		<div class="col-3_sm-12">
+			<div class="tile-block tile-block--collection mobile-fullwidth">
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
@@ -35,8 +35,8 @@
                 </div>
             </div>
 		</div>
-		<div class="col-9">
-			<div class="tile-block tile-block--scrollable">
+		<div class="col-9_sm-12">
+			<div class="tile-block tile-block--scrollable mobile-fullwidth">
 				<div class="tile-block__heading"><h2 class="base-color">Процесс</h2></div>
 				<div class="tile-block__content js-scrollable-content">
 					<p>Бренд Ante Kovac – это новое решение в мире моды, стиля и утонченности. Нашими клиентами становятся успешные люди, которые стремятся поразить окружающих своим изысканным и тонким вкусом. Среди приоритетных задач AnteKovac – нахождение новых способов самовыражения и создание сумок и аксессуаров в обход шаблонных стереотипов. Абсолютно все дизайнерские сумки Анте Ковач – изделия ручной работы с тщательно продуманными деталями, рисунки также наносятся вручную. Художник вкладывает свою душу, а вещь сохраняет теплоту мастерских рук.</p>
@@ -52,12 +52,12 @@
 		</div>
 	</div>
 	<div class="grid collection-process">
-		<div class="col-7">
+		<div class="col-7_xs-12">
 			<div class="collection-process__image">
 				<img src="images/collection/process-1.jpg"/>
 			</div>
 		</div>
-		<div class="col-5-bottom">
+		<div class="col-5-bottom_xs-12">
 			<div class="collection-process__text">
 				описание кандинский </br>
 				Задача организации, </br>
@@ -71,28 +71,28 @@
 		</div>
 	</div>
 	<div class="grid collection-process">
-		<div class="col-5-bottom">
+		<div class="col-5-bottom_xs-12">
 			<div class="collection-process__text collection-process__text--push-big">
 				описание обуславливает создание </br>
 				направлений прогрессивного </br>
 				развития.
 			</div>
 		</div>
-		<div class="col-7">
+		<div class="col-7_xs-12">
 			<div class="collection-process__image collection-process__image--push-small">
 				<img src="images/collection/process-2.jpg"/>
 			</div>
 		</div>
 	</div>
 	<div class="grid collection-process">
-		<div class="col-7">
+		<div class="col-7_xs-12">
 			<div class="collection-process__video">
 				<div class="video-container">
 					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 				</div>
 			</div>
 		</div>
-		<div class="col-5-bottom">
+		<div class="col-5-bottom_xs-12">
 			<div class="collection-process__text collection-process__text--push-small">
 				в особенности же сложившаяся </br>
 				структура организации </br>
@@ -104,13 +104,13 @@
 		</div>
 	</div>
 	<div class="grid collection-process">
-		<div class="col-5-bottom">
+		<div class="col-5-bottom_xs-12">
 			<div class="collection-process__text collection-process__text--push-big">
 				направлений прогрессивного </br>
 				развития.
 			</div>
 		</div>
-		<div class="col-7">
+		<div class="col-7_xs-12">
 			<div class="collection-process__image collection-process__image--push-small">
 				<img src="images/collection/process-3.jpg"/>
 			</div>
