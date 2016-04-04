@@ -49,6 +49,11 @@ var Noodles = {
 			$(this).toggleClass('opened');
 		});
 		
+		$('.collapsible-block__header').on('click', function(){
+			$(this).parent('.collapsible-block__wrapper').toggleClass('open');
+			$(this).siblings('.collapsible-block').slideToggle(500);
+		});
+		
 		if($(window).width() < 768){
 			$('.read-more--mobile').each(function(){
 				$(this).wrapInner('<div class="read-more collapsible"><div class="collapsible__body"></div></div>');

@@ -118,6 +118,9 @@
 			right: 0;
 		}
 	}
+	&--master-classes {
+		margin-bottom: 58px;
+	}
 }
 @media (--mobile){
 	.page {
@@ -146,7 +149,8 @@
 				margin-top: 40px;
 			}
 		}
-		&--brend {
+		&--brend,
+		&--master-classes {
 			margin-bottom: 0;
 		}
 		&--profile {

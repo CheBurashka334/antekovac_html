@@ -1,0 +1,92 @@
+@import "../colors.css";
+@import "../media.css";
+
+.master-class {
+	margin-top: 0.5em;
+	&__date {
+		width: 170px;
+		color: #b59063;
+		.label {
+			margin-right: 18px;
+		}
+	}
+	&--active &__date {
+		color: #82a147;
+	}
+	&__slide {
+		width: 100%;
+	}
+	&__info {
+		padding-left: 11%;
+	}
+	&__text {
+		margin: 50px 0;
+	}
+	&__actions {
+		display: flex;
+		.btn {
+			width: 166px;
+			max-width: calc(50% - 5px);
+			margin-right: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+	&__note {
+		display: inline-block;
+		font: 18px/1 "MyriadPro";
+		padding: 24px 2em 1em;
+		color: #a6a6a6;
+		background: #d6d6d6;
+	}
+}
+@media (--medium){
+	.master-class {
+		&__info {
+			padding-left: 5%;
+		}
+		&__text {
+			margin: 0 0 20px;
+		}
+	}
+}
+@media (--small-down){
+	.master-class {
+		&__info {
+			padding-left: 0;
+		}
+		&__text {
+			margin: 30px 0;
+		}
+	}
+}
+@media (--mobile){
+	.master-class {
+		&__date {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+		&__slider .dark-navs--compact {
+			[class*="nav-"]{
+				top: 50%;
+				margin-top: -1em;
+			}
+			.nav-prev {
+				left: -20px;
+			}
+			.nav-next {
+				left: auto;
+				right: -20px;
+			}
+		}
+		&__text {
+			margin: 20px 0;
+		}
+		&__actions {
+			width: 100%;
+		}
+	}
+}

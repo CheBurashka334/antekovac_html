@@ -15,6 +15,8 @@
 @import "components/feed-back.css";
 @import "components/viewer.css";
 @import "components/bonus.css";
+@import "components/sketch.css";
+@import "components/master-class.css";
 
 /*Header*/
 
@@ -29,6 +31,7 @@
 @import "components/scrollbar-ant.css";
 @import "components/forms.css";
 @import "components/filter.css";
+@import "components/collapsible-block.css";
 @import "components/checkout.css";
 @import "components/basket.css";
 @import "components/order.css";

@@ -23,6 +23,8 @@ require("./components/feed-back.css");
 require("./components/viewer.css");
 require("./components/bonus.css");
 require("./components/favorite.css");
+require("./components/sketch.css");
+require("./components/master-class.css");
 
 /*Header*/
 
@@ -37,6 +39,7 @@ require("./components/dropdown.css");
 require("./components/scrollbar-ant.css");
 require("./components/forms.css");
 require("./components/filter.css");
+require("./components/collapsible-block.css");
 require("./components/checkout.css");
 require("./components/basket.css");
 require("./components/order.css");

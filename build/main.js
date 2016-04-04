@@ -10123,6 +10123,8 @@ var App =
 	__webpack_require__(25);
 	__webpack_require__(26);
 	__webpack_require__(27);
+	__webpack_require__(78);
+	__webpack_require__(79);
 	
 	/*Header*/
 	
@@ -10137,6 +10139,7 @@ var App =
 	__webpack_require__(33);
 	__webpack_require__(34);
 	__webpack_require__(35);
+	__webpack_require__(80);
 	__webpack_require__(36);
 	__webpack_require__(37);
 	__webpack_require__(38);
@@ -11074,6 +11077,11 @@ var App =
 				$(this).toggleClass('opened');
 			});
 	
+			$('.collapsible-block__header').on('click', function () {
+				$(this).parent('.collapsible-block__wrapper').toggleClass('open');
+				$(this).siblings('.collapsible-block').slideToggle(500);
+			});
+	
 			if ($(window).width() < 768) {
 				$('.read-more--mobile').each(function () {
 					$(this).wrapInner('<div class="read-more collapsible"><div class="collapsible__body"></div></div>');
@@ -11172,6 +11180,42 @@ var App =
 	};
 	
 	module.exports = Noodles;
+
+/***/ },
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 79 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 80 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

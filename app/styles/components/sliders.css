@@ -416,6 +416,19 @@
 			right: -80px;
 		}
 	}
+	&--compact {
+		[class*=nav] {
+			top: auto;
+			bottom: 0;
+		}
+		.nav-prev {
+			left: 0;
+			transform: rotate(180deg);
+		}
+		.nav-next {
+			left: 2.2em;
+		}
+	}
 }
 @media (--mobile){
 	.dark-navs {
