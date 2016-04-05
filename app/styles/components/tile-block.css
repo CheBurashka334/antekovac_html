@@ -259,6 +259,9 @@
 	}
 	&--small.tile-block--image &__content {
 		padding: 16px 25px 50px;
+		.page--news & {
+			padding-bottom: 26px;
+		}
 	}
 	&--big {
 		padding: 40px 50px 70px;
@@ -588,6 +591,9 @@
 		padding: 40px 35px;
 		.page--profile & {
 			padding: 30px 45px 70px;
+		}
+		.page--news & {
+			padding-top: 20px;
 		}
 	}
 	&__foot {

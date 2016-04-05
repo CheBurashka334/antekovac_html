@@ -38,7 +38,6 @@
         }
         img {
             margin: 0 auto;
-			/*height: 100%;*/
 			width: auto;
         }
     }
@@ -48,11 +47,6 @@
 			padding-top: 43%;
 		}
 		img {
-			/*width: 100%;
-			height: auto;
-			max-height: 200%;
-			left: 0;
-			bottom: -5%;*/
 			margin: auto;
 			display: block;
 			position: absolute;
@@ -189,6 +183,9 @@
 			right: 25px;
 			bottom: auto;
 			left: auto;
+			.product-tile:hover & {
+				color: var(--main-brown);
+			}
 		}
 		&__overlay {
 			display: none;

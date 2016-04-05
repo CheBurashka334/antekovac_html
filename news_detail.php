@@ -7,9 +7,9 @@
 		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Название новости</a></li>
 	</ul>
 </div>
-<div class="container">
+<div class="container page--news">
 	<div class="tile-page">
-		<div class="tile-page__image">
+		<div class="tile-page__image mobile-fullwidth--noGutter news__image">
 			<img src="images/news-detail.jpg"/>
 		</div>
 		<div class="tile-page__body">
@@ -74,6 +74,18 @@
 						<li>Параметр 1</li>
 						<li>Параметр 1</li>
 					</ol>
+				</div>
+			</div>
+			<div class="grid news__buttons">
+				<div class="col-4_xs-12">
+					<a href="news.php" class="btn btn--arrow-back btn--transparent--with-icon">
+						<svg class="i-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
+						<span class="btn-text">Все новости</span>
+					</a>
+				</div>
+				<div class="col-8 align-right hidden-mobile">
+					<a href="#" class="btn btn--flat-light-gray">Предыдущая новость</a>
+					<a href="#" class="btn btn--flat-light-gray">Следующая новость</a>
 				</div>
 			</div>
 		</div>

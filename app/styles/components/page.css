@@ -121,6 +121,9 @@
 	&--master-classes {
 		margin-bottom: 58px;
 	}
+	&--news {
+		margin-top: 35px;
+	}
 }
 @media (--mobile){
 	.page {

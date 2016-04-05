@@ -184,6 +184,10 @@
 			.back__text {
 				vertical-align: middle;
 			}
+			&:hover {
+				background: var(--main-brown);
+				color: white;
+			}
 		}
 	}
 	.page-aside__block--mobile & {
@@ -228,6 +232,9 @@
 		.submenu {
 			&__back {
 				padding-left: 20px;
+				&:hover {
+					background: var(--dark-gray);
+				}
 			}
 		}
 		&--multilevel--aside &-item--parent .parent-arrow,

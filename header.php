@@ -54,14 +54,14 @@
 				<div class="header__right">
 					<div class="header__link">
 						<a href="#">
-							<svg class="i-icon i-icon--stroke"role="img">
+							<svg class="i-icon i-icon--stroke" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
 							</svg>
 						</a>
 					</div>
 					<div class="header__link">
 						<a href="#">
-							<svg class="i-icon i-icon--stroke"role="img">
+							<svg class="i-icon i-icon--stroke" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
 							</svg>
 							<span>17</span>
@@ -69,7 +69,7 @@
 					</div>
 					<div class="header__link">
 						<a href="#">
-							<svg class="i-icon"role="img">
+							<svg class="i-icon" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
 							</svg>
 							<span>8</span>
