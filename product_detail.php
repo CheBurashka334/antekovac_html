@@ -217,32 +217,32 @@
 	<div class="grid-equalHeight">
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

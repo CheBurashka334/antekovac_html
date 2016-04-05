@@ -149,17 +149,17 @@
 		<div class="grid">
 			<div class="col-4_xs-12">
 				<div class="video-container">
-					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-4_xs-12">
 				<div class="video-container">
-					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-4_xs-12">
 				<div class="video-container">
-					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

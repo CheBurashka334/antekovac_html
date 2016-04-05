@@ -390,7 +390,7 @@
         <h2>promo видео</h2>
     </div>
     <div class="video-container">
-        <iframe height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" allowfullscreen></iframe>
+        <iframe width="1180" height="664" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -433,7 +433,7 @@
         <div class="col-6_sm-12">
             <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
                 <div class="tile-block__video" style="background-image: url(images/masterskie.jpg)">
-                   <iframe height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" allowfullscreen></iframe>
+                  <iframe width="580" height="326" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
                 </div>
 				<div class="tile-block__content">
 					<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>

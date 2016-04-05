@@ -88,7 +88,7 @@
 		<div class="col-7_xs-12">
 			<div class="collection-process__video">
 				<div class="video-container">
-					<iframe width="100%" height="555" src="https://www.youtube.com/embed/qkPwimbPx8g?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
