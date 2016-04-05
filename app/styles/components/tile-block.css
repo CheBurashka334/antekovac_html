@@ -115,6 +115,13 @@
 			}
 		}
 	}
+	&__note {
+		color: #b7b7b7;
+		font: 14px "Roboto";
+	}
+	&__heading {
+		font: 24px "Bebas Neue Book";
+	}
 	&--collection {
 		padding: 0;
 		color: white;
@@ -180,7 +187,7 @@
 	>*:last-child > *:last-child {
 		margin-bottom: 0;
 	}
-	&--bordered{
+	&--bordered {
 		padding: 40px 30px;
 		&:before {
 			content: '';
@@ -292,6 +299,20 @@
 	}
 	&--scrollable &__heading {
 		margin-bottom: 1.5em;
+	}
+	&--centered &__content,
+	&--centered &__note,
+	&--centered &__heading {
+		text-align: center;
+	}
+	&--centered &__heading {
+		margin: 10px auto 15px;
+	}
+	&--centered {
+		.btn--arrow {
+			padding-left: 40px;
+			padding-right: 75px;
+		}
 	}
 }
 @media (--small-up){

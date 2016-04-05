@@ -124,6 +124,9 @@
 	&--news {
 		margin-top: 35px;
 	}
+	&--events {
+		margin-top: 25px;
+	}
 }
 @media (--mobile){
 	.page {
@@ -169,6 +172,10 @@
 		}
 		&--collection-process {
 			margin-bottom: 30px;
+		}
+		&--news,
+		&--events {
+			margin-top: 0;
 		}
 	}
 }

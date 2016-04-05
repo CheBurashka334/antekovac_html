@@ -3958,6 +3958,13 @@ table.nostyle th, table.nostyle td {
 .tile-block__socials .i-icon:hover {
 	color: white;
 }
+.tile-block__note {
+	color: #b7b7b7;
+	font: 14px "Roboto";
+}
+.tile-block__heading {
+	font: 24px "Bebas Neue Book";
+}
 .tile-block--collection {
 	padding: 0;
 	color: white;
@@ -4027,7 +4034,7 @@ table.nostyle th, table.nostyle td {
 	.tile-block >*:last-child > *:last-child {
 	margin-bottom: 0;
 }
-.tile-block--bordered{
+.tile-block--bordered {
 	padding: 40px 30px;
 }
 .tile-block--bordered:before {
@@ -4156,6 +4163,18 @@ table.nostyle th, table.nostyle td {
 }
 .tile-block--scrollable .tile-block__heading {
 	margin-bottom: 1.5em;
+}
+.tile-block--centered .tile-block__content,
+	.tile-block--centered .tile-block__note,
+	.tile-block--centered .tile-block__heading {
+	text-align: center;
+}
+.tile-block--centered .tile-block__heading {
+	margin: 10px auto 15px;
+}
+.tile-block--centered .btn--arrow {
+	padding-left: 40px;
+	padding-right: 75px;
 }
 @media (min-width: 768px){
 	.tile-block--bordered--no-mobile{
@@ -5031,6 +5050,9 @@ footer {
 .page--news {
 	margin-top: 35px;
 }
+.page--events {
+	margin-top: 25px;
+}
 @media (max-width: 767px){
 	.page {
 		overflow-y: initial;
@@ -5074,6 +5096,10 @@ footer {
 	}
 	.page--collection-process {
 		margin-bottom: 30px;
+	}
+	.page--news,
+		.page--events {
+		margin-top: 0;
 	}
 }:root {
 	/* пути к картинкам */
