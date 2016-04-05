@@ -3182,6 +3182,7 @@ webpackJsonpApp([1],{
 				'options': {
 					items: 1,
 					nav: true,
+					lazyLoad: true,
 					navContainerClass: 'main-slider-navs',
 					navClass: ['nav-prev', 'nav-next'],
 					navText: ['', '']
@@ -3240,6 +3241,7 @@ webpackJsonpApp([1],{
 				'options': {
 					items: 1,
 					nav: true,
+					lazyLoad: true,
 					navContainerClass: 'compact-navs',
 					navClass: ['nav-prev', 'nav-next'],
 					navText: ['', ''],

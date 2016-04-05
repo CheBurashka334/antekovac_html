@@ -6,6 +6,7 @@ var Sliders = {
                 'options' : {
                     items: 1,
                     nav: true,
+					lazyLoad: true,
                     navContainerClass: 'main-slider-navs',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', '']
@@ -65,6 +66,7 @@ var Sliders = {
                 'options' : {
                     items: 1,
                     nav: true,
+					lazyLoad: true,
                     navContainerClass: 'compact-navs',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', ''],
