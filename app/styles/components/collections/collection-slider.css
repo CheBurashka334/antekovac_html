@@ -5,6 +5,7 @@
 .collection-slider {
 	position: relative;
 	z-index: -1;
+	background: var(--dark-gray);
 	&.open {
 		z-index: 2;
 	}

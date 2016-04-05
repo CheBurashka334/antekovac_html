@@ -14,10 +14,10 @@
 				<source src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4"/>
 			</video>
 		</div>
-		<div class="collection-slider carousel--dark-navs col-9_md-8_sm-12 open" data-navs-xs="0" data-dots-xs="1">
+		<div class="collection-slider carousel--dark-navs col-9_md-8_sm-12 open" data-navs-xs="0" data-dots-xs="1" data-lazyload="1">
 			<div class="owl-carousel">
-				<div class="collection-slider__slide" style="background-image:url('images/slide-circus.jpg');"></div>
-				<div class="collection-slider__slide" style="background-image:url('images/main-slide.jpg');"></div>
+				<div class="collection-slider__slide owl-lazy" data-src="images/slide-circus.jpg"></div>
+				<div class="collection-slider__slide owl-lazy" data-src="images/main-slide.jpg"></div>
 			</div>
 		</div>
 		<div class="collection-slider__info col-3_md-4_sm-12">

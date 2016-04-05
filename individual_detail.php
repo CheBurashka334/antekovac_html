@@ -16,17 +16,11 @@
 	</a>
 	<div class="grid individual-product">
 		<div class="col-5_lg-5_md-5_sm-5_xs-12">
-			<div class="set-products simply-navs simply-nav--outside individual-product__slider" data-items-lg="1"  data-items-md="1"  data-items-sm="1" data-navs-md="1"  data-navs-sm="1">
+			<div class="set-products simply-navs simply-nav--outside individual-product__slider" data-items-lg="1"  data-items-md="1"  data-items-sm="1" data-navs-md="1"  data-navs-sm="1" data-lazyload="1">
 				<div class="owl-carousel">
-					<div class="individual-product__slide">
-						<img src="images/catalog/afm-white-7133.png" alt="" />
-					</div>
-					<div class="individual-product__slide">
-						<img src="images/catalog/afm-white-7166.png" alt="" />
-					</div>
-					<div class="individual-product__slide">
-						<img src="images/catalog/afm-white-7351.png" alt="" />
-					</div>
+					<img class="owl-lazy" data-src="images/catalog/afm-white-7133.png" alt="" />
+					<img class="owl-lazy" data-src="images/catalog/afm-white-7166.png" alt="" />
+					<img class="owl-lazy" data-src="images/catalog/afm-white-7351.png" alt="" />
 				</div>
 			</div>
 		</div>

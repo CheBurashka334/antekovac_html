@@ -9212,11 +9212,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .individual-product__slider.set-products {
 	margin: 30px 0;
-}
-.individual-product__slide {
 	width: 100%;
+}
+.individual-product__slider .owl-item {
 	text-align: center;
-	padding: 0 8.5%;
+	padding: 0 2.5%;
+}
+.individual-product__slider .owl-item img {
+	height: 100%;
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 .individual-product__info {
 	padding-left: 12%;
@@ -9259,7 +9264,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.individual-product {
 		margin-bottom: 0;
 	}
-	.individual-product__slide {
+	.individual-product__slider .owl-item {
 		padding-bottom: 20px;
 	}
 	.individual-product__info {
@@ -9637,6 +9642,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .collection-slider {
 	position: relative;
 	z-index: -1;
+	background: #2e3034;
 }
 .collection-slider.open {
 	z-index: 2;

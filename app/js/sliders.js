@@ -56,6 +56,7 @@ var Sliders = {
 							dots:  $('.set-products').attr('data-dots-lg') ? !!+$('.set-products').attr('data-dots-lg') : false
 						}
 					},
+					lazyLoad: $('.set-products').attr('data-lazyload') ? !!+$('.set-products').attr('data-lazyload') : false,
                     navContainerClass: 'set-products-navs',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', '']
@@ -100,6 +101,7 @@ var Sliders = {
 					},
                     navContainerClass: 'dark-navs',
                     navClass: ['nav-prev', 'nav-next'],
+					lazyLoad: $('.carousel--dark-navs').attr('data-lazyload') ? !!+$('.carousel--dark-navs').attr('data-lazyload') : false,
                     navText: ['', ''],
                 }
             },
@@ -130,6 +132,7 @@ var Sliders = {
 					},
                     navContainerClass: 'dark-navs dark-navs--compact',
                     navClass: ['nav-prev', 'nav-next'],
+					lazyLoad: $('.carousel--dark-navs--compact').attr('data-lazyload') ? !!+$('.carousel--dark-navs--compact').attr('data-lazyload') : false,
                     navText: ['', ''],
                 }
             },
@@ -141,6 +144,7 @@ var Sliders = {
                     navContainerClass: 'dark-navs dark-navs--outside',
                     navClass: ['nav-prev', 'nav-next'],
                     navText: ['', ''],
+					lazyLoad: $('.carousel--dark-navs--outside').attr('data-lazyload') ? !!+$('.carousel--dark-navs--outside').attr('data-lazyload') : false,
 					dots: false
                 }
             },
