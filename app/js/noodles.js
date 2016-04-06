@@ -22,7 +22,7 @@ var Noodles = {
 			
 		$('.js-toggle-box').on('click', function(e){
 			e.stopPropagation();
-			var box = $(this).attr('data-box');
+			/*var box = $(this).attr('data-box');
 			if(box != '' && box != 'undefined'){
 				if($(box).length > 0){
 					if($(box).hasClass('collapsible')) {
@@ -46,8 +46,36 @@ var Noodles = {
 				console.error('Box? Which box?');
 			}
 			$(this).siblings('.js-toggle-box').removeClass('opened');
-			$(this).toggleClass('opened');
+			$(this).toggleClass('opened');*/
+			toggleBox($(this));
 		});
+		function toggleBox(elem){
+			var box = elem.attr('data-box');
+			if(box != '' && box != 'undefined'){
+				if($(box).length > 0){
+					if($(box).hasClass('collapsible')) {
+						$(box).slideToggle(500);
+					} else {
+						if(($(box).hasClass('page-aside')) || ($(box).hasClass('block-aside')) || ($(box).hasClass('modal'))){
+							if($('.page').hasClass('fixed')){
+								position();
+								$('.page').removeClass('fixed');
+							} else {
+								position('fix');
+								$('.page').addClass('fixed');
+							}
+						}
+						$(box).toggleClass('open');
+					}
+				} else {
+					console.error(box+' isn\'t found');
+				}
+			} else {
+				console.error('Box? Which box?');
+			}
+			elem.siblings('.js-toggle-box').removeClass('opened');
+			elem.toggleClass('opened');
+		}
 		
 		$('.collapsible-block__header').on('click', function(){
 			$(this).parent('.collapsible-block__wrapper').toggleClass('open');
@@ -59,11 +87,10 @@ var Noodles = {
 				$(this).wrapInner('<div class="read-more collapsible"><div class="collapsible__body"></div></div>');
 				$(this).append('<a href="javascript:void(0);" class="collapsible__link js-toggle-box" data-box=".read-more"><span class="text-open">Читать полностью</span><span class="text-close">Свернуть</span></a>');
 			});
-			/*$('.read-more--mobile').on('click', '.js-toggle-box', function(e){
+			$('.read-more--mobile').on('click', '.js-toggle-box', function(e){
 				e.stopPropagation();
-				//$(this).trigger('click');
-				$(this).on('click');
-			});*/
+				toggleBox($(this));
+			});
 		}
 		
 		$('.menu--multilevel--aside > .menu-item--parent > .menu-item__link').on('click', function(e){
@@ -118,10 +145,15 @@ var Noodles = {
 		$('.modal__wrap').on('click', function(e){
 			e.stopPropagation();
 		});
+		$('.modal__wrap').on('click','.js-toggle-box', function(e){
+			e.stopPropagation();
+			toggleBox($(this));
+		});
 		
 		/*$('input[type="tel"]').each(function(){
 			//var im = new Inputmask("+7(999)999-99-99");
 			//im.mask($(this));
+			require('jquery.inputmask');
 			$(this).inputmask("+7(999)999-99-99");
 		});*/
 		
