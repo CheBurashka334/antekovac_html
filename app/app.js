@@ -86,7 +86,14 @@ $(function(){
 /*$(function(){
 	if($('input[type="tel"]').length){
 		require.ensure([],function(require){
-			require('jquery.inputmask');
+			let inputmask = require('jquery.inputmask');
+			//$('input[type="tel"]').inputmask("+7(999)999-99-99");
+			$('input[type="tel"]').each(function(){
+				//let inputmask = require('jquery.inputmask');
+				/*var im = new Inputmask("+7(999)999-99-99");
+				im.mask($(this));*//*
+				$(this).inputmask("+7(999)999-99-99");
+			});
 		});
 	}
 });*/
@@ -96,7 +103,6 @@ let Dropdowns = require('./js/dropdown');
 let DropdownSynh = require('./js/dropdownSynh');
 let Radios = require('./js/customRadio');
 let Noodles = require('./js/noodles');
-
 // Run components
 
 $(function () {

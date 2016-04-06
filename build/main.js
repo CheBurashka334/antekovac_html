@@ -134,7 +134,7 @@ var App =
 	
 	$(function () {
 		if ($('.owl-carousel').length) {
-			__webpack_require__.e/* nsure */(1, function (require) {
+			__webpack_require__.e/* nsure */(6, function (require) {
 				__webpack_require__(63);
 				var Sliders = __webpack_require__(66);
 				Sliders.run();
@@ -144,7 +144,7 @@ var App =
 	
 	$(function () {
 		if ($('.js-viewer,.js-viewer-wrapper').length) {
-			__webpack_require__.e/* nsure */(2, function (require) {
+			__webpack_require__.e/* nsure */(7, function (require) {
 				__webpack_require__(67);
 				var Viewers = __webpack_require__(70);
 				Viewers.run();
@@ -155,7 +155,7 @@ var App =
 	var Scrollissimo = __webpack_require__(56);
 	$(function () {
 		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
-			__webpack_require__.e/* nsure */(3, function (require) {
+			__webpack_require__.e/* nsure */(8, function (require) {
 				__webpack_require__(71);
 				var gsapAnims = __webpack_require__(74);
 				$('.js-anim-scroll').each(function () {
@@ -171,7 +171,7 @@ var App =
 	
 	$(function () {
 		if ($(".js-scrollable-content").length) {
-			__webpack_require__.e/* nsure */(4, function (require) {
+			__webpack_require__.e/* nsure */(9, function (require) {
 				__webpack_require__(75);
 				__webpack_require__(77)($);
 				$(".js-scrollable-content").mCustomScrollbar({
@@ -186,17 +186,23 @@ var App =
 	/*$(function(){
 		if($('input[type="tel"]').length){
 			require.ensure([],function(require){
-				require('jquery.inputmask');
-			});
-		}
-	});*/
+				let inputmask = require('jquery.inputmask');
+				//$('input[type="tel"]').inputmask("+7(999)999-99-99");
+				$('input[type="tel"]').each(function(){
+					//let inputmask = require('jquery.inputmask');
+					/*var im = new Inputmask("+7(999)999-99-99");
+					im.mask($(this));*/ /*
+	                        $(this).inputmask("+7(999)999-99-99");
+	                        });
+	                        });
+	                        }
+	                        });*/
 	
 	var LazyImages = __webpack_require__(58);
 	var Dropdowns = __webpack_require__(59);
 	var DropdownSynh = __webpack_require__(60);
 	var Radios = __webpack_require__(61);
 	var Noodles = __webpack_require__(62);
-	
 	// Run components
 	
 	$(function () {
@@ -11068,7 +11074,35 @@ var App =
 	
 			$('.js-toggle-box').on('click', function (e) {
 				e.stopPropagation();
-				var box = $(this).attr('data-box');
+				/*var box = $(this).attr('data-box');
+	   if(box != '' && box != 'undefined'){
+	   	if($(box).length > 0){
+	   		if($(box).hasClass('collapsible')) {
+	   			$(box).slideToggle(500);
+	   		} else {
+	   			if(($(box).hasClass('page-aside')) || ($(box).hasClass('block-aside')) || ($(box).hasClass('modal'))){
+	   				if($('.page').hasClass('fixed')){
+	   					position();
+	   					$('.page').removeClass('fixed');
+	   				} else {
+	   					position('fix');
+	   					$('.page').addClass('fixed');
+	   				}
+	   			}
+	   			$(box).toggleClass('open');
+	   		}
+	   	} else {
+	   		console.error(box+' isn\'t found');
+	   	}
+	   } else {
+	   	console.error('Box? Which box?');
+	   }
+	   $(this).siblings('.js-toggle-box').removeClass('opened');
+	   $(this).toggleClass('opened');*/
+				toggleBox($(this));
+			});
+			function toggleBox(elem) {
+				var box = elem.attr('data-box');
 				if (box != '' && box != 'undefined') {
 					if ($(box).length > 0) {
 						if ($(box).hasClass('collapsible')) {
@@ -11091,9 +11125,9 @@ var App =
 				} else {
 					console.error('Box? Which box?');
 				}
-				$(this).siblings('.js-toggle-box').removeClass('opened');
-				$(this).toggleClass('opened');
-			});
+				elem.siblings('.js-toggle-box').removeClass('opened');
+				elem.toggleClass('opened');
+			}
 	
 			$('.collapsible-block__header').on('click', function () {
 				$(this).parent('.collapsible-block__wrapper').toggleClass('open');
@@ -11105,11 +11139,13 @@ var App =
 					$(this).wrapInner('<div class="read-more collapsible"><div class="collapsible__body"></div></div>');
 					$(this).append('<a href="javascript:void(0);" class="collapsible__link js-toggle-box" data-box=".read-more"><span class="text-open">Читать полностью</span><span class="text-close">Свернуть</span></a>');
 				});
-				/*$('.read-more--mobile').on('click', '.js-toggle-box', function(e){
-	   	e.stopPropagation();
-	   	//$(this).trigger('click');
-	   	$(this).on('click');
-	   });*/
+				$('.read-more--mobile').on('click', '.js-toggle-box', function (e) {
+					e.stopPropagation();
+					//$(this).trigger('click');
+					//$(this).on('click');
+					//console.log($(this));
+					toggleBox($(this));
+				});
 			}
 	
 			$('.menu--multilevel--aside > .menu-item--parent > .menu-item__link').on('click', function (e) {
@@ -11163,10 +11199,16 @@ var App =
 			$('.modal__wrap').on('click', function (e) {
 				e.stopPropagation();
 			});
+			/*$('.modal__wrap').on('click','.js-toggle-box', function(e){
+	  	//console.log($(this));
+	  	//e.stopPropagation();
+	  	//$(this).trigger('click');
+	  });*/
 	
 			/*$('input[type="tel"]').each(function(){
 	  	//var im = new Inputmask("+7(999)999-99-99");
 	  	//im.mask($(this));
+	  	require('jquery.inputmask');
 	  	$(this).inputmask("+7(999)999-99-99");
 	  });*/
 	
