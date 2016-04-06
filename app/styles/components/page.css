@@ -180,5 +180,10 @@
 		&--events {
 			margin-top: 0;
 		}
+		&--sales .sale-products-block {
+			background: var(--main-white);
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
 	}
 }

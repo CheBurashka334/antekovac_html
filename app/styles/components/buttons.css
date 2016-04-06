@@ -18,6 +18,9 @@
 	}
 	&[class*="medium"]{
 		padding: 1em 90px;
+		.sales-slider & {
+			padding: 1em 50px;
+		}
 	}
 	&[class*="--big"] {
 		padding: 13px 20px;

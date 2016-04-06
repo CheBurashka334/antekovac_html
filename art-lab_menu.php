@@ -12,7 +12,7 @@
 			<a href="master-classes.php" class="horizontal-menu__link dropdown__title">мастер-классы</a>
 		</div>
 		<div class="horizontal-menu__item col dropdown__item">
-			<a href="#" class="horizontal-menu__link dropdown__title">акции</a>
+			<a href="sales.php" class="horizontal-menu__link dropdown__title">акции</a>
 		</div>
 	</div>
 </div>

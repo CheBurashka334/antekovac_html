@@ -70,6 +70,18 @@
 			margin: 0 0 15px;
 		}
     }
+	&__label {
+		text-transform: uppercase;
+		font-size: 15px;
+		margin-top: -5px;
+		margin-bottom: 10px;
+		&--sale {
+			color: var(--error-red);
+		}
+		&--new {
+			color: var(--success-green);
+		}
+	}
     &__price {
         color: var(--main-gray);
         margin: 0 0 20px;
@@ -79,6 +91,21 @@
 		}
 		.product-tile:not(.product-tile--half-wrapper):hover & {
 			color: #333333;
+			.price--old {
+				opacity: 1;
+			}
+		}
+		.price {
+			&--old {
+				display: inline-block;
+				margin-right: 5px;
+				color: var(--main-gray);
+				opacity: 0.6;
+				text-decoration: line-through;
+			}
+			&--old + .price {
+				display: inline-block;
+			}
 		}
     }
     &__like {

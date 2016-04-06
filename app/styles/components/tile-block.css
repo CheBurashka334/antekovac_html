@@ -53,6 +53,10 @@
                 margin-bottom: 0;
             }
         }
+		.sales-slider & {
+			margin-top: 50px;
+			margin-bottom: 15px;
+		}
     }
     &__image {
         float: left;
@@ -117,9 +121,21 @@
 	&__note {
 		color: #b7b7b7;
 		font: 14px "Roboto";
+		&--big {
+			font-size: 15px;
+			color: var(--dark-gray);
+		}
 	}
 	&__heading {
 		font: 24px "Bebas Neue Book";
+		.sales-slider & {
+			margin-bottom: 10px;
+			&, :--heading {
+				font: 30px "MyriadPro";
+				color: var(--main-brown);
+				text-transform: uppercase;
+			}
+		}
 	}
 	&--collection {
 		padding: 0;
@@ -603,6 +619,26 @@
 		.page--collection-process &--scrollable &__heading,
 		.page--collection-process &--scrollable &__heading :--heading{
 			margin-bottom: 10px;
+		}
+		.sales-slider &--bordered--no-mobile {
+			padding: 25px 0;
+			margin-bottom: 0;
+			.btn {
+				width: 100%;
+				max-width: 300px;
+				text-align: center;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.sales-slider &--bordered--no-mobile  &__heading,
+		.sales-slider &--bordered--no-mobile  &__heading :--heading {
+			font-size: 24px;
+		}
+		.sales-slider &--bordered--no-mobile  &__text {
+			margin-top: 25px;
+			margin-bottom: 25px;
 		}
 	}
 }

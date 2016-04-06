@@ -3233,7 +3233,7 @@ webpackJsonpApp([1],{
 						}
 					},
 					lazyLoad: $('.set-products').attr('data-lazyload') ? !! +$('.set-products').attr('data-lazyload') : false,
-					navContainerClass: 'set-products-navs',
+					navContainerClass: $('.set-products').attr('data-nav-style') ? $('.set-products').attr('data-nav-style') : 'set-products-navs',
 					navClass: ['nav-prev', 'nav-next'],
 					navText: ['', '']
 				}
