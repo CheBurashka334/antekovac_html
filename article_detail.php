@@ -23,7 +23,7 @@
 							Мы публикуем статьи, интервью и материалы о нас в СМИ
 						</div>
 						<div class="collection__button">
-							<a href="collection_process.php" class="btn btn--transparent btn--arrow">
+							<a href="what-they-say.php" class="btn btn--transparent btn--arrow">
 								Смотреть что о нас говорят
 							</a>
 						</div>
