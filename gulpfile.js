@@ -70,7 +70,8 @@ gulp.task('svgsprite', function() {
                 dest            : 'svg/'    // Keep the intermediate files
             },
             svg                     : {                         // General options for created SVG files
-                xmlDeclaration      : false
+                xmlDeclaration      : false,
+				doctypeDeclaration  : false
             },
             mode                : {
                 symbol          : true      // Activate the «symbol» mode
