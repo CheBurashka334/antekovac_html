@@ -127,6 +127,9 @@
 	&--events {
 		margin-top: 25px;
 	}
+	&--article {
+		margin-bottom: 50px;
+	}
 }
 @media (--mobile){
 	.page {

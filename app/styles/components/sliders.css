@@ -450,6 +450,9 @@
 	&, &.tile-block {
 		padding: 40px 0;
 		margin-top: 20px;
+		.page--article .heading + & {
+			margin-top: 45px;
+		}
 	}
 	.owl-item &__slide &__img img {
 		width: auto;

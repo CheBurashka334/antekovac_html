@@ -26,7 +26,6 @@
 	}
 	&__heading-link {
 		text-decoration: none;
-		/*color: inherit;*/
 		&:hover {
 			text-decoration: underline;
 		}
@@ -299,6 +298,12 @@
 	}
 	&--scrollable &__heading {
 		margin-bottom: 1.5em;
+		:--heading {
+			margin-bottom: 10px;
+		}
+		&--date {
+			margin-bottom: 10px;
+		}
 	}
 	&--centered &__content,
 	&--centered &__note,
@@ -335,11 +340,13 @@
 @media (--mobile),(--small){
 	.tile-block {
 		.page--collection &--collection--big &__wrapper,
-		.page--collection-process &--collection &__wrapper {
+		.page--collection-process &--collection &__wrapper,
+		.page--article &--collection &__wrapper {
 			padding: 40px;
 		}
 		.page--collection &--collection--big,
-		.page--collection-process &--collection {
+		.page--collection-process &--collection,
+		.page--article &--collection{
 			&.mobile-fullwidth {
 				padding: 0;
 				margin-bottom: 0;

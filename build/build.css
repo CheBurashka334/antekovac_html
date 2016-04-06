@@ -3260,6 +3260,9 @@ table.nostyle th, table.nostyle td {
 	padding: 40px 0;
 	margin-top: 20px;
 }
+.page--article .heading + .news-slider, .page--article .heading + .news-slider.tile-block {
+	margin-top: 45px;
+}
 .owl-item .news-slider__slide .news-slider__img img {
 	width: auto;
 	margin: 0 auto;
@@ -3862,7 +3865,6 @@ table.nostyle th, table.nostyle td {
 .tile-block__heading-link {
 	text-decoration: none;
 }
-/*color: inherit;*/
 .tile-block__heading-link:hover {
 	text-decoration: underline;
 }
@@ -4164,6 +4166,17 @@ table.nostyle th, table.nostyle td {
 .tile-block--scrollable .tile-block__heading {
 	margin-bottom: 1.5em;
 }
+.tile-block--scrollable .tile-block__heading h1,
+		.tile-block--scrollable .tile-block__heading h2,
+		.tile-block--scrollable .tile-block__heading h3,
+		.tile-block--scrollable .tile-block__heading h4,
+		.tile-block--scrollable .tile-block__heading h5,
+		.tile-block--scrollable .tile-block__heading h6 {
+	margin-bottom: 10px;
+}
+.tile-block--scrollable .tile-block__heading--date {
+	margin-bottom: 10px;
+}
 .tile-block--centered .tile-block__content,
 	.tile-block--centered .tile-block__note,
 	.tile-block--centered .tile-block__heading {
@@ -4193,14 +4206,15 @@ table.nostyle th, table.nostyle td {
 }
 @media (max-width: 767px), (min-width: 768px) and (max-width: 1023px){
 	.page--collection .tile-block--collection--big .tile-block__wrapper,
-		.page--collection-process .tile-block--collection .tile-block__wrapper {
+		.page--collection-process .tile-block--collection .tile-block__wrapper,
+		.page--article .tile-block--collection .tile-block__wrapper {
 		padding: 40px;
 	}
-	.page--collection .tile-block--collection--big.mobile-fullwidth, .page--collection-process .tile-block--collection.mobile-fullwidth {
+	.page--collection .tile-block--collection--big.mobile-fullwidth, .page--collection-process .tile-block--collection.mobile-fullwidth, .page--article .tile-block--collection.mobile-fullwidth {
 		padding: 0;
 		margin-bottom: 0;
 	}
-	.page--collection .tile-block--collection--big .collection__info, .page--collection-process .tile-block--collection .collection__info {
+	.page--collection .tile-block--collection--big .collection__info, .page--collection-process .tile-block--collection .collection__info, .page--article .tile-block--collection .collection__info {
 		position: relative;
 		top: 0;
 		left: 0;
@@ -5052,6 +5066,9 @@ footer {
 }
 .page--events {
 	margin-top: 25px;
+}
+.page--article {
+	margin-bottom: 50px;
 }
 @media (max-width: 767px){
 	.page {
