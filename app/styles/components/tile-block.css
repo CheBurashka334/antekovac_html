@@ -8,6 +8,10 @@
     margin-bottom: 20px;
     position: relative;
 	width: 100%;
+	.sales-slider &,
+	.master-class-slider & {
+		margin-bottom: 0;
+	}
 	&__icon {
 		position: absolute;
 		width: 28px;
@@ -53,7 +57,8 @@
                 margin-bottom: 0;
             }
         }
-		.sales-slider & {
+		.sales-slider &,
+		.master-class-slider &{
 			margin-top: 50px;
 			margin-bottom: 15px;
 		}
@@ -128,7 +133,8 @@
 	}
 	&__heading {
 		font: 24px "Bebas Neue Book";
-		.sales-slider & {
+		.sales-slider &,
+		.master-class-slider & {
 			margin-bottom: 10px;
 			&, :--heading {
 				font: 30px "MyriadPro";
@@ -197,6 +203,9 @@
 	}
     .btn {
         margin: 15px 0;
+		.master-class-slider & {
+			margin-bottom: 0;
+		}
     }
 	>*:last-child,
 	>*:last-child > *:last-child {
@@ -632,11 +641,17 @@
 				margin-right: auto;
 			}
 		}
+		.master-class-slider  &--bordered--no-mobile {
+			padding: 25px 0;
+		}
 		.sales-slider &--bordered--no-mobile  &__heading,
-		.sales-slider &--bordered--no-mobile  &__heading :--heading {
+		.sales-slider &--bordered--no-mobile  &__heading :--heading,
+		.master-class-slider &--bordered--no-mobile  &__heading,
+		.master-class-slider &--bordered--no-mobile  &__heading :--heading {
 			font-size: 24px;
 		}
-		.sales-slider &--bordered--no-mobile  &__text {
+		.sales-slider &--bordered--no-mobile  &__text,
+		.master-class-slider &--bordered--no-mobile  &__text {
 			margin-top: 25px;
 			margin-bottom: 25px;
 		}

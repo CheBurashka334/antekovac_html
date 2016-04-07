@@ -10,6 +10,40 @@
         <h2>арт-лаборатория</h2>
     </div>
 	<?php require ('art-lab_menu.php') ?>
+	<div class="master-class-slider carousel--dark-navs--compact" data-lazyload="1">
+		<div class="owl-carousel">
+			<div class="master-class-slider__slide owl-lazy" data-src="images/master-class.jpg">
+				<div class="tile-block tile-block--bordered--no-mobile">
+					<div class="tile-block__wrapper">
+						<div class="tile-block__heading"><h1>Художественная роспись</h1></div>
+						<div class="tile-block__note tile-block__note--big">20 марта , Начало 15:00</div>
+						<div class="tile-block__text">
+							<p>Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью удобной конструкции арт-объект без сомнения заслужит восхищение Ваше и окружающих. Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью.</p>
+						</div>
+						<div class="master-class__actions">
+							<button class="btn btn--dark--medium">Условия</button>
+							<button class="btn btn--primary--medium">Участвовать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="master-class-slider__slide owl-lazy" data-src="images/master-class.jpg">
+				<div class="tile-block tile-block--bordered--no-mobile">
+					<div class="tile-block__wrapper">
+						<div class="tile-block__heading"><h1>Художественная роспись</h1></div>
+						<div class="tile-block__note tile-block__note--big">20 марта , Начало 15:00</div>
+						<div class="tile-block__text">
+							<p>Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью удобной конструкции арт-объект без сомнения заслужит восхищение Ваше и окружающих. Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью.</p>
+						</div>
+						<div class="master-class__actions">
+							<button class="btn btn--dark--medium">Условия</button>
+							<button class="btn btn--primary--medium">Участвовать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="master-class collapsible-block__wrapper mobile-fullwidth--noGutter master-class--active">
 		<div class="collapsible-block__header">
 			<div class="master-class__date"><span class="label">New</span> 20 марта</div>

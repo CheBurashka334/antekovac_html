@@ -22,31 +22,6 @@ var Noodles = {
 			
 		$('.js-toggle-box').on('click', function(e){
 			e.stopPropagation();
-			/*var box = $(this).attr('data-box');
-			if(box != '' && box != 'undefined'){
-				if($(box).length > 0){
-					if($(box).hasClass('collapsible')) {
-						$(box).slideToggle(500);
-					} else {
-						if(($(box).hasClass('page-aside')) || ($(box).hasClass('block-aside')) || ($(box).hasClass('modal'))){
-							if($('.page').hasClass('fixed')){
-								position();
-								$('.page').removeClass('fixed');
-							} else {
-								position('fix');
-								$('.page').addClass('fixed');
-							}
-						}
-						$(box).toggleClass('open');
-					}
-				} else {
-					console.error(box+' isn\'t found');
-				}
-			} else {
-				console.error('Box? Which box?');
-			}
-			$(this).siblings('.js-toggle-box').removeClass('opened');
-			$(this).toggleClass('opened');*/
 			toggleBox($(this));
 		});
 		function toggleBox(elem){

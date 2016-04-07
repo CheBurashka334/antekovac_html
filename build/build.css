@@ -3362,11 +3362,12 @@ table.nostyle th, table.nostyle td {
 		text-align: center;
 	}
 }
-.sales-slider {
+.sales-slider,
+.master-class-slider {
 	margin-top: 0.5em;
 	margin-bottom: 35px;
 }
-.sales-slider__slide {
+.sales-slider__slide, .master-class-slider__slide {
 	width: 100%;
 	padding: 45px;
 	display: -webkit-box;
@@ -3380,30 +3381,34 @@ table.nostyle th, table.nostyle td {
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.sales-slider .tile-block {
+.sales-slider .tile-block, .master-class-slider .tile-block {
 	-webkit-flex-basis: 390px;
 	    -ms-flex-preferred-size: 390px;
 	        flex-basis: 390px;
 }
+.master-class-slider {
+	margin-bottom: 0;
+}
 @media (max-width: 767px){
-	.sales-slider {
+	.sales-slider,
+	.master-class-slider {
 		margin-top: 20px;
 		margin-bottom: 0;
 	}
-	.sales-slider__slide {
+	.sales-slider__slide, .master-class-slider__slide {
 		display: block;
 		padding: 0;
 		padding-top: 175px;
 		background-size: contain;
 		background-position: top center;
 	}
-	.sales-slider .dark-navs--compact [class*="nav-"]{
+	.sales-slider .dark-navs--compact [class*="nav-"],.master-class-slider .dark-navs--compact [class*="nav-"]{
 		top: 95px;
 	}
-	.sales-slider .dark-navs--compact .nav-prev {
+	.sales-slider .dark-navs--compact .nav-prev, .master-class-slider .dark-navs--compact .nav-prev {
 		left: -15px;
 	}
-	.sales-slider .dark-navs--compact .nav-next {
+	.sales-slider .dark-navs--compact .nav-next, .master-class-slider .dark-navs--compact .nav-next {
 		left: auto;
 		right: -15px;
 	}
@@ -3913,6 +3918,10 @@ table.nostyle th, table.nostyle td {
     position: relative;
 	width: 100%;
 }
+.sales-slider .tile-block,
+	.master-class-slider .tile-block {
+	margin-bottom: 0;
+}
 .tile-block__icon {
 	position: absolute;
 	width: 28px;
@@ -3964,7 +3973,8 @@ table.nostyle th, table.nostyle td {
 .tile-block__text p:last-child {
 	margin-bottom: 0;
 }
-.sales-slider .tile-block__text {
+.sales-slider .tile-block__text,
+		.master-class-slider .tile-block__text{
 	margin-top: 50px;
 	margin-bottom: 15px;
 }
@@ -4042,7 +4052,8 @@ table.nostyle th, table.nostyle td {
 .tile-block__heading {
 	font: 24px "Bebas Neue Book";
 }
-.sales-slider .tile-block__heading {
+.sales-slider .tile-block__heading,
+		.master-class-slider .tile-block__heading {
 	margin-bottom: 10px;
 }
 .sales-slider .tile-block__heading,
@@ -4051,7 +4062,14 @@ table.nostyle th, table.nostyle td {
 			.sales-slider .tile-block__heading h3,
 			.sales-slider .tile-block__heading h4,
 			.sales-slider .tile-block__heading h5,
-			.sales-slider .tile-block__heading h6 {
+			.sales-slider .tile-block__heading h6,
+			.master-class-slider .tile-block__heading,
+			.master-class-slider .tile-block__heading h1,
+			.master-class-slider .tile-block__heading h2,
+			.master-class-slider .tile-block__heading h3,
+			.master-class-slider .tile-block__heading h4,
+			.master-class-slider .tile-block__heading h5,
+			.master-class-slider .tile-block__heading h6 {
 	font: 30px "MyriadPro";
 	color: #b59063;
 	text-transform: uppercase;
@@ -4120,6 +4138,9 @@ table.nostyle th, table.nostyle td {
 }
 .tile-block .btn {
 	margin: 15px 0;
+}
+.master-class-slider .tile-block .btn {
+	margin-bottom: 0;
 }
 .tile-block >*:last-child,
 	.tile-block >*:last-child > *:last-child {
@@ -4621,16 +4642,27 @@ table.nostyle th, table.nostyle td {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.master-class-slider  .tile-block--bordered--no-mobile {
+		padding: 25px 0;
+	}
 	.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading,
 		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h1,
 		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h2,
 		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h3,
 		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h4,
 		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h5,
-		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h6 {
+		.sales-slider .tile-block--bordered--no-mobile  .tile-block__heading h6,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h1,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h2,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h3,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h4,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h5,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__heading h6 {
 		font-size: 24px;
 	}
-	.sales-slider .tile-block--bordered--no-mobile  .tile-block__text {
+	.sales-slider .tile-block--bordered--no-mobile  .tile-block__text,
+		.master-class-slider .tile-block--bordered--no-mobile  .tile-block__text {
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}

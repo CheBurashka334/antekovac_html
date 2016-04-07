@@ -551,7 +551,8 @@
 	}
 }
 
-.sales-slider {
+.sales-slider,
+.master-class-slider {
 	margin-top: 0.5em;
 	margin-bottom: 35px;
 	&__slide {
@@ -566,8 +567,12 @@
 		flex-basis: 390px;
 	}
 }
+.master-class-slider {
+	margin-bottom: 0;
+}
 @media (--mobile){
-	.sales-slider {
+	.sales-slider,
+	.master-class-slider {
 		margin-top: 20px;
 		margin-bottom: 0;
 		&__slide {
