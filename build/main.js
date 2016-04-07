@@ -11074,6 +11074,7 @@ var App =
 			});
 	
 			$('.js-toggle-box').on('click', function (e) {
+				e.preventDefault();
 				e.stopPropagation();
 				toggleBox($(this));
 			});
