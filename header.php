@@ -53,11 +53,11 @@
 				</div>
 				<div class="header__right">
 					<div class="header__link">
-						<a href="#">
+						<button class="search-btn js-toggle-box" data-box=".modal.search-form">
 							<svg class="i-icon i-icon--stroke" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
 							</svg>
-						</a>
+						</button>
 					</div>
 					<div class="header__link">
 						<a href="#">

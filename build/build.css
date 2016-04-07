@@ -2464,7 +2464,9 @@ h3 {
 	}
 }
 h4 {
-    font-size: 15px;
+    font-size: 18px;
+	font-family: "MyriadPro";
+	margin: 1rem 0 2rem;
 }
 h5 {
     font-size: 14px;
@@ -2500,6 +2502,11 @@ p {
 }
 .center-align {
 	text-align: center;
+}
+.label--left {
+	float: left;
+	min-width: 50px;
+	margin: 0 0 1em;
 }
 dl {
     margin: 15px 0;
@@ -3921,6 +3928,9 @@ table.nostyle th, table.nostyle td {
 .sales-slider .tile-block,
 	.master-class-slider .tile-block {
 	margin-bottom: 0;
+}
+.page--contacts .tile-block {
+	padding-bottom: 50px;
 }
 .tile-block__icon {
 	position: absolute;
@@ -6324,6 +6334,40 @@ footer {
 }:root {
 	/* пути к картинкам */
 }
+.contacts__block {
+	margin-top: 30px;
+	width: 100%;
+}
+.contacts__block:first-of-type {
+	margin-top: 0;
+}
+.contacts__block p {
+	width: 90%;
+}
+.contacts__form {
+	padding-top: 20px;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	background: url(/antekovac/images/contacts-bg.png) left center no-repeat;
+	background-size: 48% auto;
+}
+@media (max-width: 767px){
+	.contacts__block {
+		margin-top: 0;
+	}
+	.contacts__block p {
+		width: 100%;
+	}
+}
+@media (max-width: 767px){
+	.contacts__form {
+		background: none;
+	}
+}:root {
+	/* пути к картинкам */
+}
 .header {
     background: white;
 	position: fixed;
@@ -6406,8 +6450,21 @@ footer {
 	text-decoration: none;
 	color: #9a9a9a;
 }
+.header__link button {
+	color: #9a9a9a;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	background: none;
+	outline: none;
+}
+.header__link button:focus {
+	outline: none;
+}
 .header__link .i-icon {
-	fill: #9a9a9a;
+	fill: currentColor;
 	height: 20px;
 	width: auto;
 	max-width: 30px;
@@ -6415,7 +6472,7 @@ footer {
 .header__link .i-icon--stroke {
 	width: 20px;
 	fill: none;
-	stroke: #9a9a9a;
+	stroke: currentColor;
 }
 .header__link .i-icon + span {
 	margin-left: 5px;
@@ -6430,7 +6487,7 @@ footer {
 	font-size: 18px;
 	font-family: 'Bebas Neue Book';
 }
-.header__right .header__link a {
+.header__right .header__link a, .header__right .header__link button {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -6449,16 +6506,9 @@ footer {
 	-webkit-transition: background .3s ease;
 	transition: background .3s ease;
 }
-.header__right .header__link a:hover {
+.header__right .header__link a:hover, .header__right .header__link button:hover {
 	background: #b59063;
 	color: white;
-}
-.header__right .header__link a:hover .i-icon {
-	fill: #fff;
-}
-.header__right .header__link a:hover .i-icon--stroke {
-	fill: none;
-	stroke: #fff;
 }
 @media (max-width: 1023px) {
     .header__right {
@@ -7206,6 +7256,11 @@ input[type="text"].small, input[type="email"].small, input[type="tel"].small, in
 	font-size: 14px;
 	padding: 0.5em 10px;
 }
+input[type="text"].transparent, input[type="email"].transparent, input[type="tel"].transparent, input[type="url"].transparent, input[type="password"].transparent, textarea.transparent, select.transparent {
+	background: transparent;
+	border: transparent;
+	color: currentColor;
+}
 input:-webkit-autofill, 
 textarea:-webkit-autofill, 
 select:-webkit-autofill  {
@@ -7231,6 +7286,21 @@ select {
 	border: none;
 	background: transparent;
 	margin: 0;
+}
+.search-form__field {
+	color: #b59063;
+	border-bottom: 1px solid currentColor;
+	width: 100%;
+	max-width: 515px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.search-form__field input {
+	width: calc(100% - 45px);
+	font: 15px "Roboto";
+}
+.search-form__field .btn .i-icon {
+	height: 1.5em;
 }
 .big-radio {
     position: relative;
@@ -8630,6 +8700,31 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .message .modal__text {
 	margin: 1em 0 6em;
+}
+.modal.search-form {
+	background: url(/antekovac/images/search-bg.jpg) top center no-repeat;
+	background-size: cover;
+}
+.modal.search-form .btn-close {
+	top: 50px;
+	right: 50px;
+	color: white;
+}
+.modal.search-form .modal__wrap {
+	background: none;
+}
+.modal.search-form .modal__heading {
+	text-align: center;
+}
+.modal.search-form .modal__heading h1,
+		.modal.search-form .modal__heading h2,
+		.modal.search-form .modal__heading h3,
+		.modal.search-form .modal__heading h4,
+		.modal.search-form .modal__heading h5,
+		.modal.search-form .modal__heading h6 {
+	font-size: 31px;
+	margin-bottom: 1.5em;
+	color: white;
 }
 @media (max-width: 767px){
 	.modal__wrap {

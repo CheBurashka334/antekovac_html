@@ -102,6 +102,26 @@
 	.message &__text {
 		margin: 1em 0 6em;
 	}
+	&.search-form {
+		background: url(var(--img-path)/search-bg.jpg) top center no-repeat;
+		background-size: cover;
+		.btn-close {
+			top: 50px;
+			right: 50px;
+			color: white;
+		}
+	}
+	&.search-form &__wrap {
+		background: none;
+	}
+	&.search-form &__heading {
+		text-align: center;
+		:--heading {
+			font-size: 31px;
+			margin-bottom: 1.5em;
+			color: white;
+		}
+	}
 }
 @media (--mobile){
 	.modal {

@@ -12,6 +12,9 @@
 	.master-class-slider & {
 		margin-bottom: 0;
 	}
+	.page--contacts & {
+		padding-bottom: 50px;
+	}
 	&__icon {
 		position: absolute;
 		width: 28px;

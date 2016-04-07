@@ -25,6 +25,7 @@ require("./components/bonus.css");
 require("./components/favorite.css");
 require("./components/sketch.css");
 require("./components/master-class.css");
+require("./components/contacts.css");
 
 /*Header*/
 

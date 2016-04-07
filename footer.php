@@ -143,7 +143,20 @@
         </div>
     </div>
 </footer>
-
+<div class="modal search-form">
+	<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.search-form"></button>
+	<div class="modal__wrap">
+		<div class="modal__inner">
+			<div class="modal__heading"><h2>поиск по сайту</h2></div>
+			<div class="search-form__field">
+				<input type="text" class="transparent" />
+				<button class="btn btn--flat--square--only-icon">
+					<svg class="i-icon i-icon--stroke"><use xlink:href="#zoom"/></svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 
 </body>

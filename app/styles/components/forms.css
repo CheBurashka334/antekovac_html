@@ -38,6 +38,11 @@
 		font-size: 14px;
 		padding: 0.5em 10px;
 	}
+	&.transparent {
+		background: transparent;
+		border: transparent;
+		color: currentColor;
+	}
 }
 
 input:-webkit-autofill, 
@@ -68,7 +73,23 @@ select {
 		margin: 0;
 	}
 }
-
+.search-form {
+	&__field {
+		color: var(--main-brown);
+		border-bottom: 1px solid currentColor;
+		width: 100%;
+		max-width: 515px;
+		padding: 0 10px;
+		margin: 0 auto;
+		input {
+			width: calc(100% - 45px);
+			font: 15px "Roboto";
+		}
+		.btn .i-icon {
+			height: 1.5em;
+		}
+	}
+}
 
 .big-radio {
     position: relative;

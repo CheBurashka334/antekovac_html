@@ -189,7 +189,9 @@ h3 {
 }
 
 h4 {
-    font-size: 15px;
+    font-size: 18px;
+	font-family: "MyriadPro";
+	margin: 1rem 0 2rem;
 }
 
 h5 {
@@ -229,6 +231,13 @@ p {
 }
 .center-align {
 	text-align: center;
+}
+.label {
+	&--left {
+		float: left;
+		min-width: 50px;
+		margin: 0 0 1em;
+	}
 }
 
 dl {
