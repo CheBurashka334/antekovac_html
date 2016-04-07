@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="col-6_sm-12">
-				<div class="contacts__map" id="contacts-map"></div>
+				<div class="contacts__map map" id="contacts-map"></div>
 			</div>
 		</div>
 		<div class="contacts__block">
