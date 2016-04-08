@@ -143,7 +143,7 @@
         </div>
     </div>
 </footer>
-<div class="modal search-form">
+<div class="modal modal--fullsize search-form">
 	<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.search-form"></button>
 	<div class="modal__wrap">
 		<div class="modal__inner">

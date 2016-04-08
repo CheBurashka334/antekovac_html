@@ -148,6 +148,18 @@ var Sliders = {
 					dots: false
                 }
             },
+			{
+				'selector': '.modal__slider',
+				'options': {
+					items: 1,
+					nav: true,
+					lazyLoad: true,
+					navContainerClass:  $('.modal__slider').attr('data-nav-style') ? $('.modal__slider').attr('data-nav-style') : 'arrow-thin-navs',
+                    navClass: ['nav-prev', 'nav-next'],
+                    navText: ['', ''],
+					dots: false
+				}
+			},
         ];
 
         sliders.forEach(function(item) {
@@ -162,6 +174,13 @@ var Sliders = {
 				nav: false,
 			});
 		}
+		$('.js-to-slide').on('click', function(e){
+			e.preventDefault();
+			var slide = $(this).attr('href');
+			var pos = $('[data-slide="'+slide+'"]').parent('.owl-item').index();
+			var slider = $('[data-slide="'+slide+'"]').parents('.owl-carousel');
+			slider.trigger('to.owl.carousel',[pos,10,true]);
+		});
     }
 };
 

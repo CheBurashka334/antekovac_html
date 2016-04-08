@@ -11063,7 +11063,9 @@ var App =
 			});
 	
 			$('.js-toggle-box').on('click', function (e) {
-				e.preventDefault();
+				if (!$(this).hasClass('js-to-slide')) {
+					e.preventDefault();
+				}
 				e.stopPropagation();
 				toggleBox($(this));
 			});

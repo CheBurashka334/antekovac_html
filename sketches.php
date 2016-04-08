@@ -30,7 +30,7 @@
 					<img src="images/sketches/sketch-1.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-1" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -42,7 +42,7 @@
 					<img src="images/sketches/sketch-2.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-2" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -52,7 +52,7 @@
 					<img src="images/sketches/sketch-3.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-3" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -64,7 +64,7 @@
 					<img src="images/sketches/sketch-4.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-4" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -76,7 +76,7 @@
 					<img src="images/sketches/sketch-5.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-5" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -88,7 +88,7 @@
 					<img src="images/sketches/sketch-6.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-6" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -100,7 +100,7 @@
 					<img src="images/sketches/sketch-7.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-7" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -112,7 +112,7 @@
 					<img src="images/sketches/sketch-8.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-8" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -124,7 +124,7 @@
 					<img src="images/sketches/sketch-9.jpg" alt="" />
 				</div>
 				<div class="sketch__overlay">
-					<a href="#" class="sketch__link">
+					<a href="#sketch-9" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
 						<svg class="i-icon"><use xlink:href="#arrow-right"/></svg>
 					</a>
 				</div>
@@ -139,5 +139,50 @@
 		<li class="pagination__item"><a href="#">17</a></li>
 		<li class="pagination__item pagination__item--next"><a href="#"><svg class="i-icon" role="img"><use xlink:href="#arrow"/></svg></a></li>
 	</ul>
+</div>
+<div class="modal modal--fullsize modal-slider">
+	<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.modal-slider"></button>
+	<div class="modal__wrap">
+		<div class="modal__slider">
+			<div class="owl-carousel">
+				<div class="modal-slider__slide" data-slide="#sketch-1">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-1.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-2">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-2.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-3">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-3.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-4">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-4.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-5">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-5.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-6">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-6.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-7">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-7.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-8">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-8.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+				<div class="modal-slider__slide" data-slide="#sketch-9">
+					<img class="owl-lazy" data-src="images/sketches/full/sketch-9.jpg" alt=""/>
+					<p class="slide-title align-center">Эскиз с названием „Голубая ночь”</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <?php require ('footer.php') ?>

@@ -109,12 +109,17 @@
 	.message &__text {
 		margin: 1em 0 6em;
 	}
+	&--fullsize {
+		background: white;
+		.btn-close {
+			top: 50px;
+			right: 50px;
+		}
+	}
 	&.search-form {
 		background: url(var(--img-path)/search-bg.jpg) top center no-repeat;
 		background-size: cover;
 		.btn-close {
-			top: 50px;
-			right: 50px;
 			color: white;
 		}
 	}
@@ -175,6 +180,12 @@
 		}
 		&.search-form &__inner {
 			padding: 40px 0;
+		}
+		&.modal-slider &__wrap {
+			padding: 40px 0 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }
