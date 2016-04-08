@@ -370,6 +370,14 @@
 		}
 	}
 }
+@media (--small){
+	.btn {
+		&.btn-one-click .i-icon,
+		&.btn-one-click[class*="--main-anim"] .i-icon{
+			display: none;
+		}
+	}
+}
 @media (--small-down){
 	.btn {
 		&[class*="--main-anim"]{

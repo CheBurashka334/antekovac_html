@@ -3828,6 +3828,12 @@ table.nostyle th, table.nostyle td {
 	        transform: rotate(180deg);
 	height: 14px;
 }
+@media (min-width: 768px) and (max-width: 1023px){
+	.btn.btn-one-click .i-icon,
+		.btn.btn-one-click[class*="--main-anim"] .i-icon{
+		display: none;
+	}
+}
 @media (max-width: 1023px){
 	.btn[class*="--main-anim"]{
 		position: relative;
@@ -8095,6 +8101,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	stroke: #acadae;
 	vertical-align: bottom;
 }
+.basket-table .basket-quantity .plus:hover .i-icon, .basket-table .basket-quantity .minus:hover .i-icon {
+	stroke: #2e3034;
+}
 .basket-table .basket-quantity .plus .i-icon {
 	-webkit-transform: rotate(-90deg);
 	        transform: rotate(-90deg);
@@ -8284,7 +8293,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.basket-totals--sum,
 		.basket-totals--sale {
 		width: 45%;
-		height: 25%;
+		height: 30%;
 	}
 	.basket-totals--sum .basket-totals__label,
 			.basket-totals--sum .basket-totals__result,
@@ -8355,10 +8364,17 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	color: #959697;
 	border-radius: 50%;
 }
-.basket-toolbar__btn.current {
+.basket-toolbar__btn:hover {
+	color: #2e3034;
+}
+.basket-toolbar__btn:hover .count {
+	color: #2e3034;
+}
+.basket-toolbar__btn.current,
+		.basket-toolbar__btn.current:hover{
 	color: #b59063;
 }
-.basket-toolbar__btn.current .count {
+.basket-toolbar__btn.current .count, .basket-toolbar__btn.current:hover .count {
 	background: #b59063;
 	color: white;
 }
@@ -8652,6 +8668,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding: 40px 8.7%;
 	padding-right: 11.5%;
 }
+.modal--text .modal__inner {
+	padding: 11.5% 8% 40px;
+}
+.modal--text .modal__text {
+	margin: 30px 0 40px;
+}
 .modal__image {
 	width: 100%;
 	background-position: center;
@@ -8728,12 +8750,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	color: white;
 }
 @media (max-width: 767px){
+	.modal {
+		padding: 0;
+	}
 	.modal__wrap {
 		top: 0;
 		left: 0;
 		margin: 0 auto;
 		-webkit-transform: scale(0.5);
 		        transform: scale(0.5);
+		min-height: 100vh;
 	}
 	.modal.open .modal__wrap {
 		-webkit-transform: scale(1);

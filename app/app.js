@@ -4,7 +4,6 @@
 
 import 'jquery';
 import 'normalize.css';
-//import 'jquery.inputmask';
 
 // Load styles
 
@@ -83,20 +82,6 @@ $(function(){
 	}
 });
 
-/*$(function(){
-	if($('input[type="tel"]').length){
-		require.ensure([],function(require){
-			let inputmask = require('jquery.inputmask');
-			//$('input[type="tel"]').inputmask("+7(999)999-99-99");
-			$('input[type="tel"]').each(function(){
-				//let inputmask = require('jquery.inputmask');
-				/*var im = new Inputmask("+7(999)999-99-99");
-				im.mask($(this));*//*
-				$(this).inputmask("+7(999)999-99-99");
-			});
-		});
-	}
-});*/
 
 let LazyImages = require('./js/lazyImages');
 let Dropdowns = require('./js/dropdown');

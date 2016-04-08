@@ -53,6 +53,12 @@
 		padding: 40px 8.7%;
 		padding-right: 11.5%;
 	}
+	&--text &__inner {
+		padding: 11.5% 8% 40px;
+	}
+	&--text &__text {
+		margin: 30px 0 40px;
+	}
 	&__image {
 		width: 100%;
 		background-position: center;
@@ -126,11 +132,13 @@
 }
 @media (--mobile){
 	.modal {
+		padding: 0;
 		&__wrap {
 			top: 0;
 			left: 0;
 			margin: 0 auto;
 			transform: scale(0.5);
+			min-height: 100vh;
 		}
 		&.open &__wrap {
 			transform: scale(1);

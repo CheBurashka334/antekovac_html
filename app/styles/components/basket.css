@@ -128,6 +128,9 @@
 				stroke: #acadae;
 				vertical-align: bottom;
 			}
+			&:hover .i-icon {
+				stroke: var(--dark-gray);
+			}
 		}
 		.plus .i-icon {
 			transform: rotate(-90deg);
@@ -298,7 +301,7 @@
 		&--sum,
 		&--sale {
 			width: 45%;
-			height: 25%;
+			height: 30%;
 			.basket-totals__label,
 			.basket-totals__result {
 				display: inline-block;
@@ -365,7 +368,14 @@
 			color: #959697;
 			border-radius: 50%;
 		}
-		&.current {
+		&:hover {
+			color: var(--dark-gray);
+			.count {
+				color: var(--dark-gray);
+			}
+		}
+		&.current,
+		&.current:hover{
 			color: var(--main-brown);
 			.count {
 				background: var(--main-brown);

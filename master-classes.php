@@ -21,7 +21,7 @@
 							<p>Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью удобной конструкции арт-объект без сомнения заслужит восхищение Ваше и окружающих. Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью.</p>
 						</div>
 						<div class="master-class__actions">
-							<button class="btn btn--dark--medium">Условия</button>
+							<button class="btn btn--dark--medium js-toggle-box" data-box=".modal.master-class-conditions">Условия</button>
 							<button class="btn btn--primary--medium">Участвовать</button>
 						</div>
 					</div>
@@ -36,7 +36,7 @@
 							<p>Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью удобной конструкции арт-объект без сомнения заслужит восхищение Ваше и окружающих. Своеобразной формой дизайна, умелым сочетанием цветов и продуманностью.</p>
 						</div>
 						<div class="master-class__actions">
-							<button class="btn btn--dark--medium">Условия</button>
+							<button class="btn btn--dark--medium js-toggle-box" data-box=".modal.master-class-conditions">Условия</button>
 							<button class="btn btn--primary--medium">Участвовать</button>
 						</div>
 					</div>
@@ -74,7 +74,7 @@
 								<p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
 							</div>
 							<div class="master-class__actions">
-								<button class="btn btn--dark--medium">Условия</button>
+								<button class="btn btn--dark--medium js-toggle-box" data-box=".modal.master-class-conditions">Условия</button>
 								<button class="btn btn--primary--medium">Участвовать</button>
 							</div>
 						</div>
@@ -113,7 +113,7 @@
 								<p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
 							</div>
 							<div class="master-class__actions">
-								<button class="btn btn--dark--medium">Условия</button>
+								<button class="btn btn--dark--medium js-toggle-box" data-box=".modal.master-class-conditions">Условия</button>
 								<button class="btn btn--primary--medium">Участвовать</button>
 							</div>
 						</div>
@@ -271,6 +271,25 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal modal--text master-class-conditions">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.master-class-conditions"></button>
+		<div class="modal__inner">
+			<div class="modal__content">
+				<div class="modal__heading"><h2>индивидуальный заказ</h2></div>
+				<div class="modal__text">
+					<p class="light-text">Мастер-класс как локальная технология трансляции педагогического опыта должен демонстрировать конкретный методический прием или метод, методику преподавания, технологию обучения и воспитания. Он должен состоять из заданий, которые направляют деятельность участников для решения поставленной педагогической проблемы, но внутри каждого задания участники абсолютно свободны: им необходимо осуществить выбор пути исследования, выбор средств для достижения цели, выбор темпа работы. Мастер-класс должен всегда начинаться с актуализации знаний каждого по предлагаемой проблеме, что позволит расширить свои представления знаниями других участников.</p>
+					<p class="light-text">В технологии проведения мастер-класса мы предлагаем использовать определенный алгоритм поиска решения педагогической проблемы.</p>
+					<p class="light-text">Алгоритм – это формализация технологического процесса в виде последовательности некоторых шагов, блоков деятельности, которые зависят от содержания педагогической проблемы, но имеют и общепедагогическую часть, определяемую общими способами деятельности.</p>
+					<p class="light-text">Примерный алгоритм проведения мастер-класса должен состоять из следующих компонентов: выделение проблемы – панель - объединение в группы для решения проблемы – работа с материалом – представление результатов работы – обсуждение и корректировка результатов работы.</p>
+				</div>
+				<a href="#" class="btn js-toggle-box" data-box=".modal.master-class-conditions">
+					<span class="btn-text">Вернуться назад</span>
+				</a>
 			</div>
 		</div>
 	</div>
