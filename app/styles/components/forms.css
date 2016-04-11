@@ -25,6 +25,7 @@
         padding-right: 50px;
     }
     &.invalid {
+		/*background-image: svg('cross', '[fill]: var(--error-red)');*/
         background-position: right 20px center;
         background-repeat: no-repeat;
         padding-right: 50px;
@@ -56,6 +57,9 @@ textarea {
 	height: 4em;
 	&[rows]{
 		height: auto;
+	}
+	&.valid {
+		background-position: right 28px top 12px;
 	}
 }
 

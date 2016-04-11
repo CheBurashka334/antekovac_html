@@ -7311,6 +7311,7 @@ input[type="text"].valid, input[type="email"].valid, input[type="tel"].valid, in
 	padding-right: 50px;
 }
 input[type="text"].invalid, input[type="email"].invalid, input[type="tel"].invalid, input[type="url"].invalid, input[type="password"].invalid, textarea.invalid, select.invalid {
+	/*background-image: svg('cross', '[fill]: var(--error-red)');*/
 	background-position: right 20px center;
 	background-repeat: no-repeat;
 	padding-right: 50px;
@@ -7341,6 +7342,9 @@ textarea {
 }
 textarea[rows]{
 	height: auto;
+}
+textarea.valid {
+	background-position: right 28px top 12px;
 }
 select {
 	display: block;

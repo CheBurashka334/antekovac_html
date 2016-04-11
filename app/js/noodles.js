@@ -128,12 +128,6 @@ var Noodles = {
 			toggleBox($(this));
 		});
 		
-		/*$('input[type="tel"]').each(function(){
-			//var im = new Inputmask("+7(999)999-99-99");
-			//im.mask($(this));
-			require('jquery.inputmask');
-			$(this).inputmask("+7(999)999-99-99");
-		});*/
 		
 		$('.js-play-video').on('click', function(){
 			if($(this).attr('data-video')){
