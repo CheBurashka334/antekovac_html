@@ -8,6 +8,7 @@
 	list-style: none;
 	position: relative;
 	z-index: 2;
+	width: 90%;
     &__item {
         display: inline-block;
         font-size: 14px;

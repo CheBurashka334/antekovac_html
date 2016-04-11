@@ -9,18 +9,10 @@
 </div>
 <div class="collection-slider__wrapper">
 	<div class="grid-noGutter">
-		<div class="collection-slider__video col-9_md-8_sm-12">
-			<video poster="images/slide-circus.jpg" preload="none" id="collection-video" controls="controls">
-				<source src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4"/>
-			</video>
-		</div>
-		<div class="collection-slider carousel--dark-navs col-9_md-8_sm-12 open" data-navs-xs="0" data-dots-xs="1" data-lazyload="1">
-			<div class="owl-carousel">
-				<div class="collection-slider__slide owl-lazy" data-src="images/slide-circus.jpg"></div>
-				<div class="collection-slider__slide owl-lazy" data-src="images/main-slide.jpg"></div>
-			</div>
-		</div>
-		<div class="collection-slider__info col-3_md-4_sm-12">
+		<div class="collection-slider__info open">
+			<button class="btn btn-info btn--square js-toggle-box" data-box=".collection-slider__info">
+				<span></span><span></span>
+			</button>
 			<div class="collection-info__wrapper">
 				<div class="collection-info">
 					<div class="collection__note">Коллекция</div>
@@ -29,6 +21,17 @@
 						<p>Слоган коллекции. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу.</p>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="collection-slider__video col-12">
+			<video poster="images/slide-circus.jpg" preload="none" id="collection-video" controls="controls">
+				<source src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4"/>
+			</video>
+		</div>
+		<div class="collection-slider carousel--dark-navs col-12 open" data-navs-xs="0" data-dots-xs="1" data-lazyload="1">
+			<div class="owl-carousel">
+				<div class="collection-slider__slide owl-lazy" data-src="images/slide-circus.jpg"></div>
+				<div class="collection-slider__slide owl-lazy" data-src="images/main-slide.jpg"></div>
 			</div>
 		</div>
 		<div class="container actions__wrapper">
