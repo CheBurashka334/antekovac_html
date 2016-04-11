@@ -123,7 +123,7 @@ function isValid(el,type){
 		break;
 	};
 }
-$(function(){
+//$(function(){
 	$('.required input, .required textarea').on('change', function(){
 		if(isValid($(this))){
 			$(this).removeClass('invalid').addClass('valid');
@@ -145,4 +145,4 @@ $(function(){
 			$(this).removeClass('valid').addClass('invalid');
 		}
 	});
-});
+//});

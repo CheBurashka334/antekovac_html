@@ -218,29 +218,29 @@ var App =
 				break;
 		};
 	}
-	$(function () {
-		$('.required input, .required textarea').on('change', function () {
-			if (isValid($(this))) {
-				$(this).removeClass('invalid').addClass('valid');
-			} else {
-				$(this).removeClass('valid').addClass('invalid');
-			}
-		});
-		$('input[type="email"]').on('change', function () {
-			if (isValid($(this), 'email')) {
-				$(this).removeClass('invalid').addClass('valid');
-			} else {
-				$(this).removeClass('valid').addClass('invalid');
-			}
-		});
-		$('input[type="file"]').on('change', function () {
-			if (isValid($(this), 'file')) {
-				$(this).removeClass('invalid').addClass('valid');
-			} else {
-				$(this).removeClass('valid').addClass('invalid');
-			}
-		});
+	//$(function(){
+	$('.required input, .required textarea').on('change', function () {
+		if (isValid($(this))) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
 	});
+	$('input[type="email"]').on('change', function () {
+		if (isValid($(this), 'email')) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
+	});
+	$('input[type="file"]').on('change', function () {
+		if (isValid($(this), 'file')) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
+	});
+	//});
 
 /***/ },
 /* 1 */
