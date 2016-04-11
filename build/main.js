@@ -108,27 +108,6 @@ var App =
 	
 	__webpack_require__(7);
 	
-	// Lazy components
-	
-	/*var lazyComponents = [
-	    { name: 'sameHeight', data: '[data-same-height]' },
-	    { name: 'anchors', data: '[data-anchor]' }
-	];*/
-	
-	// Run lazy components
-	
-	/*$(function () {
-	    lazyComponents.forEach(function(item) {
-	        if ($(item.data).length) {
-	            require('bundle!./js/lazy-components/' + item.name + '.js')(function(component) {
-	                component.run();
-	            })
-	        }
-	    });
-	});*/
-	
-	// Load carousel
-	
 	$(function () {
 		if ($('.owl-carousel').length) {
 			__webpack_require__.e/* nsure */(1, function (require) {
@@ -185,6 +164,7 @@ var App =
 	var DropdownSynh = __webpack_require__(61);
 	var Radios = __webpack_require__(62);
 	var Noodles = __webpack_require__(63);
+	
 	// Run components
 	
 	$(function () {
@@ -207,9 +187,6 @@ var App =
 	// Export components
 	
 	exports.lazyimages = LazyImages;
-	//exports.sameheight = SameHeight;
-	//exports.anchors = Anchors;
-	//exports.sliders = Sliders;
 	exports.dropdowns = Dropdowns;
 	exports.dropdownSynh = DropdownSynh;
 	exports.radios = Radios;
@@ -11217,13 +11194,6 @@ var App =
 				e.stopPropagation();
 				toggleBox($(this));
 			});
-	
-			/*$('input[type="tel"]').each(function(){
-	  	//var im = new Inputmask("+7(999)999-99-99");
-	  	//im.mask($(this));
-	  	require('jquery.inputmask');
-	  	$(this).inputmask("+7(999)999-99-99");
-	  });*/
 	
 			$('.js-play-video').on('click', function () {
 				if ($(this).attr('data-video')) {
