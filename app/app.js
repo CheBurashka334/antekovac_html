@@ -123,26 +123,61 @@ function isValid(el,type){
 		break;
 	};
 }
-//$(function(){
-	$('.required input, .required textarea').on('change', function(){
-		if(isValid($(this))){
+$('body').on('change', '.required input, .required textarea', function () {
+	if (isValid($(this))) {
+		$(this).removeClass('invalid').addClass('valid');
+	} else {
+		$(this).removeClass('valid').addClass('invalid');
+	}
+});
+$('body').on('change', 'input[type="email"]', function () {
+	if (isValid($(this), 'email')) {
+		$(this).removeClass('invalid').addClass('valid');
+	} else {
+		$(this).removeClass('valid').addClass('invalid');
+	}
+});
+$('body').on('change', 'input[type="file"]', function () {
+	if (isValid($(this), 'file')) {
+		$(this).removeClass('invalid').addClass('valid');
+	} else {
+		$(this).removeClass('valid').addClass('invalid');
+	}
+});
+
+$("body").on("submit", "form:not('[name=ORDER_FORM]')", function(){
+	var error = false;
+
+	$(this).find('.required input, .required textarea').each(function(){
+		if (isValid($(this))) {
 			$(this).removeClass('invalid').addClass('valid');
 		} else {
 			$(this).removeClass('valid').addClass('invalid');
+			error = true;
 		}
 	});
-	$('input[type="email"]').on('change',function(){
-		if(isValid($(this),'email')){
+
+	$(this).find('input[type="email"]').each(function(){
+		if (isValid($(this), 'email')) {
 			$(this).removeClass('invalid').addClass('valid');
 		} else {
 			$(this).removeClass('valid').addClass('invalid');
+			error = true;
 		}
 	});
-	$('input[type="file"]').on('change',function(){
-		if(isValid($(this),'file')){
+
+	$(this).find('input[type="file"]').each(function(){
+		if (isValid($(this), 'file')) {
 			$(this).removeClass('invalid').addClass('valid');
 		} else {
+			error = true;
 			$(this).removeClass('valid').addClass('invalid');
 		}
 	});
-//});
+
+	if (error){
+		BX.closeWait();
+		return false;
+	}
+	
+});

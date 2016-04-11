@@ -4860,10 +4860,11 @@ footer {
             justify-content: space-between;
 }
 .footer-links__heading {
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 }
 .footer-links__heading h2 {
 	color: #b59063;
+	letter-spacing: 0.2px;
 }
 .footer-links__link {
 	margin: 16px 0;
@@ -4873,6 +4874,7 @@ footer {
 	font-size: 18px;
 	color: #cccccc;
 	font-family: 'MyriadPro';
+	letter-spacing: 0.3px;
 }
 .footer-links__link a:hover {
 	color: #b59063;
@@ -4916,6 +4918,7 @@ footer {
 }
 .footer-bottom {
     background: #b59063;
+	letter-spacing: 0.5px;
 }
 .footer-bottom__wrapper {
 	display: -webkit-box;
@@ -4943,6 +4946,7 @@ footer {
 }
 .footer-bottom__phone {
 	font-size: 24px;
+	letter-spacing: 0.3px;
 }
 .footer-bottom__mail-us {
 	text-transform: none;
@@ -7311,10 +7315,11 @@ input[type="text"].valid, input[type="email"].valid, input[type="tel"].valid, in
 	padding-right: 50px;
 }
 input[type="text"].invalid, input[type="email"].invalid, input[type="tel"].invalid, input[type="url"].invalid, input[type="password"].invalid, textarea.invalid, select.invalid {
-	/*background-image: svg('cross', '[fill]: var(--error-red)');*/
-	background-position: right 20px center;
+	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22error-cross%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%228.832px%22%20height%3D%2210.224px%22%20viewBox%3D%220%200%208.832%2010.224%22%20style%3D%22fill%3A%23f8705e%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M5.303%2C5.101c-0.675-0.98-0.946-1.671-2.06-3.415C2.692%2C0.895%2C1.933%2C0.5%2C1.142%2C1.051c-0.79%2C0.551-0.659%2C1.32-0.108%2C2.11l2.474%2C3.317%22%2F%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M3.459%2C6.427c0.338%2C0.58%2C0.078-0.154%2C1.422%2C1.952c0.552%2C0.791%2C1.95%2C2.071%2C2.531%2C1.661C8.042%2C9.595%2C7.878%2C8.4%2C7.327%2C7.609L5.304%2C5.101%22%2F%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M8.71%2C0.166c-0.921-0.712-2.256%2C1.071-2.736%2C1.65C5.358%2C2.555%2C3.462%2C4.517%2C3.462%2C4.517L3.317%2C5.138c-0.746%2C0.828-1.359%2C1.285-2.729%2C2.73C-0.044%2C8.596-0.228%2C9.442%2C0.34%2C9.923c0.572%2C0.483%2C1.279%2C0.392%2C1.913-0.334l0.8-0.767c0.334-0.438%2C1.016-1.126%2C1.922-2.063l0.2-0.308l-0.01-0.007C6.063%2C4.956%2C9.521%2C0.794%2C8.71%2C0.166%22%2F%3E%3C%2Fsvg%3E");
+	background-position: right 28px center;
 	background-repeat: no-repeat;
 	padding-right: 50px;
+	border-color: #f8705e;
 }
 input[type="text"].base, input[type="email"].base, input[type="tel"].base, input[type="url"].base, input[type="password"].base, textarea.base, select.base {
 	background: white;
@@ -7344,6 +7349,9 @@ textarea[rows]{
 	height: auto;
 }
 textarea.valid {
+	background-position: right 28px top 12px;
+}
+textarea.invalid {
 	background-position: right 28px top 12px;
 }
 select {

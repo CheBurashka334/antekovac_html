@@ -15,9 +15,10 @@ footer {
     display: flex;
     justify-content: space-between;
     &__heading {
-        margin-bottom: 25px;
+        margin-bottom: 24px;
         h2 {
             color: var(--main-brown);
+			letter-spacing: 0.2px;
         }
     }
     &__link {
@@ -27,6 +28,7 @@ footer {
             font-size: 18px;
             color: #cccccc;
             font-family: 'MyriadPro';
+			letter-spacing: 0.3px;
             &:hover {
                 color: var(--main-brown);
             }
@@ -62,6 +64,7 @@ footer {
 
 .footer-bottom {
     background: var(--main-brown);
+	letter-spacing: 0.5px;
     &__wrapper {
         display: flex;
         color: white;
@@ -79,6 +82,7 @@ footer {
 	}
     &__phone {
         font-size: 24px;
+		letter-spacing: 0.3px;
     }
     &__mail-us {
         text-transform: none;
