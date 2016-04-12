@@ -21,7 +21,7 @@ var Noodles = {
 			});
 			
 		$('.js-toggle-box').on('click', function(e){
-			if(!$(this).hasClass('js-to-slide')){
+			if(!$(this).hasClass('js-to-slide') && !$(this).hasClass('js-yt-video')){
 				e.preventDefault();
 			}
 			e.stopPropagation();

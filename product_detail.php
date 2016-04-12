@@ -262,9 +262,26 @@
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/T4mx78erGUo?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+			<div class="video-preview">
+				<img src="images/product-detail/video-preview.jpg" />
+				<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#product-video" data-video-id="T4mx78erGUo">
+					<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+				</a>
 			</div>
+			<div class="modal modal--video" id="product-video">
+				<div class="modal__wrap">
+					<button class="btn btn--flat btn-close js-toggle-box" data-box="#product-video"></button>
+					<div class="modal__inner">
+						<div class="video-container yt-video">
+							<!-- video id -->
+							<div id="T4mx78erGUo"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/T4mx78erGUo?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+			</div>-->
 		</div>
 	</div>
 </div>

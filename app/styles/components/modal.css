@@ -116,6 +116,16 @@
 			right: 50px;
 		}
 	}
+	&--video {
+		.btn-close {
+			top: -3em;
+			right: -3em;
+			color: white;
+		}
+	}
+	&--video &__inner {
+		padding: 0;
+	}
 	&.search-form {
 		background: url(var(--img-path)/search-bg.jpg) top center no-repeat;
 		background-size: cover;
