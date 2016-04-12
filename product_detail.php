@@ -216,49 +216,49 @@
 	</div>
 	<div class="grid-equalHeight">
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8264.png">
 				<!-- миниатюра 300*300 -->
-				<img src="images/product-detail/thumb/afm-white-8264.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8264.png" />
+				<img src="images/product-detail/thumb/afm-white-8264.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8265.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8265.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8265.png">
+				<img src="images/product-detail/thumb/afm-white-8265.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8268.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8268.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8268.png">
+				<img src="images/product-detail/thumb/afm-white-8268.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8273.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8273.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8273.png">
+				<img src="images/product-detail/thumb/afm-white-8273.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8276.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8276.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8276.png">
+				<img src="images/product-detail/thumb/afm-white-8276.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8278.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8278.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8278.png">
+				<img src="images/product-detail/thumb/afm-white-8278.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8287.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8287.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8287.png">
+				<img src="images/product-detail/thumb/afm-white-8287.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8291.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8291.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8291.png">
+				<img src="images/product-detail/thumb/afm-white-8291.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8293.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8293.png" />
+			<div class="photo-container js-viewer-wrapper" data-fullimg="images/product-detail/full/afm-white-8293.png">
+				<img src="images/product-detail/thumb/afm-white-8293.png" alt="" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
