@@ -50,4 +50,10 @@
 	&__item {
 		margin-bottom: 20px;
 	}
+	.photo-container {
+		background: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }

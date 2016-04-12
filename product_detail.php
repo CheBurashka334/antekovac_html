@@ -216,33 +216,54 @@
 	</div>
 	<div class="grid-equalHeight">
 		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+			<div class="photo-container">
+				<!-- миниатюра 300*300 -->
+				<img src="images/product-detail/thumb/afm-white-8264.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8265.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8268.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8273.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8276.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8278.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8287.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8291.png" alt=""/>
+			</div>
+		</div>
+		<div class="col-3_lg-3_md-4 media-lib__item">
+			<div class="photo-container">
+				<img src="images/product-detail/thumb/afm-white-8293.png" alt=""/>
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="col-3_lg-3_md-4 media-lib__item">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/T4mx78erGUo?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
