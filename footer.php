@@ -127,16 +127,16 @@
                 </div>
                 <div class="footer-bottom__socials">
                     <a href="" class="i-icon">
-                        <i class="fa fa-youtube-play"></i>
+                        <svg class="icon"><use xlink:href="#yt"/></svg>
                     </a>
                     <a href="" class="i-icon">
-                        <i class="fa fa-instagram"></i>
+                        <svg class="icon"><use xlink:href="#inst"/></svg>
                     </a>
                     <a href="" class="i-icon">
-                        <i class="fa fa-facebook"></i>
+                        <svg class="icon"><use xlink:href="#fb"/></svg>
                     </a>
                     <a href="" class="i-icon">
-                        <i class="fa fa-vk"></i>
+                        <svg class="icon"><use xlink:href="#vk"/></svg>
                     </a>
                 </div>
             </div>
