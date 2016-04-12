@@ -272,14 +272,14 @@
 	<div class="block-heading block-heading--mobile">
 		<h2>идеальный комплект</h2>
 	</div>
-	<div class="set-products">
+	<div class="set-products" data-lazyload="1">
 		<div class="owl-carousel">
 			<div class="set-products__slide">
 				<div class="product-tile">
 					<div class="product-tile__wrap">
 						<div class="product-tile__image">
 							<a href="#">
-								<img src="images/product1.png" alt="" />
+								<img class="owl-lazy" data-src="images/product1.png" alt="" />
 							</a>
 						</div>
 						<div class="product-tile__info">
@@ -312,7 +312,7 @@
 					<div class="product-tile__wrap">
 						<div class="product-tile__image">
 							<a href="#">
-								<img src="images/product3.png" alt="" />
+								<img class="owl-lazy" data-src="images/product3.png" alt="" />
 							</a>
 						</div>
 						<div class="product-tile__info">
@@ -345,7 +345,7 @@
 					<div class="product-tile__wrap">
 						<div class="product-tile__image">
 							<a href="#">
-								<img src="images/product4.png" alt="" />
+								<img class="owl-lazy" data-src="images/product4.png" alt="" />
 							</a>
 						</div>
 						<div class="product-tile__info">
@@ -378,7 +378,7 @@
 					<div class="product-tile__wrap">
 						<div class="product-tile__image">
 							<a href="#">
-								<img src="images/product5.png" alt="" />
+								<img class="owl-lazy" data-src="images/product5.png" alt="" />
 							</a>
 						</div>
 						<div class="product-tile__info">
@@ -411,7 +411,7 @@
 					<div class="product-tile__wrap">
 						<div class="product-tile__image">
 							<a href="#">
-								<img src="images/product8.png" alt="" />
+								<img class="owl-lazy" data-src="images/product8.png" alt="" />
 							</a>
 						</div>
 						<div class="product-tile__info">
