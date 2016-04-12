@@ -10,6 +10,9 @@
 @import "../colors.css";
 @import "../media.css";
 
+body.viewer-open {
+	overflow: visible;
+}
 .page {
 	.viewer-toolbar {
 		padding: 0;

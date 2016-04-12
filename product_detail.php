@@ -218,47 +218,47 @@
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
 				<!-- миниатюра 300*300 -->
-				<img src="images/product-detail/thumb/afm-white-8264.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8264.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8264.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8265.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8265.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8265.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8268.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8268.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8268.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8273.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8273.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8273.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8276.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8276.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8276.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8278.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8278.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8278.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8287.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8287.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8287.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8291.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8291.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8291.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="photo-container">
-				<img src="images/product-detail/thumb/afm-white-8293.png" alt=""/>
+				<img src="images/product-detail/thumb/afm-white-8293.png" alt="" class="js-viewer" data-fullimg="images/product-detail/full/afm-white-8293.png" />
 			</div>
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">

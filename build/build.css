@@ -3997,6 +3997,7 @@ table.nostyle th, table.nostyle td {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	cursor: pointer;
 }:root {
 	/* пути к картинкам */
 }
@@ -5817,6 +5818,9 @@ footer {
  */
 :root {
 	/* пути к картинкам */
+}
+body.viewer-open {
+	overflow: visible;
 }
 .page .viewer-toolbar {
 	padding: 0;
