@@ -3,6 +3,7 @@
 @import "../../selectors.css";
 
 .product-detail {
+	margin-top: -10px;
 	margin-bottom: 33px;
 	position: relative;
 	.tile-block {
@@ -19,7 +20,7 @@
 		}
 	}
 	&__price {
-		margin: 10px 0;
+		margin: 24px 0 8px;
 		.price {
 			font-size: 18px;
 		}
@@ -38,9 +39,11 @@
 	&__desc,
 	&__params {
 		font-weight: lighter;
+		p {
+			margin: 18px 0;
+		}
 	}
 	&__params {
-		/*margin: */
 		.params-table {
 			width: 100%;
 			td {
@@ -52,6 +55,9 @@
 		}
 	}
 	&__buttons {
+		&.grid-noGutter {
+			margin: 5px 0;
+		}
 		width: 100%;
 		&--outside {
 			position: absolute;
@@ -95,6 +101,7 @@
 		width: 100%;
 		display: flex;
 		z-index: 0;
+		max-height: 650px;
 		.owl-carousel {
 			padding: 40px 30px;
 			padding-left: 0;

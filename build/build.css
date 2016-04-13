@@ -4113,6 +4113,9 @@ table.nostyle th, table.nostyle td {
 	margin-top: 50px;
 	margin-bottom: 15px;
 }
+.collection-block .tile-block__text {
+	margin-bottom: 15px;
+}
 .tile-block__image {
 	float: left;
 	margin-right: 20px;
@@ -9475,6 +9478,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	/* пути к картинкам */
 }
 .product-detail {
+	margin-top: -10px;
 	margin-bottom: 33px;
 	position: relative;
 }
@@ -9495,7 +9499,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	color: #b59063;
 }
 .product-detail__price {
-	margin: 10px 0;
+	margin: 24px 0 8px;
 }
 .product-detail__price .price {
 	font-size: 18px;
@@ -9515,7 +9519,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.product-detail__params {
 	font-weight: lighter;
 }
-/*margin: */
+.product-detail__desc p, .product-detail__params p {
+	margin: 18px 0;
+}
 .product-detail__params .params-table {
 	width: 100%;
 }
@@ -9527,6 +9533,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .product-detail__buttons {
 	width: 100%;
+}
+.product-detail__buttons.grid-noGutter {
+	margin: 5px 0;
 }
 .product-detail__buttons--outside {
 	position: absolute;
@@ -9579,6 +9588,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	display: -ms-flexbox;
 	display: flex;
 	z-index: 0;
+	max-height: 650px;
 }
 .product-detail__slider .owl-carousel {
 	padding: 40px 30px;
@@ -9859,6 +9869,18 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding-bottom: 35px;
 }
 .collection-block__image {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 0 230px;
 	    -ms-flex: 0 0 230px;
@@ -9867,7 +9889,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .collection-block__image img {
 	display: block;
-	height: 230px;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .collection-block__info {
 	display: -webkit-box;
@@ -10152,6 +10175,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	position: relative;
 	z-index: -1;
 	background: #2e3034;
+	height: 680px;
+}
+@media (min-width: 800px) and (max-width: 1024px) {
+	.collection-slider {
+		height: 566px;
+	}
 }
 .collection-slider.open {
 	z-index: 2;
@@ -10357,6 +10386,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	background-image: url(/antekovac/images/icon-video.png);
 }
 @media (max-width: 767px), (min-width: 768px) and (max-width: 1023px){
+	.collection-slider {
+		height: 450px;
+	}
 	.collection-slider__wrapper {
 		margin-top: 0;
 	}

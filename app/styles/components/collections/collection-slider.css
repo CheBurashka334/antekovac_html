@@ -6,6 +6,10 @@
 	position: relative;
 	z-index: -1;
 	background: var(--dark-gray);
+	height: 680px;
+	@media (min-width: 800px) and (max-width: 1024px) {
+		height: 566px;
+	}
 	&.open {
 		z-index: 2;
 	}
@@ -188,6 +192,7 @@
 }
 @media (--mobile), (--small){
 	.collection-slider {
+		height: 450px;
 		&__wrapper {
 			margin-top: 0;
 			> [class*="grid"] {

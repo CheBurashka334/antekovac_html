@@ -194,18 +194,18 @@
             <div class="block-heading hidden-mobile">
                 <h2>Для нее</h2>
             </div>
-            <div class="collection-block tile-block mobile-minify mobile-fullwidth" data-same-height>
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-her-col"/></svg></div>
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для нее</h2></a>
-                <div class="collection-block__top">
+                <div class="collection-block__top js-same-height" data-set="collection-info">
                     <div class="collection-block__image">
                         <img src="images/collection1.jpg" alt="" />
                     </div>
                     <div class="collection-block__info">
-                        <h2><a href="#">Альфонс Муха. Модерн</a></h2>
+                        <h2><a href="#">Славянка</a></h2>
                         <div class="tile-block__text">
                             <p>
-                                В. Кандинский был выбран художником коллекции "Цирк" не только благодаря известному мастерству владения цветом и необычности его абстрактных сюжетов. Наша миссия - создавать применимые к жизни арт-объекты со смыслом.
+                                В чем секрет русской матрешки? Почему она так притягательна и напрямую ассоциируется с русской красавицей? Быть может этот секрет в таинстве нескольких оболочек или пути раскрытия женщины от наружного (внешнего) к сокровенному (внутреннему). Эта идея и стала основным художественным лейтмотивом СЛАВЯНКИ.
                             </p>
                         </div>
                         <div class="collection-block__btn">
@@ -290,10 +290,10 @@
             <div class="block-heading hidden-mobile">
                 <h2>Для него</h2>
             </div>
-            <div class="collection-block tile-block mobile-minify mobile-fullwidth" data-same-height>
+            <div class="collection-block tile-block mobile-minify mobile-fullwidth">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#for-him-col"/></svg></div>
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для него</h2></a>
-                <div class="collection-block__top">
+                <div class="collection-block__top js-same-height" data-set="collection-info">
                     <div class="collection-block__image">
                         <img src="images/collection2.jpg" alt="" />
                     </div>
@@ -301,7 +301,7 @@
                         <h2><a href="#">первооткрыватели</a></h2>
                         <div class="tile-block__text">
                             <p>
-                                Наша миссия - создавать применимые к жизни арт-объекты со смыслом. В. Кандинский был выбран художником коллекции "Цирк" не только благодаря известному мастерству владения цветом и необычности его абстрактных сюжетов.
+                                КОЛЛЕКЦИЯ «ПЕРВООТКРЫВАТЕЛИ» «За мной Будущее!».
                             </p>
                         </div>
                         <div class="collection-block__btn">
