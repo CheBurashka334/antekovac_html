@@ -124,10 +124,19 @@ function isValid(el,type){
 	};
 }
 $('body').on('change', '.required input, .required textarea', function () {
-	if (isValid($(this))) {
-		$(this).removeClass('invalid').addClass('valid');
-	} else {
-		$(this).removeClass('valid').addClass('invalid');
+	if ($(this).attr("type") == "tel"){
+		if ($(this).inputmask("isComplete"))
+			$(this).removeClass('invalid').addClass('valid');
+		else
+			$(this).removeClass('valid').addClass('invalid');
+	}
+	else
+	{
+		if (isValid($(this))) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
 	}
 });
 $('body').on('change', 'input[type="email"]', function () {
@@ -148,12 +157,23 @@ $('body').on('change', 'input[type="file"]', function () {
 $("body").on("submit", "form:not('[name=ORDER_FORM]')", function(){
 	var error = false;
 
-	$(this).find('.required input, .required textarea').each(function(){
-		if (isValid($(this))) {
-			$(this).removeClass('invalid').addClass('valid');
-		} else {
-			$(this).removeClass('valid').addClass('invalid');
-			error = true;
+	$(this).find('.required input, .required textarea').each(function () {
+		if ($(this).attr("type") == "tel"){
+			if ($(this).inputmask("isComplete"))
+				$(this).removeClass('invalid').addClass('valid');
+			else{
+				$(this).removeClass('valid').addClass('invalid');
+				error = true;
+			}
+		}
+		else
+		{
+			if (isValid($(this))) {
+				$(this).removeClass('invalid').addClass('valid');
+			} else {
+				$(this).removeClass('valid').addClass('invalid');
+				error = true;
+			}
 		}
 	});
 
