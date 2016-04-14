@@ -39,6 +39,7 @@
         img {
             margin: 0 auto;
 			width: auto;
+			object-fit: contain;
         }
     }
 	&--half  &__wrap {

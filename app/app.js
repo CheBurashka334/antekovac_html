@@ -129,9 +129,7 @@ $('body').on('change', '.required input, .required textarea', function () {
 			$(this).removeClass('invalid').addClass('valid');
 		else
 			$(this).removeClass('valid').addClass('invalid');
-	}
-	else
-	{
+	} else {
 		if (isValid($(this))) {
 			$(this).removeClass('invalid').addClass('valid');
 		} else {
@@ -165,9 +163,7 @@ $("body").on("submit", "form:not('[name=ORDER_FORM]')", function(){
 				$(this).removeClass('valid').addClass('invalid');
 				error = true;
 			}
-		}
-		else
-		{
+		} else {
 			if (isValid($(this))) {
 				$(this).removeClass('invalid').addClass('valid');
 			} else {

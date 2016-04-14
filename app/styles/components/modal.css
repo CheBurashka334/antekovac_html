@@ -122,6 +122,9 @@
 			right: -3em;
 			color: white;
 		}
+		.video-container {
+			width: 100%;
+		}
 	}
 	&--video &__inner {
 		padding: 0;
@@ -196,6 +199,18 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		&--video {
+			.btn-close {
+				color: var(--dark-gray);
+			}
+			.video-container {
+				width: 100%;
+				padding-bottom: 56.25%;
+			}
+		}
+		&--video &__inner {
+			padding: 40px 0 0;
 		}
 	}
 }

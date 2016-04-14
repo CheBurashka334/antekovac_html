@@ -8,7 +8,7 @@
 		<li class="breadcrumbs__item breadcrumbs__item--unactive"><a href="#">Сумка №40 «Небесно-голубое»</a></li>
 	</ul>
 </div>
-<div class="container product-detail js-anim-scroll" data-start-position="0.1" data-speed="2">
+<div class="container product-detail">
 	<button class="btn btn--square--only-icon btn-favorite hidden-desktop hidden-small hidden-medium">
 		<svg class="i-icon i-icon--stroke"><use xlink:href="#heart"/></svg>
 	</button>
@@ -105,10 +105,10 @@
 		</div>
 	</div>
 </div>
-<div class="container hidden-mobile show-print js-anim-scroll" data-start-position="0.5" data-speed="5">
+<div class="container hidden-mobile show-print js-anim-scroll" data-start-position="0.5" data-speed="4">
     <div class="grid-equalHeight">
         <div class="col-5_lg-5_md-6 wrap">
-            <div class="tile-block js-anim-scroll" data-start-position="1.5" data-speed="4.5">
+            <div class="tile-block js-anim-scroll" data-start-position="2" data-speed="5.5">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#ind"/></svg></div>
                 <h2>индивидуальный заказ</h2>
                 <div class="tile-block__text">
@@ -118,7 +118,7 @@
                 </div>
                 <a href="#" class="btn btn--arrow btn--transparent">Подробнее</a>
             </div>
-			<div class="tile-block tile-block--dark js-anim-scroll" data-start-position="1.3" data-speed="6.5">
+			<div class="tile-block tile-block--dark js-anim-scroll" data-start-position="1.8" data-speed="7.5">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#garantee"/></svg></div>
                 <h2>гарантии возврата</h2>
                 <div class="tile-block__text">
@@ -127,7 +127,7 @@
                     </p>
                 </div>
             </div>
-			<div class="tile-block tile-block--dark hidden-large hidden-print js-anim-scroll" data-start-position="2" data-speed="8">
+			<div class="tile-block tile-block--dark hidden-large hidden-print js-anim-scroll" data-start-position="2.5" data-speed="9">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#share"/></svg></div>
                 <h2>поделиться в сети</h2>
                 <div class="tile-block__socials">
@@ -147,7 +147,7 @@
             </div>
         </div>
         <div class="col-3_lg-3_md-6 wrap">
-            <div class="tile-block tile-block--collection js-anim-scroll" data-start-position="2" data-speed="5.5">
+            <div class="tile-block tile-block--collection js-anim-scroll" data-start-position="2.5" data-speed="6.5">
                 <div class="tile-block__wrapper" style="background-image: url(images/collection-circus_bg.jpg)">
                     <div class="collection__info">
 						<div class="collection__icon">
@@ -167,7 +167,7 @@
 					</div>
                 </div>
             </div>
-			<div class="tile-block hidden-large js-anim-scroll" data-start-position="2.5" data-speed="7">
+			<div class="tile-block hidden-large js-anim-scroll" data-start-position="3" data-speed="7">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#kcard"/></svg></div>
                 <h2>Доставка и оплата</h2>
                 <div class="tile-block__text">
@@ -179,7 +179,7 @@
             </div>
         </div>
 		<div class="col-4 hidden-small hidden-medium wrap hidden-print">
-			<div class="tile-block tile-block--dark js-anim-scroll" data-start-position="1.5" data-speed="5">
+			<div class="tile-block tile-block--dark js-anim-scroll" data-start-position="2" data-speed="7">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#share"/></svg></div>
                 <h2>поделиться в сети</h2>
                 <div class="tile-block__socials">
@@ -197,7 +197,7 @@
                     </a>
                 </div>
             </div>
-			<div class="tile-block js-anim-scroll" data-start-position="1.8" data-speed="5">
+			<div class="tile-block js-anim-scroll" data-start-position="2.3" data-speed="7">
 				<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#kcard"/></svg></div>
                 <h2>Доставка и оплата</h2>
                 <div class="tile-block__text">
@@ -210,7 +210,7 @@
 		</div>
     </div>
 </div>
-<div class="container media-lib hidden-mobile hidden-print">
+<div class="container media-lib hidden-mobile hidden-print js-anim-scroll" data-start-position="1" data-speed="7">
 	<div class="block-heading block-heading--mobile">
 		<h2>медиатека</h2>
 	</div>

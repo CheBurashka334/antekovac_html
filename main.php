@@ -389,9 +389,23 @@
     <div class="block-heading block-heading--mobile">
         <h2>promo видео</h2>
     </div>
-    <div class="video-container">
-        <iframe width="1180" height="664" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
-    </div>
+	<div class="video-preview">
+		<img src="images/sale.jpg" />
+		<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#promo-video" data-video-id="qkPwimbPx8g">
+			<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+		</a>
+	</div>
+	<div class="modal modal--video" id="promo-video">
+		<div class="modal__wrap">
+			<button class="btn btn--flat btn-close js-toggle-box" data-box="#promo-video"></button>
+			<div class="modal__inner">
+				<div class="video-container yt-video">
+					<!-- video id -->
+					<div id="qkPwimbPx8g"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="container mobile-fullwidth--noGutter">
@@ -432,8 +446,14 @@
         </div>
         <div class="col-6_sm-12">
             <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
-                <div class="tile-block__video" style="background-image: url(images/masterskie.jpg)">
-                  <iframe width="580" height="326" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                <div class="tile-block__video">
+					<div class="video-preview">
+						<img src="images/masterskie.jpg" />
+						<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#promo-video" data-video-id="qkPwimbPx8g">
+							<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+						</a>
+					</div>
+					<!-- модалка с этим видео уже есть на странице -->
                 </div>
 				<div class="tile-block__content">
 					<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>
