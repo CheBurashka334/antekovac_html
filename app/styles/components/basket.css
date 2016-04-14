@@ -146,6 +146,16 @@
 		}
 	}
 }
+@media (--small){
+	.basket-table {
+		&__row &__col {
+			.page--checkout &--name {
+				width: 35%;
+				padding-left: 20px;
+			}
+		}
+	}
+}
 @media (--mobile){
 	.basket-table {
 		&__head {
@@ -159,9 +169,8 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			align-content: flex-start;
-			padding: 15px 15px 20px;
+			padding: 15px 15px 20px calc(20% + 30px);
 			border-bottom: 1px solid #ebebeb;
-			height: 115px;
 		}
 		&__row &__col {
 			padding: 0;
@@ -170,14 +179,16 @@
 		&__col {
 			&--image,
 			.page--checkout &--image{
-				width: 22%;
+				width: 20%;
 				height: 80px;
+				position: absolute;
+				left: 20px;
 			}
 			&--name,
 			&--sum,
 			.page--checkout &--name,
 			.page--checkout &--sum {
-				width: 78%;
+				width: 100%;
 			}
 			&--name {
 				margin-bottom: 1em;
@@ -297,11 +308,12 @@
 @media (--mobile){
 	.basket-totals {
 		flex-direction: column;
-		height: 120px;
 		&--sum,
 		&--sale {
-			width: 45%;
-			height: 30%;
+			width: 40%;
+			position: absolute;
+			top: auto;
+			left: 20px;
 			.basket-totals__label,
 			.basket-totals__result {
 				display: inline-block;
@@ -311,17 +323,13 @@
 			}
 		}
 		&--sale {
-			margin-top: -39px;
-			.page--checkout & {
-				margin-top: -30px;
-			}
+			margin-top: 1.5em;
 		}
 		&--total,
 		&--total[class*="col"] {
-			width: 55%;
-			height: 100%;
-			flex-basis: 55%;
-			max-width: 55%;
+			width: 100%;
+			max-width: 100%;
+			align-self: flex-start;
 			.page--checkout & {
 				padding: 0;
 			}

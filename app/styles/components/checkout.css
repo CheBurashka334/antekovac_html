@@ -23,6 +23,13 @@
 	margin-top: 10px;
 	margin-bottom: 60px;
 }
+@media (--small){
+	.page--checkout {
+		.tile-page__body {
+			background-size: 70% auto;
+		}
+	}
+}
 @media (--mobile){
 	.page--checkout {
 		.tile-page__body {
