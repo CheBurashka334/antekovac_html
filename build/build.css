@@ -8933,6 +8933,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	left: auto;
 	color: white;
 }
+.tile-block .modal--video .btn-close {
+	top: -4em;
+}
 .modal--video .video-container {
 	width: 100%;
 }

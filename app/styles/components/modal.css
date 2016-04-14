@@ -122,6 +122,9 @@
 			right: -3em;
 			left: auto;
 			color: white;
+			.tile-block & {
+				top: -4em;
+			}
 		}
 		.video-container {
 			width: 100%;
