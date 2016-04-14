@@ -120,6 +120,7 @@
 		.btn-close {
 			top: -3em;
 			right: -3em;
+			left: auto;
 			color: white;
 		}
 		.video-container {

@@ -8930,6 +8930,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .modal--video .btn-close {
 	top: -3em;
 	right: -3em;
+	left: auto;
 	color: white;
 }
 .modal--video .video-container {
