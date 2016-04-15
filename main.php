@@ -2,7 +2,7 @@
 
 <div class="main-slider">
     <div class="owl-carousel">
-        <div class="main-slider__slide owl-lazy" data-src="images/main-slide.jpg">
+        <div class="main-slider__slide" style="background-image:url('images/main-slide.jpg');">
             <div class="main-slider__info">
                 <div class="main-slider__heading">
                     Architekt

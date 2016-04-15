@@ -64,11 +64,11 @@ body.viewer-open {
 			content: '';
 			display: block;
 			position: absolute;
-			width: 23px;
+			width: 48%;
 			height: 1px;
 			background: var(--main-brown);
 			top: 50%;
-			left: 11px;
+			left: 26%;
 			margin: 0;
 		}
 		&::after {
@@ -88,11 +88,11 @@ body.viewer-open {
 			content: '';
 			display: block;
 			position: absolute;
-			width: 23px;
+			width: 48%;
 			height: 1px;
 			background: var(--main-brown);
 			top: 50%;
-			left: 11px;
+			left: 26%;
 		}
 		&:hover::after {
 			background: white;
@@ -120,14 +120,15 @@ body.viewer-open {
 		position: absolute;
 		top: 15px;
 		right: 45px;
+		border-radius: 0;
 		&::before,
 		&::after {
 			content: '';
 			display: block;
 			position: absolute;
 			top: 50%;
-			left: 15px;
-			width: 17px;
+			left: 32%;
+			width: 36%;
 			height: 1px;
 			transform-origin: center;
 			background: var(--dark-gray);
@@ -250,13 +251,11 @@ body.viewer-open {
 
 	.viewer-fade {
 		opacity: 0;
-
 		filter: alpha(opacity=0);
 	}
 
 	.viewer-in {
 		opacity: 1;
-
 		filter: alpha(opacity=100);
 	}
 
@@ -266,8 +265,27 @@ body.viewer-open {
 }
 
 @media (--mobile) {
-	.page .viewer-hide-xs-down {
-		display: none;
+	.page {
+		.viewer-hide-xs-down {
+			display: none;
+		}
+		.viewer-close {
+			right: 15px;
+			&::before,
+			&::after {
+				width: 50%;
+				left: 25%;
+			}
+		}
+		.viewer-footer {
+			left: 15px;
+		}
+		.viewer-button,
+		.viewer-toolbar li {
+			width: 30px;
+			height: 30px;
+			background-size: 15px;
+		}
 	}
 }
 

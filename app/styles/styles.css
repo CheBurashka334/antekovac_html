@@ -431,6 +431,9 @@ table {
 /* collapse */
 .collapsible {
 	display: none;
+	&__body p:first-child {
+		margin-top: 0;
+	}
 	&__link {
 		text-decoration: none;
 		display: inline-block;
@@ -439,6 +442,9 @@ table {
 		position: relative;
 		margin-top: 1em;
 		color: var(--main-gray);
+		.product-detail__desc & {
+			margin-top: 0;
+		}
 		&:hover {
 			color:  var(--main-brown);
 		}

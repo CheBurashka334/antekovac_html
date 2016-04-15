@@ -20,7 +20,7 @@
 		}
 	}
 	&__price {
-		margin: 24px 0 8px;
+		margin: 24px 0 26px;
 		.price {
 			font-size: 18px;
 		}
@@ -39,11 +39,20 @@
 	&__desc,
 	&__params {
 		font-weight: lighter;
-		p {
-			margin: 18px 0;
+	}
+	&__desc p {
+		&:first-of-type {
+			margin-top: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 	&__params {
+		margin-top: 18px;
+		p {
+			margin: 18px 0;
+		}
 		.params-table {
 			width: 100%;
 			td {
@@ -200,6 +209,7 @@
 		}
 		&__desc {
 			padding: 0 0.5em;
+			height: auto!important;
 		}
 		&__buttons {
 			order: -1;
