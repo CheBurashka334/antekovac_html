@@ -66,6 +66,13 @@ $(function(){
 		});
 	}
 });
+$(function(){
+	let objectFit = require('object-fit');
+	objectFit.polyfill({
+		selector: '.collection-block__image img',
+		fittype: 'cover'
+	});
+});
 
 
 let LazyImages = require('./js/lazyImages');

@@ -33,7 +33,6 @@
 	margin-bottom: 40px;
 	position: relative;
 	z-index: 2;
-	height: 100vh;
     &__slide {
         width: 100vw;
 		height: 100vh;

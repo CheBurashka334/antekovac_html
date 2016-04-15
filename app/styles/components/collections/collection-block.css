@@ -25,6 +25,7 @@
         img {
 			display: block;
             object-fit: cover;
+			overflow: hidden;
         }
     }
     &__info {
