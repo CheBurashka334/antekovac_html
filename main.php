@@ -199,7 +199,7 @@
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для нее</h2></a>
                 <div class="collection-block__top js-same-height" data-set="collection-info">
                     <div class="collection-block__image">
-                        <img src="images/collection1.jpg" alt="" />
+                        <img src="images/collection1.jpg" alt="" data-object-fit="cover" />
                     </div>
                     <div class="collection-block__info">
                         <h2><a href="#">Славянка</a></h2>
@@ -295,12 +295,12 @@
                 <a href="#" class="tile-block__heading-link"><h2>коллекции для него</h2></a>
                 <div class="collection-block__top js-same-height" data-set="collection-info">
                     <div class="collection-block__image">
-                        <img src="images/collection2.jpg" alt="" />
+                        <img src="images/collection2.jpg" alt="" data-object-fit="cover" />
                     </div>
                     <div class="collection-block__info">
                         <h2><a href="#">первооткрыватели</a></h2>
                         <div class="tile-block__text">
-                            <p>
+                            <p class="">
                                 КОЛЛЕКЦИЯ «ПЕРВООТКРЫВАТЕЛИ» «За мной Будущее!».
                             </p>
                         </div>

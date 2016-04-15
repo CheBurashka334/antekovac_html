@@ -141,6 +141,33 @@ var Noodles = {
 			});
 		});
 		
+		if($('html').hasClass('bx-ie')){
+			$('[data-object-fit]').each(function(){
+				objectFit($(this));
+			});
+		}
+		
+		function objectFit(el){
+			var fitType = el.attr('data-object-fit');
+			var src = el.attr('src');
+			el.wrap('<div class="object-fit-wrapper" style="background-image: url('+src+');background-size: '+fitType+';"></div>');
+			el.hide();
+		}
+		if($('.js-same-height').length > 1){
+			var heightCollection = {};
+			$('.js-same-height').each(function(){
+				if(!heightCollection[$(this).attr('data-set')]){
+					heightCollection[$(this).attr('data-set')] = [];
+				}
+				heightCollection[$(this).attr('data-set')].push($(this).outerHeight());
+			});
+			for (var set in heightCollection){
+				$('[data-set="'+set+'"]').each(function(){
+					$(this).outerHeight(Math.max.apply(null,heightCollection[set]));
+				});
+			}
+		}
+		
 		function position(fix) {
 			if(fix == 'fix'){
 				var pos = $(window).scrollTop();

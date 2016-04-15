@@ -9,7 +9,6 @@ import 'normalize.css';
 
 require('./styles/imports');
 
-
 $(function () {
     if ($('.owl-carousel').length) {
         require.ensure([], function (require) {
@@ -65,13 +64,6 @@ $(function(){
 			});
 		});
 	}
-});
-$(function(){
-	let objectFit = require('object-fit');
-	objectFit.polyfill({
-		selector: '.collection-block__image img',
-		fittype: 'cover'
-	});
 });
 
 
@@ -239,22 +231,4 @@ $(function(){
 			$(box).find('.btn-close').bind('click', function(){player.stopVideo()});
 		}
 	});
-});
-
-// same height
-$(function(){
-	if($('.js-same-height').length > 1){
-		var heightCollection = {};
-		$('.js-same-height').each(function(){
-			if(!heightCollection[$(this).attr('data-set')]){
-				heightCollection[$(this).attr('data-set')] = [];
-			}
-			heightCollection[$(this).attr('data-set')].push($(this).outerHeight());
-		});
-		for (var set in heightCollection){
-			$('[data-set="'+set+'"]').each(function(){
-				$(this).outerHeight(Math.max.apply(null,heightCollection[set]));
-			});
-		}
-	}
 });

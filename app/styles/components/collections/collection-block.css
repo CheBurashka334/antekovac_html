@@ -6,21 +6,16 @@
 	padding-top: 35px;
     padding-bottom: 0;
 	margin-bottom: 0;
-    .tile-block {
-        &__text {
-            flex: 1;
-        }
-    }
     &__top {
         display: flex;
         padding-bottom: 35px;
-		min-height: 230px;
     }
     &__image {
 		display: flex;
 		justify-content: flex-start;
 		align-items: stretch;
-        flex: 0 0 230px;
+        /*flex: 0 0 230px;*/
+		width: 230px;
         margin-right: 20px;
         img {
 			display: block;
@@ -29,16 +24,20 @@
         }
     }
     &__info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-		-ms-flex: 1 1 50%;
+		flex: 1 1 50%;
+		padding-bottom: 40px;
+		position: relative;
 		h2 {
 			margin-bottom: 0.5em;
 		}
     }
-	&__btn .btn {
-		margin: 0;
+	&__btn {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		.btn {
+			margin: 0;
+		}
 	}
     &__bottom {
         display: flex;

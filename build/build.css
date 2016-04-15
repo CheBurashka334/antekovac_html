@@ -2765,6 +2765,9 @@ table.nostyle th, table.nostyle td {
 		-webkit-transform: none!important;
 		        transform: none!important;
 	}
+}
+.object-fit-wrapper {
+	width: 100%;
 }:root {
 	/* пути к картинкам */
 }
@@ -4009,6 +4012,9 @@ table.nostyle th, table.nostyle td {
 	    -ms-flex-align: center;
 	        align-items: center;
 	cursor: pointer;
+	width: 100%;
+}
+.media-lib .photo-container img {
 	width: 100%;
 }
 .video-preview {
@@ -9946,19 +9952,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
     padding-bottom: 0;
 	margin-bottom: 0;
 }
-.collection-block .tile-block__text {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 0%;
-	    -ms-flex: 1 1 0%;
-	        flex: 1 1 0%;
-}
 .collection-block__top {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	padding-bottom: 35px;
-	min-height: 230px;
 }
 .collection-block__image {
 	display: -webkit-box;
@@ -9973,10 +9972,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	-webkit-align-items: stretch;
 	    -ms-flex-align: stretch;
 	        align-items: stretch;
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 230px;
-	    -ms-flex: 0 0 230px;
-	        flex: 0 0 230px;
+	/*flex: 0 0 230px;*/
+	width: 230px;
 	margin-right: 20px;
 }
 .collection-block__image img {
@@ -9986,23 +9983,20 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	overflow: hidden;
 }
 .collection-block__info {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-ms-flex: 1 1 50%;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 50%;
+	    -ms-flex: 1 1 50%;
+	        flex: 1 1 50%;
+	padding-bottom: 40px;
+	position: relative;
 }
 .collection-block__info h2 {
 	margin-bottom: 0.5em;
+}
+.collection-block__btn {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .collection-block__btn .btn {
 	margin: 0;
@@ -10736,96 +10730,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.owl-carousel [class*="dots"] {
 		display: none;
 	}
-}/*!
- * Polyfill CSS object-fit
- * http://helloanselm.com/object-fit
- *
- * @author: Anselm Hannemann <hello@anselm-hannemann.com>
- * @author: Christian "Schepp" Schaefer <schaepp@gmx.de>
- * @version: 0.3.4
- *
- */
-
-x-object-fit {
-	position: relative !important;
-	display: inline-block !important;
-}
-
-x-object-fit > .x-object-fit-taller,
-x-object-fit > .x-object-fit-wider {
-	position: absolute !important;
-	left: -100% !important;
-	right: -100% !important;
-	top: -100% !important;
-	bottom: -100% !important;
-	margin: auto !important;
-}
-
-.x-object-fit-none > .x-object-fit-taller,
-.x-object-fit-none > .x-object-fit-wider {
-	width: auto !important;
-	height: auto !important;
-}
-
-.x-object-fit-fill > .x-object-fit-taller,
-.x-object-fit-fill > .x-object-fit-wider {
-	width: 100% !important;
-	height: 100% !important;
-}
-
-.x-object-fit-contain > .x-object-fit-taller {
-	width: auto !important;
-	height: 100% !important;
-}
-
-.x-object-fit-contain > .x-object-fit-wider {
-	width: 100% !important;
-	height: auto !important;
-}
-
-.x-object-fit-cover > .x-object-fit-taller,
-.x-object-fit-cover > .x-object-fit-wider {
-	max-width: none !important;
-	max-height: none !important;
-}
-
-.x-object-fit-cover > .x-object-fit-taller {
-	width: 100% !important;
-	height: auto !important;
-	max-width: none !important;
-}
-
-.x-object-fit-cover > .x-object-fit-wider {
-	width: auto !important;
-	height: 100% !important;
-	max-width: none !important;
-}
-
-.x-object-position-top > .x-object-fit-taller,
-.x-object-position-top > .x-object-fit-wider {
-	top: 0 !important;
-	bottom: auto !important;
-}
-
-.x-object-position-right > .x-object-fit-taller,
-.x-object-position-right > .x-object-fit-wider {
-	left: auto !important;
-	right: 0 !important;
-}
-
-.x-object-position-bottom > .x-object-fit-taller,
-.x-object-position-bottom > .x-object-fit-wider {
-	top: auto !important;
-	bottom: 0 !important;
-}
-
-.x-object-position-left > .x-object-fit-taller,
-.x-object-position-left > .x-object-fit-wider {
-	left: 0 !important;
-	right: auto !important;
-}
-
-/* 
+}/* 
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
