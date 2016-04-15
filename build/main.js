@@ -130,19 +130,25 @@ var App =
 	
 	var Scrollissimo = __webpack_require__(57);
 	$(function () {
-		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
-			__webpack_require__.e/* nsure */(3, function (require) {
-				__webpack_require__(72);
-				var gsapAnims = __webpack_require__(75);
-				$('.js-anim-scroll').each(function () {
-					var tween = gsapAnims.getTL($(this));
-					Scrollissimo.add(tween, 0, 60);
+		function animation() {
+			if ($('.js-anim-scroll').length && $(window).width() > 1023) {
+				__webpack_require__.e/* nsure */(3, function (require) {
+					__webpack_require__(72);
+					var gsapAnims = __webpack_require__(75);
+					$('.js-anim-scroll').each(function () {
+						var tween = gsapAnims.getTL($(this));
+						Scrollissimo.add(tween, 0, 60);
+					});
+					$(window).scroll(function () {
+						Scrollissimo.knock();
+					});
 				});
-				$(window).scroll(function () {
-					Scrollissimo.knock();
-				});
-			});
+			}
 		}
+		animation();
+		$(window).on('resize', function () {
+			setTimeout(animation(), 1000);
+		});
 	});
 	
 	$(function () {

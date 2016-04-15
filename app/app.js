@@ -32,19 +32,25 @@ $(function(){
 
 let Scrollissimo = require('scrollissimo');
 $(function(){
-	if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
-		require.ensure([],function(require){
-			require('gsap');
-			let gsapAnims = require('./js/gsapAnims');
-			$('.js-anim-scroll').each(function(){
-				var tween = gsapAnims.getTL($(this));
-				Scrollissimo.add(tween, 0, 60);
+	function animation(){
+		if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
+			require.ensure([],function(require){
+				require('gsap');
+				let gsapAnims = require('./js/gsapAnims');
+				$('.js-anim-scroll').each(function(){
+					var tween = gsapAnims.getTL($(this));
+					Scrollissimo.add(tween, 0, 60);
+				});
+				$(window).scroll(function(){
+					Scrollissimo.knock();
+				});
 			});
-			$(window).scroll(function(){
-				Scrollissimo.knock();
-			});
-		});
+		}
 	}
+	animation();
+	$(window).on('resize', function(){
+		setTimeout(animation(),1000);
+	});
 });
 
 $(function(){
