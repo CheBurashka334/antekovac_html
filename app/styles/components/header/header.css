@@ -12,6 +12,9 @@
 	order: -10;
 	& + div > div:first-of-type {
 		padding-top: 80px;
+		.home-page & {
+			padding-top: 0;
+		}
 	}
 	&--transparent {
 		background: transparent;

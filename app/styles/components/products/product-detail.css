@@ -175,8 +175,10 @@
 		}
 		&__slider {
 			height: 380px;
+			cursor: pointer;
 			.owl-carousel {
 				padding-right: 0;
+				cursor: pointer;
 			}
 			.owl-dots {
 				display: flex;
@@ -184,6 +186,9 @@
 			.compact-navs {
 				display: none;
 			}
+		}
+		&__slide {
+			cursor: pointer;
 		}
 		&__info {
 			padding: 0;

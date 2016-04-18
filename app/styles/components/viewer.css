@@ -121,6 +121,7 @@ body.viewer-open {
 		top: 15px;
 		right: 45px;
 		border-radius: 0;
+		z-index: 199;
 		&::before,
 		&::after {
 			content: '';
