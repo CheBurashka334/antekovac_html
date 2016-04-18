@@ -113,6 +113,9 @@
 			.search-btn .i-icon {
 				display: block;
 				margin: auto;
+				.bx-ie & {
+					margin: 0;
+				}
 			}
 		}
     }

@@ -447,6 +447,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
           flex-flow: row wrap;
   margin-left: -10px;
   margin-right: -10px;
+  width: calc(100% + 20px);
 }
 /* line 15, scss/gridlex.scss */
 .col,
@@ -483,6 +484,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
 /* line 36, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] {
   margin: 0;
+  width: 100%;
 }
 /* line 38, scss/gridlex.scss */
 [class*="grid-"][class*="-noGutter"] > [class*="col"] {
@@ -6731,6 +6733,9 @@ body.viewer-open {
 .header__right .header__link .search-btn .i-icon {
 	display: block;
 	margin: auto;
+}
+.bx-ie .header__right .header__link .search-btn .i-icon {
+	margin: 0;
 }
 @media (max-width: 1023px) {
     .header__right {
