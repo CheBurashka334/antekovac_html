@@ -3245,10 +3245,10 @@ webpackJsonpApp([1],{
 					lazyLoad: true,
 					navContainerClass: 'compact-navs',
 					navClass: ['nav-prev', 'nav-next'],
-					navText: ['', ''],
-					mouseDrag: false
+					navText: ['', '']
 				}
-			}, {
+			}, /*mouseDrag: false,*/
+			{
 				'selector': '.carousel--dark-navs',
 				'options': {
 					responsive: {
