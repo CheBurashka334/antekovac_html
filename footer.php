@@ -126,16 +126,16 @@
                     москва, первый красносельский переулок, д.3
                 </div>
                 <div class="footer-bottom__socials">
-                    <a href="" class="i-icon">
+                    <a href="" class="i-icon" target="__blank">
                         <svg class="icon"><use xlink:href="#yt"/></svg>
                     </a>
-                    <a href="" class="i-icon">
+                    <a href="" class="i-icon" target="__blank">
                         <svg class="icon"><use xlink:href="#inst"/></svg>
                     </a>
-                    <a href="" class="i-icon">
+                    <a href="" class="i-icon" target="__blank">
                         <svg class="icon"><use xlink:href="#fb"/></svg>
                     </a>
-                    <a href="" class="i-icon">
+                    <a href="" class="i-icon" target="__blank">
                         <svg class="icon"><use xlink:href="#vk"/></svg>
                     </a>
                 </div>

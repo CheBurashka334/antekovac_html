@@ -11278,7 +11278,10 @@ var App =
 				toggleBox($(this));
 			});
 	
-			$('.js-play-video').on('click', function () {
+			$('.js-play-video').on('click', function (e) {
+				if ($(this).is('a')) {
+					e.preventDefault();
+				}
 				if ($(this).attr('data-video')) {
 					var video = $($(this).attr('data-video'))[0];
 				} else {
@@ -11290,6 +11293,24 @@ var App =
 						video.pause();
 					});
 				});
+			});
+			$('.js-toggle-playing-video').on('click', function (e) {
+				if ($(this).is('a')) {
+					e.preventDefault();
+				}
+				if ($(this).attr('data-video')) {
+					var video = $($(this).attr('data-video'))[0];
+				} else {
+					console.error('Video? Which video?');
+				}
+				var playerBox = $(this).parent();
+				if (video.played.length == 0 || video.paused || video.ended) {
+					video.play();
+					playerBox.addClass('video--playing');
+				} else {
+					playerBox.removeClass('video--playing');
+					video.pause();
+				}
 			});
 	
 			if ($('html').hasClass('bx-ie')) {

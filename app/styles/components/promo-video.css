@@ -100,3 +100,44 @@
 		}
 	}
 }
+
+.video-custom-player {
+	position: relative;
+	video {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__overlay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		color: #d0a675;
+		background: rgba(0,0,0,0.49);
+		opacity: 1;
+		will-change: opacity;
+		transition: opacity .3s;
+		.i-icon {
+			width: 120px;
+			height: 120px;
+			max-width: 42%;
+			fill: currentColor;
+			&--stroke {
+				fill: none;
+				stroke: currentColor;
+				stroke-width: 2;
+			}
+		}
+		&:hover {
+			color: white;
+		}
+	}
+	&.video--playing &__overlay {
+		opacity: 0;
+	}
+}

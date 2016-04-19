@@ -1967,16 +1967,13 @@ webpackJsonpApp([2],{
 				'scalable': false,
 				'fullscreen': false,
 				'minZoomRatio': 0.1,
-				'maxZoomRatio': 3
+				'maxZoomRatio': 0.5
 			});
 			$('.js-viewer').viewer();
 			$('.js-viewer-wrapper').on('click', function () {
 				var img = '<img class="js-viewer-fullimg hidden" src="' + $(this).attr('data-fullimg') + '"/>';
 				$('.viewer-placeholder').html(img);
-				var maxZoom = $(this).attr('data-max-zoom') ? $(this).attr('data-max-zoom') : 3;
-				//var viewer = new Viewer($('.js-viewer-fullimg'),{'maxZoomRatio': maxZoom});
 				$().viewer('update');
-				$('.js-viewer-fullimg').viewer({ 'maxZoomRatio': maxZoom });
 				$('.js-viewer-fullimg').viewer('show');
 			});
 			$('.viewer-close').on('click', function (e) {

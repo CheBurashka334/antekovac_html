@@ -125,6 +125,7 @@
 		.owl-item {
 			display: flex;
 		}
+		.owl-stage,
 		.owl-item {
 			flex: 1 0 auto;
 		}

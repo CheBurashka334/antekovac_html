@@ -163,6 +163,12 @@
 				</a>
 			</li>
 			<li class="menu-item menu-item--with-icon">
+				<a href="brend.php" class="menu-item__link js-anim--click">
+					<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#brend"/></svg></span>
+					<span class="menu-item__text">О бренде</span>
+				</a>
+			</li>
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click">
 					<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#art-lab"/></svg></span>
 					<span class="menu-item__text">Арт-лаборатория</span>
@@ -339,16 +345,16 @@
 	</div>
 	<div class="page-aside__block--mobile">
 		<div class="page-aside__socials--mobile">
-			<a href="" class="i-icon">
+			<a href="" class="i-icon" target="__blank">
 				<svg class="icon"><use xlink:href="#yt"/></svg>
 			</a>
-			<a href="" class="i-icon">
+			<a href="" class="i-icon" target="__blank">
 				<svg class="icon"><use xlink:href="#inst"/></svg>
 			</a>
-			<a href="" class="i-icon">
+			<a href="" class="i-icon" target="__blank">
 				<svg class="icon"><use xlink:href="#fb"/></svg>
 			</a>
-			<a href="" class="i-icon">
+			<a href="" class="i-icon" target="__blank">
 				<svg class="icon"><use xlink:href="#vk"/></svg>
 			</a>
 		</div>

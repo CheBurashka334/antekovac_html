@@ -4064,6 +4064,56 @@ table.nostyle th, table.nostyle td {
 }
 .video-preview__overlay:hover {
 	color: white;
+}
+.video-custom-player {
+	position: relative;
+}
+.video-custom-player video {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.video-custom-player__overlay {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #d0a675;
+	background: rgba(0,0,0,0.49);
+	opacity: 1;
+	will-change: opacity;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+.video-custom-player__overlay .i-icon {
+	width: 120px;
+	height: 120px;
+	max-width: 42%;
+	fill: currentColor;
+}
+.video-custom-player__overlay .i-icon--stroke {
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+}
+.video-custom-player__overlay:hover {
+	color: white;
+}
+.video-custom-player.video--playing .video-custom-player__overlay {
+	opacity: 0;
 }:root {
 	/* пути к картинкам */
 }
@@ -9719,7 +9769,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	display: -ms-flexbox;
 	display: flex;
 }
-.product-detail__slider .owl-item {
+.product-detail__slider .owl-stage,
+		.product-detail__slider .owl-item {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 0 auto;
 	    -ms-flex: 1 0 auto;

@@ -12,8 +12,11 @@
         <h2>Бренд</h2>
     </div>
 	<?php require ('brend_menu.php') ?>
-	<div class="video-container mobile-fullwidth">
-		<iframe width="1180" height="664" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+	<div class="video-custom-player">
+		<video id="brend-video" src="video/ak.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+		<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
+			<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+		</a>
 	</div>
 	<div class="tile-page page--text page--about">
 		<div class="tile-page__body">
