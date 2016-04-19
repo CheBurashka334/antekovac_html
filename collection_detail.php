@@ -30,8 +30,22 @@
 		</div>
 		<div class="collection-slider carousel--dark-navs col-12 open" data-navs-xs="0" data-dots-xs="1" data-lazyload="1">
 			<div class="owl-carousel">
-				<div class="collection-slider__slide owl-lazy" data-src="images/slide-circus.jpg"></div>
-				<div class="collection-slider__slide owl-lazy" data-src="images/main-slide.jpg"></div>
+				<div class="collection-slider__slide owl-lazy" 
+					data-src="images/collection-detail/1--2000x875.jpg" 
+					data-src-mobile="images/collection-detail/1--1024x450.jpg">
+				</div>
+				<div class="collection-slider__slide owl-lazy" 
+					data-src="images/collection-detail/2--2000x875.jpg" 
+					data-src-mobile="images/collection-detail/2--1024x450.jpg">
+				</div>
+				<div class="collection-slider__slide owl-lazy" 
+					data-src="images/collection-detail/3--2000x875.jpg" 
+					data-src-mobile="images/collection-detail/3--1024x450.jpg">
+				</div>
+				<div class="collection-slider__slide owl-lazy" 
+					data-src="images/collection-detail/4--2000x875.jpg" 
+					data-src-mobile="images/collection-detail/4--1024x450.jpg">
+				</div>
 			</div>
 		</div>
 		<div class="container actions__wrapper">

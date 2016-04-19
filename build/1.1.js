@@ -3187,27 +3187,7 @@ webpackJsonpApp([1],{
 					navClass: ['nav-prev', 'nav-next'],
 					navText: ['', '']
 				}
-			},
-			// {
-			//     'selector' : '.index-new-products',
-			//     'options' : {
-			//         items: 1,
-			//         nav: true,
-			//         // navContainerClass: 'main-slider-navs',
-			//         // navClass: ['nav-prev', 'nav-next'],
-			//         navText: ['', '']
-			//     }
-			// }
-			/*{
-	               'selector' : '.carousel--mobile-only',
-	               'options' : {
-	  		items: 1,
-	  		dots: true,
-	  		mergeFit: true,
-	  		nav: false,
-	               }
-	           },*/
-			{
+			}, {
 				'selector': '.set-products',
 				'options': {
 					responsive: {
@@ -3333,6 +3313,14 @@ webpackJsonpApp([1],{
 				}
 			}];
 	
+			if ($(window).width() < 1024) {
+				$('.collection-slider .owl-lazy').each(function () {
+					if ($(this).attr('data-src-mobile')) {
+						$(this).attr('data-src', $(this).attr('data-src-mobile'));
+					}
+				});
+			}
+	
 			sliders.forEach(function (item) {
 				$(item.selector).find('.owl-carousel').owlCarousel(item.options);
 			});
@@ -3345,6 +3333,7 @@ webpackJsonpApp([1],{
 					nav: false
 				});
 			}
+	
 			$('.js-to-slide').on('click', function (e) {
 				e.preventDefault();
 				var slide = $(this).attr('href');
