@@ -16,7 +16,7 @@
 		<div class="col-7_lg-7_md-6_sm-6_xs-12 slider-wrapper">
 			<div class="product-detail__slider js-anim-scroll" data-end-position="-0.5" data-speed="10">
 				<div class="owl-carousel">
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8264.png" data-src="images/product-detail/big/afm-white-8264.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8264.png" data-src="images/product-detail/big/afm-white-8264.png" data-max-zoom="1.5">
 					</div>
 					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8265.png" data-src="images/product-detail/big/afm-white-8265.png">
 					</div>

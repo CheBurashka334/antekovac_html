@@ -41,6 +41,7 @@
 		font-weight: lighter;
 	}
 	&__desc p {
+		line-height: 18px;
 		&:first-of-type {
 			margin-top: 0;
 		}
@@ -52,11 +53,13 @@
 		margin-top: 18px;
 		p {
 			margin: 18px 0;
+			line-height: 18px;
 		}
 		.params-table {
 			width: 100%;
+			font-weight: 100;
 			td {
-				padding: 0.5em 0;
+				padding: 5px 0;
 			}
 			.param-name {
 				width: 35%;
@@ -112,7 +115,7 @@
 		z-index: 0;
 		max-height: 650px;
 		.owl-carousel {
-			padding: 40px 30px;
+			padding: 0 20px 40px;
 			padding-left: 0;
 			display: flex;
 		}
