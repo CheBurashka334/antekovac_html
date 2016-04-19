@@ -22,6 +22,14 @@
 	<script src="build/main.js" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<!-- OpenGraph разметка для соцсетей -->
+	<meta property="og:site_name" content="Название сайта" />
+	<meta property="og:title" content="Название товара" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="Ссылка на страницу товара" />
+	<meta property="og:image" content="Фото товара" />
+	<meta property="og:description" content="Описание товара, 1-2 предложения. Уточнить, каких именно." />
+	<!-- / og -->
 </head>
 
 <body>
