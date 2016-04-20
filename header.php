@@ -16,7 +16,7 @@
 	<link rel="apple-touch-icon-precomposed apple-touch-icon" href="/favicons/apple-touch-icon-precomposed.png">
 	<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
 	<link rel="manifest" href="/favicons/manifest.json">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="build/build.css" type="text/css"  rel="stylesheet" />
 	<link href="app/styles/fonts.css" type="text/css"  rel="stylesheet" />
 	<script src="build/main.js" type="text/javascript"></script>
