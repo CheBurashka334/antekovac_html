@@ -71,13 +71,12 @@
 			text-transform: uppercase;
 		}
 		&__collection {
-			font-size: 11px;
+			margin-right: 3px;
+			font-size: 12px;
 			color: #b4b5b5;
-			text-transform: uppercase;
-			a {
-				text-transform: none;
-				margin-left: 3px;
-				font-size: 12px;
+			.label {
+				font-size: 11px;
+				text-transform: uppercase;
 			}
 		}
 		&__price,

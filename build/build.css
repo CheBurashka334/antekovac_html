@@ -8229,9 +8229,6 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding-bottom: 30px;
 	border-bottom: 1px solid #ebebeb;
 }
-.checkout-block__personal {
-	
-}
 .checkout-block .heading {
 	margin-top: 10px;
 	margin-bottom: 60px;
@@ -8337,14 +8334,13 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	text-transform: uppercase;
 }
 .basket-table .product__collection {
-	font-size: 11px;
-	color: #b4b5b5;
-	text-transform: uppercase;
-}
-.basket-table .product__collection a {
-	text-transform: none;
-	margin-left: 3px;
+	margin-right: 3px;
 	font-size: 12px;
+	color: #b4b5b5;
+}
+.basket-table .product__collection .label {
+	font-size: 11px;
+	text-transform: uppercase;
 }
 .basket-table .product__price,
 		.basket-table .product__sum {

@@ -216,7 +216,7 @@
 						</div>
 						<div class="basket-table__col basket-table__col--name">
 							<div class="product__name">Сумка №23 «Монте карло»</div>
-							<div class="product__collection">коллекция: <a href="#">Альфонс Муха</a></div>
+							<div class="product__collection"><span class="label">коллекция: </span>Альфонс Муха</div>
 						</div>
 						<div class="basket-table__col basket-table__col--res">
 							<span class="product__quantity">1</span>
@@ -235,7 +235,7 @@
 						</div>
 						<div class="basket-table__col basket-table__col--name">
 							<div class="product__name">Сумка №23 «княгиня»</div>
-							<div class="product__collection">коллекция: <a href="#">Альфонс Муха</a></div>
+							<div class="product__collection"><span class="label">коллекция: </span>Альфонс Муха</div>
 						</div>
 						<div class="basket-table__col basket-table__col--res">
 							<span class="product__quantity">1</span>
