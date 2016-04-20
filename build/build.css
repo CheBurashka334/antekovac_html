@@ -2259,7 +2259,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
 html {
     font-size: 14px;
     background: #f2f2f2;
-    font-family: 'Roboto', san-serif;
+    font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
 	color: #3d3b33;
 	height: 100%;

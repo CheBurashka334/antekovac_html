@@ -13,7 +13,7 @@
 html {
     font-size: 14px;
     background: var(--main-white);
-    font-family: 'Roboto', san-serif;
+    font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
 	color: #3d3b33;
 	height: 100%;
