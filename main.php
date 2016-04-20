@@ -446,14 +446,13 @@
         </div>
         <div class="col-6_sm-12">
             <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
-                <div class="tile-block__video">
-					<div class="video-preview">
-						<img src="images/masterskie.jpg" />
-						<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#promo-video" data-video-id="qkPwimbPx8g">
+                <div class="tile-block__video tile-block__video--custom">
+					<div class="video-custom-player">
+						<video id="brend-video" src="video/ak.mp4" type="video/mp4" poster="images/masterskie.jpg"></video>
+						<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
 							<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 						</a>
 					</div>
-					<!-- модалка с этим видео уже есть на странице -->
                 </div>
 				<div class="tile-block__content">
 					<div class="tile-block__icon"><svg class="i-icon"><use xlink:href="#factory"/></svg></div>

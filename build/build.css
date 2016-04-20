@@ -4209,21 +4209,26 @@ table.nostyle th, table.nostyle td {
 	height: 0;
 	padding-bottom: 56.25%;
 }
+.tile-block__video--custom {
+	padding-bottom: 53.95%;
+}
 .tile-block__video a {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
+	cursor: pointer;
 }
-.tile-block__video .video-preview {
+.tile-block__video .video-preview,
+		.tile-block__video .video-custom-player {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-.tile-block__video .video-preview img {
+.tile-block__video .video-preview img, .tile-block__video .video-custom-player img {
 	height: 100%;
 	width: auto;
 	-o-object-fit: cover;
