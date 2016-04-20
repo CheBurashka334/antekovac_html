@@ -4,6 +4,7 @@ header.php
 build/fonts/BebasNeue Bold.ttf
 *.woff
 *.ttf
+*.mp4
 build/fonts/BebasNeue Bold.svg
 build/fonts/BebasNeue Book.svg
 build/_/app/fonts/BebasNeue Bold.svg
