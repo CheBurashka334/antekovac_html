@@ -10,6 +10,9 @@
 	.page-aside--left.open ~ .page .header & {
 		left: 40px;
 	}
+	.page-aside--right.open ~ .page .header & {
+		left: -320px;
+	}
 	&.scrolled--top {
 		transform: translateY(-200%);
 		transition: transform .3s;

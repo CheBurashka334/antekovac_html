@@ -389,22 +389,11 @@
     <div class="block-heading block-heading--mobile">
         <h2>promo видео</h2>
     </div>
-	<div class="video-preview">
-		<img src="images/sale.jpg" />
-		<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#promo-video" data-video-id="qkPwimbPx8g">
+	<div class="video-custom-player mobile-fullwidth--noGutter">
+		<video id="promo-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/promo-video-poster.jpg"></video>
+		<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#promo-video">
 			<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 		</a>
-	</div>
-	<div class="modal modal--video" id="promo-video">
-		<div class="modal__wrap">
-			<button class="btn btn--flat btn-close js-toggle-box" data-box="#promo-video"></button>
-			<div class="modal__inner">
-				<div class="video-container yt-video">
-					<!-- video id -->
-					<div id="qkPwimbPx8g"></div>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -446,9 +435,9 @@
         </div>
         <div class="col-6_sm-12">
             <div class="tile-block tile-block--video mobile-minify mobile-fullwidth">
-                <div class="tile-block__video tile-block__video--custom">
+                <div class="tile-block__video">
 					<div class="video-custom-player">
-						<video id="brend-video" src="video/ak.mp4" type="video/mp4" poster="images/masterskie.jpg"></video>
+						<video id="brend-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/masterskie-16x9.jpg"></video>
 						<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
 							<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 						</a>

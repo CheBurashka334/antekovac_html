@@ -11308,6 +11308,7 @@ var App =
 				}
 				var playerBox = $(this).parent();
 				if (video.played.length == 0 || video.paused || video.ended) {
+	
 					video.play();
 					playerBox.addClass('video--playing');
 				} else {

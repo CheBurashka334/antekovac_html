@@ -12,8 +12,8 @@
         <h2>Бренд</h2>
     </div>
 	<?php require ('brend_menu.php') ?>
-	<div class="video-custom-player">
-		<video id="brend-video" src="video/ak.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+	<div class="video-custom-player mobile-fullwidth--noGutter">
+		<video id="brend-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
 		<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
 			<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 		</a>

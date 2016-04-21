@@ -10,6 +10,7 @@
 .owl-item {
     z-index: 1;
 	display: flex;
+	flex: 0 0 auto;
 }
 
 .owl-dots {
@@ -498,9 +499,17 @@
 		}
 	}
 	.owl-item &__slide &__img img {
-		width: auto;
-		height: 100%;
+		/*width: auto;
+		height: 100%;*/
+		max-height: 480px;
+		object-fit: contain;
 		margin: 0 auto;
+	}
+	.owl-item &__slide &__img .img {
+		width: 100%;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	.owl-item &__slide &__content {
 		flex-wrap: wrap;
@@ -544,9 +553,10 @@
 		}
 		&__slide {
 			align-items: flex-start;
+			align-content: flex-start;
 		}
 		.owl-item &__slide &__img {
-			max-height: 50vw;
+			height: 50vw;
 			margin-bottom: 40px;
 			img {
 				object-fit: contain;
