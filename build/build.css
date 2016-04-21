@@ -4783,51 +4783,33 @@ table.nostyle th, table.nostyle td {
 		font-size: 21px;
 		margin: 0;
 	}
-	.tile-block--collection-image {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: stretch;
-		-webkit-align-items: stretch;
-		    -ms-flex-align: stretch;
-		        align-items: stretch;
+	.tile-block--collection-image::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		bottom: -20px;
+		background: #f2f2f2;
+	}
+	[class*="col-"]:last-of-type .tile-block--collection-image {
 		margin-bottom: 0;
-		max-height: 170px;
 	}
-	.tile-block--collection-image .tile-block__image {
-		width: 42%;
-		min-width: 135px;
-		max-height: 100%;
-	}
-	.tile-block--collection-image .tile-block__image img {
-		width: auto;
-		height: 100%;
-		max-height: 170px;
-		-o-object-fit: cover;
-		   object-fit: cover;
-		-o-object-position: center center;
-		   object-position: center center;
+	[class*="col-"]:last-of-type .tile-block--collection-image::after {
+		display: none;
 	}
 	.tile-block--collection-image .tile-block__content {
-		padding: 20px;
-		padding-left: 15px;
-		text-align: left;
-		min-width: 58%;
+		padding: 20px 20px 30px;
 	}
 	.page--collections .tile-block--collection-image .tile-block__content .btn {
 		padding-left: 20px;
 		text-align: left;
 		max-width: 200px;
-		margin-left: 0;
-	}
-	.tile-block--collection-image .collection__note {
-		text-align: left;
 	}
 	.tile-block--collection-image .collection__heading {
 		margin-bottom: 15px;
 		font: 21px "Bebas Neue Book";
-		text-align: left;
 	}
 	.tile-block--reviews {
 		padding: 20px 20px 0;
@@ -5519,7 +5501,8 @@ footer {
 		margin-bottom: 30px;
 	}
 	.page--news,
-		.page--events {
+		.page--events,
+		.page--collections {
 		margin-top: 0;
 	}
 	.page--sales .sale-products-block {

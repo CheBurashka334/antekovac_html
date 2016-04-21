@@ -177,7 +177,8 @@
 			margin-bottom: 30px;
 		}
 		&--news,
-		&--events {
+		&--events,
+		&--collections {
 			margin-top: 0;
 		}
 		&--sales .sale-products-block {
