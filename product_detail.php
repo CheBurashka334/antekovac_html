@@ -273,20 +273,22 @@
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-preview">
 				<img src="images/product-detail/video-preview.jpg" />
-				<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#product-video" data-video-id="T4mx78erGUo">
+				<a href="#" class="video-preview__overlay js-toggle-box js-toggle-playing-video" data-box="#product-video-modal" data-video="#product-video">
 					<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 				</a>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="modal modal--video" id="product-video">
+<div class="modal modal--video" id="product-video-modal">
 	<div class="modal__wrap">
-		<button class="btn btn--flat btn-close js-toggle-box" data-box="#product-video"></button>
+		<button class="btn btn--flat btn-close js-toggle-box" data-box="#product-video-modal"></button>
 		<div class="modal__inner">
-			<div class="video-container yt-video">
-				<!-- video id -->
-				<div id="T4mx78erGUo"></div>
+			<div class="video-custom-player">
+				<video id="product-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/masterskie-16x9.jpg"></video>
+				<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#product-video">
+					<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+				</a>
 			</div>
 		</div>
 	</div>
