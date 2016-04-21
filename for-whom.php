@@ -121,7 +121,7 @@
 		<div class="col-6_sm-12">
 			<div class="tile-block tile-block--collection-image mobile-fullwidth">
 				<div class="tile-block__image collection__image">
-					<img src="images/collection-architekt.jpg" />
+					<img src="images/collection-architekt-horz.jpg" />
 				</div>
 				<div class="tile-block__content">
 					<div class="collection__note">

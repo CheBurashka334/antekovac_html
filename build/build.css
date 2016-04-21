@@ -3174,8 +3174,8 @@ table.nostyle th, table.nostyle td {
 }
 .carousel--show-room .carousel__item {
 	width: 100%;
-	height: 0;
-	padding-bottom: 60%;
+	height: 60vw;
+	max-height: calc(100vh - 80px);
 }
 .carousel--bg-img .carousel__item {
 	background-repeat: no-repeat;
@@ -3321,6 +3321,7 @@ table.nostyle th, table.nostyle td {
 }
 .owl-item .news-slider__slide .news-slider__img img {
 	width: auto;
+	height: 100%;
 	margin: 0 auto;
 }
 .owl-item .news-slider__slide .news-slider__content {
@@ -3370,13 +3371,14 @@ table.nostyle th, table.nostyle td {
 		            -ms-grid-row-align: flex-start;
 		        align-items: flex-start;
 	}
-	.news-slider__slide .news-slider__img {
+	.owl-item .news-slider__slide .news-slider__img {
 		max-height: 50vw;
 		margin-bottom: 40px;
 	}
-	.news-slider__slide .news-slider__img img {
+	.owl-item .news-slider__slide .news-slider__img img {
 		-o-object-fit: contain;
 		   object-fit: contain;
+		height: auto;
 	}
 	.owl-item .news-slider__slide .news-slider__content {
 		padding: 0 30px;
@@ -4344,18 +4346,29 @@ table.nostyle th, table.nostyle td {
 	width: 100%;
 }
 .tile-block--collection-image .tile-block__content {
-	padding: 30px 30px 35px;
+	padding: 30px 30px 80px;
+}
+.page--collections .tile-block--collection-image .tile-block__content {
+	padding-bottom: 35px;
 }
 .tile-block--collection-image .tile-block__content .btn {
 	max-width: 310px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	position: absolute;
+	bottom: 35px;
+	left: 10%;
+	right: 10%;
 }
 .page--collections .tile-block--collection-image .tile-block__content .btn {
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
+	position: relative;
+	left: auto;
+	right: auto;
+	bottom: auto;
 }
 .tile-block--collection-image .collection__note {
 	color: #b7b7b7;
@@ -4366,8 +4379,6 @@ table.nostyle th, table.nostyle td {
 	color: #2e3034;
 	text-align: center;
 	margin-bottom: 40px;
-}
-.page--collections .tile-block--collection-image .collection__heading {
 	font: 24px "Bebas Neue Book";
 }
 .tile-block .btn {
@@ -4801,8 +4812,14 @@ table.nostyle th, table.nostyle td {
 	}
 	.tile-block--collection-image .tile-block__content {
 		padding: 20px 20px 30px;
+		/*.page--collections & .btn {
+			}*/
 	}
-	.page--collections .tile-block--collection-image .tile-block__content .btn {
+	.tile-block--collection-image .tile-block__content .btn {
+		position: relative;
+		left: auto;
+		right: auto;
+		bottom: auto;
 		padding-left: 20px;
 		text-align: left;
 		max-width: 200px;
@@ -7496,6 +7513,8 @@ select {
 	border: 1px solid #ebebeb;
 	margin: 10px 0;
     -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	max-width: 100%;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
@@ -9087,7 +9106,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		min-width: 40px;
 	}
 	.modal.search-form .modal__inner {
-		padding: 40px 0;
+		padding-top: calc((100vh - 200px)/2);
 	}
 	.modal.modal-slider .modal__wrap {
 		padding: 40px 0 20px;

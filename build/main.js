@@ -11195,6 +11195,9 @@ var App =
 								}
 							}
 							$(box).toggleClass('open');
+							if ($(box).hasClass('search-form') && $(box).hasClass('open')) {
+								$(box).find('.search-form__field input[type="text"]').focus();
+							}
 						}
 					} else {
 						console.error(box + ' isn\'t found');
