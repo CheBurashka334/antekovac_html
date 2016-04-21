@@ -155,13 +155,29 @@ var Noodles = {
 			} else {
 				console.error('Video? Which video?');
 			}
-			var playerBox = $(this).parent();
+			var playerBox = $($(this).attr('data-video')).parent();
 			if((video.played.length == 0) || video.paused || video.ended){
+				if($('video').length > 1){
+					//console.log($('video'));
+					var videoCollection = $('video');
+					for (var i = 0; i < videoCollection.length; i++){
+						if(videoCollection[i] != video){
+							videoCollection[i].pause();
+							$(videoCollection[i].offsetParent).removeClass('video--playing');
+							//console.log(videoCollection[i].id);
+						}
+					}
+				}
 				video.play();
 				playerBox.addClass('video--playing');
 			} else {
 				playerBox.removeClass('video--playing');
 				video.pause();
+			}
+			if(playerBox.parents('.modal--video').length){
+				var modal = playerBox.parents('.modal--video').eq(0);
+				modal.find('.btn-close').bind('click', function(){video.pause()});
+				modal.bind('click', function(){video.pause()});
 			}
 		});
 		
