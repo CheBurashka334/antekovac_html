@@ -87,8 +87,11 @@
 	<div class="grid collection-process">
 		<div class="col-7_xs-12">
 			<div class="collection-process__video">
-				<div class="video-container">
-					<iframe width="640" height="360" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				<div class="video-custom-player mobile-fullwidth--noGutter">
+					<video id="brend-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+					<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
+						<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+					</a>
 				</div>
 			</div>
 		</div>

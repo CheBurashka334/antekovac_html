@@ -148,18 +148,27 @@
 		</div>
 		<div class="grid">
 			<div class="col-4_xs-12">
-				<div class="video-container">
-					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				<div class="video-custom-player mobile-fullwidth--noGutter">
+					<video id="archive-video-1" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+					<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#archive-video-1">
+						<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+					</a>
 				</div>
 			</div>
 			<div class="col-4_xs-12">
-				<div class="video-container">
-					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				<div class="video-custom-player mobile-fullwidth--noGutter">
+					<video id="archive-video-2" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+					<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#archive-video-2">
+						<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+					</a>
 				</div>
 			</div>
 			<div class="col-4_xs-12">
-				<div class="video-container">
-					<iframe width="379" height="213" src="https://www.youtube.com/embed/qkPwimbPx8g?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+				<div class="video-custom-player mobile-fullwidth--noGutter">
+					<video id="archive-video-3" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+					<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#archive-video-3">
+						<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+					</a>
 				</div>
 			</div>
 		</div>

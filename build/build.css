@@ -3985,22 +3985,7 @@ table.nostyle th, table.nostyle td {
 		padding: 0 0 56.25%;
 	}
 	.promo-video {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
 		border-top: 1px solid #e1e1e1;
-	}
-	.promo-video .video-container {
-		width: 30%;
-		padding-bottom: 17.5%;
-	}
-	.promo-video .video-preview {
-		width: 30%;
 	}
 	.promo-video .block-heading--mobile {
 		padding: 0.5em 20px;
@@ -4132,6 +4117,12 @@ table.nostyle th, table.nostyle td {
 }
 .video-custom-player.video--playing .video-custom-player__overlay {
 	opacity: 0;
+}
+@media (max-width: 767px){
+	.video-preview__overlay .i-icon, .video-custom-player__overlay .i-icon {
+		width: 60px;
+		height: 60px;
+	}
 }:root {
 	/* пути к картинкам */
 }

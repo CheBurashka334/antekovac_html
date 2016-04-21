@@ -29,16 +29,7 @@
 		padding: 0 0 56.25%;
 	}
 	.promo-video {
-		display: flex;
-		justify-content: space-between;
 		border-top: 1px solid #e1e1e1;
-		.video-container {
-			width: 30%;
-			padding-bottom: 17.5%;
-		}
-		.video-preview {
-			width: 30%;
-		}
 		.block-heading--mobile {
 			padding: 0.5em 20px;
 			font-size: 18px;
@@ -139,5 +130,14 @@
 	}
 	&.video--playing &__overlay {
 		opacity: 0;
+	}
+}
+@media (--mobile){
+	.video-preview,
+	.video-custom-player {
+		&__overlay .i-icon {
+			width: 60px;
+			height: 60px;
+		}
 	}
 }
