@@ -41,7 +41,8 @@
 	.checkout-block,
 	.checkout-block[class*="grid"]{
 		margin: 0;
-		padding: 0 25px;
+		padding: 0 20px;
+		width: 100%;
 		[class*="col"]{
 			padding: 0;
 		}
