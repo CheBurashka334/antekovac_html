@@ -72,8 +72,11 @@ textarea {
 select {
 	display: block;
 	width: 100%;
-	appearance: menulist;
 	cursor: pointer;
+	background-image: svg('triangle', '[fill]: var(--dark-gray)');
+	background-position: right 11px center;
+	background-size: 6px 5px;
+	background-repeat: no-repeat;
 }
 
 .field__inputtext {

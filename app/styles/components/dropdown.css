@@ -185,6 +185,7 @@
 }
 
 .sort-mobile {
+	position: relative;
 	background: var(--main-white);
 	border: 1px solid var(--light-gray);
 	padding: 11px 20px;
@@ -201,10 +202,11 @@
 	&__sel {
 		padding: 0 10px;
 		font-size: 18px;
-		background: none;
+		background-color: transparent;
 		border: 0;
 		color: #767778;
 		margin: 0;
+		background-image: svg('triangle', '[fill]: #767778');
 	}
 }
 
