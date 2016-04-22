@@ -157,6 +157,7 @@
 }
 @media (--mobile){
 	.basket-table {
+		display: block;
 		&__head {
 			display: none;
 		}
@@ -188,6 +189,7 @@
 			.page--checkout &--name,
 			.page--checkout &--sum {
 				width: 100%;
+				display: block;
 			}
 			&--name {
 				margin-bottom: 1em;
@@ -329,6 +331,7 @@
 			width: 100%;
 			max-width: 100%;
 			align-self: flex-start;
+			flex: 0 0 auto;
 			.page--checkout & {
 				padding: 0;
 			}

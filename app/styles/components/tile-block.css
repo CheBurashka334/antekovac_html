@@ -628,8 +628,6 @@
 				text-align: left;
 				max-width: 200px;
 			}
-			/*.page--collections & .btn {
-			}*/
 		}
 		&--collection-image .collection {
 			&__heading {
@@ -745,6 +743,10 @@
 		}
 		&__foot > [class*="grid"] {
 			flex-direction: column;
+			flex: 0 0 auto;
+			[class*="col"] {
+				flex: 0 0 auto;
+			}
 		}
 		.basket {
 			&__body {
@@ -752,7 +754,8 @@
 			}
 			&__foot {
 				padding: 20px;
-				padding-left: calc(40% + 20px);
+				padding-left: calc(39% + 20px);
+				flex: 0 0 auto;
 			}
 		}
 	}
