@@ -125,8 +125,11 @@
 
 @media (--small-down) {
     .header {
-        &__right {
-            display: none;
+        &__link {
+            &--search,
+			&--favorite {
+				display: none;
+			}
         }
     }
 }
@@ -144,16 +147,6 @@
 		}
 		&__wrap {
 			height: 71px;
-		}
-		&__logo {
-			position: relative;
-			top: auto;
-			left: auto;
-			width: 33%;
-			transform: translate(0,10%);
-			.logo {
-				width: 100%;
-			}
 		}
 	}
 }

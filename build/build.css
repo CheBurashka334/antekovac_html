@@ -6803,7 +6803,8 @@ body.viewer-open {
 	margin: 0;
 }
 @media (max-width: 1023px) {
-    .header__right {
+    .header__link--search,
+			.header__link--favorite {
 		display: none;
 	}
 }
@@ -6822,17 +6823,6 @@ body.viewer-open {
 	}
 	.header__wrap {
 		height: 71px;
-	}
-	.header__logo {
-		position: relative;
-		top: auto;
-		left: auto;
-		width: 33%;
-		-webkit-transform: translate(0,10%);
-		        transform: translate(0,10%);
-	}
-	.header__logo .logo {
-		width: 100%;
 	}
 }:root {
 	/* пути к картинкам */

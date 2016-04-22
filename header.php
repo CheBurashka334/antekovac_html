@@ -59,14 +59,14 @@
 					</a>
 				</div>
 				<div class="header__right">
-					<div class="header__link">
+					<div class="header__link header__link--search">
 						<button class="search-btn js-toggle-box" data-box=".modal.search-form">
 							<svg class="i-icon i-icon--stroke" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
 							</svg>
 						</button>
 					</div>
-					<div class="header__link">
+					<div class="header__link header__link--favorite">
 						<a href="#">
 							<svg class="i-icon i-icon--stroke" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#heart"></use>
@@ -74,7 +74,7 @@
 							<span>17</span>
 						</a>
 					</div>
-					<div class="header__link">
+					<div class="header__link header__link--basket">
 						<a href="#">
 							<svg class="i-icon" role="img">
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#basket"></use>
