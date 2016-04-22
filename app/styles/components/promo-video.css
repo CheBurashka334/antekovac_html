@@ -94,6 +94,9 @@
 
 .video-custom-player {
 	position: relative;
+	.block--archive & {
+		margin-bottom: 20px;
+	}
 	video {
 		display: block;
 		width: 100%;

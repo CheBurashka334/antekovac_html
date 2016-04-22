@@ -4079,6 +4079,9 @@ table.nostyle th, table.nostyle td {
 .video-custom-player {
 	position: relative;
 }
+.block--archive .video-custom-player {
+	margin-bottom: 20px;
+}
 .video-custom-player video {
 	display: block;
 	width: 100%;
