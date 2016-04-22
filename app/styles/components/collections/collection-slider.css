@@ -146,7 +146,7 @@
 			&__heading {
 				margin: 10px auto 2em;
 				:--heading {
-					font: 30px "Bebas Neue Bold";
+					font: 30px "Bebas Neue Bold", "Roboto", sans-serif;;
 				}
 			}
 			&__text {
@@ -179,7 +179,7 @@
 		
 		
 		&__text {
-			font: 24px/1 "Bebas Neue Book";
+			font: 24px/1 "Bebas Neue Book", "Roboto", sans-serif;;
 			color: var(--dark-gray);
 		}
 		&--photo {

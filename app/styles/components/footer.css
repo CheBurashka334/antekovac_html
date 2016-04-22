@@ -68,7 +68,7 @@ footer {
     &__wrapper {
         display: flex;
         color: white;
-        font-family: "Bebas Neue Book";
+        font-family: "Bebas Neue Book", "Roboto", sans-serif;;
         font-size: 18px;
         text-transform: uppercase;
         align-items: center;

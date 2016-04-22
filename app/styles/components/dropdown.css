@@ -3,7 +3,7 @@
 
 .dropdown {
 	position: relative;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;;
 	text-transform: uppercase;
 	font-size: 17px;
 	line-height: 23px;
@@ -106,7 +106,7 @@
 	.dropdown {
 		&--mobile {
 			position: relative;
-			font-family: "Bebas Neue Book";
+			font-family: "Bebas Neue Book", "Roboto", sans-serif;;
 			text-transform: uppercase;
 			font-size: 20px;
 			line-height: 23px;

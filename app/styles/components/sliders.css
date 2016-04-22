@@ -72,7 +72,7 @@
     }
     &__heading {
         text-transform: uppercase;
-        font-family: "Bebas Neue Bold";
+        font-family: "Bebas Neue Bold", "Roboto", sans-serif;;
         font-size: 30px;
         color: #fff;
     }

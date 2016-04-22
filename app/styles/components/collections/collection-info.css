@@ -42,7 +42,7 @@
 	}
 	&__heading {
 		text-transform: uppercase;
-		font-family: "Bebas Neue Bold";
+		font-family: "Bebas Neue Bold", "Roboto", sans-serif;;
 		font-size: 30px;
 		color: #fff;
 		margin: 10px 0;
@@ -54,7 +54,7 @@
 		color: white;
 	}
 	&__note {
-		font-family: "MyriadPro";
+		font-family: "MyriadPro", "Roboto", sans-serif;
 		font-weight: 400;
 		color: white;
 		font-size: 18px;
@@ -107,7 +107,7 @@
 		max-width: 640px;
 	}
 	&__text {
-		font: 24px "Bebas Neue Book";
+		font: 24px "Bebas Neue Book", "Roboto", sans-serif;;
 		color: var(--dark-gray);
 	}
 	&__image,

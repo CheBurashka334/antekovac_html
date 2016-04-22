@@ -4,7 +4,7 @@
 
 .peoples {
 	&__name {
-		font: 20px "Bebas Neue Book";
+		font: 20px "Bebas Neue Book", "Roboto", sans-serif;;
 		color: var(--main-brown);
 		text-align: center;
 		margin: 20px 0 10px;

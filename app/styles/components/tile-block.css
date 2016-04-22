@@ -38,7 +38,7 @@
 		}
 	}
     h2 {
-        font-family: "Bebas Neue Book";
+        font-family: "Bebas Neue Book", "Roboto", sans-serif;;
         color: var(--main-brown);
 		margin: 0 0 15px;
 		&.base-color {
@@ -159,7 +159,7 @@
 		}
 	}
 	&__heading {
-		font: 24px "Bebas Neue Book";
+		font: 24px "Bebas Neue Book", "Roboto", sans-serif;;
 		.sales-slider &,
 		.master-class-slider & {
 			margin-bottom: 10px;
@@ -234,7 +234,7 @@
 			color: var(--dark-gray);
 			text-align: center;
 			margin-bottom: 40px;
-			font: 24px "Bebas Neue Book";
+			font: 24px "Bebas Neue Book", "Roboto", sans-serif;;
 		}
 	}
     .btn {
@@ -632,7 +632,7 @@
 		&--collection-image .collection {
 			&__heading {
 				margin-bottom: 15px;
-				font: 21px "Bebas Neue Book";
+				font: 21px "Bebas Neue Book", "Roboto", sans-serif;;
 			}
 		}
 		&--reviews {

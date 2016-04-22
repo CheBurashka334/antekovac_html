@@ -98,7 +98,7 @@ img {
 }
 
 :--heading {
-    font-family: "Bebas Neue Book";
+    font-family: "Bebas Neue Book", "Roboto", sans-serif;
     margin: 5px 0;
     font-weight: 400;
 	a {
@@ -115,7 +115,7 @@ img {
     margin-top: 35px;
     margin-bottom: 30px;
     > :--heading {
-        font-family: "Bebas Neue Book";
+        font-family: "Bebas Neue Book", "Roboto", sans-serif;
         color: var(--main-brown);
         &::before,
         &::after {
@@ -137,14 +137,14 @@ img {
 	margin-top: 20px;
 	margin-bottom: 1.5em;
 	> :--heading {
-        font-family: "Bebas Neue Book";
+        font-family: "Bebas Neue Book", "Roboto", sans-serif;
         color: var(--main-brown);
 		&.base-color {
 			color: #3d3b33;
 		}
 	}
 	&--dark-block {
-		font-family: "Bebas Neue Book";
+		font-family: "Bebas Neue Book", "Roboto", sans-serif;
 		font-size: 24px;
 		padding: 20px 100px;
 		margin: 0 auto;
@@ -190,7 +190,7 @@ h3 {
 
 h4 {
     font-size: 18px;
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	margin: 1rem 0 2rem;
 }
 

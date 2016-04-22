@@ -2351,7 +2351,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Bebas Neue Book";
+    font-family: "Bebas Neue Book", "Roboto", sans-serif;
     margin: 5px 0;
     font-weight: 400;
 }
@@ -2373,7 +2373,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     .block-heading > h4,
     .block-heading > h5,
     .block-heading > h6 {
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	color: #b59063;
 }
 .block-heading > h1::before,
@@ -2410,14 +2410,14 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	.heading > h4,
 	.heading > h5,
 	.heading > h6 {
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	color: #b59063;
 }
 .heading > h1.base-color, .heading > h2.base-color, .heading > h3.base-color, .heading > h4.base-color, .heading > h5.base-color, .heading > h6.base-color {
 	color: #3d3b33;
 }
 .heading--dark-block {
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 24px;
 	padding: 20px 100px;
 	margin: 0 auto;
@@ -2467,7 +2467,7 @@ h3 {
 }
 h4 {
     font-size: 18px;
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	margin: 1rem 0 2rem;
 }
 h5 {
@@ -2920,7 +2920,7 @@ table.nostyle th, table.nostyle td {
 }
 .main-slider__heading {
 	text-transform: uppercase;
-	font-family: "Bebas Neue Bold";
+	font-family: "Bebas Neue Bold", "Roboto", sans-serif;
 	font-size: 30px;
 	color: #fff;
 }
@@ -3541,7 +3541,7 @@ table.nostyle th, table.nostyle td {
     border: 1px solid currentColor;
     font-size: 18px;
     text-decoration: none;
-    font-family: "MyriadPro";
+    font-family: "MyriadPro", "Roboto", sans-serif;
 	box-sizing: border-box;
 }
 .btn:hover {
@@ -4174,7 +4174,7 @@ table.nostyle th, table.nostyle td {
 	text-decoration: underline;
 }
 .tile-block h2 {
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	color: #b59063;
 	margin: 0 0 15px;
 }
@@ -4304,7 +4304,7 @@ table.nostyle th, table.nostyle td {
 	color: #2e3034;
 }
 .tile-block__heading {
-	font: 24px "Bebas Neue Book";
+	font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 }
 .sales-slider .tile-block__heading,
 		.master-class-slider .tile-block__heading {
@@ -4397,7 +4397,7 @@ table.nostyle th, table.nostyle td {
 	color: #2e3034;
 	text-align: center;
 	margin-bottom: 40px;
-	font: 24px "Bebas Neue Book";
+	font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 }
 .tile-block .btn {
 	margin: 15px 0;
@@ -4842,7 +4842,7 @@ table.nostyle th, table.nostyle td {
 	}
 	.tile-block--collection-image .collection__heading {
 		margin-bottom: 15px;
-		font: 21px "Bebas Neue Book";
+		font: 21px "Bebas Neue Book", "Roboto", sans-serif;
 	}
 	.tile-block--reviews {
 		padding: 20px 20px 0;
@@ -5120,7 +5120,7 @@ footer {
 	display: -ms-flexbox;
 	display: flex;
 	color: white;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
 	-webkit-box-align: center;
@@ -5600,7 +5600,7 @@ footer {
 	padding: 13px 35px 14px;
 	color: inherit;
 	text-decoration: none;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 22px;
 	line-height: 35px;
 	vertical-align: middle;
@@ -5715,7 +5715,7 @@ footer {
 	padding: 15px 35px;
 	color: #848484;
 	text-decoration: none;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 22px;
 	line-height: 40px;
 	vertical-align: middle;
@@ -5818,7 +5818,7 @@ footer {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	text-align: center;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 17px;
 	line-height: 1;
 	padding: 13px 1em;
@@ -5883,7 +5883,7 @@ footer {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	text-align: center;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 24px;
 	line-height: 1;
 	padding: 20px 1em 22px;
@@ -7270,7 +7270,7 @@ body.viewer-open {
 }
 .dropdown {
 	position: relative;
-	font-family: "Bebas Neue Book";
+	font-family: "Bebas Neue Book", "Roboto", sans-serif;;
 	text-transform: uppercase;
 	font-size: 17px;
 	line-height: 23px;
@@ -7379,7 +7379,7 @@ body.viewer-open {
 @media (max-width: 767px){
 	.dropdown--mobile {
 		position: relative;
-		font-family: "Bebas Neue Book";
+		font-family: "Bebas Neue Book", "Roboto", sans-serif;
 		text-transform: uppercase;
 		font-size: 20px;
 		line-height: 23px;
@@ -7540,7 +7540,7 @@ textarea,
 select {
     font-size: 17px;
 	line-height: 1.3;
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	vertical-align: middle;
 	color: #2e3034;
 	padding: 0.5em 15px;
@@ -7698,7 +7698,7 @@ select {
 	z-index: -1;
 }
 .switch__text {
-	font-family:  "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	color: #2e3034;
 	font-size: 19px;
 	position: relative;
@@ -7817,14 +7817,6 @@ input:checked + .custom-radio__circle::after {
 	}
 	.checkout-block__delivery .custom-radio .field__text {
 		padding: 0;
-		/*height: 0;
-				transform: scaleY(0);
-				transform-origin: top;
-				transition: all .3s;*/
-	}
-	.checkout-block__delivery .custom-radio.checked .field__text {
-		/*transform: scaleY(1);
-				height: 100%;*/
 	}
 }
 input[type="checkbox"].tick {
@@ -8097,7 +8089,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	position: relative;
 	font-size: 17px;
 	line-height: 1.3;
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	vertical-align: middle;
 	color: #2e3034;
 	padding: 0.5em 40px;
@@ -8208,7 +8200,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 20px 35px 18px;
-	font: 24px "Bebas Neue Book";
+	font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 	background: #2e3034;
 	color: white;
 	cursor: pointer;
@@ -8682,7 +8674,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .basket-toolbar__btn {
 	display: inline-block;
-	font: 24px/32px "Bebas Neue Book";
+	font: 24px/32px "Bebas Neue Book", "Roboto", sans-serif;
 	color: #9d9d9d;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -8903,7 +8895,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding-bottom: 0;
 }
 .order-totals .order-info {
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	font-size: 20px;
 	margin: 15px 0 5px;
 }
@@ -9289,7 +9281,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	/* пути к картинкам */
 }
 .peoples__name {
-	font: 20px "Bebas Neue Book";
+	font: 20px "Bebas Neue Book", "Roboto", sans-serif;
 	color: #b59063;
 	text-align: center;
 	margin: 20px 0 10px;
@@ -10058,7 +10050,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		        order: 2;
 	}
 	.individual-product__solution .individual-product__subheading {
-		font: 24px "Bebas Neue Book";
+		font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 		text-transform: uppercase;
 		margin: 1.5em 0;
 	}
@@ -10276,7 +10268,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .collection__heading {
 	text-transform: uppercase;
-	font-family: "Bebas Neue Bold";
+	font-family: "Bebas Neue Bold", "Roboto", sans-serif;
 	font-size: 30px;
 	color: #fff;
 	margin: 10px 0;
@@ -10288,7 +10280,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	color: white;
 }
 .collection__note {
-	font-family: "MyriadPro";
+	font-family: "MyriadPro", "Roboto", sans-serif;
 	font-weight: 400;
 	color: white;
 	font-size: 18px;
@@ -10345,7 +10337,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	max-width: 640px;
 }
 .collection-process__text {
-	font: 24px "Bebas Neue Book";
+	font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 	color: #2e3034;
 }
 .collection-process__image--push-big, .collection-process__video--push-big, .collection-process__text--push-big {
@@ -10556,7 +10548,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 				.collection-slider__wrapper .collection-info .collection__heading h4,
 				.collection-slider__wrapper .collection-info .collection__heading h5,
 				.collection-slider__wrapper .collection-info .collection__heading h6 {
-	font: 30px "Bebas Neue Bold";
+	font: 30px "Bebas Neue Bold", "Roboto", sans-serif;
 }
 .collection-slider__wrapper .collection-info .collection__text {
 	color: #a4a4a4;
@@ -10591,7 +10583,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	pointer-events: none;
 }
 .collection-slider__tab__text {
-	font: 24px/1 "Bebas Neue Book";
+	font: 24px/1 "Bebas Neue Book", "Roboto", sans-serif;
 	color: #2e3034;
 }
 .collection-slider__tab--photo {

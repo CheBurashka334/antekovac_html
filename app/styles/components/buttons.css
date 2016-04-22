@@ -9,7 +9,7 @@
     border: 1px solid currentColor;
     font-size: 18px;
     text-decoration: none;
-    font-family: "MyriadPro";
+    font-family: "MyriadPro", "Roboto", sans-serif;
 	box-sizing: border-box;
 	&:hover {
 		background-color: var(--main-brown);

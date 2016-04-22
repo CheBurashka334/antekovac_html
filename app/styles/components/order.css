@@ -155,7 +155,7 @@
 		padding-bottom: 0;
 	}
 	.order-info {
-		font-family: "MyriadPro";
+		font-family: "MyriadPro", "Roboto", sans-serif;
 		font-size: 20px;
 		margin: 15px 0 5px;
 		&__param {

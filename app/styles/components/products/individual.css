@@ -101,7 +101,7 @@
 			order: 2;
 		}
 		&__solution &__subheading {
-			font: 24px "Bebas Neue Book";
+			font: 24px "Bebas Neue Book", "Roboto", sans-serif;;
 			text-transform: uppercase;
 			margin: 1.5em 0;
 		}
