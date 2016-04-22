@@ -3900,6 +3900,14 @@ table.nostyle th, table.nostyle td {
 	transition: transform .2s;
 	transition: transform .2s, -webkit-transform .2s;
 }
+.filter--aside .btn.btn-close {
+	float: right;
+	top: 10px;
+	right: 15px;
+	border-color: transparent;
+	background: transparent;
+	color: #9a9a9a;
+}
 .btn.btn-favorite:hover .i-icon.i-icon--stroke, .btn.btn-favorite.added .i-icon.i-icon--stroke {
 	fill: white;
 }

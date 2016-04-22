@@ -1,4 +1,5 @@
 <div class="filter filter__wrap">
+	<button class="btn btn-close js-toggle-box" data-box=".filter-mobile"></button>
 	<div class="filter__item filter__item--price">
 		<div class="filter__heading">Цена</div>
 		<div class="filter__body">

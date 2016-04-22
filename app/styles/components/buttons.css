@@ -342,6 +342,14 @@
 			transform: translateY(1px) rotate(90deg);
 			transition: transform .2s;
 		}
+		.filter--aside & {
+			float: right;
+			top: 10px;
+			right: 15px;
+			border-color: transparent;
+			background: transparent;
+			color: var(--main-gray);
+		}
 	}
 	&.btn-favorite:hover,
 	&.btn-favorite.added {
