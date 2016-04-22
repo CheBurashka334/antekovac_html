@@ -6844,6 +6844,13 @@ body.viewer-open {
 	.header__wrap {
 		height: 71px;
 	}
+	.header__logo {
+		max-width: 100px;
+	}
+	.header__logo a, .header__logo .logo {
+		display: block;
+		width: 100%;
+	}
 }:root {
 	/* пути к картинкам */
 }

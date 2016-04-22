@@ -148,5 +148,12 @@
 		&__wrap {
 			height: 71px;
 		}
+		&__logo {
+			max-width: 100px;
+			a, .logo {
+				display: block;
+				width: 100%;
+			}
+		}
 	}
 }
