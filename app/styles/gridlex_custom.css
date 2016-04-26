@@ -76,6 +76,7 @@ $gl-lg:        "screen and (min-width: 1300px)";
 [class*="grid-"][class*="-bigGutter"] {
   margin-left: -20px;
   margin-right: -20px;
+  width: calc(100% + 40px);
 }
 /* line 45, scss/gridlex.scss */
 [class*="grid-"][class*="-bigGutter"] > [class*="col"] {
@@ -192,14 +193,14 @@ $gl-lg:        "screen and (min-width: 1300px)";
           align-self: flex-end;
 }
 /* line 109, scss/gridlex.scss */
-[class*="col-"][class*="-first"] {
+[class*="col-"][class*="-first"]:not(.mobile-first) {
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
 }
 /* line 112, scss/gridlex.scss */
-[class*="col-"][class*="-last"] {
+[class*="col-"][class*="-last"]:not(.mobile-last) {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;

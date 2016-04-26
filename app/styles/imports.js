@@ -27,6 +27,7 @@ require("./components/sketch.css");
 require("./components/master-class.css");
 require("./components/contacts.css");
 require("./components/faq.css");
+require("./components/text-media.css");
 
 /*Header*/
 

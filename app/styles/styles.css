@@ -108,6 +108,10 @@ img {
 			text-decoration: underline;
 		}
 	}
+	.text-media & {
+		color: #3d3b33;
+		margin-bottom: 1em;
+	}
 }
 
 .block-heading {
@@ -212,6 +216,10 @@ p {
 .small-text {
 	font-size: 13px;
 }
+.bigger-text {
+	font-size: 16px;
+	font-weight: normal;
+}
 .small-note-text {
 	font-size: 11px;
 	text-transform: none;
@@ -277,6 +285,13 @@ ol {
 	li {
 		position: relative;
 		margin: 0.5em 0;
+	}
+	.text-media & {
+		padding-left: 25px;
+		font-weight: lighter;
+	}
+	p + & {
+		margin-top: 1em;
 	}
 }
 ul {

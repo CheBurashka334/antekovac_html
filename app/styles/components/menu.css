@@ -246,6 +246,9 @@
 }
 
 .horizontal-menu {
+	.page--individual & {
+		margin-bottom: 20px;
+	}
 	&__link {
 		display: flex;
 		width: 100%;
@@ -335,6 +338,11 @@
 	}
 }
 @media (--mobile){
+	.horizontal-menu {
+		.page--individual & {
+			margin-bottom: 0;
+		}
+	}
 	.horizontal-menu,
 	.horizontal-menu .submenu {
 		padding: 0;

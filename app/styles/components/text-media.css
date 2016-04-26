@@ -1,0 +1,41 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.text-media {
+	margin-bottom: 95px;
+	&:not(.grid-equalHeight){
+		align-items: flex-end;
+	}
+	&:first-of-type,
+	&:last-of-type {
+		margin-bottom: 75px;
+	}
+	.tile-block {
+		margin-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: center;
+	}
+	&__image img {
+		display: block;
+		width: 100%;
+	}
+	&__text *:last-child {
+		margin-bottom: 0;
+	}
+}
+@media (--mobile){
+	.text-media {
+		&,
+		&:first-of-type,
+		&:last-of-type {
+			margin-bottom: 40px;
+		}
+		&__text {
+			margin-top: 25px;
+		}
+		
+	}
+}
