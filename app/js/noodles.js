@@ -58,6 +58,7 @@ var Noodles = {
 			elem.toggleClass('opened');
 		}
 		
+		$('.open > .collapsible-block').slideDown(500);
 		$('.collapsible-block__header').on('click', function(){
 			$(this).parent('.collapsible-block__wrapper').toggleClass('open');
 			$(this).siblings('.collapsible-block').slideToggle(500);
@@ -158,13 +159,11 @@ var Noodles = {
 			var playerBox = $($(this).attr('data-video')).parent();
 			if((video.played.length == 0) || video.paused || video.ended){
 				if($('video').length > 1){
-					//console.log($('video'));
 					var videoCollection = $('video');
 					for (var i = 0; i < videoCollection.length; i++){
 						if(videoCollection[i] != video){
 							videoCollection[i].pause();
 							$(videoCollection[i].offsetParent).removeClass('video--playing');
-							//console.log(videoCollection[i].id);
 						}
 					}
 				}

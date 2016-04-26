@@ -7,7 +7,7 @@
 		position: relative;
 		display: flex;
 		padding: 20px 35px 18px;
-		font: 24px "Bebas Neue Book", "Roboto", sans-serif;;
+		font: 24px "Bebas Neue Book", "Roboto", sans-serif;
 		background: var(--dark-gray);
 		color: white;
 		cursor: pointer;
@@ -34,6 +34,9 @@
 	&__content {
 		padding: 40px 35px;
 		background: white;
+		.faq & {
+			padding: 35px 80px;
+		}
 	}
 }
 @media (--mobile){
@@ -48,7 +51,8 @@
 			flex-direction: column;
 			padding: 20px;
 		}
-		&__content {
+		&__content,
+		.faq &__content {
 			padding: 20px;
 		}
 	}

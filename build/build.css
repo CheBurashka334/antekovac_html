@@ -2471,6 +2471,7 @@ h4 {
 	margin: 1rem 0 2rem;
 }
 h5 {
+	font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
 p {
@@ -2481,6 +2482,9 @@ p {
 }
 .medium {
 	font-weight: 600;
+}
+.small-text {
+	font-size: 13px;
 }
 .small-note-text {
 	font-size: 11px;
@@ -5476,7 +5480,8 @@ footer {
 	margin-top: 30px;
 	margin-bottom: 45px;
 }
-.page--collection {
+.page--collection,
+	.page--faq {
 	margin-bottom: 45px;
 }
 .page--collection-process {
@@ -5533,7 +5538,8 @@ footer {
 		margin-top: 40px;
 	}
 	.page--brend,
-		.page--master-classes {
+		.page--master-classes,
+		.page--faq {
 		margin-bottom: 0;
 	}
 	.page--profile .note-text {
@@ -6667,6 +6673,42 @@ body.viewer-open {
 @media (max-width: 767px){
 	.contacts__form {
 		background: none;
+	}
+}:root {
+	/* пути к картинкам */
+}
+.faq {
+	margin-bottom: 0.5em;
+}
+.faq:last-of-type {
+	margin-bottom: 0;
+}
+.faq__section-number {
+	width: 150px;
+	color: #82a147;
+}
+.faq__item {
+	margin-bottom: 55px;
+}
+.faq__item:last-of-type {
+	margin-bottom: 0;
+}
+.faq__heading {
+	margin-bottom: 25px;
+}
+.faq__heading h1,
+		.faq__heading h2,
+		.faq__heading h3,
+		.faq__heading h4,
+		.faq__heading h5,
+		.faq__heading h6 {
+	margin: 0;
+	margin-bottom: 4px;
+}
+@media (max-width: 767px){
+	.faq__section-number {
+		width: 100%;
+		margin-bottom: 5px;
 	}
 }:root {
 	/* пути к картинкам */
@@ -8231,6 +8273,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding: 40px 35px;
 	background: white;
 }
+.faq .collapsible-block__content {
+	padding: 35px 80px;
+}
 @media (max-width: 767px){
 	.collapsible-block__wrapper .caret {
 		font-size: 15px;
@@ -8244,7 +8289,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		        flex-direction: column;
 		padding: 20px;
 	}
-	.collapsible-block__content {
+	.collapsible-block__content,
+		.faq .collapsible-block__content {
 		padding: 20px;
 	}
 }:root {

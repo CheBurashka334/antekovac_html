@@ -10224,6 +10224,7 @@ var App =
 	__webpack_require__(28);
 	__webpack_require__(29);
 	__webpack_require__(30);
+	__webpack_require__(82);
 	
 	/*Header*/
 	
@@ -11209,6 +11210,7 @@ var App =
 				elem.toggleClass('opened');
 			}
 	
+			$('.open > .collapsible-block').slideDown(500);
 			$('.collapsible-block__header').on('click', function () {
 				$(this).parent('.collapsible-block__wrapper').toggleClass('open');
 				$(this).siblings('.collapsible-block').slideToggle(500);
@@ -11309,13 +11311,11 @@ var App =
 				var playerBox = $($(this).attr('data-video')).parent();
 				if (video.played.length == 0 || video.paused || video.ended) {
 					if ($('video').length > 1) {
-						//console.log($('video'));
 						var videoCollection = $('video');
 						for (var i = 0; i < videoCollection.length; i++) {
 							if (videoCollection[i] != video) {
 								videoCollection[i].pause();
 								$(videoCollection[i].offsetParent).removeClass('video--playing');
-								//console.log(videoCollection[i].id);
 							}
 						}
 					}
@@ -11377,6 +11377,30 @@ var App =
 	};
 	
 	module.exports = Noodles;
+
+/***/ },
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

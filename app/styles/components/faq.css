@@ -1,0 +1,35 @@
+@import "../colors.css";
+@import "../media.css";
+@import "../selectors.css";
+
+.faq {
+	margin-bottom: 0.5em;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	&__section-number {
+		width: 150px;
+		color: #82a147;
+	}
+	&__item {
+		margin-bottom: 55px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&__heading {
+		margin-bottom: 25px;
+		:--heading {
+			margin: 0;
+			margin-bottom: 4px;
+		}
+	}
+}
+@media (--mobile){
+	.faq {
+		&__section-number {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+	}
+}

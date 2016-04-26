@@ -103,7 +103,8 @@
 		margin-top: 30px;
 		margin-bottom: 45px;
 	}
-	&--collection {
+	&--collection,
+	&--faq {
 		margin-bottom: 45px;
 	}
 	&--collection-process {
@@ -160,7 +161,8 @@
 			}
 		}
 		&--brend,
-		&--master-classes {
+		&--master-classes,
+		&--faq {
 			margin-bottom: 0;
 		}
 		&--profile {
