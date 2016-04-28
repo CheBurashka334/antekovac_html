@@ -98,6 +98,18 @@
 		border: 1px solid var(--light-gray);
 		background: white;
 		&__item {
+			display: none;
+			&:first-child,
+			&:nth-of-type(2),
+			&:nth-of-type(3),
+			&--current,
+			&--current + &,
+			&--prev,
+			&--next,
+			&:nth-last-of-type(2),
+			&:nth-last-of-type(3) {
+				display: inline-block;
+			}
 			a {
 				background: var(--main-white);
 			}

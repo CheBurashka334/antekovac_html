@@ -4150,9 +4150,12 @@ table.nostyle th, table.nostyle td {
 	opacity: 0;
 }
 @media (max-width: 767px){
-	.video-preview__overlay .i-icon, .video-custom-player__overlay .i-icon {
-		width: 60px;
-		height: 60px;
+	/*&__overlay .i-icon {
+			width: 60px;
+			height: 60px;
+		}*/
+	.video-preview__overlay, .video-custom-player__overlay {
+		display: none;
 	}
 }:root {
 	/* пути к картинкам */
@@ -5620,7 +5623,8 @@ footer {
 .menu-item__link {
 	display: block;
 	padding: 13px 35px 14px;
-	color: inherit;
+	/*color: inherit;*/
+	color: currentColor;
 	text-decoration: none;
 	font-family: "Bebas Neue Book", "Roboto", sans-serif;
 	font-size: 22px;
@@ -7372,6 +7376,20 @@ body.viewer-open {
 		border: 1px solid #dbdcde;
 		background: white;
     }
+    .pagination__item {
+		display: none;
+	}
+    .pagination__item:first-child,
+			.pagination__item:nth-of-type(2),
+			.pagination__item:nth-of-type(3),
+			.pagination__item--current,
+			.pagination__item--current + .pagination__item,
+			.pagination__item--prev,
+			.pagination__item--next,
+			.pagination__item:nth-last-of-type(2),
+			.pagination__item:nth-last-of-type(3) {
+		display: inline-block;
+	}
     .pagination__item a {
 		background: #f2f2f2;
 	}

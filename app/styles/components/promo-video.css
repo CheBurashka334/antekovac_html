@@ -138,9 +138,12 @@
 @media (--mobile){
 	.video-preview,
 	.video-custom-player {
-		&__overlay .i-icon {
+		/*&__overlay .i-icon {
 			width: 60px;
 			height: 60px;
+		}*/
+		&__overlay {
+			display: none;
 		}
 	}
 }

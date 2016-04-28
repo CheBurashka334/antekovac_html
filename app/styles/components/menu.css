@@ -40,7 +40,8 @@
 		&__link {
 			display: block;
 			padding: 13px 35px 14px;
-			color: inherit;
+			/*color: inherit;*/
+			color: currentColor;
 			text-decoration: none;
 			font-family: "Bebas Neue Book", "Roboto", sans-serif;;
 			font-size: 22px;
