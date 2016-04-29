@@ -3415,6 +3415,7 @@ table.nostyle th, table.nostyle td {
 		-o-object-fit: contain;
 		   object-fit: contain;
 		height: auto;
+		max-height: 100%;
 	}
 	.owl-item .news-slider__slide .news-slider__content {
 		padding: 0 30px;
