@@ -23,6 +23,11 @@
 		margin: 24px 0 26px;
 		.price {
 			font-size: 18px;
+			&--old {
+				text-decoration: line-through;
+				margin-right: 10px;
+				color: var(--main-gray);
+			}
 		}
 		.availability {
 			font-size: 12px;
@@ -214,6 +219,12 @@
 			span {
 				display: block;
 				margin: 10px 15px;
+			}
+			.price {
+				display: inline-block;
+				&--old + .price {
+					margin-left: 0;
+				}
 			}
 		}
 		&__desc {

@@ -54,6 +54,7 @@
 							<h1>Cумка №40 </br>Небесно-голубое</h1>
 						</div>
 						<div class="product-detail__price">
+							<span class="price price--old">25 900 ₽</span>
 							<span class="price">20 900 ₽</span>
 							<span class="availability availability--in-stock">Товар в наличии</span>
 						</div>

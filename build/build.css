@@ -9829,6 +9829,11 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .product-detail__price .price {
 	font-size: 18px;
 }
+.product-detail__price .price--old {
+	text-decoration: line-through;
+	margin-right: 10px;
+	color: #9a9a9a;
+}
 .product-detail__price .availability {
 	font-size: 12px;
 	font-weight: lighter;
@@ -10046,6 +10051,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.product-detail__price span {
 		display: block;
 		margin: 10px 15px;
+	}
+	.product-detail__price .price {
+		display: inline-block;
+	}
+	.product-detail__price .price--old + .price {
+		margin-left: 0;
 	}
 	.product-detail__desc {
 		padding: 0 0.5em;

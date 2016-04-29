@@ -153,7 +153,13 @@
 					<div class="product-tile__name">
 						Сумка №40 «Небесно-голубое»
 					</div>
+					<div class="product-tile__label product-tile__label--sale">
+						SALE
+					</div>
 					<div class="product-tile__price">
+						<div class="price price--old">
+							26 680 ₽
+						</div>
 						<div class="price">
 							24 680 ₽
 						</div>
