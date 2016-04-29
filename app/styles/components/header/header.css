@@ -155,5 +155,22 @@
 				width: 100%;
 			}
 		}
+		&__link {
+			&--phone {
+				width: 40px;
+				@media (min-width: 400px){
+					width: 60px;
+				}
+				@media (min-width: 430px){
+					width: 80px;
+				}
+			}
+			&--basket {
+				width: 60px;
+				@media (min-width: 430px){
+					width: 80px;
+				}
+			}
+		}
 	}
 }

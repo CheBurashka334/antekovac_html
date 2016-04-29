@@ -59,6 +59,13 @@
 					</a>
 				</div>
 				<div class="header__right">
+					<div class="header__link header__link--phone">
+						<a href="#">
+							<svg class="i-icon" role="img">
+								<use xlink:href="#phone"></use>
+							</svg>
+						</a>
+					</div>
 					<div class="header__link header__link--search">
 						<button class="search-btn js-toggle-box" data-box=".modal.search-form">
 							<svg class="i-icon i-icon--stroke" role="img">

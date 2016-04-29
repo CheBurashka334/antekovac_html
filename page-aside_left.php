@@ -181,6 +181,12 @@
 				</a>
 			</li>
 			<li class="menu-item menu-item--with-icon">
+				<a href="#" class="menu-item__link js-anim--click">
+					<span class="menu-item__icon"><svg class="i-icon"><use xlink:href="#phone"/></svg></span>
+					<span class="menu-item__text">Контакты</span>
+				</a>
+			</li>
+			<li class="menu-item menu-item--with-icon">
 				<a href="#" class="menu-item__link js-anim--click js-toggle-box" data-box=".modal.search-form">
 					<span class="menu-item__icon"><svg class="i-icon i-icon--stroke i-icon--smaller"><use xlink:href="#zoom"/></svg></span>
 					<span class="menu-item__text">поиск по сайту</span>

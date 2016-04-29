@@ -6972,6 +6972,27 @@ body.viewer-open {
 		display: block;
 		width: 100%;
 	}
+	.header__link--phone {
+		width: 40px;
+	}
+	@media (min-width: 400px){
+		.header__link--phone {
+			width: 60px;
+		}
+	}
+	@media (min-width: 430px){
+		.header__link--phone {
+			width: 80px;
+		}
+	}
+	.header__link--basket {
+		width: 60px;
+	}
+	@media (min-width: 430px){
+		.header__link--basket {
+			width: 80px;
+		}
+	}
 }:root {
 	/* пути к картинкам */
 }
