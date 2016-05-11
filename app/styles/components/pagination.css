@@ -20,7 +20,7 @@
 		&:last-of-type {
 			margin-right: 0;
 		}
-        a {
+        a, span {
             display: block;
             height: 100%;
             background: white;
@@ -61,16 +61,8 @@
                 transform: rotate(-180deg);
             }
         }
-        /*&--next {
-            .i-icon {
-                transform: rotate(-90deg);
-            }
-        }*/
         &--prev,
         &--next {
-            a {
-                /*background: #ebebeb;*/
-            }
             .i-icon {
                 fill: #333;
 				stroke: #333;
@@ -99,18 +91,25 @@
 		background: white;
 		&__item {
 			display: none;
+			
 			&:first-child,
-			&:nth-of-type(2),
-			&:nth-of-type(3),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:last-child,
+			&:nth-last-child(2),
+			&:nth-last-child(3),
 			&--current,
 			&--current + &,
-			&--prev,
-			&--next,
-			&:nth-last-of-type(2),
-			&:nth-last-of-type(3) {
+			&--current:first-child ~ &--more {
 				display: inline-block;
 			}
-			a {
+			
+			&--current:nth-child(3) ~ &--more,
+			&:nth-last-child(11):first-child ~ &--more {
+				display: none;
+			}
+			
+			a, span {
 				background: var(--main-white);
 			}
 			&--current  a {

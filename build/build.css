@@ -3951,6 +3951,16 @@ table.nostyle th, table.nostyle td {
 	        transform: rotate(180deg);
 	height: 14px;
 }
+.btn--link {
+	font-family: "MyriadPro", Roboto, sans-saref;
+	font-size: 18px;
+	text-decoration: none;
+	background: none;
+	border: 0;
+	padding: 0;
+	border-bottom: 1px dashed currentColor;
+	color: #2e3034;
+}
 @media (min-width: 768px) and (max-width: 1023px){
 	.btn.btn-one-click .i-icon,
 		.btn.btn-one-click[class*="--main-anim"] .i-icon{
@@ -7332,7 +7342,7 @@ body.viewer-open {
 .pagination__item:last-of-type {
 	margin-right: 0;
 }
-.pagination__item a {
+.pagination__item a, .pagination__item span {
 	display: block;
 	height: 100%;
 	background: white;
@@ -7349,15 +7359,17 @@ body.viewer-open {
 	text-decoration: none;
 	border: 1px solid transparent;
 }
-.pagination__item a:hover {
+.pagination__item a:hover, .pagination__item span:hover {
 	color: #b59063;
 	border-color: #b59063;
 }
 .tile-block .pagination__item a,
-			.tile-page .pagination__item a {
+			.tile-page .pagination__item a,
+			.tile-block .pagination__item span,
+			.tile-page .pagination__item span {
 	background: #f2f2f2;
 }
-.tile-block .pagination__item a:hover, .tile-page .pagination__item a:hover {
+.tile-block .pagination__item a:hover, .tile-page .pagination__item a:hover, .tile-block .pagination__item span:hover, .tile-page .pagination__item span:hover {
 	border-color: transparent;
 }
 .pagination__item--current a, .pagination__item--current a:hover, .tile-block .pagination__item--current a, .tile-block .pagination__item--current a:hover, .tile-page .pagination__item--current a, .tile-page .pagination__item--current a:hover {
@@ -7368,14 +7380,6 @@ body.viewer-open {
 .pagination__item--prev .i-icon {
 	-webkit-transform: rotate(-180deg);
 	        transform: rotate(-180deg);
-}
-/*&--next {
-            .i-icon {
-                transform: rotate(-90deg);
-            }
-        }*/
-.pagination__item--prev a, .pagination__item--next a {
-	/*background: #ebebeb;*/
 }
 .pagination__item--prev .i-icon, .pagination__item--next .i-icon {
 	fill: #333;
@@ -7402,17 +7406,21 @@ body.viewer-open {
 		display: none;
 	}
     .pagination__item:first-child,
-			.pagination__item:nth-of-type(2),
-			.pagination__item:nth-of-type(3),
+			.pagination__item:nth-child(2),
+			.pagination__item:nth-child(3),
+			.pagination__item:last-child,
+			.pagination__item:nth-last-child(2),
+			.pagination__item:nth-last-child(3),
 			.pagination__item--current,
 			.pagination__item--current + .pagination__item,
-			.pagination__item--prev,
-			.pagination__item--next,
-			.pagination__item:nth-last-of-type(2),
-			.pagination__item:nth-last-of-type(3) {
+			.pagination__item--current:first-child ~ .pagination__item--more {
 		display: inline-block;
 	}
-    .pagination__item a {
+    .pagination__item--current:nth-child(3) ~ .pagination__item--more,
+			.pagination__item:nth-last-child(11):first-child ~ .pagination__item--more {
+		display: none;
+	}
+    .pagination__item a, .pagination__item span {
 		background: #f2f2f2;
 	}
     .pagination__item--current  a {
@@ -8237,6 +8245,29 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		.field:last-child .custom-radio {
 		margin-bottom: 0;
 	}
+}
+.file-field {
+	position: relative;
+}
+.file-field__input {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 34px;
+	z-index: 1;
+	cursor: pointer;
+}
+.file-field ::-webkit-file-upload-button {
+	cursor: pointer;
+}
+.file-field__btn {
+	cursor: pointer;
+	padding: 5px 0;
+	padding-left: 35px;
+	background: url(/antekovac/images/paperclip.png) top left no-repeat;
+	background-size: contain;
 }
 /* bitrix monstrous location-field's styles override */
 .bx-sls .dropdown-block {
@@ -9085,6 +9116,50 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.order-totals .order-info {
 		margin: 0.5em 0 0;
 	}
+}
+.order-messages {
+	padding: 30px 40px;
+}
+.order-messages__wrapper {
+	position: relative;
+	background: #e5e5e5;
+}
+.tile-block .order-messages__wrapper {
+	width: calc(100% + 80px);
+	margin-left: -40px;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+.order-messages__wrapper .btn-messages {
+	position: absolute;
+	top: -100px;
+	right: 40px;
+	line-height: 33px;
+	padding: 12px 40px;
+	margin: 0;
+}
+.order-messages__wrapper .btn-messages .i-icon {
+	height: 33px;
+}
+.order-messages__wrapper.open .btn-messages {
+	display: none;
+}
+.order-messages .field__inputtext.base {
+	border-color: transparent;
+}
+.order-messages__actions {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	            -ms-grid-row-align: center;
+	        align-items: center;
+}
+.order-messages__actions .collapsible-block__btn {
+	width: 120px;
+}
+.order-messages__actions .file-field {
+	margin: 0 30px;
+	max-width: calc(100% - 425px);
 }:root {
 	/* пути к картинкам */
 }
