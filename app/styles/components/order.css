@@ -85,7 +85,7 @@
 @media (--mobile){
 	.order {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		padding: 0;
 		&::after {
 			content: '';
@@ -179,6 +179,7 @@
 }
 @media (--mobile){
 	.order-totals {
+		order: -1;
 		padding: 5px 5px 15px;
 		margin: 0;
 		[class*="col-"]{
@@ -187,5 +188,115 @@
 		.order-info {
 			margin: 0.5em 0 0;
 		}
+	}
+}
+
+.order-messages {
+	padding: 30px 40px;
+	background: #e5e5e5;
+	&__wrapper {
+		position: relative;
+		.tile-block & {
+			width: calc(100% + 80px);
+			margin-left: -40px;
+			margin-top: 30px;
+			margin-bottom: -30px;
+		}
+		.btn-messages {
+			position: absolute;
+			top: -100px;
+			right: 40px;
+			line-height: 33px;
+			padding: 12px 40px;
+			margin: 0;
+			width: 240px;
+			transition: opacity .3s .3s;
+			.i-icon {
+				height: 33px;
+			}
+			.notification {
+				display: inline-block;
+				font: 13px/19px 'Bebas Neue Book', 'MyriadPro', Roboto, sans-serif;
+				color: var(--dark-gray);
+				height: 19px;
+				width: 19px;
+				text-align: center;
+				background: var(--main-brown);
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+		&.open .btn-messages {
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity .3s;
+		}
+		&:hover .notification {
+			background: white;
+			color: var(--main-brown);
+		}
+	}
+	.field__inputtext.base {
+		border-color: transparent;
+	}
+	&__actions {
+		align-items: center;
+		.collapsible-block__btn {
+			width: 120px;
+		}
+		.file-field {
+			margin: 0 30px;
+			max-width: calc(100% - 425px);
+		}
+	}
+}
+@media (max-width: 870px){
+	.order-messages {
+		&__wrapper {
+			padding-top: 90px;
+			transition: padding-top .3s;
+			&.open {
+				padding-top: 0;
+				transition: padding-top .3s;
+			}
+			.btn-messages {
+				top: 0;
+				left: 40px;
+			}
+		}
+	}
+}
+@media (--mobile){
+	.order-messages {
+		padding: 20px 30px;
+		&__wrapper {
+			.tile-block & {
+				margin: 0;
+				width: calc(100% + 40px);
+				margin-left: -20px;
+			}
+			.btn-messages {
+				left: 20px;
+				width: 100%;
+				max-width: 280px;
+				text-align: center;
+			}
+		}
+		&__actions {
+			justify-content: center;
+		}
+		.file-field {
+			order: -1;
+			max-width: 100%;
+			margin: 0;
+		}
+	}
+}
+
+
+.message {
+	margin-bottom: 30px;
+	&__author {
+		font-weight: bold;
 	}
 }

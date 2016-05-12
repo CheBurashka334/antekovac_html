@@ -377,6 +377,16 @@
 			height: 14px;
 		}
 	}
+	&--link {
+		font-family: "MyriadPro", Roboto, sans-saref;
+		font-size: 18px;
+		text-decoration: none;
+		background: none;
+		border: 0;
+		padding: 0;
+		border-bottom: 1px dashed currentColor;
+		color: var(--dark-gray);
+	}
 }
 @media (--small){
 	.btn {

@@ -520,3 +520,28 @@ table {
 .object-fit-wrapper {
 	width: 100%;
 }
+
+.download-files {
+	padding-left: 30px;
+	margin: 1em 0;
+	background-image:  svg('download', '[fill]: var(--main-brown)');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: contain;
+	&__title {
+		font-family: "MyriadPro", Roboto, sans-serif;
+		font-size: 18px;
+		color: var(--dark-gray);
+	}
+	&__list {
+		margin: 0.5em 0 1em;
+	}
+	&__file {
+		display: block;
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 300;
+		color: #3d3b33;
+		text-decoration: none;
+	}
+}

@@ -546,6 +546,52 @@ input[type="checkbox"] {
 	}
 }
 
+.file-field {
+	position: relative;
+	&__input {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 34px;
+		z-index: 1;
+		cursor: pointer;
+	}
+	::-webkit-file-upload-button {
+		cursor: pointer;
+	}
+	&__btn {
+		cursor: pointer;
+		padding: 5px 0;
+		padding-left: 35px;
+		background: url(var(--img-path)/paperclip.png) top left no-repeat;
+		background-size: contain;
+	}
+	&__btn-delete {
+		margin-left: 5px;
+		background: none;
+		border: 0;
+		height: 1em;
+		vertical-align: middle;
+		color: var(--dark-gray);
+		&:hover {
+			color: var(--error-red);
+		}
+		&:before,
+		&:after {
+			height: 1px;
+		}
+	}
+	&__files-list {
+		margin-top: 5px;
+	}
+	&__file {
+		font-weight: 300;
+		line-height: 1.5em;
+	}
+}
+
 /* bitrix monstrous location-field's styles override */
 .bx-sls {
 	.dropdown-block {

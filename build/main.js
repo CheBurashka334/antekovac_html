@@ -198,6 +198,54 @@ var App =
 	exports.radios = Radios;
 	exports.Noodles;
 	
+	$(function () {
+		$('input[type="file"]').on('change', function () {
+			var self = this;
+			var cssPrefix = self.className.split('__')[0];
+			var filesListContainer = $(this).siblings('.' + cssPrefix + '__files-list');
+			var contentToInsert = '';
+			if (self.files.length > 0) {
+				if (self.multiple) {
+					for (var i = 0; i < self.files.length; i++) {
+						self.files[i].index = i;
+						contentToInsert += getFileTemplate(self.files[i], true, cssPrefix);
+					}
+				} else {
+					contentToInsert = getFileTemplate(self.files[0], true, cssPrefix);
+				}
+				filesListContainer.html(contentToInsert);
+			} else {
+				filesListContainer.html('');
+			}
+			console.dir(self.files);
+		});
+		$('.file-field').on('click', '.file-field__btn-delete', function (e) {
+			e.preventDefault();
+			/*var cssPrefix = this.className.split('__')[0];
+	  var inputFile = $(this).parents('.'+cssPrefix).find('.'+cssPrefix+'__input')[0];
+	  var fileToDelIndex = +$(this).attr('data-delete-index');
+	  var otherFiles = [];
+	  for (var i = 0; i < inputFile.files.length; i++){
+	  	if( i != fileToDelIndex){
+	  		otherFiles.push(inputFile.files[i]);
+	  	}
+	  }
+	  $(this).parents('.'+cssPrefix).find('.'+cssPrefix+'__input').val(otherFiles);*/
+		});
+	});
+	function getFileTemplate(file, btn, cssPrefix) {
+		cssPrefix = cssPrefix || 'file-field';
+		btn = btn || true;
+		var templateStart = '<div class="' + cssPrefix + '__file">';
+		var templateEnd = '</div>';
+		var templateBtn = '';
+		if (btn) {
+			templateBtn = '<button class="' + cssPrefix + '__btn-delete btn-delete" data-delete-index="' + file.index + '"></button>';
+		}
+		var templateFilename = '<span class="filename">' + file.name + '</span>';
+		var template = templateStart + templateFilename + templateBtn + templateEnd;
+		return template;
+	}
 	// validate forms
 	function isValid(el, type) {
 		type = type || 'required';
@@ -242,13 +290,14 @@ var App =
 			$(this).removeClass('valid').addClass('invalid');
 		}
 	});
-	$('body').on('change', 'input[type="file"]', function () {
-		if (isValid($(this), 'file')) {
-			$(this).removeClass('invalid').addClass('valid');
-		} else {
-			$(this).removeClass('valid').addClass('invalid');
-		}
-	});
+	//$('body').on('change', 'input[type="file"]', function () {
+	/*if (isValid($(this), 'file')) {
+		$(this).removeClass('invalid').addClass('valid');
+	} else {
+		$(this).removeClass('valid').addClass('invalid');
+	}*/
+	//console.log('change');
+	//});
 	
 	$("body").on("submit", "form:not('[name=ORDER_FORM]')", function () {
 		var error = false;

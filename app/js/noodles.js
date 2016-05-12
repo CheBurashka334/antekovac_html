@@ -59,9 +59,10 @@ var Noodles = {
 		}
 		
 		$('.open > .collapsible-block').slideDown(500);
-		$('.collapsible-block__header').on('click', function(){
-			$(this).parent('.collapsible-block__wrapper').toggleClass('open');
-			$(this).siblings('.collapsible-block').slideToggle(500);
+		$('.collapsible-block__header,.collapsible-block__btn').on('click', function(){
+			var collapsibleWrapper = $(this).parents('.collapsible-block__wrapper');
+			collapsibleWrapper.toggleClass('open');
+			collapsibleWrapper.find('.collapsible-block').slideToggle(500);
 		});
 		
 		if($(window).width() < 768){

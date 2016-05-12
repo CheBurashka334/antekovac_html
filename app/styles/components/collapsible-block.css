@@ -3,7 +3,7 @@
 
 .collapsible-block {
 	display: none;
-	&__header {
+	&__header:not(.btn) {
 		position: relative;
 		display: flex;
 		padding: 20px 35px 18px;

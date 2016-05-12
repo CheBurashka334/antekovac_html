@@ -93,6 +93,32 @@
 					</div>
 				</div>
 			</div>
+			<div class="order-messages__wrapper collapsible-block__wrapper">
+				<button class="btn btn--with-icon--dark js-anim--click btn-messages collapsible-block__header">
+					<svg class="i-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#question"></use></svg>
+					<span class="btn-text">Задать вопрос</span>
+				</button>
+				<div class="order-messages collapsible-block">
+					<div class="order-messages__form">
+						<form action="" method="">
+							<div class="field required">
+								<textarea class="field__inputtext base" placeholder="Текст вашего сообщения" rows="6"></textarea>
+							</div>
+							<div class="grid-noGutter order-messages__actions">
+								<input type="submit" class="btn btn--dark--medium" value="Отправить"/>
+								<div class="field file-field">
+									<input type="file" multiple class="file-field__input" />
+									<div class="file-field__btn">
+										<span class="btn--link">Прикрепить файл</span>
+									</div>
+									<div class="file-field__files-list"></div>
+								</div>
+								<a href="javascript:void(0)" class="collapsible-block__btn btn--link">Свернуть переписку</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="tile-block order order--processing">
 			<div class="order-table">
@@ -153,6 +179,54 @@
 					<div class="order-info">
 						<span class="order-info__param">способ доставки:</span>
 						<span class="order-info__value">самовывоз</span>
+					</div>
+				</div>
+			</div>
+			<div class="order-messages__wrapper collapsible-block__wrapper">
+				<button class="btn btn--with-icon--dark js-anim--click btn-messages collapsible-block__header">
+					<span class="notification">1</span>
+					<span class="btn-text">Показать переписку</span>
+				</button>
+				<div class="order-messages collapsible-block">
+					<div class="order-messages__messages-list">
+						<div class="order-messages__message message">
+							<div class="message__author">Вы:</div>
+							<div class="message__text">
+								<p>Заказала три недели назад. До сих пор статус заказа „в обработке”. Когда заказ будет передан в службу доставки ?</p>
+							</div>
+							<div class="message__files download-files">
+								<div class="download-files__title">Скачать прикрепленные файлы</div>
+								<div class="download-files__list">
+									<a href="#" class="download-files__file">Screenshot at april 8.png</a>
+									<a href="#" class="download-files__file">1.zip</a>
+									<a href="#" class="download-files__file">Описание.doc</a>
+								</div>
+							</div>
+						</div>
+						<div class="order-messages__message message">
+							<div class="message__author">Команда Ante Kovac:</div>
+							<div class="message__text">
+								<p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий в значительной степени обуславливает создание соответствующий условий активизации. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития. Товарищи! реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации форм развития. Таким образом рамки и место обучения кадров позволяет оценить значение новых предложений.</p>
+							</div>
+						</div>
+					</div>
+					<div class="order-messages__form">
+						<form action="" method="">
+							<div class="field required">
+								<textarea class="field__inputtext base" placeholder="Текст вашего сообщения" rows="6"></textarea>
+							</div>
+							<div class="grid-noGutter order-messages__actions">
+								<input type="submit" class="btn btn--dark--medium" value="Отправить"/>
+								<div class="field file-field">
+									<input type="file" multiple class="file-field__input" />
+									<div class="file-field__btn">
+										<span class="btn--link">Прикрепить файл</span>
+									</div>
+									<div class="file-field__files-list"></div>
+								</div>
+								<a href="javascript:void(0)" class="collapsible-block__btn btn--link">Свернуть переписку</a>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
