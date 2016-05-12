@@ -11220,6 +11220,8 @@ var App =
 	
 	var Noodles = {
 		run: function run() {
+			var scrollbarWidth = $('.page').width() - $(window).width();
+			$('.page').css('padding-right', scrollbarWidth);
 			$('.js-anim--hover').on('mouseenter', function () {
 				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
 			}).on('mouseleave', function () {

@@ -2,6 +2,8 @@
 
 var Noodles = {
     run: function() {
+		var scrollbarWidth = $('.page').width() - $(window).width();
+		$('.page').css('padding-right', scrollbarWidth);
         $('.js-anim--hover')
 			.on('mouseenter',function(){
 				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
