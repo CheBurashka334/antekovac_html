@@ -5471,6 +5471,9 @@ footer {
 .page-aside.open:hover ~ .page::before {
 	opacity: 1;
 }
+.page-aside--right.open ~ .page.fixed {
+	padding-right: 0!important;
+}
 @media (max-width: 767px){
 	.page {
 		display: block;

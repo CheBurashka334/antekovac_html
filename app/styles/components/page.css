@@ -36,6 +36,9 @@
 			opacity: 1;
 		}
 	}
+	.page-aside--right.open ~ &.fixed {
+		padding-right: 0!important;
+	}
 }
 
 @media (--mobile){

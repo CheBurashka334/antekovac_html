@@ -36,7 +36,10 @@ var Noodles = {
 					if($(box).hasClass('collapsible')) {
 						$(box).slideToggle(500);
 					} else {
-						if(($(box).hasClass('page-aside')) || ($(box).hasClass('block-aside')) || ($(box).hasClass('modal'))){
+						if( ($(box).hasClass('page-aside')) || 
+							($(box).hasClass('block-aside')) || 
+							(($(box).hasClass('modal')) && !($('.page-aside').hasClass('open')))
+						){
 							if($('.page').hasClass('fixed')){
 								position();
 								$('.page').removeClass('fixed');
