@@ -6704,6 +6704,12 @@ body.viewer-open {
 	.master-class__actions {
 		width: 100%;
 	}
+	.master-class [class*="col"]{
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+	}
 }:root {
 	/* пути к картинкам */
 }
@@ -8387,7 +8393,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .filter--aside {
 	position: fixed;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	top: 0;
 	right: -100%;
 	z-index: 16;
@@ -9292,7 +9298,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .modal {
 	position: fixed;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	top: 0;
 	left: 0;
 	background: rgba(106,107,110,.7);
