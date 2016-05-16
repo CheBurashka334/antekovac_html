@@ -8,6 +8,7 @@
 <div class="container">
 	<div class="heading block-heading--mobile">
         <h2>Личный кабинет</h2>
+		<a href="#" class="link--exit">Выход</a>
     </div>
 	<?php require ('lk_menu.php') ?>
 	<div class="order-list page--marg">

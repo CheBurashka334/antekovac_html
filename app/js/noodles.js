@@ -192,6 +192,26 @@ var Noodles = {
 			});
 		}
 		
+		$('.messages__content').on('change', '.messages__selection input[type="checkbox"]', function(){
+			var checkValue = $(this).prop('checked');
+			if($(this).attr('data-check-all')){
+				$('.messages__content').find('.messages__selection input[type="checkbox"]').each(function(){
+					$(this).prop('checked', checkValue);
+				});
+				if(checkValue){
+					$('.messages__content').find('.messages__dialog').addClass('messages__dialog--selected');
+				} else {
+					$('.messages__content').find('.messages__dialog').removeClass('messages__dialog--selected');
+				}
+			} else {
+				if($(this).prop('checked')){
+					$(this).parents('.messages__dialog').addClass('messages__dialog--selected');
+				} else {
+					$(this).parents('.messages__dialog').removeClass('messages__dialog--selected');
+				}
+			}
+		});
+		
 		function objectFit(el){
 			var fitType = el.attr('data-object-fit');
 			var src = el.attr('src');

@@ -286,6 +286,16 @@ select {
 		}
 	}
 }
+.radio--link-like {
+	font: 1em/1 "Bebas Neue Book", "MyriadPro", Roboto, sans-serif;
+	color: var(--main-brown);
+	text-transform: uppercase;
+	border-bottom: 1px dashed currentColor;
+	cursor: pointer;
+	input[type="radio"] {
+		display: none;
+	}
+}
 @media (--mobile){
 	.custom-radio {
 		&__heading span {
@@ -311,10 +321,29 @@ input[type="checkbox"] {
 			background-image: svg('tick', '[fill]: #dfdfdf');
 			background-repeat: no-repeat;
 			background-position: left center;
-			background-size: 0.8em;
+			background-size: 0.6em;
+			.messages__selection &:empty {
+				display: inline-block;
+				padding: 0;
+				font-size: 17px;
+				line-height: 1;
+				border: 1px solid #e4e4e4;
+				width: 1em;
+				height: 1em;
+				box-sizing: content-box;
+				background-position: center;
+				background-color: #fff;
+				background-image: none;
+				cursor: pointer;
+				vertical-align: bottom;
+			}
 		}
-		&:checked + .checkbox-lbl {
+		&:checked + .checkbox-lbl,
+		.messages__selection &:checked + .checkbox-lbl:empty {
 			background-image: svg('tick', '[fill]: var(--success-green)');
+		}
+		.messages__selection &:checked + .checkbox-lbl:empty {
+			border-color: transparent;
 		}
 	}
 	&.color {

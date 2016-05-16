@@ -135,6 +135,10 @@
 	&--article {
 		margin-bottom: 50px;
 	}
+	&--lk-messages {
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
 }
 @media (--mobile){
 	.page {
@@ -165,7 +169,8 @@
 		}
 		&--brend,
 		&--master-classes,
-		&--faq {
+		&--faq,
+		&--lk-messages {
 			margin-bottom: 0;
 		}
 		&--profile {
@@ -184,7 +189,8 @@
 		}
 		&--news,
 		&--events,
-		&--collections {
+		&--collections,
+		&--lk-messages {
 			margin-top: 0;
 		}
 		&--sales .sale-products-block {

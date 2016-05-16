@@ -51,6 +51,7 @@ require("./components/reviews.css");
 require("./components/news.css");
 require("./components/peoples.css");
 require("./components/projects.css");
+require("./components/messages.css");
 
 /*Products*/
 

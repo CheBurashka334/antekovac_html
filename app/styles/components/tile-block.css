@@ -713,6 +713,9 @@
 		.page--news & {
 			padding-top: 20px;
 		}
+		.page--lk-messages & {
+			padding: 35px 40px;
+		}
 	}
 	&__foot {
 		background: #f6f6f6;
@@ -737,7 +740,9 @@
 		}
 		&__body,
 		&__foot {
-			&, .page--profile & {
+			&, 
+			.page--profile &,
+			.page--lk-messages &{
 				padding: 0;
 			}
 		}
