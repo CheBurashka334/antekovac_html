@@ -368,7 +368,10 @@ var App =
 			if ($(this).hasClass('js-toggle-box')) {
 				var box = $(this).attr('data-box');
 				$(box).find('.btn-close').bind('click', function () {
-					player.stopVideo();
+					player.pauseVideo();
+				});
+				$(box).on('click', function (e) {
+					player.pauseVideo();
 				});
 			}
 		});
@@ -11227,6 +11230,7 @@ var App =
 	
 	var Noodles = {
 		run: function run() {
+			$('body').addClass('page-loaded');
 			var scrollbarWidth = $('.page').width() - $(window).width();
 			$('.page').css('padding-right', scrollbarWidth);
 			$('.js-anim--hover').on('mouseenter', function () {
@@ -11457,12 +11461,9 @@ var App =
 	
 			function position(fix) {
 				if (fix == 'fix') {
-					var pos = $(window).scrollTop();
-					$('.page').css({ 'position': 'fixed', 'top': -pos + 'px' });
+					$('html').css('overflow', 'hidden');
 				} else {
-					var pos = parseInt($('.page').css('top'), 10);
-					$('.page').css({ 'position': 'relative', 'top': 0 });
-					$(window).scrollTop(-pos);
+					$('html').css('overflow', '');
 				}
 			}
 		}

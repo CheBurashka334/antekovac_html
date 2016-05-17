@@ -4,9 +4,10 @@
 
 .page {
 	position: relative;
+	top: 0;
 	left: 0;
 	right: 0;
-	transition: left .3s;
+	transition: left .3s, padding-right .3s;
 	width: 100%;
 	width: 100vw;
 	min-height: 100%;

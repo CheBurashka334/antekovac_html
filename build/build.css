@@ -4833,6 +4833,9 @@ table.nostyle th, table.nostyle td {
 		font-size: inherit;
 		color: #2e3034;
 	}
+	.tile-block.mobile-minify .tile-block__heading-link:hover {
+		text-decoration: none;
+	}
 	.tile-block.mobile-fullwidth {
 		width: 100vw;
 	}
@@ -5345,6 +5348,10 @@ footer {
 	color: white;
 	z-index: 2;
 	overflow: hidden;
+	opacity: 0;
+}
+.page-loaded .page-aside {
+	opacity: 1;
 }
 .page-aside__wrap {
 	width: 100%;
@@ -5430,8 +5437,8 @@ footer {
 	}
 	.page-aside--right.open ~ .page,
 			.page-aside--right.open ~ .page .header {
+		left: -100%;
 		right: 100%;
-		left: auto;
 	}
 	.page-aside__socials--mobile {
 		margin: 0 20px;
@@ -5455,10 +5462,11 @@ footer {
 }
 .page {
 	position: relative;
+	top: 0;
 	left: 0;
 	right: 0;
-	-webkit-transition: left .3s;
-	transition: left .3s;
+	-webkit-transition: left .3s, padding-right .3s;
+	transition: left .3s, padding-right .3s;
 	width: 100%;
 	width: 100vw;
 	min-height: 100%;
@@ -7506,7 +7514,8 @@ body.viewer-open {
 		display: inline-block;
 	}
     .pagination__item--current:nth-child(3) ~ .pagination__item--more,
-			.pagination__item:nth-last-child(11):first-child ~ .pagination__item--more {
+			.pagination__item:nth-last-child(11):first-child ~ .pagination__item--more,
+			.pagination__item:nth-last-child(7):first-child ~ .pagination__item:nth-last-child(3){
 		display: none;
 	}
     .pagination__item a, .pagination__item span {

@@ -108,7 +108,8 @@
 			}
 			
 			&--current:nth-child(3) ~ &--more,
-			&:nth-last-child(11):first-child ~ &--more {
+			&:nth-last-child(11):first-child ~ &--more,
+			&:nth-last-child(7):first-child ~ &:nth-last-child(3){
 				display: none;
 			}
 			

@@ -277,7 +277,12 @@ $(function(){
 		onYouTubePlayerAPIReady();
 		if($(this).hasClass('js-toggle-box')){
 			var box = $(this).attr('data-box');
-			$(box).find('.btn-close').bind('click', function(){player.stopVideo()});
+			$(box).find('.btn-close').bind('click', function(){
+				player.pauseVideo();
+			});
+			$(box).on('click', function(e){
+				player.pauseVideo();
+			});
 		}
 	});
 });

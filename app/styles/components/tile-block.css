@@ -555,6 +555,9 @@
 				font-size: inherit;
 				color: var(--dark-gray);
 			}
+			&:hover {
+				text-decoration: none;
+			}
 		}
 		&.mobile-fullwidth {
 			width: 100vw;
