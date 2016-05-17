@@ -157,6 +157,86 @@
 		</div>
 	</div>
 </div>
+<div class="modal login-form">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.login-form"></button>
+		<div class="modal__inner">
+			<div class="grid-equalHeight-bigGutter">
+				<div class="col-5 hidden-mobile">
+					<div class="modal__image" style="background-image: url('images/lady-with-bags.png');"></div>
+				</div>
+				<div class="col-7_xs-12">
+					<div class="modal__content">
+						<div class="modal__heading"><h2>авторизация</h2></div>
+						<div class="modal__form">
+							<div class="field required">
+								<label class="field__label">Номер телефона / e-mail</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+							<div class="field required">
+								<label class="field__label">Введите пароль</label>
+								<input type="password" class="field__inputtext" />
+							</div>
+							<div class="grid-noGutter-middle form-actions">
+								<button class="btn btn--dark--medium">Войти</button>
+								<div class="form-actions__links">
+									<a href="#">Забыли пароль?</a></br>
+									<a href="#" class="js-toggle-box" data-box=".modal.login-form,.modal.register-form">Регистрация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal register-form">
+	<div class="modal__wrap">
+		<button class="btn btn--flat btn-close js-toggle-box" data-box=".modal.register-form"></button>
+		<div class="modal__inner">
+			<div class="modal__content">
+				<div class="modal__heading"><h2>регистрация</h2></div>
+				<div class="modal__form">
+					<div class="grid-bigGutter">
+						<div class="col-6_xs-12">
+							<div class="field required">
+								<label class="field__label">Ваше имя</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+						</div>
+						<div class="col-6_xs-12">
+							<div class="field required">
+								<label class="field__label">Номер телефона / e-mail</label>
+								<input type="text" class="field__inputtext" />
+							</div>
+						</div>
+					</div>
+					<div class="grid-bigGutter">
+						<div class="col-6_xs-12">
+							<div class="field required">
+								<label class="field__label">Введите пароль</label>
+								<input type="password" class="field__inputtext" />
+							</div>
+						</div>
+						<div class="col-6_xs-12">
+							<div class="field required">
+								<label class="field__label">Повторите пароль</label>
+								<input type="password" class="field__inputtext" />
+							</div>
+						</div>
+					</div>
+					<div class="grid-noGutter-middle form-actions">
+						<button class="btn btn--dark--medium">Зарегистрироваться</button>
+						<div class="form-actions__links">
+							<a href="#" class="js-toggle-box" data-box=".modal.login-form,.modal.register-form">Я уже зарегистрирован</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </main>
 
 </body>
