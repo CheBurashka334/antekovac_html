@@ -170,12 +170,16 @@
 		&__info {
 			height: 63%;
 			top: 55%;
+			justify-content: space-between;
 			&::before {
 				width: calc(100% + 22px);
 				height: calc(100% + 22px);
 				top: -16px;
 				left: -16px;
 			}
+		}
+		&__button {
+			margin-top: 20px;
 		}
 		.owl-dots {
 			bottom: 20px;
