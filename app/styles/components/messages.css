@@ -47,9 +47,6 @@
 			color: var(--main-brown);
 		}
 	}
-	.field__inputtext.base {
-		border-color: transparent;
-	}
 	&__actions {
 		align-items: center;
 		.collapsible-block__btn {
@@ -141,9 +138,6 @@
 		}
 		.field {
 			margin: 0 0 10px;
-		}
-		.field__inputtext.base {
-			border-color: transparent;
 		}
 		.file-field {
 			margin: 0 30px;

@@ -20,25 +20,31 @@
 	&:focus {
 		outline: none;
 	}
-    &.valid {
+	&.base {
+		background: white;
+		border-color: #dcdcdc;
+		font: 14px/1.5 "Roboto";
+		.order-messages &, 
+		.messages & {
+			border-color: transparent;
+		}
+	}
+    &.valid,
+	&.base.valid {
         background-image: svg('tick', '[fill]: var(--success-green)');
         background-position: right 28px center;
         background-repeat: no-repeat;
         background-size: 10px 12px;
         padding-right: 50px;
     }
-    &.invalid {
+    &.invalid,
+	&.base.invalid{
 		background-image: svg('error-cross', '[fill]: var(--error-red)');
         background-position: right 28px center;
         background-repeat: no-repeat;
         padding-right: 50px;
 		border-color: var(--error-red);
     }
-	&.base {
-		background: white;
-		border-color: #dcdcdc;
-		font: 14px/1.5 "Roboto";
-	}
 	&.small {
 		font-size: 14px;
 		padding: 0.5em 10px;
@@ -62,10 +68,12 @@ textarea {
 	&[rows]{
 		height: auto;
 	}
-	&.valid {
+	&.valid,
+	&.base.valid {
 		background-position: right 28px top 12px;
 	}
-	&.invalid {
+	&.invalid,
+	&.base.invalid {
 		background-position: right 28px top 12px;
 	}
 }

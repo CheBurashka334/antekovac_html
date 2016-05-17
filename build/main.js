@@ -254,14 +254,14 @@ var App =
 				var emailPattern = /.+@.+\..+/i;
 				return emailPattern.test(el.val());
 				break;
-			case 'file':
-				var typePattern = /ppt|pptx|doc|docx|xls|xlsx|txt|pdf|png|jpg/i;
-				if (el[0].files[0].size > 10485760 || !typePattern.test(el[0].files[0].name.split('.').pop())) {
-					return false;
-				} else {
-					return true;
-				}
-				break;
+			/*case 'file':
+	  	var typePattern = /ppt|pptx|doc|docx|xls|xlsx|txt|pdf|png|jpg/i;
+	  	if((el[0].files[0].size > 10485760) || !(typePattern.test(el[0].files[0].name.split('.').pop()))) {
+	  		return false;
+	  	} else {
+	  		return true;
+	  	}
+	  break;*/
 			case 'required':
 			default:
 				if (el.val().length == 0 || el.attr('type') == 'checkbox' && el.prop('checked') == false) {
@@ -327,14 +327,14 @@ var App =
 			}
 		});
 	
-		$(this).find('input[type="file"]').each(function () {
-			if (isValid($(this), 'file')) {
-				$(this).removeClass('invalid').addClass('valid');
-			} else {
-				error = true;
-				$(this).removeClass('valid').addClass('invalid');
-			}
-		});
+		/*$(this).find('input[type="file"]').each(function(){
+	 	if (isValid($(this), 'file')) {
+	 		$(this).removeClass('invalid').addClass('valid');
+	 	} else {
+	 		error = true;
+	 		$(this).removeClass('valid').addClass('invalid');
+	 	}
+	 });*/
 	
 		if (error) {
 			BX.closeWait();
