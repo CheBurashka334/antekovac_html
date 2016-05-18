@@ -257,6 +257,9 @@
 			position: relative;
 			width: 50%;
 			margin: 0;
+			&:only-child {
+				width: 100%;
+			}
 		}
 	}
 }

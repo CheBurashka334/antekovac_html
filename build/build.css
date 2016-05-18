@@ -2318,6 +2318,10 @@ a.link--exit {
 	float: right;
 	margin-top: -24px;
 }
+a.link--dashed {
+	text-decoration: none;
+	border-bottom: 1px dashed currentColor;
+}
 img {
     max-width: 100%;
     max-height: 100%;
@@ -6812,6 +6816,9 @@ body.viewer-open {
 	.contacts__form {
 		background: none;
 	}
+	.page--contacts .bx-yandex-map {
+		height: 50vw;
+	}
 }:root {
 	/* пути к картинкам */
 }
@@ -8642,6 +8649,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .page--checkout .tile-page__body {
 	background: url(/antekovac/images/checkout-bg.png) bottom right no-repeat;
 	background-size: auto 600px;
+	padding-top: 30px;
 	padding-bottom: 170px;
 }
 .page--checkout .basket .heading {
@@ -8661,11 +8669,15 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 @media (max-width: 767px){
 	.page--checkout .tile-page__body {
 		background: none;
+		padding-top: 20px;
 		padding-bottom: 0;
 	}
 	.page--checkout .basket .heading {
 		margin: 20px 0 0;
 		padding-left: 25px;
+	}
+	.page--checkout .checkout-login-link {
+		margin: 0 20px;
 	}
 	.checkout-block,
 	.checkout-block[class*="grid"]{
@@ -11468,6 +11480,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		position: relative;
 		width: 50%;
 		margin: 0;
+	}
+	.collection-slider__tab:only-child {
+		width: 100%;
 	}
 }
 @media (max-width: 767px){

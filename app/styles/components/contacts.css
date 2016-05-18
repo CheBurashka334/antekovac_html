@@ -35,4 +35,7 @@
 			background: none;
 		}
 	}
+	.page--contacts .bx-yandex-map {
+		height: 50vw;
+	}
 }

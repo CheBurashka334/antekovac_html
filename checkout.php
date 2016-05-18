@@ -29,6 +29,7 @@
 			</div>
 		</div>
 		<div class="tile-page__body">
+			<div class="checkout-login-link">У вас уже есть аккаунт? <a href="#" class="link--dashed js-toggle-box" data-box=".modal.login-form">Войти</a></div>
 			<div class="grid-bigGutter checkout-block checkout-block__personal">
 				<div class="col-6_lg-6_md-6_sm-6_xs-12">
 					<div class="field required">

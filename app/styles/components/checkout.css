@@ -6,6 +6,7 @@
 	.tile-page__body {
 		background: url(var(--img-path)/checkout-bg.png) bottom right no-repeat;
 		background-size: auto 600px;
+		padding-top: 30px;
 		padding-bottom: 170px;
 	}
 	.basket {
@@ -31,11 +32,15 @@
 	.page--checkout {
 		.tile-page__body {
 			background: none;
+			padding-top: 20px;
 			padding-bottom: 0;
 		}
 		.basket .heading {
 			margin: 20px 0 0;
 			padding-left: 25px;
+		}
+		.checkout-login-link {
+			margin: 0 20px;
 		}
 	}
 	.checkout-block,
