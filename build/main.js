@@ -11235,7 +11235,7 @@ var App =
 			$('.page').css('padding-right', scrollbarWidth);
 			$('.js-anim--hover').on('mouseenter', function () {
 				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
-			}).on('mouseleave', function () {
+			}).on('mouseleave touchend', function () {
 				$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
 				setTimeout(function () {
 					$('.anim-hover--end').removeClass('anim-hover--end');

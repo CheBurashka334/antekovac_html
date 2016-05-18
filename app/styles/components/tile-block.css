@@ -719,6 +719,9 @@
 		.page--lk-messages & {
 			padding: 35px 40px;
 		}
+		&--bigPadding {
+			padding: 40px 11% 55px;
+		}
 	}
 	&__foot {
 		background: #f6f6f6;
@@ -747,6 +750,11 @@
 			.page--profile &,
 			.page--lk-messages &{
 				padding: 0;
+			}
+		}
+		&__body {
+			&--bigPadding {
+				padding: 20px 0 30px;
 			}
 		}
 		&__foot > [class*="grid"] {
