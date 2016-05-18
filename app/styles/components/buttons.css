@@ -124,7 +124,7 @@
 		overflow: hidden;
 		>.btn-text {
 			display: inline-block;
-			transform: translate3d(-10px, 0, 0);
+			transform: translate3d(0, 0, 0);
 			transition: transform .3s;
 			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 		}
@@ -137,11 +137,16 @@
 			transition: transform .3s;
 			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 		}
+		&.btn-add-to-cart > .i-icon {
+			margin-left: 10px;
+		}
 		&[class*="--medium"] .i-icon {
 			margin-left: -40px;
 		}
 		&:hover {
-			>.btn-text,
+			>.btn-text {
+				transform: translate3d(10px, 0, 0);
+			}
 			>.i-icon {
 				transform: translate3d(0, 0, 0);
 			}
@@ -236,6 +241,7 @@
 			height: 20px;
 			margin-top: -5px;
 			fill: none;
+			margin-right: 10px;
 		}
 		&::after {
 			content: '';
@@ -255,6 +261,7 @@
 			color: white;
 			.i-icon {
 				fill: currentColor;
+				stroke: none;
 			}
 			&::after {
 				border-left-color: var(--main-brown);
@@ -402,29 +409,38 @@
 		color: var(--dark-gray);
 	}
 }
-@media (--small){
-	.btn {
-		&.btn-one-click .i-icon,
-		&.btn-one-click[class*="--main-anim"] .i-icon{
-			display: none;
-		}
-	}
-}
 @media (--small-down){
 	.btn {
-		&[class*="--main-anim"]{
+		&[class*="--main-anim"],
+		&[class*="--main-anim"]:hover {
 			position: relative;
 			overflow: hidden;
 			>.btn-text {
 				display: inline-block;
-				transform: translate3d(0, 0, 0);
+				transform: none;
 			}
 			>.i-icon {
 				position: relative;
 				display: inline-block;
 				left: auto;
-				margin-left:0;
-				transform: translate3d(0, 0, 0);
+				margin-left: 0;
+				transform: none;
+			}
+		}
+		&.btn-add-to-cart,
+		&.btn-add-to-cart[class*="--main-anim"] {
+			.i-icon {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+@media (--small){
+	.btn {
+		&.btn-one-click,
+		&.btn-one-click[class*="--main-anim"] {
+			.i-icon {
+				display: none;
 			}
 		}
 	}
@@ -438,6 +454,10 @@
 			margin-top: 0;
 			background: var(--main-white);
 			border-color: var(--main-white);
+		}
+		&--like .i-icon,
+		&--like[class*="with-icon"] .i-icon {
+			margin-right: 5px;
 		}
 	}
 }

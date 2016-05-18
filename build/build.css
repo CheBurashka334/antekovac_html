@@ -3730,8 +3730,8 @@ table.nostyle th, table.nostyle td {
 }
 .btn[class*="--main-anim"] >.btn-text {
 	display: inline-block;
-	-webkit-transform: translate3d(-10px, 0, 0);
-	        transform: translate3d(-10px, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
 	-webkit-transition: -webkit-transform .3s;
 	transition: -webkit-transform .3s;
 	transition: transform .3s;
@@ -3753,11 +3753,17 @@ table.nostyle th, table.nostyle td {
 	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
+.btn[class*="--main-anim"].btn-add-to-cart > .i-icon {
+	margin-left: 10px;
+}
 .btn[class*="--main-anim"][class*="--medium"] .i-icon {
 	margin-left: -40px;
 }
-.btn[class*="--main-anim"]:hover >.btn-text,
-			.btn[class*="--main-anim"]:hover >.i-icon {
+.btn[class*="--main-anim"]:hover >.btn-text {
+	-webkit-transform: translate3d(10px, 0, 0);
+	        transform: translate3d(10px, 0, 0);
+}
+.btn[class*="--main-anim"]:hover >.i-icon {
 	-webkit-transform: translate3d(0, 0, 0);
 	        transform: translate3d(0, 0, 0);
 }
@@ -3849,6 +3855,7 @@ table.nostyle th, table.nostyle td {
 	height: 20px;
 	margin-top: -5px;
 	fill: none;
+	margin-right: 10px;
 }
 .btn--like::after, .btn--like[class*="--with-icon"]::after {
 	content: '';
@@ -3869,6 +3876,7 @@ table.nostyle th, table.nostyle td {
 }
 .btn--like:hover .i-icon, .btn--like[class*="--with-icon"]:hover .i-icon {
 	fill: currentColor;
+	stroke: none;
 }
 .btn--like:hover::after, .btn--like[class*="--with-icon"]:hover::after {
 	border-left-color: #b59063;
@@ -4027,29 +4035,32 @@ table.nostyle th, table.nostyle td {
 	border-bottom: 1px dashed currentColor;
 	color: #2e3034;
 }
-@media (min-width: 768px) and (max-width: 1023px){
-	.btn.btn-one-click .i-icon,
-		.btn.btn-one-click[class*="--main-anim"] .i-icon{
-		display: none;
-	}
-}
 @media (max-width: 1023px){
-	.btn[class*="--main-anim"]{
+	.btn[class*="--main-anim"],
+		.btn[class*="--main-anim"]:hover {
 		position: relative;
 		overflow: hidden;
 	}
-	.btn[class*="--main-anim"] >.btn-text {
+	.btn[class*="--main-anim"] >.btn-text, .btn[class*="--main-anim"]:hover >.btn-text {
 		display: inline-block;
-		-webkit-transform: translate3d(0, 0, 0);
-		        transform: translate3d(0, 0, 0);
+		-webkit-transform: none;
+		        transform: none;
 	}
-	.btn[class*="--main-anim"] >.i-icon {
+	.btn[class*="--main-anim"] >.i-icon, .btn[class*="--main-anim"]:hover >.i-icon {
 		position: relative;
 		display: inline-block;
 		left: auto;
-		margin-left:0;
-		-webkit-transform: translate3d(0, 0, 0);
-		        transform: translate3d(0, 0, 0);
+		margin-left: 0;
+		-webkit-transform: none;
+		        transform: none;
+	}
+	.btn.btn-add-to-cart .i-icon, .btn.btn-add-to-cart[class*="--main-anim"] .i-icon {
+		margin-left: 10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px){
+	.btn.btn-one-click .i-icon, .btn.btn-one-click[class*="--main-anim"] .i-icon {
+		display: none;
 	}
 }
 @media (max-width: 767px){
@@ -4060,6 +4071,10 @@ table.nostyle th, table.nostyle td {
 		margin-top: 0;
 		background: #f2f2f2;
 		border-color: #f2f2f2;
+	}
+	.btn--like .i-icon,
+		.btn--like[class*="with-icon"] .i-icon {
+		margin-right: 5px;
 	}
 }:root {
 	/* пути к картинкам */
