@@ -4003,6 +4003,20 @@ table.nostyle th, table.nostyle td {
 	        transform: rotate(180deg);
 	height: 14px;
 }
+.btn.btn-star {
+	color: #e4e4e4;
+}
+.btn.btn-star:hover,
+		.btn.btn-star.selected {
+	color: #b59063;
+}
+.btn.btn-star .i-icon {
+	stroke: currentColor;
+	fill: none;
+}
+.btn.btn-star.selected .i-icon {
+	fill: currentColor;
+}
 .btn--link {
 	font-family: "MyriadPro", Roboto, sans-saref;
 	font-size: 18px;
@@ -10045,6 +10059,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	background: #b59063;
 	margin-right: 1em;
 }
+.message__theme .message__author {
+	text-transform: none;
+}
 .message__date {
 	width: 90px;
 }
@@ -10073,6 +10090,33 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .messages__form .messages__actions .collapsible-block__btn, .messages-form__actions .collapsible-block__btn {
 	width: 120px;
 }
+.messages__search-form {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+}
+.messages__search-form .search-form__field {
+	width: 90%;
+	margin-right: 0;
+}
+.messages__search-form .search-form__field input {
+	font-size: 15px;
+	margin: 0;
+	text-transform: none;
+}
+.messages__search-form .search-form__field input::-webkit-input-placeholder {
+	color: currentColor;
+}
+.messages__search-form .search-form__field input::-moz-placeholder {
+	color: currentColor;
+}
+.messages__search-form .search-form__field input:-ms-input-placeholder {
+	color: currentColor;
+}
+.messages__search-form .search-form__field input::placeholder {
+	color: currentColor;
+}
 .messages-list__actions {
 	margin: 20px 0 0;
 	display: -webkit-box;
@@ -10095,6 +10139,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .messages-list__actions button {
 	padding: 9px 30px;
 }
+.messages-list__actions button[class*="flat-light-gray"]{
+	background: #f2f2f2;
+}
+.messages-list__actions--admin {
+	margin: -15px 0 10px;
+}
 .messages__selection {
 	width: 60px;
 	padding-left: 10px;
@@ -10102,6 +10152,10 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	-webkit-flex: 0 0 60px;
 	    -ms-flex: 0 0 60px;
 	        flex: 0 0 60px;
+}
+.messages__selection .btn-star {
+	display: block;
+	margin-left: -10px;
 }
 .messages__filter label {
 	display: inline-block;
@@ -10177,6 +10231,22 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.messages__dialog-body .messages-form__actions .collapsible-block__btn {
 		margin: 20px auto 0;
 	}
+	.messages-list__actions--admin {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	.messages-list__actions .messages__search-form {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 100%;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
+		margin-top: 10px;
+	}
+	.messages-list__actions .messages__search-form .search-form__field {
+		width: 100%;
+		margin: 0;
+	}
 }
 @media (max-width: 767px){
 	.messages-form__actions, .messages-form__actions.grid-noGutter, .messages__dialog-body, .messages__dialog-body.grid-noGutter {
@@ -10198,11 +10268,13 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		margin-bottom: 0;
 	}
 	.messages-list__actions {
-		-webkit-box-align: start;
-		-webkit-align-items: flex-start;
-		    -ms-flex-align: start;
-		            -ms-grid-row-align: flex-start;
-		        align-items: flex-start;
+		margin-bottom: 20px;
+	}
+	.messages-list__actions--admin {
+		margin-top: 20px;
+	}
+	.messages__search-form {
+		margin: 10px 0;
 	}
 	.messages__selection {
 		width: 40px;
@@ -10211,9 +10283,6 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		-webkit-flex: 0 0 40px;
 		    -ms-flex: 0 0 40px;
 		        flex: 0 0 40px;
-	}
-	.messages__filter label {
-		margin: 0 0 20px;
 	}
 	.messages__dialog {
 		position: relative;
@@ -10240,6 +10309,10 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.messages__dialog-header .message__theme {
 		padding-left: 40px;
 	}
+	.messages__dialog-header .message__theme .theme-text {
+		display: block;
+		margin-top: 10px;
+	}
 	.messages__dialog-header .message__date {
 		width: 100%;
 	}
@@ -10257,6 +10330,24 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	}
 	.messages__dialog-body > .collapsible-block__btn {
 		left: 0;
+	}
+}
+@media (max-width: 450px) {
+	.messages-list__actions {
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
+		        align-items: flex-start;
+	}
+	.messages__filter {
+		width: 120px;
+	}
+	.messages__filter label {
+		margin: 0 0 20px;
+	}
+	.messages__filter label:last-child {
+		margin-bottom: 0;
 	}
 }:root {
 	/* пути к картинкам */

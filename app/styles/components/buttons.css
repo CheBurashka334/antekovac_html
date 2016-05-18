@@ -377,6 +377,20 @@
 			height: 14px;
 		}
 	}
+	&.btn-star {
+		color: #e4e4e4;
+		&:hover,
+		&.selected {
+			color: var(--main-brown);
+		}
+		.i-icon {
+			stroke: currentColor;
+			fill: none;
+		}
+		&.selected .i-icon {
+			fill: currentColor;
+		}
+	}
 	&--link {
 		font-family: "MyriadPro", Roboto, sans-saref;
 		font-size: 18px;
