@@ -10,12 +10,12 @@
 		<h2 class="base-color">Франчайзинг</h2>
 	</div>
 	<div class="grid-equalHeight text-media">
-		<div class="col-5_sm-12">
+		<div class="col-5_sm-6_xs-12">
 			<div class="text-media__image mobile-fullwidth--noGutter">
 				<img src="images/franch-1.jpg"/>
 			</div>
 		</div>
-		<div class="col-7_sm-12">
+		<div class="col-7_sm-6_xs-12">
 			<div class="tile-block mobile-fullwidth">
 				<div class="tile-block__content">
 					<h2 class="base-color">Франчайзинг</h2>
