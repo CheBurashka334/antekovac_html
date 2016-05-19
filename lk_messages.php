@@ -215,14 +215,10 @@
 			<ul class="pagination">
 				<li class="pagination__item pagination__item--prev"><a href="#"><svg class="i-icon" role="img"><use xlink:href="#arrow"/></svg></a></li>
 				<li class="pagination__item"><a href="#">1</a></li>
-				<li class="pagination__item pagination__item--more"><span>...</span></li>
-				<li class="pagination__item"><a href="#">8</a></li>
-				<li class="pagination__item"><a href="#">9</a></li>
-				<li class="pagination__item pagination__item--current"><a href="#">10</a></li>
-				<li class="pagination__item"><a href="#">11</a></li>
-				<li class="pagination__item"><a href="#">12</a></li>
-				<li class="pagination__item pagination__item--more"><span>...</span></li>
-				<li class="pagination__item"><a href="#">17</a></li>
+				<li class="pagination__item pagination__item--current"><a href="#">2</a></li>
+				<li class="pagination__item"><a href="#">3</a></li>
+				<li class="pagination__item"><a href="#">4</a></li>
+				<li class="pagination__item"><a href="#">5</a></li>
 				<li class="pagination__item pagination__item--next"><a href="#"><svg class="i-icon" role="img"><use xlink:href="#arrow"/></svg></a></li>
 			</ul>
 		</div>

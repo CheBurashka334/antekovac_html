@@ -2,7 +2,8 @@
 
 <div class="main-slider">
     <div class="owl-carousel">
-        <div class="main-slider__slide" style="background-image:url('images/main-slide.jpg');">
+		<!-- в data-src-mobile адрес картинки 768х515 (или 512... так то пох на высоту, сохранить пропорции) -->
+        <div class="main-slider__slide" style="background-image:url('images/main-slide.jpg');" data-src-mobile="images/main-slide-mobile.jpg">
             <div class="main-slider__info">
                 <div class="main-slider__heading">
                     Architekt
@@ -20,13 +21,13 @@
                 </div>
             </div>
         </div>
-        <div class="main-slider__slide owl-lazy" data-src="images/main-slide.jpg">
+        <div class="main-slider__slide owl-lazy" data-src="images/main-slide-2.jpg" data-src-mobile="images/main-slide-2-mobile.jpg">
             <div class="main-slider__info">
                 <div class="main-slider__heading">
-                    fdbfdb
+                    Кандинский.Цирк
                 </div>
                 <div class="main-slider__icon">
-					<img src="images/architekt.png"/>
+					<img src="images/circus.png"/>
                 </div>
                 <div class="main-slider__date">
                     апрель 2016
