@@ -11,3 +11,5 @@ build/_/app/fonts/BebasNeue Bold.svg
 build/_/app/fonts/BebasNeue Book.svg
 page-aside_left - копия.php
 stats.json
+images/product-detail/mobile/*
+images/product-detail/tablet/*

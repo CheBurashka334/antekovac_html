@@ -7,12 +7,20 @@ var Viewers = {
 			'rotatable': false,
 			'scalable': false,
 			'fullscreen': false,
-			'minZoomRatio': 0.1,
+			'minZoomRatio': 0.3,
 			'maxZoomRatio': 0.5
 		});
 		$('.js-viewer').viewer();
 		$('.js-viewer-wrapper').on('click', function(){
-			var img = '<img class="js-viewer-fullimg hidden" src="'+$(this).attr('data-fullimg')+'"/>';
+			var fullimgSrc;
+			if($(window).width() < 360){
+				fullimgSrc = $(this).attr('data-fullimg-mobile') ? $(this).attr('data-fullimg-mobile') : $(this).attr('data-fullimg');
+			} else if ($(window).width() < 700) {
+				fullimgSrc = $(this).attr('data-fullimg-tablet') ? $(this).attr('data-fullimg-tablet') : $(this).attr('data-fullimg');
+			} else {
+				fullimgSrc = $(this).attr('data-fullimg');
+			}
+			var img = '<img class="js-viewer-fullimg hidden" src="'+fullimgSrc+'"/>';
 			$('.viewer-placeholder').html(img);
 			$().viewer('update');
 			$('.js-viewer-fullimg').viewer('show');

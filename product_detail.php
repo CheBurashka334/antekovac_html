@@ -16,23 +16,63 @@
 		<div class="col-7_lg-7_md-6_sm-6_xs-12 slider-wrapper">
 			<div class="product-detail__slider js-anim-scroll" data-end-position="-0.5" data-speed="10">
 				<div class="owl-carousel">
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8264.png" data-src="images/product-detail/big/afm-white-8264.png" data-max-zoom="1.5">
+					<!--
+						data-fullimg-tablet - 1500x1500
+						data-fullimg-mobile - 800x800
+					-->
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8264.png"
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8264.png" 
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8264.png" 
+						data-src="images/product-detail/big/afm-white-8264.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8265.png" data-src="images/product-detail/big/afm-white-8265.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8265.png"
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8265.png" 
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8265.png" 
+						data-src="images/product-detail/big/afm-white-8265.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8268.png" data-src="images/product-detail/big/afm-white-8268.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8268.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8268.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8268.png"
+						data-src="images/product-detail/big/afm-white-8268.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8273.png" data-src="images/product-detail/big/afm-white-8273.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8273.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8273.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8273.png"
+						data-src="images/product-detail/big/afm-white-8273.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8276.png" data-src="images/product-detail/big/afm-white-8276.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8276.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8276.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8276.png"
+						data-src="images/product-detail/big/afm-white-8276.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8278.png" data-src="images/product-detail/big/afm-white-8278.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8278.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8278.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8278.png"
+						data-src="images/product-detail/big/afm-white-8278.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8287.png" data-src="images/product-detail/big/afm-white-8287.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8287.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8287.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8287.png"
+						data-src="images/product-detail/big/afm-white-8287.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8291.png" data-src="images/product-detail/big/afm-white-8291.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8291.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8291.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8291.png"
+						data-src="images/product-detail/big/afm-white-8291.png">
 					</div>
-					<div class="product-detail__slide js-viewer-wrapper owl-lazy" data-fullimg="images/product-detail/full/afm-white-8293.png" data-src="images/product-detail/big/afm-white-8293.png">
+					<div class="product-detail__slide js-viewer-wrapper owl-lazy" 
+						data-fullimg="images/product-detail/full/afm-white-8293.png" 
+						data-fullimg-tablet="images/product-detail/tablet/afm-white-8293.png"
+						data-fullimg-mobile="images/product-detail/mobile/afm-white-8293.png"
+						data-src="images/product-detail/big/afm-white-8293.png">
 					</div>
 				</div>
 			</div>
@@ -273,10 +313,20 @@
 		</div>
 		<div class="col-3_lg-3_md-4 media-lib__item">
 			<div class="video-preview">
-				<img src="images/product-detail/video-preview.jpg" />
-				<a href="#" class="video-preview__overlay js-toggle-box js-toggle-playing-video" data-box="#product-video-modal" data-video="#product-video">
-					<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
+				<img src="images/34bb0e923a7d9423b058860e02bd0225.jpg">
+				<a href="#" class="video-preview__overlay js-toggle-box js-yt-video" data-box="#product-video_3481" data-video-id="11oLiZeysWk">
+					<svg class="i-icon i-icon--stroke"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
 				</a>
+			</div>
+			<div class="modal modal--video" id="product-video_3481">
+				<div class="modal__wrap">
+					<button class="btn btn--flat btn-close js-toggle-box opened" data-box="#product-video_3481"></button>
+					<div class="modal__inner">
+						<div class="video-container yt-video">
+							<div id="11oLiZeysWk"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -9,7 +9,28 @@ var Sliders = {
 					lazyLoad: true,
                     navContainerClass: 'main-slider-navs',
                     navClass: ['nav-prev', 'nav-next'],
-                    navText: ['', '']
+                    navText: ['', ''],
+					onInitialize: function(){
+						if($(window).width() < 768){
+							$(this.$element).children().each(function(){
+								if(!$(this).attr('data-src-mobile')) { 
+									return false;
+								} else {
+									var srcMobile = $(this).attr('data-src-mobile');
+									console.log(srcMobile);
+									if($(this).hasClass('owl-lazy') && $(this).attr('data-src')) {
+										$(this).attr('data-src', srcMobile);
+									} else {
+										if($(this).is('img')){
+											$(this).attr('src', srcMobile);
+										} else {
+											$(this).css('backgroundImage', 'url('+srcMobile+')');
+										}
+									}
+								}
+							});
+						}
+					},
                 }
             },
 			{
