@@ -11334,7 +11334,15 @@ var App =
 				}
 			});
 	
+			var timer;
 			$(window).on('scroll', function () {
+				clearTimeout(timer);
+				if (!$('body').hasClass('disable-pointer-events')) {
+					$('body').addClass('disable-pointer-events');
+				}
+				timer = setTimeout(function () {
+					$('body').removeClass('disable-pointer-events');
+				}, 500);
 				if ($(window).scrollTop() > 100) {
 					$('.home-page .header').removeClass('header--transparent');
 				} else {

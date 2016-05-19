@@ -3193,7 +3193,6 @@ webpackJsonpApp([1],{
 									return false;
 								} else {
 									var srcMobile = $(this).attr('data-src-mobile');
-									console.log(srcMobile);
 									if ($(this).hasClass('owl-lazy') && $(this).attr('data-src')) {
 										$(this).attr('data-src', srcMobile);
 									} else {

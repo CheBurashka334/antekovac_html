@@ -2268,6 +2268,9 @@ html {
 body {
 	height: 100%;
 }
+.disable-poineter-events {
+	pointer-events: none;
+}
 .workarea {
 	display: table-row;
 	width: 100%;
