@@ -756,6 +756,10 @@
 			&--bigPadding {
 				padding: 20px 0 30px;
 			}
+			p.empty-state {
+				margin: 30px 20px;
+				text-align: center;
+			}
 		}
 		&__foot > [class*="grid"] {
 			flex-direction: column;

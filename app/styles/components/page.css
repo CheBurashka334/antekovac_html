@@ -44,7 +44,7 @@
 
 @media (--mobile){
 	.page {
-		display: block;
+		/*display: block;*/
 		background: white;
 		height: auto;
 	}

@@ -50,6 +50,7 @@ module.exports = {
     root: __dirname,
     modulesDirectories: [
       __dirname,
+      __dirname + '/app/js',
       __dirname + '/vendor',
       __dirname + '/node_modules'
     ],

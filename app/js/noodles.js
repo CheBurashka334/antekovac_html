@@ -236,9 +236,12 @@ var Noodles = {
 		
 		function position(fix) {
 			if(fix == 'fix'){
-				$('html').css('overflow', 'hidden');
+				var pos = $(window).scrollTop();
+				$('.page').css({'position': 'fixed', 'top': - pos+'px'});
 			} else {
-				$('html').css('overflow', '');
+				var pos = parseInt($('.page').css('top'), 10);
+				$('.page').css({'position': 'relative', 'top': 0});
+				$(window).scrollTop(-pos);
 			}
 		}
     }
