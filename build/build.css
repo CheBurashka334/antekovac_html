@@ -7982,6 +7982,7 @@ input[type="tel"] + .tooltip {
 	bottom: 101%;
 	padding: 5px 20px;
 	background: white;
+	color: #3d3b33;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
 	z-index: -1;
 	opacity: 0;
@@ -10874,6 +10875,13 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	}
 	.product-detail .btn-favorite .i-icon--stroke {
 		stroke: #b59063;
+	}
+	.product-detail .btn-favorite:hover,
+			.product-detail .btn-favorite.added:hover {
+		background: white;
+	}
+	.product-detail .btn-favorite:hover .i-icon, .product-detail .btn-favorite.added:hover .i-icon {
+		fill: #b59063;
 	}
 	.product-detail__slider {
 		height: 380px;

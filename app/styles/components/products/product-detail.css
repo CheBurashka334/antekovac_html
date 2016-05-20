@@ -181,6 +181,13 @@
 			.i-icon--stroke {
 				stroke: var(--main-brown);
 			}
+			&:hover,
+			&.added:hover {
+				background: white;
+				.i-icon {
+					fill: var(--main-brown);
+				}
+			}
 		}
 		&__slider {
 			height: 380px;
