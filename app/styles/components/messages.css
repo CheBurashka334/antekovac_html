@@ -129,7 +129,8 @@
 		text-transform: none;
 	}
 	&__date {
-		width: 90px;
+		width: 150px;
+		text-align: right;
 	}
 }
 
@@ -216,11 +217,11 @@
 		justify-content: flex-start;
 		align-items: baseline;
 		.message {
-			width: calc(100% - 90px);
+			width: calc(100% - 150px);
 			margin-bottom: 0;
 		}
 		&__selection + .message {
-			width: calc(100% - 60px - 90px);
+			width: calc(100% - 150px - 90px);
 		}
 	}
 	&__dialog-body {
@@ -352,6 +353,7 @@
 				}
 				.message__date {
 					width: 100%;
+					text-align: left;
 				}
 			}
 			&-body,

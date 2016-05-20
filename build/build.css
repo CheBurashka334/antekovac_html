@@ -10103,7 +10103,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	text-transform: none;
 }
 .message__date {
-	width: 90px;
+	width: 150px;
+	text-align: right;
 }
 .messages__form--new {
 	padding: 20px 30px 30px;
@@ -10223,11 +10224,11 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	        align-items: baseline;
 }
 .messages__dialog-header .message {
-	width: calc(100% - 90px);
+	width: calc(100% - 150px);
 	margin-bottom: 0;
 }
 .messages__dialog-header__selection + .message {
-	width: calc(100% - 60px - 90px);
+	width: calc(100% - 150px - 90px);
 }
 .messages__dialog-body {
 	padding: 30px 60px 0;
@@ -10365,6 +10366,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	}
 	.messages__dialog-header .message__date {
 		width: 100%;
+		text-align: left;
 	}
 	.messages__dialog-body,
 			.messages__dialog--selection .messages__dialog-body {

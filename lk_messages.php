@@ -68,7 +68,7 @@
 								</div>
 							</div>
 							<div class="message__date">
-								<span class="light-text small-text">25.03.2016</span>
+								<span class="light-text small-text">20.05.2016 14:17:46</span>
 							</div>
 						</div>
 						<div class="messages__wrapper messages__dialog-body collapsible-block__wrapper">
@@ -190,7 +190,7 @@
 								</div>
 							</div>
 							<div class="message__date">
-								<span class="light-text small-text">25.03.2016</span>
+								<span class="light-text small-text">20.05.2016 14:17:46</span>
 							</div>
 						</div>
 					</div>
