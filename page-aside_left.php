@@ -175,6 +175,7 @@
 				</a>
 			</li>
 			<li class="menu-item menu-item--with-icon">
+				<a href="#" class="menu-item__link js-anim--click js-toggle-box authorized" data-box=".modal.login-form">
 					<span class="menu-item__icon"><svg class="i-icon i-icon--stroke i-icon--smaller"><use xlink:href="#profile"/></svg></span>
 					<span class="menu-item__text">мой кабинет</span>
 				</a>
