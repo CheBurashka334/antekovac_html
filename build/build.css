@@ -4258,6 +4258,9 @@ table.nostyle th, table.nostyle td {
 			height: 60px;
 		}*/
 	.video-preview__overlay, .video-custom-player__overlay {
+		opacity: 0;
+	}
+	.bx-ios .video-preview__overlay, .bx-ios .video-custom-player__overlay {
 		display: none;
 	}
 }:root {

@@ -142,8 +142,11 @@
 			width: 60px;
 			height: 60px;
 		}*/
-		&__overlay {
-			display: none;
+		 &__overlay {
+			opacity: 0;
+			.bx-ios & {
+				display: none;
+			}
 		}
 	}
 }
