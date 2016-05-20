@@ -10203,6 +10203,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	        align-items: baseline;
 }
 .messages__dialog-header .message {
+	width: calc(100% - 60px - 90px);
 	margin-bottom: 0;
 }
 .messages__dialog-body {
@@ -10325,6 +10326,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		top: auto;
 		left: auto;
 		padding: 0;
+	}
+	.messages__dialog-header .message {
+		width: 100%;
 	}
 	.messages__dialog-header .message__theme {
 		padding-left: 40px;

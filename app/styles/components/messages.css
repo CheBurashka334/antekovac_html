@@ -216,6 +216,7 @@
 		justify-content: flex-start;
 		align-items: baseline;
 		.message {
+			width: calc(100% - 60px - 90px);
 			margin-bottom: 0;
 		}
 	}
@@ -328,6 +329,9 @@
 					top: auto;
 					left: auto;
 					padding: 0;
+				}
+				.message {
+					width: 100%;
 				}
 				.message__theme {
 					padding-left: 40px;
