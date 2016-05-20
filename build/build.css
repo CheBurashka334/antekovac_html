@@ -10223,8 +10223,11 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	        align-items: baseline;
 }
 .messages__dialog-header .message {
-	width: calc(100% - 60px - 90px);
+	width: calc(100% - 90px);
 	margin-bottom: 0;
+}
+.messages__dialog-header__selection + .message {
+	width: calc(100% - 60px - 90px);
 }
 .messages__dialog-body {
 	padding: 30px 60px 0;
@@ -10245,7 +10248,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	position: absolute;
 	-webkit-transition: opacity .3s .3s;
 	transition: opacity .3s .3s;
-	left: 55px;
+	left: 0;
 	top: 0;
 }
 .messages__dialog-body.open {
@@ -10258,6 +10261,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	pointer-events: none;
 	-webkit-transition: opacity .3s;
 	transition: opacity .3s;
+}
+.messages__dialog--selection .messages__dialog-body > .collapsible-block__btn {
+	left: 55px;
 }
 @media (max-width: 870px){
 	.messages-form__actions {
@@ -10350,29 +10356,30 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.messages__dialog-header .message {
 		width: 100%;
 	}
-	.messages__dialog-header .message__theme {
-		padding-left: 40px;
-	}
 	.messages__dialog-header .message__theme .theme-text {
 		display: block;
 		margin-top: 10px;
 	}
+	.messages__dialog-header .messages__selection + .message .message__theme {
+		padding-left: 40px;
+	}
 	.messages__dialog-header .message__date {
 		width: 100%;
 	}
-	.messages__dialog-body {
+	.messages__dialog-body,
+			.messages__dialog--selection .messages__dialog-body {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	.messages__dialog-body.open {
+	.messages__dialog-body.open, .messages__dialog--selection .messages__dialog-body.open {
 		margin-bottom: -20px;
 	}
-	.messages__dialog-body .messages {
+	.messages__dialog-body .messages, .messages__dialog--selection .messages__dialog-body .messages {
 		width: calc(100% + 50px);
 		padding: 20px 25px;
 		margin-left: -25px;
 	}
-	.messages__dialog-body > .collapsible-block__btn {
+	.messages__dialog-body > .collapsible-block__btn, .messages__dialog--selection .messages__dialog-body > .collapsible-block__btn {
 		left: 0;
 	}
 }

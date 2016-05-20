@@ -37,9 +37,9 @@
 			</div>
 			<div class="messages__content">
 				<div class="messages-list__actions">
-					<div class="messages__selection">
+					<!--<div class="messages__selection">
 						<input type="checkbox" class="tick" data-check-all="true" id="check-all"/><label for="check-all" class="checkbox-lbl"></label>
-					</div>
+					</div>-->
 					<div class="messages__filter">
 						<label class="radio--link-like">
 							<input type="radio" />
@@ -55,9 +55,9 @@
 				<div class="messages__list">
 					<div class="messages__dialog">
 						<div class="messages__dialog-header">
-							<div class="messages__selection">
+							<!--<div class="messages__selection">
 								<input type="checkbox" class="tick" id="check-1"/><label for="check-1" class="checkbox-lbl"></label>
-							</div>
+							</div>-->
 							<div class="message">
 								<div class="message__theme">
 									<span class="notification">3</span>
@@ -117,7 +117,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="messages__dialog">
+					<div class="messages__dialog messages__dialog--selection">
 						<div class="messages__dialog-header">
 							<div class="messages__selection">
 								<input type="checkbox" class="tick" id="check-2"/><label for="check-2" class="checkbox-lbl"></label>
@@ -178,7 +178,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="messages__dialog">
+					<div class="messages__dialog messages__dialog--selection">
 						<div class="messages__dialog-header">
 							<div class="messages__selection">
 								<input type="checkbox" class="tick" id="check-3"/><label for="check-3" class="checkbox-lbl"></label>
@@ -194,7 +194,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="messages__dialog">
+					<div class="messages__dialog messages__dialog--selection">
 						<div class="messages__dialog-header">
 							<div class="messages__selection">
 								<input type="checkbox" class="tick" id="check-4"/><label for="check-4" class="checkbox-lbl"></label>
