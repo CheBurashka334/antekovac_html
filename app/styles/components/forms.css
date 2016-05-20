@@ -690,6 +690,9 @@ input[type="checkbox"] {
 	}
 	&__links {
 		margin: 20px 30px;
+		a {
+			margin: 3px 0;
+		}
 		@media (max-width: 530px){
 			margin: 20px 0;
 			width: 100%;

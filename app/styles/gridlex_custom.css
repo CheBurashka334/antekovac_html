@@ -1461,6 +1461,16 @@ $gl-lg:        "screen and (min-width: 1300px)";
   }
 }
 @media (--mobile) {
+	[class*="grid-"][class*="-bigGutter"] {
+	  margin-left: -15px;
+	  margin-right: -15px;
+	  width: calc(100% + 30px);
+	}
+	[class*="grid-"][class*="-bigGutter"] > [class*="col"] {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	
   /* line 61, scss/_gridlex-vars.scss */
   [class*='grid'] > [class*="_xs-1"] {
     -webkit-flex-basis: 8.33333%;
