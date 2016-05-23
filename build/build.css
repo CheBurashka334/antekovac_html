@@ -7131,6 +7131,8 @@ body.viewer-open {
 @media (max-width: 767px){
 	.header {
 		border-bottom: 1px solid #dbdcde;
+		padding-top: 20px;
+		top: -20px;
 	}
 	.header + div > div:first-of-type {
 		padding-top: 72px;

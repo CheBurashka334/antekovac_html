@@ -136,6 +136,8 @@
 @media (--mobile){
 	.header {
 		border-bottom: 1px solid var(--light-gray);
+		padding-top: 20px;
+		top: -20px;
 		& + div > div:first-of-type {
 			padding-top: 72px;
 		}
