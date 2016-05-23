@@ -41,14 +41,8 @@
 						<input type="checkbox" class="tick" data-check-all="true" id="check-all"/><label for="check-all" class="checkbox-lbl"></label>
 					</div>-->
 					<div class="messages__filter">
-						<label class="radio--link-like">
-							<input type="radio" />
-							<span class="text">непрочитанные (1)</span>
-						</label>
-						<label class="radio--link-like">
-							<input type="radio" />
-							<span class="text">прочитанные (3)</span>
-						</label>
+						<a href="#" class="link--dashed">непрочитанные (1)</a>
+						<a href="#" class="link--dashed">прочитанные (3)</a>
 					</div>
 					<button class="btn btn--flat-light-gray">удалить</button>
 				</div>

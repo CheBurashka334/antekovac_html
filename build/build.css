@@ -10201,9 +10201,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	display: block;
 	margin-left: -10px;
 }
-.messages__filter label {
+.messages__filter a {
 	display: inline-block;
 	margin-right: 30px;
+	font: 17px/1 "Bebas Neue Book", "MyriadPro", Roboto, sans-serif;
+	color: #b59063;
+	text-transform: uppercase;
 }
 .messages__list {
 	margin-bottom: 30px;

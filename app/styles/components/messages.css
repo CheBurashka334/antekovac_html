@@ -201,9 +201,12 @@
 			margin-left: -10px;
 		}
 	}
-	&__filter label {
+	&__filter a {
 		display: inline-block;
 		margin-right: 30px;
+		font: 17px/1 "Bebas Neue Book", "MyriadPro", Roboto, sans-serif;
+		color: var(--main-brown);
+		text-transform: uppercase;
 	}
 	&__list {
 		margin-bottom: 30px;
