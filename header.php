@@ -38,7 +38,7 @@
 <aside class="page-aside page-aside--left main-menu">
 	<?php require ('page-aside_left.php') ?>
 </aside>
-<aside class="page-aside page-aside--right feed-back">
+<aside class="page-aside page-aside--right feed-back hidden">
 	<?php require ('page-aside_right.php') ?>
 </aside>
 <main class="page"><!-- .home-page добавить на главной-->

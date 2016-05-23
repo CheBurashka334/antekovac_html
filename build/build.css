@@ -3373,13 +3373,13 @@ table.nostyle th, table.nostyle td {
 	margin: auto;
 	cursor: pointer;
 	background-color: transparent;
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22arrow-thin%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%2026.163%2050.163%22%20style%3D%22fill%3A%23d4d4d4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M0%2C25.082L24.749%2C0l1.414%2C1.414L1.414%2C26.496L0%2C25.082z%20M2.832%2C25.082l23.331%2C23.667l-1.414%2C1.414L1.417%2C26.496L2.832%2C25.082z%22%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2226.163px%22%20height%3D%2250.163px%22%20viewBox%3D%220%200%2026.163%2050.163%22%20style%3D%22fill%3A%23d4d4d4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M0%2C25.082L24.749%2C0l1.414%2C1.414L1.414%2C26.496L0%2C25.082z%20M2.832%2C25.082l23.331%2C23.667l-1.414%2C1.414L1.417%2C26.496L2.832%2C25.082z%22%2F%3E%3C%2Fsvg%3E");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 .arrow-thin-navs [class*="nav"]:hover {
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22arrow-thin%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%2026.163%2050.163%22%20style%3D%22fill%3A%23b59063%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M0%2C25.082L24.749%2C0l1.414%2C1.414L1.414%2C26.496L0%2C25.082z%20M2.832%2C25.082l23.331%2C23.667l-1.414%2C1.414L1.417%2C26.496L2.832%2C25.082z%22%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2226.163px%22%20height%3D%2250.163px%22%20viewBox%3D%220%200%2026.163%2050.163%22%20style%3D%22fill%3A%23b59063%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M0%2C25.082L24.749%2C0l1.414%2C1.414L1.414%2C26.496L0%2C25.082z%20M2.832%2C25.082l23.331%2C23.667l-1.414%2C1.414L1.417%2C26.496L2.832%2C25.082z%22%2F%3E%3C%2Fsvg%3E");
 }
 .arrow-thin-navs .nav-next {
 	right: 0;
@@ -7829,7 +7829,7 @@ body.viewer-open {
 	border: 0;
 	color: #767778;
 	margin: 0;
-	background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22triangle%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22%22%20height%3D%22%22%20viewBox%3D%220%200%206%205%22%20style%3D%22fill%3A%23767778%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%223%2C5%203%2C5%200%2C0%206%2C0%20%22%2F%3E%3C%2Fsvg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%226px%22%20height%3D%225px%22%20viewBox%3D%220%200%206%205%22%20style%3D%22fill%3A%23767778%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%223%2C5%203%2C5%200%2C0%206%2C0%20%22%2F%3E%3C%2Fsvg%3E");
 }
 @media (min-width: 768px) and (max-width: 1023px), (min-width: 1024px){
 	.sort-mobile {
@@ -8555,6 +8555,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	padding-left: 35px;
 	background: url(/antekovac/images/paperclip.png) top left no-repeat;
 	background-size: contain;
+	width: 100%;
 }
 .file-field__btn-delete {
 	margin-left: 5px;

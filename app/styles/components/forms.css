@@ -648,6 +648,7 @@ input[type="checkbox"] {
 		padding-left: 35px;
 		background: url(var(--img-path)/paperclip.png) top left no-repeat;
 		background-size: contain;
+		width: 100%;
 	}
 	&__btn-delete {
 		margin-left: 5px;

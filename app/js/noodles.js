@@ -2,9 +2,10 @@
 
 var Noodles = {
     run: function() {
-		$('body').addClass('page-loaded');
 		var scrollbarWidth = $('.page').width() - $(window).width();
 		$('.page').css('padding-right', scrollbarWidth);
+		$('.page-aside--right.feed-back.hidden').removeClass('hidden');
+		$('body').addClass('page-loaded');
         $('.js-anim--hover')
 			.on('mouseenter',function(){
 				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
