@@ -5418,9 +5418,6 @@ footer {
 	overflow: hidden;
 	opacity: 0;
 }
-.page-loaded .page-aside {
-	opacity: 1;
-}
 .page-aside__wrap {
 	width: 100%;
 	height: 100%;
@@ -5429,12 +5426,15 @@ footer {
 .page-aside--left {
 	width: 300px;
 	left: -300px;
-	-webkit-transition: left .3s;
-	transition: left .3s;
+	-webkit-transition: opacity 0s .3s, left .3s;
+	transition: opacity 0s .3s, left .3s;
 	will-change: left;
 }
 .page-aside--left.open {
 	left: 0;
+	opacity: 1;
+	-webkit-transition: left .3s, opacity 0s;
+	transition: left .3s, opacity 0s;
 }
 .page-aside--left.open ~ .page {
 	will-change: left;
@@ -5452,13 +5452,17 @@ footer {
 .page-aside--right {
 	width: 320px;
 	right: -320px;
-	-webkit-transition: right .3s;
-	transition: right .3s;
+	-webkit-transition: opacity 0s .3s, right .3s;
+	transition: opacity 0s .3s, right .3s;
 	will-change: right;
 	z-index: 4;
+	opacity: 0;
 }
 .page-aside--right.open {
 	right: 0;
+	opacity: 1;
+	-webkit-transition: right .3s, opacity 0s;
+	transition: right .3s, opacity 0s;
 }
 .page-aside--right.open ~ .page {
 	will-change: right;

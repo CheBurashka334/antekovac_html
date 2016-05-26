@@ -139,26 +139,29 @@ var App =
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 						$('.js-anim-scroll').each(function () {
 							var tween = gsapAnims.getTL($(this));
-							//if(scrollTop < ($(this).offset().top + $(this).outerHeight())){
 							Scrollissimo.add(tween, 0, 60);
-							/*} else {
-	      	tween.play();
-	      }*/
 						});
 						$(window).scroll(function () {
 							Scrollissimo.knock();
 						});
 					});
 				};
-				//var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				//if(scrollTop < $(window).height()){
 	
-				animation();
-				/*} else {
-	   	$('.js-anim-scroll').animate({'opacity': 1});
-	   }*/
+				setTimeout(function () {
+					var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+					if (scrollTop < $(window).height() / 2) {
+						animation();
+					} else {
+						$('.js-anim-scroll').animate({ 'opacity': 1 }, 500);
+					}
+				}, 500);
 				$(window).on('resize', function () {
-					setTimeout(animation(), 1000);
+					setTimeout(function () {
+						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+						if (scrollTop < $(window).height() / 2) {
+							animation();
+						}
+					}, 1000);
 				});
 			})();
 		}
