@@ -11427,6 +11427,15 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	z-index: -1;
 	background: #2e3034;
 	height: 43.75%;
+	height: 43.75vw;
+}
+.collection-slider .owl-carousel,
+	.collection-slider .owl-stage-outer,
+	.collection-slider .owl-stage {
+	height: 100%;
+}
+.collection-slider .owl-item {
+	float: none;
 }
 @media (min-width: 800px) and (max-width: 1024px) {
 	.collection-slider {

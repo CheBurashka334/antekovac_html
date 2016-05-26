@@ -31,25 +31,35 @@ $(function(){
 
 let Scrollissimo = require('scrollissimo');
 $(function(){
-	function animation(){
-		if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
+	if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
+		function animation(){
 			require.ensure([],function(require){
 				require('gsap');
 				let gsapAnims = require('./js/gsapAnims');
+				var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 				$('.js-anim-scroll').each(function(){
 					var tween = gsapAnims.getTL($(this));
-					Scrollissimo.add(tween, 0, 60);
+					//if(scrollTop < ($(this).offset().top + $(this).outerHeight())){
+						Scrollissimo.add(tween, 0, 60);
+					/*} else {
+						tween.play();
+					}*/
 				});
 				$(window).scroll(function(){
 					Scrollissimo.knock();
 				});
 			});
 		}
+		//var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		//if(scrollTop < $(window).height()){
+			animation();
+		/*} else {
+			$('.js-anim-scroll').animate({'opacity': 1});
+		}*/
+		$(window).on('resize', function(){
+			setTimeout(animation(),1000);
+		});
 	}
-	animation();
-	$(window).on('resize', function(){
-		setTimeout(animation(),1000);
-	});
 });
 
 $(function(){

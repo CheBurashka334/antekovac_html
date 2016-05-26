@@ -7,6 +7,15 @@
 	z-index: -1;
 	background: var(--dark-gray);
 	height: 43.75%;
+	height: 43.75vw;
+	.owl-carousel,
+	.owl-stage-outer,
+	.owl-stage {
+		height: 100%;
+	}
+	.owl-item {
+		float: none;
+	}
 	@media (min-width: 800px) and (max-width: 1024px) {
 		height: 566px;
 	}

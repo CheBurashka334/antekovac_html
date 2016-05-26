@@ -130,25 +130,38 @@ var App =
 	
 	var Scrollissimo = __webpack_require__(60);
 	$(function () {
-		function animation() {
-			if ($('.js-anim-scroll').length && $(window).width() > 1023) {
-				__webpack_require__.e/* nsure */(3, function (require) {
-					__webpack_require__(75);
-					var gsapAnims = __webpack_require__(78);
-					$('.js-anim-scroll').each(function () {
-						var tween = gsapAnims.getTL($(this));
-						Scrollissimo.add(tween, 0, 60);
+		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
+			(function () {
+				var animation = function animation() {
+					__webpack_require__.e/* nsure */(3, function (require) {
+						__webpack_require__(75);
+						var gsapAnims = __webpack_require__(78);
+						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+						$('.js-anim-scroll').each(function () {
+							var tween = gsapAnims.getTL($(this));
+							//if(scrollTop < ($(this).offset().top + $(this).outerHeight())){
+							Scrollissimo.add(tween, 0, 60);
+							/*} else {
+	      	tween.play();
+	      }*/
+						});
+						$(window).scroll(function () {
+							Scrollissimo.knock();
+						});
 					});
-					$(window).scroll(function () {
-						Scrollissimo.knock();
-					});
+				};
+				//var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+				//if(scrollTop < $(window).height()){
+	
+				animation();
+				/*} else {
+	   	$('.js-anim-scroll').animate({'opacity': 1});
+	   }*/
+				$(window).on('resize', function () {
+					setTimeout(animation(), 1000);
 				});
-			}
+			})();
 		}
-		animation();
-		$(window).on('resize', function () {
-			setTimeout(animation(), 1000);
-		});
 	});
 	
 	$(function () {
