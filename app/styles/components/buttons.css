@@ -209,7 +209,7 @@
         background-image:  svg('mail', '[fill]: var(--main-brown)');
         background-repeat: no-repeat;
         background-position: right 10% center;
-		background-size: auto 15px;
+		background-size: auto 16px;
         padding-right: 50px;
 		&.btn--transparent {
 			background-image:  svg('mail', '[fill]: var(--main-brown)');
@@ -357,6 +357,9 @@
 			background: transparent;
 			color: var(--main-gray);
 		}
+	}
+	&.btn-favorite .i-icon {
+		height: 17px;
 	}
 	&.btn-favorite:hover,
 	&.btn-favorite.added {
