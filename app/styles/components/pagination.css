@@ -88,7 +88,7 @@
 		width: 100vw;
 		margin: -1px 0;
 		padding: 0;
-		margin-left: calc((100vw - 100%)/ -2);
+		margin-left: calc(-50vw + 50%);
         text-align: center;
 		border: 1px solid var(--light-gray);
 		background: white;

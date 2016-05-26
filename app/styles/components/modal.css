@@ -240,7 +240,7 @@
 			}
 		}
 		&.search-form &__inner {
-			padding-top: calc((100vh - 200px)/2);
+			padding-top: calc(50vh - 100px);
 		}
 		&.modal-slider &__wrap {
 			padding: 40px 0 20px;

@@ -136,7 +136,7 @@
 }
 @media (--big) {
 	.header-menu {
-		left: calc((100% - 1300px)/2 + 60px);
+		left: calc((50% - 650px) + 60px);
 	}
 }
 @media (--mobile) {

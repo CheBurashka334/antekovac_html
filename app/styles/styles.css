@@ -28,10 +28,6 @@ body {
 	display: table-row;
 	width: 100%;
 	height: 100%;
-	@media (--mobile){
-		/*display: flex;
-		flex-direction: column;*/
-	}
 }
 
 a {
@@ -97,14 +93,14 @@ img {
 	.mobile-fullwidth {
 		width: 100vw;
 		max-width: 100vw;
-		margin-left: calc((100vw - 100%) / -2);
-		margin-right: calc((100vw - 100%) / -2);
+		margin-left: calc(-50vw + 50%);
+		margin-right: calc(-50vw + 50%);
 		padding: 0 15px;
 		&--noGutter {
 			width: 100vw;
 			max-width: 100vw;
-			margin-left: calc((100vw - 100%) / -2);
-			margin-right: calc((100vw - 100%) / -2);
+			margin-left: calc(-50vw + 50%);
+			margin-right: calc(-50vw + 50%);
 			padding: 0;
 			overflow-x: hidden;
 		}

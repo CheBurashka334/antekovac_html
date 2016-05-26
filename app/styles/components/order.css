@@ -94,7 +94,7 @@
 			bottom: -20px;
 			width: 100vw;
 			height: 20px;
-			margin-left: calc((100vw - 100%) / -2);
+			margin-left: calc(-50vw + 50%);
 			background: var(--main-white);
 		}
 	}

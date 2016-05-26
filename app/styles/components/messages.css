@@ -329,7 +329,7 @@
 			border-top: 1px solid #e4e4e4;
 			border-bottom: 0;
 			width: 100vw;
-			margin-left: calc((100vw - 100%)/ -2);
+			margin-left: calc(-50vw + 50%);
 			padding: 20px;
 			&--selected {
 				background: var(--main-white);
