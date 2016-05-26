@@ -3345,14 +3345,18 @@ webpackJsonpApp([1],{
 				$(item.selector).find('.owl-carousel').owlCarousel(item.options);
 			});
 	
-			if ($(window).width() < 768) {
-				$('.carousel--mobile-only').owlCarousel({
-					items: 1,
-					dots: true,
-					mergeFit: true,
-					nav: false
-				});
-			}
+			$(window).on('load resize', function () {
+				if (window.innerWidth < 768) {
+					$('.carousel--mobile-only').owlCarousel({
+						items: 1,
+						dots: true,
+						mergeFit: true,
+						nav: false
+					});
+				} else {
+					$('.carousel--mobile-only').owlCarousel('destroy');
+				}
+			});
 	
 			$('.js-to-slide').on('click', function (e) {
 				e.preventDefault();
