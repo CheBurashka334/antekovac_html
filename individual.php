@@ -232,7 +232,7 @@
 		</div>
 		<div class="tile-block__video">
 			<div class="video-custom-player mobile-fullwidth--noGutter">
-				<video id="brend-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg"></video>
+				<video id="brend-video" src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4" poster="images/ak-video-poster.jpg" preload="none"></video>
 				<a href="#" class="video-custom-player__overlay js-toggle-playing-video" data-video="#brend-video">
 					<svg class="i-icon i-icon--stroke"><use xlink:href="#play" /></svg>
 				</a>

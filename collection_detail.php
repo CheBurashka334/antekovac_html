@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="collection-slider__video col-12">
-			<video poster="images/slide-circus.jpg" preload="none" id="collection-video" controls="controls">
+			<video poster="images/slide-circus.jpg" preload="none" id="collection-video" controls="controls" preload="none">
 				<source src="video/ante-kovac_collection-kandinskiy-cirk.mp4" type="video/mp4"/>
 			</video>
 		</div>
