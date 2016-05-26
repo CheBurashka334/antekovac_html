@@ -12,9 +12,9 @@
 		transition: right .3s;
 		will-change: right;
 		overflow-x: visible;
-		
 		&.open {
 			right: 0;
+			overflow-x: hidden;
 		}
 	}
 	&--aside &__wrap {
