@@ -224,6 +224,14 @@
 				margin-top: 10px;
 			}
 		}
+		&.one-click-form  &__form {
+			margin: 0 auto;
+		}
+		&.one-click-form  &__heading {
+			max-width: 410px;
+			margin: 0 auto;
+		}
+		
 		.message &__heading {
 			margin-top: 0;
 		}

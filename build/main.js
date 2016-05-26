@@ -109,13 +109,13 @@ var App =
 	__webpack_require__(7);
 	
 	$(function () {
-		if ($('.owl-carousel').length) {
-			__webpack_require__.e/* nsure */(1, function (require) {
-				__webpack_require__(67);
-				var Sliders = __webpack_require__(70);
-				Sliders.run();
-			});
-		}
+		//if ($('.owl-carousel').length) {
+		__webpack_require__.e/* nsure */(1, function (require) {
+			__webpack_require__(67);
+			var Sliders = __webpack_require__(70);
+			Sliders.run();
+		});
+		//}
 	});
 	
 	$(function () {
