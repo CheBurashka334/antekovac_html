@@ -130,7 +130,7 @@ var App =
 	
 	var Scrollissimo = __webpack_require__(60);
 	$(function () {
-		if ($('.js-anim-scroll').length && $(window).width() > 1023) {
+		if ($('.js-anim-scroll').length) {
 			(function () {
 				var animation = function animation() {
 					__webpack_require__.e/* nsure */(3, function (require) {
@@ -149,7 +149,7 @@ var App =
 	
 				setTimeout(function () {
 					var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-					if (scrollTop < $(window).height() / 2) {
+					if (scrollTop < $(window).height() / 2 && $(window).width() > 1023) {
 						animation();
 					} else {
 						$('.js-anim-scroll').animate({ 'opacity': 1 }, 500);
@@ -158,8 +158,11 @@ var App =
 				$(window).on('resize', function () {
 					setTimeout(function () {
 						var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-						if (scrollTop < $(window).height() / 2) {
+						if (scrollTop < $(window).height() / 2 && $(window).width() > 1023) {
 							animation();
+						} else {
+							console.log('resize');
+							$('.js-anim-scroll').animate({ 'opacity': 1 }, 500);
 						}
 					}, 1000);
 				});

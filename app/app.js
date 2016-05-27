@@ -31,7 +31,7 @@ $(function(){
 
 let Scrollissimo = require('scrollissimo');
 $(function(){
-	if(($('.js-anim-scroll').length) && ($(window).width() > 1023)){
+	if($('.js-anim-scroll').length){
 		function animation(){
 			require.ensure([],function(require){
 				require('gsap');
@@ -48,7 +48,7 @@ $(function(){
 		}
 		setTimeout(function(){
 			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			if(scrollTop < $(window).height()/2){
+			if((scrollTop < $(window).height()/2) && ($(window).width() > 1023)){
 				animation();
 			} else {
 				$('.js-anim-scroll').animate({'opacity': 1},500);
@@ -57,8 +57,11 @@ $(function(){
 		$(window).on('resize', function(){
 			setTimeout(function(){
 				var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				if(scrollTop < $(window).height()/2){
+				if((scrollTop < $(window).height()/2) && ($(window).width() > 1023)){
 					animation();
+				} else {
+					console.log('resize');
+					$('.js-anim-scroll').animate({'opacity': 1},500);
 				}
 			},1000);
 		});
