@@ -2,8 +2,14 @@
 
 var Noodles = {
     run: function() {
-		var scrollbarWidth = $('.page').width() - $(window).width();
-		$('.page').css('padding-right', scrollbarWidth);
+		function setScrollbarPadding(){
+			var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+			$('.page').css('padding-right', scrollbarWidth);
+		}
+		$(window).on('load', setScrollbarPadding());
+		$(window).on('resize', function(){
+			setTimeout(setScrollbarPadding(),1000);
+		});
 		$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 		$('body').addClass('page-loaded');
         $('.js-anim--hover')

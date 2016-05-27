@@ -12,6 +12,8 @@
 		transition: right .3s;
 		will-change: right;
 		overflow-x: visible;
+		margin-left: 0;
+		margin-right: 0;
 		&.open {
 			right: 0;
 			overflow-x: hidden;
