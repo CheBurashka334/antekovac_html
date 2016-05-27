@@ -4093,6 +4093,10 @@ table.nostyle th, table.nostyle td {
 		.btn--like[class*="with-icon"] .i-icon {
 		margin-right: 5px;
 	}
+	.btn .i-icon,
+		.btn .btn-text {
+		display: inline;
+	}
 }:root {
 	/* пути к картинкам */
 }
@@ -6753,6 +6757,7 @@ body.viewer-open {
 }
 .sketch__link .i-icon {
 	font-size: 82px;
+	line-height: 1;
 	padding: 22px 10px 26px;
 	background: rgba(46,48,52,.8);
 	fill: white;

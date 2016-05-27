@@ -472,5 +472,9 @@
 		&--like[class*="with-icon"] .i-icon {
 			margin-right: 5px;
 		}
+		.i-icon,
+		.btn-text {
+			display: inline;
+		}
 	}
 }

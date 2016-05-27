@@ -40,6 +40,7 @@
 		align-items: center;
 		.i-icon {
 			font-size: 82px;
+			line-height: 1;
 			padding: 22px 10px 26px;
 			background: rgba(46,48,52,.8);
 			fill: white;
