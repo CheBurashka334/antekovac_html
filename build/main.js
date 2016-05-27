@@ -11445,7 +11445,8 @@ var App =
 				}
 			});
 	
-			if ($('html').hasClass('bx-ie')) {
+			//if($('html').hasClass('bx-ie')){
+			if (!Modernizr.objectfit) {
 				$('[data-object-fit]').each(function () {
 					objectFit($(this));
 				});

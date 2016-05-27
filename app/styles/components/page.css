@@ -47,6 +47,9 @@
 		/*display: block;*/
 		background: white;
 		height: auto;
+		.no-csscalc & {
+			background: red;
+		}
 	}
 }
 
