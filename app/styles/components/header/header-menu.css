@@ -141,9 +141,11 @@
 }
 @media (--mobile) {
 	.header-menu {
+		position: absolute;
 		top: 15px;
-		left: 15px;
+		left: 0px;
 		.page-aside--left.open ~ .page .header & {
+			position: fixed;
 			left: 23px;
 		}
 	}

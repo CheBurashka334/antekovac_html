@@ -7386,10 +7386,12 @@ body.viewer-open {
 }
 @media (max-width: 767px) {
 	.header-menu {
+		position: absolute;
 		top: 15px;
-		left: 15px;
+		left: 0px;
 	}
 	.page-aside--left.open ~ .page .header .header-menu {
+		position: fixed;
 		left: 23px;
 	}
 }:root {
