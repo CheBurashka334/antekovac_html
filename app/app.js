@@ -60,7 +60,6 @@ $(function(){
 				if((scrollTop < $(window).height()/2) && ($(window).width() > 1023)){
 					animation();
 				} else {
-					console.log('resize');
 					$('.js-anim-scroll').animate({'opacity': 1},500);
 				}
 			},1000);

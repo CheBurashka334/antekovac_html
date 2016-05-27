@@ -2346,23 +2346,15 @@ img {
 	.mobile-fullwidth {
 		width: 100vw;
 		max-width: 100vw;
-		margin-left: -webkit-calc((0vw - 50vw) + 50%);
-		margin-right: -webkit-calc((0vw - 50vw) + 50%);
 		margin-left: calc((0vw - 50vw) + 50%);
 		margin-right: calc((0vw - 50vw) + 50%);
-		/*margin-left: -15px;
-		margin-right: -15px;*/
 		padding: 0 15px;
 	}
 	.mobile-fullwidth--noGutter {
 		width: 100vw;
 		max-width: 100vw;
-		margin-left: -webkit-calc((0vw - 50vw) + 50%);
-		margin-right: -webkit-calc((0vw - 50vw) + 50%);
 		margin-left: calc((0vw - 50vw) + 50%);
 		margin-right: calc((0vw - 50vw) + 50%);
-		/*margin-left: -15px;
-			margin-right: -15px;*/
 		padding: 0;
 		overflow-x: hidden;
 	}
@@ -5591,12 +5583,8 @@ footer {
 }
 @media (max-width: 767px){
 	.page {
-		/*display: block;*/
 		background: white;
 		height: auto;
-	}
-	.no-csscalc .page {
-		background: red;
 	}
 }
 .page--thanks {
