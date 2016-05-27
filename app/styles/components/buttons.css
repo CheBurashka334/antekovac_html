@@ -473,7 +473,9 @@
 			margin-right: 5px;
 		}
 		.i-icon,
-		.btn-text {
+		.btn-text,
+		&[class*="--main-anim"] >.btn-text,
+		&[class*="--main-anim"] >.i-icon{
 			display: inline;
 		}
 	}

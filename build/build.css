@@ -4094,7 +4094,9 @@ table.nostyle th, table.nostyle td {
 		margin-right: 5px;
 	}
 	.btn .i-icon,
-		.btn .btn-text {
+		.btn .btn-text,
+		.btn[class*="--main-anim"] >.btn-text,
+		.btn[class*="--main-anim"] >.i-icon{
 		display: inline;
 	}
 }:root {
