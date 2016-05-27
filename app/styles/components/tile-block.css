@@ -763,9 +763,11 @@
 		}
 		&__foot > [class*="grid"] {
 			flex-direction: column;
-			flex: 0 0 auto;
+			/*flex: 0 0 auto;*/
+			flex: 0 0 100%;
 			[class*="col"] {
-				flex: 0 0 auto;
+				/*flex: 0 0 auto;*/
+				flex: 0 0 100%;
 			}
 		}
 		.basket {
