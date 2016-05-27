@@ -7533,17 +7533,15 @@ body.viewer-open {
 	text-decoration: none;
 	border: 1px solid transparent;
 }
-.pagination__item a:hover, .pagination__item span:hover {
+.pagination__item a:hover {
 	color: #b59063;
 	border-color: #b59063;
 }
 .tile-block .pagination__item a,
-			.tile-page .pagination__item a,
-			.tile-block .pagination__item span,
-			.tile-page .pagination__item span {
+			.tile-page .pagination__item a {
 	background: #f2f2f2;
 }
-.tile-block .pagination__item a:hover, .tile-page .pagination__item a:hover, .tile-block .pagination__item span:hover, .tile-page .pagination__item span:hover {
+.tile-block .pagination__item a:hover, .tile-page .pagination__item a:hover {
 	border-color: transparent;
 }
 .pagination__item--current a, .pagination__item--current a:hover, .tile-block .pagination__item--current a, .tile-block .pagination__item--current a:hover, .tile-page .pagination__item--current a, .tile-page .pagination__item--current a:hover {

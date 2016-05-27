@@ -11182,14 +11182,12 @@ var App =
 			var dropdownName = item.attr('id');
 			var value = item.val();
 			$('[name="' + dropdownName + '"]:checked').prop('checked', false);
-			console.log($('[name="' + dropdownName + '"][value="' + value + '"]'), value);
 			$('[name="' + dropdownName + '"][value="' + value + '"]').prop('checked', true);
 		},
 		change: function change(item) {
 			var dropdownName = item.attr('id');
 			var value = item.val();
 			$('[name="' + dropdownName + '"]:checked').prop('checked', false);
-			console.log($('[name="' + dropdownName + '"][value="' + value + '"]'), value);
 			$('[name="' + dropdownName + '"][value="' + value + '"]').prop('checked', true);
 		}
 	};
@@ -11250,17 +11248,21 @@ var App =
 			$('.page').css('padding-right', scrollbarWidth);
 			$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 			$('body').addClass('page-loaded');
-			$('.js-anim--hover').on('mouseenter', function () {
-				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
-			}).on('mouseleave touchend', function () {
-				$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
-				setTimeout(function () {
-					$('.anim-hover--end').removeClass('anim-hover--end');
-				}, 1000);
+			$('.js-anim--hover').on('mouseenter', function (e) {
+				if (!e.originalEvent.sourceCapabilities.firesTouchEvents) {
+					$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
+				}
+			}).on('mouseleave touchend', function (e) {
+				if (!e.originalEvent.sourceCapabilities.firesTouchEvents) {
+					$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
+					$(this).on('transitionend', function () {
+						$('.anim-hover--end').removeClass('anim-hover--end');
+					});
+				}
 			});
 			$('.js-anim--click').on('mousedown', function () {
 				$(this).addClass('anim-click--play');
-			}).on('mouseup', function () {
+			}).on('mouseup touchend', function () {
 				$(this).removeClass('anim-click--play');
 			});
 	

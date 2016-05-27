@@ -7,20 +7,24 @@ var Noodles = {
 		$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 		$('body').addClass('page-loaded');
         $('.js-anim--hover')
-			.on('mouseenter',function(){
-				$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
+			.on('mouseenter',function(e){
+				if(!e.originalEvent.sourceCapabilities.firesTouchEvents){
+					$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
+				}
 			})
-			.on('mouseleave touchend',function(){
-				$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
-				setTimeout(function(){
-					$('.anim-hover--end').removeClass('anim-hover--end');
-				},1000);
+			.on('mouseleave touchend',function(e){
+				if(!e.originalEvent.sourceCapabilities.firesTouchEvents){
+					$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
+					$(this).on('transitionend',function(){
+						$('.anim-hover--end').removeClass('anim-hover--end');
+					});
+				}
 			});
 		$('.js-anim--click')
 			.on('mousedown',function(){
 				$(this).addClass('anim-click--play');
 			})
-			.on('mouseup',function(){
+			.on('mouseup touchend',function(){
 				$(this).removeClass('anim-click--play');
 			});
 			

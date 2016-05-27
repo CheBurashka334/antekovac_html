@@ -18,14 +18,12 @@ var DropdownSynh = {
 		var dropdownName = item.attr('id');
 		var value = item.val();
 		$('[name="'+dropdownName+'"]:checked').prop('checked', false);
-		console.log($('[name="'+dropdownName+'"][value="'+value+'"]'), value);
 		$('[name="'+dropdownName+'"][value="'+value+'"]').prop('checked', true);
     },
 	change: function(item){
 		var dropdownName = item.attr('id');
 		var value = item.val();
 		$('[name="'+dropdownName+'"]:checked').prop('checked', false);
-		console.log($('[name="'+dropdownName+'"][value="'+value+'"]'), value);
 		$('[name="'+dropdownName+'"][value="'+value+'"]').prop('checked', true);
 	}
 };

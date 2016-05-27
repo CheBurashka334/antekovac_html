@@ -38,7 +38,9 @@
             transition: .2s;
             text-decoration: none;
 			border: 1px solid transparent;
-            &:hover {
+        }
+		a {
+			&:hover {
                 color: var(--main-brown);
 				border-color: var(--main-brown);
             }
@@ -49,7 +51,7 @@
 					border-color: transparent;
 				}
 			}
-        }
+		}
         &--current,
 		.tile-block &--current,
 		.tile-page &--current {
