@@ -183,6 +183,7 @@
 				height: 80px;
 				position: absolute;
 				left: 20px;
+				top: 15px;
 			}
 			&--name,
 			&--sum,
@@ -310,6 +311,7 @@
 	.basket-totals {
 		/*flex-direction: column;*/
 		display: block;
+		position: relative;
 		&--sum,
 		&--sale {
 			width: 40%;

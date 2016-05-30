@@ -9055,6 +9055,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		height: 80px;
 		position: absolute;
 		left: 20px;
+		top: 15px;
 	}
 	.basket-table__col--name,
 			.basket-table__col--sum,
@@ -9180,6 +9181,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.basket-totals {
 		/*flex-direction: column;*/
 		display: block;
+		position: relative;
 	}
 	.basket-totals--sum,
 		.basket-totals--sale {
