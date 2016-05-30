@@ -2286,6 +2286,11 @@ body {
 	width: 100%;
 	height: 100%;
 }
+@media (max-width: 767px){
+	.workarea {
+		display: block;
+	}
+}
 a {
 	color: #b59063;
 }
@@ -5585,6 +5590,7 @@ footer {
 	.page {
 		background: white;
 		height: auto;
+		display: block;
 	}
 }
 .page--thanks {

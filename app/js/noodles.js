@@ -212,7 +212,7 @@ var Noodles = {
 		}
 		if(window.innerWidth < 768 && !Modernizr.csscalc){
 			var vw = window.innerWidth/100;
-			$('mobile-fullwidth, .mobile-fullwidth--noGutter').each(function(){
+			$('.mobile-fullwidth, .mobile-fullwidth--noGutter').each(function(){
 				var margin = (100 * vw - $(this).parent().width()) / -2;
 				$(this).css({"margin-left": margin, "margin-right": margin});
 			});

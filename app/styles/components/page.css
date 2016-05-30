@@ -46,6 +46,7 @@
 	.page {
 		background: white;
 		height: auto;
+		display: block;
 	}
 }
 
