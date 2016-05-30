@@ -19,6 +19,9 @@
 			object-fit: cover;
 			object-position: center center;
 		}
+		.object-fit-wrapper {
+			min-height: 235px;
+		}
 	}
 	&__overlay {
 		position: absolute;
@@ -59,5 +62,8 @@
 	.sketch {
 		max-height: 50vh;
 		margin-bottom: 16px;
+		&__link .i-icon {
+			display: none;
+		}
 	}
 }

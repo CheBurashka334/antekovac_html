@@ -27,7 +27,7 @@
 		<div class="col-4_sm-6_xs-12">
 			<div class="sketch sketch--big">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-1.jpg" alt="" />
+					<img src="images/sketches/sketch-1.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-1" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -39,7 +39,7 @@
 		<div class="col-4_sm-6_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-2.jpg" alt="" />
+					<img src="images/sketches/sketch-2.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-2" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -49,7 +49,7 @@
 			</div>
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-3.jpg" alt="" />
+					<img src="images/sketches/sketch-3.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-3" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -61,7 +61,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-4.jpg" alt="" />
+					<img src="images/sketches/sketch-4.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-4" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -73,7 +73,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-5.jpg" alt="" />
+					<img src="images/sketches/sketch-5.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-5" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -85,7 +85,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-6.jpg" alt="" />
+					<img src="images/sketches/sketch-6.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-6" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -97,7 +97,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-7.jpg" alt="" />
+					<img src="images/sketches/sketch-7.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-7" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -109,7 +109,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-8.jpg" alt="" />
+					<img src="images/sketches/sketch-8.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-8" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
@@ -121,7 +121,7 @@
 		<div class="col-4_xs-12">
 			<div class="sketch">
 				<div class="sketch__image">
-					<img src="images/sketches/sketch-9.jpg" alt="" />
+					<img src="images/sketches/sketch-9.jpg" alt="" data-object-fit="cover" />
 				</div>
 				<div class="sketch__overlay">
 					<a href="#sketch-9" class="sketch__link js-toggle-box js-to-slide" data-box=".modal.modal-slider">
