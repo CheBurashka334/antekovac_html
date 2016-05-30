@@ -2289,6 +2289,7 @@ body {
 @media (max-width: 767px){
 	.workarea {
 		display: block;
+		height: initial;
 	}
 }
 a {

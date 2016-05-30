@@ -30,6 +30,7 @@ body {
 	height: 100%;
 	@media (--mobile){
 		display: block;
+		height: initial;
 	}
 }
 
