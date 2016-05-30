@@ -5118,19 +5118,12 @@ table.nostyle th, table.nostyle td {
 		text-align: center;
 	}
 	.tile-page__foot > [class*="grid"] {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		/*flex: 0 0 auto;*/
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 100%;
 		    -ms-flex: 0 0 100%;
 		        flex: 0 0 100%;
 	}
 	.tile-page__foot > [class*="grid"] [class*="col"] {
-		/*flex: 0 0 auto;*/
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 100%;
 		    -ms-flex: 0 0 100%;
@@ -9179,7 +9172,6 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 @media (max-width: 767px){
 	.basket-totals {
-		/*flex-direction: column;*/
 		display: block;
 		position: relative;
 	}
