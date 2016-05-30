@@ -67,7 +67,6 @@
 
 .page-aside__block--mobile {
 	padding: 15px 0;
-	/*margin-top: 15px;*/
 	background: #414346;
 	@media (--small-up) {
 		display: none;

@@ -306,10 +306,14 @@
 	
 	&.btn-filter {
 		position: absolute;
-		left: -40px;
+		left: -49px;
 		bottom: 180px;
 		z-index: 10;
 		padding: 7px 3px 10px;
+		.bx-ios,
+		.bx-chrome & {
+			left: -40px;
+		}
 		.page-aside.open ~ .page & {
 			display: none;
 		}

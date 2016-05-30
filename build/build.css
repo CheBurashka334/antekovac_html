@@ -3926,10 +3926,14 @@ table.nostyle th, table.nostyle td {
 }
 .btn.btn-filter {
 	position: absolute;
-	left: -40px;
+	left: -49px;
 	bottom: 180px;
 	z-index: 10;
 	padding: 7px 3px 10px;
+}
+.btn.btn-filter .bx-ios,
+		.bx-chrome .btn.btn-filter {
+	left: -40px;
 }
 .page-aside.open ~ .page .btn.btn-filter {
 	display: none;
@@ -5476,7 +5480,6 @@ footer {
 }
 .page-aside__block--mobile {
 	padding: 15px 0;
-	/*margin-top: 15px;*/
 	background: #414346;
 }
 @media (min-width: 768px) {
