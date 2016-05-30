@@ -5589,8 +5589,12 @@ footer {
 @media (max-width: 767px){
 	.page {
 		background: white;
-		height: auto;
+		height: initial;
 		display: block;
+		overflow-x: hidden;
+	}
+	.page-aside.open ~ .page.fixed {
+		overflow-x: initial;
 	}
 }
 .page--thanks {
