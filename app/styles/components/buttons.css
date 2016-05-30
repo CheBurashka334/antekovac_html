@@ -305,19 +305,17 @@
 	}
 	
 	&.btn-filter {
-		position: fixed;
-		right: 0;
+		position: absolute;
+		left: -49px;
 		bottom: 180px;
 		z-index: 10;
 		padding: 7px 3px 10px;
-		transition: transform .3s, opacity .1s, z-index 0s .3s;
+		.bx-ios,
+		.bx-chrome & {
+			left: -40px;
+		}
 		.page-aside.open ~ .page & {
 			display: none;
-		}
-		.block-aside.open & {
-			transform: translateX(-100%);
-			opacity: 0;
-			z-index: -1;
 		}
 	}
 	&.btn-close {

@@ -3925,24 +3925,18 @@ table.nostyle th, table.nostyle td {
 	        transform: translateX(100%);
 }
 .btn.btn-filter {
-	position: fixed;
-	right: 0;
+	position: absolute;
+	left: -49px;
 	bottom: 180px;
 	z-index: 10;
 	padding: 7px 3px 10px;
-	-webkit-transition: opacity .1s, z-index 0s .3s, -webkit-transform .3s;
-	transition: opacity .1s, z-index 0s .3s, -webkit-transform .3s;
-	transition: transform .3s, opacity .1s, z-index 0s .3s;
-	transition: transform .3s, opacity .1s, z-index 0s .3s, -webkit-transform .3s;
+}
+.btn.btn-filter .bx-ios,
+		.bx-chrome .btn.btn-filter {
+	left: -40px;
 }
 .page-aside.open ~ .page .btn.btn-filter {
 	display: none;
-}
-.block-aside.open .btn.btn-filter {
-	-webkit-transform: translateX(-100%);
-	        transform: translateX(-100%);
-	opacity: 0;
-	z-index: -1;
 }
 .btn.btn-close {
 	position: relative;
