@@ -88,9 +88,9 @@
 @media (--mobile) {
     .pagination {
 		width: 100vw;
-		margin: -1px 0;
+		margin-top: -1px;
+		margin-bottom: -1px;
 		padding: 0;
-		margin-left: calc(-50vw + 50%);
         text-align: center;
 		border: 1px solid var(--light-gray);
 		background: white;
