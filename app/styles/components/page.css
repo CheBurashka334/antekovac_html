@@ -45,8 +45,7 @@
 @media (--mobile){
 	.page {
 		background: white;
-		height: initial;
-		display: block;
+		height: auto;
 		overflow-x: hidden;
 		.page-aside.open ~ &.fixed {
 			overflow-x: initial;

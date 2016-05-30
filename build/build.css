@@ -2286,12 +2286,6 @@ body {
 	width: 100%;
 	height: 100%;
 }
-@media (max-width: 767px){
-	.workarea {
-		display: block;
-		height: initial;
-	}
-}
 a {
 	color: #b59063;
 }
@@ -5590,8 +5584,7 @@ footer {
 @media (max-width: 767px){
 	.page {
 		background: white;
-		height: initial;
-		display: block;
+		height: auto;
 		overflow-x: hidden;
 	}
 	.page-aside.open ~ .page.fixed {
@@ -6685,7 +6678,7 @@ body.viewer-open {
 		color: #b9b9b9;
 	}
 	.favorite-table__col--actions .btn-add-to-cart {
-		padding: 7px 2.6em;
+		padding: 7px 1.5em;
 	}
 	.favorite-table__col--actions .btn-add-to-cart .i-icon {
 		margin-left: -35px;
@@ -9185,11 +9178,8 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 @media (max-width: 767px){
 	.basket-totals {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		/*flex-direction: column;*/
+		display: block;
 	}
 	.basket-totals--sum,
 		.basket-totals--sale {

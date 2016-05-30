@@ -308,7 +308,8 @@
 }
 @media (--mobile){
 	.basket-totals {
-		flex-direction: column;
+		/*flex-direction: column;*/
+		display: block;
 		&--sum,
 		&--sale {
 			width: 40%;
