@@ -141,7 +141,7 @@
 		</button>
 		<?php require ('filter-mobile.php') ?>
 	</div>
-    <div class="products-list clearfix">
+    <div class="products-list mobile-fullwidth--noGutter clearfix">
         <div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">
