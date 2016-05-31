@@ -234,6 +234,11 @@
 				padding-top: 10px;
 				margin-top: 25px;
 			}
+			&__text,
+			&__link.anim-click--play &__text {
+				transform: none;
+				transition: none;
+			}
 		}
 		.submenu {
 			&__back {

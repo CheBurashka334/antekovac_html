@@ -5975,6 +5975,13 @@ footer {
 		padding-top: 10px;
 		margin-top: 25px;
 	}
+	.menu-item__text,
+			.menu-item__link.anim-click--play .menu-item__text {
+		-webkit-transform: none;
+		        transform: none;
+		-webkit-transition: none;
+		transition: none;
+	}
 	.menu .submenu__back {
 		padding-left: 20px;
 	}
