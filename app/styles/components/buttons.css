@@ -11,6 +11,7 @@
     text-decoration: none;
     font-family: "MyriadPro", "Roboto", sans-serif;
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 	&:hover {
 		background-color: var(--main-brown);
 		border-color: var(--main-brown);

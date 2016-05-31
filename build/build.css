@@ -2288,6 +2288,7 @@ body {
 }
 a {
 	color: #b59063;
+	-webkit-tap-highlight-color: transparent;
 }
 a:hover {
 	text-decoration: none;
@@ -3617,6 +3618,7 @@ table.nostyle th, table.nostyle td {
     text-decoration: none;
     font-family: "MyriadPro", "Roboto", sans-serif;
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
 	background-color: #b59063;
@@ -5782,6 +5784,7 @@ footer {
 	vertical-align: middle;
 	text-transform: uppercase;
 	position: relative;
+	-webkit-tap-highlight-color: transparent;
 }
 .menu-item__link .notification {
 	color: #b59063;
@@ -5903,6 +5906,7 @@ footer {
 	text-align: left;
 	border: 0;
 	background: transparent;
+	-webkit-tap-highlight-color: transparent;
 }
 .menu .submenu__back .back__arrow {
 	display: inline-block;
