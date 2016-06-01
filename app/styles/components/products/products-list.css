@@ -18,8 +18,8 @@
 }
 @media (--mobile){
 	.products-list.mobile-fullwidth--noGutter {
-		margin-left: calc((0vw - 50vw) + 50%);
-		margin-right: calc((0vw - 50vw) + 50%);
+		margin-left: calc(-50vw + 50%);
+		margin-right: calc(-50vw + 50%);
 	}
 	.index-new-products {
 		margin-top: 15px;
