@@ -7,9 +7,6 @@ var Noodles = {
 			$('.page').css('padding-right', scrollbarWidth);
 		}
 		$(window).on('load', setScrollbarPadding());
-		$(window).on('resize', function(){
-			setTimeout(setScrollbarPadding(),1000);
-		});
 		$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 		$('body').addClass('page-loaded');
         $('.js-anim--hover')
@@ -149,7 +146,7 @@ var Noodles = {
 				$('.page-aside.open,.modal.open').removeClass('open');
 			}
 		});
-		$('.modal__wrap').on('click', function(e){
+		$('.modal__wrap,.block-aside').on('click', function(e){
 			e.stopPropagation();
 		});
 		$('.modal__wrap').on('click','.js-toggle-box', function(e){
