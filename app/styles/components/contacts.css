@@ -19,6 +19,12 @@
 		background-size: 48% auto;
 	}
 }
+.page--contacts .bx-yandex-map {
+	width: 100%;
+	.ymaps-map {
+		max-width: 100%;
+	}
+}
 @media (--mobile){
 	.contacts {
 		&__block {
