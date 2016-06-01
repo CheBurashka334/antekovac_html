@@ -45,7 +45,7 @@
 		right: 40px;
 		font-size: 15px;
 		color: var(--dark-gray);
-		z-index: 25;
+		z-index: 99;
 	}
 	&__inner {
 		width: 100%;

@@ -6785,6 +6785,11 @@ body.viewer-open {
 	.sketch__link .i-icon {
 		display: none;
 	}
+}
+@media (max-width: 767px) and (orientation: landscape) {
+	.sketch {
+		max-height: 100vh;
+	}
 }:root {
 	/* пути к картинкам */
 }
@@ -9571,7 +9576,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	right: 40px;
 	font-size: 15px;
 	color: #2e3034;
-	z-index: 25;
+	z-index: 99;
 }
 .modal__inner {
 	width: 100%;
