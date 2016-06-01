@@ -7631,6 +7631,7 @@ body.viewer-open {
 		display: inline-block;
 	}
     .pagination__item--current:nth-child(3) ~ .pagination__item--more,
+			.pagination__item--current:nth-child(4) ~ .pagination__item--more,
 			.pagination__item:nth-last-child(11):first-child ~ .pagination__item--more,
 			.pagination__item:nth-last-child(7):first-child ~ .pagination__item:nth-last-child(3){
 		display: none;
