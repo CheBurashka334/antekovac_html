@@ -67,6 +67,13 @@
 		}
 	}
 }
+@media (--mobile){
+	.bx-touch .sketch {
+		&:hover &__overlay {
+			display: none;
+		}
+	}
+}
 @media (--mobile) and (orientation: landscape) {
 	.sketch {
 		max-height: 100vh;

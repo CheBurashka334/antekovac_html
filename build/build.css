@@ -6786,6 +6786,11 @@ body.viewer-open {
 		display: none;
 	}
 }
+@media (max-width: 767px){
+	.bx-touch .sketch:hover .bx-touch .sketch__overlay {
+		display: none;
+	}
+}
 @media (max-width: 767px) and (orientation: landscape) {
 	.sketch {
 		max-height: 100vh;
@@ -10707,11 +10712,13 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
     .product-tile:hover .product-tile__like {
 		color: #b59063;
 	}
-    .product-tile__overlay {
-		display: none;
-	}
     .owl-item .product-tile {
 		border: 0;
+	}
+}
+@media (max-width: 767px){
+	.bx-touch .product-tile:hover .bx-touch .product-tile__overlay {
+		display: none;
 	}
 }.products-list {
     margin-left: -20px;

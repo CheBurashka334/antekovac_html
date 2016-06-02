@@ -218,11 +218,15 @@
 				color: var(--main-brown);
 			}
 		}
-		&__overlay {
-			display: none;
-		}
 		.owl-item & {
 			border: 0;
 		}
     }
+}
+@media (--mobile){
+	.bx-touch .product-tile {
+		&:hover &__overlay {
+			display: none;
+		}
+	}
 }
