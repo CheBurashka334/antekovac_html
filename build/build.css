@@ -6811,7 +6811,7 @@ body.viewer-open {
 		display: none;
 	}
 }
-@media (max-width: 767px){
+@media (max-width: 1023px){
 	.bx-touch .sketch:hover .bx-touch .sketch__overlay {
 		display: none;
 	}
