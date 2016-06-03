@@ -679,10 +679,8 @@
 		width: 100%;
 	}
 	&__slide {
-		opacity: 1;
-		img {
-			opacity: 1!important;
-		}
+		position: relative;
+		z-index: 5;
 	}
 	.owl-carousel .owl-item {
 		padding: 0 60px;
@@ -690,7 +688,6 @@
 		justify-content: center;
 		align-items: stretch;
 		float: none;
-		opacity: 1;
 	}
 	.slide-title {
 		font-weight: normal;

@@ -3576,10 +3576,8 @@ table.nostyle th, table.nostyle td {
 	width: 100%;
 }
 .modal-slider__slide {
-	opacity: 1;
-}
-.modal-slider__slide img {
-	opacity: 1!important;
+	position: relative;
+	z-index: 5;
 }
 .modal-slider .owl-carousel .owl-item {
 	padding: 0 60px;
@@ -3596,7 +3594,6 @@ table.nostyle th, table.nostyle td {
 	    -ms-flex-align: stretch;
 	        align-items: stretch;
 	float: none;
-	opacity: 1;
 }
 .modal-slider .slide-title {
 	font-weight: normal;
