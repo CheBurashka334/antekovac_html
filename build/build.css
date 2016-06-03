@@ -3594,6 +3594,13 @@ table.nostyle th, table.nostyle td {
 	    -ms-flex-align: stretch;
 	        align-items: stretch;
 	float: none;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	-webkit-box-flex: 0;
+	-webkit-flex-grow: 0;
+	    -ms-flex-positive: 0;
+	        flex-grow: 0;
 }
 .modal-slider .slide-title {
 	font-weight: normal;
