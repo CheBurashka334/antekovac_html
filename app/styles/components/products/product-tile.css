@@ -179,7 +179,7 @@
 
 @media (--small-down) {
     .product-tile {
-        width: calc(50% - 20px);
+        width: calc(50% - 25px);
 		&--half {
 			width: 100%;
 		}
