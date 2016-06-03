@@ -179,11 +179,18 @@
 
 @media (--small-down) {
     .product-tile {
-        width: calc(50% - 25px);
+        width: calc(50% - 20px);
 		&--half {
 			width: 100%;
 		}
     }
+    .no-csscalc .product-tile {
+        width: calc(50% - 24px);
+		background: red;
+		&--half {
+			width: 100%;
+		}
+	}
 }
 @media (--medium){
 	.product-tile {

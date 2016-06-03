@@ -10689,9 +10689,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 @media (max-width: 1023px) {
     .product-tile {
-        width: calc(50% - 25px);
+        width: calc(50% - 20px);
     }
     .product-tile--half {
+		width: 100%;
+	}
+    .no-csscalc .product-tile {
+        width: calc(50% - 24px);
+		background: red;
+	}
+    .no-csscalc .product-tile--half {
 		width: 100%;
 	}
 }
