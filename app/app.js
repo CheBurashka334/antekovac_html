@@ -10,13 +10,11 @@ import 'normalize.css';
 require('./styles/imports');
 
 $(function () {
-    //if ($('.owl-carousel').length) {
-        require.ensure([], function (require) {
-            require('owl.carousel');
-            let Sliders = require('./js/sliders');
-            Sliders.run();
-        })
-    //}
+	require.ensure([], function (require) {
+		require('owl.carousel');
+		let Sliders = require('./js/sliders');
+		Sliders.run();
+	})
 });
 
 $(function(){
