@@ -4076,6 +4076,7 @@ table.nostyle th, table.nostyle td {
 @media (min-width: 768px) and (max-width: 820px){
 	.btn.btn-add-to-cart .i-icon, .btn.btn-add-to-cart[class*="--main-anim"] .i-icon {
 		margin-right: 10px;
+		margin-left: 0;
 	}
 }
 @media (min-width: 768px) and (max-width: 1023px){
