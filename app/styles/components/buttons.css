@@ -436,7 +436,9 @@
 			}
 		}
 		&.btn-add-to-cart,
-		&.btn-add-to-cart[class*="--main-anim"] {
+		&.btn-add-to-cart[class*="--main-anim"],
+		&.btn-add-to-cart[class*="--big"] {
+			padding: 13px 10px;
 			.i-icon {
 				margin-left: 10px;
 			}

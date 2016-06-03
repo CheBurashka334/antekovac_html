@@ -4064,7 +4064,12 @@ table.nostyle th, table.nostyle td {
 		-webkit-transform: none;
 		        transform: none;
 	}
-	.btn.btn-add-to-cart .i-icon, .btn.btn-add-to-cart[class*="--main-anim"] .i-icon {
+	.btn.btn-add-to-cart,
+		.btn.btn-add-to-cart[class*="--main-anim"],
+		.btn.btn-add-to-cart[class*="--big"] {
+		padding: 13px 10px;
+	}
+	.btn.btn-add-to-cart .i-icon, .btn.btn-add-to-cart[class*="--main-anim"] .i-icon, .btn.btn-add-to-cart[class*="--big"] .i-icon {
 		margin-left: 10px;
 	}
 }
