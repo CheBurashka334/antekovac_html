@@ -6816,7 +6816,7 @@ body.viewer-open {
 		max-height: 100vh;
 	}
 }
-.bx-touch .sketch:hover  .sketch__overlay {
+.bx-touch .sketch:hover  .sketch__overlay .i-icon {
 	display: none;
 }:root {
 	/* пути к картинкам */
@@ -10741,7 +10741,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 		border: 0;
 	}
 }
-.bx-touch .product-tile:hover .product-tile__overlay .i-icon {
+.bx-touch .product-tile:hover .product-tile__overlay {
 	display: none;
 }.products-list {
     margin-left: -20px;

@@ -72,6 +72,6 @@
 		max-height: 100vh;
 	}
 }
-.bx-touch .sketch:hover  .sketch__overlay {
+.bx-touch .sketch:hover  .sketch__overlay .i-icon {
 	display: none;
 }

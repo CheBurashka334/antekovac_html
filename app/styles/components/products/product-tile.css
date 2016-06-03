@@ -223,6 +223,6 @@
 		}
     }
 }
-.bx-touch .product-tile:hover .product-tile__overlay .i-icon {
+.bx-touch .product-tile:hover .product-tile__overlay {
 	display: none;
 }
