@@ -6811,15 +6811,13 @@ body.viewer-open {
 		display: none;
 	}
 }
-@media (max-width: 1023px){
-	.bx-touch .sketch:hover  .sketch__overlay {
-		display: none;
-	}
-}
 @media (max-width: 767px) and (orientation: landscape) {
 	.sketch {
 		max-height: 100vh;
 	}
+}
+.bx-touch .sketch:hover  .sketch__overlay {
+	display: none;
 }:root {
 	/* пути к картинкам */
 }
@@ -10707,9 +10705,6 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
     .product-tile--half {
 		width: 100%;
 	}
-    .bx-touch .product-tile:hover .product-tile__overlay {
-		display: none;
-	}
 }
 @media (min-width: 1024px) and (max-width: 1300px){
 	.product-tile--half .product-tile__wrap,
@@ -10745,6 +10740,9 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
     .owl-item .product-tile {
 		border: 0;
 	}
+}
+.bx-touch .product-tile:hover .product-tile__overlay .i-icon {
+	display: none;
 }.products-list {
     margin-left: -20px;
 	display: -webkit-box;

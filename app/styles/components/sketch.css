@@ -67,13 +67,11 @@
 		}
 	}
 }
-@media (--small-down){
-	.bx-touch .sketch:hover  .sketch__overlay {
-		display: none;
-	}
-}
 @media (--mobile) and (orientation: landscape) {
 	.sketch {
 		max-height: 100vh;
 	}
+}
+.bx-touch .sketch:hover  .sketch__overlay {
+	display: none;
 }
