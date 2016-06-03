@@ -450,6 +450,7 @@
 		&.btn-add-to-cart[class*="--main-anim"],
 		&.btn-add-to-cart[class*="--big"]{
 			padding: 13px 10px;
+			background: red;
 			.i-icon {
 				margin-right: 10px;
 				margin-left: 0;
