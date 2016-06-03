@@ -68,10 +68,8 @@
 	}
 }
 @media (--small-down){
-	.bx-touch .sketch {
-		&:hover &__overlay {
-			display: none;
-		}
+	.bx-touch .sketch:hover  .sketch__overlay {
+		display: none;
 	}
 }
 @media (--mobile) and (orientation: landscape) {

@@ -183,6 +183,9 @@
 		&--half {
 			width: 100%;
 		}
+		.bx-touch &:hover &__overlay {
+			display: none;
+		}
     }
 }
 @media (--medium){
@@ -222,11 +225,4 @@
 			border: 0;
 		}
     }
-}
-@media (--mobile){
-	.bx-touch .product-tile {
-		&:hover &__overlay {
-			display: none;
-		}
-	}
 }
