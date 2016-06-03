@@ -2902,6 +2902,7 @@ table.nostyle th, table.nostyle td {
 	-webkit-flex: 0 0 auto;
 	    -ms-flex: 0 0 auto;
 	        flex: 0 0 auto;
+	float: none;
 }
 .owl-dots {
 	position: absolute;
@@ -3574,7 +3575,7 @@ table.nostyle th, table.nostyle td {
 .modal-slider .modal__slider {
 	width: 100%;
 }
-.modal-slider .owl-item {
+.modal-slider .owl-carousel .owl-item {
 	padding: 0 60px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -3588,6 +3589,8 @@ table.nostyle th, table.nostyle td {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	min-height: 50vw;
+	float: none;
 }
 .modal-slider .slide-title {
 	font-weight: normal;
