@@ -442,6 +442,12 @@
 				margin-left: 10px;
 			}
 		}
+		.i-icon,
+		.btn-text,
+		&[class*="--main-anim"] >.btn-text,
+		&[class*="--main-anim"] >.i-icon{
+			display: inline;
+		}
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 820px){
@@ -450,7 +456,6 @@
 		&.btn-add-to-cart[class*="--main-anim"],
 		&.btn-add-to-cart[class*="--big"]{
 			padding: 13px 10px;
-			background: red;
 			.i-icon {
 				margin-right: 10px;
 				margin-left: 0;
