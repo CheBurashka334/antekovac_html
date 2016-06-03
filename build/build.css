@@ -6915,6 +6915,11 @@ body.viewer-open {
 .page--contacts .bx-yandex-map .ymaps-map {
 	max-width: 100%;
 }
+@media (max-width: 1023px){
+	.page--contacts .bx-yandex-map {
+		height: 50vw;
+	}
+}
 @media (max-width: 767px){
 	.contacts__block {
 		margin-top: 0;
@@ -6926,9 +6931,6 @@ body.viewer-open {
 @media (max-width: 767px){
 	.contacts__form {
 		background: none;
-	}
-	.page--contacts .bx-yandex-map {
-		height: 50vw;
 	}
 }:root {
 	/* пути к картинкам */

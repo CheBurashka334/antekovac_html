@@ -25,6 +25,11 @@
 		max-width: 100%;
 	}
 }
+@media (--small-down){
+	.page--contacts .bx-yandex-map {
+		height: 50vw;
+	}
+}
 @media (--mobile){
 	.contacts {
 		&__block {
@@ -40,8 +45,5 @@
 		&__form {
 			background: none;
 		}
-	}
-	.page--contacts .bx-yandex-map {
-		height: 50vw;
 	}
 }
