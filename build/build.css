@@ -11072,6 +11072,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 	.product-detail__like__text {
 		padding: 10px 20px;
 	}
+	.product-detail__params {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 0.5em;
+		padding: 0 0.5em;
+	}
 }:root {
 	/* пути к картинкам */
 }
