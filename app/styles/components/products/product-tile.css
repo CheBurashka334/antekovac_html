@@ -221,6 +221,16 @@
 		.owl-item & {
 			border: 0;
 		}
+		.page--collection & {
+			border-left: 0;
+			border-right: 0;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+		&--half-wrapper {
+			border: 0;
+		}
     }
 }
 .bx-touch .product-tile:hover .product-tile__overlay {

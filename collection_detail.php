@@ -107,7 +107,7 @@
 		</div>
 	</div>
 	<div class="heading"><h2>Товары коллекции</h2></div>
-	<div class="products-list clearfix">
+	<div class="products-list mobile-fullwidth--noGutter clearfix">
         <div class="product-tile">
             <div class="product-tile__wrap">
                 <div class="product-tile__image">

@@ -10740,6 +10740,16 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
     .owl-item .product-tile {
 		border: 0;
 	}
+    .page--collection .product-tile {
+		border-left: 0;
+		border-right: 0;
+	}
+    .page--collection .product-tile:last-child {
+		border-bottom: 0;
+	}
+    .product-tile--half-wrapper {
+		border: 0;
+	}
 }
 .bx-touch .product-tile:hover .product-tile__overlay {
 	display: none;
