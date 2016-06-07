@@ -11252,6 +11252,7 @@ var App =
 			$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 			$('body').addClass('page-loaded');
 			$('.js-anim--hover').on('mouseenter', function (e) {
+				console.dir(e);
 				if (!e.originalEvent.sourceCapabilities.firesTouchEvents) {
 					$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
 				}
