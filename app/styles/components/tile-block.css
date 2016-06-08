@@ -512,7 +512,8 @@
 			position: relative;
 			margin: 10px 0 20px;
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
 			align-items: flex-start;
 			justify-content: flex-start;
 			&:before {
@@ -524,6 +525,10 @@
 				bottom: 0px;
 				left: 0px;
 				right: 0px;
+			}
+			> div {
+				width: 100%;
+				flex: 0 0 100%;
 			}
 		}
 		&--video &__content {
@@ -775,6 +780,11 @@
 				padding: 20px;
 				padding-left: calc(39% + 20px);
 				flex: 0 0 auto;
+			}
+		}
+		&__image {
+			.page--text & {
+				margin-bottom: 20px;
 			}
 		}
 	}

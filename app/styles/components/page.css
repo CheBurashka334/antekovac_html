@@ -202,5 +202,8 @@
 			padding-top: 1px;
 			padding-bottom: 1px;
 		}
+		&--text {
+			margin-bottom: 35px;
+		}
 	}
 }
