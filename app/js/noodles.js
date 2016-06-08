@@ -10,14 +10,13 @@ var Noodles = {
 		$('.page-aside--right.feed-back.hidden').removeClass('hidden');
 		$('body').addClass('page-loaded');
         $('.js-anim--hover')
-			.on('mouseenter',function(e){
-				console.dir(e);
-				if(!e.originalEvent.sourceCapabilities.firesTouchEvents){
+			.on('mouseenter',function(){
+				if(!$('html').hasClass('bx-touch')){
 					$(this).removeClass('anim-hover--end').addClass('anim-hover--start');
 				}
 			})
 			.on('mouseleave touchend',function(e){
-				if(!e.originalEvent.sourceCapabilities.firesTouchEvents){
+				if(!$('html').hasClass('bx-touch')){
 					$(this).removeClass('anim-hover--start').addClass('anim-hover--end');
 					$(this).on('transitionend',function(){
 						$('.anim-hover--end').removeClass('anim-hover--end');
@@ -70,7 +69,9 @@ var Noodles = {
 				console.error('Box? Which box?');
 			}
 			elem.siblings('.js-toggle-box').removeClass('opened');
-			elem.toggleClass('opened');
+			if(!elem.hasClass('header-menu__burger')){
+				elem.toggleClass('opened');
+			}
 		}
 		
 		$('.open > .collapsible-block').slideDown(500);

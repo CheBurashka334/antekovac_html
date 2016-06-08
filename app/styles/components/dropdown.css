@@ -129,7 +129,7 @@
 			position: absolute;
 			top: 11px;
 			right: 25px;
-			z-index: 3;
+			z-index: 6;
 			width: 0;
 			height: 0;
 			top: 20px;
@@ -140,6 +140,9 @@
 			border-width: 5px 3px 0;
 			border-color: transparent;
 			border-top-color: white;
+			.dropdown--mobile + & {
+				z-index: 4;
+			}
 		}
 		&--mobile &__list {
 			list-style: none;
@@ -148,7 +151,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			z-index: 2;
+			z-index: 5;
 			width: 100%;
 			background: #3c3e43;
 			color: white;
@@ -156,6 +159,9 @@
 			transform: scaleY(0) translateY(-100%);
 			transform-origin: top;
 			opacity: 0;
+			.dropdown--mobile + & {
+				z-index: 3;
+			}
 		}
 		&--mobile &__item {
 			border-bottom: 1px solid #44464b;

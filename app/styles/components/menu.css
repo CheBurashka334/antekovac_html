@@ -411,17 +411,14 @@
 				display: none;
 			}
 		}
-		&--multilevel &__item {
-			display: none;
-		}
 		&--multilevel &__item--active {
 			display: flex;
 		}
 		&--multilevel &__link {
-			background: white;
+			/*background: white;
 			color: var(--main-brown);
 			font-size: 24px;
-			padding: 20px;
+			padding: 20px;*/
 		}
 	}
 }
