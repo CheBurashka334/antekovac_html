@@ -10817,6 +10817,7 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 }
 .product-detail .tile-block__wrapper > div {
 	width: 100%;
+	max-width: 100%;
 	-webkit-flex-basis: 100%;
 	    -ms-flex-preferred-size: 100%;
 	        flex-basis: 100%;

@@ -10,6 +10,7 @@
 		padding-top: 30px;
 		&__wrapper > div {
 			width: 100%;
+			max-width: 100%;
 			flex-basis: 100%;
 		}
 	}
