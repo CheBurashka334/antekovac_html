@@ -10815,6 +10815,12 @@ input[type="checkbox"].color:checked + .checkbox-lbl {
 .product-detail .tile-block {
 	padding-top: 30px;
 }
+.product-detail .tile-block__wrapper > div {
+	width: 100%;
+	-webkit-flex-basis: 100%;
+	    -ms-flex-preferred-size: 100%;
+	        flex-basis: 100%;
+}
 .product-detail__info {
 	max-width: 430px;
 }

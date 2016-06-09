@@ -88,7 +88,7 @@
 						<svg class="i-icon"><use xlink:href="#print"/></svg>
 					</button>
 				</div>
-				<div class="tile-block__wrapper grid-column-noGutter">
+				<div class="tile-block__wrapper grid-noGutter">
 					<div class="product-detail__name">
 						<div class="product-detail__title">
 							<h1>Cумка №40 </br>Небесно-голубое</h1>
